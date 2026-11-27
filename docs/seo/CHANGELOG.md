@@ -20,3 +20,6 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - **Főoldali hero `<picture>`** + AVIF (`perf(home)` commit) · ok: tulajdonosi engedély a mobil-LCP javítására · kiindulás: CSS-háttér + 2 preload, LCP 6,0 s (éles Lighthouse, szimulált) · eredmény: lásd PERFORMANCE-STANDARDS „Főoldali mobil-LCP optimalizálás” (valós throttlingon LCP változatlan, nyereség: bájtok, felderíthetőség; éles igazolás deploy után) · tennivaló: éles mérés; font-önhosztolás külön döntés.
 - **80 generált oldalfájl (40 oldaldefiníció, ES+EN) piszkozatként** (hub, IPM, szolgáltatások, Sobre mí, GYIK, zónák, atlasz, azonosító, dokumentumok, 20 forrásalapú cikk) · helyi előnézet + fejlesztői index · mind Draft/noindex, `dist/`-be nem kerül.
 - **Beágyazott SVG-infografikák** (IG-01, 02, 10–13, 15), nyomtatható űrlap-sablon (`docform`), `OWNER-INPUT-REQUIRED.md` egyesítve (12 téma, prioritással).
+
+## 2026-11-27 — munkamenet lezárása
+- A fejlesztési szakasz elfogadva; a szakmai tartalmakat a tulajdonos ChatGPT-vel nézi át (külső ellenőrnek nem küldjük). Átadási útmutató: SEO-MASTER-PLAN.md 7. fejezet. Minden piszkozat Draft/noindex; nincs merge, deploy, FTP-feltöltés.
