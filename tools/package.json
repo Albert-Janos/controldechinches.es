@@ -1,0 +1,18 @@
+{
+  "name": "controldechinches-seo-tools",
+  "private": true,
+  "type": "module",
+  "description": "Local-only build, test and audit tooling. NOT deployed (see .deployignore).",
+  "scripts": {
+    "prices": "node build-prices.mjs",
+    "check-prices": "node check-prices.mjs",
+    "images": "node process-images.mjs",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.1",
+    "lighthouse": "13.6.0",
+    "puppeteer-core": "25.19.0",
+    "sharp": "0.35.5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_comment": "Single source of truth for published prices. Edit here, then run: node tools/build-prices.mjs  (regenerates js/prices.js). Static HTML prices are verified with: node tools/check-prices.mjs",
+  "currency": "EUR",
+  "updated": "2026-11-27",
+  "approvedBy": "owner instruction 2026-11-27 (chat)",
+  "chemical": {
+    "status": "approved",
+    "bedroomPrices": [139, 179, 219, 259],
+    "additionalBedroom": 40,
+    "maxBedroomsInCalculator": 10,
+    "note": "Price per intervention. Further treatments, taxes and travel are confirmed in writing before booking."
+  },
+  "drySteamStandalone": {
+    "status": "approved",
+    "from": 150,
+    "note": "Final price depends on the on-site conditions."
+  },
+  "addons": {
+    "_status": "legacy-unconfirmed: published on the current site (ES+EN) and in the old calculator; no independent business source available in the repository. Owner to confirm before deploy.",
+    "steamPerBedroom": { "amount": 80, "status": "legacy-unconfirmed", "enabled": true },
+    "sofaEach": { "amount": 40, "status": "legacy-unconfirmed", "enabled": true, "max": 6 },
+    "ulvFrom": { "amount": 50, "status": "legacy-unconfirmed", "enabled": true }
+  },
+  "retired": ["Esencial plan (139 EUR, one visit)", "Completo plan (239/289/339/399 EUR, two visits, +50 per extra bedroom)"]
+}

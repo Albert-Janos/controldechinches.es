@@ -1,2 +1,16 @@
 
 *.zip
+
+# --- SEO project: never version or publish these ---
+raw-images/
+_archive-private/
+node_modules/
+tools/node_modules/
+tools/npm-install.log
+*.env
+.env*
+.claude/
+dist/
+reports/raw/
+*.bak
+*.orig
