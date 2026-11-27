@@ -1,7 +1,7 @@
 {
  "rawFilesTotalMB": 22.8,
- "rawUsedMB": 22.6,
- "generatedTotalMB": 9,
+ "rawUsedMB": 22.5,
+ "generatedTotalMB": 8.9,
  "items": [
   {
    "id": "IMG-ABOUT-02",
@@ -332,21 +332,6 @@
    "generatedKB": 63,
    "smallestServedKB": 25,
    "largestServedKB": 25,
-   "widths": [
-    600
-   ],
-   "formats": [
-    "avif",
-    "webp"
-   ]
-  },
-  {
-   "id": "IMG-LOC-ALT-01",
-   "file": "10-varosok/altea.avif",
-   "rawKB": 92,
-   "generatedKB": 104,
-   "smallestServedKB": 41,
-   "largestServedKB": 41,
    "widths": [
     600
    ],

@@ -14,9 +14,9 @@ Forrás: OWNER-APPROVALS-WP2.md. **✅ lezárt · ◐ részben teljesült (ponto
 | 10 | ⛔ | Biocid termékek, hatóanyagok, nyilvántartási számok, SDS, visszalépési idők hiányoznak (LGL-05). Hidegköd: használatban kiegészítésként, **a készülék típusa nincs kiválasztva** |
 | 11 | ✅ | Utókövetés, felderítés a kezelés része, szóbeli tájékoztatás lakossági ügyfélnek. (Dokumentumok adminisztratív mezői nyitottak) |
 | 12 | ✅ | Réslezárás: ügyfélnek ajánlott / külső szakember; a tulajdonos nem kínálja |
-| 13 | ◐ | Ismert: 2026-os magyar képesítés. Hiányzik: pontos hivatalos megnevezés, kiállító, igazolás |
+| 13 | ◐ | Ismert: 2026-os magyar képesítés. Hiányzik: pontos hivatalos megnevezés, kiállító. **Döntés (2026-11-27): a magyar képesítési és nyilvántartási okmányok képei egyelőre nem kellenek és nem jelennek meg** (a spanyol elismeréshez szükséges dokumentáció még készül) |
 | 14 | ✅ | A magyar nyilvántartási számot a tulajdonos **nem** publikálja (döntés) |
-| 15 | ⛔ | Nemzetközi tanúsítványok listája és dokumentumai |
+| 15 | ◐ | A **Lantra „Bed Bug Control” tanúsítvány** (2026-11-25) megvan és megjelenik (ellenőrző kód elfedve, **döntés: elfedve marad**). További tanúsítvány nem kötelező; a CRED-01/02/03 képhelyek kimaradnak |
 | 16 | ⛔ | Spanyol működési státusz, ROESB, elismerés |
 | 17 | ◐ | Ismert: tevékenység kezdete 2023, magyarországi tapasztalat. Hiányzik: évek/ügyféltípusok részletei; kezelések száma nincs megadva |
 | 18 | ◐ | Ismert: felderítési eszközök. Hiányzik: további eszközök, védőfelszerelés részletei |
@@ -27,8 +27,12 @@ Forrás: OWNER-APPROVALS-WP2.md. **✅ lezárt · ◐ részben teljesült (ponto
 | 36 | ✅ | Nincs előfizetés/szerződés; eseti, egyedi egyeztetésű megelőző ellenőrzés |
 | 39 | ✅ | Kiegészítők jóváhagyva (nettó: gőz +80 egy összegben, kanapé +40, hidegköd 50-től) — élő oldal szinkron szükséges |
 | 40 | ✅ | Aznapi időpont nem garantált, kapacitásfüggő; nincs felár |
-| 21, 23 | ⛔ | Portréhasználat hozzájárulása; megszólítás — nem érintette |
-| 25–27, 34, 35 | ⛔ | Képjogok, saját fotók, esettanulmányok, B2B-hivatkozások — még nem átadottak |
+| 21 | ✅ | A portré és az ügyféladat nélküli munkafotók publikálása jóváhagyva (2026-11-27); a meglévő portré marad, amíg munkaruhás saját fotó nem érkezik |
+| 23 | ⛔ | Megszólítás (nem érintette) |
+| 25 | ◐ | Az **új képek** forrása és joga lezárva (Unsplash / AI / saját, jóváhagyva). Nyitott: a meglévő, védett éles oldali képek (pl. `hero-0010`) eredete |
+| 26 | ⛔ | A régi `irtas-gozzel01` / `permetezes…` képek helye (nem érintette) |
+| 27 | ✅ | A fotóanyag átadva (28 kép + 1 videó); a további fotók nem kötelezők (MISSING-IMAGES.md) |
+| 34, 35 | ⛔ | Teljes esettanulmány (esettörténet + igazolt eredmény + hozzájárulás) és B2B-hivatkozások — nincs; a fertőzöttségi fotók „valós fertőzöttségek fotói”-ként szerepelnek |
 
 ## 13. Új nyitott tételek (2. munkacsomag)
 IVA-kulcs és fogyasztói ármegjelenítés véglegesítése (spanyol hivatalos forrás + könyvelő) · HPMed szakmai alkalmazásának gyártói megerősítése · kazánhőmérséklet dokumentált megerősítése · felelős technikus/alkalmazó követelmények, biztosítás, adatvédelmi/AI-híváskezelési dokumentáció · diszpécser nyelvi képességei · élő weboldal + központi árforrás + diszpécser szinkronja (árak, terület, számok) · kezelési dokumentumok végleges mezői · fertőzésmentességi lezárási protokoll időtartama · e-mail, cégadatok, NIF/CIF, cím (a 2. csomag nem érintette).
@@ -132,14 +136,17 @@ A teljes, 16 pontos lista: `LEGAL-PUBLICATION-GATES.md`, utolsó szakasz.
 | 30 | A főoldalra kerülhet-e külön „Sobre mí / módszertan” szekció (CRO)? | L |
 | 32 | Mobil sticky-CTA az új tranzakciós oldalakon? | L |
 
-## 14. Képek — nyitott kérdések a képfeldolgozás után (2026-11-27)
-| # | Kérdés | Pri. | Mit old fel |
+## 14. Képek — a 2026-11-27-i tulajdonosi döntésekkel LEZÁRT kérdések
+Forrás: tulajdonosi utasítás (3. munkacsomag, chat). **Minden feltöltött kép három forrásból származik: Unsplash, AI-generált illusztráció, saját fotó/videó; a weboldali felhasználást a tulajdonos jóváhagyta.** Harmadik félhez kapcsolódó konkrét jogi akadály nem merült fel.
+| # | Kérdés | Állapot | Döntés / megoldás |
 |---|---|---|---|
-| 44 | Az **1448×1086-os PNG** képek (felderítés ×2, IPM-felszerelés, monitorozás, 4 ingatlantípus) saját fotók, generált vagy szerkesztett képek, vagy külső forrásból valók? Jelenleg „Ilustración” / semleges felirattal szerepelnek. | **H** | Felirat „Foto propia” lehetősége; a 7 illusztráció cseréje |
-| 45 | A **város- és ingatlanképek** (Alicante, Benidorm, Torrevieja, Calpe, Altea; lakás, szálloda, hostal) szerzője és felhasználási joga? Saját képek-e, vagy licencelt/stock? | **H** | Jogtiszta publikálás |
-| 46 | A **makrófotó** (kifejlett poloska) saját felvétel-e? Hol, mivel készült, volt-e vonalzó/méretarány? Szakember határozta-e meg a stádiumot/nemet? | **H** | Atlasz/életciklus hitelessége |
-| 47 | A gőzölési, vegyszeres és ULV fotók (és a portré) **saját, valós munkafotók**? Hol és mikor készültek (ország), illetve vannak-e rajtuk ügyfél-azonosító adatok? A hidegködképző melletti fotón családi fényképek látszanak (ezt a képet nem használtuk). | **H** | „Foto propia” felirat; magyarországi munka nem jelölhető spanyolországi esetként |
-| 48 | A **fertőzöttségi fotók** (6 db) egy vagy több munkából valók? Hol (ország) és mikor? Beleegyezett az ügyfél a publikálásba? | **H** | PG-073, atlasz; esettanulmány csak dokumentált, engedélyezett esetből |
-| 49 | A portré egy **póló-viseletű szelfi**; lesz munkaruhás portré (álló és fekvő), amely a hero-ba kerül? A portrét publikálhatjuk (hozzájárulás)? | M | PG-016 hero, szerzői doboz (#21) |
-| 50 | A Lantra-tanúsítvány ellenőrző kódját eltakartuk. Kéred a kód láthatóvá tételét (ellenőrizhetőség), vagy maradjon elrejtve? | L | Hitelesség vs. adatvédelem |
-| 51 | A `gozoles-kozben-video.mp4` (1,9 MB) használható-e (pl. a gőzölés oldalon beágyazva)? Nem képként kezeltük, ezért nem szerepel. | L | Videó beágyazása (külön feladat) |
+| 44 | A PNG-k (felderítés ×2, IPM-felszerelés, monitorozás, apartman) eredete | ✅ | AI-generált illusztrációk: „Ilustración … No es una fotografía propia” felirattal, saját dokumentációként nem szerepelnek |
+| 45 | Város- és ingatlanképek joga | ✅ | Unsplash, kereskedelmi felhasználásra; semleges felirat; közeli, felismerhető személyeket mutató kép (Altea) kimaradt |
+| 46 | A makrófotó eredete | ✅ | Unsplash-fotó, „imagen ilustrativa, sin escala”; nem azonosítási referencia, anatómiailag pontatlan AI-rovarkép nem szerepel |
+| 47 | Gőzölési/vegyszeres/hidegköd fotók és portré saját munka? Hol? | ✅ | Saját, valós szakmai munkák; **magyarországi munkák, spanyolországi esetként nem szerepelnek** |
+| 48 | Fertőzöttségi fotók: egy vagy több munka? Hely, dátum, hozzájárulás? | ✅ | Valós fertőzöttségek fotói (magyarországi munkák); nem esettanulmány, hely/dátum/eredmény/ügyféltörténet nélkül; a fotók tartalma nem módosított; személyes adat nem látszik |
+| 49 | Munkaruhás portré? | ✅ | A meglévő portré marad, amíg megfelelő saját fotó nem érkezik (ajánlott, nem blokkoló) |
+| 50 | A tanúsítvány kódja | ✅ | Elfedve marad |
+| 51 | A videó használható-e | ✅ | Felhasználva a szárazgőzös oldalon (ES/EN): WebM, hang és metaadat nélkül, kattintásra indul, előnézeti képpel |
+| – | CRED-01/02/03 és CRED-04 | ✅ | Kihagyva / nem szükséges (lásd 13., 15. sor) |
+| – | A „kötelező” képek köre | ✅ | Egyetlen kép hiánya sem blokkol; nincs üres képhely; kért új kép összesen 3 (MISSING-IMAGES.md) |

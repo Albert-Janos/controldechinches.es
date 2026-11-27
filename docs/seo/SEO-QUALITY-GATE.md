@@ -12,8 +12,8 @@ Egyetlen új oldal sem léphet `Approved for indexing` / `Published` státuszba,
 | 6 | Egyértelmű H1, logikus H2–H3 | auto |
 | 7 | Helyes canonical, kölcsönös hreflang, `html lang` | auto |
 | 8 | Működő belső linkek, nincs árva oldal, nincs törött link | auto |
-| 9 | Releváns, megfelelő minőségű képek; **jóváhagyott képanyag**; felhasználási jogok rendben; provenance-nyilatkozat | M + O |
-| 10 | Alt szövegek (ES/EN), képaláírások, optimalizált képek (formátum, méret, width/height, nincs GPS) | auto |
+| 9 | Releváns, megfelelő minőségű képek; **a képanyag eredete dokumentált (saját / Unsplash / AI, a manifest `provenance`)**; AI-kép csak illusztrációként, felirattal; **hiányzó kép nem blokkol, üres képhely nem jelenik meg** (D-045) | M + O |
+| 10 | Alt szövegek (ES/EN), képaláírások, WebP+AVIF, srcset/sizes, width/height, nincs EXIF/GPS, nincs törött képút, CLS ≈ 0; **videó: kattintásra tölt, nem indul automatikusan, hang/metaadat nélkül** | auto |
 | 11 | Mobil és desktop megjelenés hibamentes (360/768/1280, képernyőkép-teszt + manuális) | auto + M |
 | 12 | Működő CTA-k (WhatsApp/telefon), `data-cta` jelen van, linkek helyes számra mutatnak | auto |
 | 13 | Működő konverziómérés (esemény-küldés a meglévő `main.js`-sel; consent-viselkedés) | auto + M |

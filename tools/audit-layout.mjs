@@ -24,7 +24,7 @@ try {
       page.on('response', async res => { const t = res.headers()['content-type'] || ''; if (/^image\//.test(t) && !/svg|icon/.test(t)) { imgCount++; try { imgBytes += (await res.buffer()).length; } catch { /* redirect or aborted */ } } if (res.status() >= 400) failed.push(res.status() + ' ' + res.url()); });
       await page.evaluateOnNewDocument(() => { // Core Web Vitals probes (LCP element/time, CLS) - same numbers the browser would report
         window.__cls = 0; window.__lcp = 0; window.__lcpEl = '';
-        new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true });
+        window.__lsrc = []; new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) { window.__cls += e.value; window.__lsrc.push(e.sources.map(s => (s.node?.nodeName || '') + '.' + String(s.node?.className || '').slice(0, 40) + ' ' + Math.round(s.previousRect.y) + '->' + Math.round(s.currentRect.y) + ' h' + Math.round(s.previousRect.height) + '->' + Math.round(s.currentRect.height)).join(' | ')); } }).observe({ type: 'layout-shift', buffered: true });
         new PerformanceObserver(l => { const e = l.getEntries().at(-1); window.__lcp = Math.round(e.startTime); window.__lcpEl = (e.element?.tagName || '') + ' ' + (e.url || '').split('/').pop(); }).observe({ type: 'largest-contentful-paint', buffered: true });
       });
       await page.goto(server.base + p[lang].url, { waitUntil: 'networkidle0' });
@@ -55,7 +55,7 @@ try {
       report.push({ tag, ...r, ...firstView, firstViewImgKB: Math.round(firstBytes / 1024), totalImgKB: Math.round(imgBytes / 1024), imgCount, failed });
       if (r.broken.length) problems.push(`${tag}: broken image(s) ${r.broken.join(', ')}`);
       if (failed.length) problems.push(`${tag}: failed requests ${failed.join(', ')}`);
-      if (r.cls > 0.02) problems.push(`${tag}: CLS ${r.cls}`);
+      if (r.cls > 0.02) problems.push(`${tag}: CLS ${r.cls} ${JSON.stringify(await page.evaluate(() => window.__lsrc))}`);
       if (r.overflow > 1) problems.push(`${tag}: horizontal overflow ${r.overflow}px`);
       if (r.dupIds.length) problems.push(`${tag}: duplicate ids ${r.dupIds.join(',')}`);
       r.svgs.forEach(s => s.over.length && problems.push(`${tag}: svg text overflow (${s.cls}): ${s.over.join(' | ')}`));

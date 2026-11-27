@@ -189,7 +189,7 @@
   }
  },
  "IMG-INS-01": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/ipm/inspection/",
    "base": "inspeccion-cama-linterna-ilustracion",
@@ -216,7 +216,7 @@
   }
  },
  "IMG-IPM-01": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/ipm/inspection/",
    "base": "inspeccion-sofa-cama-linterna-ilustracion",
@@ -243,7 +243,7 @@
   }
  },
  "IMG-IPM-03": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/ipm/",
    "base": "equipos-tratamiento-integrado-ilustracion",
@@ -269,7 +269,7 @@
   }
  },
  "IMG-IPM-04": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/ipm/monitoring/",
    "base": "monitor-chinches-pata-cama-ilustracion",
@@ -295,7 +295,7 @@
   }
  },
  "IMG-ENT-ADU-01": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/infestation/",
    "base": "chinche-de-cama-adulta-macro",
@@ -321,7 +321,7 @@
   }
  },
  "IMG-B2B-01": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/accommodation/",
    "base": "dormitorio-apartamento-turistico",
@@ -348,7 +348,7 @@
   }
  },
  "IMG-B2B-02": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/accommodation/",
    "base": "habitacion-alojamiento-dos-camas",
@@ -375,7 +375,7 @@
   }
  },
  "IMG-PREV-02": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/accommodation/",
    "base": "habitacion-sencilla-cama-doble-e-individual",
@@ -402,7 +402,7 @@
   }
  },
  "IMG-LOC-ALC-02": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/accommodation/",
    "base": "dormitorio-vivienda-cama-matrimonio",
@@ -428,7 +428,7 @@
   }
  },
  "IMG-LOC-ALC-01": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/locations/",
    "base": "alicante-paseo-explanada",
@@ -452,7 +452,7 @@
   }
  },
  "IMG-LOC-BEN-01": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/locations/",
    "base": "benidorm-playa-rascacielos-atardecer",
@@ -476,7 +476,7 @@
   }
  },
  "IMG-LOC-TOR-01": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/locations/",
    "base": "torrevieja-urbanizacion-viviendas",
@@ -500,7 +500,7 @@
   }
  },
  "IMG-LOC-CAL-01": {
-  "provenance": "unverified",
+  "provenance": "unsplash",
   "variants": {
    "dir": "/assets/img/locations/",
    "base": "calpe-vista-panoramica-costa",
@@ -521,30 +521,6 @@
   "caption": {
    "es": "Calpe: vista panorámica de la costa.",
    "en": "Calpe: panoramic view of the coast."
-  }
- },
- "IMG-LOC-ALT-01": {
-  "provenance": "unverified",
-  "variants": {
-   "dir": "/assets/img/locations/",
-   "base": "altea-plaza-iglesia-cupulas-azules",
-   "widths": [
-    600
-   ],
-   "formats": [
-    "avif",
-    "webp"
-   ],
-   "width": 600,
-   "height": 799
-  },
-  "alt": {
-   "es": "Plaza de la iglesia de cúpulas azules de Altea con terrazas de cafés",
-   "en": "Square in front of the blue-domed church in Altea with café terraces"
-  },
-  "caption": {
-   "es": "Altea: plaza de la iglesia.",
-   "en": "Altea: the church square."
   }
  },
  "IMG-INS-06": {
@@ -787,7 +763,7 @@
   "aliasOf": "IMG-DRY-05"
  },
  "IMG-INS-05": {
-  "provenance": "illustration",
+  "provenance": "ai",
   "variants": {
    "dir": "/assets/img/ipm/inspection/",
    "base": "inspeccion-sofa-cama-linterna-ilustracion",

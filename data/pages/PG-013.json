@@ -69,6 +69,18 @@
     "html": "<p>El equipo es un <strong>Polti Cimex Eradicator</strong>. Según el fabricante:</p><ul><li>presión de vapor de hasta 4 bar;</li><li>vapor seco sobrecalentado hasta 180 °C a la salida de la boquilla, en una cámara de expansión patentada;</li><li>depósito de 2 litros y 2250 W de potencia;</li><li>caudal de vapor regulable de 0 a 110 g/min.</li></ul><p>Son datos del fabricante, no temperaturas medidas en la superficie tratada: la presión de la caldera, la temperatura a la salida del vapor y la temperatura que alcanza la superficie son magnitudes distintas. Esta última depende de la distancia, del tiempo de aplicación, del material y del caudal de vapor, y no se da una cifra general. El ajuste y los tiempos concretos de aplicación del técnico no se publican.</p><p>A veces el vapor se aplica junto con <strong>HPMed</strong>, un detergente de Polti para este equipo, a base de agua y alcohol. Según el fabricante elimina olores; no se le atribuye un efecto insecticida, desinfectante ni protector duradero. Por eso la fórmula exacta es «sin insecticida en el paso de vapor», no «solo agua» ni «sin productos químicos».</p>"
    },
    {
+    "type": "video",
+    "video": "vapor-seco-cabezal-polti-sofa-infestado",
+    "alt": {
+     "es": "Cabezal de vapor Polti sobre el suelo junto a la base de un sofá, con numerosas chinches y excrementos en el suelo",
+     "en": "Polti steam head on the floor next to the base of a sofa, with many bed bugs and droppings on the floor"
+    },
+    "caption": {
+     "es": "Vídeo corto, sin audio: el cabezal de vapor Polti junto a un sofá con una infestación real. Foto propia.",
+     "en": "Short video, no sound: the Polti steam head next to a sofa with a real infestation. Own footage."
+    }
+   },
+   {
     "type": "figure",
     "image": "IMG-DRY-01"
    },
@@ -164,7 +176,7 @@
    },
    {
     "type": "todo",
-    "text": "Pendiente del propietario: ajustes reales de uso del equipo (presión, distancia, tiempos de aplicación); comprobar el uso previsto de HPMed en aplicación profesional (la ficha de seguridad lo describe como detergente para aparatos domésticos Polti); confirmar de forma documentada la temperatura de la caldera; fotos propias IMG-DRY-03 e IMG-DRY-04 (ver PHOTO-SHOT-LIST.md)."
+    "text": "Pendiente del propietario: ajustes reales de uso del equipo (presión, distancia, tiempos de aplicación); comprobar el uso previsto de HPMed en aplicación profesional (la ficha de seguridad lo describe como detergente para aparatos domésticos Polti); confirmar de forma documentada la temperatura de la caldera."
    }
   ],
   "faq": [
@@ -262,6 +274,18 @@
     "html": "<p>The equipment is a <strong>Polti Cimex Eradicator</strong>. According to the manufacturer:</p><ul><li>steam pressure of up to 4 bar;</li><li>dry superheated steam of up to 180 °C at the nozzle outlet, in a patented expansion chamber;</li><li>a 2-litre tank and 2250 W of power;</li><li>steam flow adjustable from 0 to 110 g/min.</li></ul><p>These are manufacturer figures, not temperatures measured on the treated surface: boiler pressure, steam temperature at the outlet and the temperature reached by the surface are different quantities. The last depends on the distance, the application time, the material and the steam flow, and no general figure is given. The technician’s actual settings and application times are not published.</p><p>Sometimes the steam is applied together with <strong>HPMed</strong>, a Polti detergent for this equipment, based on water and alcohol. According to the manufacturer it removes odours; no insecticidal, disinfectant or lasting protective effect is claimed for it. That is why the exact wording is “no insecticide in the steam step”, not “water only” or “chemical-free”.</p>"
    },
    {
+    "type": "video",
+    "video": "vapor-seco-cabezal-polti-sofa-infestado",
+    "alt": {
+     "es": "Cabezal de vapor Polti sobre el suelo junto a la base de un sofá, con numerosas chinches y excrementos en el suelo",
+     "en": "Polti steam head on the floor next to the base of a sofa, with many bed bugs and droppings on the floor"
+    },
+    "caption": {
+     "es": "Vídeo corto, sin audio: el cabezal de vapor Polti junto a un sofá con una infestación real. Foto propia.",
+     "en": "Short video, no sound: the Polti steam head next to a sofa with a real infestation. Own footage."
+    }
+   },
+   {
     "type": "figure",
     "image": "IMG-DRY-01"
    },
@@ -357,7 +381,7 @@
    },
    {
     "type": "todo",
-    "text": "Owner input needed: actual equipment settings (pressure, distance, application times); check the intended professional use of HPMed (the safety data sheet describes it as a detergent for Polti household appliances); documented confirmation of the boiler temperature; own photos IMG-DRY-03 and IMG-DRY-04 (see PHOTO-SHOT-LIST.md)."
+    "text": "Owner input needed: actual equipment settings (pressure, distance, application times); check the intended professional use of HPMed (the safety data sheet describes it as a detergent for Polti household appliances); documented confirmation of the boiler temperature."
    }
   ],
   "faq": [

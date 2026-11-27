@@ -45,6 +45,10 @@
     "image": "IMG-ENT-HID-01"
    },
    {
+    "type": "figure",
+    "image": "IMG-ENT-HID-02"
+   },
+   {
     "type": "text",
     "id": "infestaciones-grandes",
     "h2": "En infestaciones grandes",
@@ -119,6 +123,10 @@
    {
     "type": "figure",
     "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-02"
    },
    {
     "type": "text",

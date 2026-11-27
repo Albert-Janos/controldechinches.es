@@ -19,6 +19,12 @@
  "es": {
   "blocks": [
    {
+    "type": "text",
+    "id": "como-crece-el-atlas",
+    "h2": "Un atlas que crece poco a poco",
+    "html": "<p>Este atlas reúne fotografías reales de infestaciones: excrementos, mudas, escondites y casos avanzados. Las fotografías de huevos, ninfas y ejemplares con escala se añadirán cuando haya material adecuado; mientras tanto, la descripción y los tamaños de cada fase están en <a href=\"{{url:PG-043}}\">el ciclo de vida de la chinche de cama</a> y los indicios más habituales, en <a href=\"{{url:PG-041}}\">cómo saber si tienes chinches</a>.</p>"
+   },
+   {
     "type": "gallery",
     "h2": "Atlas fotográfico",
     "filters": [
@@ -45,6 +51,10 @@
      {
       "id": "escondites",
       "label": "Escondites"
+     },
+     {
+      "id": "infestaciones",
+      "label": "Infestaciones avanzadas"
      }
     ],
     "groups": [
@@ -105,12 +115,20 @@
        "IMG-ENT-HID-05",
        "IMG-ENT-HID-06"
       ]
+     },
+     {
+      "id": "infestaciones",
+      "h3": "Infestaciones avanzadas",
+      "images": [
+       "IMG-INS-06",
+       "IMG-IPM-02"
+      ]
      }
     ]
    },
    {
     "type": "todo",
-    "text": "Fotos propias pendientes (ver PHOTO-SHOT-LIST.md). Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces figura como pendiente."
+    "text": "Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces no se indican."
    }
   ],
   "faq": [],
@@ -118,13 +136,19 @@
   "breadcrumb": [],
   "url": "/atlas-chinches/",
   "title": "Atlas fotográfico de chinches de cama | Control de Chinches",
-  "description": "Fotografías propias para identificar adultos, huevos, ninfas, mudas, excrementos y escondites de chinches de cama, con escala y criterios de identificación.",
+  "description": "Fotografías reales de infestaciones de chinches de cama: excrementos, mudas, escondites y casos avanzados, con notas para reconocerlos. El atlas se amplía poco a poco.",
   "h1": "Atlas fotográfico de chinches de cama",
   "eyebrow": "Atlas",
-  "lead": "Fotos propias con escala y notas de identificación. Si dudas de lo que has encontrado, envíanos una foto."
+  "lead": "Fotos reales de infestaciones, con notas para reconocerlas. Si dudas de lo que has encontrado, envíanos una foto."
  },
  "en": {
   "blocks": [
+   {
+    "type": "text",
+    "id": "how-the-atlas-grows",
+    "h2": "An atlas that grows over time",
+    "html": "<p>This atlas gathers real photographs of infestations: excreta, moults, hiding places and advanced cases. Photographs of eggs, nymphs and specimens with a scale will be added when suitable material is available; meanwhile, the description and sizes of each stage are in <a href=\"{{url:PG-043}}\">the bed bug life cycle</a> and the most common signs in <a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a>.</p>"
+   },
    {
     "type": "gallery",
     "h2": "Photo atlas",
@@ -152,6 +176,10 @@
      {
       "id": "escondites",
       "label": "Hiding places"
+     },
+     {
+      "id": "infestaciones",
+      "label": "Advanced infestations"
      }
     ],
     "groups": [
@@ -212,12 +240,20 @@
        "IMG-ENT-HID-05",
        "IMG-ENT-HID-06"
       ]
+     },
+     {
+      "id": "infestaciones",
+      "h3": "Advanced infestations",
+      "images": [
+       "IMG-INS-06",
+       "IMG-IPM-02"
+      ]
      }
     ]
    },
    {
     "type": "todo",
-    "text": "Own photos pending (see PHOTO-SHOT-LIST.md). Each caption will state stage, sex and species only after entomological verification; until then it is marked pending."
+    "text": "Each caption will state stage, sex and species only after entomological verification; until then they are not stated."
    }
   ],
   "faq": [],
@@ -225,9 +261,9 @@
   "breadcrumb": [],
   "url": "/en/bed-bug-atlas/",
   "title": "Bed bug photo atlas | Control de Chinches",
-  "description": "Our own photographs to identify adult bed bugs, eggs, nymphs, moults, excreta and hiding places, with scale and identification notes.",
+  "description": "Real photographs of bed bug infestations: excreta, moults, hiding places and advanced cases, with notes on how to recognise them. The atlas grows over time.",
   "h1": "Bed bug photo atlas",
   "eyebrow": "Atlas",
-  "lead": "Our own photos with scale and identification notes. If you are unsure about what you found, send us a photo."
+  "lead": "Real photos of infestations, with notes on how to recognise them. If you are unsure about what you found, send us a photo."
  }
 }

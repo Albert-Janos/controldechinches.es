@@ -61,17 +61,8 @@
     ]
    },
    {
-    "type": "docs",
-    "h2": "Formación y documentos",
-    "images": [
-     "IMG-CRED-01",
-     "IMG-CRED-02",
-     "IMG-CRED-03"
-    ]
-   },
-   {
     "type": "todo",
-    "text": "Pendiente: publicación autorizada del documento de la cualificación (con datos personales ocultados de forma irreversible), resto de certificados internacionales y sus documentos (solo se ha aportado el de Lantra Awards), y estado de la actividad en España (LGL-01/07). El número de registro húngaro no se publica por decisión del propietario, ni en el texto ni en los datos estructurados."
+    "text": "Los documentos de la cualificación húngara y los registros no se publican por ahora (decisión del propietario); solo se muestra el certificado de Lantra Awards, con el código de verificación oculto. Pendiente: estado de la actividad en España y reconocimiento de la cualificación (LGL-01/07). El número de registro húngaro no se publica, ni en el texto ni en los datos estructurados."
    },
    {
     "type": "docs",
@@ -174,17 +165,8 @@
     ]
    },
    {
-    "type": "docs",
-    "h2": "Training and documents",
-    "images": [
-     "IMG-CRED-01",
-     "IMG-CRED-02",
-     "IMG-CRED-03"
-    ]
-   },
-   {
     "type": "todo",
-    "text": "Pending: authorised publication of the qualification document (with personal data irreversibly hidden), the remaining international certificates and their documents (only the Lantra Awards one has been supplied), and the status of the activity in Spain (LGL-01/07). The Hungarian registration number is not published, by owner decision, neither in the text nor in the structured data."
+    "text": "The Hungarian qualification documents and registers are not published for now (owner decision); only the Lantra Awards certificate is shown, with its verification code hidden. Pending: status of the activity in Spain and recognition of the qualification (LGL-01/07). The Hungarian registration number is not published, neither in the text nor in the structured data."
    },
    {
     "type": "docs",

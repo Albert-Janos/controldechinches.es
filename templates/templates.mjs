@@ -51,12 +51,13 @@ function renderBody(ctx, blocks) {
   const toc = [], parts = [];
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i], next = blocks[i + 1];
-    if (b.h2 && b.toc !== false) toc.push([b.id || slug(b.h2), b.h2]);
+    const addToc = rendered => { if (b.h2 && b.toc !== false && rendered) toc.push([b.id || slug(b.h2), b.h2]); }; // a block that renders nothing (all its pictures missing) gets no table-of-contents entry
     // a vertical portrait straight after a text block sits BESIDE that text on desktop (stacked and compact on phones)
-    if (b.type === 'text' && next?.type === 'figure' && imgKind(ctx, next.image).startsWith('portrait')) {
-      parts.push(`<div class="sx-split">${renderBlock(ctx, b, i)}${renderBlock(ctx, next, i + 1)}</div>`); i++; continue;
+    if (b.type === 'text' && ((next?.type === 'figure' && imgKind(ctx, next.image).startsWith('portrait')) || next?.type === 'video')) {
+      const t = renderBlock(ctx, b, i), f = renderBlock(ctx, next, i + 1); addToc(t);
+      parts.push(f ? `<div class="sx-split">${t}${f}</div>` : t); i++; continue; // portrait/video missing: the text simply stands alone
     }
-    parts.push(renderBlock(ctx, b, i));
+    const h = renderBlock(ctx, b, i); addToc(h); parts.push(h);
   }
   return { html: parts.join('\n'), toc };
 }

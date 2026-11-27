@@ -45,3 +45,10 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - 28 feltöltött kép auditja, 27 feldolgozva (WebP+AVIF, spanyol SEO-fájlnevek, ES/EN alt, kitakarás/vágás, metaadat törölve), beillesztve a megfelelő oldalakra/szekciókba (szolgáltatások, felderítés, IPM, ingatlantípusok, városi oldalak, bemutatkozás, PG-073, tudásközpont).
 - Képeredet jelölés (`provenance`), illusztrációk külön felirattal; opcionális képek production-ben kihagyva; `MISSING-IMAGES.md` (hiánylista); új eszközök: `audit-raw-images`, `fill-image-assignments`, `image-report`, `list-missing-images`, `build-missing-images-doc`, `shot-element`.
 - `tools/audit-layout.mjs`: lusta képek betöltése, törött kép, CLS/LCP és képbájt mérés.
+
+## 2026-11-27 — képek 2. kör: forrásnyilatkozat, helyőrzők megszüntetése, videó (`develop/seo`, nincs merge/deploy/FTP; Draft + noindex változatlan)
+- Képforrások lezárva (Unsplash / AI / saját); `provenance`: own / ai / unsplash; az Altea-kép kivéve (felismerhető személyek).
+- **Nincs üres képhely sehol** (előnézetben sem); hiányzó kép nem blokkol; tartalomjegyzék és atlasz-szűrők a megjelenő tartalomhoz igazítva; PG-016: okmányok kihagyva (csak Lantra).
+- Fertőzöttségi fotók újra elosztva (PG-041, 044, 053, 059, 070, 073); PG-070 atlasz szöveges kiegészítéssel, hiányzó elemek nélkül.
+- **Videó** a szárazgőzös oldalon (ES/EN): WebM 72 KB, hang/metaadat nélkül, kattintásra indul, poster WebP/AVIF; új: `tools/process-video.mjs`, `tools/video-frames.mjs`, `tests/test-video.mjs`, `data/videos.json`; `tools/serve.mjs`: video MIME + Range.
+- `MISSING-IMAGES.md` újraírva: 3 kért új kép (mind ajánlott); OWNER-INPUT 14. szakasz lezárva.

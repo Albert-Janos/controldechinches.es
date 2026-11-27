@@ -1,0 +1,18 @@
+{
+ "vapor-seco-cabezal-polti-sofa-infestado": {
+  "name": "vapor-seco-cabezal-polti-sofa-infestado",
+  "mime": "video/webm;codecs=vp9",
+  "width": 540,
+  "height": 960,
+  "duration": 0.8,
+  "sourceWidth": 1080,
+  "sourceHeight": 1920,
+  "bytes": 73793,
+  "audio": false,
+  "posterWidths": [
+   360,
+   540
+  ],
+  "originalKB": 1888
+ }
+}

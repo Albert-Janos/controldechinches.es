@@ -927,7 +927,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-INS-02": {
   "id": "IMG-INS-02",
@@ -1031,7 +1031,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-INS-06": {
   "id": "IMG-INS-06",
@@ -1111,7 +1111,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-IPM-02": {
   "id": "IMG-IPM-02",
@@ -1190,7 +1190,7 @@
    "width": 1200,
    "height": 900
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-IPM-04": {
   "id": "IMG-IPM-04",
@@ -1227,7 +1227,7 @@
    "width": 1200,
    "height": 900
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-IPM-05": {
   "id": "IMG-IPM-05",
@@ -1462,7 +1462,7 @@
    "width": 1600,
    "height": 800
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-ENT-ADU-02": {
   "id": "IMG-ENT-ADU-02",
@@ -2105,7 +2105,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "illustration"
+  "provenance": "ai"
  },
  "IMG-B2B-02": {
   "id": "IMG-B2B-02",
@@ -2143,7 +2143,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-B2B-03": {
   "id": "IMG-B2B-03",
@@ -2269,7 +2269,7 @@
    "width": 1448,
    "height": 1086
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-MYTH-01": {
   "id": "IMG-MYTH-01",
@@ -2524,7 +2524,7 @@
    "width": 600,
    "height": 400
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-LOC-ALC-02": {
   "id": "IMG-LOC-ALC-02",
@@ -2561,7 +2561,7 @@
    "width": 1200,
    "height": 900
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-LOC-ALC-03": {
   "id": "IMG-LOC-ALC-03",
@@ -2618,7 +2618,7 @@
    "width": 600,
    "height": 400
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-LOC-BEN-02": {
   "id": "IMG-LOC-BEN-02",
@@ -2697,7 +2697,7 @@
    "width": 600,
    "height": 338
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-LOC-TOR-02": {
   "id": "IMG-LOC-TOR-02",
@@ -2820,7 +2820,7 @@
    "width": 600,
    "height": 400
   },
-  "provenance": "unverified"
+  "provenance": "unsplash"
  },
  "IMG-LOC-CAL-02": {
   "id": "IMG-LOC-CAL-02",
@@ -2893,35 +2893,22 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   600,
-   799
+   3,
+   2
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Plaza de la iglesia de cúpulas azules de Altea con terrazas de cafés",
-   "en": "Square in front of the blue-domed church in Altea with café terraces"
+   "es": "Vista de Altea (foto propia)",
+   "en": "View of Altea (own photo)"
   },
   "caption": {
-   "es": "Altea: plaza de la iglesia.",
-   "en": "Altea: the church square."
+   "es": "Vista de Altea (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Altea (own photo). Own photo [date and place to be confirmed]."
   },
   "seo": "altea-plaza-iglesia-cupulas-azules-{600}.avif|webp",
   "kind": "photo",
-  "status": "ready",
-  "variants": {
-   "dir": "/assets/img/locations/",
-   "base": "altea-plaza-iglesia-cupulas-azules",
-   "widths": [
-    600
-   ],
-   "formats": [
-    "avif",
-    "webp"
-   ],
-   "width": 600,
-   "height": 799
-  },
-  "provenance": "unverified"
+  "status": "placeholder",
+  "variants": null
  },
  "IMG-LOC-ALT-02": {
   "id": "IMG-LOC-ALT-02",

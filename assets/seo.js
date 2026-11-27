@@ -30,6 +30,20 @@
     dlg.addEventListener('close', () => opener?.focus());
   }
 
+  // ---------- click-to-load video: build the <video> only when the visitor presses play ----------
+  document.querySelectorAll('.sx-video[data-video]').forEach(fig => {
+    const btn = fig.querySelector('.sx-video-btn'); if (!btn) return;
+    const probe = document.createElement('video');
+    if (!probe.canPlayType || !probe.canPlayType('video/webm')) { fig.classList.add('sx-video--nosupport'); btn.disabled = true; btn.style.cursor = 'default'; return; }
+    btn.addEventListener('click', () => {
+      const v = document.createElement('video');
+      v.src = fig.dataset.video; v.poster = fig.dataset.poster; v.width = Number(fig.dataset.width); v.height = Number(fig.dataset.height);
+      v.controls = true; v.loop = true; v.muted = true; v.playsInline = true; v.preload = 'auto'; v.setAttribute('aria-label', btn.getAttribute('aria-label') || '');
+      v.style.aspectRatio = fig.dataset.width + ' / ' + fig.dataset.height;
+      btn.replaceWith(v); v.play().catch(() => { /* the visitor can press the native play button */ }); v.focus();
+    }, { once: true });
+  });
+
   // ---------- print button (document forms) ----------
   document.querySelectorAll('[data-print]').forEach(b => b.addEventListener('click', () => window.print()));
 

@@ -145,9 +145,10 @@ export function imgKind(ctx, id, usage = 'body') {
   return 'photo';
 }
 const SIZES = { hero: '(min-width: 990px) 54rem, 100vw', photo: '(min-width: 990px) 46rem, 100vw', macro: '(min-width: 990px) 40rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', 'portrait-detail': '(max-width: 760px) 18rem, 24rem', illustration: '(min-width: 990px) 46rem, 100vw' };
-// Optional visuals (inventory priority P2/P3/OPT) whose photo is still missing are simply left out of a PRODUCTION build; in preview
-// they stay visible as dev placeholders. P0/P1 placeholders are never skipped: they keep blocking publication (validator + gate).
-export const skipOptional = (ctx, id) => ctx.mode === 'production' && ctx.images[id]?.status !== 'ready' && /^(P2|P3|OPT)/.test(ctx.images[id]?.priority || '');
+// Owner decision (image package 2): a missing photo is NEVER a publication blocker and NEVER shows as an empty placeholder (preview or
+// production). A slot whose image is not ready is simply left out and the section is laid out without it. The list of wanted photos
+// lives in docs/seo/MISSING-IMAGES.md. (Ids that are not in the manifest at all are still flagged, so typos are caught.)
+export const skipOptional = (ctx, id) => !!ctx.images[id] && ctx.images[id].status !== 'ready';
 export function figure(ctx, id, opts = {}) {
   if (skipOptional(ctx, id)) return '';
   const kind = opts.kind || imgKind(ctx, id, opts.usage), cap = ctx.images[id]?.caption?.[ctx.lang];
@@ -185,6 +186,7 @@ export function renderBlock(ctx, b, i) {
       const li = ctx.site.serviceAreas.confirmed.map(t => { const pid = cp[t], u = pid && ctx.included.has(pid) && pageUrl(ctx, pid); return `<li>${u ? `<a href="${u}">${esc(t)}</a>` : esc(t)}</li>`; }).join('');
       return `<section class="sx-block">${heading(b, id)}${b.intro ? `<p>${b.intro}</p>` : ''}<ul class="sx-towns">${li}</ul></section>`;
     }
+    case 'video': return videoBlock(ctx, b);
     case 'docform': return docForm(ctx, b, id);
     case 'print': return '<p class="sx-noprint"><button type="button" class="button yellow" data-print>' + esc(b.label) + '</button></p>';
     case 'faq': return faqBlock(ctx, b, id);
@@ -210,6 +212,14 @@ function priceTable(ctx, b, id, pr) {
   const rows = c.map((v, i) => `<tr><th scope="row">${i + 1} ${esc(i ? ui.bedrooms : ui.bedroom)}</th><td>${m(v)}</td></tr>`).join('') + `<tr><th scope="row">${esc(ui.extraBedroom)}</th><td>+${m(p.chemical.additionalBedroom)}</td></tr>`;
   return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}<div class="sx-pricetable"><div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(ui.chemVisit)}</caption><thead><tr><th scope="col">${esc(ui.bedroomsAffected)}</th><th scope="col">${esc(ui.price)}</th></tr></thead><tbody>${rows}</tbody></table></div>${extrasTable(ctx)}<div class="sx-price-steamrow"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${m(p.drySteamStandalone.from)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
 }
+// Click-to-load video: the page ships only a small poster image (lazy). The <video> element is created by assets/seo.js on click
+// (preload metadata, controls, loop, muted, NO autoplay), so opening the page never downloads video data. Reserved aspect ratio = no CLS.
+function videoBlock(ctx, b) {
+  const v = ctx.videos?.[b.video]; if (!v) throw new Error('unknown video ' + b.video);
+  const { lang, ui } = ctx, base = '/assets/video/' + v.name, alt = b.alt[lang], cap = b.caption[lang];
+  const set = f => v.posterWidths.map(w => `${base}-poster-${w}.${f} ${w}w`).join(', '), sizes = '(max-width: 760px) 13rem, 16rem', big = v.posterWidths.at(-1);
+  return `<section class="sx-block"><figure class="sx-figure sx-video" data-video="${base}.webm" data-width="${v.width}" data-height="${v.height}" data-poster="${base}-poster-${big}.webp"><button type="button" class="sx-video-btn" aria-label="${esc(ui.video.play)}: ${esc(cap)}" style="aspect-ratio:${v.width}/${v.height}"><picture><source type="image/avif" srcset="${set('avif')}" sizes="${sizes}"><source type="image/webp" srcset="${set('webp')}" sizes="${sizes}"><img src="${base}-poster-${big}.webp" srcset="${set('webp')}" sizes="${sizes}" width="${v.width}" height="${v.height}" alt="${esc(alt)}" loading="lazy" decoding="async"></picture><span class="sx-video-icon" aria-hidden="true"></span></button><noscript><p class="sx-tool-note"><a class="text-link" href="${base}.webm">${esc(ui.video.play)}</a></p></noscript><figcaption>${esc(cap)}</figcaption></figure></section>`;
+}
 function faqBlock(ctx, b, id) {
   const group = (g, i) => `<div class="sx-faq-group">${g.h3 ? `<h3>${esc(g.h3)}</h3>` : ''}<div class="questions">${g.items.map((q, j) => `<details name="faq-${i}"${i === 0 && j === 0 && b.open ? ' open' : ''}><summary>${esc(q.q)}</summary><p>${q.a}</p></details>`).join('')}</div></div>`;
   const groups = b.groups || [{ items: b.items }];
@@ -217,7 +227,8 @@ function faqBlock(ctx, b, id) {
 }
 function galleryBlock(ctx, b, id) {
   const { ui, lang } = ctx;
-  const filters = b.filters ? `<ul class="sx-filters">${b.filters.map(f => `<li><a href="#${f.id}">${esc(f.label)}</a></li>`).join('')}</ul>` : '';
+  const liveGroups = new Set((b.groups || []).filter(g => g.images.some(im => !skipOptional(ctx, im))).map(g => g.id));
+  const filters = b.filters && liveGroups.size ? `<ul class="sx-filters">${b.filters.filter(f => liveGroups.has(f.id)).map(f => `<li><a href="#${f.id}">${esc(f.label)}</a></li>`).join('')}</ul>` : '';
   const item = im => {
     const e = ctx.images[im], ready = e?.status === 'ready', v = e?.variants;
     const href = ready ? `${v.dir}${v.base}-${v.widths.at(-1)}.webp` : `#${im}`;

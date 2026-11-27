@@ -12,7 +12,7 @@ const here = fileURLToPath(new URL('.', import.meta.url));
 const root = normalize(process.argv[3] || join(here, '..'));
 const port = Number(process.argv[2] || 4173);
 const blocked = ['.git', 'docs', 'tools', 'tests', 'data', 'content', 'templates', 'raw-images', '_archive-private', 'reports', 'node_modules', '.claude'];
-const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.ico': 'image/x-icon', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2' };
+const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.ico': 'image/x-icon', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2', '.mp4': 'video/mp4', '.webm': 'video/webm' };
 
 const compressible = /^(text\/|application\/(json|xml|javascript)|image\/svg)/;
 const gz = new Map();
@@ -27,6 +27,14 @@ async function send(res, code, file, req) {
     else headers['Cache-Control'] = 'public, max-age=0, must-revalidate';
     if (compressible.test(type) && /gzip/.test(req?.headers['accept-encoding'] || '')) { const k = file + body.length; if (!gz.has(k)) gz.set(k, gzipSync(body)); body = gz.get(k); headers['Content-Encoding'] = 'gzip'; headers['Vary'] = 'Accept-Encoding'; }
   }
+  // byte ranges (what Apache does for video): lets <video preload="metadata"> fetch only the start of the file
+  const rg = /^bytes=(\d*)-(\d*)$/.exec(req?.headers.range || '');
+  if (rg && /^video\//.test(type) && code === 200) {
+    const total = body.length, start = rg[1] === '' ? Math.max(0, total - Number(rg[2])) : Number(rg[1]), end = rg[1] !== '' && rg[2] !== '' ? Math.min(Number(rg[2]), total - 1) : total - 1;
+    res.writeHead(206, { ...headers, 'Accept-Ranges': 'bytes', 'Content-Range': `bytes ${start}-${end}/${total}`, 'Content-Length': end - start + 1 });
+    return res.end(body.subarray(start, end + 1));
+  }
+  if (/^video\//.test(type)) headers['Accept-Ranges'] = 'bytes';
   res.writeHead(code, headers);
   res.end(body);
 }

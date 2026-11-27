@@ -32,9 +32,10 @@ export function makeContext({ mode, pageDirs, simulatePublished }) {
   const site = readJson('data/site.json'), prices = readJson('data/prices.json');
   const images = buildManifest(), pages = loadPages(pageDirs);
   const included = new Set(simulatePublished ? [...simulatePublished].filter(id => pages[id]) : Object.values(pages).filter(p => mode === 'preview' || site.indexableStatuses.includes(p.status)).map(p => p.id));
+  const videos = existsSync(join(root, 'data/videos.json')) ? readJson('data/videos.json') : {};
   const urlIndex = {}; // every generated URL (published or not) -> page id, so templates can recognise links to unpublished pages
   for (const p of Object.values(pages)) for (const l of ['es', 'en']) if (p[l]) urlIndex[p[l].url] = p.id;
-  return { site, prices, images, pages, included, urlIndex, mode, infographics };
+  return { site, prices, images, videos, pages, included, urlIndex, mode, infographics };
 }
 export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['data/pages'], clean = true, simulatePublished } = {}) {
   const base = makeContext({ mode, pageDirs, simulatePublished });

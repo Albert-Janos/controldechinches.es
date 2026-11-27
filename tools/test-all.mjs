@@ -13,6 +13,7 @@ const steps = [
   ['content consistency', 'tests/test-content-consistency.mjs'],
   ['templates (browser)', 'tests/test-templates.mjs'],
   ['identifier tool PG-071', 'tests/test-identifier.mjs'],
+  ['video block PG-013', 'tests/test-video.mjs'],
 ];
 let failed = [];
 for (const [name, file] of steps) {
