@@ -22,6 +22,23 @@
     "html": "<p>Cada caso recoge la población, el tipo de inmueble, los indicios, el método aplicado, las fotos propias, el seguimiento y un resultado comprobable. Los casos de Hungría se indican como tales.</p>"
    },
    {
+    "type": "text",
+    "id": "fotografias-de-infestaciones-reales",
+    "h2": "Fotografías de infestaciones reales",
+    "html": "<p>Estas fotografías documentan infestaciones reales de chinches de cama. No forman un caso: se muestran por separado y no se indican lugar, fecha, método ni resultado del tratamiento. Los casos completos se publicarán solo cuando estén documentados y autorizados por escrito.</p>"
+   },
+   {
+    "type": "gallery",
+    "images": [
+     "IMG-INS-06",
+     "IMG-IPM-02",
+     "IMG-ENT-HID-01",
+     "IMG-ENT-HID-02",
+     "IMG-ENT-EXC-02",
+     "IMG-ENT-MOU-01"
+    ]
+   },
+   {
     "type": "todo",
     "text": "Sin casos publicables todavía. Esta página no se indexará hasta que exista al menos un caso real documentado y autorizado por escrito (CASE-STUDY-STANDARD, LGL-10)."
    }
@@ -43,6 +60,23 @@
     "id": "criteria",
     "h2": "How we document a case",
     "html": "<p>Each case records the town, property type, signs, method applied, our own photos, follow-up and a verifiable outcome. Cases from Hungary are labelled as such.</p>"
+   },
+   {
+    "type": "text",
+    "id": "photographs-of-real-infestations",
+    "h2": "Photographs of real infestations",
+    "html": "<p>These photographs document real bed bug infestations. They do not form a case: they are shown separately and no place, date, method or treatment result is stated. Full cases will be published only when documented and authorised in writing.</p>"
+   },
+   {
+    "type": "gallery",
+    "images": [
+     "IMG-INS-06",
+     "IMG-IPM-02",
+     "IMG-ENT-HID-01",
+     "IMG-ENT-HID-02",
+     "IMG-ENT-EXC-02",
+     "IMG-ENT-MOU-01"
+    ]
    },
    {
     "type": "todo",

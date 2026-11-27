@@ -139,13 +139,17 @@ export function imgKind(ctx, id, usage = 'body') {
   const e = ctx.images[id]; if (!e) return 'photo';
   if (e.kind === 'infographic') return 'illustration';
   const [w, h] = e.aspect || [3, 2];
-  if (h > w) return 'portrait';
+  if (h > w) return /^IMG-ENT/.test(id) ? 'portrait-detail' : 'portrait'; // identification photos keep more width (detail matters)
   if (usage === 'hero') return 'hero';
   if (/^entomology/.test(e.folder || '')) return 'macro';
   return 'photo';
 }
-const SIZES = { hero: '(min-width: 990px) 54rem, 100vw', photo: '(min-width: 990px) 46rem, 100vw', macro: '(min-width: 990px) 40rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', illustration: '(min-width: 990px) 46rem, 100vw' };
+const SIZES = { hero: '(min-width: 990px) 54rem, 100vw', photo: '(min-width: 990px) 46rem, 100vw', macro: '(min-width: 990px) 40rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', 'portrait-detail': '(max-width: 760px) 18rem, 24rem', illustration: '(min-width: 990px) 46rem, 100vw' };
+// Optional visuals (inventory priority P2/P3/OPT) whose photo is still missing are simply left out of a PRODUCTION build; in preview
+// they stay visible as dev placeholders. P0/P1 placeholders are never skipped: they keep blocking publication (validator + gate).
+export const skipOptional = (ctx, id) => ctx.mode === 'production' && ctx.images[id]?.status !== 'ready' && /^(P2|P3|OPT)/.test(ctx.images[id]?.priority || '');
 export function figure(ctx, id, opts = {}) {
+  if (skipOptional(ctx, id)) return '';
   const kind = opts.kind || imgKind(ctx, id, opts.usage), cap = ctx.images[id]?.caption?.[ctx.lang];
   return `<figure class="sx-figure sx-figure--${kind}">${picture(ctx, id, { ...opts, sizes: opts.sizes || SIZES[kind] })}${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`;
 }
@@ -165,8 +169,8 @@ export function renderBlock(ctx, b, i) {
     case 'proscons': return `<section class="sx-block">${heading(b, id)}<div class="sx-proscons"><div class="sx-pros"><h3>${esc(b.prosTitle || ui.prosTitle)}</h3><ul>${b.pros.map(x => `<li>${x}</li>`).join('')}</ul></div><div class="sx-cons"><h3>${esc(b.consTitle || ui.consTitle)}</h3><ul>${b.cons.map(x => `<li>${x}</li>`).join('')}</ul></div></div></section>`;
     case 'roles': return `<section class="sx-block">${heading(b, id)}<div class="sx-roles">${b.columns.map(c => `<div><h3>${esc(c.title)}</h3><ul>${c.items.map(x => `<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
     case 'table': return `<section class="sx-block">${heading(b, id)}<div class="sx-tablewrap" tabindex="0" role="region" aria-label="${esc(b.caption || b.h2 || '')}"><table class="sx-table">${b.caption ? `<caption>${esc(b.caption)}</caption>` : ''}<thead><tr>${b.head.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, j) => j === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
-    case 'figure': return `<section class="sx-block">${figure(ctx, b.image, { sizes: b.sizes, kind: b.kind })}</section>`;
-    case 'infographic': return `<section class="sx-block"><figure class="sx-figure sx-figure--illustration">${ctx.infographics?.[b.id] ? ctx.infographics[b.id](ctx) : picture(ctx, b.id)}<figcaption>${esc(ctx.images[b.id]?.caption?.[lang] || ui.infographic)}</figcaption></figure></section>`;
+    case 'figure': if (skipOptional(ctx, b.image)) return ''; return `<section class="sx-block">${figure(ctx, b.image, { sizes: b.sizes, kind: b.kind })}</section>`;
+    case 'infographic': if (!ctx.infographics?.[b.id] && skipOptional(ctx, b.id)) return ''; return `<section class="sx-block"><figure class="sx-figure sx-figure--illustration">${ctx.infographics?.[b.id] ? ctx.infographics[b.id](ctx) : picture(ctx, b.id)}<figcaption>${esc(ctx.images[b.id]?.caption?.[lang] || ui.infographic)}</figcaption></figure></section>`;
     case 'cards': return `<section class="sx-block">${heading(b, id)}<div class="sx-cards">${b.items.map(c => { const link = c.href && isLive(ctx, c.href); return (link ? `<a class="sx-card" href="${c.href}">` : '<div class="sx-card">') + `<h3>${esc(c.title)}</h3><p>${esc(c.text)}</p>${link ? `<span class="sx-more">${esc(ui.readMore)} →</span>` : ''}` + (link ? '</a>' : '</div>'); }).join('')}</div></section>`;
     case 'timeline': return `<section class="sx-block">${heading(b, id)}<ol class="sx-timeline">${b.items.map(t => `<li><strong>${esc(t.when)}</strong>${t.text}</li>`).join('')}</ol></section>`;
     case 'priceBox': {
@@ -186,7 +190,7 @@ export function renderBlock(ctx, b, i) {
     case 'faq': return faqBlock(ctx, b, id);
     case 'cta': return ctaBand(ctx, b.intensity, b.message);
     case 'gallery': return galleryBlock(ctx, b, id);
-    case 'docs': return `<section class="sx-block">${heading(b, id)}<ul class="sx-docs">${b.images.map(im => `<li><a href="${ctx.images[im]?.status === 'ready' ? `${ctx.images[im].variants.dir}${ctx.images[im].variants.base}-${ctx.images[im].variants.widths.at(-1)}.webp` : '#' + im}" data-lightbox="${im}">${picture(ctx, im, { sizes: '12rem' })}</a></li>`).join('')}</ul></section>`;
+    case 'docs': if (b.images.every(im => skipOptional(ctx, im))) return ''; return `<section class="sx-block">${heading(b, id)}<ul class="sx-docs">${b.images.filter(im => !skipOptional(ctx, im)).map(im => `<li><a href="${ctx.images[im]?.status === 'ready' ? `${ctx.images[im].variants.dir}${ctx.images[im].variants.base}-${ctx.images[im].variants.widths.at(-1)}.webp` : '#' + im}" data-lightbox="${im}">${picture(ctx, im, { sizes: '12rem' })}</a></li>`).join('')}</ul></section>`;
     case 'tool': return toolBlock(ctx, b, id);
     case 'hub': return b.groups.map((g, gi) => { // entries whose target is not published are hidden (an unlinked list entry is useless); empty groups disappear
       const items = g.items.filter(it => (it.pageId ? ctx.included.has(it.pageId) && pageUrl(ctx, it.pageId) : isLive(ctx, it.href)));
@@ -220,7 +224,8 @@ function galleryBlock(ctx, b, id) {
     const notes = JSON.stringify({ id: im, cap: e?.caption?.[lang] || '', notes: e?.notes?.[lang] || '', credit: e?.credit || '', scale: e?.scale || '' });
     return `<li id="${im}"><figure class="sx-figure"><a href="${href}" data-lightbox data-notes="${esc(notes)}">${picture(ctx, im, { sizes: '(min-width: 990px) 22rem, 50vw' })}</a><figcaption>${esc(e?.caption?.[lang] || '')}</figcaption></figure></li>`;
   };
-  const groups = b.groups || [{ images: b.images }];
+  const groups = (b.groups || [{ images: b.images }]).map(g => ({ ...g, images: g.images.filter(im => !skipOptional(ctx, im)) })).filter(g => g.images.length);
+  if (!groups.length) return '';
   return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${filters}${groups.map(g => `${g.id ? `<h3 id="${g.id}">${esc(g.h3)}</h3>` : ''}<ul class="sx-gallery">${g.images.map(item).join('')}</ul>`).join('')}</section>`;
 }
 function toolBlock(ctx, b, id) {

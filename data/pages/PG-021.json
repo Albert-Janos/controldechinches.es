@@ -37,6 +37,10 @@
     "html": "<p>El trabajo lo hace personalmente un técnico especializado solo en chinches de cama: entrevista, inspección, tratamiento y seguimiento. Este servicio se dirige sobre todo a viviendas de particulares.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-LOC-ALC-02"
+   },
+   {
     "type": "text",
     "id": "antes-de-pedir",
     "h2": "Antes de pedir presupuesto",
@@ -94,7 +98,8 @@
   "description": "Tratamiento de chinches de cama en Alicante para viviendas: valoración por WhatsApp, tratamiento químico dirigido, vapor seco o combinación.",
   "h1": "Chinches de cama en Alicante",
   "eyebrow": "Zona de servicio · Alicante",
-  "lead": "Servicio para particulares en Alicante: cuéntanos qué has visto y recibirás orientación por WhatsApp."
+  "lead": "Servicio para particulares en Alicante: cuéntanos qué has visto y recibirás orientación por WhatsApp.",
+  "heroImage": "IMG-LOC-ALC-01"
  },
  "en": {
   "blocks": [
@@ -103,6 +108,10 @@
     "id": "service-in-alicante",
     "h2": "The service in Alicante",
     "html": "<p>The work is done personally by a technician who specialises only in bed bugs: interview, inspection, treatment and follow-up. This service is aimed mainly at private homes.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-LOC-ALC-02"
    },
    {
     "type": "text",
@@ -162,6 +171,7 @@
   "description": "Bed bug treatment in Alicante for homes: assessment by WhatsApp, targeted chemical treatment, dry steam or a combination.",
   "h1": "Bed bugs in Alicante",
   "eyebrow": "Service area · Alicante",
-  "lead": "A service for private clients in Alicante: tell us what you have seen and you will get guidance by WhatsApp."
+  "lead": "A service for private clients in Alicante: tell us what you have seen and you will get guidance by WhatsApp.",
+  "heroImage": "IMG-LOC-ALC-01"
  }
 }

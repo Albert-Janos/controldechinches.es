@@ -59,3 +59,6 @@ A tulajdonos ezeket **vállalta**, de még **nem adta át**; a helyőrzők fejle
 | Fotóatlasz | `IMG-ENT-ADU-*`, `-EGG-*`, `-NYM-*`, `-MOU-*`, `-EXC-*`, `-HID-*` (matrac, ágykeret, búvóhelyek), `-SCALE-*` | makró: méretarány (vonalzó), torzítás/kivágás nélkül; faj/stádium nem AI-meghatározás |
 | Referenciák | valós, anonimizált esettanulmány-fotók | csak hozzájárulással; PG-073 üres marad |
 **Nem vállalt (opcionális javaslat, `OPT` az inventoryban):** saját városfotók (`IMG-LOC-*`: Alicante, Benidorm, Torrevieja), külön monitorozócsapda-sorozat (`IMG-IPM-04`, `IMG-IPM-MON-*`), külön védőfelszerelés-sorozat (`IMG-CHEM-03`). A városi oldalak ezek nélkül, szöveges herón működnek. Szabályok: nincs AI-generált esettanulmány-fotó, nincs stockfotó saját munkaként, a fotók eredete és felhasználási joga dokumentálandó.
+
+## I. Képcsomag átadása (2026-11-27) — állapot
+28 kép + 1 videó érkezett; **27 kép került feldolgozásra és beillesztésre** (30 képazonosító; 3 fájl két helyen is szerepel). Ami még hiányzik, azt a **`MISSING-IMAGES.md`** sorolja fel oldalra és szekcióra lebontva (A: üres képhelyek, B: cserélendő illusztrációk / jogtisztázandó képek, C: tervezett további fotók). Kötelező = P0/P1, opcionális = P2/P3/OPT.

@@ -21,7 +21,7 @@ export function buildManifest() {
       alt: { es: r.alt_es, en: r.alt_en }, caption: { es: r.caption_es, en: r.caption_en },
       seo: (r.optimized_filename || '').replace(/\.webp.*$/, '').replace(/\.svg$/, ''), kind: ig ? 'infographic' : 'photo', status: 'placeholder', variants: null };
     const p = processed[r.asset_id];
-    if (p) { e.status = 'ready'; e.variants = p.variants; e.aspect = [p.variants.width, p.variants.height]; if (p.scale) e.scale = p.scale; if (p.credit) e.credit = p.credit; if (p.notes) e.notes = p.notes; if (p.alt) e.alt = { ...e.alt, ...p.alt }; if (p.caption) e.caption = { ...e.caption, ...p.caption }; }
+    if (p) { e.status = 'ready'; e.variants = p.variants; e.aspect = [p.variants.width, p.variants.height]; if (p.provenance) e.provenance = p.provenance; if (p.scale) e.scale = p.scale; if (p.credit) e.credit = p.credit; if (p.notes) e.notes = p.notes; if (p.alt) e.alt = { ...e.alt, ...p.alt }; if (p.caption) e.caption = { ...e.caption, ...p.caption }; }
     out[r.asset_id] = e;
   }
   return out;

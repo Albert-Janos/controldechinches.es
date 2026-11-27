@@ -60,6 +60,13 @@ for (const p of Object.values(pages)) {
   const links = L => [...JSON.stringify(L).matchAll(/href=\\"([^\\"]+)\\"/g)].length;
   ok(links(E) === links(N), `${p.id}: number of inline links differs (ES ${links(E)} / EN ${links(N)})`);
 }
+// ---- images: a PRODUCTION render keeps only P0/P1 placeholders (optional visuals are left out); every placed photo is ready or a placeholder
+{ const pc = makeContext({ mode: 'production', pageDirs: ['data/pages'], simulatePublished: new Set(Object.keys(pages)) }); let left = 0, shown = 0;
+  for (const p of Object.values(pages)) for (const lang of ['es', 'en']) {
+    const html = renderPage({ ...pc, page: p, lang, ui: ui[lang] });
+    for (const m of html.matchAll(/data-image-id="([^"]+)"/g)) { left++; ok(/^P[01]/.test(pc.images[m[1]]?.priority || ''), `${p.id} ${lang}: optional placeholder ${m[1]} must not appear in a production render`); }
+    shown += (html.match(/<picture>/g) || []).length; }
+  ok(shown > 0 && left > 0, `production render still shows ready pictures (${shown}) and only required placeholders (${left})`); }
 // a hand-typed euro amount in page data would bypass the central price source
 for (const p of Object.values(pages)) { const raw = JSON.stringify([p.es, p.en]); const m = raw.match(/\d[\d.,]*\s?€|€\s?\d/g); ok(!m, `${p.id}: hand-typed price in page data (${m}) - use {{price:KEY}} tokens`); }
 console.log(failed ? `\n${failed} FAILED` : `\nCONTENT CONSISTENCY: all checks passed (${Object.keys(pages).length} pages x 2 languages)`);

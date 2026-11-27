@@ -37,6 +37,10 @@
     "html": "<p>En un apartamento turístico importa actuar con rapidez, con discreción y sin perder de vista las próximas llegadas. El servicio permite coordinar la fecha y el acceso, revisar las unidades contiguas cuando está justificado y documentar lo que se hizo. Detalles en <a href=\"{{url:PG-015}}\">prevención y monitorización para alojamientos</a>.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-B2B-01"
+   },
+   {
     "type": "text",
     "id": "detectar-a-tiempo",
     "h2": "Detectar a tiempo",
@@ -94,7 +98,8 @@
   "description": "Tratamiento de chinches en Benidorm con atención a apartamentos turísticos y gestores de alojamientos: coordinación con las llegadas, trabajo discreto y seguimiento.",
   "h1": "Chinches de cama en Benidorm",
   "eyebrow": "Zona de servicio · Benidorm",
-  "lead": "Pensado para apartamentos turísticos y gestores de alojamientos de Benidorm, y también para viviendas particulares."
+  "lead": "Pensado para apartamentos turísticos y gestores de alojamientos de Benidorm, y también para viviendas particulares.",
+  "heroImage": "IMG-LOC-BEN-01"
  },
  "en": {
   "blocks": [
@@ -103,6 +108,10 @@
     "id": "tourist-apartments-in-benidorm",
     "h2": "Tourist apartments in Benidorm",
     "html": "<p>In a tourist apartment it matters to act quickly, discreetly and with the next arrivals in mind. The service lets you coordinate the date and access, check adjacent units when justified and document what was done. Details in <a href=\"{{url:PG-015}}\">prevention and monitoring for accommodation</a>.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-B2B-01"
    },
    {
     "type": "text",
@@ -162,6 +171,7 @@
   "description": "Bed bug treatment in Benidorm with a focus on tourist apartments and accommodation managers: coordination with arrivals, discreet work and follow-up.",
   "h1": "Bed bugs in Benidorm",
   "eyebrow": "Service area · Benidorm",
-  "lead": "Designed for tourist apartments and accommodation managers in Benidorm, and for private homes too."
+  "lead": "Designed for tourist apartments and accommodation managers in Benidorm, and for private homes too.",
+  "heroImage": "IMG-LOC-BEN-01"
  }
 }

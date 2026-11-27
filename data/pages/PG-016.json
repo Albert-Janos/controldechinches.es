@@ -53,6 +53,10 @@
      {
       "when": "2026",
       "text": "Obtengo en Hungría la cualificación profesional de control de plagas sanitarias. Es una cualificación húngara: no la presento como habilitación oficial para operar en España ni como equivalente a una cualificación española."
+     },
+     {
+      "when": "Nov. 2026",
+      "text": "Finalizo el programa de formación en línea «Bed Bug Control» de Lantra Awards y recibo el certificado."
      }
     ]
    },
@@ -67,7 +71,7 @@
    },
    {
     "type": "todo",
-    "text": "Pendiente: publicación autorizada del documento de la cualificación (con datos personales ocultados de forma irreversible), lista exacta de certificados internacionales y sus documentos, y estado de la actividad en España (LGL-01/07). El número de registro húngaro no se publica por decisión del propietario, ni en el texto ni en los datos estructurados."
+    "text": "Pendiente: publicación autorizada del documento de la cualificación (con datos personales ocultados de forma irreversible), resto de certificados internacionales y sus documentos (solo se ha aportado el de Lantra Awards), y estado de la actividad en España (LGL-01/07). El número de registro húngaro no se publica por decisión del propietario, ni en el texto ni en los datos estructurados."
    },
    {
     "type": "docs",
@@ -162,6 +166,10 @@
      {
       "when": "2026",
       "text": "I obtain a Hungarian professional qualification in public-health pest control. It is a Hungarian qualification: I do not present it as an official authorisation to operate in Spain or as equivalent to a Spanish qualification."
+     },
+     {
+      "when": "Nov 2026",
+      "text": "I complete the “Bed Bug Control” online training programme from Lantra Awards and receive the certificate."
      }
     ]
    },
@@ -176,7 +184,7 @@
    },
    {
     "type": "todo",
-    "text": "Pending: authorised publication of the qualification document (with personal data irreversibly hidden), the exact list of international certificates and their documents, and the status of the activity in Spain (LGL-01/07). The Hungarian registration number is not published, by owner decision, neither in the text nor in the structured data."
+    "text": "Pending: authorised publication of the qualification document (with personal data irreversibly hidden), the remaining international certificates and their documents (only the Lantra Awards one has been supplied), and the status of the activity in Spain (LGL-01/07). The Hungarian registration number is not published, by owner decision, neither in the text nor in the structured data."
    },
    {
     "type": "docs",

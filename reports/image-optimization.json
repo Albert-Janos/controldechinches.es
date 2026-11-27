@@ -1,0 +1,458 @@
+{
+ "rawFilesTotalMB": 22.8,
+ "rawUsedMB": 22.6,
+ "generatedTotalMB": 9,
+ "items": [
+  {
+   "id": "IMG-ABOUT-02",
+   "file": "01-rolam/albert-janos.webp",
+   "rawKB": 653,
+   "generatedKB": 118,
+   "smallestServedKB": 5,
+   "largestServedKB": 31,
+   "widths": [
+    320,
+    640,
+    960
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-CRED-05",
+   "file": "02-vegzettsegek/lantra-bed-bug-control.webp",
+   "rawKB": 64,
+   "generatedKB": 82,
+   "smallestServedKB": 31,
+   "largestServedKB": 51,
+   "widths": [
+    800,
+    1191
+   ],
+   "formats": [
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-DRY-01",
+   "file": "03-szarazgoz/polti-cimex-eradicator-foto.webp",
+   "rawKB": 68,
+   "generatedKB": 114,
+   "smallestServedKB": 8,
+   "largestServedKB": 28,
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-DRY-05",
+   "file": "03-szarazgoz/agykeret-gozolese-munka-kozben.webp",
+   "rawKB": 46,
+   "generatedKB": 76,
+   "smallestServedKB": 6,
+   "largestServedKB": 18,
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-DRY-10",
+   "file": "03-szarazgoz/gozoles-kanapenal.webp",
+   "rawKB": 95,
+   "generatedKB": 329,
+   "smallestServedKB": 17,
+   "largestServedKB": 57,
+   "widths": [
+    640,
+    960,
+    1280,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-CHEM-04",
+   "file": "04-vegyszeres/permetezes-munka-kozben.webp",
+   "rawKB": 94,
+   "generatedKB": 292,
+   "smallestServedKB": 14,
+   "largestServedKB": 52,
+   "widths": [
+    640,
+    960,
+    1280,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-CHEM-07",
+   "file": "04-vegyszeres/ulv-hidegkodkepzes.webp",
+   "rawKB": 163,
+   "generatedKB": 379,
+   "smallestServedKB": 20,
+   "largestServedKB": 82,
+   "widths": [
+    480,
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-INS-01",
+   "file": "05-felderites/felderites-02.png",
+   "rawKB": 2341,
+   "generatedKB": 495,
+   "smallestServedKB": 20,
+   "largestServedKB": 81,
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-IPM-01",
+   "file": "05-felderites/felderites-kozben.png",
+   "rawKB": 2452,
+   "generatedKB": 460,
+   "smallestServedKB": 19,
+   "largestServedKB": 75,
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-IPM-03",
+   "file": "06-ipm/ipm-foto.png",
+   "rawKB": 2412,
+   "generatedKB": 262,
+   "smallestServedKB": 13,
+   "largestServedKB": 61,
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-IPM-04",
+   "file": "07-monitorozas/monitoringozas.png",
+   "rawKB": 2348,
+   "generatedKB": 231,
+   "smallestServedKB": 13,
+   "largestServedKB": 55,
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-ENT-ADU-01",
+   "file": "08-agyipoloska-makro/poloska-makro.webp",
+   "rawKB": 141,
+   "generatedKB": 382,
+   "smallestServedKB": 29,
+   "largestServedKB": 79,
+   "widths": [
+    800,
+    1200,
+    1600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-B2B-01",
+   "file": "09-ingatlanok/Apartamentos turísticos.png",
+   "rawKB": 2785,
+   "generatedKB": 715,
+   "smallestServedKB": 24,
+   "largestServedKB": 102,
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-B2B-02",
+   "file": "09-ingatlanok/hoteles.png",
+   "rawKB": 2388,
+   "generatedKB": 466,
+   "smallestServedKB": 16,
+   "largestServedKB": 73,
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-PREV-02",
+   "file": "09-ingatlanok/Hostales-y-pensiones.png",
+   "rawKB": 2787,
+   "generatedKB": 661,
+   "smallestServedKB": 22,
+   "largestServedKB": 98,
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-ALC-02",
+   "file": "09-ingatlanok/pisos.png",
+   "rawKB": 2618,
+   "generatedKB": 235,
+   "smallestServedKB": 10,
+   "largestServedKB": 58,
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-ALC-01",
+   "file": "10-varosok/alicante.avif",
+   "rawKB": 88,
+   "generatedKB": 99,
+   "smallestServedKB": 36,
+   "largestServedKB": 36,
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-BEN-01",
+   "file": "10-varosok/benidorm.avif",
+   "rawKB": 33,
+   "generatedKB": 38,
+   "smallestServedKB": 16,
+   "largestServedKB": 16,
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-TOR-01",
+   "file": "10-varosok/torrevieja.avif",
+   "rawKB": 33,
+   "generatedKB": 44,
+   "smallestServedKB": 18,
+   "largestServedKB": 18,
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-CAL-01",
+   "file": "10-varosok/calpe.avif",
+   "rawKB": 58,
+   "generatedKB": 63,
+   "smallestServedKB": 25,
+   "largestServedKB": 25,
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-LOC-ALT-01",
+   "file": "10-varosok/altea.avif",
+   "rawKB": 92,
+   "generatedKB": 104,
+   "smallestServedKB": 41,
+   "largestServedKB": 41,
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-INS-06",
+   "file": "11-esettanulmanyok/esettan-01.webp",
+   "rawKB": 286,
+   "generatedKB": 840,
+   "smallestServedKB": 55,
+   "largestServedKB": 177,
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-ENT-EXC-02",
+   "file": "11-esettanulmanyok/esettan-03.webp",
+   "rawKB": 269,
+   "generatedKB": 770,
+   "smallestServedKB": 47,
+   "largestServedKB": 170,
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-IPM-02",
+   "file": "11-esettanulmanyok/esettan-06.webp",
+   "rawKB": 90,
+   "generatedKB": 279,
+   "smallestServedKB": 25,
+   "largestServedKB": 69,
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-ENT-HID-01",
+   "file": "11-esettanulmanyok/esettan-07.webp",
+   "rawKB": 257,
+   "generatedKB": 548,
+   "smallestServedKB": 70,
+   "largestServedKB": 144,
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-ENT-HID-02",
+   "file": "11-esettanulmanyok/esettan-08.webp",
+   "rawKB": 253,
+   "generatedKB": 569,
+   "smallestServedKB": 77,
+   "largestServedKB": 153,
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  },
+  {
+   "id": "IMG-ENT-MOU-01",
+   "file": "11-esettanulmanyok/esettan-09.webp",
+   "rawKB": 259,
+   "generatedKB": 587,
+   "smallestServedKB": 80,
+   "largestServedKB": 155,
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ]
+  }
+ ]
+}

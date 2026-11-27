@@ -94,7 +94,8 @@
   "description": "Tratamiento de chinches de cama en Torrevieja para viviendas habituales, segundas residencias y alojamientos turísticos, con valoración previa por WhatsApp.",
   "h1": "Chinches de cama en Torrevieja",
   "eyebrow": "Zona de servicio · Torrevieja",
-  "lead": "Para viviendas habituales, segundas residencias y alojamientos turísticos de Torrevieja."
+  "lead": "Para viviendas habituales, segundas residencias y alojamientos turísticos de Torrevieja.",
+  "heroImage": "IMG-LOC-TOR-01"
  },
  "en": {
   "blocks": [
@@ -162,6 +163,7 @@
   "description": "Bed bug treatment in Torrevieja for permanent homes, second homes and tourist accommodation, with a first assessment by WhatsApp.",
   "h1": "Bed bugs in Torrevieja",
   "eyebrow": "Service area · Torrevieja",
-  "lead": "For permanent homes, second homes and tourist accommodation in Torrevieja."
+  "lead": "For permanent homes, second homes and tourist accommodation in Torrevieja.",
+  "heroImage": "IMG-LOC-TOR-01"
  }
 }

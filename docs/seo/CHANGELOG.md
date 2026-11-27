@@ -40,3 +40,8 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - **Gyártói adatok:** Polti Cimex Eradicator, HPMed — MANUFACTURER-DATA.md.
 - **Dokumentáció:** OWNER-APPROVALS-WP2.md (új, verziózott), OWNER-INPUT státusz, DECISION-LOG D-029–D-038, PHOTO-SHOT-LIST „H”.
 - **Tesztek:** új `tests/test-content-consistency.mjs` (telefonszámok, terület, árak, ES/EN-szerkezet, Draft/noindex).
+
+## 2026-11-27 — képcsomag: feldolgozás és beillesztés (`develop/seo`, nincs merge/deploy/FTP; Draft + noindex változatlan)
+- 28 feltöltött kép auditja, 27 feldolgozva (WebP+AVIF, spanyol SEO-fájlnevek, ES/EN alt, kitakarás/vágás, metaadat törölve), beillesztve a megfelelő oldalakra/szekciókba (szolgáltatások, felderítés, IPM, ingatlantípusok, városi oldalak, bemutatkozás, PG-073, tudásközpont).
+- Képeredet jelölés (`provenance`), illusztrációk külön felirattal; opcionális képek production-ben kihagyva; `MISSING-IMAGES.md` (hiánylista); új eszközök: `audit-raw-images`, `fill-image-assignments`, `image-report`, `list-missing-images`, `build-missing-images-doc`, `shot-element`.
+- `tools/audit-layout.mjs`: lusta képek betöltése, törött kép, CLS/LCP és képbájt mérés.

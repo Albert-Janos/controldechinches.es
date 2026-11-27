@@ -40,3 +40,8 @@ Hiányzó alt, hiányzó width/height, nem létező fájl, túl nagy fájl (prof
 
 ## Megvalósítás: `tools/process-images.mjs` (P1)
 Sharp-alapú; 15–30 MB-os JPG/JPEG/PNG eredetit is kezel (egy master átméretezés, abból a változatok). **Soha nem ír a `raw-images/` mappába** (a kimenet a nyers mappán belül megtagadva). Profilok: *hero* (640–2000 px, WebP q76 + AVIF q50, + 4:5 mobil-kivágás 480/800), *content* (480–1600), *macro* (800–2400, WebP q86 + AVIF q62, élesítés nélkül), *document* (800/1600, WebP q88), *thumb* (320–960). Minden metaadat (EXIF/GPS/XMP/IPTC) törlődik (`verify` ellenőrzi); forgatás a kimenetre beégetve. Jóváhagyott (`approved=yes`) kép → `assets/img/<kategória>/`, egyébként `_pending-images/` (nem csomagolt). Hozzárendelés: `data/images-assign.csv` (fájl, SHA, kép-ID, jogok, szerző, helyszín, dátum, léptek, ES/EN alt és képaláírás, megjegyzés). A kép-nyilvántartás (`IMAGE-ASSET-INVENTORY.csv`) automatikusan frissül; az oldalak képhelye azonosítóhoz kötött, a valódi kép megjelenése csak a manifest újraépítését igényli.
+
+## Frissítés (képcsomag, 2026-11-27)
+- Valós profilok (`tools/process-images.mjs`): hero 640–1600 px, tartalom 480–1200, **fertőzöttség/makró 800–1600 (WebP q78, AVIF q55)**, portré 320–960, dokumentum 800–forrásméret. Mindegyik WebP + AVIF (dokumentum: WebP), **nincs mobil-kivágás** (természetes képarány), EXIF/GPS/ICC törölve, forrás felnagyítása tilos.
+- Hozzárendelés: `data/images-assign.csv` (a döntések: `tools/fill-image-assignments.mjs`), oszlopok: `seo` (spanyol fájlnév), `crop`, `redact` (visszafordíthatatlan kitakarás), `same_as` (ugyanaz a fotó másik azonosítón), `provenance`.
+- Mérés: `tools/audit-layout.mjs` (törött képek, CLS, LCP, képbájtok), `tools/image-report.mjs` (előtte/utána méret).

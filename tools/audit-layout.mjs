@@ -20,7 +20,19 @@ try {
     if (!p[lang]) continue;
     for (const [w, h] of widths) {
       const page = await browser.newPage(); await page.setViewport({ width: w, height: h, isMobile: w < 500, hasTouch: w < 500 });
+      let imgBytes = 0, imgCount = 0, failed = [];
+      page.on('response', async res => { const t = res.headers()['content-type'] || ''; if (/^image\//.test(t) && !/svg|icon/.test(t)) { imgCount++; try { imgBytes += (await res.buffer()).length; } catch { /* redirect or aborted */ } } if (res.status() >= 400) failed.push(res.status() + ' ' + res.url()); });
+      await page.evaluateOnNewDocument(() => { // Core Web Vitals probes (LCP element/time, CLS) - same numbers the browser would report
+        window.__cls = 0; window.__lcp = 0; window.__lcpEl = '';
+        new PerformanceObserver(l => { for (const e of l.getEntries()) if (!e.hadRecentInput) window.__cls += e.value; }).observe({ type: 'layout-shift', buffered: true });
+        new PerformanceObserver(l => { const e = l.getEntries().at(-1); window.__lcp = Math.round(e.startTime); window.__lcpEl = (e.element?.tagName || '') + ' ' + (e.url || '').split('/').pop(); }).observe({ type: 'largest-contentful-paint', buffered: true });
+      });
       await page.goto(server.base + p[lang].url, { waitUntil: 'networkidle0' });
+      const firstView = await page.evaluate(() => ({ lcp: window.__lcp, lcpEl: window.__lcpEl }));
+      const firstBytes = imgBytes;
+      // scroll through the page so every lazy image really loads (broken paths show up) and late layout shifts are counted
+      await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 500) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 60)); } window.scrollTo(0, 0); });
+      await page.waitForNetworkIdle({ idleTime: 400, timeout: 8000 }).catch(() => {});
       const r = await page.evaluate(() => {
         const rect = el => { const b = el.getBoundingClientRect(); return { w: Math.round(b.width), h: Math.round(b.height) }; };
         const imgs = [...document.querySelectorAll('main img, main .sx-ph')].filter(e => e.offsetParent).map(e => ({ id: e.dataset.imageId || e.getAttribute('src'), kind: e.tagName === 'IMG' ? 'img' : 'ph', ...rect(e), cls: e.className, inHero: !!e.closest('.sx-hero') }));
@@ -36,10 +48,14 @@ try {
           const b = svg.getBoundingClientRect(); return { cls: svg.getAttribute('class'), w: Math.round(b.width), h: Math.round(b.height), over };
         });
         const title = document.querySelector('.sx-todo') ? 0 : 1;
-        return { imgs, dupIds: [...new Set(dupIds)], svgs, overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth };
+        const broken = [...document.querySelectorAll('main img')].filter(i => !(i.complete && i.naturalWidth > 0)).map(i => i.getAttribute('src'));
+        return { broken, cls: Math.round(window.__cls * 1000) / 1000, imgs, dupIds: [...new Set(dupIds)], svgs, overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth };
       });
       const tag = `${p.id} ${lang} ${w}`;
-      report.push({ tag, ...r });
+      report.push({ tag, ...r, ...firstView, firstViewImgKB: Math.round(firstBytes / 1024), totalImgKB: Math.round(imgBytes / 1024), imgCount, failed });
+      if (r.broken.length) problems.push(`${tag}: broken image(s) ${r.broken.join(', ')}`);
+      if (failed.length) problems.push(`${tag}: failed requests ${failed.join(', ')}`);
+      if (r.cls > 0.02) problems.push(`${tag}: CLS ${r.cls}`);
       if (r.overflow > 1) problems.push(`${tag}: horizontal overflow ${r.overflow}px`);
       if (r.dupIds.length) problems.push(`${tag}: duplicate ids ${r.dupIds.join(',')}`);
       r.svgs.forEach(s => s.over.length && problems.push(`${tag}: svg text overflow (${s.cls}): ${s.over.join(' | ')}`));

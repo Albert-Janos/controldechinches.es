@@ -92,6 +92,10 @@
     "html": "<p>La decisión es individual y tiene en cuenta:</p><ul><li>la gravedad y la extensión de la infestación;</li><li>el material de los muebles y las superficies;</li><li>la accesibilidad de los escondites;</li><li>tratamientos anteriores que no funcionaron;</li><li>la presencia de niños y mascotas;</li><li>las preferencias del cliente;</li><li>el uso del inmueble.</li></ul><p>Los métodos posibles son el <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico dirigido</a>, el <a href=\"/servicios/vapor-seco/\">vapor seco independiente</a> o una combinación de ambos y, cuando está justificado, nebulización en frío complementaria o polvo autorizado. Que un método pueda usarse depende de cada caso y de las condiciones de la tecnología o del producto.</p><p>El tratamiento combinado coordina el calor y el producto: se plantea, por ejemplo, ante infestaciones fuertes, varias habitaciones afectadas, un tratamiento previo fallido o superficies que requieren enfoques distintos. No significa una eliminación completa garantizada en una sola visita.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-IPM-03"
+   },
+   {
     "type": "roles",
     "h2": "Quién hace qué",
     "columns": [
@@ -258,6 +262,10 @@
     "id": "how-the-method-is-chosen",
     "h2": "How the method is chosen",
     "html": "<p>The decision is individual and takes into account:</p><ul><li>the severity and extent of the infestation;</li><li>the material of the furniture and surfaces;</li><li>how accessible the hiding places are;</li><li>earlier treatments that did not work;</li><li>the presence of children and pets;</li><li>the client’s wishes;</li><li>the use of the property.</li></ul><p>The possible methods are <a href=\"/en/services/chemical-treatment/\">targeted chemical treatment</a>, <a href=\"/en/services/dry-steam/\">stand-alone dry steam</a> or a combination of both and, where justified, supplementary cold fogging or an authorised dust. Whether a method can be used depends on the case and on the conditions of the technology or product.</p><p>A combined treatment coordinates heat and product: it is considered, for example, for heavy infestations, several affected rooms, a failed earlier treatment or surfaces that need different approaches. It does not mean guaranteed complete elimination in a single visit.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-IPM-03"
    },
    {
     "type": "roles",

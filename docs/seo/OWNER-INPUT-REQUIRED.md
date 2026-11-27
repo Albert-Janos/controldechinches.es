@@ -131,3 +131,15 @@ A teljes, 16 pontos lista: `LEGAL-PUBLICATION-GATES.md`, utolsó szakasz.
 | 29 | A főoldali (és védett oldali) lábléc kapjon hub-linkeket (Servicios, Zonas, Guía, Atlas, Sobre mí, GYIK)? | M |
 | 30 | A főoldalra kerülhet-e külön „Sobre mí / módszertan” szekció (CRO)? | L |
 | 32 | Mobil sticky-CTA az új tranzakciós oldalakon? | L |
+
+## 14. Képek — nyitott kérdések a képfeldolgozás után (2026-11-27)
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 44 | Az **1448×1086-os PNG** képek (felderítés ×2, IPM-felszerelés, monitorozás, 4 ingatlantípus) saját fotók, generált vagy szerkesztett képek, vagy külső forrásból valók? Jelenleg „Ilustración” / semleges felirattal szerepelnek. | **H** | Felirat „Foto propia” lehetősége; a 7 illusztráció cseréje |
+| 45 | A **város- és ingatlanképek** (Alicante, Benidorm, Torrevieja, Calpe, Altea; lakás, szálloda, hostal) szerzője és felhasználási joga? Saját képek-e, vagy licencelt/stock? | **H** | Jogtiszta publikálás |
+| 46 | A **makrófotó** (kifejlett poloska) saját felvétel-e? Hol, mivel készült, volt-e vonalzó/méretarány? Szakember határozta-e meg a stádiumot/nemet? | **H** | Atlasz/életciklus hitelessége |
+| 47 | A gőzölési, vegyszeres és ULV fotók (és a portré) **saját, valós munkafotók**? Hol és mikor készültek (ország), illetve vannak-e rajtuk ügyfél-azonosító adatok? A hidegködképző melletti fotón családi fényképek látszanak (ezt a képet nem használtuk). | **H** | „Foto propia” felirat; magyarországi munka nem jelölhető spanyolországi esetként |
+| 48 | A **fertőzöttségi fotók** (6 db) egy vagy több munkából valók? Hol (ország) és mikor? Beleegyezett az ügyfél a publikálásba? | **H** | PG-073, atlasz; esettanulmány csak dokumentált, engedélyezett esetből |
+| 49 | A portré egy **póló-viseletű szelfi**; lesz munkaruhás portré (álló és fekvő), amely a hero-ba kerül? A portrét publikálhatjuk (hozzájárulás)? | M | PG-016 hero, szerzői doboz (#21) |
+| 50 | A Lantra-tanúsítvány ellenőrző kódját eltakartuk. Kéred a kód láthatóvá tételét (ellenőrizhetőség), vagy maradjon elrejtve? | L | Hitelesség vs. adatvédelem |
+| 51 | A `gozoles-kozben-video.mp4` (1,9 MB) használható-e (pl. a gőzölés oldalon beágyazva)? Nem képként kezeltük, ezért nem szerepel. | L | Videó beágyazása (külön feladat) |

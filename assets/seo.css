@@ -74,6 +74,7 @@
 .sx-figure--photo, .sx-figure--illustration { max-width: 46rem; }
 .sx-figure--macro { max-width: 40rem; }
 .sx-figure--portrait { max-width: 19rem; }
+.sx-figure--portrait-detail { max-width: 24rem; }
 .sx-split { margin-top: clamp(2rem, 4vw, 3rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 19rem); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
 .sx-split > .sx-block { margin-top: 0; }
 .sx-ph { display: grid; place-items: center; text-align: center; padding: 1rem; border: 2px dashed #b9a766; background: #fbf7e6; color: #5a4a00; font-size: .875rem; font-weight: 650; }
@@ -203,6 +204,7 @@ a.sx-card:hover { border-color: var(--navy); }
 }
 @media (max-width: 760px) {
   .sx-figure--portrait { max-width: 15rem; }
+  .sx-figure--portrait-detail { max-width: 18rem; }
   .sx-split { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
   .sx-hero-grid { grid-template-columns: minmax(0, 1fr); }
   .sx-hero--portrait .sx-hero-media { justify-self: start; max-width: 18rem; order: -1; }

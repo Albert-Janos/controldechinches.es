@@ -25,7 +25,7 @@ const opt = (k, d) => { const i = argv.indexOf(k); return i >= 0 ? argv[i + 1] :
 
 function defaultRaw() {
   const local = join(root, 'raw-images');
-  const has = d => existsSync(d) && readdirSync(d, { recursive: true }).some(f => /\.(jpe?g|png)$/i.test(f));
+  const has = d => existsSync(d) && readdirSync(d, { recursive: true }).some(f => /\.(jpe?g|png|webp|avif)$/i.test(f));
   if (has(local)) return local;
   try { const common = execFileSync('git', ['rev-parse', '--git-common-dir'], { cwd: root }).toString().trim(); const main = join(resolve(root, common), '..', 'raw-images'); if (has(main)) return main; } catch { /* not a git checkout */ }
   return local;
@@ -39,18 +39,18 @@ export const paths = {
   inventory: resolve(opt('--inventory', join(root, 'docs/seo/IMAGE-ASSET-INVENTORY.csv'))),
   previews: join(root, 'reports/raw/previews'),
 };
-const ASSIGN_COLS = ['file', 'sha256', 'asset_id', 'approved', 'rights', 'credit', 'location', 'shot_date', 'scale', 'folder', 'role', 'alt_es', 'alt_en', 'caption_es', 'caption_en', 'notes_es', 'notes_en', 'review_note'];
+const ASSIGN_COLS = ['file', 'sha256', 'asset_id', 'approved', 'rights', 'credit', 'location', 'shot_date', 'scale', 'folder', 'role', 'alt_es', 'alt_en', 'caption_es', 'caption_en', 'notes_es', 'notes_en', 'review_note', 'seo', 'crop', 'redact', 'same_as', 'provenance'];
 
 // ---- profiles (see docs/seo/IMAGE-SEO-SPEC.md) ----
 export function profileFor(id, role) {
-  if (id.startsWith('IMG-ENT')) return { name: 'macro', widths: [800, 1200, 1600, 2400], webp: 86, avif: 62, mobile: false }; // keep identification detail
+  if (id.startsWith('IMG-ENT') || id === 'IMG-INS-06' || id === 'IMG-IPM-02') return { name: 'macro', widths: [800, 1200, 1600], webp: 78, avif: 55, mobile: false }; // infestation / identification detail: higher quality, no sharpening
   if (id.startsWith('IMG-CRED') || role === 'document') return { name: 'document', widths: [800, 1600], webp: 88, avif: 0, mobile: false };
   if (id === 'IMG-ABOUT-02') return { name: 'thumb', widths: [320, 640, 960], webp: 80, avif: 52, mobile: false };
-  if (role === 'hero') return { name: 'hero', widths: [640, 960, 1280, 1600, 2000], webp: 76, avif: 50, mobile: true };
-  return { name: 'content', widths: [480, 800, 1200, 1600], webp: 76, avif: 50, mobile: false };
+  if (role === 'hero') return { name: 'hero', widths: [640, 960, 1280, 1600], webp: 76, avif: 50, mobile: false };
+  return { name: 'content', widths: [480, 800, 1200], webp: 76, avif: 50, mobile: false };
 }
 
-function walk(dir) { const out = []; if (!existsSync(dir)) return out; for (const n of readdirSync(dir)) { const f = join(dir, n); statSync(f).isDirectory() ? out.push(...walk(f)) : /\.(jpe?g|png)$/i.test(n) && out.push(f); } return out; }
+function walk(dir) { const out = []; if (!existsSync(dir)) return out; for (const n of readdirSync(dir)) { const f = join(dir, n); statSync(f).isDirectory() ? out.push(...walk(f)) : /\.(jpe?g|png|webp|avif)$/i.test(n) && out.push(f); } return out; }
 const sha = f => createHash('sha256').update(readFileSync(f)).digest('hex').slice(0, 16);
 const readAssign = () => existsSync(paths.assign) ? parseCsv(readFileSync(paths.assign, 'utf8')) : [];
 const writeAssign = rows => { mkdirSync(dirname(paths.assign), { recursive: true }); writeFileSync(paths.assign, toCsv(rows, ASSIGN_COLS)); };
@@ -78,7 +78,7 @@ async function processOne(r, inv) {
   const approved = /^(yes|y|true|1)$/i.test(r.approved);
   const base = inv[id] || {}, role = r.role || base.role || 'content';
   const folder = (r.folder || (base.category || '').replace(/\/$/, '') || 'misc').replace(/^raw-images\//, '');
-  const seo = (base.optimized_filename || '').replace(/\.webp.*$/, '') || slug(r.alt_es || id);
+  const seo = r.seo || (base.optimized_filename || '').replace(/\.webp.*$/, '') || slug(r.alt_es || id);
   const p = profileFor(id, role), outRoot = approved ? paths.pub : paths.pending;
   const outDir = join(outRoot, folder);
   if (inside(outDir, paths.raw) || resolve(outDir) === paths.raw) throw new Error('refusing to write inside the raw folder');
@@ -86,12 +86,19 @@ async function processOne(r, inv) {
   const inputOpts = { failOn: 'none', limitInputPixels: 800e6, sequentialRead: true };
   const meta = await sharp(src, inputOpts).metadata();
   const oriented = meta.orientation && meta.orientation >= 5 ? [meta.height, meta.width] : [meta.width, meta.height];
-  const [sw, sh] = oriented, ratio = sh / sw;
+  let [sw, sh] = oriented, source = src;
+  if (r.crop || r.redact) { // lossless intermediate: crop (fractions x,y,w,h) then paint redaction boxes into the pixels (not a layer, not metadata)
+    let buf = await sharp(src, inputOpts).rotate().png().toBuffer();
+    if (r.crop) { const [cx, cy, cw, ch] = r.crop.split(',').map(Number); const box = { left: Math.round(cx * sw), top: Math.round(cy * sh), width: Math.round(cw * sw), height: Math.round(ch * sh) }; buf = await sharp(buf).extract(box).png().toBuffer(); sw = box.width; sh = box.height; }
+    if (r.redact) { const layers = r.redact.split(';').filter(Boolean).map(s => { const [x, y, w, h] = s.split(',').map(Number); const width = Math.round(w * sw), height = Math.round(h * sh); return { input: { create: { width, height, channels: 3, background: '#d9d9d9' } }, left: Math.round(x * sw), top: Math.round(y * sh) }; }); buf = await sharp(buf).composite(layers).png().toBuffer(); }
+    source = buf;
+  }
+  const ratio = sh / sw;
   const widths = p.widths.filter(w => w <= sw); if (!widths.length || (widths.at(-1) < p.widths.at(-1) && sw > widths.at(-1) && !widths.includes(sw))) widths.push(Math.min(sw, p.widths.at(-1)));
   const uniq = [...new Set(widths)].sort((a, b) => a - b);
   // one master at the largest width, then derive (fast for 30 MB files)
   const masterW = uniq.at(-1);
-  const master = await sharp(src, inputOpts).rotate().toColorspace('srgb').resize({ width: masterW, withoutEnlargement: true }).toBuffer(); // metadata dropped (sharp default)
+  const master = await sharp(source, inputOpts).rotate().toColorspace('srgb').resize({ width: masterW, withoutEnlargement: true }).toBuffer(); // metadata dropped (sharp default)
   const written = [];
   for (const w of uniq) {
     const img = () => sharp(master).resize({ width: w, withoutEnlargement: true });
@@ -117,14 +124,20 @@ async function processAll() {
   const seen = new Set(); const done = existsSync(paths.processed) ? JSON.parse(readFileSync(paths.processed, 'utf8')) : {};
   const invRows = parseCsv(readFileSync(paths.inventory, 'utf8'));
   for (const r of rows) {
+    if (r.same_as) continue; // alias rows are handled after the real ones
     if (seen.has(r.asset_id)) { console.log(`SKIP duplicate asset_id ${r.asset_id} (${r.file}) - one file per asset id`); continue; } seen.add(r.asset_id);
     if (!r.rights) console.log(`NOTE ${r.asset_id}: rights not recorded - keep approved=no until the owner confirms`);
     const res = await processOne(r, inv);
-    if (res.approved) done[r.asset_id] = { variants: res.variants, scale: r.scale || undefined, credit: r.credit || undefined, notes: (r.notes_es || r.notes_en) ? { es: r.notes_es, en: r.notes_en } : undefined, alt: (r.alt_es || r.alt_en) ? { es: r.alt_es, en: r.alt_en } : undefined, caption: (r.caption_es || r.caption_en) ? { es: r.caption_es, en: r.caption_en } : undefined };
+    if (res.approved) done[r.asset_id] = { provenance: r.provenance || undefined, variants: res.variants, scale: r.scale || undefined, credit: r.credit || undefined, notes: (r.notes_es || r.notes_en) ? { es: r.notes_es, en: r.notes_en } : undefined, alt: (r.alt_es || r.alt_en) ? { es: r.alt_es, en: r.alt_en } : undefined, caption: (r.caption_es || r.caption_en) ? { es: r.caption_es, en: r.caption_en } : undefined };
     else delete done[r.asset_id];
     const ir = invRows.find(x => x.asset_id === r.asset_id);
     if (ir) { Object.assign(ir, { original_filename: basename(r.file), optimized_filename: `${res.variants.base}-{${res.variants.widths.join(',')}}.${res.variants.formats.join('|')}`, optimized_res: `${res.variants.width}x${res.variants.height}`, optimization_status: `optimized (${res.profile}); EXIF/GPS removed`, privacy_status: 'metadata stripped', usage_rights: r.rights || ir.usage_rights, owner_approval: res.approved ? 'approved' : 'pending', status: res.approved ? 'READY' : 'PROCESSED - awaiting owner approval' }); }
     console.log(`${res.approved ? 'PUBLIC ' : 'PENDING'} ${r.asset_id}  ${res.sourceMB} MB -> ${res.variants.widths.join('/')} px ${res.variants.formats.join('+')}  (${res.profile})`);
+  }
+  for (const r of readAssign().filter(x => x.same_as && x.asset_id && (!opt('--only') || x.asset_id === opt('--only')))) { // same photo used under a second asset id (different page role): reuse the files, own alt/caption
+    const t = done[r.same_as]; if (!t) { console.log(`SKIP alias ${r.asset_id}: ${r.same_as} not processed`); continue; }
+    done[r.asset_id] = { ...t, alt: (r.alt_es || r.alt_en) ? { es: r.alt_es, en: r.alt_en } : t.alt, caption: (r.caption_es || r.caption_en) ? { es: r.caption_es, en: r.caption_en } : t.caption, aliasOf: r.same_as };
+    console.log(`ALIAS   ${r.asset_id} -> ${r.same_as}`);
   }
   writeFileSync(paths.processed, JSON.stringify(done, null, 1) + '\n');
   if (invRows.length) writeFileSync(paths.inventory, toCsv(invRows, Object.keys(invRows[0])));

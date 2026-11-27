@@ -26,22 +26,38 @@
   "folder": "about",
   "role": "content",
   "aspect": [
-   4,
-   5
+   960,
+   1208
   ],
   "priority": "P0",
   "alt": {
-   "es": "Albert János, retrato vertical",
-   "en": "Albert János, vertical portrait"
+   "es": "Albert János, técnico especialista en chinches de cama, retrato",
+   "en": "Albert János, bed bug specialist, portrait"
   },
   "caption": {
-   "es": "Albert János, retrato vertical. Foto propia [fecha y lugar por confirmar].",
-   "en": "Albert János, vertical portrait. Own photo [date and place to be confirmed]."
+   "es": "Albert János. Foto propia.",
+   "en": "Albert János. Own photo."
   },
-  "seo": "albert-janos-retrato-vertical",
+  "seo": "albert-janos-especialista-chinches-retrato-{320,640,960}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/about/",
+   "base": "albert-janos-especialista-chinches-retrato",
+   "widths": [
+    320,
+    640,
+    960
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 960,
+   "height": 1208
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-ABOUT-03": {
   "id": "IMG-ABOUT-03",
@@ -92,22 +108,38 @@
   "folder": "equipment",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "P0",
   "alt": {
-   "es": "Máquina de vapor seco (modelo según confirmación del propietario)",
-   "en": "Dry steam machine (model to be confirmed by owner)"
+   "es": "Máquina de vapor seco Polti Cimex Eradicator con la manguera y el cabezal de aplicación",
+   "en": "Polti Cimex Eradicator dry steam machine with its hose and application head"
   },
   "caption": {
-   "es": "Máquina de vapor seco (modelo según confirmación del propietario). Foto propia [fecha y lugar por confirmar].",
-   "en": "Dry steam machine (model to be confirmed by owner). Own photo [date and place to be confirmed]."
+   "es": "Polti Cimex Eradicator, el equipo de vapor seco que se utiliza. Foto propia.",
+   "en": "The Polti Cimex Eradicator, the dry steam equipment used. Own photo."
   },
   "seo": "maquina-vapor-seco-chinches",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "maquina-vapor-seco-polti-cimex-eradicator",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-ABOUT-06": {
   "id": "IMG-ABOUT-06",
@@ -136,22 +168,38 @@
   "folder": "about",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "P1",
   "alt": {
-   "es": "Albert János aplicando vapor en el somier",
-   "en": "Albert János applying steam to a bed frame"
+   "es": "Cabezal de vapor Polti aplicando vapor sobre la madera de la estructura de una cama",
+   "en": "Polti steam head applying steam to the wooden frame of a bed"
   },
   "caption": {
-   "es": "Albert János aplicando vapor en el somier. Foto propia [fecha y lugar por confirmar].",
-   "en": "Albert János applying steam to a bed frame. Own photo [date and place to be confirmed]."
+   "es": "Aplicación de vapor seco en la estructura de madera de una cama. Foto propia.",
+   "en": "Dry steam applied to the wooden frame of a bed. Own photo."
   },
   "seo": "tecnico-vapor-somier",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "vapor-seco-estructura-madera-cama",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-ABOUT-08": {
   "id": "IMG-ABOUT-08",
@@ -312,22 +360,36 @@
   "folder": "credentials",
   "role": "document",
   "aspect": [
-   4,
-   3
+   1191,
+   1684
   ],
   "priority": "P2",
   "alt": {
-   "es": "Certificado de formación internacional",
-   "en": "International training certificate"
+   "es": "Certificado de formación «Bed Bug Control» de Lantra Awards a nombre de János Albert, programa de e-learning, 25 de noviembre de 2026",
+   "en": "Lantra Awards “Bed Bug Control” certificate of training issued to János Albert, e-learning programme, 25 November 2026"
   },
   "caption": {
-   "es": "Certificado de formación internacional. Foto propia [fecha y lugar por confirmar].",
-   "en": "International training certificate. Own photo [date and place to be confirmed]."
+   "es": "Certificado de formación «Bed Bug Control» (Lantra Awards, e-learning aprobado), 25/11/2026. Código de verificación ocultado.",
+   "en": "“Bed Bug Control” certificate of training (Lantra Awards approved e-learning), 25/11/2026. Verification code hidden."
   },
-  "seo": "certificado-formacion-internacional",
+  "seo": "certificado-lantra-awards-bed-bug-control-{800,1191}",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/credentials/",
+   "base": "certificado-lantra-awards-bed-bug-control",
+   "widths": [
+    800,
+    1191
+   ],
+   "formats": [
+    "webp"
+   ],
+   "width": 1191,
+   "height": 1684
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-CRED-06": {
   "id": "IMG-CRED-06",
@@ -356,22 +418,38 @@
   "folder": "treatments/dry-steam",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "P0",
   "alt": {
-   "es": "Máquina de vapor seco para chinches completa",
-   "en": "Dry steam machine for bed bugs, full view"
+   "es": "Máquina de vapor seco Polti Cimex Eradicator con la manguera y el cabezal de aplicación",
+   "en": "Polti Cimex Eradicator dry steam machine with its hose and application head"
   },
   "caption": {
-   "es": "Máquina de vapor seco para chinches completa. Foto propia [fecha y lugar por confirmar].",
-   "en": "Dry steam machine for bed bugs, full view. Own photo [date and place to be confirmed]."
+   "es": "Polti Cimex Eradicator, el equipo de vapor seco que se utiliza. Foto propia.",
+   "en": "The Polti Cimex Eradicator, the dry steam equipment used. Own photo."
   },
-  "seo": "maquina-vapor-seco-completa",
+  "seo": "maquina-vapor-seco-polti-cimex-eradicator-{480,800,1200}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "maquina-vapor-seco-polti-cimex-eradicator",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-DRY-02": {
   "id": "IMG-DRY-02",
@@ -444,22 +522,38 @@
   "folder": "treatments/dry-steam",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "P1",
   "alt": {
-   "es": "Vapor seco en las uniones del somier",
-   "en": "Dry steam on bed-frame joints"
+   "es": "Cabezal de vapor Polti aplicando vapor sobre la madera de la estructura de una cama",
+   "en": "Polti steam head applying steam to the wooden frame of a bed"
   },
   "caption": {
-   "es": "Vapor seco en las uniones del somier. Foto propia [fecha y lugar por confirmar].",
-   "en": "Dry steam on bed-frame joints. Own photo [date and place to be confirmed]."
+   "es": "Aplicación de vapor seco en la estructura de madera de una cama. Foto propia.",
+   "en": "Dry steam applied to the wooden frame of a bed. Own photo."
   },
-  "seo": "vapor-seco-union-somier",
+  "seo": "vapor-seco-estructura-madera-cama-{480,800,1200}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "vapor-seco-estructura-madera-cama",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-DRY-06": {
   "id": "IMG-DRY-06",
@@ -554,22 +648,39 @@
   "folder": "treatments/dry-steam",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1536,
+   1233
   ],
   "priority": "P1",
   "alt": {
-   "es": "Técnico aplicando vapor seco durante un tratamiento",
-   "en": "Technician applying dry steam during a treatment"
+   "es": "Técnico aplicando vapor seco sobre un sofá tapizado, con la máquina Polti Cimex Eradicator en el suelo",
+   "en": "Technician applying dry steam to an upholstered sofa, with the Polti Cimex Eradicator on the floor"
   },
   "caption": {
-   "es": "Técnico aplicando vapor seco durante un tratamiento. Foto propia [fecha y lugar por confirmar].",
-   "en": "Technician applying dry steam during a treatment. Own photo [date and place to be confirmed]."
+   "es": "Vapor seco sobre un sofá tapizado durante un tratamiento. Foto propia.",
+   "en": "Dry steam on an upholstered sofa during a treatment. Own photo."
   },
-  "seo": "tecnico-aplicando-vapor-seco",
+  "seo": "tratamiento-vapor-seco-sofa-polti-{640,960,1280,1536}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "tratamiento-vapor-seco-sofa-polti",
+   "widths": [
+    640,
+    960,
+    1280,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1233
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-CHEM-01": {
   "id": "IMG-CHEM-01",
@@ -642,22 +753,39 @@
   "folder": "treatments/chemical",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1536,
+   1152
   ],
   "priority": "P1",
   "alt": {
-   "es": "Aplicación dirigida en el borde de un colchón",
-   "en": "Targeted application on a mattress edge"
+   "es": "Aplicación química dirigida con lanza y depósito a presión a lo largo de la base de un sofá cama",
+   "en": "Targeted chemical application with a lance and pressure tank along the base of a sofa bed"
   },
   "caption": {
-   "es": "Aplicación dirigida en el borde de un colchón. Foto propia [fecha y lugar por confirmar].",
-   "en": "Targeted application on a mattress edge. Own photo [date and place to be confirmed]."
+   "es": "Aplicación dirigida en el borde inferior de una cama. Foto propia.",
+   "en": "Targeted application along the lower edge of a bed. Own photo."
   },
-  "seo": "aplicacion-dirigida-borde-colchon",
+  "seo": "aplicacion-dirigida-base-cama-lanza-{640,960,1280,1536}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/chemical/",
+   "base": "aplicacion-dirigida-base-cama-lanza",
+   "widths": [
+    640,
+    960,
+    1280,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1152
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-CHEM-05": {
   "id": "IMG-CHEM-05",
@@ -708,22 +836,38 @@
   "folder": "treatments/chemical",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1152,
+   1536
   ],
   "priority": "P2",
   "alt": {
-   "es": "Tratamiento de las partes relevantes de un mueble",
-   "en": "Treatment of relevant parts of a furniture piece"
+   "es": "Nebulizador en frío tratando la parte inferior de un sofá volteado en un salón",
+   "en": "Cold fogger treating the underside of an upturned sofa in a living room"
   },
   "caption": {
-   "es": "Tratamiento de las partes relevantes de un mueble. Foto propia [fecha y lugar por confirmar].",
-   "en": "Treatment of relevant parts of a furniture piece. Own photo [date and place to be confirmed]."
+   "es": "Nebulización en frío como complemento sobre un mueble. Foto propia.",
+   "en": "Cold fogging as a supplement on a piece of furniture. Own photo."
   },
-  "seo": "tratamiento-partes-mueble",
+  "seo": "nebulizacion-en-frio-mueble-volteado-{480,800,1152}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/treatments/chemical/",
+   "base": "nebulizacion-en-frio-mueble-volteado",
+   "widths": [
+    480,
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1152,
+   "height": 1536
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
  },
  "IMG-CHEM-08": {
   "id": "IMG-CHEM-08",
@@ -752,22 +896,38 @@
   "folder": "ipm/inspection",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P0",
   "alt": {
-   "es": "Inspección de la costura de un colchón con linterna",
-   "en": "Inspecting a mattress seam with a torch"
+   "es": "Técnico con guantes y linterna revisando bajo el colchón y el somier de una cama",
+   "en": "Technician in gloves with a torch checking under the mattress and bed frame"
   },
   "caption": {
-   "es": "Inspección de la costura de un colchón con linterna. Foto propia [fecha y lugar por confirmar].",
-   "en": "Inspecting a mattress seam with a torch. Own photo [date and place to be confirmed]."
+   "es": "Ilustración: revisión de una cama con linterna. No es una fotografía propia.",
+   "en": "Illustration: checking a bed with a torch. Not an own photograph."
   },
-  "seo": "inspeccion-costura-colchon",
+  "seo": "inspeccion-cama-linterna-ilustracion-{640,960,1280,1448}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/ipm/inspection/",
+   "base": "inspeccion-cama-linterna-ilustracion",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "illustration"
  },
  "IMG-INS-02": {
   "id": "IMG-INS-02",
@@ -840,132 +1000,234 @@
   "folder": "ipm/inspection",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P1",
   "alt": {
-   "es": "Revisión de las costuras de un sofá",
-   "en": "Checking sofa seams"
+   "es": "Técnico con linterna revisando la base de un sofá cama, con una máquina de vapor al lado",
+   "en": "Technician with a torch checking the base of a sofa bed, with a steam machine beside him"
   },
   "caption": {
-   "es": "Revisión de las costuras de un sofá. Foto propia [fecha y lugar por confirmar].",
-   "en": "Checking sofa seams. Own photo [date and place to be confirmed]."
+   "es": "Ilustración: inspección de un sofá cama. No es una fotografía propia.",
+   "en": "Illustration: inspecting a sofa bed. Not an own photograph."
   },
   "seo": "inspeccion-costuras-sofa",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/ipm/inspection/",
+   "base": "inspeccion-sofa-cama-linterna-ilustracion",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "illustration"
  },
  "IMG-INS-06": {
   "id": "IMG-INS-06",
   "folder": "ipm/inspection",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1536,
+   1152
   ],
   "priority": "P1",
   "alt": {
-   "es": "Documentación fotográfica de una infestación",
-   "en": "Photographic documentation of an infestation"
+   "es": "Acumulación de chinches de cama, mudas y manchas oscuras en el suelo de madera junto a la base de una cama",
+   "en": "Accumulation of bed bugs, moults and dark spots on a wooden floor next to the base of a bed"
   },
   "caption": {
-   "es": "Documentación fotográfica de una infestación. Foto propia [fecha y lugar por confirmar].",
-   "en": "Photographic documentation of an infestation. Own photo [date and place to be confirmed]."
+   "es": "Infestación real documentada. Foto propia.",
+   "en": "A real infestation documented. Own photo."
   },
-  "seo": "documentacion-fotografica-infestacion",
+  "seo": "infestacion-chinches-suelo-junto-cama-{800,1200,1536}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "infestacion-chinches-suelo-junto-cama",
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1152
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-IPM-01": {
   "id": "IMG-IPM-01",
   "folder": "ipm/inspection",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P0",
   "alt": {
-   "es": "Técnico durante la inspección o el tratamiento en un dormitorio",
-   "en": "Technician during an inspection or treatment in a bedroom"
+   "es": "Técnico con linterna revisando la base de un sofá cama, con una máquina de vapor al lado",
+   "en": "Technician with a torch checking the base of a sofa bed, with a steam machine beside him"
   },
   "caption": {
-   "es": "Técnico durante la inspección o el tratamiento en un dormitorio. Foto propia [fecha y lugar por confirmar].",
-   "en": "Technician during an inspection or treatment in a bedroom. Own photo [date and place to be confirmed]."
+   "es": "Ilustración: inspección de un sofá cama. No es una fotografía propia.",
+   "en": "Illustration: inspecting a sofa bed. Not an own photograph."
   },
-  "seo": "tecnico-inspeccion-dormitorio-gip",
+  "seo": "inspeccion-sofa-cama-linterna-ilustracion-{640,960,1280,1448}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/ipm/inspection/",
+   "base": "inspeccion-sofa-cama-linterna-ilustracion",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "illustration"
  },
  "IMG-IPM-02": {
   "id": "IMG-IPM-02",
   "folder": "ipm/inspection",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1536,
+   1152
   ],
   "priority": "P1",
   "alt": {
-   "es": "Identificación de escondites en un dormitorio",
-   "en": "Identifying hiding places in a bedroom"
+   "es": "Dormitorio con una litera y manchas oscuras repartidas por la pared que hay sobre la cama, posibles excrementos de chinches",
+   "en": "Bedroom with a bunk bed and dark spots across the wall above the bed, possibly bed bug excreta"
   },
   "caption": {
-   "es": "Identificación de escondites en un dormitorio. Foto propia [fecha y lugar por confirmar].",
-   "en": "Identifying hiding places in a bedroom. Own photo [date and place to be confirmed]."
+   "es": "Marcas oscuras en la pared de un dormitorio con infestación real. Foto propia.",
+   "en": "Dark marks on the wall of a bedroom with a real infestation. Own photo."
   },
-  "seo": "identificacion-escondites-dormitorio",
+  "seo": "manchas-oscuras-pared-litera-chinches-{800,1200,1536}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "manchas-oscuras-pared-litera-chinches",
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1152
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-IPM-03": {
   "id": "IMG-IPM-03",
   "folder": "ipm/prevention",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "P1",
   "alt": {
-   "es": "Plan de tratamiento individual documentado",
-   "en": "Documented individual treatment plan"
+   "es": "Máquina de vapor, nebulizador, pulverizador a presión y hoja de registro sobre el suelo de un dormitorio",
+   "en": "Steam machine, fogger, pressure sprayer and a record sheet on a bedroom floor"
   },
   "caption": {
-   "es": "Plan de tratamiento individual documentado. Foto propia [fecha y lugar por confirmar].",
-   "en": "Documented individual treatment plan. Own photo [date and place to be confirmed]."
+   "es": "Ilustración: tipos de equipo y registro de un tratamiento integrado. No es una fotografía propia.",
+   "en": "Illustration: types of equipment and the record sheet of an integrated treatment. Not an own photograph."
   },
-  "seo": "plan-tratamiento-individual",
+  "seo": "equipos-tratamiento-integrado-ilustracion-{480,800,1200}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/ipm/",
+   "base": "equipos-tratamiento-integrado-ilustracion",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "illustration"
  },
  "IMG-IPM-04": {
   "id": "IMG-IPM-04",
   "folder": "ipm/monitoring",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Dispositivo de monitorización colocado bajo la pata de una cama",
-   "en": "Monitoring device placed under a bed leg"
+   "es": "Técnico con linterna frontal colocando un monitor de chinches bajo la pata de una cama",
+   "en": "Technician with a head torch placing a bed bug monitor under a bed leg"
   },
   "caption": {
-   "es": "Dispositivo de monitorización colocado bajo la pata de una cama. Foto propia [fecha y lugar por confirmar].",
-   "en": "Monitoring device placed under a bed leg. Own photo [date and place to be confirmed]."
+   "es": "Ilustración: colocación de un monitor bajo la pata de la cama. No es una fotografía propia.",
+   "en": "Illustration: placing a monitor under a bed leg. Not an own photograph."
   },
-  "seo": "dispositivo-monitorizacion-cama",
+  "seo": "monitor-chinches-pata-cama-ilustracion-{480,800,1200}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/ipm/monitoring/",
+   "base": "monitor-chinches-pata-cama-ilustracion",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "illustration"
  },
  "IMG-IPM-05": {
   "id": "IMG-IPM-05",
@@ -1170,22 +1432,37 @@
   "folder": "entomology/adults",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1600,
+   800
   ],
   "priority": "P1",
   "alt": {
-   "es": "Chinche de cama adulta (hembra alimentada) sobre tejido",
-   "en": "Adult bed bug (fed female) on fabric"
+   "es": "Chinche de cama adulta vista de lado sobre un tejido de trama gruesa, imagen macro",
+   "en": "Adult bed bug seen from the side on a coarse-weave fabric, macro image"
   },
   "caption": {
-   "es": "Chinche de cama adulta (hembra alimentada) sobre tejido. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
-   "en": "Adult bed bug (fed female) on fabric. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+   "es": "Chinche de cama adulta sobre tejido. Imagen ilustrativa, sin escala; sexo y estadio sin determinar.",
+   "en": "Adult bed bug on fabric. Illustrative image, no scale; sex and stage not determined."
   },
-  "seo": "chinche-cama-adulta-hembra-alimentada",
+  "seo": "chinche-de-cama-adulta-macro-{800,1200,1600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinche-de-cama-adulta-macro",
+   "widths": [
+    800,
+    1200,
+    1600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1600,
+   "height": 800
+  },
+  "provenance": "unverified"
  },
  "IMG-ENT-ADU-02": {
   "id": "IMG-ENT-ADU-02",
@@ -1434,22 +1711,41 @@
   "folder": "entomology/moults",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1152,
+   1536
   ],
   "priority": "P1",
   "alt": {
-   "es": "Mudas de chinche de cama en una costura",
-   "en": "Bed bug moults in a seam"
+   "es": "Mudas y restos dorados de chinches de cama sobre una tela tapizada de color azul",
+   "en": "Golden moults and remains of bed bugs on a blue upholstery fabric"
   },
   "caption": {
-   "es": "Mudas de chinche de cama en una costura. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
-   "en": "Bed bug moults in a seam. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+   "es": "Mudas de chinches en una tela. Foto propia.",
+   "en": "Bed bug moults on a fabric. Own photo."
   },
-  "seo": "mudas-chinche-cama-costura",
+  "seo": "mudas-chinches-tela-tapizada-{800,1152}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "mudas-chinches-tela-tapizada",
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1152,
+   "height": 1536
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-ENT-MOU-02": {
   "id": "IMG-ENT-MOU-02",
@@ -1500,66 +1796,124 @@
   "folder": "entomology/excrement",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1536,
+   1152
   ],
   "priority": "P2",
   "alt": {
-   "es": "Manchas de excrementos sobre madera o pared",
-   "en": "Excreta spots on wood or wall"
+   "es": "Salpicaduras de excrementos y mudas de chinches de cama sobre una superficie lacada de color blanco",
+   "en": "Splashes of bed bug excreta and moults on a white lacquered surface"
   },
   "caption": {
-   "es": "Manchas de excrementos sobre madera o pared. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
-   "en": "Excreta spots on wood or wall. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+   "es": "Excrementos y mudas en una infestación real. Foto propia.",
+   "en": "Excreta and moults in a real infestation. Own photo."
   },
-  "seo": "excrementos-chinche-madera-pared",
+  "seo": "excrementos-chinches-superficie-lacada-{800,1200,1536}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "excrementos-chinches-superficie-lacada",
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1152
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-ENT-HID-01": {
   "id": "IMG-ENT-HID-01",
   "folder": "entomology/hiding-places",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1152,
+   1536
   ],
   "priority": "P1",
   "alt": {
-   "es": "Chinches en la costura de un colchón infestado",
-   "en": "Bed bugs in the seam of an infested mattress"
+   "es": "Esquina de un colchón con chinches de cama, mudas y excrementos acumulados en la costura",
+   "en": "Mattress corner with bed bugs, moults and excreta accumulated along the seam"
   },
   "caption": {
-   "es": "Chinches en la costura de un colchón infestado. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
-   "en": "Bed bugs in the seam of an infested mattress. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+   "es": "Chinches en la costura de un colchón infestado. Foto propia.",
+   "en": "Bed bugs along the seam of an infested mattress. Own photo."
   },
-  "seo": "chinches-costura-colchon-infestado",
+  "seo": "chinches-costura-colchon-infestado-{800,1152}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-costura-colchon-infestado",
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1152,
+   "height": 1536
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-ENT-HID-02": {
   "id": "IMG-ENT-HID-02",
   "folder": "entomology/hiding-places",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1152,
+   1536
   ],
   "priority": "P1",
   "alt": {
-   "es": "Chinches en el somier",
-   "en": "Bed bugs in a bed frame"
+   "es": "Chinches de cama, mudas y excrementos acumulados en las uniones de los listones de un somier",
+   "en": "Bed bugs, moults and excreta accumulated at the joints of the slats of a bed base"
   },
   "caption": {
-   "es": "Chinches en el somier. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
-   "en": "Bed bugs in a bed frame. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+   "es": "Chinches en las uniones de un somier. Foto propia.",
+   "en": "Bed bugs at the joints of a bed base. Own photo."
   },
-  "seo": "chinches-somier-infestado",
+  "seo": "chinches-somier-listones-uniones-{800,1152}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-somier-listones-uniones",
+   "widths": [
+    800,
+    1152
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1152,
+   "height": 1536
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  }
  },
  "IMG-ENT-HID-03": {
   "id": "IMG-ENT-HID-03",
@@ -1720,44 +2074,76 @@
   "folder": "accommodation",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P2",
   "alt": {
-   "es": "Dormitorio de un apartamento turístico durante la inspección",
-   "en": "Holiday-rental bedroom during inspection"
+   "es": "Dormitorio de un apartamento turístico con cama de matrimonio, mesillas de noche y terraza",
+   "en": "Bedroom of a tourist apartment with a double bed, bedside tables and a balcony"
   },
   "caption": {
-   "es": "Dormitorio de un apartamento turístico durante la inspección. Foto propia [fecha y lugar por confirmar].",
-   "en": "Holiday-rental bedroom during inspection. Own photo [date and place to be confirmed]."
+   "es": "Dormitorio de un apartamento turístico (imagen ilustrativa).",
+   "en": "Bedroom of a tourist apartment (illustrative image)."
   },
-  "seo": "inspeccion-apartamento-turistico",
+  "seo": "dormitorio-apartamento-turistico-{640,960,1280,1448}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/accommodation/",
+   "base": "dormitorio-apartamento-turistico",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "illustration"
  },
  "IMG-B2B-02": {
   "id": "IMG-B2B-02",
   "folder": "accommodation",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P2",
   "alt": {
-   "es": "Inspección de una habitación de hotel",
-   "en": "Inspecting a hotel room"
+   "es": "Habitación de un alojamiento con dos camas individuales, escritorio y balcón",
+   "en": "Accommodation room with two single beds, a desk and a balcony"
   },
   "caption": {
-   "es": "Inspección de una habitación de hotel. Foto propia [fecha y lugar por confirmar].",
-   "en": "Inspecting a hotel room. Own photo [date and place to be confirmed]."
+   "es": "Habitación de un alojamiento (imagen ilustrativa).",
+   "en": "Accommodation room (illustrative image)."
   },
-  "seo": "inspeccion-habitacion-hotel",
+  "seo": "habitacion-alojamiento-dos-camas-{640,960,1280,1448}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/accommodation/",
+   "base": "habitacion-alojamiento-dos-camas",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "unverified"
  },
  "IMG-B2B-03": {
   "id": "IMG-B2B-03",
@@ -1852,22 +2238,38 @@
   "folder": "ipm/prevention",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   1448,
+   1086
   ],
   "priority": "P2",
   "alt": {
-   "es": "Comprobación de la cama al llegar a un hotel",
-   "en": "Checking the bed on arrival at a hotel"
+   "es": "Habitación sencilla de un alojamiento con una cama de matrimonio, una cama individual y un televisor",
+   "en": "Plain accommodation room with a double bed, a single bed and a television"
   },
   "caption": {
-   "es": "Comprobación de la cama al llegar a un hotel. Foto propia [fecha y lugar por confirmar].",
-   "en": "Checking the bed on arrival at a hotel. Own photo [date and place to be confirmed]."
+   "es": "Habitación de un alojamiento (imagen ilustrativa).",
+   "en": "Accommodation room (illustrative image)."
   },
-  "seo": "comprobacion-cama-hotel-llegada",
+  "seo": "habitacion-sencilla-cama-doble-e-individual-{640,960,1280,1448}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/accommodation/",
+   "base": "habitacion-sencilla-cama-doble-e-individual",
+   "widths": [
+    640,
+    960,
+    1280,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "provenance": "unverified"
  },
  "IMG-MYTH-01": {
   "id": "IMG-MYTH-01",
@@ -2094,44 +2496,72 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   600,
+   400
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Vista de Alicante (foto propia)",
-   "en": "View of Alicante (own photo)"
+   "es": "Paseo de la Explanada de España en Alicante, con su pavimento ondulado y las palmeras",
+   "en": "The Explanada de España promenade in Alicante, with its wavy paving and palm trees"
   },
   "caption": {
-   "es": "Vista de Alicante (foto propia). Foto propia [fecha y lugar por confirmar].",
-   "en": "View of Alicante (own photo). Own photo [date and place to be confirmed]."
+   "es": "Alicante: paseo de la Explanada.",
+   "en": "Alicante: the Explanada promenade."
   },
-  "seo": "alicante-vista-ciudad",
+  "seo": "alicante-paseo-explanada-{600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/locations/",
+   "base": "alicante-paseo-explanada",
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 600,
+   "height": 400
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-ALC-02": {
   "id": "IMG-LOC-ALC-02",
   "folder": "locations",
   "role": "content",
   "aspect": [
-   3,
-   2
+   1200,
+   900
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Tipo de vivienda habitual en Alicante",
-   "en": "Typical dwelling type in Alicante"
+   "es": "Dormitorio de una vivienda con cama de matrimonio, mesillas y una ventana a la calle",
+   "en": "Bedroom of a home with a double bed, bedside tables and a window onto the street"
   },
   "caption": {
-   "es": "Tipo de vivienda habitual en Alicante. Foto propia [fecha y lugar por confirmar].",
-   "en": "Typical dwelling type in Alicante. Own photo [date and place to be confirmed]."
+   "es": "Dormitorio de una vivienda (imagen ilustrativa).",
+   "en": "Bedroom of a home (illustrative image)."
   },
-  "seo": "vivienda-tipica-alicante",
+  "seo": "dormitorio-vivienda-cama-matrimonio-{480,800,1200}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/accommodation/",
+   "base": "dormitorio-vivienda-cama-matrimonio",
+   "widths": [
+    480,
+    800,
+    1200
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1200,
+   "height": 900
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-ALC-03": {
   "id": "IMG-LOC-ALC-03",
@@ -2160,22 +2590,35 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   600,
+   400
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Vista de Benidorm (foto propia)",
-   "en": "View of Benidorm (own photo)"
+   "es": "Playa y rascacielos de Benidorm vistos desde el aire al atardecer",
+   "en": "Beach and skyscrapers of Benidorm seen from the air at sunset"
   },
   "caption": {
-   "es": "Vista de Benidorm (foto propia). Foto propia [fecha y lugar por confirmar].",
-   "en": "View of Benidorm (own photo). Own photo [date and place to be confirmed]."
+   "es": "Benidorm: playa y rascacielos al atardecer.",
+   "en": "Benidorm: beach and skyscrapers at sunset."
   },
-  "seo": "benidorm-vista-ciudad",
+  "seo": "benidorm-playa-rascacielos-atardecer-{600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/locations/",
+   "base": "benidorm-playa-rascacielos-atardecer",
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 600,
+   "height": 400
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-BEN-02": {
   "id": "IMG-LOC-BEN-02",
@@ -2226,22 +2669,35 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   600,
+   338
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Vista de Torrevieja (foto propia)",
-   "en": "View of Torrevieja (own photo)"
+   "es": "Urbanización de viviendas con tejados de teja en Torrevieja",
+   "en": "Housing development with tiled roofs in Torrevieja"
   },
   "caption": {
-   "es": "Vista de Torrevieja (foto propia). Foto propia [fecha y lugar por confirmar].",
-   "en": "View of Torrevieja (own photo). Own photo [date and place to be confirmed]."
+   "es": "Torrevieja: urbanización de viviendas.",
+   "en": "Torrevieja: a housing development."
   },
-  "seo": "torrevieja-vista-ciudad",
+  "seo": "torrevieja-urbanizacion-viviendas-{600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/locations/",
+   "base": "torrevieja-urbanizacion-viviendas",
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 600,
+   "height": 338
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-TOR-02": {
   "id": "IMG-LOC-TOR-02",
@@ -2336,22 +2792,35 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   600,
+   400
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Vista de Calpe (foto propia)",
-   "en": "View of Calpe (own photo)"
+   "es": "Vista panorámica de Calpe con el puerto deportivo, la playa y los bloques de apartamentos",
+   "en": "Panoramic view of Calpe with the marina, the beach and the apartment blocks"
   },
   "caption": {
-   "es": "Vista de Calpe (foto propia). Foto propia [fecha y lugar por confirmar].",
-   "en": "View of Calpe (own photo). Own photo [date and place to be confirmed]."
+   "es": "Calpe: vista panorámica de la costa.",
+   "en": "Calpe: panoramic view of the coast."
   },
-  "seo": "calpe-vista-ciudad",
+  "seo": "calpe-vista-panoramica-costa-{600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/locations/",
+   "base": "calpe-vista-panoramica-costa",
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 600,
+   "height": 400
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-CAL-02": {
   "id": "IMG-LOC-CAL-02",
@@ -2424,22 +2893,35 @@
   "folder": "locations",
   "role": "hero",
   "aspect": [
-   3,
-   2
+   600,
+   799
   ],
   "priority": "OPT",
   "alt": {
-   "es": "Vista de Altea (foto propia)",
-   "en": "View of Altea (own photo)"
+   "es": "Plaza de la iglesia de cúpulas azules de Altea con terrazas de cafés",
+   "en": "Square in front of the blue-domed church in Altea with café terraces"
   },
   "caption": {
-   "es": "Vista de Altea (foto propia). Foto propia [fecha y lugar por confirmar].",
-   "en": "View of Altea (own photo). Own photo [date and place to be confirmed]."
+   "es": "Altea: plaza de la iglesia.",
+   "en": "Altea: the church square."
   },
-  "seo": "altea-vista-ciudad",
+  "seo": "altea-plaza-iglesia-cupulas-azules-{600}.avif|webp",
   "kind": "photo",
-  "status": "placeholder",
-  "variants": null
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/img/locations/",
+   "base": "altea-plaza-iglesia-cupulas-azules",
+   "widths": [
+    600
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 600,
+   "height": 799
+  },
+  "provenance": "unverified"
  },
  "IMG-LOC-ALT-02": {
   "id": "IMG-LOC-ALT-02",

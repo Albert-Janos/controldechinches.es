@@ -67,14 +67,14 @@
     "html": "<ul><li>estructura de la cama y sus juntas;</li><li>cabecero;</li><li>mesillas y muebles cercanos;</li><li>rodapiés;</li><li>grietas y rendijas accesibles;</li><li>partes tratables de sofás y sillones;</li><li>otras habitaciones, si la infestación lo justifica.</li></ul><p>Que una zona figure en esta lista no significa que cualquier producto pueda aplicarse en ella.</p>"
    },
    {
-    "type": "figure",
-    "image": "IMG-CHEM-05"
-   },
-   {
     "type": "text",
     "id": "nebulizacion-en-frio",
     "h2": "Nebulización en frío",
     "html": "<p>La nebulización en frío es un complemento que el técnico se plantea en estos casos:</p><ul><li>infestación fuerte;</li><li>escondites de difícil acceso;</li><li>habitaciones complejas con muchos escondites;</li><li>un tratamiento anterior fallido.</li></ul><p>Hay que tener claro lo que no es: no sustituye a la pulverización dirigida ni al tratamiento de escondites, no garantiza que llegue una cantidad adecuada de producto a todos los escondites ocultos y solo puede usarse si el producto concreto lo permite. Es una aplicación profesional, distinta de los nebulizadores domésticos que liberan todo su contenido de una vez.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-CHEM-07"
    },
    {
     "type": "steps",
@@ -219,14 +219,14 @@
     "html": "<ul><li>the bed structure and its joints;</li><li>the headboard;</li><li>bedside tables and nearby furniture;</li><li>baseboards;</li><li>accessible cracks and gaps;</li><li>treatable parts of sofas and armchairs;</li><li>other rooms, if the infestation justifies it.</li></ul><p>An area being on this list does not mean any product may be applied to it.</p>"
    },
    {
-    "type": "figure",
-    "image": "IMG-CHEM-05"
-   },
-   {
     "type": "text",
     "id": "cold-fogging",
     "h2": "Cold fogging",
     "html": "<p>Cold fogging is a supplement the technician considers in these cases:</p><ul><li>a heavy infestation;</li><li>hiding places that are hard to reach;</li><li>complex rooms with many hiding places;</li><li>a failed earlier treatment.</li></ul><p>It is important to be clear about what it is not: it does not replace targeted spraying or the treatment of hiding places, it does not guarantee that an adequate amount of product reaches every hidden hiding place, and it can only be used if the specific product allows it. It is a professional application, different from household foggers that release their entire contents at once.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-CHEM-07"
    },
    {
     "type": "steps",

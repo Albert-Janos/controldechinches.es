@@ -1,5 +1,6 @@
 // Page templates T-A ... T-I. A page = JSON data + template id; see docs/seo/PAGE-TEMPLATES.md
 import { consumerNumber, resolveTokens } from './prices.mjs';
+import { skipOptional } from './components.mjs';
 import { esc, head, header, footer, breadcrumb, button, ctaBand, picture, figure, renderBlock, authorBox, sourcesBlock, relatedBlock, metaLine, draftBanner, symbols, pageUrl, absUrl, slug, unlinkDead, imgKind } from './components.mjs';
 
 // ---------- JSON-LD ----------
@@ -34,13 +35,13 @@ export function jsonld(ctx, crumbs) {
   }
   if (page.template === 'T-G') {
     const imgs = (L.blocks || []).filter(b => b.type === 'gallery').flatMap(b => (b.groups || [{ images: b.images }]).flatMap(g => g.images));
-    imgs.filter(id => ctx.images[id]?.status === 'ready').forEach(id => { const v = ctx.images[id].variants; graph.push({ '@type': 'ImageObject', '@id': url + '#image-' + id, contentUrl: absUrl(ctx, `${v.dir}${v.base}-${v.widths.at(-1)}.webp`), caption: ctx.images[id].caption?.[lang], creator: person ? { '@id': person['@id'] } : { '@id': org['@id'] } }); });
+    imgs.filter(id => ctx.images[id]?.status === 'ready').forEach(id => { const v = ctx.images[id].variants; graph.push({ '@type': 'ImageObject', '@id': url + '#image-' + id, contentUrl: absUrl(ctx, `${v.dir}${v.base}-${v.widths.at(-1)}.webp`), caption: ctx.images[id].caption?.[lang], ...(ctx.images[id].provenance === 'own' ? { creator: person ? { '@id': person['@id'] } : { '@id': org['@id'] } } : {}) }); });
   }
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 
 // ---------- shared pieces ----------
-function heroImage(ctx, L, eager = true) { return L.heroImage ? `<figure class="sx-hero-media">${picture(ctx, L.heroImage, { eager, sizes: '(min-width: 990px) 34rem, 100vw' })}</figure>` : ''; }
+function heroImage(ctx, L, eager = true) { return L.heroImage && !skipOptional(ctx, L.heroImage) ? `<figure class="sx-hero-media">${picture(ctx, L.heroImage, { eager, sizes: '(min-width: 990px) 34rem, 100vw' })}</figure>` : ''; }
 function heroNavy(ctx, variant = '') {
   const { page, lang, ui } = ctx, L = page[lang], c = ui.cta, key = page.cta?.message || 'default';
   const media = heroImage(ctx, L);
@@ -52,7 +53,7 @@ function renderBody(ctx, blocks) {
     const b = blocks[i], next = blocks[i + 1];
     if (b.h2 && b.toc !== false) toc.push([b.id || slug(b.h2), b.h2]);
     // a vertical portrait straight after a text block sits BESIDE that text on desktop (stacked and compact on phones)
-    if (b.type === 'text' && next?.type === 'figure' && imgKind(ctx, next.image) === 'portrait') {
+    if (b.type === 'text' && next?.type === 'figure' && imgKind(ctx, next.image).startsWith('portrait')) {
       parts.push(`<div class="sx-split">${renderBlock(ctx, b, i)}${renderBlock(ctx, next, i + 1)}</div>`); i++; continue;
     }
     parts.push(renderBlock(ctx, b, i));
@@ -77,7 +78,7 @@ const templates = {
   },
   article(ctx) {
     const { page, lang, ui } = ctx, L = page[lang], bc = breadcrumb(ctx), body = renderBody(ctx, L.blocks || []);
-    const media = L.heroImage ? `<div class="sx-block">${figure(ctx, L.heroImage, { eager: true, usage: 'hero' })}</div>` : '';
+    const media = L.heroImage && !skipOptional(ctx, L.heroImage) ? `<div class="sx-block">${figure(ctx, L.heroImage, { eager: true, usage: 'hero' })}</div>` : '';
     return { crumbs: bc.items, main: `${bc.html}<div class="sx-wrap"><header><p class="eyebrow">${esc(L.eyebrow || '')}</p><h1 id="hero-title" style="margin-top:.6rem;max-width:22ch">${esc(L.h1)}</h1>${L.answer ? `<div class="sx-answer"><h2>${esc(ui.shortAnswer)}</h2><p>${esc(L.answer)}</p></div>` : ''}${metaLine(ctx)}</header>${media}</div><div class="sx-wrap sx-layout${body.toc.length >= 3 ? ' sx-layout--toc' : ''}"><div class="sx-main">${body.html}${faqInline(ctx, L)}${relatedBlock(ctx)}${ctaBand(ctx, 'soft', page.cta?.message)}${sourcesBlock(ctx)}<section class="sx-block">${authorBox(ctx)}</section></div>${tocHtml(ctx, body.toc)}</div>` };
   },
   hub(ctx, cta = 'soft') {

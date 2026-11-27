@@ -20,6 +20,17 @@
     "intro": "Alicante y la Costa Blanca: 18 localidades."
    },
    {
+    "type": "gallery",
+    "h2": "Algunas localidades",
+    "images": [
+     "IMG-LOC-ALC-01",
+     "IMG-LOC-BEN-01",
+     "IMG-LOC-TOR-01",
+     "IMG-LOC-CAL-01",
+     "IMG-LOC-ALT-01"
+    ]
+   },
+   {
     "type": "text",
     "id": "desplazamiento",
     "h2": "Disponibilidad y desplazamiento",
@@ -69,6 +80,17 @@
     "type": "towns",
     "h2": "Towns",
     "intro": "Alicante and the Costa Blanca: 18 towns."
+   },
+   {
+    "type": "gallery",
+    "h2": "Some of the towns",
+    "images": [
+     "IMG-LOC-ALC-01",
+     "IMG-LOC-BEN-01",
+     "IMG-LOC-TOR-01",
+     "IMG-LOC-CAL-01",
+     "IMG-LOC-ALT-01"
+    ]
    },
    {
     "type": "text",

@@ -59,6 +59,10 @@
     "html": "<p>El vapor seco actúa por calor: el vapor sobrecalentado se dirige a las costuras del colchón, el somier, el cabecero, las juntas de los muebles y otros puntos accesibles. Las chinches y sus huevos son sensibles a las temperaturas altas, pero el efecto depende de que el calor llegue realmente al lugar donde están. El vapor tiene una penetración limitada y no deja un efecto insecticida duradero.</p><p>Fuentes independientes sobre temperaturas, tiempos y estudios están en la <a href=\"/guia-chinches/vapor-contra-chinches/\">guía sobre vapor contra chinches</a>; aquí se describe el servicio.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
     "type": "text",
     "id": "que-equipo",
     "h2": "Qué equipo se utiliza",
@@ -66,7 +70,7 @@
    },
    {
     "type": "figure",
-    "image": "IMG-DRY-04"
+    "image": "IMG-DRY-01"
    },
    {
     "type": "proscons",
@@ -117,6 +121,10 @@
     ]
    },
    {
+    "type": "figure",
+    "image": "IMG-DRY-05"
+   },
+   {
     "type": "text",
     "id": "cuando-solo-vapor",
     "h2": "¿Cuándo se recomienda el vapor seco independiente?",
@@ -156,7 +164,7 @@
    },
    {
     "type": "todo",
-    "text": "Pendiente del propietario: ajustes reales de uso del equipo (presión, distancia, tiempos de aplicación); comprobar el uso previsto de HPMed en aplicación profesional (la ficha de seguridad lo describe como detergente para aparatos domésticos Polti); confirmar de forma documentada la temperatura de la caldera; fotos propias IMG-DRY-01, -03, -04 y -10 (ver PHOTO-SHOT-LIST.md)."
+    "text": "Pendiente del propietario: ajustes reales de uso del equipo (presión, distancia, tiempos de aplicación); comprobar el uso previsto de HPMed en aplicación profesional (la ficha de seguridad lo describe como detergente para aparatos domésticos Polti); confirmar de forma documentada la temperatura de la caldera; fotos propias IMG-DRY-03 e IMG-DRY-04 (ver PHOTO-SHOT-LIST.md)."
    }
   ],
   "faq": [
@@ -244,6 +252,10 @@
     "html": "<p>Dry steam works by heat: superheated steam is directed at mattress seams, the bed frame, the headboard, furniture joints and other accessible points. Bed bugs and their eggs are sensitive to high temperatures, but the effect depends on the heat actually reaching where they are. Steam penetration is limited and it leaves no lasting insecticidal effect.</p><p>Independent sources on temperatures, times and studies are in the <a href=\"/en/bed-bug-guide/does-steam-kill-bed-bugs/\">guide on steam against bed bugs</a>; this page describes the service.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
     "type": "text",
     "id": "equipment",
     "h2": "The equipment used",
@@ -251,7 +263,7 @@
    },
    {
     "type": "figure",
-    "image": "IMG-DRY-04"
+    "image": "IMG-DRY-01"
    },
    {
     "type": "proscons",
@@ -302,6 +314,10 @@
     ]
    },
    {
+    "type": "figure",
+    "image": "IMG-DRY-05"
+   },
+   {
     "type": "text",
     "id": "when-steam-alone",
     "h2": "When is stand-alone dry steam recommended?",
@@ -341,7 +357,7 @@
    },
    {
     "type": "todo",
-    "text": "Owner input needed: actual equipment settings (pressure, distance, application times); check the intended professional use of HPMed (the safety data sheet describes it as a detergent for Polti household appliances); documented confirmation of the boiler temperature; own photos IMG-DRY-01, -03, -04 and -10 (see PHOTO-SHOT-LIST.md)."
+    "text": "Owner input needed: actual equipment settings (pressure, distance, application times); check the intended professional use of HPMed (the safety data sheet describes it as a detergent for Polti household appliances); documented confirmation of the boiler temperature; own photos IMG-DRY-03 and IMG-DRY-04 (see PHOTO-SHOT-LIST.md)."
    }
   ],
   "faq": [
