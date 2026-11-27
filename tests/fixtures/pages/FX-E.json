@@ -1,0 +1,94 @@
+{
+ "id": "FX-E",
+ "template": "T-E",
+ "status": "Draft",
+ "dataPage": "b2b",
+ "cta": {
+  "message": "b2b"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/b2b/",
+  "title": "Fixture FX-E (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-E. No publicable.",
+  "h1": "Fixture FX-E: T-E",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Problemas del operador",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "steps",
+    "h2": "Proceso",
+    "items": [
+     {
+      "h3": "Uno",
+      "p": "Prueba"
+     },
+     {
+      "h3": "Dos",
+      "p": "Prueba"
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/b2b/",
+  "title": "Fixture FX-E (EN) | Control de Chinches",
+  "description": "Test fixture FX-E. Not publishable.",
+  "h1": "Fixture FX-E: T-E",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Operator problems",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "steps",
+    "h2": "Process",
+    "items": [
+     {
+      "h3": "One",
+      "p": "Test"
+     },
+     {
+      "h3": "Two",
+      "p": "Test"
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
+}

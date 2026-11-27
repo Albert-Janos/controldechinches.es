@@ -14,3 +14,7 @@ dist/
 reports/raw/
 *.bak
 *.orig
+dist-*/
+*.pages-tmp/
+reports/package-*-manifest.json
+reports/raw-lh-*.log

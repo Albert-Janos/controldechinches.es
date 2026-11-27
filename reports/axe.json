@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-27",
+  "axe": "4.14.1",
+  "results": [
+    {
+      "path": "/",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 1,
+      "passes": 43
+    },
+    {
+      "path": "/",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 1,
+      "passes": 42
+    },
+    {
+      "path": "/en/",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 1,
+      "passes": 43
+    },
+    {
+      "path": "/en/",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 1,
+      "passes": 42
+    },
+    {
+      "path": "/precios.html",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 49
+    },
+    {
+      "path": "/precios.html",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/en/prices.html",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 49
+    },
+    {
+      "path": "/en/prices.html",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/chinches-apartamentos-turisticos/",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/chinches-apartamentos-turisticos/",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[aria-label=\"Español\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 47
+    },
+    {
+      "path": "/en/bed-bugs-holiday-rentals/",
+      "mode": "desktop",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/en/bed-bugs-holiday-rentals/",
+      "mode": "mobile",
+      "violations": [
+        {
+          "id": "label-content-name-mismatch",
+          "impact": "serious",
+          "nodes": 2,
+          "help": "Elements must have their visible text as part of their accessible name",
+          "sample": "a[lang=\"es\"]"
+        }
+      ],
+      "incomplete": 2,
+      "passes": 47
+    },
+    {
+      "path": "/aviso-legal.html",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 34
+    },
+    {
+      "path": "/aviso-legal.html",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 35
+    },
+    {
+      "path": "/politica-privacidad.html",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 35
+    },
+    {
+      "path": "/politica-privacidad.html",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 36
+    },
+    {
+      "path": "/404.html",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 33
+    },
+    {
+      "path": "/404.html",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 32
+    }
+  ]
+}

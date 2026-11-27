@@ -1,0 +1,105 @@
+{
+ "id": "FX-A",
+ "template": "T-A",
+ "status": "Draft",
+ "dataPage": "local",
+ "cta": {
+  "message": "default"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/local/",
+  "title": "Fixture FX-A (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-A. No publicable.",
+  "h1": "Fixture FX-A: T-A",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-LOC-ALC-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Resumen local",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "priceBox",
+    "h2": "Precios"
+   },
+   {
+    "type": "text",
+    "h2": "Tipos de vivienda",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Pregunta de prueba uno?",
+    "a": "Respuesta de prueba uno."
+   },
+   {
+    "q": "¿Pregunta de prueba dos?",
+    "a": "Respuesta de prueba dos."
+   }
+  ],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/local/",
+  "title": "Fixture FX-A (EN) | Control de Chinches",
+  "description": "Test fixture FX-A. Not publishable.",
+  "h1": "Fixture FX-A: T-A",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-LOC-ALC-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Local summary",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "priceBox",
+    "h2": "Prices"
+   },
+   {
+    "type": "text",
+    "h2": "Property types",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Test question one?",
+    "a": "Test answer one."
+   },
+   {
+    "q": "Test question two?",
+    "a": "Test answer two."
+   }
+  ],
+  "sources": []
+ },
+ "areaServed": [
+  "Alicante"
+ ]
+}

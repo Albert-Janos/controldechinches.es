@@ -1,0 +1,110 @@
+{
+ "id": "FX-F",
+ "template": "T-F",
+ "status": "Draft",
+ "dataPage": "case",
+ "cta": {
+  "message": "default"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/case/",
+  "title": "Fixture FX-F (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-F. No publicable.",
+  "h1": "Fixture FX-F: T-F",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-INS-06",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Población",
+      "value": "Prueba"
+     },
+     {
+      "label": "Inmueble",
+      "value": "Piso"
+     },
+     {
+      "label": "Método",
+      "value": "Prueba"
+     }
+    ]
+   },
+   {
+    "type": "timeline",
+    "h2": "Cronología",
+    "items": [
+     {
+      "when": "Día 0",
+      "text": "Prueba"
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/case/",
+  "title": "Fixture FX-F (EN) | Control de Chinches",
+  "description": "Test fixture FX-F. Not publishable.",
+  "h1": "Fixture FX-F: T-F",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-INS-06",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Town",
+      "value": "Test"
+     },
+     {
+      "label": "Property",
+      "value": "Flat"
+     },
+     {
+      "label": "Method",
+      "value": "Test"
+     }
+    ]
+   },
+   {
+    "type": "timeline",
+    "h2": "Timeline",
+    "items": [
+     {
+      "when": "Day 0",
+      "text": "Test"
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
+}

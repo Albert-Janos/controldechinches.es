@@ -1,0 +1,23 @@
+{
+  "_comment": "Pre-filled WhatsApp messages (copied from the live site). Keys are used by the generator via page.cta.message.",
+  "default": {
+    "es": "Hola, creo que tengo chinches de cama y quisiera pedir presupuesto. Mi localidad es:",
+    "en": "Hello, I think I may have bed bugs and would like a quote. My town is:"
+  },
+  "steam": {
+    "es": "Hola, quisiera saber si el tratamiento con vapor es adecuado para mi caso. Mi localidad es:",
+    "en": "Hello, I would like to know whether steam treatment is suitable for my case. My town is:"
+  },
+  "chemical": {
+    "es": "Hola, necesito orientación sobre el tratamiento químico contra chinches. Mi localidad es:",
+    "en": "Hello, I need guidance on chemical treatment for bed bugs. My town is:"
+  },
+  "identify": {
+    "es": "Hola, he encontrado algo que podrían ser chinches y quisiera que me ayudéis a identificarlo. Mi localidad es:",
+    "en": "Hello, I have found something that might be bed bugs and would like help identifying it. My town is:"
+  },
+  "b2b": {
+    "es": "Hola, gestiono un alojamiento turístico y quisiera información sobre prevención y monitorización de chinches. Mi localidad es:",
+    "en": "Hello, I manage tourist accommodation and would like information about bed bug prevention and monitoring. My town is:"
+  }
+}

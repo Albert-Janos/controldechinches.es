@@ -1,0 +1,354 @@
+{
+ "id": "FX-B",
+ "template": "T-B",
+ "status": "Draft",
+ "dataPage": "service",
+ "cta": {
+  "message": "default"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/service/",
+  "title": "Fixture FX-B (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-B. No publicable.",
+  "h1": "Fixture FX-B: T-B",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-10",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Dónde",
+      "value": "Prueba"
+     },
+     {
+      "label": "Tiempo",
+      "value": "1–2 h"
+     },
+     {
+      "label": "Desde",
+      "value": "150 €"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "h2": "Problema y solución",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "steps",
+    "h2": "Flujo de trabajo",
+    "items": [
+     {
+      "h3": "Paso 1",
+      "p": "Descripción del paso de prueba."
+     },
+     {
+      "h3": "Paso 2",
+      "p": "Descripción del paso de prueba."
+     },
+     {
+      "h3": "Paso 3",
+      "p": "Descripción del paso de prueba."
+     }
+    ]
+   },
+   {
+    "type": "proscons",
+    "h2": "Ventajas y limitaciones",
+    "pros": [
+     "A",
+     "B"
+    ],
+    "cons": [
+     "C",
+     "D"
+    ]
+   },
+   {
+    "type": "roles",
+    "h2": "Quién hace qué",
+    "columns": [
+     {
+      "title": "Lo realiza el propietario",
+      "items": [
+       "x",
+       "y"
+      ]
+     },
+     {
+      "title": "Se recomienda",
+      "items": [
+       "z"
+      ]
+     },
+     {
+      "title": "Contratista externo",
+      "items": [
+       "w"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "table",
+    "h2": "Comparativa",
+    "caption": "Tabla de prueba",
+    "head": [
+     "Método",
+     "A",
+     "B"
+    ],
+    "rows": [
+     [
+      "Fila 1",
+      "1",
+      "2"
+     ],
+     [
+      "Fila 2",
+      "3",
+      "4"
+     ]
+    ]
+   },
+   {
+    "type": "priceBox",
+    "h2": "Precios"
+   },
+   {
+    "type": "cards",
+    "h2": "Relacionado",
+    "items": [
+     {
+      "title": "Uno",
+      "text": "Texto",
+      "href": "/__fixture__/hub/"
+     },
+     {
+      "title": "Dos",
+      "text": "Texto"
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #7: bloque de ejemplo visible solo en preview."
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Pregunta de prueba uno?",
+    "a": "Respuesta de prueba uno."
+   },
+   {
+    "q": "¿Pregunta de prueba dos?",
+    "a": "Respuesta de prueba dos."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Fuente de prueba",
+    "publisher": "Editor de prueba",
+    "year": "2026",
+    "url": "https://example.org/test",
+    "checked": "comprobada 2026-01-01"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/__fixture__/service/",
+  "title": "Fixture FX-B (EN) | Control de Chinches",
+  "description": "Test fixture FX-B. Not publishable.",
+  "h1": "Fixture FX-B: T-B",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-10",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Where",
+      "value": "Test"
+     },
+     {
+      "label": "Time",
+      "value": "1–2 h"
+     },
+     {
+      "label": "From",
+      "value": "€150"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "h2": "Problem and solution",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "steps",
+    "h2": "Workflow",
+    "items": [
+     {
+      "h3": "Step 1",
+      "p": "Test step description."
+     },
+     {
+      "h3": "Step 2",
+      "p": "Test step description."
+     },
+     {
+      "h3": "Step 3",
+      "p": "Test step description."
+     }
+    ]
+   },
+   {
+    "type": "proscons",
+    "h2": "Advantages and limits",
+    "pros": [
+     "A",
+     "B"
+    ],
+    "cons": [
+     "C",
+     "D"
+    ]
+   },
+   {
+    "type": "roles",
+    "h2": "Who does what",
+    "columns": [
+     {
+      "title": "Done by the owner",
+      "items": [
+       "x",
+       "y"
+      ]
+     },
+     {
+      "title": "Recommended",
+      "items": [
+       "z"
+      ]
+     },
+     {
+      "title": "External contractor",
+      "items": [
+       "w"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "table",
+    "h2": "Comparison",
+    "caption": "Test table",
+    "head": [
+     "Método",
+     "A",
+     "B"
+    ],
+    "rows": [
+     [
+      "Fila 1",
+      "1",
+      "2"
+     ],
+     [
+      "Fila 2",
+      "3",
+      "4"
+     ]
+    ]
+   },
+   {
+    "type": "priceBox",
+    "h2": "Prices"
+   },
+   {
+    "type": "cards",
+    "h2": "Related",
+    "items": [
+     {
+      "title": "Uno",
+      "text": "Texto",
+      "href": "/__fixture__/hub/"
+     },
+     {
+      "title": "Dos",
+      "text": "Texto"
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #7: bloque de ejemplo visible solo en preview."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Test question one?",
+    "a": "Test answer one."
+   },
+   {
+    "q": "Test question two?",
+    "a": "Test answer two."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Fuente de prueba",
+    "publisher": "Editor de prueba",
+    "year": "2026",
+    "url": "https://example.org/test",
+    "checked": "comprobada 2026-01-01"
+   }
+  ]
+ },
+ "offers": [
+  "chemical",
+  "steam"
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": "FX-H",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "hub",
+ "cta": {
+  "message": "default"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/hub/",
+  "title": "Fixture FX-H (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-H. No publicable.",
+  "h1": "Fixture FX-H: T-H",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Grupo uno",
+      "intro": "Introducción",
+      "items": [
+       {
+        "pageId": "FX-B",
+        "text": "Página de servicio"
+       },
+       {
+        "pageId": "FX-C",
+        "text": "Artículo"
+       }
+      ]
+     },
+     {
+      "h2": "Grupo dos",
+      "items": [
+       {
+        "pageId": "FX-A",
+        "text": "Local"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Pregunta de prueba uno?",
+    "a": "Respuesta de prueba uno."
+   },
+   {
+    "q": "¿Pregunta de prueba dos?",
+    "a": "Respuesta de prueba dos."
+   }
+  ],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/hub/",
+  "title": "Fixture FX-H (EN) | Control de Chinches",
+  "description": "Test fixture FX-H. Not publishable.",
+  "h1": "Fixture FX-H: T-H",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Group one",
+      "intro": "Intro",
+      "items": [
+       {
+        "pageId": "FX-B",
+        "text": "Service page"
+       },
+       {
+        "pageId": "FX-C",
+        "text": "Article"
+       }
+      ]
+     },
+     {
+      "h2": "Group two",
+      "items": [
+       {
+        "pageId": "FX-A",
+        "text": "Local"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Test question one?",
+    "a": "Test answer one."
+   },
+   {
+    "q": "Test question two?",
+    "a": "Test answer two."
+   }
+  ],
+  "sources": []
+ }
+}

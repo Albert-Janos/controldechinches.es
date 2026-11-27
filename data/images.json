@@ -1,0 +1,2818 @@
+{
+ "IMG-ABOUT-01": {
+  "id": "IMG-ABOUT-01",
+  "folder": "about",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Albert János, técnico especialista en chinches, en retrato con ropa de trabajo",
+   "en": "Albert János, bed bug specialist, portrait in work clothing"
+  },
+  "caption": {
+   "es": "Albert János, técnico especialista en chinches, en retrato con ropa de trabajo. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János, bed bug specialist, portrait in work clothing. Own photo [date and place to be confirmed]."
+  },
+  "seo": "albert-janos-tecnico-chinches-retrato",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-02": {
+  "id": "IMG-ABOUT-02",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   4,
+   5
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Albert János, retrato vertical",
+   "en": "Albert János, vertical portrait"
+  },
+  "caption": {
+   "es": "Albert János, retrato vertical. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János, vertical portrait. Own photo [date and place to be confirmed]."
+  },
+  "seo": "albert-janos-retrato-vertical",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-03": {
+  "id": "IMG-ABOUT-03",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   4,
+   5
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Albert János de cuerpo entero con el equipo de trabajo",
+   "en": "Albert János full-length with his work equipment"
+  },
+  "caption": {
+   "es": "Albert János de cuerpo entero con el equipo de trabajo. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János full-length with his work equipment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "albert-janos-cuerpo-entero",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-04": {
+  "id": "IMG-ABOUT-04",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Albert János revisando una costura de colchón",
+   "en": "Albert János checking a mattress seam"
+  },
+  "caption": {
+   "es": "Albert János revisando una costura de colchón. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János checking a mattress seam. Own photo [date and place to be confirmed]."
+  },
+  "seo": "revision-costura-colchon-tecnico",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-05": {
+  "id": "IMG-ABOUT-05",
+  "folder": "equipment",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Máquina de vapor seco profesional (modelo según confirmación del propietario)",
+   "en": "Professional dry steam machine (model to be confirmed by owner)"
+  },
+  "caption": {
+   "es": "Máquina de vapor seco profesional (modelo según confirmación del propietario). Foto propia [fecha y lugar por confirmar].",
+   "en": "Professional dry steam machine (model to be confirmed by owner). Own photo [date and place to be confirmed]."
+  },
+  "seo": "maquina-vapor-seco-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-06": {
+  "id": "IMG-ABOUT-06",
+  "folder": "equipment",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Albert János con su equipo de trabajo preparado",
+   "en": "Albert János with his prepared work equipment"
+  },
+  "caption": {
+   "es": "Albert János con su equipo de trabajo preparado. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János with his prepared work equipment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "albert-janos-equipo-trabajo",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-07": {
+  "id": "IMG-ABOUT-07",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Albert János aplicando vapor en el somier",
+   "en": "Albert János applying steam to a bed frame"
+  },
+  "caption": {
+   "es": "Albert János aplicando vapor en el somier. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János applying steam to a bed frame. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tecnico-vapor-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-08": {
+  "id": "IMG-ABOUT-08",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Documentación de hallazgos durante la inspección",
+   "en": "Documenting findings during an inspection"
+  },
+  "caption": {
+   "es": "Documentación de hallazgos durante la inspección. Foto propia [fecha y lugar por confirmar].",
+   "en": "Documenting findings during an inspection. Own photo [date and place to be confirmed]."
+  },
+  "seo": "documentacion-inspeccion-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-09": {
+  "id": "IMG-ABOUT-09",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Preparación de herramientas antes del tratamiento",
+   "en": "Preparing tools before treatment"
+  },
+  "caption": {
+   "es": "Preparación de herramientas antes del tratamiento. Foto propia [fecha y lugar por confirmar].",
+   "en": "Preparing tools before treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "preparacion-herramientas-tratamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ABOUT-10": {
+  "id": "IMG-ABOUT-10",
+  "folder": "about",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Albert János en un entorno de trabajo natural",
+   "en": "Albert János in a natural work setting"
+  },
+  "caption": {
+   "es": "Albert János en un entorno de trabajo natural. Foto propia [fecha y lugar por confirmar].",
+   "en": "Albert János in a natural work setting. Own photo [date and place to be confirmed]."
+  },
+  "seo": "albert-janos-entorno-trabajo",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-01": {
+  "id": "IMG-CRED-01",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Certificado de aplicador de control de plagas sanitario de Hungría (datos personales ocultos)",
+   "en": "Hungarian sanitary pest control qualification certificate (personal data redacted)"
+  },
+  "caption": {
+   "es": "Certificado de aplicador de control de plagas sanitario de Hungría (datos personales ocultos). Foto propia [fecha y lugar por confirmar].",
+   "en": "Hungarian sanitary pest control qualification certificate (personal data redacted). Own photo [date and place to be confirmed]."
+  },
+  "seo": "certificado-control-plagas-hungria",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-02": {
+  "id": "IMG-CRED-02",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Documento de registro profesional en Hungría (si es público y verificable)",
+   "en": "Hungarian professional register record (if public and verifiable)"
+  },
+  "caption": {
+   "es": "Documento de registro profesional en Hungría (si es público y verificable). Foto propia [fecha y lugar por confirmar].",
+   "en": "Hungarian professional register record (if public and verifiable). Own photo [date and place to be confirmed]."
+  },
+  "seo": "registro-profesional-hungria",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-03": {
+  "id": "IMG-CRED-03",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Título o diploma de formación complementaria",
+   "en": "Complementary training diploma"
+  },
+  "caption": {
+   "es": "Título o diploma de formación complementaria. Foto propia [fecha y lugar por confirmar].",
+   "en": "Complementary training diploma. Own photo [date and place to be confirmed]."
+  },
+  "seo": "diploma-formacion-complementaria",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-04": {
+  "id": "IMG-CRED-04",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Certificado de curso profesional (tema y entidad según documento)",
+   "en": "Professional course certificate (topic and issuer per document)"
+  },
+  "caption": {
+   "es": "Certificado de curso profesional (tema y entidad según documento). Foto propia [fecha y lugar por confirmar].",
+   "en": "Professional course certificate (topic and issuer per document). Own photo [date and place to be confirmed]."
+  },
+  "seo": "certificado-curso-profesional",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-05": {
+  "id": "IMG-CRED-05",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Certificado de formación internacional",
+   "en": "International training certificate"
+  },
+  "caption": {
+   "es": "Certificado de formación internacional. Foto propia [fecha y lugar por confirmar].",
+   "en": "International training certificate. Own photo [date and place to be confirmed]."
+  },
+  "seo": "certificado-formacion-internacional",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CRED-06": {
+  "id": "IMG-CRED-06",
+  "folder": "credentials",
+  "role": "document",
+  "aspect": [
+   4,
+   3
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Otro documento profesional verificable",
+   "en": "Other verifiable professional document"
+  },
+  "caption": {
+   "es": "Otro documento profesional verificable. Foto propia [fecha y lugar por confirmar].",
+   "en": "Other verifiable professional document. Own photo [date and place to be confirmed]."
+  },
+  "seo": "documento-profesional-verificable",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-01": {
+  "id": "IMG-DRY-01",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Máquina de vapor seco para chinches completa",
+   "en": "Dry steam machine for bed bugs, full view"
+  },
+  "caption": {
+   "es": "Máquina de vapor seco para chinches completa. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam machine for bed bugs, full view. Own photo [date and place to be confirmed]."
+  },
+  "seo": "maquina-vapor-seco-completa",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-02": {
+  "id": "IMG-DRY-02",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Detalle del panel y manómetro de la máquina de vapor",
+   "en": "Control panel and gauge of the steam machine"
+  },
+  "caption": {
+   "es": "Detalle del panel y manómetro de la máquina de vapor. Foto propia [fecha y lugar por confirmar].",
+   "en": "Control panel and gauge of the steam machine. Own photo [date and place to be confirmed]."
+  },
+  "seo": "maquina-vapor-detalle-panel",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-03": {
+  "id": "IMG-DRY-03",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Cabezal de aplicación de vapor en primer plano",
+   "en": "Close-up of the steam application nozzle"
+  },
+  "caption": {
+   "es": "Cabezal de aplicación de vapor en primer plano. Foto propia [fecha y lugar por confirmar].",
+   "en": "Close-up of the steam application nozzle. Own photo [date and place to be confirmed]."
+  },
+  "seo": "cabezal-vapor-seco-primer-plano",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-04": {
+  "id": "IMG-DRY-04",
+  "folder": "treatments/dry-steam",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Tratamiento con vapor seco de la costura de un colchón con el cabezal de la máquina",
+   "en": "Dry steam treatment of a mattress seam with the machine head"
+  },
+  "caption": {
+   "es": "Tratamiento con vapor seco de la costura de un colchón con el cabezal de la máquina. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam treatment of a mattress seam with the machine head. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vapor-seco-costura-colchon",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-05": {
+  "id": "IMG-DRY-05",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vapor seco en las uniones del somier",
+   "en": "Dry steam on bed-frame joints"
+  },
+  "caption": {
+   "es": "Vapor seco en las uniones del somier. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam on bed-frame joints. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vapor-seco-union-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-06": {
+  "id": "IMG-DRY-06",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vapor seco en el cabecero",
+   "en": "Dry steam on a headboard"
+  },
+  "caption": {
+   "es": "Vapor seco en el cabecero. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam on a headboard. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vapor-seco-cabecero",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-07": {
+  "id": "IMG-DRY-07",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vapor seco en las uniones de un mueble",
+   "en": "Dry steam on furniture joints"
+  },
+  "caption": {
+   "es": "Vapor seco en las uniones de un mueble. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam on furniture joints. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vapor-seco-uniones-mueble",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-08": {
+  "id": "IMG-DRY-08",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vapor seco sobre un sofá tapizado",
+   "en": "Dry steam on an upholstered sofa"
+  },
+  "caption": {
+   "es": "Vapor seco sobre un sofá tapizado. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam on an upholstered sofa. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vapor-seco-sofa-tapizado",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-09": {
+  "id": "IMG-DRY-09",
+  "folder": "treatments/dry-steam",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Flujo de trabajo de vapor seco en un dormitorio",
+   "en": "Dry steam workflow in a bedroom"
+  },
+  "caption": {
+   "es": "Flujo de trabajo de vapor seco en un dormitorio. Foto propia [fecha y lugar por confirmar].",
+   "en": "Dry steam workflow in a bedroom. Own photo [date and place to be confirmed]."
+  },
+  "seo": "flujo-trabajo-vapor-seco-dormitorio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-DRY-10": {
+  "id": "IMG-DRY-10",
+  "folder": "treatments/dry-steam",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Técnico aplicando vapor seco durante un tratamiento",
+   "en": "Technician applying dry steam during a treatment"
+  },
+  "caption": {
+   "es": "Técnico aplicando vapor seco durante un tratamiento. Foto propia [fecha y lugar por confirmar].",
+   "en": "Technician applying dry steam during a treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tecnico-aplicando-vapor-seco",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-01": {
+  "id": "IMG-CHEM-01",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Equipos de aplicación química realmente utilizados",
+   "en": "Chemical application equipment actually used"
+  },
+  "caption": {
+   "es": "Equipos de aplicación química realmente utilizados. Foto propia [fecha y lugar por confirmar].",
+   "en": "Chemical application equipment actually used. Own photo [date and place to be confirmed]."
+  },
+  "seo": "equipos-aplicacion-quimica",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-02": {
+  "id": "IMG-CHEM-02",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Pulverizador de mochila o lanza de aplicación dirigida",
+   "en": "Backpack sprayer or targeted application lance"
+  },
+  "caption": {
+   "es": "Pulverizador de mochila o lanza de aplicación dirigida. Foto propia [fecha y lugar por confirmar].",
+   "en": "Backpack sprayer or targeted application lance. Own photo [date and place to be confirmed]."
+  },
+  "seo": "pulverizador-aplicacion-dirigida",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-03": {
+  "id": "IMG-CHEM-03",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Equipo de protección individual para el tratamiento",
+   "en": "Personal protective equipment for treatment"
+  },
+  "caption": {
+   "es": "Equipo de protección individual para el tratamiento. Foto propia [fecha y lugar por confirmar].",
+   "en": "Personal protective equipment for treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "equipo-proteccion-tratamiento-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-04": {
+  "id": "IMG-CHEM-04",
+  "folder": "treatments/chemical",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Aplicación dirigida en el borde de un colchón",
+   "en": "Targeted application on a mattress edge"
+  },
+  "caption": {
+   "es": "Aplicación dirigida en el borde de un colchón. Foto propia [fecha y lugar por confirmar].",
+   "en": "Targeted application on a mattress edge. Own photo [date and place to be confirmed]."
+  },
+  "seo": "aplicacion-dirigida-borde-colchon",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-05": {
+  "id": "IMG-CHEM-05",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Tratamiento del somier",
+   "en": "Bed-frame treatment"
+  },
+  "caption": {
+   "es": "Tratamiento del somier. Foto propia [fecha y lugar por confirmar].",
+   "en": "Bed-frame treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tratamiento-quimico-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-06": {
+  "id": "IMG-CHEM-06",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Tratamiento de rodapiés y zócalos",
+   "en": "Baseboard treatment"
+  },
+  "caption": {
+   "es": "Tratamiento de rodapiés y zócalos. Foto propia [fecha y lugar por confirmar].",
+   "en": "Baseboard treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tratamiento-rodapies-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-07": {
+  "id": "IMG-CHEM-07",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Tratamiento de las partes relevantes de un mueble",
+   "en": "Treatment of relevant parts of a furniture piece"
+  },
+  "caption": {
+   "es": "Tratamiento de las partes relevantes de un mueble. Foto propia [fecha y lugar por confirmar].",
+   "en": "Treatment of relevant parts of a furniture piece. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tratamiento-partes-mueble",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-CHEM-08": {
+  "id": "IMG-CHEM-08",
+  "folder": "treatments/chemical",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Documentación durante el trabajo",
+   "en": "Documentation during the job"
+  },
+  "caption": {
+   "es": "Documentación durante el trabajo. Foto propia [fecha y lugar por confirmar].",
+   "en": "Documentation during the job. Own photo [date and place to be confirmed]."
+  },
+  "seo": "documentacion-durante-tratamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-01": {
+  "id": "IMG-INS-01",
+  "folder": "ipm/inspection",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Inspección de la costura de un colchón con linterna",
+   "en": "Inspecting a mattress seam with a torch"
+  },
+  "caption": {
+   "es": "Inspección de la costura de un colchón con linterna. Foto propia [fecha y lugar por confirmar].",
+   "en": "Inspecting a mattress seam with a torch. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-costura-colchon",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-02": {
+  "id": "IMG-INS-02",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Revisión de las uniones del somier",
+   "en": "Checking bed-frame joints"
+  },
+  "caption": {
+   "es": "Revisión de las uniones del somier. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking bed-frame joints. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-uniones-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-03": {
+  "id": "IMG-INS-03",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Revisión de los orificios de los tornillos del somier",
+   "en": "Checking bed-frame screw holes"
+  },
+  "caption": {
+   "es": "Revisión de los orificios de los tornillos del somier. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking bed-frame screw holes. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-orificios-tornillos-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-04": {
+  "id": "IMG-INS-04",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Revisión de la parte trasera del cabecero",
+   "en": "Checking the back of a headboard"
+  },
+  "caption": {
+   "es": "Revisión de la parte trasera del cabecero. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking the back of a headboard. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-cabecero-parte-trasera",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-05": {
+  "id": "IMG-INS-05",
+  "folder": "ipm/inspection",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Revisión de las costuras de un sofá",
+   "en": "Checking sofa seams"
+  },
+  "caption": {
+   "es": "Revisión de las costuras de un sofá. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking sofa seams. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-costuras-sofa",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-INS-06": {
+  "id": "IMG-INS-06",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Documentación fotográfica de una infestación",
+   "en": "Photographic documentation of an infestation"
+  },
+  "caption": {
+   "es": "Documentación fotográfica de una infestación. Foto propia [fecha y lugar por confirmar].",
+   "en": "Photographic documentation of an infestation. Own photo [date and place to be confirmed]."
+  },
+  "seo": "documentacion-fotografica-infestacion",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-01": {
+  "id": "IMG-IPM-01",
+  "folder": "ipm/inspection",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P0",
+  "alt": {
+   "es": "Técnico durante la inspección o el tratamiento en un dormitorio",
+   "en": "Technician during an inspection or treatment in a bedroom"
+  },
+  "caption": {
+   "es": "Técnico durante la inspección o el tratamiento en un dormitorio. Foto propia [fecha y lugar por confirmar].",
+   "en": "Technician during an inspection or treatment in a bedroom. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tecnico-inspeccion-dormitorio-gip",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-02": {
+  "id": "IMG-IPM-02",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Identificación de escondites en un dormitorio",
+   "en": "Identifying hiding places in a bedroom"
+  },
+  "caption": {
+   "es": "Identificación de escondites en un dormitorio. Foto propia [fecha y lugar por confirmar].",
+   "en": "Identifying hiding places in a bedroom. Own photo [date and place to be confirmed]."
+  },
+  "seo": "identificacion-escondites-dormitorio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-03": {
+  "id": "IMG-IPM-03",
+  "folder": "ipm/prevention",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Plan de tratamiento individual documentado",
+   "en": "Documented individual treatment plan"
+  },
+  "caption": {
+   "es": "Plan de tratamiento individual documentado. Foto propia [fecha y lugar por confirmar].",
+   "en": "Documented individual treatment plan. Own photo [date and place to be confirmed]."
+  },
+  "seo": "plan-tratamiento-individual",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-04": {
+  "id": "IMG-IPM-04",
+  "folder": "ipm/monitoring",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Dispositivo de monitorización colocado bajo la pata de una cama",
+   "en": "Monitoring device placed under a bed leg"
+  },
+  "caption": {
+   "es": "Dispositivo de monitorización colocado bajo la pata de una cama. Foto propia [fecha y lugar por confirmar].",
+   "en": "Monitoring device placed under a bed leg. Own photo [date and place to be confirmed]."
+  },
+  "seo": "dispositivo-monitorizacion-cama",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-05": {
+  "id": "IMG-IPM-05",
+  "folder": "ipm/monitoring",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Revisión de seguimiento tras el tratamiento",
+   "en": "Follow-up check after treatment"
+  },
+  "caption": {
+   "es": "Revisión de seguimiento tras el tratamiento. Foto propia [fecha y lugar por confirmar].",
+   "en": "Follow-up check after treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "revision-seguimiento-postratamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-06": {
+  "id": "IMG-IPM-06",
+  "folder": "ipm/sealing",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Grieta o hueco que puede servir de refugio",
+   "en": "Crack or gap that can serve as a refuge"
+  },
+  "caption": {
+   "es": "Grieta o hueco que puede servir de refugio. Foto propia [fecha y lugar por confirmar].",
+   "en": "Crack or gap that can serve as a refuge. Own photo [date and place to be confirmed]."
+  },
+  "seo": "grieta-hueco-refugio-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-07": {
+  "id": "IMG-IPM-07",
+  "folder": "ipm/prevention",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Lista de comprobación y documentación entregada al cliente",
+   "en": "Checklist and documentation provided to the client"
+  },
+  "caption": {
+   "es": "Lista de comprobación y documentación entregada al cliente. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checklist and documentation provided to the client. Own photo [date and place to be confirmed]."
+  },
+  "seo": "lista-comprobacion-cliente",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-08": {
+  "id": "IMG-IPM-08",
+  "folder": "ipm/inspection",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Enfoque combinado: vapor y aplicación dirigida en la misma habitación",
+   "en": "Combined approach: steam and targeted application in the same room"
+  },
+  "caption": {
+   "es": "Enfoque combinado: vapor y aplicación dirigida en la misma habitación. Foto propia [fecha y lugar por confirmar].",
+   "en": "Combined approach: steam and targeted application in the same room. Own photo [date and place to be confirmed]."
+  },
+  "seo": "enfoque-combinado-vapor-aplicacion",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-SEAL-01": {
+  "id": "IMG-IPM-SEAL-01",
+  "folder": "ipm/sealing",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Fisura en la pared junto a la cama",
+   "en": "Wall crack next to the bed"
+  },
+  "caption": {
+   "es": "Fisura en la pared junto a la cama. Foto propia [fecha y lugar por confirmar].",
+   "en": "Wall crack next to the bed. Own photo [date and place to be confirmed]."
+  },
+  "seo": "fisura-pared-junto-cama",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-SEAL-02": {
+  "id": "IMG-IPM-SEAL-02",
+  "folder": "ipm/sealing",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Hueco detrás del rodapié",
+   "en": "Gap behind the baseboard"
+  },
+  "caption": {
+   "es": "Hueco detrás del rodapié. Foto propia [fecha y lugar por confirmar].",
+   "en": "Gap behind the baseboard. Own photo [date and place to be confirmed]."
+  },
+  "seo": "hueco-detras-rodapie",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-SEAL-03": {
+  "id": "IMG-IPM-SEAL-03",
+  "folder": "ipm/sealing",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Paso de instalaciones por la pared sin sellar",
+   "en": "Unsealed wall penetration"
+  },
+  "caption": {
+   "es": "Paso de instalaciones por la pared sin sellar. Foto propia [fecha y lugar por confirmar].",
+   "en": "Unsealed wall penetration. Own photo [date and place to be confirmed]."
+  },
+  "seo": "paso-instalaciones-pared-sin-sellar",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-MON-01": {
+  "id": "IMG-IPM-MON-01",
+  "folder": "ipm/monitoring",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Interceptor de monitorización en uso",
+   "en": "Monitoring interceptor in use"
+  },
+  "caption": {
+   "es": "Interceptor de monitorización en uso. Foto propia [fecha y lugar por confirmar].",
+   "en": "Monitoring interceptor in use. Own photo [date and place to be confirmed]."
+  },
+  "seo": "interceptor-monitorizacion-en-uso",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-IPM-MON-02": {
+  "id": "IMG-IPM-MON-02",
+  "folder": "ipm/monitoring",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Comprobación de un dispositivo de monitorización",
+   "en": "Checking a monitoring device"
+  },
+  "caption": {
+   "es": "Comprobación de un dispositivo de monitorización. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking a monitoring device. Own photo [date and place to be confirmed]."
+  },
+  "seo": "comprobacion-dispositivo-monitorizacion",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-ADU-01": {
+  "id": "IMG-ENT-ADU-01",
+  "folder": "entomology/adults",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinche de cama adulta (hembra alimentada) sobre tejido",
+   "en": "Adult bed bug (fed female) on fabric"
+  },
+  "caption": {
+   "es": "Chinche de cama adulta (hembra alimentada) sobre tejido. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Adult bed bug (fed female) on fabric. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinche-cama-adulta-hembra-alimentada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-ADU-02": {
+  "id": "IMG-ENT-ADU-02",
+  "folder": "entomology/adults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinche de cama adulta (macho) en vista dorsal",
+   "en": "Adult bed bug (male), dorsal view"
+  },
+  "caption": {
+   "es": "Chinche de cama adulta (macho) en vista dorsal. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Adult bed bug (male), dorsal view. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinche-cama-adulta-macho-dorsal",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-ADU-03": {
+  "id": "IMG-ENT-ADU-03",
+  "folder": "entomology/adults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinche de cama adulta sin alimentar",
+   "en": "Adult unfed bed bug"
+  },
+  "caption": {
+   "es": "Chinche de cama adulta sin alimentar. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Adult unfed bed bug. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinche-cama-adulta-sin-alimentar",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-ADU-04": {
+  "id": "IMG-ENT-ADU-04",
+  "folder": "entomology/adults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Comparación entre una chinche alimentada y otra sin alimentar",
+   "en": "Comparison of a fed and an unfed bed bug"
+  },
+  "caption": {
+   "es": "Comparación entre una chinche alimentada y otra sin alimentar. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Comparison of a fed and an unfed bed bug. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinche-alimentada-vs-sin-alimentar",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-ADU-05": {
+  "id": "IMG-ENT-ADU-05",
+  "folder": "entomology/adults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Detalle de cabeza y pronoto para identificar la especie",
+   "en": "Head and pronotum detail for species identification"
+  },
+  "caption": {
+   "es": "Detalle de cabeza y pronoto para identificar la especie. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Head and pronotum detail for species identification. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinche-cama-detalle-cabeza-pronoto",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-EGG-01": {
+  "id": "IMG-ENT-EGG-01",
+  "folder": "entomology/eggs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Huevos de chinche de cama aislados",
+   "en": "Isolated bed bug eggs"
+  },
+  "caption": {
+   "es": "Huevos de chinche de cama aislados. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Isolated bed bug eggs. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "huevos-chinche-cama-aislados",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-EGG-02": {
+  "id": "IMG-ENT-EGG-02",
+  "folder": "entomology/eggs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Grupo de huevos de chinche en una junta",
+   "en": "Cluster of bed bug eggs in a joint"
+  },
+  "caption": {
+   "es": "Grupo de huevos de chinche en una junta. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Cluster of bed bug eggs in a joint. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "grupo-huevos-chinche-junta",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-NYM-01": {
+  "id": "IMG-ENT-NYM-01",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Ninfa de primer estadio de chinche de cama",
+   "en": "First-instar bed bug nymph"
+  },
+  "caption": {
+   "es": "Ninfa de primer estadio de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "First-instar bed bug nymph. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "ninfa-chinche-cama-primer-estadio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-NYM-02": {
+  "id": "IMG-ENT-NYM-02",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ninfa de segundo estadio de chinche de cama",
+   "en": "Second-instar bed bug nymph"
+  },
+  "caption": {
+   "es": "Ninfa de segundo estadio de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Second-instar bed bug nymph. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "ninfa-chinche-cama-segundo-estadio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-NYM-03": {
+  "id": "IMG-ENT-NYM-03",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ninfa de tercer estadio de chinche de cama",
+   "en": "Third-instar bed bug nymph"
+  },
+  "caption": {
+   "es": "Ninfa de tercer estadio de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Third-instar bed bug nymph. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "ninfa-chinche-cama-tercer-estadio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-NYM-04": {
+  "id": "IMG-ENT-NYM-04",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ninfa de cuarto estadio de chinche de cama",
+   "en": "Fourth-instar bed bug nymph"
+  },
+  "caption": {
+   "es": "Ninfa de cuarto estadio de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Fourth-instar bed bug nymph. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "ninfa-chinche-cama-cuarto-estadio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-NYM-05": {
+  "id": "IMG-ENT-NYM-05",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ninfa de quinto estadio de chinche de cama",
+   "en": "Fifth-instar bed bug nymph"
+  },
+  "caption": {
+   "es": "Ninfa de quinto estadio de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Fifth-instar bed bug nymph. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "ninfa-chinche-cama-quinto-estadio",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-MOU-01": {
+  "id": "IMG-ENT-MOU-01",
+  "folder": "entomology/moults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Mudas de chinche de cama en una costura",
+   "en": "Bed bug moults in a seam"
+  },
+  "caption": {
+   "es": "Mudas de chinche de cama en una costura. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bug moults in a seam. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "mudas-chinche-cama-costura",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-MOU-02": {
+  "id": "IMG-ENT-MOU-02",
+  "folder": "entomology/moults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Muda aislada de chinche de cama",
+   "en": "Isolated bed bug moult"
+  },
+  "caption": {
+   "es": "Muda aislada de chinche de cama. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Isolated bed bug moult. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "muda-chinche-cama-aislada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-EXC-01": {
+  "id": "IMG-ENT-EXC-01",
+  "folder": "entomology/excrement",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Manchas de excrementos de chinche en la costura de un colchón",
+   "en": "Bed bug excreta spots on a mattress seam"
+  },
+  "caption": {
+   "es": "Manchas de excrementos de chinche en la costura de un colchón. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bug excreta spots on a mattress seam. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "excrementos-chinche-costura-colchon",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-EXC-02": {
+  "id": "IMG-ENT-EXC-02",
+  "folder": "entomology/excrement",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Manchas de excrementos sobre madera o pared",
+   "en": "Excreta spots on wood or wall"
+  },
+  "caption": {
+   "es": "Manchas de excrementos sobre madera o pared. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Excreta spots on wood or wall. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "excrementos-chinche-madera-pared",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-01": {
+  "id": "IMG-ENT-HID-01",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinches en la costura de un colchón infestado",
+   "en": "Bed bugs in the seam of an infested mattress"
+  },
+  "caption": {
+   "es": "Chinches en la costura de un colchón infestado. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs in the seam of an infested mattress. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-costura-colchon-infestado",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-02": {
+  "id": "IMG-ENT-HID-02",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinches en el somier",
+   "en": "Bed bugs in a bed frame"
+  },
+  "caption": {
+   "es": "Chinches en el somier. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs in a bed frame. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-somier-infestado",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-03": {
+  "id": "IMG-ENT-HID-03",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Chinches en la unión de un mueble",
+   "en": "Bed bugs in a furniture joint"
+  },
+  "caption": {
+   "es": "Chinches en la unión de un mueble. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs in a furniture joint. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-union-mueble",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-04": {
+  "id": "IMG-ENT-HID-04",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Chinches tras un cabecero",
+   "en": "Bed bugs behind a headboard"
+  },
+  "caption": {
+   "es": "Chinches tras un cabecero. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs behind a headboard. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-tras-cabecero",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-05": {
+  "id": "IMG-ENT-HID-05",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Chinches en una esquina entre pared y rodapié",
+   "en": "Bed bugs in a wall-baseboard corner"
+  },
+  "caption": {
+   "es": "Chinches en una esquina entre pared y rodapié. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs in a wall-baseboard corner. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-esquina-pared-rodapie",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-HID-06": {
+  "id": "IMG-ENT-HID-06",
+  "folder": "entomology/hiding-places",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Chinches en un sofá tapizado",
+   "en": "Bed bugs in an upholstered sofa"
+  },
+  "caption": {
+   "es": "Chinches en un sofá tapizado. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, fecha y lugar por confirmar.]",
+   "en": "Bed bugs in an upholstered sofa. [Stage, sex and species: confirm after entomological verification. Own photo, date and place to be confirmed.]"
+  },
+  "seo": "chinches-sofa-tapizado",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-SCALE-01": {
+  "id": "IMG-ENT-SCALE-01",
+  "folder": "entomology/adults",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Chinche de cama junto a una regla o moneda para ver el tamaño",
+   "en": "Bed bug next to a ruler or coin for scale"
+  },
+  "caption": {
+   "es": "Chinche de cama junto a una regla o moneda para ver el tamaño. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, con escala.]",
+   "en": "Bed bug next to a ruler or coin for scale. [Stage, sex and species: confirm after entomological verification. Own photo, with scale.]"
+  },
+  "seo": "chinche-cama-escala-regla",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-ENT-SCALE-02": {
+  "id": "IMG-ENT-SCALE-02",
+  "folder": "entomology/nymphs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Estadios de ninfa y adulto comparados con una regla",
+   "en": "Nymph stages and adult compared on a ruler"
+  },
+  "caption": {
+   "es": "Estadios de ninfa y adulto comparados con una regla. [Fase, sexo y especie: confirmar tras verificación entomológica. Foto propia, con escala.]",
+   "en": "Nymph stages and adult compared on a ruler. [Stage, sex and species: confirm after entomological verification. Own photo, with scale.]"
+  },
+  "seo": "estadios-chinche-comparacion-regla",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-BITE-01": {
+  "id": "IMG-BITE-01",
+  "folder": "entomology",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Picaduras de chinches en la piel (foto con consentimiento)",
+   "en": "Bed bug bites on skin (photo with consent)"
+  },
+  "caption": {
+   "es": "Picaduras de chinches en la piel (foto con consentimiento). Foto propia [fecha y lugar por confirmar].",
+   "en": "Bed bug bites on skin (photo with consent). Own photo [date and place to be confirmed]."
+  },
+  "seo": "picaduras-chinches-piel",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-B2B-01": {
+  "id": "IMG-B2B-01",
+  "folder": "accommodation",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Dormitorio de un apartamento turístico durante la inspección",
+   "en": "Holiday-rental bedroom during inspection"
+  },
+  "caption": {
+   "es": "Dormitorio de un apartamento turístico durante la inspección. Foto propia [fecha y lugar por confirmar].",
+   "en": "Holiday-rental bedroom during inspection. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-apartamento-turistico",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-B2B-02": {
+  "id": "IMG-B2B-02",
+  "folder": "accommodation",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Inspección de una habitación de hotel",
+   "en": "Inspecting a hotel room"
+  },
+  "caption": {
+   "es": "Inspección de una habitación de hotel. Foto propia [fecha y lugar por confirmar].",
+   "en": "Inspecting a hotel room. Own photo [date and place to be confirmed]."
+  },
+  "seo": "inspeccion-habitacion-hotel",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-B2B-03": {
+  "id": "IMG-B2B-03",
+  "folder": "accommodation",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Tipos de colchón y fundas en alojamientos",
+   "en": "Mattress types and encasements in accommodation"
+  },
+  "caption": {
+   "es": "Tipos de colchón y fundas en alojamientos. Foto propia [fecha y lugar por confirmar].",
+   "en": "Mattress types and encasements in accommodation. Own photo [date and place to be confirmed]."
+  },
+  "seo": "tipos-colchon-fundas-alojamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-B2B-04": {
+  "id": "IMG-B2B-04",
+  "folder": "accommodation",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Lista de comprobación del personal de limpieza en uso",
+   "en": "Housekeeping checklist in use"
+  },
+  "caption": {
+   "es": "Lista de comprobación del personal de limpieza en uso. Foto propia [fecha y lugar por confirmar].",
+   "en": "Housekeeping checklist in use. Own photo [date and place to be confirmed]."
+  },
+  "seo": "lista-comprobacion-personal-limpieza",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-B2B-05": {
+  "id": "IMG-B2B-05",
+  "folder": "accommodation",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Protocolo de prevención impreso para alojamientos",
+   "en": "Printed prevention protocol for accommodation"
+  },
+  "caption": {
+   "es": "Protocolo de prevención impreso para alojamientos. Foto propia [fecha y lugar por confirmar].",
+   "en": "Printed prevention protocol for accommodation. Own photo [date and place to be confirmed]."
+  },
+  "seo": "protocolo-prevencion-alojamientos",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-PREV-01": {
+  "id": "IMG-PREV-01",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Revisión del equipaje al volver de un viaje",
+   "en": "Checking luggage after travel"
+  },
+  "caption": {
+   "es": "Revisión del equipaje al volver de un viaje. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking luggage after travel. Own photo [date and place to be confirmed]."
+  },
+  "seo": "revision-equipaje-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-PREV-02": {
+  "id": "IMG-PREV-02",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Comprobación de la cama al llegar a un hotel",
+   "en": "Checking the bed on arrival at a hotel"
+  },
+  "caption": {
+   "es": "Comprobación de la cama al llegar a un hotel. Foto propia [fecha y lugar por confirmar].",
+   "en": "Checking the bed on arrival at a hotel. Own photo [date and place to be confirmed]."
+  },
+  "seo": "comprobacion-cama-hotel-llegada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-MYTH-01": {
+  "id": "IMG-MYTH-01",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Remedios caseros habituales (ilustración)",
+   "en": "Common home remedies (illustration)"
+  },
+  "caption": {
+   "es": "Remedios caseros habituales (ilustración). Foto propia [fecha y lugar por confirmar].",
+   "en": "Common home remedies (illustration). Own photo [date and place to be confirmed]."
+  },
+  "seo": "remedios-caseros-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-PREP-01": {
+  "id": "IMG-PREP-01",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Dormitorio preparado para el tratamiento (ropa en bolsas)",
+   "en": "Bedroom prepared for treatment (clothes bagged)"
+  },
+  "caption": {
+   "es": "Dormitorio preparado para el tratamiento (ropa en bolsas). Foto propia [fecha y lugar por confirmar].",
+   "en": "Bedroom prepared for treatment (clothes bagged). Own photo [date and place to be confirmed]."
+  },
+  "seo": "preparacion-dormitorio-tratamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-PREP-02": {
+  "id": "IMG-PREP-02",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ventilación de la habitación después del tratamiento",
+   "en": "Ventilating the room after treatment"
+  },
+  "caption": {
+   "es": "Ventilación de la habitación después del tratamiento. Foto propia [fecha y lugar por confirmar].",
+   "en": "Ventilating the room after treatment. Own photo [date and place to be confirmed]."
+  },
+  "seo": "ventilar-habitacion-tras-tratamiento",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-PREP-03": {
+  "id": "IMG-PREP-03",
+  "folder": "ipm/prevention",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Ropa de cama en bolsa cerrada para lavar",
+   "en": "Bed linen in a sealed bag for washing"
+  },
+  "caption": {
+   "es": "Ropa de cama en bolsa cerrada para lavar. Foto propia [fecha y lugar por confirmar].",
+   "en": "Bed linen in a sealed bag for washing. Own photo [date and place to be confirmed]."
+  },
+  "seo": "ropa-cama-bolsa-lavado",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-FAQ-01": {
+  "id": "IMG-FAQ-01",
+  "folder": "brand",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Ilustración de cabecera para las preguntas frecuentes",
+   "en": "Header illustration for the FAQ"
+  },
+  "caption": {
+   "es": "Ilustración de cabecera para las preguntas frecuentes. Foto propia [fecha y lugar por confirmar].",
+   "en": "Header illustration for the FAQ. Own photo [date and place to be confirmed]."
+  },
+  "seo": "preguntas-frecuentes-chinches",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-GUIDE-01": {
+  "id": "IMG-GUIDE-01",
+  "folder": "brand",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Imagen de cabecera de la guía de chinches",
+   "en": "Header image for the bed bug guide"
+  },
+  "caption": {
+   "es": "Imagen de cabecera de la guía de chinches. Foto propia [fecha y lugar por confirmar].",
+   "en": "Header image for the bed bug guide. Own photo [date and place to be confirmed]."
+  },
+  "seo": "guia-chinches-cabecera",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-RES-01": {
+  "id": "IMG-RES-01",
+  "folder": "brand",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Portada del documento descargable de lista de comprobación",
+   "en": "Cover of the downloadable checklist"
+  },
+  "caption": {
+   "es": "Portada del documento descargable de lista de comprobación. Foto propia [fecha y lugar por confirmar].",
+   "en": "Cover of the downloadable checklist. Own photo [date and place to be confirmed]."
+  },
+  "seo": "recurso-lista-comprobacion-portada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-RES-02": {
+  "id": "IMG-RES-02",
+  "folder": "brand",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Portada de la guía de identificación descargable",
+   "en": "Cover of the downloadable identification guide"
+  },
+  "caption": {
+   "es": "Portada de la guía de identificación descargable. Foto propia [fecha y lugar por confirmar].",
+   "en": "Cover of the downloadable identification guide. Own photo [date and place to be confirmed]."
+  },
+  "seo": "recurso-guia-identificacion-portada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-RES-03": {
+  "id": "IMG-RES-03",
+  "folder": "brand",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Portada del protocolo para alojamientos descargable",
+   "en": "Cover of the downloadable accommodation protocol"
+  },
+  "caption": {
+   "es": "Portada del protocolo para alojamientos descargable. Foto propia [fecha y lugar por confirmar].",
+   "en": "Cover of the downloadable accommodation protocol. Own photo [date and place to be confirmed]."
+  },
+  "seo": "recurso-protocolo-alojamientos-portada",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-00": {
+  "id": "IMG-LOC-00",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Mapa propio de la zona de servicio en la Costa Blanca (solo municipios confirmados)",
+   "en": "Own map of the service area on the Costa Blanca (confirmed towns only)"
+  },
+  "caption": {
+   "es": "Mapa propio de la zona de servicio en la Costa Blanca (solo municipios confirmados). Foto propia [fecha y lugar por confirmar].",
+   "en": "Own map of the service area on the Costa Blanca (confirmed towns only). Own photo [date and place to be confirmed]."
+  },
+  "seo": "mapa-zona-servicio-costa-blanca",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ALC-01": {
+  "id": "IMG-LOC-ALC-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vista de Alicante (foto propia)",
+   "en": "View of Alicante (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Alicante (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Alicante (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "alicante-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ALC-02": {
+  "id": "IMG-LOC-ALC-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Tipo de vivienda habitual en Alicante",
+   "en": "Typical dwelling type in Alicante"
+  },
+  "caption": {
+   "es": "Tipo de vivienda habitual en Alicante. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling type in Alicante. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-alicante",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ALC-03": {
+  "id": "IMG-LOC-ALC-03",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Trabajo real en Alicante (solo si se ha realizado allí)",
+   "en": "Real job in Alicante (only if actually done there)"
+  },
+  "caption": {
+   "es": "Trabajo real en Alicante (solo si se ha realizado allí). Foto propia [fecha y lugar por confirmar].",
+   "en": "Real job in Alicante (only if actually done there). Own photo [date and place to be confirmed]."
+  },
+  "seo": "trabajo-real-alicante",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-BEN-01": {
+  "id": "IMG-LOC-BEN-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vista de Benidorm (foto propia)",
+   "en": "View of Benidorm (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Benidorm (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Benidorm (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "benidorm-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-BEN-02": {
+  "id": "IMG-LOC-BEN-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Apartamento turístico típico en Benidorm",
+   "en": "Typical holiday apartment in Benidorm"
+  },
+  "caption": {
+   "es": "Apartamento turístico típico en Benidorm. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical holiday apartment in Benidorm. Own photo [date and place to be confirmed]."
+  },
+  "seo": "apartamento-turistico-benidorm",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-BEN-03": {
+  "id": "IMG-LOC-BEN-03",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Trabajo real en Benidorm (solo si se ha realizado allí)",
+   "en": "Real job in Benidorm (only if actually done there)"
+  },
+  "caption": {
+   "es": "Trabajo real en Benidorm (solo si se ha realizado allí). Foto propia [fecha y lugar por confirmar].",
+   "en": "Real job in Benidorm (only if actually done there). Own photo [date and place to be confirmed]."
+  },
+  "seo": "trabajo-real-benidorm",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-TOR-01": {
+  "id": "IMG-LOC-TOR-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Vista de Torrevieja (foto propia)",
+   "en": "View of Torrevieja (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Torrevieja (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Torrevieja (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "torrevieja-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-TOR-02": {
+  "id": "IMG-LOC-TOR-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Vivienda típica en Torrevieja",
+   "en": "Typical dwelling in Torrevieja"
+  },
+  "caption": {
+   "es": "Vivienda típica en Torrevieja. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling in Torrevieja. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-torrevieja",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-TOR-03": {
+  "id": "IMG-LOC-TOR-03",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Trabajo real en Torrevieja (solo si se ha realizado allí)",
+   "en": "Real job in Torrevieja (only if actually done there)"
+  },
+  "caption": {
+   "es": "Trabajo real en Torrevieja (solo si se ha realizado allí). Foto propia [fecha y lugar por confirmar].",
+   "en": "Real job in Torrevieja (only if actually done there). Own photo [date and place to be confirmed]."
+  },
+  "seo": "trabajo-real-torrevieja",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ELX-01": {
+  "id": "IMG-LOC-ELX-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vista de Elche (foto propia)",
+   "en": "View of Elche (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Elche (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Elche (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "elche-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ELX-02": {
+  "id": "IMG-LOC-ELX-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vivienda típica en Elche",
+   "en": "Typical dwelling in Elche"
+  },
+  "caption": {
+   "es": "Vivienda típica en Elche. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling in Elche. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-elche",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-CAL-01": {
+  "id": "IMG-LOC-CAL-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vista de Calpe (foto propia)",
+   "en": "View of Calpe (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Calpe (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Calpe (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "calpe-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-CAL-02": {
+  "id": "IMG-LOC-CAL-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vivienda típica en Calpe",
+   "en": "Typical dwelling in Calpe"
+  },
+  "caption": {
+   "es": "Vivienda típica en Calpe. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling in Calpe. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-calpe",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ORI-01": {
+  "id": "IMG-LOC-ORI-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vista de Orihuela Costa (foto propia)",
+   "en": "View of Orihuela Costa (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Orihuela Costa (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Orihuela Costa (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "orihuela-costa-vista",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ORI-02": {
+  "id": "IMG-LOC-ORI-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vivienda típica en Orihuela Costa",
+   "en": "Typical dwelling in Orihuela Costa"
+  },
+  "caption": {
+   "es": "Vivienda típica en Orihuela Costa. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling in Orihuela Costa. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-orihuela-costa",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ALT-01": {
+  "id": "IMG-LOC-ALT-01",
+  "folder": "locations",
+  "role": "hero",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vista de Altea (foto propia)",
+   "en": "View of Altea (own photo)"
+  },
+  "caption": {
+   "es": "Vista de Altea (foto propia). Foto propia [fecha y lugar por confirmar].",
+   "en": "View of Altea (own photo). Own photo [date and place to be confirmed]."
+  },
+  "seo": "altea-vista-ciudad",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-LOC-ALT-02": {
+  "id": "IMG-LOC-ALT-02",
+  "folder": "locations",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P3",
+  "alt": {
+   "es": "Vivienda típica en Altea",
+   "en": "Typical dwelling in Altea"
+  },
+  "caption": {
+   "es": "Vivienda típica en Altea. Foto propia [fecha y lugar por confirmar].",
+   "en": "Typical dwelling in Altea. Own photo [date and place to be confirmed]."
+  },
+  "seo": "vivienda-tipica-altea",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-01": {
+  "id": "IG-01",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Diagrama de flujo del control integrado de chinches (GIP)",
+   "en": "IPM flow chart for bed bugs"
+  },
+  "caption": {
+   "es": "Diagrama de flujo del control integrado de chinches (GIP)",
+   "en": "IPM flow chart for bed bugs"
+  },
+  "seo": "ig-01-ipm-flow-chart-for-bed-bugs",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-02": {
+  "id": "IG-02",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Ciclo de vida de la chinche de cama",
+   "en": "Bed bug life cycle"
+  },
+  "caption": {
+   "es": "Ciclo de vida de la chinche de cama",
+   "en": "Bed bug life cycle"
+  },
+  "seo": "ig-02-bed-bug-life-cycle",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-03": {
+  "id": "IG-03",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Estadios de ninfa de la chinche de cama",
+   "en": "Bed bug nymph stages"
+  },
+  "caption": {
+   "es": "Estadios de ninfa de la chinche de cama",
+   "en": "Bed bug nymph stages"
+  },
+  "seo": "ig-03-bed-bug-nymph-stages",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-04": {
+  "id": "IG-04",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Identificación de la especie: Cimex lectularius y Cimex hemipterus",
+   "en": "Species identification: Cimex lectularius and Cimex hemipterus"
+  },
+  "caption": {
+   "es": "Identificación de la especie: Cimex lectularius y Cimex hemipterus",
+   "en": "Species identification: Cimex lectularius and Cimex hemipterus"
+  },
+  "seo": "ig-04-species-identification-cimex-lectularius",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-05": {
+  "id": "IG-05",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Anatomía de la chinche de cama",
+   "en": "Bed bug anatomy"
+  },
+  "caption": {
+   "es": "Anatomía de la chinche de cama",
+   "en": "Bed bug anatomy"
+  },
+  "seo": "ig-05-bed-bug-anatomy",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-06": {
+  "id": "IG-06",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Tamaño de la chinche de cama frente a otros insectos",
+   "en": "Bed bug size compared with other insects"
+  },
+  "caption": {
+   "es": "Tamaño de la chinche de cama frente a otros insectos",
+   "en": "Bed bug size compared with other insects"
+  },
+  "seo": "ig-06-bed-bug-size-compared-with-other-insects",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-07": {
+  "id": "IG-07",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Escondites típicos en un dormitorio",
+   "en": "Typical hiding places in a bedroom"
+  },
+  "caption": {
+   "es": "Escondites típicos en un dormitorio",
+   "en": "Typical hiding places in a bedroom"
+  },
+  "seo": "ig-07-typical-hiding-places-in-a-bedroom",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-08": {
+  "id": "IG-08",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Puntos de revisión del colchón y el somier",
+   "en": "Mattress and bed-frame inspection points"
+  },
+  "caption": {
+   "es": "Puntos de revisión del colchón y el somier",
+   "en": "Mattress and bed-frame inspection points"
+  },
+  "seo": "ig-08-mattress-and-bed-frame-inspection-points",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-09": {
+  "id": "IG-09",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Rutas de entrada de las chinches",
+   "en": "How bed bugs get in"
+  },
+  "caption": {
+   "es": "Rutas de entrada de las chinches",
+   "en": "How bed bugs get in"
+  },
+  "seo": "ig-09-how-bed-bugs-get-in",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-10": {
+  "id": "IG-10",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Flujo de inspección en hoteles y alojamientos",
+   "en": "Hotel and accommodation inspection flow"
+  },
+  "caption": {
+   "es": "Flujo de inspección en hoteles y alojamientos",
+   "en": "Hotel and accommodation inspection flow"
+  },
+  "seo": "ig-10-hotel-and-accommodation-inspection-flow",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-11": {
+  "id": "IG-11",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Lista de comprobación previa al tratamiento",
+   "en": "Pre-treatment checklist"
+  },
+  "caption": {
+   "es": "Lista de comprobación previa al tratamiento",
+   "en": "Pre-treatment checklist"
+  },
+  "seo": "ig-11-pre-treatment-checklist",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-12": {
+  "id": "IG-12",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P1",
+  "alt": {
+   "es": "Lista de comprobación posterior al tratamiento",
+   "en": "Post-treatment checklist"
+  },
+  "caption": {
+   "es": "Lista de comprobación posterior al tratamiento",
+   "en": "Post-treatment checklist"
+  },
+  "seo": "ig-12-post-treatment-checklist",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-13": {
+  "id": "IG-13",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Flujo de monitorización",
+   "en": "Monitoring flow"
+  },
+  "caption": {
+   "es": "Flujo de monitorización",
+   "en": "Monitoring flow"
+  },
+  "seo": "ig-13-monitoring-flow",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-14": {
+  "id": "IG-14",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Comparación de tecnologías de tratamiento",
+   "en": "Comparison of treatment technologies"
+  },
+  "caption": {
+   "es": "Comparación de tecnologías de tratamiento",
+   "en": "Comparison of treatment technologies"
+  },
+  "seo": "ig-14-comparison-of-treatment-technologies",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-15": {
+  "id": "IG-15",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Control integrado frente a un tratamiento puntual",
+   "en": "Integrated control versus a one-off treatment"
+  },
+  "caption": {
+   "es": "Control integrado frente a un tratamiento puntual",
+   "en": "Integrated control versus a one-off treatment"
+  },
+  "seo": "ig-15-integrated-control-versus-a-one-off-trea",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IG-16": {
+  "id": "IG-16",
+  "folder": "infographics",
+  "role": "infographic",
+  "aspect": [
+   16,
+   9
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Medidas de prevención: guía visual",
+   "en": "Prevention measures: visual guide"
+  },
+  "caption": {
+   "es": "Medidas de prevención: guía visual",
+   "en": "Prevention measures: visual guide"
+  },
+  "seo": "ig-16-prevention-measures-visual-guide",
+  "kind": "infographic",
+  "status": "placeholder",
+  "variants": null
+ }
+}

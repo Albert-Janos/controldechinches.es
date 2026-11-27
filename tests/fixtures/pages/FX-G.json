@@ -1,0 +1,122 @@
+{
+ "id": "FX-G",
+ "template": "T-G",
+ "status": "Draft",
+ "dataPage": "atlas",
+ "cta": {
+  "message": "identify"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/atlas/",
+  "title": "Fixture FX-G (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-G. No publicable.",
+  "h1": "Fixture FX-G: T-G",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "gallery",
+    "h2": "Fotos",
+    "filters": [
+     {
+      "id": "adultos",
+      "label": "Adultos"
+     },
+     {
+      "id": "huevos",
+      "label": "Huevos"
+     }
+    ],
+    "groups": [
+     {
+      "id": "adultos",
+      "h3": "Adultos",
+      "images": [
+       "IMG-ENT-ADU-01",
+       "IMG-ENT-ADU-02",
+       "IMG-ENT-ADU-03"
+      ]
+     },
+     {
+      "id": "huevos",
+      "h3": "Huevos",
+      "images": [
+       "IMG-ENT-EGG-01",
+       "IMG-ENT-EGG-02"
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/atlas/",
+  "title": "Fixture FX-G (EN) | Control de Chinches",
+  "description": "Test fixture FX-G. Not publishable.",
+  "h1": "Fixture FX-G: T-G",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "gallery",
+    "h2": "Photos",
+    "filters": [
+     {
+      "id": "adultos",
+      "label": "Adults"
+     },
+     {
+      "id": "huevos",
+      "label": "Eggs"
+     }
+    ],
+    "groups": [
+     {
+      "id": "adultos",
+      "h3": "Adults",
+      "images": [
+       "IMG-ENT-ADU-01",
+       "IMG-ENT-ADU-02",
+       "IMG-ENT-ADU-03"
+      ]
+     },
+     {
+      "id": "huevos",
+      "h3": "Eggs",
+      "images": [
+       "IMG-ENT-EGG-01",
+       "IMG-ENT-EGG-02"
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
+}

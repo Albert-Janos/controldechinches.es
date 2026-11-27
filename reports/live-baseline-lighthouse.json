@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-27",
+  "base": "https://www.controldechinches.es",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/",
+      "mode": "mobile",
+      "performance": 77,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 6021,
+      "cls": 0.001,
+      "tbt_ms": 24,
+      "fcp_ms": 1685,
+      "si_ms": 2466,
+      "transfer_kb": 1028,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/",
+      "mode": "desktop",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 1175,
+      "cls": 0,
+      "tbt_ms": 196,
+      "fcp_ms": 501,
+      "si_ms": 1075,
+      "transfer_kb": 1084,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/",
+      "mode": "mobile",
+      "performance": 89,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 3658,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 1575,
+      "si_ms": 1575,
+      "transfer_kb": 1027,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "bf-cache",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/",
+      "mode": "desktop",
+      "performance": 80,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 783,
+      "cls": 0,
+      "tbt_ms": 433,
+      "fcp_ms": 610,
+      "si_ms": 1159,
+      "transfer_kb": 1084,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "forced-reflow-insight",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "mobile",
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 100,
+      "lcp_ms": 3053,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 1580,
+      "si_ms": 1580,
+      "transfer_kb": 362,
+      "failedAudits": [
+        "errors-in-console",
+        "label-content-name-mismatch",
+        "forced-reflow-insight",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 100,
+      "lcp_ms": 762,
+      "cls": 0.018,
+      "tbt_ms": 0,
+      "fcp_ms": 488,
+      "si_ms": 519,
+      "transfer_kb": 362,
+      "failedAudits": [
+        "errors-in-console",
+        "label-content-name-mismatch",
+        "bf-cache",
+        "forced-reflow-insight",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/prices.html",
+      "mode": "mobile",
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2597,
+      "cls": 0,
+      "tbt_ms": 246,
+      "fcp_ms": 1570,
+      "si_ms": 1570,
+      "transfer_kb": 362,
+      "failedAudits": [
+        "mainthread-work-breakdown",
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/prices.html",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 734,
+      "cls": 0.005,
+      "tbt_ms": 0,
+      "fcp_ms": 466,
+      "si_ms": 481,
+      "transfer_kb": 362,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/chinches-apartamentos-turisticos/",
+      "mode": "mobile",
+      "performance": 92,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 3204,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 1572,
+      "si_ms": 1572,
+      "transfer_kb": 376,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/chinches-apartamentos-turisticos/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 743,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 466,
+      "si_ms": 467,
+      "transfer_kb": 376,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/bed-bugs-holiday-rentals/",
+      "mode": "mobile",
+      "performance": 93,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 3200,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 1567,
+      "si_ms": 1567,
+      "transfer_kb": 376,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "modern-http-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/bed-bugs-holiday-rentals/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 739,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 468,
+      "si_ms": 468,
+      "transfer_kb": 376,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    }
+  ]
+}

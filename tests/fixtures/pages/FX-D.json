@@ -1,0 +1,121 @@
+{
+ "id": "FX-D",
+ "template": "T-D",
+ "status": "Draft",
+ "dataPage": "about",
+ "cta": {
+  "message": "default",
+  "hero": false
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/about/",
+  "title": "Fixture FX-D (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-D. No publicable.",
+  "h1": "Fixture FX-D: T-D",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-ABOUT-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Presentación",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "timeline",
+    "h2": "Trayectoria",
+    "items": [
+     {
+      "when": "2020",
+      "text": "Hito de prueba"
+     },
+     {
+      "when": "2024",
+      "text": "Hito de prueba"
+     }
+    ]
+   },
+   {
+    "type": "docs",
+    "h2": "Documentos",
+    "images": [
+     "IMG-CRED-01",
+     "IMG-CRED-03",
+     "IMG-CRED-04"
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #13: titulación."
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/about/",
+  "title": "Fixture FX-D (EN) | Control de Chinches",
+  "description": "Test fixture FX-D. Not publishable.",
+  "h1": "Fixture FX-D: T-D",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-ABOUT-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Introduction",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "timeline",
+    "h2": "Path",
+    "items": [
+     {
+      "when": "2020",
+      "text": "Test milestone"
+     },
+     {
+      "when": "2024",
+      "text": "Test milestone"
+     }
+    ]
+   },
+   {
+    "type": "docs",
+    "h2": "Documents",
+    "images": [
+     "IMG-CRED-01",
+     "IMG-CRED-03",
+     "IMG-CRED-04"
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #13: qualification."
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
+}

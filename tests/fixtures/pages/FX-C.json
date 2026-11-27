@@ -1,0 +1,160 @@
+{
+ "id": "FX-C",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "FX-B"
+ ],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/article/",
+  "title": "Fixture FX-C (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-C. No publicable.",
+  "h1": "Fixture FX-C: T-C",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": "Revisor de prueba",
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "Primera sección",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "h2": "Segunda sección",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   },
+   {
+    "type": "table",
+    "h2": "Comparación",
+    "caption": "Tabla",
+    "head": [
+     "A",
+     "B"
+    ],
+    "rows": [
+     [
+      "x",
+      "y"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "h2": "Tercera sección",
+    "html": "<p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p><p>Texto de prueba para validar la maqueta. Este contenido no es publicable.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Pregunta de prueba uno?",
+    "a": "Respuesta de prueba uno."
+   },
+   {
+    "q": "¿Pregunta de prueba dos?",
+    "a": "Respuesta de prueba dos."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Fuente de prueba",
+    "publisher": "Editor de prueba",
+    "year": "2026",
+    "url": "https://example.org/test",
+    "checked": "comprobada 2026-01-01"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/__fixture__/article/",
+  "title": "Fixture FX-C (EN) | Control de Chinches",
+  "description": "Test fixture FX-C. Not publishable.",
+  "h1": "Fixture FX-C: T-C",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "text",
+    "h2": "First section",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "h2": "Second section",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p>"
+   },
+   {
+    "type": "table",
+    "h2": "Comparison",
+    "caption": "Table",
+    "head": [
+     "A",
+     "B"
+    ],
+    "rows": [
+     [
+      "x",
+      "y"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "h2": "Third section",
+    "html": "<p>Test text to validate the layout. This content is not publishable.</p><p>Test text to validate the layout. This content is not publishable.</p>"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Test question one?",
+    "a": "Test answer one."
+   },
+   {
+    "q": "Test question two?",
+    "a": "Test answer two."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Fuente de prueba",
+    "publisher": "Editor de prueba",
+    "year": "2026",
+    "url": "https://example.org/test",
+    "checked": "comprobada 2026-01-01"
+   }
+  ]
+ }
+}

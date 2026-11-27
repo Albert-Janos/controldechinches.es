@@ -1,0 +1,138 @@
+{
+ "id": "FX-I",
+ "template": "T-I",
+ "status": "Draft",
+ "dataPage": "tool",
+ "cta": {
+  "message": "identify"
+ },
+ "related": [],
+ "dates": {
+  "published": "2026-01-01",
+  "modified": "2026-01-02"
+ },
+ "es": {
+  "url": "/__fixture__/tool/",
+  "title": "Fixture FX-I (ES) | Control de Chinches",
+  "description": "Fixture de prueba FX-I. No publicable.",
+  "h1": "Fixture FX-I: T-I",
+  "eyebrow": "Prueba de plantilla",
+  "lead": "Texto introductorio de prueba para comprobar la maqueta en escritorio y móvil.",
+  "answer": "Respuesta breve de prueba: dos frases para validar el cuadro de respuesta.",
+  "breadcrumb": [
+   [
+    "Pruebas",
+    "/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "tool",
+    "h2": "Identificador",
+    "outcomesTitle": "Qué hacer",
+    "questions": [
+     {
+      "id": "live",
+      "text": "¿Has visto un insecto vivo?"
+     },
+     {
+      "id": "spots",
+      "text": "¿Puntos oscuros en las costuras?"
+     }
+    ],
+    "outcomes": [
+     {
+      "id": "high",
+      "rule": {
+       "minYes": 2
+      },
+      "title": "Varios indicios",
+      "text": "Envía fotos para identificarlo."
+     },
+     {
+      "id": "some",
+      "rule": {
+       "minYes": 1
+      },
+      "title": "Un indicio",
+      "text": "Revisa las costuras."
+     },
+     {
+      "id": "none",
+      "rule": {
+       "default": true
+      },
+      "title": "Sin indicios",
+      "text": "Sigue vigilando."
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/__fixture__/tool/",
+  "title": "Fixture FX-I (EN) | Control de Chinches",
+  "description": "Test fixture FX-I. Not publishable.",
+  "h1": "Fixture FX-I: T-I",
+  "eyebrow": "Template test",
+  "lead": "Introductory test text to check the layout on desktop and mobile.",
+  "answer": "Short test answer: two sentences to validate the answer box.",
+  "breadcrumb": [
+   [
+    "Tests",
+    "/en/__fixture__/hub/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "blocks": [
+   {
+    "type": "tool",
+    "h2": "Identifier",
+    "outcomesTitle": "What to do",
+    "questions": [
+     {
+      "id": "live",
+      "text": "Did you see a live insect?"
+     },
+     {
+      "id": "spots",
+      "text": "Dark spots on the mattress seams?"
+     }
+    ],
+    "outcomes": [
+     {
+      "id": "high",
+      "rule": {
+       "minYes": 2
+      },
+      "title": "Several signs",
+      "text": "Send photos for identification."
+     },
+     {
+      "id": "some",
+      "rule": {
+       "minYes": 1
+      },
+      "title": "A sign",
+      "text": "Check the mattress seams."
+     },
+     {
+      "id": "none",
+      "rule": {
+       "default": true
+      },
+      "title": "No signs",
+      "text": "Keep monitoring."
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
+}

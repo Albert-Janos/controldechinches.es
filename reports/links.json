@@ -1,0 +1,15 @@
+{
+  "pages": 10,
+  "linksChecked": 406,
+  "problems": [
+    "aviso-legal.html: absolute own URL not found locally: https://www.controldechinches.es/img/hero.webp",
+    "politica-privacidad.html: absolute own URL not found locally: https://www.controldechinches.es/img/hero.webp"
+  ],
+  "externalHosts": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "wa.me",
+    "www.webdigital.hu",
+    "www.aepd.es"
+  ]
+}
