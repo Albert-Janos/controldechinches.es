@@ -1,0 +1,192 @@
+{
+ "id": "PG-052",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-049",
+  "PG-053",
+  "PG-014"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/resistencia-insecticidas-chinches/",
+  "title": "Resistencia a insecticidas en chinches de cama",
+  "description": "Qué dicen la EPA y la literatura científica sobre la resistencia de las chinches a los piretroides, incluidos datos de poblaciones españolas.",
+  "h1": "Resistencia a insecticidas en chinches",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Muchas poblaciones de chinches de cama son resistentes a los piretroides, los insecticidas más usados contra ellas; por eso los organismos oficiales recomiendan combinar métodos y no depender de un solo producto.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "resistencia insecticidas chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-dicen-los-organismos",
+    "h2": "Qué dicen los organismos oficiales",
+    "html": "<p>La EPA indica que algunas poblaciones son resistentes a piretrinas y piretroides, que las chinches resistentes pueden desplazarse a otro escondite y que conviene usar productos combinados o de otra clase química. Las guías de La Rioja señalan que han desarrollado resistencia a muchos piretroides de uso doméstico.</p>"
+   },
+   {
+    "type": "text",
+    "id": "literatura",
+    "h2": "Qué dice la literatura científica",
+    "html": "<ul><li>Davies, Field y Williamson (2012) vinculan el resurgimiento de la chinche a finales de los años noventa en Europa, EE. UU. y Australia con la resistencia a los piretroides.</li><li>Dang y colaboradores (2017) describen los mecanismos confirmados: engrosamiento de la cutícula, mayor actividad de enzimas de detoxificación y mutaciones <em>kdr</em>.</li><li>Balvín y Booth (2018) secuenciaron 131 poblaciones europeas: el 93,5 % de las asociadas a humanos tenía la mutación L925I.</li><li>Porras-Villamil y colaboradores (2025), con muestras de España (41), Suiza, Chequia, Hong Kong, EE. UU., México y Colombia, hallaron al menos una mutación <em>kdr</em> en el 90,6 % de 64 muestras de <em>C. lectularius</em>; los autores concluyen que la alta frecuencia en poblaciones españolas sugiere que los piretroides serán menos eficaces allí.</li></ul><p>Estas cifras proceden de los resúmenes de los artículos; los datos de resistencia varían según la zona y no predicen el resultado en una vivienda concreta.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "text",
+    "id": "consecuencia",
+    "h2": "Consecuencia práctica",
+    "html": "<p>El control integrado combina métodos físicos y, cuando está justificado, insecticidas de distinto tipo. Más en <a href=\"/servicios/control-integrado/\">control integrado</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Pesticides to Control Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "The re-emergence of the bed bug as a nuisance pest: implications of resistance to the pyrethroid insecticides (Davies TG, Field LM, Williamson MS). Med Vet Entomol 26(3):241-254",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2012",
+    "url": "https://doi.org/10.1111/j.1365-2915.2011.01006.x",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Insecticide resistance and resistance mechanisms in bed bugs, Cimex spp. (Dang K, Doggett SL, Veera Singham G, Lee CY). Parasit Vectors 10:318",
+    "publisher": "Parasites & Vectors",
+    "year": "2017",
+    "url": "https://doi.org/10.1186/s13071-017-2232-3",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Distribution and frequency of pyrethroid resistance-associated mutations in host lineages of the bed bug across Europe (Balvín O, Booth W). J Med Entomol 55(4):923-928",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2018",
+    "url": "https://doi.org/10.1093/jme/tjy023",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Target-site mutations and metabolic detoxification of insecticides in continental populations of Cimex lectularius and Cimex hemipterus (Porras-Villamil JF et al.). J Med Entomol 62(1):130-145",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2025",
+    "url": "https://doi.org/10.1093/jme/tjae118",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bug-insecticide-resistance/",
+  "title": "Insecticide resistance in bed bugs | Control de Chinches",
+  "description": "What the EPA and the scientific literature say about bed bug resistance to pyrethroids, including data from Spanish populations.",
+  "h1": "Insecticide resistance in bed bugs",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Many bed bug populations are resistant to pyrethroids, the insecticides most used against them; that is why official bodies recommend combining methods rather than relying on a single product.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "bed bug insecticide resistance",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "official-bodies",
+    "h2": "What official bodies say",
+    "html": "<p>The EPA says some populations are resistant to pyrethrins and pyrethroids, that resistant bed bugs may move to another hiding place and that combination products or another chemical class may help. The La Rioja guides say they have developed resistance to many household pyrethroids.</p>"
+   },
+   {
+    "type": "text",
+    "id": "literature",
+    "h2": "What the scientific literature says",
+    "html": "<ul><li>Davies, Field and Williamson (2012) link the bed bug’s resurgence in the late 1990s in Europe, the USA and Australia with pyrethroid resistance.</li><li>Dang and colleagues (2017) describe the confirmed mechanisms: cuticle thickening, increased detoxification enzymes and <em>kdr</em> mutations.</li><li>Balvín and Booth (2018) sequenced 131 European populations: 93.5% of human-associated populations carried the L925I mutation.</li><li>Porras-Villamil and colleagues (2025), with samples from Spain (41), Switzerland, the Czech Republic, Hong Kong, the USA, Mexico and Colombia, found at least one <em>kdr</em> mutation in 90.6% of 64 <em>C. lectularius</em> samples; the authors conclude that the high frequency in Spanish populations suggests pyrethroids will be less effective there.</li></ul><p>These figures come from the papers’ abstracts; resistance data vary by area and do not predict the outcome in any particular home.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "text",
+    "id": "practical-consequence",
+    "h2": "Practical consequence",
+    "html": "<p>Integrated control combines physical methods and, where justified, insecticides of different types. More on <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Pesticides to Control Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "The re-emergence of the bed bug as a nuisance pest: implications of resistance to the pyrethroid insecticides (Davies TG, Field LM, Williamson MS). Med Vet Entomol 26(3):241-254",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2012",
+    "url": "https://doi.org/10.1111/j.1365-2915.2011.01006.x",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Insecticide resistance and resistance mechanisms in bed bugs, Cimex spp. (Dang K, Doggett SL, Veera Singham G, Lee CY). Parasit Vectors 10:318",
+    "publisher": "Parasites & Vectors",
+    "year": "2017",
+    "url": "https://doi.org/10.1186/s13071-017-2232-3",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Distribution and frequency of pyrethroid resistance-associated mutations in host lineages of the bed bug across Europe (Balvín O, Booth W). J Med Entomol 55(4):923-928",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2018",
+    "url": "https://doi.org/10.1093/jme/tjy023",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Target-site mutations and metabolic detoxification of insecticides in continental populations of Cimex lectularius and Cimex hemipterus (Porras-Villamil JF et al.). J Med Entomol 62(1):130-145",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2025",
+    "url": "https://doi.org/10.1093/jme/tjae118",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

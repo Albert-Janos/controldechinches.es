@@ -1,0 +1,191 @@
+{
+ "id": "PG-056",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-055",
+  "PG-053"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/despues-del-tratamiento-chinches/",
+  "title": "Qué hacer después del tratamiento de chinches",
+  "description": "Seguimiento recomendado por fuentes oficiales tras un tratamiento: revisiones periódicas, interceptores y cuánto tiempo seguir vigilando.",
+  "h1": "Qué hacer después del tratamiento de chinches",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Sigue las indicaciones del técnico sobre reentrada y ventilación y mantén un seguimiento: las fuentes recomiendan revisar al menos cada 7 días y seguir vigilando durante al menos un año.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-02",
+  "reviewer": null,
+  "primaryKeyword": "despues tratamiento chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "reentrada",
+    "h2": "Reentrada y ventilación",
+    "html": "<p>Las etiquetas de los productos indican cuánto tiempo hay que permanecer fuera de la zona tratada (EPA). El plazo depende del método y del producto, por lo que debe seguirse la indicación del técnico.</p>"
+   },
+   {
+    "type": "text",
+    "id": "seguimiento",
+    "h2": "Seguimiento",
+    "html": "<ul><li>La EPA recomienda revisar al menos cada 7 días y seguir comprobando durante al menos un año.</li><li>Rutgers: interceptores bajo las patas de la cama, revisados cada 1–2 semanas; solo se deja de vigilar tras un mes sin chinches.</li><li>Purdue: al menos una inspección de seguimiento entre 10 y 21 días después de cada actuación.</li><li>Zaragoza: nueva inspección a los 10–15 días y, si hace falta, una tercera visita 10–15 días después.</li><li>Las fundas protectoras se mantienen puestas durante mucho tiempo (Purdue y Zaragoza indican al menos un año).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-12"
+   },
+   {
+    "type": "text",
+    "id": "si-reaparecen",
+    "h2": "Si vuelven a aparecer indicios",
+    "html": "<p>Anota dónde y cuándo los has visto y consúltanos. Más sobre las causas en <a href=\"/guia-chinches/por-que-vuelven-las-chinches/\">por qué vuelven las chinches</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Safety Issues in Controlling Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/after-bed-bug-treatment/",
+  "title": "What to do after bed bug treatment | Control de Chinches",
+  "description": "Follow-up recommended by official sources after treatment: regular checks, interceptors and how long to keep monitoring.",
+  "h1": "What to do after bed bug treatment",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Follow your technician’s guidance on re-entry and ventilation and keep monitoring: sources recommend checking at least every 7 days and continuing to watch for at least a year.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-02",
+  "reviewer": null,
+  "primaryKeyword": "after bed bug treatment",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "re-entry",
+    "h2": "Re-entry and ventilation",
+    "html": "<p>Product labels state how long to stay out of the treated area (EPA). The time depends on the method and product, so follow your technician’s instructions.</p>"
+   },
+   {
+    "type": "text",
+    "id": "follow-up",
+    "h2": "Follow-up",
+    "html": "<ul><li>The EPA recommends checking at least every 7 days and continuing to check for at least a year.</li><li>Rutgers: interceptors under the bed legs, checked every 1–2 weeks; monitoring stops only after a month with no bed bugs.</li><li>Purdue: at least one follow-up inspection 10–21 days after each treatment.</li><li>Zaragoza: a new inspection after 10–15 days and, if needed, a third visit 10–15 days later.</li><li>Protective encasements stay on for a long time (Purdue and Zaragoza say at least a year).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-12"
+   },
+   {
+    "type": "text",
+    "id": "if-signs-return",
+    "h2": "If signs reappear",
+    "html": "<p>Note where and when you saw them and get in touch. More about the causes in <a href=\"/en/bed-bug-guide/why-bed-bugs-come-back/\">why bed bugs come back</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Safety Issues in Controlling Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

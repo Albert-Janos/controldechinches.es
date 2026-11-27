@@ -1,0 +1,165 @@
+{
+ "id": "PG-062",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-061",
+  "PG-060",
+  "PG-015",
+  "PG-003"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/deteccion-temprana-apartamentos/",
+  "title": "Detección temprana de chinches en apartamentos turísticos",
+  "description": "Por qué la detección temprana importa en alojamientos con varias unidades, según estudios, y qué puede hacer un gestor.",
+  "h1": "Detección temprana en apartamentos turísticos",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "En edificios con varias unidades las chinches pueden pasar de una a otra y muchos ocupantes no saben que las tienen: detectarlas pronto y registrar las revisiones permite actuar antes de que se extiendan.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-04",
+  "reviewer": null,
+  "primaryKeyword": "deteccion temprana chinches apartamento",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-indican-los-estudios",
+    "h2": "Qué indican los estudios",
+    "html": "<ul><li>En un edificio de 223 viviendas, 101 (45 %) se infestaron en 41 meses desde la primera introducción; el 53 % de las viviendas contiguas a una infestada también lo estaba, y la mitad de los residentes con chinches no sabía que las tenía (Wang et al. 2010).</li><li>En 2.372 apartamentos, el 49 % de las infestaciones detectadas estaba en viviendas cuyos residentes no conocían la actividad (Wang et al. 2016).</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "que-puede-hacer-un-gestor",
+    "h2": "Qué puede hacer un gestor",
+    "html": "<p>La guía de La Rioja recomienda inspección diaria de colchones, ropa de cama y somieres, y Purdue indica que en edificios con varias unidades hay que inspeccionar todas las viviendas y habitaciones y las zonas comunes. Puedes llevar un <a href=\"/recursos/registro-de-monitorizacion/\">registro de monitorización</a> y usar el <a href=\"/recursos/parte-de-deteccion/\">parte de detección</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "text",
+    "id": "servicio",
+    "h2": "Servicio para alojamientos",
+    "html": "<p>Consulta el <a href=\"/chinches-apartamentos-turisticos/\">servicio para alojamientos</a> y la <a href=\"/guia-chinches/protocolo-hotel-chinches/\">guía de protocolo</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Characteristics of Cimex lectularius infestation and dispersal in a high-rise apartment building (Wang C et al.). J Econ Entomol 103(1):172-177",
+    "publisher": "Journal of Economic Entomology",
+    "year": "2010",
+    "url": "https://doi.org/10.1603/ec09230",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: prevalence in low-income communities, the reactions of residents, and implementation of a low-cost inspection protocol (Wang C, Singh N, Zha C, Cooper R). J Med Entomol 53(3):639-646",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2016",
+    "url": "https://doi.org/10.1093/jme/tjw018",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/early-detection-holiday-rentals/",
+  "title": "Early detection of bed bugs in holiday rentals",
+  "description": "Why early detection matters in multi-unit accommodation, according to studies, and what a manager can do.",
+  "h1": "Early detection in holiday rentals",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "In buildings with several units bed bugs can move from one to another and many occupants do not know they have them: detecting them early and recording checks lets you act before they spread.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-04",
+  "reviewer": null,
+  "primaryKeyword": "early detection bed bugs holiday rental",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-studies-show",
+    "h2": "What studies show",
+    "html": "<ul><li>In a 223-unit building, 101 apartments (45%) became infested within 41 months of the first introduction; 53% of apartments next to an infested one were also infested, and half of the infested residents interviewed did not know they had bed bugs (Wang et al. 2010).</li><li>In 2,372 apartments, 49% of detected infestations were in homes whose residents did not know of the activity (Wang et al. 2016).</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "what-a-manager-can-do",
+    "h2": "What a manager can do",
+    "html": "<p>The La Rioja guide recommends daily inspection of mattresses, bedding and box springs, and Purdue says that in multi-unit buildings all apartments and rooms and the common areas need to be inspected. You can keep a <a href=\"/en/resources/bed-bug-monitoring-log/\">monitoring log</a> and use the <a href=\"/en/resources/bed-bug-detection-report/\">detection report</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "text",
+    "id": "service",
+    "h2": "Service for accommodation",
+    "html": "<p>See the <a href=\"/en/bed-bugs-holiday-rentals/\">holiday rental service</a> and the <a href=\"/en/bed-bug-guide/hotel-bed-bug-protocol/\">protocol guide</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Characteristics of Cimex lectularius infestation and dispersal in a high-rise apartment building (Wang C et al.). J Econ Entomol 103(1):172-177",
+    "publisher": "Journal of Economic Entomology",
+    "year": "2010",
+    "url": "https://doi.org/10.1603/ec09230",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: prevalence in low-income communities, the reactions of residents, and implementation of a low-cost inspection protocol (Wang C, Singh N, Zha C, Cooper R). J Med Entomol 53(3):639-646",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2016",
+    "url": "https://doi.org/10.1093/jme/tjw018",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "id": "PG-045",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-041",
+  "PG-044",
+  "PG-049"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/chinches-en-el-colchon/",
+  "title": "Chinches en el colchón: cómo revisarlo | Control de Chinches",
+  "description": "Cómo revisar un colchón y un somier: qué buscar en costuras, ribetes y etiquetas, y qué papel tienen las fundas protectoras.",
+  "h1": "Chinches en el colchón: cómo revisarlo",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Retira la ropa de cama y revisa con buena luz las costuras, los ribetes y las etiquetas del colchón y del somier, y las grietas del armazón y del cabecero. Busca manchas oscuras, mudas, huevos y ejemplares.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": null,
+  "primaryKeyword": "chinches en el colchon",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "Cómo revisarlo",
+    "items": [
+     {
+      "h3": "Retira la ropa de cama",
+      "p": "Revisa también las fundas de almohada y las sábanas: busca manchas rojizas o puntos oscuros."
+     },
+     {
+      "h3": "Recorre las costuras y los ribetes",
+      "p": "El borde acolchado, las costuras y las etiquetas del colchón y del somier son los puntos principales."
+     },
+     {
+      "h3": "Sigue por el armazón y el cabecero",
+      "p": "Mira las grietas y las uniones; una grieta de la anchura de una tarjeta de crédito puede esconder una chinche."
+     },
+     {
+      "h3": "Anota y fotografía",
+      "p": "Haz fotos nítidas con algo que dé escala, para identificar lo que has encontrado."
+     }
+    ]
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "id": "fundas",
+    "h2": "Fundas protectoras",
+    "html": "<p>La EPA y Virginia Tech recomiendan fundas protectoras para colchón y somier. La EPA aconseja elegir fundas resistentes al desgarro y de color claro, para ver mejor cualquier rastro.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-08"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bugs-in-a-mattress/",
+  "title": "Bed bugs in a mattress: how to check | Control de Chinches",
+  "description": "How to check a mattress and box spring: what to look for on seams, piping and tags, and what protective encasements do.",
+  "h1": "Bed bugs in a mattress: how to check",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Strip the bed and check, in good light, the seams, piping and tags of the mattress and box spring, and the cracks in the frame and headboard. Look for dark spots, shed skins, eggs and live bugs.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": null,
+  "primaryKeyword": "bed bugs in a mattress",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "How to check",
+    "items": [
+     {
+      "h3": "Strip the bed",
+      "p": "Check pillowcases and sheets too: look for reddish stains or dark spots."
+     },
+     {
+      "h3": "Go along the seams and piping",
+      "p": "The quilted edge, seams and tags of the mattress and box spring are the main places."
+     },
+     {
+      "h3": "Continue with the frame and headboard",
+      "p": "Look at cracks and joints; a crack the width of a credit card can hide a bed bug."
+     },
+     {
+      "h3": "Note and photograph",
+      "p": "Take sharp photos with something for scale to help identify what you found."
+     }
+    ]
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "id": "encasements",
+    "h2": "Protective encasements",
+    "html": "<p>The EPA and Virginia Tech recommend protective covers for the mattress and box spring. The EPA advises choosing tear-resistant, light-coloured covers so any trace is easier to see.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-08"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

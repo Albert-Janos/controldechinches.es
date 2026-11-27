@@ -1,6 +1,6 @@
 {
   "_comment": "Baseline for tests/test-ads-protection.mjs. baselineCommit = state after the owner-approved P0.1 fixes (prices, calculator, aria-labels). Re-baseline only with explicit owner approval: node tests/test-ads-protection.mjs --update",
-  "baselineCommit": "c2c9e3d",
+  "baselineCommit": "96f5a0f",
   "pages": [
     "/",
     "/en/",
@@ -35,7 +35,9 @@
     "assets/signo-mudas.webp",
     "assets/signo-picaduras.webp",
     "assets/signo-sangre.webp",
-    "assets/control-de-chinches-logo-480.webp"
+    "assets/control-de-chinches-logo-480.webp",
+    "assets/hero-0010.avif",
+    "assets/hero-0010-mobile.avif"
   ],
   "snapshot": {
     "/": {

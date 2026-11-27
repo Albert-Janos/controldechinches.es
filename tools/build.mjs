@@ -7,6 +7,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderPage } from '../templates/templates.mjs';
 import { ui } from '../templates/ui.mjs';
+import { infographics } from '../templates/infographics.mjs';
 import { buildManifest } from './build-image-manifest.mjs';
 
 export const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
@@ -28,7 +29,7 @@ export function makeContext({ mode, pageDirs }) {
   const site = readJson('data/site.json'), prices = readJson('data/prices.json'), whatsapp = readJson('data/whatsapp.json');
   const images = buildManifest(), pages = loadPages(pageDirs);
   const included = new Set(Object.values(pages).filter(p => mode === 'preview' || site.indexableStatuses.includes(p.status)).map(p => p.id));
-  return { site, prices, whatsapp, images, pages, included, mode };
+  return { site, prices, whatsapp, images, pages, included, mode, infographics };
 }
 export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['data/pages'], clean = true } = {}) {
   const base = makeContext({ mode, pageDirs });

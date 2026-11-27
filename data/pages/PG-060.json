@@ -1,0 +1,192 @@
+{
+ "id": "PG-060",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-062",
+  "PG-015",
+  "PG-053"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/monitorizacion-chinches/",
+  "title": "Monitorización de chinches: interceptores e inspección",
+  "description": "Cómo detectar chinches a tiempo: inspección visual, interceptores bajo las patas de la cama y qué dicen los estudios sobre su fiabilidad.",
+  "h1": "Monitorización de chinches de cama",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Los interceptores colocados bajo las patas de la cama detectan más infestaciones que la inspección visual breve: un estudio en 2.372 apartamentos obtuvo un 89 % frente a un 72 %.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-04",
+  "reviewer": null,
+  "primaryKeyword": "monitorizacion chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "interceptores",
+    "h2": "Interceptores",
+    "html": "<p>Rutgers indica que se revisan cada 1–2 semanas, que solo se deja de vigilar tras un mes sin chinches y que un apartamento de un dormitorio puede necesitar unos 8–12. Zaragoza recomienda separar la cama unos 30 cm de las paredes y usar interceptores (comerciales o dos recipientes anidados). Purdue propone revisarlos cada 7–10 días.</p>"
+   },
+   {
+    "type": "text",
+    "id": "fiabilidad",
+    "h2": "Qué tan fiable es cada método",
+    "html": "<ul><li>Wang et al. (2016), 2.372 apartamentos en 43 edificios: los monitores detectaron el 89 % de las infestaciones y las inspecciones visuales breves el 72 %; el 49 % de las infestaciones detectadas estaba en viviendas cuyos residentes no sabían que había chinches.</li><li>Penn State recoge, para otros métodos, el 97 % con perros y el 99 % combinando inspección visual e interceptores.</li><li>Vaidyanathan y Feldlaufer (2013): la inspección visual es barata, pero lenta y poco fiable cuando hay pocas chinches.</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-13"
+   },
+   {
+    "type": "text",
+    "id": "siguiente",
+    "h2": "Siguiente paso",
+    "html": "<p>Para alojamientos, consulta <a href=\"/servicios/planes-prevencion/\">prevención y monitorización</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: prevalence in low-income communities, the reactions of residents, and implementation of a low-cost inspection protocol (Wang C, Singh N, Zha C, Cooper R). J Med Entomol 53(3):639-646",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2016",
+    "url": "https://doi.org/10.1093/jme/tjw018",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Evaluation of two least toxic IPM programs for managing bed bugs, with discussion of a bed bug intercepting device (Wang C, Gibb T, Bennett GW). J Med Entomol 46(3):566-571",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1603/033.046.0322",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bug-monitoring/",
+  "title": "Bed bug monitoring: interceptors and inspection",
+  "description": "How to detect bed bugs early: visual inspection, interceptors under the bed legs and what studies say about their reliability.",
+  "h1": "Bed bug monitoring",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Interceptors placed under the bed legs detect more infestations than a brief visual inspection: a study of 2,372 apartments found 89% versus 72%.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-04",
+  "reviewer": null,
+  "primaryKeyword": "bed bug monitoring",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "interceptors",
+    "h2": "Interceptors",
+    "html": "<p>Rutgers says they are checked every 1–2 weeks, that monitoring stops only after a month with no bed bugs and that a one-bedroom apartment may need about 8–12. Zaragoza recommends moving the bed about 30 cm from the walls and using interceptors (commercial or two nested containers). Purdue suggests checking them every 7–10 days.</p>"
+   },
+   {
+    "type": "text",
+    "id": "reliability",
+    "h2": "How reliable each method is",
+    "html": "<ul><li>Wang et al. (2016), 2,372 apartments in 43 buildings: monitors detected 89% of infestations and brief visual inspections 72%; 49% of detected infestations were in homes whose residents did not know there were bed bugs.</li><li>Penn State reports, for other methods, 97% with dogs and 99% combining visual inspection and interceptors.</li><li>Vaidyanathan and Feldlaufer (2013): visual inspection is low-cost but slow and unreliable when few bed bugs are present.</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-13"
+   },
+   {
+    "type": "text",
+    "id": "next",
+    "h2": "Next step",
+    "html": "<p>For accommodation, see <a href=\"/en/services/prevention-programmes/\">prevention and monitoring</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: prevalence in low-income communities, the reactions of residents, and implementation of a low-cost inspection protocol (Wang C, Singh N, Zha C, Cooper R). J Med Entomol 53(3):639-646",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2016",
+    "url": "https://doi.org/10.1093/jme/tjw018",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Evaluation of two least toxic IPM programs for managing bed bugs, with discussion of a bed bug intercepting device (Wang C, Gibb T, Bennett GW). J Med Entomol 46(3):566-571",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1603/033.046.0322",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

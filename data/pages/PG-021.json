@@ -1,0 +1,149 @@
+{
+ "id": "PG-021",
+ "template": "T-A",
+ "status": "Draft",
+ "dataPage": "local",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-020",
+  "PG-011",
+  "PG-013",
+  "PG-014",
+  "PG-003",
+  "PG-022",
+  "PG-023"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #3 confirm Alicante is served; local facts (property types, travel rule)",
+  "photos IMG-LOC-ALC-01",
+  "LGL-01, LGL-08",
+  "no local case study exists (none is invented)"
+ ],
+ "offers": [
+  "chemical",
+  "steam"
+ ],
+ "areaServed": [
+  "Alicante"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "como-trabajamos",
+    "h2": "Cómo trabajamos en Alicante",
+    "html": "<p>Valoramos las zonas afectadas y te recomendamos el método adecuado: tratamiento químico dirigido o vapor seco. El precio final y el desplazamiento se confirman por escrito antes de reservar.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirma que se atiende Alicante y la regla de desplazamiento. Hechos locales reales (tipos de vivienda habituales, observaciones propias) y fotos locales (IMG-LOC-ALC-01). No se publican referencias locales inventadas."
+   },
+   {
+    "type": "priceBox",
+    "h2": "Precios"
+   },
+   {
+    "type": "cards",
+    "h2": "Servicios",
+    "items": [
+     {
+      "title": "Tratamiento químico",
+      "text": "Aplicación dirigida.",
+      "href": "/servicios/tratamiento-quimico/"
+     },
+     {
+      "title": "Vapor seco",
+      "text": "Calor localizado, sin insecticidas.",
+      "href": "/servicios/vapor-seco/"
+     },
+     {
+      "title": "Método (GIP)",
+      "text": "Valoración, tratamiento y seguimiento.",
+      "href": "/servicios/control-integrado/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿En cuánto tiempo podéis venir a Alicante?",
+    "a": "Depende de la localidad y de la agenda. Escríbenos por WhatsApp para consultar una fecha."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Zonas",
+    "/zonas/"
+   ]
+  ],
+  "url": "/zonas/alicante/",
+  "title": "Chinches de cama en Alicante ciudad: tratamiento y precios",
+  "description": "Tratamiento de chinches de cama en Alicante: químico desde 139 € y vapor seco desde 150 €. Confirmamos disponibilidad y precio por escrito.",
+  "h1": "Chinches de cama en Alicante",
+  "eyebrow": "Zona de servicio · Alicante",
+  "lead": "Tratamiento de chinches en viviendas y alojamientos turísticos. Indícanos tu localidad y las señales que has visto.",
+  "heroImage": "IMG-LOC-ALC-01"
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "how-we-work",
+    "h2": "How we work in Alicante",
+    "html": "<p>We assess the affected areas and recommend the right method: targeted chemical treatment or dry steam. The final price and travel are confirmed in writing before you book.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirm Alicante is served and the travel rule. Real local facts (typical property types, own observations) and local photos (IMG-LOC-ALC-01). No invented local references are published."
+   },
+   {
+    "type": "priceBox",
+    "h2": "Prices"
+   },
+   {
+    "type": "cards",
+    "h2": "Services",
+    "items": [
+     {
+      "title": "Chemical treatment",
+      "text": "Targeted application.",
+      "href": "/en/services/chemical-treatment/"
+     },
+     {
+      "title": "Dry steam",
+      "text": "Localised heat, without insecticides.",
+      "href": "/en/services/dry-steam/"
+     },
+     {
+      "title": "Method (IPM)",
+      "text": "Assessment, treatment and follow-up.",
+      "href": "/en/services/integrated-pest-management/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "How soon can you come to Alicante?",
+    "a": "Availability depends on your location and our schedule. Message us on WhatsApp to check."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Areas",
+    "/en/areas/"
+   ]
+  ],
+  "url": "/en/areas/alicante/",
+  "title": "Bed bugs in Alicante: treatment and prices",
+  "description": "Bed bug treatment in Alicante: chemical from €139 and dry steam from €150. We confirm availability and price in writing.",
+  "h1": "Bed bugs in Alicante",
+  "eyebrow": "Service area · Alicante",
+  "lead": "Bed bug treatment for homes and holiday accommodation. Tell us your town and the signs you have seen.",
+  "heroImage": "IMG-LOC-ALC-01"
+ }
+}

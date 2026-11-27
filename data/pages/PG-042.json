@@ -1,0 +1,253 @@
+{
+ "id": "PG-042",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-041",
+  "PG-071"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/picaduras-de-chinches/",
+  "title": "Picaduras de chinches de cama: cómo reconocerlas y sus límites",
+  "description": "Cómo suelen ser las picaduras de chinche, por qué no sirven por sí solas para diagnosticar y qué hacer.",
+  "h1": "Picaduras de chinches: cómo reconocerlas y sus límites",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las picaduras de chinche se parecen a las de mosquito u otras reacciones de la piel y no sirven por sí solas para diagnosticar una infestación: la reacción varía de una persona a otra y algunas personas no reaccionan.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "picaduras de chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "como-son",
+    "h2": "Cómo suelen ser",
+    "html": "<p>Pueden ser abultadas y con picor, y aparecer a menudo en línea o agrupadas (NHS). Se parecen a las picaduras de mosquitos o de otros ácaros, a erupciones o a urticaria (EPA).</p>"
+   },
+   {
+    "type": "text",
+    "id": "por-que-no-bastan",
+    "h2": "Por qué no bastan para diagnosticar",
+    "html": "<ul><li>Cada persona reacciona de forma distinta; la piel no es un indicador fiable (Virginia Tech).</li><li>Según la Universidad de Kentucky, alrededor del 30 % de las personas no reaccionan.</li><li>El momento de la reacción también varía según la fuente: La Rioja indica que suele aparecer entre 1 y 24 horas; el CDC, que las marcas pueden aparecer uno o varios días después, hasta unos 14 días.</li><li>La guía del Ayuntamiento de Zaragoza lo resume así: no es posible diagnosticar chinches observando solo las picaduras, porque pulgas, piojos, ácaros y garrapatas dejan lesiones parecidas. Si afecta a niños, debe verlos un médico.</li></ul><p>Por eso hay que buscar otros indicios: manchas oscuras en las costuras del colchón, mudas, huevos o ejemplares vivos. Consulta <a href=\"/guia-chinches/como-saber-si-tengo-chinches/\">cómo saber si tengo chinches</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "salud",
+    "h2": "Aspectos de salud",
+    "html": "<p>Según el CDC y la EPA, no se sabe que las chinches transmitan enfermedades. Si la reacción es intensa o tienes dudas médicas, consulta con un profesional sanitario.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Introduction to Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/introduction-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs (Cimex lectularius) and clinical consequences of their bites (Goddard J, deShazo R). JAMA 301(13):1358-1366",
+    "publisher": "JAMA",
+    "year": "2009",
+    "url": "https://doi.org/10.1001/jama.2009.405",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Sensitivity to bites by the bedbug, Cimex lectularius (Reinhardt K et al.). Med Vet Entomol 23(2):163-166",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1111/j.1365-2915.2008.00793.x",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: clinical relevance and control options (Doggett SL, Dwyer DE, Peñas PF, Russell RC). Clin Microbiol Rev 25(1):164-192",
+    "publisher": "Clinical Microbiology Reviews",
+    "year": "2012",
+    "url": "https://doi.org/10.1128/CMR.05015-11",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bug-bites/",
+  "title": "Bed bug bites: how to recognise them and their limits",
+  "description": "What bed bug bites usually look like, why they cannot diagnose an infestation on their own and what to do.",
+  "h1": "Bed bug bites: how to recognise them and their limits",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Bed bug bites resemble mosquito bites or other skin reactions and cannot diagnose an infestation on their own: reactions differ from person to person and some people do not react at all.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "bed bug bites",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-they-look-like",
+    "h2": "What they usually look like",
+    "html": "<p>They can be raised and itchy, and often appear in a line or grouped together (NHS). They resemble bites from mosquitoes or other mites, rashes or hives (EPA).</p>"
+   },
+   {
+    "type": "text",
+    "id": "why-bites-are-not-enough",
+    "h2": "Why bites are not enough to diagnose",
+    "html": "<ul><li>Each person reacts differently; skin reactions are not a reliable indicator (Virginia Tech).</li><li>According to the University of Kentucky, about 30% of people do not react.</li><li>Timing also varies by source: La Rioja says a reaction usually appears within 1–24 hours; the CDC says marks can appear one to several days later, up to about 14 days.</li><li>The Zaragoza city guide sums it up: bed bugs cannot be diagnosed from bites alone, because fleas, lice, mites and ticks leave similar lesions. If children are affected, a doctor should see them.</li></ul><p>That is why you need to look for other signs: dark spots on mattress seams, shed skins, eggs or live bugs. See <a href=\"/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/\">how to tell if you have bed bugs</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "health",
+    "h2": "Health aspects",
+    "html": "<p>According to the CDC and the EPA, bed bugs are not known to transmit disease. If the reaction is severe or you have medical concerns, speak to a healthcare professional.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Introduction to Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/introduction-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs (Cimex lectularius) and clinical consequences of their bites (Goddard J, deShazo R). JAMA 301(13):1358-1366",
+    "publisher": "JAMA",
+    "year": "2009",
+    "url": "https://doi.org/10.1001/jama.2009.405",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Sensitivity to bites by the bedbug, Cimex lectularius (Reinhardt K et al.). Med Vet Entomol 23(2):163-166",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1111/j.1365-2915.2008.00793.x",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed bugs: clinical relevance and control options (Doggett SL, Dwyer DE, Peñas PF, Russell RC). Clin Microbiol Rev 25(1):164-192",
+    "publisher": "Clinical Microbiology Reviews",
+    "year": "2012",
+    "url": "https://doi.org/10.1128/CMR.05015-11",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

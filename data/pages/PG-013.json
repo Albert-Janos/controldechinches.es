@@ -1,58 +1,182 @@
 {
-  "id": "PG-013",
-  "template": "T-B",
-  "status": "Draft",
-  "dataPage": "service",
-  "cta": { "message": "steam" },
-  "offers": ["steam"],
-  "related": ["PG-014", "PG-011"],
-  "_blocked": ["OWNER-INPUT #8 machine model", "OWNER-INPUT #9 steam settings and surfaces", "photos IMG-DRY-01/03/04/10", "LGL-01 (Spanish operation) before indexing", "LGL-04 claim check (\"sin insecticidas\")", "professional review"],
-  "es": {
-    "url": "/servicios/vapor-seco/",
-    "title": "Vapor seco contra chinches de cama en Alicante | Control de Chinches",
-    "description": "Tratamiento de chinches con vapor seco a alta temperatura, sin insecticidas, en las superficies compatibles. Desde 150 €; el precio final se confirma tras la valoración.",
-    "h1": "Tratamiento de chinches con vapor seco",
-    "eyebrow": "Servicio · Alicante y Costa Blanca",
-    "lead": "Calor a alta temperatura, sin insecticidas, aplicado de forma localizada en las superficies compatibles.",
-    "breadcrumb": [["Servicios", "/servicios/"]],
-    "heroImage": "IMG-DRY-10",
-    "blocks": [
-      { "type": "facts", "items": [{ "label": "Método", "value": "Calor localizado" }, { "label": "Insecticidas", "value": "No se utilizan" }, { "label": "Precio", "value": "Desde 150 €" }] },
-      { "type": "text", "id": "como-funciona", "h2": "Cómo funciona", "html": "<p>Aplicamos vapor a alta temperatura sobre las zonas afectadas y las superficies compatibles: costuras de colchón, somier, cabecero y juntas de muebles. Se valora después de revisar las zonas afectadas y puede usarse como tratamiento independiente o como complemento de otro método.</p>" },
-      { "type": "todo", "text": "OWNER-INPUT #8–#9: modelo real de la máquina, ajustes de presión y temperatura, tiempos de aplicación y qué superficies no se tratan con vapor. Sin estos datos la sección técnica no se publica." },
-      { "type": "figure", "image": "IMG-DRY-04" },
-      { "type": "proscons", "h2": "Ventajas y limitaciones", "pros": ["No se utilizan productos químicos.", "Se aplica de forma localizada, donde está el problema."], "cons": ["No todas las superficies admiten calor: el técnico valora cada caso.", "El resultado depende del alcance del problema; el precio final se confirma tras la valoración."] },
-      { "type": "priceBox", "h2": "Precio" },
-      { "type": "todo", "text": "Fotos propias pendientes: IMG-DRY-01, -03, -04 y -10 (ver PHOTO-SHOT-LIST.md)." }
+ "id": "PG-013",
+ "template": "T-B",
+ "status": "Draft",
+ "dataPage": "service",
+ "cta": {
+  "message": "steam"
+ },
+ "offers": [
+  "steam"
+ ],
+ "related": [
+  "PG-014",
+  "PG-011"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #8 machine model",
+  "OWNER-INPUT #9 steam settings and surfaces",
+  "photos IMG-DRY-01/03/04/10",
+  "LGL-01 (Spanish operation) before indexing",
+  "LGL-04 claim check (\"sin insecticidas\")",
+  "professional review"
+ ],
+ "es": {
+  "url": "/servicios/vapor-seco/",
+  "title": "Vapor seco contra chinches de cama en Alicante",
+  "description": "Tratamiento de chinches con vapor seco a alta temperatura, sin insecticidas, en las superficies compatibles. Desde 150 €; precio final tras la valoración.",
+  "h1": "Tratamiento de chinches con vapor seco",
+  "eyebrow": "Servicio · Alicante y Costa Blanca",
+  "lead": "Calor a alta temperatura, sin insecticidas, aplicado de forma localizada en las superficies compatibles.",
+  "breadcrumb": [
+   [
+    "Servicios",
+    "/servicios/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-10",
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Método",
+      "value": "Calor localizado"
+     },
+     {
+      "label": "Insecticidas",
+      "value": "No se utilizan"
+     },
+     {
+      "label": "Precio",
+      "value": "Desde 150 €"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "id": "como-funciona",
+    "h2": "Cómo funciona",
+    "html": "<p>Aplicamos vapor a alta temperatura sobre las zonas afectadas y las superficies compatibles: costuras de colchón, somier, cabecero y juntas de muebles. Se valora después de revisar las zonas afectadas y puede usarse como tratamiento independiente o como complemento de otro método.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #8–#9: modelo real de la máquina, ajustes de presión y temperatura, tiempos de aplicación y qué superficies no se tratan con vapor. Sin estos datos la sección técnica no se publica."
+   },
+   {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
+    "type": "proscons",
+    "h2": "Ventajas y limitaciones",
+    "pros": [
+     "No se utilizan productos químicos.",
+     "Se aplica de forma localizada, donde está el problema."
     ],
-    "faq": [
-      { "q": "¿Cuánto cuesta el tratamiento con vapor seco?", "a": "Como tratamiento independiente parte de 150 €. El precio final depende de las condiciones del lugar y se confirma por escrito antes de reservar." },
-      { "q": "¿Se utilizan insecticidas?", "a": "No. El vapor seco aplica calor, sin productos químicos, en las superficies compatibles." }
+    "cons": [
+     "No todas las superficies admiten calor: el técnico valora cada caso.",
+     "El resultado depende del alcance del problema; el precio final se confirma tras la valoración."
+    ]
+   },
+   {
+    "type": "priceBox",
+    "h2": "Precio"
+   },
+   {
+    "type": "todo",
+    "text": "Fotos propias pendientes: IMG-DRY-01, -03, -04 y -10 (ver PHOTO-SHOT-LIST.md)."
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Cuánto cuesta el tratamiento con vapor seco?",
+    "a": "Como tratamiento independiente parte de 150 €. El precio final depende de las condiciones del lugar y se confirma por escrito antes de reservar."
+   },
+   {
+    "q": "¿Se utilizan insecticidas?",
+    "a": "No. El vapor seco aplica calor, sin productos químicos, en las superficies compatibles."
+   }
+  ],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/services/dry-steam/",
+  "title": "Dry steam bed bug treatment in Alicante | Control de Chinches",
+  "description": "Dry steam bed bug treatment: high-temperature heat, no insecticides, applied to compatible surfaces. From €150; the final price is confirmed after assessment.",
+  "h1": "Bed bug treatment with dry steam",
+  "eyebrow": "Service · Alicante and the Costa Blanca",
+  "lead": "High-temperature heat, without insecticides, applied locally to compatible surfaces.",
+  "breadcrumb": [
+   [
+    "Services",
+    "/en/services/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-10",
+  "blocks": [
+   {
+    "type": "facts",
+    "items": [
+     {
+      "label": "Method",
+      "value": "Localised heat"
+     },
+     {
+      "label": "Insecticides",
+      "value": "None used"
+     },
+     {
+      "label": "Price",
+      "value": "From €150"
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "id": "how-it-works",
+    "h2": "How it works",
+    "html": "<p>We apply high-temperature steam to the affected areas and compatible surfaces: mattress seams, bed frames, headboards and furniture joints. It is assessed after we review the affected areas and can be used as a stand-alone treatment or as a complement to another method.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #8–#9: actual machine model, pressure and temperature settings, application times and which surfaces are not treated with steam. The technical section stays unpublished without them."
+   },
+   {
+    "type": "figure",
+    "image": "IMG-DRY-04"
+   },
+   {
+    "type": "proscons",
+    "h2": "Advantages and limitations",
+    "pros": [
+     "No chemical products are used.",
+     "Applied locally, where the problem is."
     ],
-    "sources": []
-  },
-  "en": {
-    "url": "/en/services/dry-steam/",
-    "title": "Dry steam bed bug treatment in Alicante | Control de Chinches",
-    "description": "Dry steam bed bug treatment: high-temperature heat, no insecticides, applied to compatible surfaces. From €150; the final price is confirmed after assessment.",
-    "h1": "Bed bug treatment with dry steam",
-    "eyebrow": "Service · Alicante and the Costa Blanca",
-    "lead": "High-temperature heat, without insecticides, applied locally to compatible surfaces.",
-    "breadcrumb": [["Services", "/en/services/"]],
-    "heroImage": "IMG-DRY-10",
-    "blocks": [
-      { "type": "facts", "items": [{ "label": "Method", "value": "Localised heat" }, { "label": "Insecticides", "value": "None used" }, { "label": "Price", "value": "From €150" }] },
-      { "type": "text", "id": "how-it-works", "h2": "How it works", "html": "<p>We apply high-temperature steam to the affected areas and compatible surfaces: mattress seams, bed frames, headboards and furniture joints. It is assessed after we review the affected areas and can be used as a stand-alone treatment or as a complement to another method.</p>" },
-      { "type": "todo", "text": "OWNER-INPUT #8–#9: actual machine model, pressure and temperature settings, application times and which surfaces are not treated with steam. The technical section stays unpublished without them." },
-      { "type": "figure", "image": "IMG-DRY-04" },
-      { "type": "proscons", "h2": "Advantages and limitations", "pros": ["No chemical products are used.", "Applied locally, where the problem is."], "cons": ["Not every surface tolerates heat: the technician assesses each case.", "Results depend on the extent of the problem; the final price is confirmed after assessment."] },
-      { "type": "priceBox", "h2": "Price" },
-      { "type": "todo", "text": "Own photos pending: IMG-DRY-01, -03, -04 and -10 (see PHOTO-SHOT-LIST.md)." }
-    ],
-    "faq": [
-      { "q": "How much does dry steam treatment cost?", "a": "As a stand-alone treatment it starts at €150. The final price depends on the conditions on site and is confirmed in writing before you book." },
-      { "q": "Are insecticides used?", "a": "No. Dry steam applies heat, without chemical products, to compatible surfaces." }
-    ],
-    "sources": []
-  }
+    "cons": [
+     "Not every surface tolerates heat: the technician assesses each case.",
+     "Results depend on the extent of the problem; the final price is confirmed after assessment."
+    ]
+   },
+   {
+    "type": "priceBox",
+    "h2": "Price"
+   },
+   {
+    "type": "todo",
+    "text": "Own photos pending: IMG-DRY-01, -03, -04 and -10 (see PHOTO-SHOT-LIST.md)."
+   }
+  ],
+  "faq": [
+   {
+    "q": "How much does dry steam treatment cost?",
+    "a": "As a stand-alone treatment it starts at €150. The final price depends on the conditions on site and is confirmed in writing before you book."
+   },
+   {
+    "q": "Are insecticides used?",
+    "a": "No. Dry steam applies heat, without chemical products, to compatible surfaces."
+   }
+  ],
+  "sources": []
+ }
 }

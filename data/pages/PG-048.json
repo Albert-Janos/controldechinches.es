@@ -1,0 +1,204 @@
+{
+ "id": "PG-048",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-047",
+  "PG-058",
+  "PG-061"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/chinches-viajes-y-hoteles/",
+  "title": "Chinches en viajes y hoteles: cómo prevenirlas",
+  "description": "Qué recomiendan las fuentes oficiales al viajar: inspeccionar la cama, dónde dejar la maleta y qué hacer al volver a casa.",
+  "h1": "Chinches en viajes y hoteles",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Al llegar, inspecciona el colchón y el cabecero y deja la maleta en el soporte, no sobre la cama ni en el suelo; al volver, revisa el equipaje y lava y seca a alta temperatura la ropa.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-PREV-02",
+  "reviewer": null,
+  "primaryKeyword": "chinches hotel viaje",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "En el alojamiento",
+    "items": [
+     {
+      "h3": "Inspecciona la cama",
+      "p": "Revisa el colchón, las costuras y el cabecero antes de deshacer la maleta (EPA, La Rioja)."
+     },
+     {
+      "h3": "Maleta fuera de la cama y del suelo",
+      "p": "Usa el soporte para maletas; La Rioja indica no dejarla sobre la cama, en el suelo ni debajo de la cama."
+     },
+     {
+      "h3": "Avisa al alojamiento",
+      "p": "Si encuentras indicios, comunícalo de inmediato a la dirección."
+     }
+    ]
+   },
+   {
+    "type": "steps",
+    "h2": "Al volver a casa",
+    "items": [
+     {
+      "h3": "Revisa el equipaje",
+      "p": "Inspecciona la maleta antes de entrar en las habitaciones."
+     },
+     {
+      "h3": "Ropa directamente a la lavadora",
+      "p": "La EPA recomienda deshacer la maleta directamente en la lavadora y secar a alta temperatura; consulta las cifras en <a href=\"/guia-chinches/ropa-y-textiles-chinches/\">ropa y textiles</a>."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-09"
+   },
+   {
+    "type": "text",
+    "id": "viaja-informado",
+    "h2": "Más información",
+    "html": "<p>Cómo se propagan: <a href=\"/guia-chinches/como-se-contagian-las-chinches/\">cómo se contagian las chinches</a>. Si gestionas un alojamiento, consulta el <a href=\"/guia-chinches/protocolo-hotel-chinches/\">protocolo para hoteles</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Tips for Travel",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/tips-travel",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bugs-travel-and-hotels/",
+  "title": "Bed bugs when travelling and in hotels | Control de Chinches",
+  "description": "What official sources recommend when travelling: inspecting the bed, where to put your suitcase and what to do when you get home.",
+  "h1": "Bed bugs when travelling and in hotels",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "On arrival, inspect the mattress and headboard and keep your suitcase on the luggage rack, not on the bed or floor; at home, check your luggage and wash and dry clothing at high temperature.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-PREV-02",
+  "reviewer": null,
+  "primaryKeyword": "bed bugs hotel travel",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "In the accommodation",
+    "items": [
+     {
+      "h3": "Inspect the bed",
+      "p": "Check the mattress, seams and headboard before unpacking (EPA, La Rioja)."
+     },
+     {
+      "h3": "Keep luggage off the bed and floor",
+      "p": "Use the luggage rack; La Rioja advises not putting it on the bed, on the floor or under the bed."
+     },
+     {
+      "h3": "Tell the accommodation",
+      "p": "If you find signs, tell the management immediately."
+     }
+    ]
+   },
+   {
+    "type": "steps",
+    "h2": "When you get home",
+    "items": [
+     {
+      "h3": "Check your luggage",
+      "p": "Inspect the suitcase before taking it into the bedrooms."
+     },
+     {
+      "h3": "Clothes straight into the washing machine",
+      "p": "The EPA recommends unpacking straight into the washing machine and drying at high temperature; see the figures in <a href=\"/en/bed-bug-guide/laundry-and-textiles-bed-bugs/\">laundry and textiles</a>."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-09"
+   },
+   {
+    "type": "text",
+    "id": "more-information",
+    "h2": "More information",
+    "html": "<p>How they spread: <a href=\"/en/bed-bug-guide/how-bed-bugs-spread/\">how bed bugs spread</a>. If you manage accommodation, see the <a href=\"/en/bed-bug-guide/hotel-bed-bug-protocol/\">hotel protocol</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Tips for Travel",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/tips-travel",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

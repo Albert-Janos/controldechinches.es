@@ -1,0 +1,116 @@
+{
+ "id": "PG-072A",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "resources",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-072",
+  "PG-041",
+  "PG-061"
+ ],
+ "_blocked": [
+  "owner approval of form fields",
+  "PDF generation after approval"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "print",
+    "label": "Imprimir o guardar como PDF"
+   },
+   {
+    "type": "docform",
+    "h2": "Datos de la detección",
+    "meta": {
+     "version": "0.1 (borrador)",
+     "date": "2026-11-27"
+    },
+    "fields": [
+     "Fecha y hora",
+     "Alojamiento / vivienda",
+     "Habitación o unidad",
+     "Persona que informa",
+     "Localidad",
+     "Teléfono de contacto"
+    ],
+    "checks": [
+     "Insecto vivo",
+     "Manchas oscuras (posibles excrementos)",
+     "Huevos",
+     "Mudas",
+     "Marcas en las costuras del colchón",
+     "Marcas en el somier o el cabecero",
+     "Marcas en muebles tapizados",
+     "Fotos adjuntas (con algo que dé escala)"
+    ],
+    "note": "Las picaduras por sí solas no permiten confirmar que haya chinches. Este formulario registra observaciones; no es un diagnóstico."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Recursos",
+    "/recursos/"
+   ]
+  ],
+  "url": "/recursos/parte-de-deteccion/",
+  "title": "Parte de detección de chinches: formulario imprimible",
+  "description": "Formulario imprimible para registrar una posible detección de chinches: fecha, ubicación, indicios observados y fotos.",
+  "h1": "Parte de detección de chinches",
+  "eyebrow": "Recurso imprimible",
+  "lead": "Rellénalo en cuanto detectes algo y envíanoslo con las fotos."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "print",
+    "label": "Print or save as PDF"
+   },
+   {
+    "type": "docform",
+    "h2": "Detection details",
+    "meta": {
+     "version": "0.1 (draft)",
+     "date": "2026-11-27"
+    },
+    "fields": [
+     "Date and time",
+     "Property / accommodation",
+     "Room or unit",
+     "Reported by",
+     "Town",
+     "Contact phone"
+    ],
+    "checks": [
+     "Live insect",
+     "Dark spots (possible excreta)",
+     "Eggs",
+     "Moults",
+     "Marks along mattress seams",
+     "Marks on the bed frame or headboard",
+     "Marks on upholstered furniture",
+     "Photos attached (with something for scale)"
+    ],
+    "note": "Bites alone cannot confirm bed bugs. This form records observations; it is not a diagnosis."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Resources",
+    "/en/resources/"
+   ]
+  ],
+  "url": "/en/resources/bed-bug-detection-report/",
+  "title": "Bed bug detection report: printable form | Control de Chinches",
+  "description": "Printable form to record a possible bed bug detection: date, location, signs observed and photos.",
+  "h1": "Bed bug detection report",
+  "eyebrow": "Printable resource",
+  "lead": "Fill it in as soon as you notice something and send it to us with photos."
+ }
+}

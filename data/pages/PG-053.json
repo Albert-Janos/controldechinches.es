@@ -1,0 +1,264 @@
+{
+ "id": "PG-053",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-049",
+  "PG-047",
+  "PG-054"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/por-que-vuelven-las-chinches/",
+  "title": "¿Por qué vuelven las chinches tras un tratamiento?",
+  "description": "Motivos por los que puede parecer que las chinches reaparecen: escondites, huevos, resistencia, nuevas entradas y falta de seguimiento.",
+  "h1": "¿Por qué vuelven las chinches?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las causas más citadas son escondites que no se trataron, huevos que resisten muchos métodos, poblaciones resistentes a ciertos insecticidas, nuevas entradas desde otras viviendas o equipaje y la falta de seguimiento.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-05",
+  "reviewer": null,
+  "primaryKeyword": "por que vuelven las chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "causas",
+    "h2": "Causas habituales",
+    "html": "<ul><li><strong>Huevos y escondites:</strong> los huevos son resistentes a muchos métodos de control (EPA) y las chinches se esconden en grietas y uniones.</li><li><strong>Resistencia:</strong> algunas poblaciones son resistentes a piretrinas y piretroides, y pueden desplazarse a un nuevo escondite (EPA).</li><li><strong>Dispersión:</strong> los nebulizadores pueden hacer que se dispersen (EPA) y no llegan a los escondites (Purdue).</li><li><strong>Puesta de huevos repartida:</strong> las hembras ponen los huevos en grupos y en distintos lugares, y los huevos son más difíciles de destruir que ninfas y adultos (La Rioja); además, los adultos pueden sobrevivir meses sin alimentarse.</li><li><strong>Sin efecto residual:</strong> el calor mata por contacto, pero no protege frente a una nueva entrada (Universidad de Kentucky).</li><li><strong>Nuevas entradas:</strong> equipaje, muebles de segunda mano o viviendas vecinas (EPA, Penn State).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "seguimiento",
+    "h2": "La importancia del seguimiento",
+    "html": "<p>La EPA aconseja revisar al menos cada 7 días y seguir comprobando durante al menos un año. Purdue recomienda al menos una inspección de seguimiento entre 10 y 21 días después de cada actuación. Rutgers señala que los interceptores se revisan cada 1–2 semanas y que solo se deja de vigilar tras un mes sin chinches. Consulta <a href=\"/guia-chinches/como-eliminar-chinches-de-cama/\">cómo eliminar chinches</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Pesticides to Control Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "The re-emergence of the bed bug as a nuisance pest: implications of resistance to the pyrethroid insecticides (Davies TG, Field LM, Williamson MS). Med Vet Entomol 26(3):241-254",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2012",
+    "url": "https://doi.org/10.1111/j.1365-2915.2011.01006.x",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/why-bed-bugs-come-back/",
+  "title": "Why do bed bugs come back after treatment?",
+  "description": "Reasons why bed bugs can seem to return: hiding places, eggs, resistance, new entries and lack of follow-up.",
+  "h1": "Why do bed bugs come back?",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "The most cited causes are hiding places that were not treated, eggs that resist many methods, populations resistant to some insecticides, new entries from other homes or luggage, and lack of follow-up.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-05",
+  "reviewer": null,
+  "primaryKeyword": "why bed bugs come back",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "common-causes",
+    "h2": "Common causes",
+    "html": "<ul><li><strong>Eggs and hiding places:</strong> eggs are resistant to many control methods (EPA) and bed bugs hide in cracks and joints.</li><li><strong>Resistance:</strong> some populations are resistant to pyrethrins and pyrethroids and may move to a new hiding place (EPA).</li><li><strong>Scattering:</strong> foggers may make them scatter (EPA) and do not reach hiding places (Purdue).</li><li><strong>Eggs laid in different places:</strong> females lay eggs in groups in several places, and eggs are harder to destroy than nymphs and adults (La Rioja); adults can also survive months without feeding.</li><li><strong>No residual effect:</strong> heat kills on contact but does not protect against re-introduction (University of Kentucky).</li><li><strong>New entries:</strong> luggage, second-hand furniture or neighbouring units (EPA, Penn State).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "follow-up",
+    "h2": "Why follow-up matters",
+    "html": "<p>The EPA advises checking at least every 7 days and continuing to check for at least a year. Purdue recommends at least one follow-up inspection 10–21 days after each treatment. Rutgers notes that interceptors are checked every 1–2 weeks and monitoring stops only after a month with no bed bugs. See <a href=\"/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/\">how to get rid of bed bugs</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Pesticides to Control Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "The re-emergence of the bed bug as a nuisance pest: implications of resistance to the pyrethroid insecticides (Davies TG, Field LM, Williamson MS). Med Vet Entomol 26(3):241-254",
+    "publisher": "Medical and Veterinary Entomology",
+    "year": "2012",
+    "url": "https://doi.org/10.1111/j.1365-2915.2011.01006.x",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

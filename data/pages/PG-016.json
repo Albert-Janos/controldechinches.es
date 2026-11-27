@@ -1,47 +1,235 @@
 {
-  "id": "PG-016",
-  "template": "T-D",
-  "status": "Draft",
-  "dataPage": "about",
-  "cta": { "message": "default" },
-  "related": ["PG-011", "PG-013"],
-  "_blocked": ["OWNER-INPUT #13-#24 (qualifications, registry, experience, equipment)", "LGL-01/LGL-07", "photos IMG-ABOUT-*, IMG-CRED-*", "owner approval of every statement"],
-  "es": {
-    "url": "/sobre-mi/",
-    "title": "Sobre mí: Albert János | Control de Chinches",
-    "description": "Quién está detrás de Control de Chinches: especialización exclusiva en chinches de cama, formación y método de trabajo.",
-    "h1": "Albert János: especialista en chinches de cama",
-    "eyebrow": "Sobre mí",
-    "lead": "Control de Chinches se dedica exclusivamente a las chinches de cama en Alicante y la Costa Blanca.",
-    "breadcrumb": [],
-    "heroImage": "IMG-ABOUT-01",
-    "blocks": [
-      { "type": "text", "id": "presentacion", "h2": "Presentación", "html": "<p>Control de Chinches es un servicio especializado únicamente en chinches de cama, con tratamiento químico dirigido y vapor seco, para viviendas y alojamientos turísticos.</p>" },
-      { "type": "todo", "text": "OWNER-INPUT #13–#24: titulación exacta y organismo, registro profesional que se pueda publicar, formación complementaria, experiencia, equipos y principios de trabajo. Solo se publicará lo que aportes y documentes; la titulación húngara no se presenta como autorización para operar en España (LGL-07)." },
-      { "type": "timeline", "h2": "Trayectoria", "items": [{ "when": "Pendiente", "text": "Hitos aportados y documentados por el propietario." }] },
-      { "type": "docs", "h2": "Formación y documentos", "images": ["IMG-CRED-01", "IMG-CRED-03", "IMG-CRED-04"] },
-      { "type": "text", "id": "metodo", "h2": "Método de trabajo", "html": "<p>Cada caso empieza por una valoración de las zonas afectadas. Después se recomienda el método adecuado y se explica la preparación y el seguimiento.</p>" }
-    ],
-    "faq": [],
-    "sources": []
-  },
-  "en": {
-    "url": "/en/about/",
-    "title": "About Albert János | Control de Chinches",
-    "description": "Who is behind Control de Chinches: a single focus on bed bugs, training and working method.",
-    "h1": "Albert János: bed bug specialist",
-    "eyebrow": "About",
-    "lead": "Control de Chinches works only on bed bugs in Alicante and the Costa Blanca.",
-    "breadcrumb": [],
-    "heroImage": "IMG-ABOUT-01",
-    "blocks": [
-      { "type": "text", "id": "introduction", "h2": "Introduction", "html": "<p>Control de Chinches is a service specialised solely in bed bugs, with targeted chemical treatment and dry steam, for homes and holiday accommodation.</p>" },
-      { "type": "todo", "text": "OWNER-INPUT #13–#24: exact qualification and issuing body, publishable professional register entry, further training, experience, equipment and working principles. Only what you provide and document will be published; the Hungarian qualification is not presented as authorisation to operate in Spain (LGL-07)." },
-      { "type": "timeline", "h2": "Background", "items": [{ "when": "Pending", "text": "Milestones supplied and documented by the owner." }] },
-      { "type": "docs", "h2": "Training and documents", "images": ["IMG-CRED-01", "IMG-CRED-03", "IMG-CRED-04"] },
-      { "type": "text", "id": "method", "h2": "Working method", "html": "<p>Every case starts with an assessment of the affected areas. We then recommend the right method and explain preparation and follow-up.</p>" }
-    ],
-    "faq": [],
-    "sources": []
-  }
+ "id": "PG-016",
+ "template": "T-D",
+ "status": "Draft",
+ "dataPage": "about",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-011",
+  "PG-013",
+  "PG-017",
+  "PG-073"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #13-#24 (qualifications, registry, experience, equipment)",
+  "LGL-01/LGL-07",
+  "photos IMG-ABOUT-*, IMG-CRED-*",
+  "owner approval of every statement"
+ ],
+ "es": {
+  "url": "/sobre-mi/",
+  "title": "Sobre mí: Albert János | Control de Chinches",
+  "description": "Quién está detrás de Control de Chinches: especialización exclusiva en chinches de cama, formación y método de trabajo.",
+  "h1": "Albert János: especialista en chinches de cama",
+  "eyebrow": "Sobre mí",
+  "lead": "Control de Chinches se dedica exclusivamente a las chinches de cama en Alicante y la Costa Blanca.",
+  "breadcrumb": [],
+  "heroImage": "IMG-ABOUT-01",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "presentacion",
+    "h2": "Presentación",
+    "html": "<p>Control de Chinches es un servicio especializado únicamente en chinches de cama, con tratamiento químico dirigido y vapor seco, para viviendas y alojamientos turísticos.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-02"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #19: presentación personal (3–6 frases con tus palabras) y fotos IMG-ABOUT-01/02/03."
+   },
+   {
+    "type": "timeline",
+    "h2": "Trayectoria",
+    "items": [
+     {
+      "when": "Pendiente",
+      "text": "Hitos aportados y documentados por el propietario (OWNER-INPUT #17)."
+     }
+    ]
+   },
+   {
+    "type": "docs",
+    "h2": "Formación y documentos",
+    "images": [
+     "IMG-CRED-01",
+     "IMG-CRED-02",
+     "IMG-CRED-03"
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #13–#16: titulación exacta y organismo, registro publicable, estado de la actividad en España. La titulación húngara no se presenta como autorización para operar en España (LGL-07). Los documentos se publican con los datos personales ocultados de forma irreversible."
+   },
+   {
+    "type": "docs",
+    "h2": "Certificados y cursos",
+    "images": [
+     "IMG-CRED-04",
+     "IMG-CRED-05",
+     "IMG-CRED-06"
+    ]
+   },
+   {
+    "type": "text",
+    "id": "especializacion",
+    "h2": "Especialización en chinches de cama",
+    "html": "<p>El servicio se centra únicamente en las chinches de cama: la inspección, el tratamiento y el seguimiento se adaptan a esta plaga.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-04"
+   },
+   {
+    "type": "text",
+    "id": "equipos",
+    "h2": "Equipos y tecnología",
+    "html": "<p>Se trabaja con tratamiento químico dirigido y con vapor seco a alta temperatura.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-05"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #8, #9, #18: modelo real de la máquina, ajustes y resto de equipos. Hasta entonces no se indica ningún modelo."
+   },
+   {
+    "type": "text",
+    "id": "metodo",
+    "h2": "Método de trabajo (GIP)",
+    "html": "<p>Cada caso empieza por una valoración de las zonas afectadas. Después se recomienda el método adecuado y se explican la preparación y el seguimiento. Más en <a href=\"/servicios/control-integrado/\">control integrado</a>.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-07"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #19: principios de trabajo, objetivos y formación continua (solo cursos reales y documentados)."
+   },
+   {
+    "type": "gallery",
+    "h2": "En el trabajo",
+    "images": [
+     "IMG-ABOUT-08",
+     "IMG-ABOUT-09",
+     "IMG-ABOUT-10"
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ },
+ "en": {
+  "url": "/en/about/",
+  "title": "About Albert János | Control de Chinches",
+  "description": "Who is behind Control de Chinches: a single focus on bed bugs, training and working method.",
+  "h1": "Albert János: bed bug specialist",
+  "eyebrow": "About",
+  "lead": "Control de Chinches works only on bed bugs in Alicante and the Costa Blanca.",
+  "breadcrumb": [],
+  "heroImage": "IMG-ABOUT-01",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "introduction",
+    "h2": "Introduction",
+    "html": "<p>Control de Chinches is a service specialised solely in bed bugs, with targeted chemical treatment and dry steam, for homes and holiday accommodation.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-02"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #19: personal introduction (3–6 sentences in your own words) and photos IMG-ABOUT-01/02/03."
+   },
+   {
+    "type": "timeline",
+    "h2": "Background",
+    "items": [
+     {
+      "when": "Pending",
+      "text": "Milestones supplied and documented by the owner (OWNER-INPUT #17)."
+     }
+    ]
+   },
+   {
+    "type": "docs",
+    "h2": "Training and documents",
+    "images": [
+     "IMG-CRED-01",
+     "IMG-CRED-02",
+     "IMG-CRED-03"
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #13–#16: exact qualification and issuing body, publishable register entry, status of the activity in Spain. The Hungarian qualification is not presented as authorisation to operate in Spain (LGL-07). Documents are published with personal data irreversibly redacted."
+   },
+   {
+    "type": "docs",
+    "h2": "Certificates and courses",
+    "images": [
+     "IMG-CRED-04",
+     "IMG-CRED-05",
+     "IMG-CRED-06"
+    ]
+   },
+   {
+    "type": "text",
+    "id": "specialisation",
+    "h2": "Specialising in bed bugs",
+    "html": "<p>The service focuses solely on bed bugs: inspection, treatment and follow-up are adapted to this pest.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-04"
+   },
+   {
+    "type": "text",
+    "id": "equipment",
+    "h2": "Equipment and technology",
+    "html": "<p>Work uses targeted chemical treatment and high-temperature dry steam.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-05"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #8, #9, #18: actual machine model, settings and other equipment. No model is named until then."
+   },
+   {
+    "type": "text",
+    "id": "method",
+    "h2": "Working method (IPM)",
+    "html": "<p>Every case starts with an assessment of the affected areas. We then recommend the right method and explain preparation and follow-up. More on <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ABOUT-07"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #19: working principles, goals and continuing training (only real, documented courses)."
+   },
+   {
+    "type": "gallery",
+    "h2": "At work",
+    "images": [
+     "IMG-ABOUT-08",
+     "IMG-ABOUT-09",
+     "IMG-ABOUT-10"
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": []
+ }
 }

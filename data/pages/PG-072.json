@@ -1,0 +1,88 @@
+{
+ "id": "PG-072",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "resources",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-040",
+  "PG-015"
+ ],
+ "_blocked": [
+  "pre/post-treatment checklists need the owner’s real instructions (#10, #11)",
+  "PDF versions generated only after approval",
+  "QR code"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Formularios",
+      "items": [
+       {
+        "pageId": "PG-072A",
+        "text": "Para registrar una detección con fecha, lugar y fotos."
+       },
+       {
+        "pageId": "PG-072B",
+        "text": "Para anotar revisiones periódicas en un alojamiento."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Pendientes de las instrucciones reales del propietario: lista de preparación previa y lista posterior al tratamiento (OWNER-INPUT #10, #11)."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/recursos/",
+  "title": "Recursos descargables sobre chinches de cama",
+  "description": "Formularios e informes imprimibles para detectar, registrar y monitorizar chinches de cama. Disponibles en HTML e imprimibles.",
+  "h1": "Recursos descargables",
+  "eyebrow": "Recursos",
+  "lead": "Documentos imprimibles, disponibles como página web y en PDF."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Forms",
+      "items": [
+       {
+        "pageId": "PG-072A",
+        "text": "To record a detection with date, place and photos."
+       },
+       {
+        "pageId": "PG-072B",
+        "text": "To note regular checks in an accommodation."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Pending the owner’s real instructions: pre-treatment preparation list and post-treatment list (OWNER-INPUT #10, #11)."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/resources/",
+  "title": "Downloadable bed bug resources | Control de Chinches",
+  "description": "Printable forms and reports to detect, record and monitor bed bugs. Available as web pages and printable.",
+  "h1": "Downloadable resources",
+  "eyebrow": "Resources",
+  "lead": "Printable documents, available as web pages and as PDF."
+ }
+}

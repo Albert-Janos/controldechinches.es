@@ -1,0 +1,200 @@
+{
+ "id": "PG-047",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-041",
+  "PG-044",
+  "PG-049"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/como-se-contagian-las-chinches/",
+  "title": "¿Cómo se contagian las chinches de cama? | Control de Chinches",
+  "description": "Cómo llegan las chinches a una vivienda o alojamiento: equipaje, muebles de segunda mano, ropa y movimiento entre viviendas.",
+  "h1": "¿Cómo se contagian las chinches de cama?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las chinches no vuelan ni saltan: se desplazan con las personas y sus pertenencias. Llegan en equipaje, ropa, cajas, ropa de cama y muebles de segunda mano, y se mueven entre viviendas de un mismo edificio.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-PREV-01",
+  "reviewer": null,
+  "primaryKeyword": "como se contagian las chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "como-llegan",
+    "h2": "Cómo llegan",
+    "html": "<p>Según la EPA, se desplazan sobre muebles, ropa de cama, equipaje, cajas y ropa; los muebles de segunda mano son un riesgo. Virginia Tech señala que una sola hembra fecundada puede iniciar una infestación.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-PREV-01"
+   },
+   {
+    "type": "text",
+    "id": "edificios",
+    "h2": "Entre viviendas y alojamientos",
+    "html": "<p>En edificios con varias viviendas pueden pasar de una a otra por vertical u horizontal (Penn State), incluso por los huecos de las paredes (Virginia Tech). UC IPM indica que hoteles, albergues, apartamentos amueblados y residencias son los entornos más expuestos.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-09"
+   },
+   {
+    "type": "text",
+    "id": "viajes",
+    "h2": "Al viajar",
+    "html": "<p>La EPA recomienda inspeccionar el colchón y el cabecero al llegar y usar el soporte para maletas en lugar de la cama o el suelo. Consulta también <a href=\"/guia-chinches/chinches-viajes-y-hoteles/\">chinches en viajes y hoteles</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Tips for Travel",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/tips-travel",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/how-bed-bugs-spread/",
+  "title": "How bed bugs spread | Control de Chinches",
+  "description": "How bed bugs reach a home or accommodation: luggage, second-hand furniture, clothing and movement between units.",
+  "h1": "How bed bugs spread",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Bed bugs do not fly or jump: they travel with people and their belongings. They arrive in luggage, clothing, boxes, bedding and second-hand furniture, and move between units in the same building.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-PREV-01",
+  "reviewer": null,
+  "primaryKeyword": "how bed bugs spread",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "how-they-arrive",
+    "h2": "How they arrive",
+    "html": "<p>According to the EPA, they move on furniture, bedding, luggage, boxes and clothing; second-hand furniture is a risk. Virginia Tech notes that a single mated female can start an infestation.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-PREV-01"
+   },
+   {
+    "type": "text",
+    "id": "buildings",
+    "h2": "Between homes and accommodation",
+    "html": "<p>In multi-unit buildings they can move from one unit to another vertically or horizontally (Penn State), even through wall voids (Virginia Tech). UC IPM says hotels, shelters, furnished apartments and dormitories are the most exposed settings.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-09"
+   },
+   {
+    "type": "text",
+    "id": "travel",
+    "h2": "When travelling",
+    "html": "<p>The EPA recommends checking the mattress and headboard on arrival and using the luggage rack rather than the bed or floor. See also <a href=\"/en/bed-bug-guide/bed-bugs-travel-and-hotels/\">bed bugs when travelling</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Tips for Travel",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/tips-travel",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

@@ -1,0 +1,162 @@
+{
+ "id": "PG-015",
+ "template": "T-E",
+ "status": "Draft",
+ "dataPage": "b2b",
+ "cta": {
+  "message": "b2b"
+ },
+ "related": [
+  "PG-011",
+  "PG-012",
+  "PG-003"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #36 does the owner sell recurring prevention/monitoring programmes",
+  "documentation format (#11)",
+  "photos IMG-B2B-*",
+  "LGL-06"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-necesita-el-gestor",
+    "h2": "Qué necesita un gestor de alojamientos",
+    "html": "<p>Detectar pronto, acotar las unidades afectadas, coordinar el acceso y la fecha con las próximas llegadas, y poder documentar lo que se hizo. Para valorar el caso necesitamos saber qué unidades presentan indicios y cuándo llegan los próximos huéspedes.</p>"
+   },
+   {
+    "type": "steps",
+    "h2": "Cómo coordinamos la intervención",
+    "items": [
+     {
+      "h3": "Indicios y alcance",
+      "p": "Nos cuentas qué señales habéis observado, cuándo aparecieron y qué unidades están afectadas."
+     },
+     {
+      "h3": "Preparación y fecha",
+      "p": "Acordamos una fecha, el acceso y las indicaciones para preparar las habitaciones."
+     },
+     {
+      "h3": "Intervención y seguimiento",
+      "p": "Aplicamos el método acordado y explicamos cuándo volver a usar las habitaciones; el seguimiento se indica en la propuesta."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #36 y #11: ¿se ofrecen programas periódicos de prevención y monitorización? Alcance, frecuencia, qué documento se entrega (parte de trabajo) y formación al personal. Solo se publica lo que se ofrezca realmente."
+   },
+   {
+    "type": "cards",
+    "h2": "Más información",
+    "items": [
+     {
+      "title": "Servicio para alojamientos",
+      "text": "Cuéntanos qué unidades están afectadas y prepara el mensaje.",
+      "href": "/chinches-apartamentos-turisticos/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Puedo pedir un parte de trabajo?",
+    "a": "Sí, puedes solicitarlo en el primer contacto. Confirmaremos qué documentación se puede facilitar y qué datos incluiría antes de reservar."
+   },
+   {
+    "q": "¿Puedo pedir presupuesto para varios apartamentos?",
+    "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Servicios",
+    "/servicios/"
+   ]
+  ],
+  "url": "/servicios/planes-prevencion/",
+  "title": "Prevención y monitorización de chinches en alojamientos",
+  "description": "Coordinación de la intervención, documentación y seguimiento para apartamentos turísticos, hostales y pequeños hoteles.",
+  "h1": "Prevención y monitorización para alojamientos",
+  "eyebrow": "Alojamientos · B2B",
+  "lead": "Intervención coordinada con tu calendario de reservas, con indicaciones para el equipo y seguimiento.",
+  "heroImage": "IMG-B2B-01"
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-a-manager-needs",
+    "h2": "What an accommodation manager needs",
+    "html": "<p>Early detection, narrowing down the affected units, coordinating access and the date with upcoming arrivals, and being able to document what was done. To assess the case we need to know which units show signs and when the next guests arrive.</p>"
+   },
+   {
+    "type": "steps",
+    "h2": "How we coordinate the treatment",
+    "items": [
+     {
+      "h3": "Signs and extent",
+      "p": "You tell us what signs you have seen, when they appeared and which units are affected."
+     },
+     {
+      "h3": "Preparation and date",
+      "p": "We agree a date, access and guidance for preparing the rooms."
+     },
+     {
+      "h3": "Treatment and follow-up",
+      "p": "We apply the agreed method and explain when rooms can be used again; follow-up is stated in the proposal."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #36 and #11: are recurring prevention and monitoring programmes offered? Scope, frequency, which document is provided (work report) and staff training. Only what is really offered gets published."
+   },
+   {
+    "type": "cards",
+    "h2": "More information",
+    "items": [
+     {
+      "title": "Holiday rental service",
+      "text": "Tell us which units are affected and prepare your message.",
+      "href": "/en/bed-bugs-holiday-rentals/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can I ask for a work report?",
+    "a": "Yes, you can request one at first contact. We will confirm which documentation can be provided and what data it would include before you book."
+   },
+   {
+    "q": "Can I request a quote for several apartments?",
+    "a": "Yes. Tell us how many units you manage, which show signs and how each can be accessed."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Services",
+    "/en/services/"
+   ]
+  ],
+  "url": "/en/services/prevention-programmes/",
+  "title": "Bed bug prevention and monitoring for accommodation",
+  "description": "Coordinated treatment, documentation and follow-up for holiday rentals, guesthouses and small hotels.",
+  "h1": "Prevention and monitoring for accommodation",
+  "eyebrow": "Accommodation · B2B",
+  "lead": "Treatment coordinated with your booking calendar, with guidance for your team and follow-up.",
+  "heroImage": "IMG-B2B-01"
+ }
+}

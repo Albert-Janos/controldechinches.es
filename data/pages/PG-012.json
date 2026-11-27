@@ -1,0 +1,128 @@
+{
+ "id": "PG-012",
+ "template": "T-B",
+ "status": "Draft",
+ "dataPage": "service",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-011",
+  "PG-013",
+  "PG-014"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #7/#11 inspection steps and whether inspection is separate or included",
+  "photos IMG-INS-*",
+  "LGL-01",
+  "professional review"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-revisamos",
+    "h2": "Qué se revisa",
+    "html": "<p>La inspección se centra en las costuras del colchón, el somier, el cabecero y el entorno de la cama, además de otras zonas donde puedan esconderse. Con lo que se encuentra se valora el alcance y se recomienda el método adecuado.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-INS-01"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #7 y #11: pasos reales de la inspección, herramientas, qué se documenta y si la inspección se factura aparte o va incluida en el tratamiento."
+   },
+   {
+    "type": "cards",
+    "h2": "Después de la inspección",
+    "items": [
+     {
+      "title": "Tratamiento químico",
+      "text": "Aplicación dirigida según el alcance.",
+      "href": "/servicios/tratamiento-quimico/"
+     },
+     {
+      "title": "Vapor seco",
+      "text": "Calor localizado, sin insecticidas.",
+      "href": "/servicios/vapor-seco/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Puedo saber si tengo chinches solo por las picaduras?",
+    "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches; hay que buscar otros indicios, como las manchas oscuras en las costuras del colchón o ejemplares vivos."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Servicios",
+    "/servicios/"
+   ]
+  ],
+  "url": "/servicios/inspeccion-diagnostico/",
+  "title": "Inspección y diagnóstico de chinches de cama",
+  "description": "Valoramos los indicios y el alcance del problema antes de recomendar el método: costuras del colchón, somier, cabecero y entorno de la cama.",
+  "h1": "Inspección y diagnóstico de chinches",
+  "eyebrow": "Servicio · Alicante y Costa Blanca",
+  "lead": "Antes de tratar, valoramos los indicios y el alcance del problema.",
+  "heroImage": "IMG-INS-01"
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-we-check",
+    "h2": "What is checked",
+    "html": "<p>The inspection focuses on mattress seams, the bed frame, the headboard and the area around the bed, plus other places where bed bugs may hide. What is found determines the extent of the problem and the recommended method.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-INS-01"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #7 and #11: actual inspection steps, tools, what is documented and whether the inspection is charged separately or included in the treatment."
+   },
+   {
+    "type": "cards",
+    "h2": "After the inspection",
+    "items": [
+     {
+      "title": "Chemical treatment",
+      "text": "Targeted application according to the extent.",
+      "href": "/en/services/chemical-treatment/"
+     },
+     {
+      "title": "Dry steam",
+      "text": "Localised heat, without insecticides.",
+      "href": "/en/services/dry-steam/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can I tell if I have bed bugs from bites alone?",
+    "a": "No. Bites alone cannot confirm that you have bed bugs; you need to look for other signs, such as dark spots on the mattress seams or live insects."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Services",
+    "/en/services/"
+   ]
+  ],
+  "url": "/en/services/inspection-diagnosis/",
+  "title": "Bed bug inspection and diagnosis | Control de Chinches",
+  "description": "We assess the signs and the extent of the problem before recommending a method: mattress seams, bed frame, headboard and the area around the bed.",
+  "h1": "Bed bug inspection and diagnosis",
+  "eyebrow": "Service · Alicante and the Costa Blanca",
+  "lead": "Before treating, we assess the signs and the extent of the problem.",
+  "heroImage": "IMG-INS-01"
+ }
+}

@@ -1,0 +1,184 @@
+{
+ "id": "PG-061",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-015",
+  "PG-062",
+  "PG-003"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/protocolo-hotel-chinches/",
+  "title": "Protocolo contra chinches en hoteles y alojamientos",
+  "description": "Resumen de la guía de salud pública de La Rioja para establecimientos con pernoctación: diseño, limpieza, inspección, formación y actuación ante sospecha.",
+  "h1": "Protocolo de inspección de chinches en alojamientos",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "La guía de La Rioja para establecimientos con pernoctación se basa en tres pilares: diseño y equipamiento, plan de limpieza y mantenimiento, y formación del personal. Recomienda inspeccionar a diario colchones, ropa de cama y somieres y actuar de inmediato ante sospecha.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-02",
+  "reviewer": null,
+  "primaryKeyword": "protocolo chinches hotel",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "Resumen del protocolo",
+    "items": [
+     {
+      "h3": "Diseño y equipamiento",
+      "p": "Suelos y rodapiés cerámicos, juntas y grietas selladas, colores claros, camas sin juntas ni huecos, fundas de colchón totalmente cerradas con cremallera segura y soporte para maletas alejado de la cama."
+     },
+     {
+      "h3": "Inspección",
+      "p": "Diaria en colchones, ropa de cama y somieres, y al menos semanal en el resto; inspección inmediata y a fondo ante una queja de un huésped."
+     },
+     {
+      "h3": "Ante la sospecha",
+      "p": "Aislar la habitación y las contiguas (horizontal y vertical), ensacar los objetos en doble bolsa estanca y etiquetarlos, y lavar la ropa de cama por separado."
+     },
+     {
+      "h3": "Formación del personal",
+      "p": "El personal de limpieza debe saber reconocer los indicios y comunicar de inmediato."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "text",
+    "id": "nota",
+    "h2": "Nota",
+    "html": "<p>Este resumen no sustituye a la guía original ni constituye asesoramiento jurídico. Para el servicio de Control de Chinches en alojamientos, consulta <a href=\"/servicios/planes-prevencion/\">prevención y monitorización</a> y el <a href=\"/chinches-apartamentos-turisticos/\">servicio para alojamientos</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/hotel-bed-bug-protocol/",
+  "title": "Bed bug protocol for hotels and accommodation",
+  "description": "Summary of the La Rioja public-health guide for lodging establishments: design, cleaning, inspection, training and action on suspicion.",
+  "h1": "Hotel bed bug inspection protocol",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "The La Rioja guide for lodging establishments rests on three pillars: design and equipment, a cleaning and maintenance plan, and staff training. It recommends daily inspection of mattresses, bedding and box springs and immediate action on suspicion.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-B2B-02",
+  "reviewer": null,
+  "primaryKeyword": "hotel bed bug protocol",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "Summary of the protocol",
+    "items": [
+     {
+      "h3": "Design and equipment",
+      "p": "Ceramic floors and skirting, sealed joints and cracks, light colours, beds without joints or crevices, fully enclosing mattress covers with a secure zip and a luggage rack away from the bed."
+     },
+     {
+      "h3": "Inspection",
+      "p": "Daily for mattresses, bedding and box springs, and at least weekly for the rest; an immediate, thorough check when a guest complains."
+     },
+     {
+      "h3": "On suspicion",
+      "p": "Isolate the room and adjacent rooms (horizontally and vertically), double-bag items in sealed bags and label them, and wash bedding separately."
+     },
+     {
+      "h3": "Staff training",
+      "p": "Housekeeping staff should be able to recognise the signs and report immediately."
+     }
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-10"
+   },
+   {
+    "type": "text",
+    "id": "note",
+    "h2": "Note",
+    "html": "<p>This summary does not replace the original guide and is not legal advice. For Control de Chinches’ service for accommodation, see <a href=\"/en/services/prevention-programmes/\">prevention and monitoring</a> and the <a href=\"/en/bed-bugs-holiday-rentals/\">holiday rental service</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+    "publisher": "Purdue Extension",
+    "year": "2017",
+    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

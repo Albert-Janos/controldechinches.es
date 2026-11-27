@@ -50,7 +50,7 @@ function navItems(ctx) {
   const add = (label, id) => { const u = ctx.included.has(id) && pageUrl(ctx, id, lang); if (u) items.push([label, u]); };
   add(n.services, 'PG-010');
   items.push([n.prices, lang === 'es' ? '/precios.html' : '/en/prices.html'], [n.rentals, lang === 'es' ? '/chinches-apartamentos-turisticos/' : '/en/bed-bugs-holiday-rentals/']);
-  add(n.guide, 'PG-040'); add(n.about, 'PG-016');
+  add(n.guide, 'PG-040'); add(n.faq, 'PG-030'); add(n.about, 'PG-016');
   return items;
 }
 export function header(ctx) {
@@ -139,6 +139,8 @@ export function renderBlock(ctx, b, i) {
       const pr = lang === 'es' ? '/precios.html' : '/en/prices.html';
       return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perBedroom)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(p.drySteamStandalone.note && lang === 'en' ? p.drySteamStandalone.note : (lang === 'es' ? 'El precio final depende de la valoración in situ.' : p.drySteamStandalone.note))}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
     }
+    case 'docform': return docForm(ctx, b, id);
+    case 'print': return '<p class="sx-noprint"><button type="button" class="button yellow" data-print>' + esc(b.label) + '</button></p>';
     case 'faq': return faqBlock(ctx, b, id);
     case 'cta': return ctaBand(ctx, b.intensity, b.message);
     case 'gallery': return galleryBlock(ctx, b, id);
@@ -181,7 +183,8 @@ export function authorBox(ctx) {
 }
 export function sourcesBlock(ctx) {
   const s = ctx.page[ctx.lang].sources; if (!s?.length) return '';
-  return `<section class="sx-block sx-sources"><h2 id="fuentes">${esc(ctx.ui.sources)}</h2><ol>${s.map(x => `<li>${esc(x.title)}${x.publisher ? ` — ${esc(x.publisher)}` : ''}${x.year ? `, ${esc(x.year)}` : ''}. ${x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>` : ''}${x.checked ? ` <em>(${esc(x.checked)})</em>` : ''}</li>`).join('')}</ol></section>`;
+  const pol = ctx.included.has('PG-017') ? `<p class="sx-tool-note"><a href="${pageUrl(ctx, 'PG-017')}">${esc(ctx.lang === 'es' ? 'Política editorial' : 'Editorial policy')}</a></p>` : '';
+  return `<section class="sx-block sx-sources"><h2 id="fuentes">${esc(ctx.ui.sources)}</h2>${pol}<ol>${s.map(x => `<li>${esc(x.title)}${x.publisher ? ` — ${esc(x.publisher)}` : ''}${x.year ? `, ${esc(x.year)}` : ''}. ${x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>` : ''}${x.checked ? ` <em>(${esc(x.checked)})</em>` : ''}</li>`).join('')}</ol></section>`;
 }
 export function relatedBlock(ctx) {
   const ids = (ctx.page.related || []).filter(id => ctx.pages[id] && ctx.pages[id][ctx.lang]);
@@ -198,3 +201,12 @@ export function draftBanner(ctx) {
   return `<div class="sx-draft"><div class="sx-wrap"><strong>${esc(ctx.ui.draft)}</strong>${esc(ctx.page.id)} · ${esc(ctx.page.status)} · noindex</div></div>`;
 }
 export { symbols };
+
+function docForm(ctx, b, id) {
+  const m = b.meta || {}, lang = ctx.lang;
+  const meta = `<div class="sx-docmeta"><img src="${ctx.site.assets.logo}" width="120" height="68" alt="${esc(ctx.site.brand)}"><dl><div><dt>${lang === 'es' ? 'Versión' : 'Version'}</dt><dd>${esc(m.version || '0.1 (draft)')}</dd></div><div><dt>${lang === 'es' ? 'Actualizado' : 'Updated'}</dt><dd>${esc(m.date || '')}</dd></div><div><dt>${lang === 'es' ? 'Autor' : 'Author'}</dt><dd>${esc(ctx.site.person.name)}</dd></div><div><dt>Web</dt><dd>controldechinches.es</dd></div></dl></div>`;
+  const fields = (b.fields || []).map(f => `<div class="sx-field"><label>${esc(f)}</label><span class="sx-line"></span></div>`).join('');
+  const table = b.table ? `<div class="sx-tablewrap" tabindex="0" role="region" aria-label="${esc(b.h2 || '')}"><table class="sx-table sx-formtable"><thead><tr>${b.table.head.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${Array.from({ length: b.table.rows || 8 }, () => `<tr>${b.table.head.map(() => '<td>&nbsp;</td>').join('')}</tr>`).join('')}</tbody></table></div>` : '';
+  const checks = b.checks ? `<ul class="sx-checklist">${b.checks.map(x => `<li><span class="sx-box" aria-hidden="true"></span>${x}</li>`).join('')}</ul>` : '';
+  return `<section class="sx-block sx-docform">${meta}${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${b.intro ? `<p>${b.intro}</p>` : ''}${fields ? `<div class="sx-fields">${fields}</div>` : ''}${checks}${table}${b.note ? `<p class="sx-tool-note">${b.note}</p>` : ''}</section>`;
+}

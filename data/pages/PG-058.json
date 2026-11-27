@@ -1,0 +1,345 @@
+{
+ "id": "PG-058",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-055",
+  "PG-048"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/ropa-y-textiles-chinches/",
+  "title": "Ropa y textiles con chinches: lavado, secado y congelación",
+  "description": "Cifras de lavado, secado y congelación según fuentes oficiales, con sus diferencias, y por qué el secado a alta temperatura es clave.",
+  "h1": "Ropa y textiles con chinches",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "El secado a alta temperatura es la clave: la EPA indica que lavar por sí solo generalmente no mata a las chinches. Las cifras concretas de temperatura y tiempo varían entre fuentes, por lo que se muestran todas.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-03",
+  "reviewer": null,
+  "primaryKeyword": "lavar ropa chinches",
+  "blocks": [
+   {
+    "type": "table",
+    "h2": "Lavado, secado y congelación según la fuente",
+    "caption": "Las fuentes no coinciden: no hay una cifra única",
+    "head": [
+     "Medida",
+     "Fuente",
+     "Indicación"
+    ],
+    "rows": [
+     [
+      "Lavado",
+      "La Rioja",
+      "60 °C durante 90 minutos"
+     ],
+     [
+      "Lavado + secado",
+      "NHS",
+      "lavado a 60 °C y secadora en caliente al menos 30 minutos"
+     ],
+     [
+      "Lavado",
+      "Univ. de Kentucky",
+      "al menos 120 °F (49 °C); o secar 10–20 minutos a temperatura media-alta"
+     ],
+     [
+      "Secadora",
+      "La Rioja",
+      "por encima de 40 °C, al menos 30 minutos"
+     ],
+     [
+      "Secadora",
+      "Zaragoza",
+      "temperatura más alta, 30 minutos"
+     ],
+     [
+      "Secadora",
+      "Purdue",
+      "al menos 20 minutos a temperatura alta"
+     ],
+     [
+      "Secadora",
+      "Penn State",
+      "15–30 minutos a temperatura alta"
+     ],
+     [
+      "Congelador",
+      "La Rioja",
+      "−17,8 °C al menos 3,5 días"
+     ],
+     [
+      "Congelador",
+      "Zaragoza",
+      "−18 °C durante 10 horas (2,5 kg de ropa)"
+     ],
+     [
+      "Congelador",
+      "EPA",
+      "0 °F (−18 °C) durante tres días; por debajo de −19 °C al menos cuatro días en otra página"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "id": "calor",
+    "h2": "Calor",
+    "html": "<p>La EPA indica secar la ropa y la ropa de cama a temperatura alta durante 30 minutos y, para calentar objetos o zonas, llegar al menos a 120 °F (unos 49 °C) durante 90 minutos para asegurar que los huevos mueren. En estudios de laboratorio, el 99 % de mortalidad de adultos se alcanzó a 48,3 °C y el de huevos a 54,8 °C (Kells y Goblirsch 2011).</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-11"
+   },
+   {
+    "type": "text",
+    "id": "siguiente",
+    "h2": "Siguiente paso",
+    "html": "<p>Más sobre la preparación: <a href=\"/guia-chinches/preparar-vivienda-tratamiento-chinches/\">cómo preparar la vivienda</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Temperature and time requirements for controlling bed bugs (Cimex lectularius) under commercial heat treatment conditions (Kells SA, Goblirsch MJ). Insects 2(3):412-422",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2030412",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/laundry-and-textiles-bed-bugs/",
+  "title": "Laundry and textiles with bed bugs: washing, drying and freezing",
+  "description": "Washing, drying and freezing figures from official sources, with their differences, and why high-temperature drying is key.",
+  "h1": "Laundry and textiles with bed bugs",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "High-temperature drying is key: the EPA says washing alone generally does not kill bed bugs. Specific temperatures and times vary between sources, so all of them are shown.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-03",
+  "reviewer": null,
+  "primaryKeyword": "washing clothes bed bugs",
+  "blocks": [
+   {
+    "type": "table",
+    "h2": "Washing, drying and freezing by source",
+    "caption": "Sources disagree: there is no single figure",
+    "head": [
+     "Measure",
+     "Source",
+     "Guidance"
+    ],
+    "rows": [
+     [
+      "Washing",
+      "La Rioja",
+      "60 °C for 90 minutes"
+     ],
+     [
+      "Washing + drying",
+      "NHS",
+      "wash at 60 °C and tumble dry hot for at least 30 minutes"
+     ],
+     [
+      "Washing",
+      "University of Kentucky",
+      "at least 120 °F (49 °C); or dry 10–20 minutes on medium-high"
+     ],
+     [
+      "Dryer",
+      "La Rioja",
+      "above 40 °C for at least 30 minutes"
+     ],
+     [
+      "Dryer",
+      "Zaragoza",
+      "highest temperature, 30 minutes"
+     ],
+     [
+      "Dryer",
+      "Purdue",
+      "at least 20 minutes on high"
+     ],
+     [
+      "Dryer",
+      "Penn State",
+      "15–30 minutes on high heat"
+     ],
+     [
+      "Freezer",
+      "La Rioja",
+      "−17.8 °C for at least 3.5 days"
+     ],
+     [
+      "Freezer",
+      "Zaragoza",
+      "−18 °C for 10 hours (2.5 kg of clothing)"
+     ],
+     [
+      "Freezer",
+      "EPA",
+      "0 °F (−18 °C) for three days; below −19 °C for at least four days on another page"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "id": "heat",
+    "h2": "Heat",
+    "html": "<p>The EPA advises drying clothing and bedding at high temperature for 30 minutes and, when heating items or areas, reaching at least 120 °F (about 49 °C) for 90 minutes to ensure eggs are killed. In laboratory work, 99% adult mortality was reached at 48.3 °C and 99% egg mortality at 54.8 °C (Kells and Goblirsch 2011).</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-11"
+   },
+   {
+    "type": "text",
+    "id": "next",
+    "h2": "Next step",
+    "html": "<p>More on preparation: <a href=\"/en/bed-bug-guide/preparing-for-bed-bug-treatment/\">how to prepare your home</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Temperature and time requirements for controlling bed bugs (Cimex lectularius) under commercial heat treatment conditions (Kells SA, Goblirsch MJ). Insects 2(3):412-422",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2030412",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

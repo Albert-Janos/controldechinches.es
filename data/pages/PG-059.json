@@ -1,0 +1,165 @@
+{
+ "id": "PG-059",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-049",
+  "PG-053"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/sellar-grietas-chinches/",
+  "title": "Sellar grietas y huecos contra chinches: qué esperar",
+  "description": "Qué dicen las fuentes sobre sellar grietas: reduce escondites y facilita el control, pero no elimina por sí solo una infestación.",
+  "h1": "Sellar grietas y huecos: qué puede y qué no puede hacer",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Sellar grietas pequeñas reduce los escondites y puede facilitar el control, pero ninguna de las fuentes consultadas afirma que elimine una infestación ni que garantice que no vuelvan a entrar chinches.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-06",
+  "reviewer": null,
+  "primaryKeyword": "sellar grietas chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-recomiendan",
+    "h2": "Qué recomiendan las fuentes",
+    "html": "<ul><li>La EPA: sellar los pequeños escondites con silicona; y sellar alrededor de rodapiés y enchufes para dificultar el paso por los huecos de las paredes.</li><li>UC IPM: sellar hace más manejables las infestaciones pequeñas.</li><li>Virginia Tech: en edificios, polvo desecante en los huecos de las paredes puede limitar el paso entre viviendas.</li><li>La Rioja, en alojamientos: sellar juntas y grietas y preferir suelos y rodapiés cerámicos.</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-16"
+   },
+   {
+    "type": "text",
+    "id": "limites",
+    "h2": "Límites",
+    "html": "<p>Sellar reduce refugios, pero las chinches se transportan también en equipaje, ropa y muebles. Por eso forma parte de un plan más amplio: <a href=\"/servicios/control-integrado/\">control integrado</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/sealing-cracks-bed-bugs/",
+  "title": "Sealing cracks against bed bugs: what to expect",
+  "description": "What sources say about sealing cracks: it reduces hiding places and eases control, but does not eliminate an infestation on its own.",
+  "h1": "Sealing cracks and gaps: what it can and cannot do",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Sealing small cracks reduces hiding places and can make control easier, but none of the sources consulted says it eliminates an infestation or guarantees bed bugs will not be brought in again.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-IPM-06",
+  "reviewer": null,
+  "primaryKeyword": "sealing cracks bed bugs",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-sources-recommend",
+    "h2": "What the sources recommend",
+    "html": "<ul><li>The EPA: seal small hiding places with silicone caulk; and seal around baseboards and sockets to discourage movement through wall voids.</li><li>UC IPM: sealing makes small infestations easier to manage.</li><li>Virginia Tech: in buildings, desiccant dust in wall voids can limit movement between units.</li><li>La Rioja, for accommodation: seal joints and cracks and prefer ceramic floors and skirting.</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-16"
+   },
+   {
+    "type": "text",
+    "id": "limits",
+    "h2": "Limits",
+    "html": "<p>Sealing reduces refuges, but bed bugs are also carried in luggage, clothing and furniture. It therefore forms part of a wider plan: <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

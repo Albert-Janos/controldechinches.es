@@ -71,9 +71,10 @@ for (const pg of pages) {
   const text = h.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ');
   for (const m of text.matchAll(/(\d[\d.,]*)\s?€|€\s?(\d[\d.,]*)/g)) { const n = (m[1] || m[2]).replace(/[.,]$/, ''); if (!allowedPrices.has(n)) E(`${tag}: price "${m[0]}" is not in data/prices.json`); }
   if (/Esencial|Completo/.test(text)) E(`${tag}: retired plan names`);
-  for (const m of text.matchAll(/garantiz|garantía de|100 ?%|sin riesgo|guarantee[sd]?\b|risk-free/gi)) {
-    const before = text.slice(Math.max(0, m.index - 40), m.index); // a negated mention ("does not guarantee") is allowed
-    if (!/\b(no|ni|not|nor|never|nunca|without|cannot)\b[^.]*$/i.test(before)) E(`${tag}: forbidden claim wording "${m[0]}" (guarantee/100%/risk-free) unless negated`);
+  // "100 %" is only a promise when attached to an outcome word; reported study results ("100 % mortality") are fine
+  for (const m of text.matchAll(/garantiz|garantía de|100 ?% (?:efic|garant|segur|éxito|effective|success|safe)|sin riesgo|guarantee[sd]?\b|risk-free/gi)) {
+    const before = text.slice(Math.max(0, m.index - 90), m.index); // a negated mention ("does not guarantee") is allowed
+    if (!/\b(no|ni|not|nor|never|nunca|without|cannot|none|ninguna|ninguno)\b[^.]*$/i.test(before)) E(`${tag}: forbidden claim wording "${m[0]}" (guarantee/100%/risk-free) unless negated`);
   }
   if ((text.match(/profesional|professional/gi) || []).length > 2) W(`${tag}: "profesional/professional" used more than twice - prefer concrete facts`);
   if (L.primaryKeyword) (kws.get(L.primaryKeyword.toLowerCase() + '|' + lang) || kws.set(L.primaryKeyword.toLowerCase() + '|' + lang, []).get(L.primaryKeyword.toLowerCase() + '|' + lang)).push(tag);

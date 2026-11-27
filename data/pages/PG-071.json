@@ -1,0 +1,230 @@
+{
+ "id": "PG-071",
+ "template": "T-I",
+ "status": "Draft",
+ "dataPage": "tool",
+ "cta": {
+  "message": "identify"
+ },
+ "related": [
+  "PG-041",
+  "PG-070",
+  "PG-012"
+ ],
+ "_blocked": [
+  "owner and professional approval of the logic and wording",
+  "identification photos (IMG-ENT-*, IMG-INS-*)"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "tool",
+    "h2": "Comprueba lo que has encontrado",
+    "outcomesTitle": "Qué significa cada resultado",
+    "questions": [
+     {
+      "id": "live",
+      "text": "¿Has visto un insecto vivo?"
+     },
+     {
+      "id": "spots",
+      "text": "¿Has encontrado manchas oscuras (posibles excrementos)?"
+     },
+     {
+      "id": "eggs",
+      "text": "¿Has encontrado huevos?"
+     },
+     {
+      "id": "moults",
+      "text": "¿Has encontrado mudas?"
+     },
+     {
+      "id": "seams",
+      "text": "¿Hay marcas en las costuras del colchón?"
+     },
+     {
+      "id": "joints",
+      "text": "¿Hay marcas en las uniones de los muebles?"
+     },
+     {
+      "id": "bites",
+      "text": "¿Has notado picaduras?"
+     },
+     {
+      "id": "travel",
+      "text": "¿Has viajado recientemente?"
+     },
+     {
+      "id": "furniture",
+      "text": "¿Ha entrado mobiliario de segunda mano en la vivienda?"
+     }
+    ],
+    "outcomes": [
+     {
+      "id": "direct",
+      "rule": {
+       "any": [
+        "live",
+        "eggs",
+        "moults"
+       ]
+      },
+      "title": "Indicios directos: conviene identificarlos",
+      "text": "Un insecto vivo, huevos o mudas son indicios directos que conviene confirmar. Haz fotos nítidas (con algo que dé escala) y envíanoslas para ayudarte a identificar lo que has encontrado."
+     },
+     {
+      "id": "traces",
+      "rule": {
+       "any": [
+        "spots",
+        "seams",
+        "joints"
+       ]
+      },
+      "title": "Posibles rastros: revisa con más detalle",
+      "text": "Las manchas oscuras y las marcas en costuras o uniones pueden tener otras causas. Revisa con detalle las costuras del colchón, el somier y el cabecero y envíanos fotos si tienes dudas."
+     },
+     {
+      "id": "context",
+      "rule": {
+       "any": [
+        "bites",
+        "travel",
+        "furniture"
+       ]
+      },
+      "title": "Las picaduras o el contexto no bastan para confirmar",
+      "text": "Las picaduras por sí solas no permiten confirmar que haya chinches. Busca otros indicios y, si persisten las dudas, solicita una inspección."
+     },
+     {
+      "id": "none",
+      "rule": {
+       "default": true
+      },
+      "title": "Sin indicios",
+      "text": "No has indicado ningún indicio. Si algo cambia, vuelve a revisar las costuras del colchón y escríbenos."
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Revisión profesional: los resultados y su redacción deben ser aprobados por el propietario y un revisor profesional. Nunca se muestra un porcentaje ni un diagnóstico."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/identificador-chinches/",
+  "title": "Identificador de señales de chinches de cama",
+  "description": "Nueve preguntas para orientar los siguientes pasos si crees que tienes chinches. No ofrece diagnóstico ni porcentajes.",
+  "h1": "Identificador de señales de chinches",
+  "eyebrow": "Herramienta",
+  "lead": "Responde unas preguntas y te orientamos sobre qué revisar y cuál es el siguiente paso."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "tool",
+    "h2": "Check what you have found",
+    "outcomesTitle": "What each result means",
+    "questions": [
+     {
+      "id": "live",
+      "text": "Have you seen a live insect?"
+     },
+     {
+      "id": "spots",
+      "text": "Have you found dark spots (possible excreta)?"
+     },
+     {
+      "id": "eggs",
+      "text": "Have you found eggs?"
+     },
+     {
+      "id": "moults",
+      "text": "Have you found shed skins (moults)?"
+     },
+     {
+      "id": "seams",
+      "text": "Are there marks along the mattress seams?"
+     },
+     {
+      "id": "joints",
+      "text": "Are there marks at furniture joints?"
+     },
+     {
+      "id": "bites",
+      "text": "Have you noticed bites?"
+     },
+     {
+      "id": "travel",
+      "text": "Have you travelled recently?"
+     },
+     {
+      "id": "furniture",
+      "text": "Has second-hand furniture come into the home?"
+     }
+    ],
+    "outcomes": [
+     {
+      "id": "direct",
+      "rule": {
+       "any": [
+        "live",
+        "eggs",
+        "moults"
+       ]
+      },
+      "title": "Direct signs: have them identified",
+      "text": "A live insect, eggs or moults are direct signs worth confirming. Take clear photos (with something for scale) and send them to us so we can help identify what you found."
+     },
+     {
+      "id": "traces",
+      "rule": {
+       "any": [
+        "spots",
+        "seams",
+        "joints"
+       ]
+      },
+      "title": "Possible traces: check further",
+      "text": "Dark spots and marks at seams or joints can have other causes. Check the mattress seams, bed frame and headboard carefully and send us photos if in doubt."
+     },
+     {
+      "id": "context",
+      "rule": {
+       "any": [
+        "bites",
+        "travel",
+        "furniture"
+       ]
+      },
+      "title": "Bites or context alone do not confirm anything",
+      "text": "Bites alone cannot confirm bed bugs. Look for other signs and, if you keep having doubts, ask for an inspection."
+     },
+     {
+      "id": "none",
+      "rule": {
+       "default": true
+      },
+      "title": "No signs reported",
+      "text": "You have not reported any signs. If something changes, check the mattress seams again and get in touch."
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Professional review: outcomes and wording to be approved by the owner and a professional reviewer. No percentage and no diagnosis is ever shown."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/bed-bug-identifier/",
+  "title": "Bed bug signs identifier | Control de Chinches",
+  "description": "Nine questions to guide your next steps if you think you have bed bugs. It gives no diagnosis and no percentages.",
+  "h1": "Bed bug signs identifier",
+  "eyebrow": "Tool",
+  "lead": "Answer a few questions and we point you to what to check and what to do next."
+ }
+}

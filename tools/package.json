@@ -11,7 +11,8 @@
     "validate": "node validate.mjs --dir dist --mode production",
     "images": "node process-images.mjs",
     "serve": "node serve.mjs",
-    "test": "node test-all.mjs"
+    "test": "node test-all.mjs",
+    "preview": "node preview.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/dm-sans": "5.3.0",

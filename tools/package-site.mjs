@@ -6,6 +6,7 @@ import { readdirSync, statSync, copyFileSync, mkdirSync, existsSync, rmSync, wri
 import { join, relative, dirname, extname, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 import { build, sitemapXml, root } from './build.mjs';
+import { writeDevIndex } from './lib/devindex.mjs';
 
 const PUBLIC_FILES = ['index.html', 'precios.html', '404.html', 'gracias.html', 'aviso-legal.html', 'politica-privacidad.html', 'robots.txt', 'sitemap.xml', '.htaccess'];
 const PUBLIC_DIRS = ['assets', 'css', 'img', 'js', 'favicon', 'en', 'chinches-apartamentos-turisticos'];
@@ -35,13 +36,14 @@ export function packageSite({ mode = 'production', out = 'dist', pageDirs = [] }
     if (bad.length) throw new Error('non-approved page in production build: ' + bad.map(b => b.id).join(','));
   } else {
     writeFileSync(join(outAbs, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
+    writeDevIndex({ outAbs, ctx, built }); // local developer page index, preview only (refused in production)
   }
 
   // verify: nothing forbidden, nothing draft-ish in production
   const files = []; (function w(d) { for (const n of readdirSync(d)) { const f = join(d, n); statSync(f).isDirectory() ? w(f) : files.push(f); } })(outAbs);
   const rels = files.map(f => relative(outAbs, f).split(sep).join('/'));
   const problems = [];
-  for (const r of rels) if (FORBIDDEN.some(re => re.test(r))) problems.push('forbidden file in package: ' + r);
+  for (const r of rels) if (FORBIDDEN.some(re => re.test(r)) || (mode === 'production' && /(^|\/)__dev(\/|$)/.test(r))) problems.push('forbidden file in package: ' + r);
   if (mode === 'production') for (const f of files) {
     if (!f.endsWith('.html')) continue; const s = readFileSync(f, 'utf8'), r = relative(outAbs, f).split(sep).join('/');
     if (/__fixture__/.test(r)) problems.push('fixture in production: ' + r);

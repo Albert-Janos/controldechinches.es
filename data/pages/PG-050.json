@@ -1,0 +1,247 @@
+{
+ "id": "PG-050",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-049",
+  "PG-013"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/vapor-contra-chinches/",
+  "title": "¿El vapor mata las chinches de cama? | Control de Chinches",
+  "description": "Qué dicen las fuentes sobre el vapor contra chinches: temperaturas, contacto, límites de penetración y papel dentro del control integrado.",
+  "h1": "¿El vapor mata las chinches de cama?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Sí, el vapor mata las chinches al contacto, pero su penetración es limitada y no deja efecto residual; las fuentes lo consideran un componente útil del control integrado, no una solución aislada.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-04",
+  "reviewer": null,
+  "primaryKeyword": "el vapor mata las chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-dicen-las-fuentes",
+    "h2": "Qué dicen las fuentes",
+    "html": "<ul><li>La EPA indica que el vapor debe estar al menos a 130 °F (unos 54 °C) y sin un flujo de aire fuerte que haga que las chinches se dispersen; recomienda usar un difusor.</li><li>Penn State: temperaturas de 131 °F (55 °C) o más son letales para todas las fases; el vapor mató el 100 % en la superficie del colchón y el 90 % bajo sábanas y en tela de sofá en unos 20 segundos, pero no mata bajo fundas de cuero.</li><li>Rutgers: el vapor ronda los 100 °C; se aplica por costuras, grietas y rincones, repitiendo cada pocos días; puede dañar acabados de muebles y algunos tejidos como la microfibra.</li><li>Purdue: avanzar unos 30 cm cada 10–15 segundos; la mayoría de los vaporizadores domésticos no alcanzan la temperatura necesaria.</li><li>Las guías de La Rioja lo consideran muy eficaz, pero no cuando las chinches se esconden en refugios donde el vapor no llega.</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "estudio",
+    "h2": "Un estudio de laboratorio",
+    "html": "<p>Puckett y colaboradores (<em>Pest Management Science</em>, 2013) probaron tiempos de vapor sobre colchones: los huevos tuvieron un 100 % de mortalidad en todas las duraciones y ninfas y adultos entre el 84 y el 94 %; la temperatura media de la superficie fue de 67–74 °C. Los autores no evaluaron la penetración en pliegues y consideran el vapor un componente práctico del control integrado, no un medio eficiente por sí solo contra una infestación madura.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "text",
+    "id": "limites",
+    "h2": "Límites",
+    "html": "<p>La Universidad de Kentucky resume que los vaporizadores matan por contacto, tienen penetración limitada y ningún efecto residual. Las temperaturas letales citadas varían según la fuente (de 113 a 140 °F, según el tiempo de exposición y el método), por lo que no existe una cifra única. Más sobre nuestro servicio en <a href=\"/servicios/vapor-seco/\">vapor seco</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Comparison of multiple steam treatment durations for control of bed bugs (Cimex lectularius L.)",
+    "publisher": "Puckett RT, McDonald DL, Gold RE. Pest Management Science 69:1061-1065",
+    "year": "2013",
+    "url": "https://doi.org/10.1002/ps.3467",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Temperature and time requirements for controlling bed bugs (Cimex lectularius) under commercial heat treatment conditions (Kells SA, Goblirsch MJ). Insects 2(3):412-422",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2030412",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/does-steam-kill-bed-bugs/",
+  "title": "Does steam kill bed bugs? | Control de Chinches",
+  "description": "What the sources say about steam against bed bugs: temperatures, contact, penetration limits and its role in integrated control.",
+  "h1": "Does steam kill bed bugs?",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Yes, steam kills bed bugs on contact, but its penetration is limited and it leaves no residual effect; sources treat it as a useful component of integrated control, not a stand-alone solution.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-DRY-04",
+  "reviewer": null,
+  "primaryKeyword": "does steam kill bed bugs",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-the-sources-say",
+    "h2": "What the sources say",
+    "html": "<ul><li>The EPA says steam must be at least 130 °F (about 54 °C) and without forceful airflow that could scatter the bugs; it recommends a diffuser.</li><li>Penn State: temperatures of 131 °F (55 °C) or above are lethal to all stages; steam killed 100% on the mattress surface and 90% under sheets and on sofa fabric at about 20 seconds, but does not kill bugs under leather covers.</li><li>Rutgers: steam is near 100 °C; apply it along seams, crevices and corners, repeating every few days; it can damage furniture finishes and some fabrics such as microfibre.</li><li>Purdue: move about 30 cm every 10–15 seconds; most household steamers are not hot enough.</li><li>The La Rioja public-health guides call it very effective, but not when bed bugs hide in refuges the steam cannot reach.</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "study",
+    "h2": "A laboratory study",
+    "html": "<p>Puckett and colleagues (<em>Pest Management Science</em>, 2013) tested steam durations on mattresses: eggs showed 100% mortality at all durations and nymphs and adults 84–94%; mean surface temperature was 67–74 °C. The authors did not assess penetration into folds and call steam a practical component of integrated control, not an efficient stand-alone means against a mature infestation.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-14"
+   },
+   {
+    "type": "text",
+    "id": "limits",
+    "h2": "Limits",
+    "html": "<p>The University of Kentucky summarises that steamers kill on contact, with limited penetration and no residual effect. Lethal temperatures quoted vary by source (113 to 140 °F, depending on exposure time and method), so there is no single figure. More about our service on <a href=\"/en/services/dry-steam/\">dry steam</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Comparison of multiple steam treatment durations for control of bed bugs (Cimex lectularius L.)",
+    "publisher": "Puckett RT, McDonald DL, Gold RE. Pest Management Science 69:1061-1065",
+    "year": "2013",
+    "url": "https://doi.org/10.1002/ps.3467",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Prevención de chinches en establecimientos con pernoctación",
+    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+    "year": "2023",
+    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Temperature and time requirements for controlling bed bugs (Cimex lectularius) under commercial heat treatment conditions (Kells SA, Goblirsch MJ). Insects 2(3):412-422",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2030412",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

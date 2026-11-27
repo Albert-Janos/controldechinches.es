@@ -1,0 +1,149 @@
+{
+ "id": "PG-022",
+ "template": "T-A",
+ "status": "Draft",
+ "dataPage": "local",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-020",
+  "PG-011",
+  "PG-013",
+  "PG-014",
+  "PG-003",
+  "PG-021",
+  "PG-023"
+ ],
+ "_blocked": [
+  "OWNER-INPUT #3 confirm Benidorm is served; local facts (property types, travel rule)",
+  "photos IMG-LOC-BEN-01",
+  "LGL-01, LGL-08",
+  "no local case study exists (none is invented)"
+ ],
+ "offers": [
+  "chemical",
+  "steam"
+ ],
+ "areaServed": [
+  "Benidorm"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "como-trabajamos",
+    "h2": "Cómo trabajamos en Benidorm",
+    "html": "<p>Valoramos las zonas afectadas y te recomendamos el método adecuado: tratamiento químico dirigido o vapor seco. El precio final y el desplazamiento se confirman por escrito antes de reservar.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirma que se atiende Benidorm y la regla de desplazamiento. Hechos locales reales (tipos de vivienda habituales, observaciones propias) y fotos locales (IMG-LOC-BEN-01). No se publican referencias locales inventadas."
+   },
+   {
+    "type": "priceBox",
+    "h2": "Precios"
+   },
+   {
+    "type": "cards",
+    "h2": "Servicios",
+    "items": [
+     {
+      "title": "Tratamiento químico",
+      "text": "Aplicación dirigida.",
+      "href": "/servicios/tratamiento-quimico/"
+     },
+     {
+      "title": "Vapor seco",
+      "text": "Calor localizado, sin insecticidas.",
+      "href": "/servicios/vapor-seco/"
+     },
+     {
+      "title": "Método (GIP)",
+      "text": "Valoración, tratamiento y seguimiento.",
+      "href": "/servicios/control-integrado/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿En cuánto tiempo podéis venir a Benidorm?",
+    "a": "Depende de la localidad y de la agenda. Escríbenos por WhatsApp para consultar una fecha."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Zonas",
+    "/zonas/"
+   ]
+  ],
+  "url": "/zonas/benidorm/",
+  "title": "Chinches de cama en Benidorm: tratamiento y precios",
+  "description": "Tratamiento de chinches de cama en Benidorm: químico desde 139 € y vapor seco desde 150 €. Confirmamos disponibilidad y precio por escrito.",
+  "h1": "Chinches de cama en Benidorm",
+  "eyebrow": "Zona de servicio · Benidorm",
+  "lead": "Tratamiento de chinches en viviendas y alojamientos turísticos. Gestión de alojamientos turísticos en Benidorm: consulta también el servicio para alojamientos.",
+  "heroImage": "IMG-LOC-BEN-01"
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "how-we-work",
+    "h2": "How we work in Benidorm",
+    "html": "<p>We assess the affected areas and recommend the right method: targeted chemical treatment or dry steam. The final price and travel are confirmed in writing before you book.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirm Benidorm is served and the travel rule. Real local facts (typical property types, own observations) and local photos (IMG-LOC-BEN-01). No invented local references are published."
+   },
+   {
+    "type": "priceBox",
+    "h2": "Prices"
+   },
+   {
+    "type": "cards",
+    "h2": "Services",
+    "items": [
+     {
+      "title": "Chemical treatment",
+      "text": "Targeted application.",
+      "href": "/en/services/chemical-treatment/"
+     },
+     {
+      "title": "Dry steam",
+      "text": "Localised heat, without insecticides.",
+      "href": "/en/services/dry-steam/"
+     },
+     {
+      "title": "Method (IPM)",
+      "text": "Assessment, treatment and follow-up.",
+      "href": "/en/services/integrated-pest-management/"
+     }
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "How soon can you come to Benidorm?",
+    "a": "Availability depends on your location and our schedule. Message us on WhatsApp to check."
+   }
+  ],
+  "sources": [],
+  "breadcrumb": [
+   [
+    "Areas",
+    "/en/areas/"
+   ]
+  ],
+  "url": "/en/areas/benidorm/",
+  "title": "Bed bugs in Benidorm: treatment and prices",
+  "description": "Bed bug treatment in Benidorm: chemical from €139 and dry steam from €150. We confirm availability and price in writing.",
+  "h1": "Bed bugs in Benidorm",
+  "eyebrow": "Service area · Benidorm",
+  "lead": "Bed bug treatment for homes and holiday accommodation. Managing holiday accommodation in Benidorm: see also our service for accommodation providers.",
+  "heroImage": "IMG-LOC-BEN-01"
+ }
+}

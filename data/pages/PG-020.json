@@ -1,0 +1,95 @@
+{
+ "id": "PG-020",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "hub",
+ "cta": {
+  "message": "default"
+ },
+ "related": [],
+ "_blocked": [
+  "OWNER-INPUT #3 confirmed service area and travel rule",
+  "IMG-LOC-00 own map",
+  "LGL-01, LGL-08"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Poblaciones",
+      "intro": "Solo se listan las zonas que Control de Chinches atiende.",
+      "items": [
+       {
+        "pageId": "PG-021",
+        "text": "Tratamiento de chinches de cama en Alicante."
+       },
+       {
+        "pageId": "PG-022",
+        "text": "Tratamiento de chinches de cama en Benidorm."
+       },
+       {
+        "pageId": "PG-023",
+        "text": "Tratamiento de chinches de cama en Torrevieja."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirma las poblaciones que se atienden realmente y la regla de desplazamiento. La web actual lista 15 poblaciones, el pie 4 y los datos estructurados 3; solo se publicará la lista confirmada."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/zonas/",
+  "title": "Zonas de servicio: chinches en la Costa Blanca",
+  "description": "Poblaciones donde trabajamos contra las chinches de cama en Alicante y la Costa Blanca. Confirmamos disponibilidad y desplazamiento al consultar.",
+  "h1": "Zonas de servicio en la Costa Blanca",
+  "eyebrow": "Zonas",
+  "lead": "Indícanos tu localidad y confirmamos disponibilidad y si el presupuesto incluye el desplazamiento."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Towns",
+      "intro": "Only the areas Control de Chinches actually serves are listed.",
+      "items": [
+       {
+        "pageId": "PG-021",
+        "text": "Bed bug treatment in Alicante."
+       },
+       {
+        "pageId": "PG-022",
+        "text": "Bed bug treatment in Benidorm."
+       },
+       {
+        "pageId": "PG-023",
+        "text": "Bed bug treatment in Torrevieja."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #3: confirm the towns actually served and the travel rule. The current site lists 15 towns, the footer 4 and the structured data 3; only the confirmed list will be published."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/areas/",
+  "title": "Areas we cover: bed bugs on the Costa Blanca",
+  "description": "Towns where we treat bed bugs in Alicante and the Costa Blanca. We confirm availability and travel when you get in touch.",
+  "h1": "Areas we cover on the Costa Blanca",
+  "eyebrow": "Areas",
+  "lead": "Tell us your town and we confirm availability and whether the quote includes travel."
+ }
+}

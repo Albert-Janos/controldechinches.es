@@ -1,0 +1,233 @@
+{
+ "id": "PG-070",
+ "template": "T-G",
+ "status": "Draft",
+ "dataPage": "atlas",
+ "cta": {
+  "message": "identify"
+ },
+ "related": [
+  "PG-041",
+  "PG-043",
+  "PG-071"
+ ],
+ "_blocked": [
+  "all 24 macro photos (IMG-ENT-*) must be taken by the owner",
+  "species/stage identification review by an entomologist for every image",
+  "photo rights/credit"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "gallery",
+    "h2": "Atlas fotográfico",
+    "filters": [
+     {
+      "id": "adultos",
+      "label": "Adultos"
+     },
+     {
+      "id": "huevos",
+      "label": "Huevos"
+     },
+     {
+      "id": "ninfas",
+      "label": "Ninfas"
+     },
+     {
+      "id": "mudas",
+      "label": "Mudas"
+     },
+     {
+      "id": "excrementos",
+      "label": "Excrementos"
+     },
+     {
+      "id": "escondites",
+      "label": "Escondites"
+     }
+    ],
+    "groups": [
+     {
+      "id": "adultos",
+      "h3": "Adultos",
+      "images": [
+       "IMG-ENT-ADU-01",
+       "IMG-ENT-ADU-02",
+       "IMG-ENT-ADU-03",
+       "IMG-ENT-ADU-04",
+       "IMG-ENT-SCALE-01"
+      ]
+     },
+     {
+      "id": "huevos",
+      "h3": "Huevos",
+      "images": [
+       "IMG-ENT-EGG-01",
+       "IMG-ENT-EGG-02"
+      ]
+     },
+     {
+      "id": "ninfas",
+      "h3": "Ninfas",
+      "images": [
+       "IMG-ENT-NYM-01",
+       "IMG-ENT-NYM-02",
+       "IMG-ENT-NYM-03",
+       "IMG-ENT-NYM-04",
+       "IMG-ENT-NYM-05"
+      ]
+     },
+     {
+      "id": "mudas",
+      "h3": "Mudas",
+      "images": [
+       "IMG-ENT-MOU-01",
+       "IMG-ENT-MOU-02"
+      ]
+     },
+     {
+      "id": "excrementos",
+      "h3": "Rastros de excrementos",
+      "images": [
+       "IMG-ENT-EXC-01",
+       "IMG-ENT-EXC-02"
+      ]
+     },
+     {
+      "id": "escondites",
+      "h3": "Escondites",
+      "images": [
+       "IMG-ENT-HID-01",
+       "IMG-ENT-HID-02",
+       "IMG-ENT-HID-03",
+       "IMG-ENT-HID-04",
+       "IMG-ENT-HID-05",
+       "IMG-ENT-HID-06"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Fotos propias pendientes (ver PHOTO-SHOT-LIST.md). Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces figura como pendiente."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/atlas-chinches/",
+  "title": "Atlas fotográfico de chinches de cama | Control de Chinches",
+  "description": "Fotografías propias para identificar adultos, huevos, ninfas, mudas, excrementos y escondites de chinches de cama, con escala y criterios de identificación.",
+  "h1": "Atlas fotográfico de chinches de cama",
+  "eyebrow": "Atlas",
+  "lead": "Fotos propias con escala y notas de identificación. Si dudas de lo que has encontrado, envíanos una foto."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "gallery",
+    "h2": "Photo atlas",
+    "filters": [
+     {
+      "id": "adultos",
+      "label": "Adults"
+     },
+     {
+      "id": "huevos",
+      "label": "Eggs"
+     },
+     {
+      "id": "ninfas",
+      "label": "Nymphs"
+     },
+     {
+      "id": "mudas",
+      "label": "Moults"
+     },
+     {
+      "id": "excrementos",
+      "label": "Excreta"
+     },
+     {
+      "id": "escondites",
+      "label": "Hiding places"
+     }
+    ],
+    "groups": [
+     {
+      "id": "adultos",
+      "h3": "Adults",
+      "images": [
+       "IMG-ENT-ADU-01",
+       "IMG-ENT-ADU-02",
+       "IMG-ENT-ADU-03",
+       "IMG-ENT-ADU-04",
+       "IMG-ENT-SCALE-01"
+      ]
+     },
+     {
+      "id": "huevos",
+      "h3": "Eggs",
+      "images": [
+       "IMG-ENT-EGG-01",
+       "IMG-ENT-EGG-02"
+      ]
+     },
+     {
+      "id": "ninfas",
+      "h3": "Nymphs",
+      "images": [
+       "IMG-ENT-NYM-01",
+       "IMG-ENT-NYM-02",
+       "IMG-ENT-NYM-03",
+       "IMG-ENT-NYM-04",
+       "IMG-ENT-NYM-05"
+      ]
+     },
+     {
+      "id": "mudas",
+      "h3": "Moults",
+      "images": [
+       "IMG-ENT-MOU-01",
+       "IMG-ENT-MOU-02"
+      ]
+     },
+     {
+      "id": "excrementos",
+      "h3": "Excreta spots",
+      "images": [
+       "IMG-ENT-EXC-01",
+       "IMG-ENT-EXC-02"
+      ]
+     },
+     {
+      "id": "escondites",
+      "h3": "Hiding places",
+      "images": [
+       "IMG-ENT-HID-01",
+       "IMG-ENT-HID-02",
+       "IMG-ENT-HID-03",
+       "IMG-ENT-HID-04",
+       "IMG-ENT-HID-05",
+       "IMG-ENT-HID-06"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "todo",
+    "text": "Own photos pending (see PHOTO-SHOT-LIST.md). Each caption will state stage, sex and species only after entomological verification; until then it is marked pending."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/bed-bug-atlas/",
+  "title": "Bed bug photo atlas | Control de Chinches",
+  "description": "Our own photographs to identify adult bed bugs, eggs, nymphs, moults, excreta and hiding places, with scale and identification notes.",
+  "h1": "Bed bug photo atlas",
+  "eyebrow": "Atlas",
+  "lead": "Our own photos with scale and identification notes. If you are unsure about what you found, send us a photo."
+ }
+}

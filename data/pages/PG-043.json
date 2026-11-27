@@ -1,0 +1,336 @@
+{
+ "id": "PG-043",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-041",
+  "PG-070",
+  "PG-053"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/ciclo-de-vida-chinche-de-cama/",
+  "title": "Ciclo de vida de la chinche de cama: huevos, ninfas y adultos",
+  "description": "Las fases de la chinche de cama según fuentes oficiales y científicas: huevos, cinco estadios de ninfa y adultos, con cifras y diferencias entre fuentes.",
+  "h1": "Ciclo de vida de la chinche de cama",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "La chinche de cama pasa por huevo, cinco estadios de ninfa y adulto, y necesita una comida de sangre para mudar en cada estadio. En condiciones cálidas el ciclo completo puede durar unas cinco semanas, aunque las cifras varían según la fuente y la temperatura.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-ENT-ADU-01",
+  "reviewer": null,
+  "primaryKeyword": "ciclo de vida chinche de cama",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "fases",
+    "h2": "Las fases",
+    "html": "<ul><li><strong>Huevo:</strong> de aproximadamente 1 mm, blanco perlado; se ve un punto ocular tras unos 5 días (EPA).</li><li><strong>Ninfas:</strong> cinco estadios, de unos 1,5 mm a 4,5 mm; son translúcidas o amarillentas y, sin alimentarse, casi invisibles (EPA). Cada estadio necesita sangre para mudar.</li><li><strong>Adulto:</strong> de unos 5–7 mm, marrón, plano y ovalado; se vuelve rojizo y alargado tras alimentarse (EPA).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-02"
+   },
+   {
+    "type": "table",
+    "h2": "Cifras según la fuente",
+    "caption": "Las cifras dependen de la temperatura y del estudio; no hay un valor único",
+    "head": [
+     "Dato",
+     "Fuente",
+     "Cifra indicada"
+    ],
+    "rows": [
+     [
+      "Eclosión del huevo",
+      "Virginia Tech",
+      "60 % a los 6 días y más del 90 % a los 9 días (más de 21 °C)"
+     ],
+     [
+      "Eclosión del huevo",
+      "Penn State",
+      "5 a 10 días"
+     ],
+     [
+      "De huevo a adulto",
+      "Polanco et al. 2011 (laboratorio)",
+      "unos 35 a 40 días"
+     ],
+     [
+      "De huevo a adulto",
+      "La Rioja",
+      "5 a 7 semanas"
+     ],
+     [
+      "Frecuencia de comida",
+      "Virginia Tech",
+      "normalmente cada 3 a 7 días"
+     ],
+     [
+      "Supervivencia sin comer",
+      "Virginia Tech",
+      "a temperatura ambiente, hasta unos 70 días"
+     ],
+     [
+      "Supervivencia sin comer",
+      "Univ. de Kentucky",
+      "1 a 4 meses en edificios con calefacción; más de un año a 55 °F o menos"
+     ],
+     [
+      "Huevos por hembra",
+      "Virginia Tech",
+      "5 a 20 por comida, unos 140 en la vida"
+     ],
+     [
+      "Huevos por hembra",
+      "UC IPM",
+      "200 a 500"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "id": "especie",
+    "h2": "Especies",
+    "html": "<p>En Europa y en las muestras españolas analizadas en un estudio de 2025 (41 muestras de España) todas las chinches de cama eran <em>Cimex lectularius</em>; <em>Cimex hemipterus</em> es una especie de zonas tropicales. La identificación de la especie debe hacerla un especialista. Consulta el <a href=\"/atlas-chinches/\">atlas fotográfico</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Population growth potential of the bed bug, Cimex lectularius L.: a life table analysis (Polanco AM, Brewster CC, Miller DM). Insects 2(2):173-185",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2020173",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Survivorship during starvation for Cimex lectularius L. (Polanco AM, Miller DM, Brewster CC). Insects 2(2):232-242",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2020232",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Target-site mutations and metabolic detoxification of insecticides in continental populations of Cimex lectularius and Cimex hemipterus (Porras-Villamil JF et al.). J Med Entomol 62(1):130-145",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2025",
+    "url": "https://doi.org/10.1093/jme/tjae118",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bug-life-cycle/",
+  "title": "Bed bug life cycle: eggs, nymphs and adults",
+  "description": "The stages of the bed bug according to official and scientific sources: eggs, five nymph stages and adults, with figures and differences between sources.",
+  "h1": "Bed bug life cycle",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "The bed bug goes through egg, five nymph stages and adult, and needs a blood meal to moult at each stage. In warm conditions the full cycle can take about five weeks, although figures vary by source and temperature.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-ENT-ADU-01",
+  "reviewer": null,
+  "primaryKeyword": "bed bug life cycle",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "stages",
+    "h2": "The stages",
+    "html": "<ul><li><strong>Egg:</strong> about 1 mm, pearl-white; an eye spot shows after about 5 days (EPA).</li><li><strong>Nymphs:</strong> five stages, from about 1.5 mm to 4.5 mm; translucent or yellowish and almost invisible if unfed (EPA). Each stage needs blood to moult.</li><li><strong>Adult:</strong> about 5–7 mm, brown, flat and oval; turns reddish and elongated after feeding (EPA).</li></ul>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-02"
+   },
+   {
+    "type": "table",
+    "h2": "Figures by source",
+    "caption": "Figures depend on temperature and on the study; there is no single value",
+    "head": [
+     "Item",
+     "Source",
+     "Figure given"
+    ],
+    "rows": [
+     [
+      "Egg hatching",
+      "Virginia Tech",
+      "60% by day 6 and over 90% by day 9 (above 70 °F)"
+     ],
+     [
+      "Egg hatching",
+      "Penn State",
+      "5 to 10 days"
+     ],
+     [
+      "Egg to adult",
+      "Polanco et al. 2011 (laboratory)",
+      "about 35 to 40 days"
+     ],
+     [
+      "Egg to adult",
+      "La Rioja",
+      "5 to 7 weeks"
+     ],
+     [
+      "Feeding frequency",
+      "Virginia Tech",
+      "typically every 3 to 7 days"
+     ],
+     [
+      "Survival without feeding",
+      "Virginia Tech",
+      "at room temperature, up to about 70 days"
+     ],
+     [
+      "Survival without feeding",
+      "University of Kentucky",
+      "1 to 4 months in heated buildings; over a year at 55 °F or below"
+     ],
+     [
+      "Eggs per female",
+      "Virginia Tech",
+      "5 to 20 per meal, about 140 in a lifetime"
+     ],
+     [
+      "Eggs per female",
+      "UC IPM",
+      "200 to 500"
+     ]
+    ]
+   },
+   {
+    "type": "text",
+    "id": "species",
+    "h2": "Species",
+    "html": "<p>In Europe, and in a 2025 study of samples that included 41 from Spain, all common bed bugs were <em>Cimex lectularius</em>; <em>Cimex hemipterus</em> is a tropical species. Species identification should be done by a specialist. See the <a href=\"/en/bed-bug-atlas/\">photo atlas</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Biology, Habitat, and Management of Bed Bugs",
+    "publisher": "Penn State Extension",
+    "year": "2025",
+    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Population growth potential of the bed bug, Cimex lectularius L.: a life table analysis (Polanco AM, Brewster CC, Miller DM). Insects 2(2):173-185",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2020173",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Survivorship during starvation for Cimex lectularius L. (Polanco AM, Miller DM, Brewster CC). Insects 2(2):232-242",
+    "publisher": "Insects",
+    "year": "2011",
+    "url": "https://doi.org/10.3390/insects2020232",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Target-site mutations and metabolic detoxification of insecticides in continental populations of Cimex lectularius and Cimex hemipterus (Porras-Villamil JF et al.). J Med Entomol 62(1):130-145",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2025",
+    "url": "https://doi.org/10.1093/jme/tjae118",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "id": "PG-044",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-041",
+  "PG-045",
+  "PG-070"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/donde-se-esconden-las-chinches/",
+  "title": "¿Dónde se esconden las chinches de cama? | Control de Chinches",
+  "description": "Los escondites más habituales de las chinches: colchón, somier, cabecero y, en infestaciones grandes, sofás, cortinas, cajones y enchufes.",
+  "h1": "¿Dónde se esconden las chinches de cama?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Casi siempre cerca de donde se duerme: costuras, ribetes y etiquetas del colchón y del somier, grietas del armazón y del cabecero. En infestaciones grandes se extienden a otros muebles y a las paredes.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "donde se esconden las chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "cerca-de-la-cama",
+    "h2": "Cerca de la cama",
+    "html": "<p>La EPA señala el ribete, las costuras y las etiquetas del colchón y del somier, y las grietas del armazón y del cabecero. Según UC IPM, normalmente están a menos de unos 1,8 m de donde se duerme y alrededor del 85 % se encuentra en la cama o junto a ella. Si una grieta admite una tarjeta de crédito, puede esconder una chinche.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "id": "infestaciones-grandes",
+    "h2": "En infestaciones grandes",
+    "html": "<p>También pueden aparecer en costuras de sillas y sofás, pliegues de cortinas, uniones de cajones, enchufes, electrodomésticos, papel pintado despegado y en la unión entre pared y techo. Detrás de rodapiés y cuadros también es posible. Virginia Tech indica que en infestaciones intensas pueden esconderse a varios metros de las personas.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-07"
+   },
+   {
+    "type": "text",
+    "id": "siguiente-paso",
+    "h2": "Siguiente paso",
+    "html": "<p>Para revisar el colchón paso a paso, consulta <a href=\"/guia-chinches/chinches-en-el-colchon/\">chinches en el colchón</a>. Puedes comparar lo que veas con el <a href=\"/atlas-chinches/\">atlas fotográfico</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/where-bed-bugs-hide/",
+  "title": "Where do bed bugs hide? | Control de Chinches",
+  "description": "The most common bed bug hiding places: mattress, bed frame, headboard and, in larger infestations, sofas, curtains, drawers and sockets.",
+  "h1": "Where do bed bugs hide?",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Almost always close to where people sleep: seams, piping and tags of the mattress and box spring, and cracks in the bed frame and headboard. In larger infestations they spread to other furniture and walls.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "where bed bugs hide",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "near-the-bed",
+    "h2": "Near the bed",
+    "html": "<p>The EPA points to the piping, seams and tags of the mattress and box spring, and cracks in the frame and headboard. According to UC IPM they are usually within about 6 feet (1.8 m) of where people sleep and around 85% are in or next to the bed. If a crack will hold a credit card, it can hide a bed bug.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-ENT-HID-01"
+   },
+   {
+    "type": "text",
+    "id": "in-larger-infestations",
+    "h2": "In larger infestations",
+    "html": "<p>They can also appear in chair and sofa seams, curtain folds, drawer joints, electrical sockets, appliances, loose wallpaper and where walls meet the ceiling. Behind baseboards and picture frames is also possible. Virginia Tech notes that in heavy infestations they may hide several yards from people.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-07"
+   },
+   {
+    "type": "text",
+    "id": "next-step",
+    "h2": "Next step",
+    "html": "<p>To check a mattress step by step, see <a href=\"/en/bed-bug-guide/bed-bugs-in-a-mattress/\">bed bugs in a mattress</a>. You can compare what you see with the <a href=\"/en/bed-bug-atlas/\">photo atlas</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

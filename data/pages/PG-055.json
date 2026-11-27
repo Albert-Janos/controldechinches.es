@@ -1,0 +1,347 @@
+{
+ "id": "PG-055",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-056",
+  "PG-049"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/preparar-vivienda-tratamiento-chinches/",
+  "title": "Cómo preparar la vivienda para el tratamiento de chinches",
+  "description": "Pasos generales de preparación según fuentes oficiales: ropa y ropa de cama, fundas, sellado de grietas y qué te indicará el técnico.",
+  "h1": "Cómo preparar la vivienda para el tratamiento",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las fuentes coinciden en lo básico: lavar y secar a alta temperatura la ropa y la ropa de cama, proteger colchón y somier con fundas y sellar grietas pequeñas. Las instrucciones concretas para tu tratamiento te las dará el técnico.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-01",
+  "reviewer": null,
+  "primaryKeyword": "preparar casa tratamiento chinches",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "Pasos generales",
+    "items": [
+     {
+      "h3": "Ropa y ropa de cama",
+      "p": "El secado a temperatura alta es clave: la EPA indica que lavar por sí solo generalmente no las mata. Las cifras varían según la fuente: lavado a 60 °C y secado en caliente al menos 30 minutos (NHS), o lavado a 49 °C (120 °F) como mínimo (Kentucky)."
+     },
+     {
+      "h3": "Fundas protectoras",
+      "p": "Proteger colchón y somier con fundas especiales (EPA, Virginia Tech); mejor resistentes al desgarro y de color claro."
+     },
+     {
+      "h3": "Sellado de grietas",
+      "p": "La EPA recomienda sellar con silicona las grietas pequeñas. Sellar no elimina por sí solo una infestación."
+     },
+     {
+      "h3": "Congelación",
+      "p": "Algunos objetos pueden congelarse: a 0 °F (−18 °C) durante tres días según la EPA (cuatro días por debajo de −19 °C según otra página de la EPA)."
+     }
+    ]
+   },
+   {
+    "type": "table",
+    "h2": "Cifras según la fuente",
+    "caption": "Las fuentes no coinciden: no hay una cifra única",
+    "head": [
+     "Medida",
+     "Fuente",
+     "Indicación"
+    ],
+    "rows": [
+     [
+      "Lavado",
+      "La Rioja",
+      "60 °C durante 90 minutos"
+     ],
+     [
+      "Lavado",
+      "NHS",
+      "60 °C y secado en caliente al menos 30 minutos"
+     ],
+     [
+      "Lavado",
+      "Univ. de Kentucky",
+      "al menos 120 °F (49 °C)"
+     ],
+     [
+      "Secadora",
+      "La Rioja",
+      "por encima de 40 °C, al menos 30 minutos"
+     ],
+     [
+      "Secadora",
+      "Zaragoza",
+      "a la temperatura más alta, 30 minutos"
+     ],
+     [
+      "Congelador",
+      "La Rioja",
+      "−17,8 °C al menos 3,5 días"
+     ],
+     [
+      "Congelador",
+      "Zaragoza",
+      "−18 °C durante 10 horas (2,5 kg de ropa)"
+     ]
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-11"
+   },
+   {
+    "type": "text",
+    "id": "instrucciones-del-tecnico",
+    "h2": "Lo que te indicará el técnico",
+    "html": "<p>La EPA recuerda que la preparación es la misma para un tratamiento propio o profesional, pero cada método tiene sus indicaciones específicas. En Control de Chinches te explicamos cómo preparar las zonas afectadas antes del tratamiento; consulta también <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/preparing-for-bed-bug-treatment/",
+  "title": "How to prepare your home for bed bug treatment",
+  "description": "General preparation steps from official sources: clothing and bedding, encasements, sealing cracks and what your technician will tell you.",
+  "h1": "How to prepare your home for treatment",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Sources agree on the basics: wash and dry clothing and bedding at high temperature, protect the mattress and box spring with encasements and seal small cracks. Your technician will give the specific instructions for your treatment.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-PREP-01",
+  "reviewer": null,
+  "primaryKeyword": "prepare home bed bug treatment",
+  "blocks": [
+   {
+    "type": "steps",
+    "h2": "General steps",
+    "items": [
+     {
+      "h3": "Clothing and bedding",
+      "p": "High-temperature drying is key: the EPA says washing alone generally does not kill them. Figures vary by source: washing at 60 °C and hot tumble drying for at least 30 minutes (NHS), or washing at 120 °F (49 °C) minimum (Kentucky)."
+     },
+     {
+      "h3": "Protective encasements",
+      "p": "Protect the mattress and box spring with special covers (EPA, Virginia Tech); preferably tear-resistant and light-coloured."
+     },
+     {
+      "h3": "Sealing cracks",
+      "p": "The EPA recommends sealing small cracks with silicone caulk. Sealing alone does not eliminate an infestation."
+     },
+     {
+      "h3": "Freezing",
+      "p": "Some items can be frozen: at 0 °F (−18 °C) for three days according to the EPA (four days below −19 °C according to another EPA page)."
+     }
+    ]
+   },
+   {
+    "type": "table",
+    "h2": "Figures by source",
+    "caption": "Sources disagree: there is no single figure",
+    "head": [
+     "Measure",
+     "Source",
+     "Guidance"
+    ],
+    "rows": [
+     [
+      "Washing",
+      "La Rioja",
+      "60 °C for 90 minutes"
+     ],
+     [
+      "Washing",
+      "NHS",
+      "60 °C and hot tumble drying for at least 30 minutes"
+     ],
+     [
+      "Washing",
+      "University of Kentucky",
+      "at least 120 °F (49 °C)"
+     ],
+     [
+      "Dryer",
+      "La Rioja",
+      "above 40 °C for at least 30 minutes"
+     ],
+     [
+      "Dryer",
+      "Zaragoza",
+      "highest temperature, 30 minutes"
+     ],
+     [
+      "Freezer",
+      "La Rioja",
+      "−17.8 °C for at least 3.5 days"
+     ],
+     [
+      "Freezer",
+      "Zaragoza",
+      "−18 °C for 10 hours (2.5 kg of clothing)"
+     ]
+    ]
+   },
+   {
+    "type": "infographic",
+    "id": "IG-11"
+   },
+   {
+    "type": "text",
+    "id": "technician-instructions",
+    "h2": "What your technician will tell you",
+    "html": "<p>The EPA notes that preparation is the same for DIY and professional treatment, but each method has its own specific instructions. At Control de Chinches we explain how to prepare the affected areas before treatment; see also <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do afterwards</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Protecting Your Home from Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/protecting-your-home-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bedbugs",
+    "publisher": "NHS (England)",
+    "year": "2026",
+    "url": "https://www.nhs.uk/conditions/bedbugs/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (ENTFACT-636)",
+    "publisher": "University of Kentucky Entomology",
+    "year": "",
+    "url": "https://entomology.mgcafe.uky.edu/ef636",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: How to Protect Yourself and Your Home (ENTO-31NP)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "2024 (reviewed)",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-31/ENTO-31.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

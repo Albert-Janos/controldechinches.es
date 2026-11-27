@@ -30,6 +30,9 @@
     dlg.addEventListener('close', () => opener?.focus());
   }
 
+  // ---------- print button (document forms) ----------
+  document.querySelectorAll('[data-print]').forEach(b => b.addEventListener('click', () => window.print()));
+
   // ---------- identifier tool ----------
   document.querySelectorAll('[data-tool-root]').forEach(root => {
     const form = root.querySelector('[data-tool]'), result = form.querySelector('.sx-tool-result');

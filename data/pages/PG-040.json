@@ -1,0 +1,250 @@
+{
+ "id": "PG-040",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "hub",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-070",
+  "PG-071",
+  "PG-030"
+ ],
+ "_blocked": [
+  "articles are drafts awaiting professional review (EDITORIAL-POLICY)",
+  "IMG-GUIDE-01"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Reconocer las chinches",
+      "items": [
+       {
+        "pageId": "PG-041"
+       },
+       {
+        "pageId": "PG-042"
+       },
+       {
+        "pageId": "PG-043"
+       },
+       {
+        "pageId": "PG-044"
+       },
+       {
+        "pageId": "PG-045"
+       }
+      ]
+     },
+     {
+      "h2": "Propagación y prevención",
+      "items": [
+       {
+        "pageId": "PG-047"
+       },
+       {
+        "pageId": "PG-048"
+       },
+       {
+        "pageId": "PG-059"
+       },
+       {
+        "pageId": "PG-060"
+       }
+      ]
+     },
+     {
+      "h2": "Tratamiento",
+      "items": [
+       {
+        "pageId": "PG-049"
+       },
+       {
+        "pageId": "PG-050"
+       },
+       {
+        "pageId": "PG-051"
+       },
+       {
+        "pageId": "PG-052"
+       },
+       {
+        "pageId": "PG-053"
+       },
+       {
+        "pageId": "PG-054"
+       }
+      ]
+     },
+     {
+      "h2": "Antes y después del tratamiento",
+      "items": [
+       {
+        "pageId": "PG-055"
+       },
+       {
+        "pageId": "PG-056"
+       },
+       {
+        "pageId": "PG-058"
+       }
+      ]
+     },
+     {
+      "h2": "Alojamientos",
+      "items": [
+       {
+        "pageId": "PG-061"
+       },
+       {
+        "pageId": "PG-062"
+       }
+      ]
+     },
+     {
+      "h2": "Herramientas",
+      "items": [
+       {
+        "pageId": "PG-070",
+        "text": "Fotos para identificar huevos, ninfas, mudas y rastros."
+       },
+       {
+        "pageId": "PG-071",
+        "text": "Preguntas guiadas para orientar los siguientes pasos."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/guia-chinches/",
+  "title": "Guía de chinches de cama: identificar, tratar y prevenir",
+  "description": "Guía con fuentes verificables: cómo reconocer las chinches de cama, dónde se esconden, cómo se propagan, qué opciones de tratamiento existen y cómo prepararse.",
+  "h1": "Guía de chinches de cama",
+  "eyebrow": "Guía",
+  "lead": "Artículos con fuentes oficiales y científicas, agrupados por tema."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "hub",
+    "groups": [
+     {
+      "h2": "Recognising bed bugs",
+      "items": [
+       {
+        "pageId": "PG-041"
+       },
+       {
+        "pageId": "PG-042"
+       },
+       {
+        "pageId": "PG-043"
+       },
+       {
+        "pageId": "PG-044"
+       },
+       {
+        "pageId": "PG-045"
+       }
+      ]
+     },
+     {
+      "h2": "Spread and prevention",
+      "items": [
+       {
+        "pageId": "PG-047"
+       },
+       {
+        "pageId": "PG-048"
+       },
+       {
+        "pageId": "PG-059"
+       },
+       {
+        "pageId": "PG-060"
+       }
+      ]
+     },
+     {
+      "h2": "Treatment",
+      "items": [
+       {
+        "pageId": "PG-049"
+       },
+       {
+        "pageId": "PG-050"
+       },
+       {
+        "pageId": "PG-051"
+       },
+       {
+        "pageId": "PG-052"
+       },
+       {
+        "pageId": "PG-053"
+       },
+       {
+        "pageId": "PG-054"
+       }
+      ]
+     },
+     {
+      "h2": "Before and after treatment",
+      "items": [
+       {
+        "pageId": "PG-055"
+       },
+       {
+        "pageId": "PG-056"
+       },
+       {
+        "pageId": "PG-058"
+       }
+      ]
+     },
+     {
+      "h2": "Accommodation",
+      "items": [
+       {
+        "pageId": "PG-061"
+       },
+       {
+        "pageId": "PG-062"
+       }
+      ]
+     },
+     {
+      "h2": "Tools",
+      "items": [
+       {
+        "pageId": "PG-070",
+        "text": "Photos to identify eggs, nymphs, moults and traces."
+       },
+       {
+        "pageId": "PG-071",
+        "text": "Guided questions to orient your next steps."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/bed-bug-guide/",
+  "title": "Bed bug guide: identify, treat and prevent",
+  "description": "A guide with verifiable sources: how to recognise bed bugs, where they hide, how they spread, treatment options and how to prepare.",
+  "h1": "Bed bug guide",
+  "eyebrow": "Guide",
+  "lead": "Articles with official and scientific sources, grouped by topic."
+ }
+}

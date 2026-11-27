@@ -1,0 +1,191 @@
+{
+ "id": "PG-051",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-049",
+  "PG-053"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/remedios-caseros-chinches-mitos/",
+  "title": "Remedios caseros contra chinches: qué dicen las fuentes",
+  "description": "Nebulizadores, alcohol, queroseno y otros remedios caseros: qué advierten las autoridades y los estudios sobre su eficacia y sus riesgos.",
+  "h1": "Remedios caseros contra chinches: mitos y realidad",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las fuentes oficiales desaconsejan los remedios caseros y los insecticidas domésticos como solución única: suelen ser ineficaces, pueden dispersar a las chinches y algunos son peligrosos.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "remedios caseros chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "nebulizadores",
+    "h2": "Nebulizadores («bombas de humo»)",
+    "html": "<p>La EPA indica que no deben usarse como único medio de control, que el insecticida debe entrar en contacto con la chinche para matarla, que no todos están autorizados contra chinches y que usar más producto no es mejor y puede causar una explosión. Un estudio de la Universidad Estatal de Ohio, recogido por Rutgers, los consideró ineficaces.</p>"
+   },
+   {
+    "type": "text",
+    "id": "productos-peligrosos",
+    "h2": "Productos peligrosos o poco recomendables",
+    "html": "<p>La EPA señala que el alcohol, el queroseno y la gasolina son peligrosos, que las trampas adhesivas no sirven para chinches y que no debe usarse tierra de diatomeas de piscina. Las guías de salud pública de La Rioja y Zaragoza no recomiendan los insecticidas domésticos, y Zaragoza advierte de no aplicar nunca insecticida sobre la piel ni sobre colchones o ropa, ni donde haya niños o mascotas.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "que-si",
+    "h2": "Qué sí hacer",
+    "html": "<p>Inspeccionar, reducir refugios, lavar y secar a alta temperatura, proteger el colchón con fundas y consultar a un profesional cuando el caso lo requiera: consulta <a href=\"/guia-chinches/como-eliminar-chinches-de-cama/\">cómo eliminar chinches de cama</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Safety Issues in Controlling Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/bed-bug-home-remedies-myths/",
+  "title": "Bed bug home remedies: what the sources say",
+  "description": "Foggers, rubbing alcohol, kerosene and other home remedies: what authorities and studies say about their effectiveness and risks.",
+  "h1": "Bed bug home remedies: myths and facts",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "Official sources advise against home remedies and household insecticides as the only solution: they are usually ineffective, can scatter bed bugs and some are dangerous.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "bed bug home remedies",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "foggers",
+    "h2": "Foggers (“bug bombs”)",
+    "html": "<p>The EPA says they should not be used as the sole means of control, that the pesticide must contact the bug to kill it, that not all are labelled for bed bugs and that more product is not better and could cause an explosion. An Ohio State study, cited by Rutgers, found them ineffective.</p>"
+   },
+   {
+    "type": "text",
+    "id": "dangerous-products",
+    "h2": "Dangerous or unadvisable products",
+    "html": "<p>The EPA notes that rubbing alcohol, kerosene and gasoline are dangerous, that sticky traps are not for bed bugs and that pool diatomaceous earth should not be used. The La Rioja and Zaragoza public-health guides do not recommend household insecticides, and Zaragoza warns never to apply insecticide to skin or to mattresses or clothing, or where children or pets are present.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "what-works",
+    "h2": "What to do instead",
+    "html": "<p>Inspect, reduce hiding places, wash and dry at high temperature, protect the mattress with encasements and consult a professional when the case requires it: see <a href=\"/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/\">how to get rid of bed bugs</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Should I Use a Fogger?",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Do-it-yourself Bed Bug Control",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Safety Issues in Controlling Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+    "publisher": "Rutgers Cooperative Extension",
+    "year": "2019",
+    "url": "https://extension.rutgers.edu/fs1251/",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

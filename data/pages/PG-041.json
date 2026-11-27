@@ -1,0 +1,226 @@
+{
+ "id": "PG-041",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-042",
+  "PG-044",
+  "PG-045",
+  "PG-070",
+  "PG-071"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/como-saber-si-tengo-chinches/",
+  "title": "¿Cómo saber si tengo chinches de cama? Señales",
+  "description": "Qué buscar y dónde: ejemplares vivos, huevos, mudas y manchas oscuras en las costuras del colchón. Las picaduras por sí solas no confirman nada.",
+  "h1": "¿Cómo saber si tengo chinches de cama?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Los indicios más claros son ejemplares vivos, huevos, mudas y manchas oscuras en las costuras del colchón o del somier. Las picaduras por sí solas no permiten confirmar que haya chinches.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": null,
+  "primaryKeyword": "como saber si tengo chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-buscar",
+    "h2": "Qué buscar",
+    "html": "<ul><li><strong>Manchas rojizas u óxido</strong> en sábanas o colchón, que pueden deberse a chinches aplastadas.</li><li><strong>Puntos oscuros</strong> (excrementos) que pueden correrse sobre la tela como un rotulador.</li><li><strong>Huevos</strong> de aproximadamente 1 mm, blanco perlado, y sus cáscaras.</li><li><strong>Mudas</strong> (pieles) de color amarillo pálido.</li><li><strong>Ejemplares vivos</strong>: los adultos miden unos 5–7 mm; las ninfas son translúcidas o amarillentas y, si no se han alimentado, casi invisibles.</li></ul><p>Algunas fuentes mencionan además un olor dulzón o a humedad cuando la infestación es grande. Las guías de salud pública de La Rioja y Zaragoza coinciden en estos indicios y recomiendan buscar con linterna y, si es posible, con una lupa.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-INS-01"
+   },
+   {
+    "type": "text",
+    "id": "donde-mirar",
+    "h2": "Dónde mirar",
+    "html": "<p>Empieza por el colchón y el somier: costuras, ribetes y etiquetas, y las grietas del armazón y del cabecero. En infestaciones intensas también pueden aparecer en costuras de sofás, pliegues de cortinas, uniones de cajones y enchufes. Para más detalle, consulta <a href=\"/guia-chinches/donde-se-esconden-las-chinches/\">dónde se esconden las chinches</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "confusiones",
+    "h2": "Cuidado con las confusiones",
+    "html": "<p>Algunos insectos, como los escarabajos de alfombra, se confunden fácilmente con las chinches. Si no estás seguro, haz fotos nítidas (con algo que dé escala) y compáralas con nuestro <a href=\"/atlas-chinches/\">atlas fotográfico</a> o prueba el <a href=\"/identificador-chinches/\">identificador</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-08"
+   }
+  ],
+  "faq": [
+   {
+    "q": "¿Puedo saberlo solo por las picaduras?",
+    "a": "No. Las picaduras se parecen a las de otros insectos o a erupciones cutáneas y no todo el mundo reacciona. Busca otros indicios; consulta <a href=\"/guia-chinches/picaduras-de-chinches/\">picaduras de chinches</a>."
+   }
+  ],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Introduction to Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/introduction-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Xinxes de llit. Com protegir-nos? (tríptico)",
+    "publisher": "Generalitat Valenciana, Conselleria de Sanitat, Salut Pública",
+    "year": "",
+    "url": "https://www.san.gva.es/documents/d/salut-publica/chinches-de-cama_folleto_val",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/",
+  "title": "How to tell if you have bed bugs: signs | Control de Chinches",
+  "description": "What to look for and where: live insects, eggs, shed skins and dark spots on mattress seams. Bites alone do not confirm anything.",
+  "h1": "How to tell if you have bed bugs",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "The clearest signs are live bugs, eggs, shed skins and dark spots on the seams of the mattress or bed frame. Bites alone cannot confirm that you have bed bugs.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": "IMG-INS-01",
+  "reviewer": null,
+  "primaryKeyword": "how to tell if you have bed bugs",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-to-look-for",
+    "h2": "What to look for",
+    "html": "<ul><li><strong>Rusty or reddish stains</strong> on sheets or the mattress, which can come from crushed bugs.</li><li><strong>Dark spots</strong> (excrement) that can bleed into the fabric like a marker.</li><li><strong>Eggs</strong>, about 1 mm and pearl-white, and eggshells.</li><li><strong>Shed skins</strong>, pale yellow.</li><li><strong>Live bugs</strong>: adults are about 5–7 mm; nymphs are translucent or yellowish and almost invisible if unfed.</li></ul><p>Some sources also mention a sweet, musty smell in larger infestations. Spanish public-health guides (La Rioja, Zaragoza) list the same signs and advise searching with a torch and, if possible, a magnifier.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-INS-01"
+   },
+   {
+    "type": "text",
+    "id": "where-to-look",
+    "h2": "Where to look",
+    "html": "<p>Start with the mattress and bed frame: seams, piping and tags, and cracks in the frame and headboard. In heavy infestations bed bugs can also turn up in sofa seams, curtain folds, drawer joints and electrical sockets. See <a href=\"/en/bed-bug-guide/where-bed-bugs-hide/\">where bed bugs hide</a> for more.</p>"
+   },
+   {
+    "type": "text",
+    "id": "mix-ups",
+    "h2": "Beware of mix-ups",
+    "html": "<p>Other insects, such as carpet beetles, are easily mistaken for bed bugs. If you are not sure, take sharp photos (with something for scale) and compare them with our <a href=\"/en/bed-bug-atlas/\">photo atlas</a> or try the <a href=\"/en/bed-bug-identifier/\">identifier</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-08"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can I tell from bites alone?",
+    "a": "No. Bites resemble those of other insects or skin rashes and not everyone reacts. Look for other signs; see <a href=\"/en/bed-bug-guide/bed-bug-bites/\">bed bug bites</a>."
+   }
+  ],
+  "sources": [
+   {
+    "title": "How to Find Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/how-find-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "About Bed Bugs",
+    "publisher": "CDC",
+    "year": "2024",
+    "url": "https://www.cdc.gov/bed-bugs/about/index.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Introduction to Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/introduction-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Xinxes de llit. Com protegir-nos? (tríptico)",
+    "publisher": "Generalitat Valenciana, Conselleria de Sanitat, Salut Pública",
+    "year": "",
+    "url": "https://www.san.gva.es/documents/d/salut-publica/chinches-de-cama_folleto_val",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}

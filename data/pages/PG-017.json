@@ -1,0 +1,99 @@
+{
+ "id": "PG-017",
+ "template": "T-H",
+ "status": "Draft",
+ "dataPage": "about",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-016",
+  "PG-040"
+ ],
+ "_blocked": [
+  "reviewer arrangement (OWNER-INPUT #20)",
+  "owner approval of policy wording"
+ ],
+ "es": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "fuentes",
+    "h2": "Fuentes",
+    "html": "<p>Los contenidos se basan en documentos de autoridades sanitarias, organismos públicos, universidades y publicaciones científicas, y no en páginas comerciales. Cada artículo incluye su lista de fuentes con la fecha de comprobación.</p>"
+   },
+   {
+    "type": "text",
+    "id": "autoria-y-revision",
+    "h2": "Autoría y revisión",
+    "html": "<p>Cada contenido indica quién lo ha elaborado y quién lo ha revisado, solo cuando esa revisión se ha realizado de verdad. Los borradores no se publican hasta superar la revisión profesional.</p>"
+   },
+   {
+    "type": "text",
+    "id": "actualizacion",
+    "h2": "Actualización y correcciones",
+    "html": "<p>La fecha de actualización solo cambia cuando cambia el contenido. Si detectamos un error, lo corregimos y lo indicamos al final del artículo.</p>"
+   },
+   {
+    "type": "text",
+    "id": "imagenes",
+    "h2": "Imágenes",
+    "html": "<p>Usamos fotografías propias. Cuando una imagen es una ilustración o una demostración, se indica. No presentamos imágenes generadas como trabajos reales.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #20: confirma si habrá un revisor externo y cómo se citará; aprueba el texto de esta política."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/politica-editorial/",
+  "title": "Política editorial | Control de Chinches",
+  "description": "Cómo elegimos las fuentes, quién escribe y revisa, cómo actualizamos y corregimos los contenidos sobre chinches de cama.",
+  "h1": "Política editorial",
+  "eyebrow": "Transparencia",
+  "lead": "Cómo se elaboran, revisan y actualizan los contenidos de esta web."
+ },
+ "en": {
+  "blocks": [
+   {
+    "type": "text",
+    "id": "sources",
+    "h2": "Sources",
+    "html": "<p>Content is based on documents from health authorities, public bodies, universities and scientific publications rather than commercial pages. Each article lists its sources with the date they were checked.</p>"
+   },
+   {
+    "type": "text",
+    "id": "authorship-and-review",
+    "h2": "Authorship and review",
+    "html": "<p>Each piece states who prepared it and who reviewed it, only when that review has really taken place. Drafts are not published until they pass professional review.</p>"
+   },
+   {
+    "type": "text",
+    "id": "updates",
+    "h2": "Updates and corrections",
+    "html": "<p>The update date changes only when the content changes. If we find an error we correct it and note it at the end of the article.</p>"
+   },
+   {
+    "type": "text",
+    "id": "images",
+    "h2": "Images",
+    "html": "<p>We use our own photographs. When an image is an illustration or a demonstration, it is labelled. We do not present generated images as real jobs.</p>"
+   },
+   {
+    "type": "todo",
+    "text": "OWNER-INPUT #20: confirm whether an external reviewer will be used and how they will be credited; approve this policy wording."
+   }
+  ],
+  "faq": [],
+  "sources": [],
+  "breadcrumb": [],
+  "url": "/en/editorial-policy/",
+  "title": "Editorial policy | Control de Chinches",
+  "description": "How we choose sources, who writes and reviews, and how we update and correct our content about bed bugs.",
+  "h1": "Editorial policy",
+  "eyebrow": "Transparency",
+  "lead": "How the content on this website is produced, reviewed and updated."
+ }
+}

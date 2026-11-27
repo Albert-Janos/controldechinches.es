@@ -1,0 +1,191 @@
+{
+ "id": "PG-054",
+ "template": "T-C",
+ "status": "Draft",
+ "dataPage": "article",
+ "cta": {
+  "message": "default"
+ },
+ "related": [
+  "PG-053",
+  "PG-056"
+ ],
+ "_blocked": [
+  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
+  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
+  "photos/infographics listed in PAGE-IMAGE-MAP",
+  "LGL-01 not required for informational articles; owner approval required"
+ ],
+ "es": {
+  "url": "/guia-chinches/cuantos-tratamientos-chinches/",
+  "title": "¿Cuántos tratamientos hacen falta contra las chinches?",
+  "description": "Qué dicen las fuentes sobre el número de tratamientos y el tiempo necesario: revisiones de seguimiento y resultados de estudios en edificios.",
+  "h1": "¿Cuántos tratamientos hacen falta contra las chinches?",
+  "eyebrow": "Guía · Chinches de cama",
+  "answer": "Las fuentes consultadas no fijan un número de tratamientos: dependen del caso. Sí coinciden en que hace falta seguimiento: una nueva inspección a los 10–21 días y, si procede, repetir el tratamiento.",
+  "breadcrumb": [
+   [
+    "Guía",
+    "/guia-chinches/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "cuantos tratamientos chinches",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "que-indican-las-fuentes",
+    "h2": "Qué indican las fuentes",
+    "html": "<ul><li>La EPA: no hay una solución rápida.</li><li>Zaragoza: nueva inspección a los 10–15 días y, si es necesario, una tercera visita 10–15 días después.</li><li>Purdue: al menos una inspección de seguimiento entre 10 y 21 días tras cada actuación.</li><li>La Rioja: los tratamientos se combinan y se repiten debido a la larga duración del ciclo biológico.</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "estudios",
+    "h2": "Lo que midieron dos estudios en edificios",
+    "html": "<p>En un estudio de 16 apartamentos durante 10 semanas con dos programas de control integrado, se eliminaron las chinches del 50 % de los apartamentos en cada grupo (Wang et al. 2009). En otro estudio de 10 semanas en un edificio de viviendas, las chinches desaparecieron del 67 % de los apartamentos con métodos no químicos, del 33 % con solo insecticidas y del 44 % con control integrado, sin diferencias significativas entre estrategias; la cooperación limitada de los residentes explicó en parte la persistencia (Wang et al. 2012).</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "en-la-practica",
+    "h2": "En la práctica",
+    "html": "<p>El número de intervenciones depende del alcance, de las zonas afectadas y de lo que se observe después. Consulta <a href=\"/precios.html\">precios</a> y <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Getting Rid of Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Evaluation of two least toxic IPM programs for managing bed bugs, with discussion of a bed bug intercepting device (Wang C, Gibb T, Bennett GW). J Med Entomol 46(3):566-571",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1603/033.046.0322",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Comparison of three bed bug management strategies in a low-income apartment building (Wang C, Saltzmann K, Bennett G, Gibb T). Insects 3(2):402-409",
+    "publisher": "Insects",
+    "year": "2012",
+    "url": "https://doi.org/10.3390/insects3020402",
+    "checked": "2026-11-27"
+   }
+  ]
+ },
+ "en": {
+  "url": "/en/bed-bug-guide/how-many-treatments-bed-bugs/",
+  "title": "How many treatments do bed bugs need? | Control de Chinches",
+  "description": "What sources say about the number of treatments and the time needed: follow-up inspections and results of studies in buildings.",
+  "h1": "How many treatments do bed bugs need?",
+  "eyebrow": "Guide · Bed bugs",
+  "answer": "The sources consulted do not set a number of treatments: it depends on the case. They do agree that follow-up is needed: a new inspection after 10–21 days and, where appropriate, repeating the treatment.",
+  "breadcrumb": [
+   [
+    "Guide",
+    "/en/bed-bug-guide/"
+   ]
+  ],
+  "heroImage": null,
+  "reviewer": null,
+  "primaryKeyword": "how many treatments bed bugs",
+  "blocks": [
+   {
+    "type": "text",
+    "id": "what-the-sources-say",
+    "h2": "What the sources say",
+    "html": "<ul><li>The EPA: there is no quick fix.</li><li>Zaragoza: a new inspection after 10–15 days and, if needed, a third visit 10–15 days later.</li><li>Purdue: at least one follow-up inspection 10–21 days after each treatment.</li><li>La Rioja: treatments are combined and repeated because of the long life cycle.</li></ul>"
+   },
+   {
+    "type": "text",
+    "id": "studies",
+    "h2": "What two building studies measured",
+    "html": "<p>In a study of 16 apartments over 10 weeks with two integrated programmes, bed bugs were eliminated from 50% of the apartments in each group (Wang et al. 2009). In another 10-week study in an apartment building, bed bugs were eliminated from 67% of apartments with non-chemical methods, 33% with insecticides only and 44% with integrated control, with no significant difference between strategies; limited resident cooperation partly explained persistence (Wang et al. 2012).</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-15"
+   },
+   {
+    "type": "text",
+    "id": "in-practice",
+    "h2": "In practice",
+    "html": "<p>The number of visits depends on the extent, the areas affected and what is observed afterwards. See <a href=\"/en/prices.html\">prices</a> and <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do afterwards</a>.</p>"
+   }
+  ],
+  "faq": [],
+  "sources": [
+   {
+    "title": "Getting Rid of Bed Bugs",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs: Informational Guide to Bed Bugs",
+    "publisher": "Purdue Entomology",
+    "year": "",
+    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Evaluation of two least toxic IPM programs for managing bed bugs, with discussion of a bed bug intercepting device (Wang C, Gibb T, Bennett GW). J Med Entomol 46(3):566-571",
+    "publisher": "Journal of Medical Entomology",
+    "year": "2009",
+    "url": "https://doi.org/10.1603/033.046.0322",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Comparison of three bed bug management strategies in a low-income apartment building (Wang C, Saltzmann K, Bennett G, Gibb T). Insects 3(2):402-409",
+    "publisher": "Insects",
+    "year": "2012",
+    "url": "https://doi.org/10.3390/insects3020402",
+    "checked": "2026-11-27"
+   }
+  ]
+ }
+}
