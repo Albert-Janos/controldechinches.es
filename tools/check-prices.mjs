@@ -3,18 +3,16 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { execFileSync } from 'node:child_process';
+import { pricesJs } from './build-prices.mjs';
 
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const p = JSON.parse(readFileSync(join(root, 'data/prices.json'), 'utf8'));
 const errors = [];
 const err = m => errors.push(m);
 
-// 1) generated JS is up to date
-const before = readFileSync(join(root, 'js/prices.js'), 'utf8');
-execFileSync(process.execPath, [join(root, 'tools/build-prices.mjs')], { stdio: 'ignore' });
-const after = readFileSync(join(root, 'js/prices.js'), 'utf8');
-if (before !== after) err('js/prices.js was out of date (regenerated now) - commit the new file');
+// 1) generated JS is up to date (READ-ONLY: rendered in memory and compared, line endings ignored; nothing is written)
+const onDisk = readFileSync(join(root, 'js/prices.js'), 'utf8').split(String.fromCharCode(13, 10)).join(String.fromCharCode(10));
+if (onDisk !== pricesJs(p)) err('js/prices.js is out of date - run: node tools/build-prices.mjs');
 
 // 2) public HTML pages
 const skip = new Set(['.git', 'docs', 'tools', 'data', 'raw-images', 'node_modules', 'reports', '.claude', 'tests']);

@@ -43,3 +43,6 @@ Idegen cégek fotóit; internetről letöltött képet; AI-val generált/módos�
 
 ## F. Átadás és visszajelzés
 Tölts fel mappánként (`P0/`, `P1/…`); a `FOTO_JEGYZET.csv`-ben (azonosító, dátum, hely, megjegyzés, hozzájárulás van/nincs) rögzítsd az adatokat. A jegyzet nélküli kép nem kerül be.
+
+## G. Képhasználati pontosítás (1. javítási csomag)
+A hero- és a törzsbeli kép külön képazonosító (új azonosító nem kellett: a PAGE-IMAGE-MAP-ben már tervezett eszközöket használjuk): **PG-012** törzs: `IMG-INS-02` (somier illesztései), hero: `IMG-INS-01` · **PG-014** törzs: `IMG-CHEM-05` (somier kezelése), hero: `IMG-CHEM-04` · **PG-041** törzs: `IMG-ENT-EXC-01` (ürülék a varratban), hero: `IMG-INS-01` · **PG-047** csak hero (`IMG-PREV-01`). Az **IMG-INS-02, IMG-CHEM-05 és IMG-ENT-EXC-01 P1 fotókra** ezért ezeken az oldalakon is szükség van. A makrók kivágás nélkül jelennek meg, az álló portré (`IMG-ABOUT-02`) kompakt (kb. 300 px) méretben kerül az oldalra.

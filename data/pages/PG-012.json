@@ -23,11 +23,11 @@
     "type": "text",
     "id": "que-revisamos",
     "h2": "Qué se revisa",
-    "html": "<p>La inspección se centra en las costuras del colchón, el somier, el cabecero y el entorno de la cama, además de otras zonas donde puedan esconderse. Con lo que se encuentra se valora el alcance y se recomienda el método adecuado.</p>"
+    "html": "<p>La inspección se centra en las costuras del colchón, el somier, el cabecero y el entorno de la cama, además de otras zonas donde puedan esconderse. Con lo que se encuentra se valora el alcance y se recomienda el método adecuado.</p><p>Las picaduras por sí solas no permiten confirmar que haya chinches, y una revisión sin hallazgos tampoco descarta por completo una infestación. Qué indicios buscar (huevos, manchas oscuras, mudas) se explica en <a href=\"/guia-chinches/como-saber-si-tengo-chinches/\">cómo saber si tengo chinches</a>.</p>"
    },
    {
     "type": "figure",
-    "image": "IMG-INS-01"
+    "image": "IMG-INS-02"
    },
    {
     "type": "todo",
@@ -53,7 +53,7 @@
   "faq": [
    {
     "q": "¿Puedo saber si tengo chinches solo por las picaduras?",
-    "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches; hay que buscar otros indicios, como las manchas oscuras en las costuras del colchón o ejemplares vivos."
+    "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches, y una revisión sin hallazgos tampoco descarta por completo una infestación. La guía de identificación explica qué indicios buscar."
    }
   ],
   "sources": [],
@@ -77,11 +77,11 @@
     "type": "text",
     "id": "what-we-check",
     "h2": "What is checked",
-    "html": "<p>The inspection focuses on mattress seams, the bed frame, the headboard and the area around the bed, plus other places where bed bugs may hide. What is found determines the extent of the problem and the recommended method.</p>"
+    "html": "<p>The inspection focuses on mattress seams, the bed frame, the headboard and the area around the bed, plus other places where bed bugs may hide. What is found determines the extent of the problem and the recommended method.</p><p>Bites alone cannot confirm that you have bed bugs, and an inspection that finds nothing does not completely rule out an infestation either. Which signs to look for (eggs, dark spots, moults) is explained in <a href=\"/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/\">how to know if you have bed bugs</a>.</p>"
    },
    {
     "type": "figure",
-    "image": "IMG-INS-01"
+    "image": "IMG-INS-02"
    },
    {
     "type": "todo",
@@ -107,7 +107,7 @@
   "faq": [
    {
     "q": "Can I tell if I have bed bugs from bites alone?",
-    "a": "No. Bites alone cannot confirm that you have bed bugs; you need to look for other signs, such as dark spots on the mattress seams or live insects."
+    "a": "No. Bites alone cannot confirm that you have bed bugs, and an inspection that finds nothing does not completely rule out an infestation either. The identification guide explains which signs to look for."
    }
   ],
   "sources": [],

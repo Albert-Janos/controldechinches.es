@@ -6,9 +6,27 @@ export const slug = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-�
 
 export function pageUrl(ctx, id, lang = ctx.lang) { return ctx.pages[id]?.[lang]?.url ?? null; }
 export function absUrl(ctx, path) { return ctx.site.domain + path; }
-export function waLink(ctx, key = 'default') {
-  const msg = ctx.whatsapp[key]?.[ctx.lang] ?? ctx.whatsapp.default[ctx.lang];
-  return `https://wa.me/${ctx.site.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+// Owner decision (audit fix pack 1): WhatsApp links on generated pages carry NO pre-filled message. The page.cta.message key is
+// kept only as an inert hook so a future decision can reintroduce per-page messages in this one place.
+export function waLink(ctx) { return `https://wa.me/${ctx.site.whatsappNumber}`; }
+
+// ---------- publication-aware linking ----------
+// A link is "dead" when it points at a generated page that is not part of the current build (e.g. still Draft in a production build).
+export function targetPage(ctx, href) {
+  const path = String(href || '').replace(ctx.site.domain, '').split('#')[0].split('?')[0];
+  return ctx.urlIndex?.[path] ?? null;
+}
+export const isLive = (ctx, href) => { const id = targetPage(ctx, href); return !id || ctx.included.has(id); };
+// Safety net for links written inside HTML strings (prose, FAQ answers, steps...): keep the words, drop the anchor.
+export function unlinkDead(ctx, html) {
+  return html.replace(/<a\b([^>]*?)\shref="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g, (m, a, href, b, inner) => (isLive(ctx, href) ? m : inner));
+}
+// Audit helper (production build gate + partial-publication test): every reference to a generated page that is not built.
+export function deadLinks(ctx, html) {
+  const out = new Set(), check = u => { const id = targetPage(ctx, u); if (id && !ctx.included.has(id)) out.add(u); };
+  for (const m of html.matchAll(/\shref="([^"]+)"/g)) check(m[1]);
+  for (const m of html.matchAll(/"(?:item|url|@id|contentUrl)":"([^"]+)"/g)) check(m[1]);
+  return [...out];
 }
 
 const symbols = `<svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><symbol id="icon-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.8-.2-.3 0-.5.1-.6.2-.3.5-.5.6-.9.1-.2 0-.4 0-.5l-.9-2.1c-.1-.4-.3-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.7 1.2 2.9c.2.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.3-.6.3-1.1.2-1.2-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.9.9-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol><symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 2a13 13 0 0 1-7-7l2-2-2-5Z"/></symbol><symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol></svg>`;
@@ -81,7 +99,7 @@ export function footer(ctx) {
 // ---------- small parts ----------
 export function breadcrumb(ctx) {
   const { ui, lang, page } = ctx, L = page[lang];
-  const trail = [[ui.home, lang === 'es' ? '/' : '/en/'], ...(L.breadcrumb || []), [L.h1, null]];
+  const trail = [[ui.home, lang === 'es' ? '/' : '/en/'], ...(L.breadcrumb || []).filter(([, u]) => isLive(ctx, u)), [L.h1, null]];
   return { items: trail, html: `<nav class="sx-crumbs sx-wrap" aria-label="${esc(ui.breadcrumb)}"><ol>${trail.map(([t, u]) => u ? `<li><a href="${u}">${esc(t)}</a></li>` : `<li aria-current="page">${esc(t)}</li>`).join('')}</ol></nav>` };
 }
 export function button(ctx, kind, label, key = 'default', pos = 'content') {
@@ -110,9 +128,26 @@ export function picture(ctx, id, { sizes = '(min-width: 990px) 46rem, 100vw', ea
   const mob = v.mobile ? ['avif', 'webp'].filter(f => v.formats.includes(f)).map(f => `<source media="(max-width: 760px)" type="image/${f}" srcset="${v.mobile.widths.map(w => `${v.dir}${v.base}-m-${w}.${f} ${w}w`).join(', ')}" sizes="100vw">`).join('') : '';
   return `<picture>${mob}${v.formats.includes('avif') ? `<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">` : ''}<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}"><img${cls ? ` class="${cls}"` : ''} src="${src(big, 'webp')}" srcset="${set('webp')}" sizes="${sizes}" width="${v.width}" height="${v.height}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}></picture>`;
 }
+// Image sizing classes (see docs/seo/VISUAL-DESIGN-SYSTEM.md "Image sizing"): the KIND decides the display size, never the viewport alone.
+//   hero         page-top image of an article          max 54rem  (864 px)
+//   photo        ordinary landscape body photo          max 46rem  (736 px)
+//   macro        entomology macro photo (never cropped) max 40rem  (640 px)
+//   portrait     vertical portrait                      max 19rem  (304 px; 15rem on phones), sits beside text where possible
+//   illustration infographic / diagram                  max 46rem
+// The natural aspect ratio is always kept (placeholders use the manifest aspect, real images their width/height attributes).
+export function imgKind(ctx, id, usage = 'body') {
+  const e = ctx.images[id]; if (!e) return 'photo';
+  if (e.kind === 'infographic') return 'illustration';
+  const [w, h] = e.aspect || [3, 2];
+  if (h > w) return 'portrait';
+  if (usage === 'hero') return 'hero';
+  if (/^entomology/.test(e.folder || '')) return 'macro';
+  return 'photo';
+}
+const SIZES = { hero: '(min-width: 990px) 54rem, 100vw', photo: '(min-width: 990px) 46rem, 100vw', macro: '(min-width: 990px) 40rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', illustration: '(min-width: 990px) 46rem, 100vw' };
 export function figure(ctx, id, opts = {}) {
-  const cap = ctx.images[id]?.caption?.[ctx.lang];
-  return `<figure class="sx-figure">${picture(ctx, id, opts)}${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`;
+  const kind = opts.kind || imgKind(ctx, id, opts.usage), cap = ctx.images[id]?.caption?.[ctx.lang];
+  return `<figure class="sx-figure sx-figure--${kind}">${picture(ctx, id, { ...opts, sizes: opts.sizes || SIZES[kind] })}${cap ? `<figcaption>${esc(cap)}</figcaption>` : ''}</figure>`;
 }
 
 // ---------- blocks ----------
@@ -130,14 +165,16 @@ export function renderBlock(ctx, b, i) {
     case 'proscons': return `<section class="sx-block">${heading(b, id)}<div class="sx-proscons"><div class="sx-pros"><h3>${esc(b.prosTitle || ui.prosTitle)}</h3><ul>${b.pros.map(x => `<li>${x}</li>`).join('')}</ul></div><div class="sx-cons"><h3>${esc(b.consTitle || ui.consTitle)}</h3><ul>${b.cons.map(x => `<li>${x}</li>`).join('')}</ul></div></div></section>`;
     case 'roles': return `<section class="sx-block">${heading(b, id)}<div class="sx-roles">${b.columns.map(c => `<div><h3>${esc(c.title)}</h3><ul>${c.items.map(x => `<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
     case 'table': return `<section class="sx-block">${heading(b, id)}<div class="sx-tablewrap" tabindex="0" role="region" aria-label="${esc(b.caption || b.h2 || '')}"><table class="sx-table">${b.caption ? `<caption>${esc(b.caption)}</caption>` : ''}<thead><tr>${b.head.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, j) => j === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
-    case 'figure': return `<section class="sx-block">${figure(ctx, b.image, { sizes: b.sizes })}</section>`;
-    case 'infographic': return `<section class="sx-block"><figure class="sx-figure">${ctx.infographics?.[b.id] ? ctx.infographics[b.id](ctx) : picture(ctx, b.id)}<figcaption>${esc(ctx.images[b.id]?.caption?.[lang] || ui.infographic)}</figcaption></figure></section>`;
-    case 'cards': return `<section class="sx-block">${heading(b, id)}<div class="sx-cards">${b.items.map(c => (c.href ? `<a class="sx-card" href="${c.href}">` : '<div class="sx-card">') + `<h3>${esc(c.title)}</h3><p>${esc(c.text)}</p>${c.href ? `<span class="sx-more">${esc(ui.readMore)} →</span>` : ''}` + (c.href ? '</a>' : '</div>')).join('')}</div></section>`;
+    case 'figure': return `<section class="sx-block">${figure(ctx, b.image, { sizes: b.sizes, kind: b.kind })}</section>`;
+    case 'infographic': return `<section class="sx-block"><figure class="sx-figure sx-figure--illustration">${ctx.infographics?.[b.id] ? ctx.infographics[b.id](ctx) : picture(ctx, b.id)}<figcaption>${esc(ctx.images[b.id]?.caption?.[lang] || ui.infographic)}</figcaption></figure></section>`;
+    case 'cards': return `<section class="sx-block">${heading(b, id)}<div class="sx-cards">${b.items.map(c => { const link = c.href && isLive(ctx, c.href); return (link ? `<a class="sx-card" href="${c.href}">` : '<div class="sx-card">') + `<h3>${esc(c.title)}</h3><p>${esc(c.text)}</p>${link ? `<span class="sx-more">${esc(ui.readMore)} →</span>` : ''}` + (link ? '</a>' : '</div>'); }).join('')}</div></section>`;
     case 'timeline': return `<section class="sx-block">${heading(b, id)}<ol class="sx-timeline">${b.items.map(t => `<li><strong>${esc(t.when)}</strong>${t.text}</li>`).join('')}</ol></section>`;
     case 'priceBox': {
       const p = ctx.prices, c = p.chemical.bedroomPrices[0], s = p.drySteamStandalone.from;
       const pr = lang === 'es' ? '/precios.html' : '/en/prices.html';
-      return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perBedroom)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(p.drySteamStandalone.note && lang === 'en' ? p.drySteamStandalone.note : (lang === 'es' ? 'El precio final depende de la valoración in situ.' : p.drySteamStandalone.note))}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+      if (b.variant === 'chemical') return priceTable(ctx, b, id, pr);
+      if (b.variant === 'steam') return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox sx-pricebox--steam"><div class="sx-price-primary"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+      return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
     }
     case 'docform': return docForm(ctx, b, id);
     case 'print': return '<p class="sx-noprint"><button type="button" class="button yellow" data-print>' + esc(b.label) + '</button></p>';
@@ -146,9 +183,19 @@ export function renderBlock(ctx, b, i) {
     case 'gallery': return galleryBlock(ctx, b, id);
     case 'docs': return `<section class="sx-block">${heading(b, id)}<ul class="sx-docs">${b.images.map(im => `<li><a href="${ctx.images[im]?.status === 'ready' ? `${ctx.images[im].variants.dir}${ctx.images[im].variants.base}-${ctx.images[im].variants.widths.at(-1)}.webp` : '#' + im}" data-lightbox="${im}">${picture(ctx, im, { sizes: '12rem' })}</a></li>`).join('')}</ul></section>`;
     case 'tool': return toolBlock(ctx, b, id);
-    case 'hub': return b.groups.map((g, gi) => `<section class="sx-block sx-hubgroup">${g.h2 ? `<h2 id="${slug(g.h2) || 'g' + gi}">${esc(g.h2)}</h2>` : ''}${g.intro ? `<p>${esc(g.intro)}</p>` : ''}<ul class="sx-hublist">${g.items.filter(it => !it.pageId || ctx.pages[it.pageId]).map(it => { const u = it.href || pageUrl(ctx, it.pageId); return `<li><a href="${u}"><strong>${esc(it.title || ctx.pages[it.pageId]?.[lang]?.h1)}</strong><span>${esc(it.text || '')}</span></a></li>`; }).join('')}</ul></section>`).join('');
+    case 'hub': return b.groups.map((g, gi) => { // entries whose target is not published are hidden (an unlinked list entry is useless); empty groups disappear
+      const items = g.items.filter(it => (it.pageId ? ctx.included.has(it.pageId) && pageUrl(ctx, it.pageId) : isLive(ctx, it.href)));
+      if (!items.length) return '';
+      return `<section class="sx-block sx-hubgroup">${g.h2 ? `<h2 id="${slug(g.h2) || 'g' + gi}">${esc(g.h2)}</h2>` : ''}${g.intro ? `<p>${esc(g.intro)}</p>` : ''}<ul class="sx-hublist">${items.map(it => { const u = it.href || pageUrl(ctx, it.pageId); return `<li><a href="${u}"><strong>${esc(it.title || ctx.pages[it.pageId]?.[lang]?.h1)}</strong><span>${esc(it.text || '')}</span></a></li>`; }).join('')}</ul></section>`;
+    }).join('');
     default: throw new Error('unknown block type ' + b.type);
   }
+}
+// Compact, complete approved price structure for the chemical treatment (+ stand-alone dry steam). Numbers come ONLY from data/prices.json.
+function priceTable(ctx, b, id, pr) {
+  const { ui, lang, prices: p } = ctx, c = p.chemical.bedroomPrices, m = n => money(lang, n);
+  const rows = c.map((v, i) => `<tr><th scope="row">${i + 1} ${esc(i ? ui.bedrooms : ui.bedroom)}</th><td>${m(v)}</td></tr>`).join('') + `<tr><th scope="row">${esc(ui.extraBedroom)}</th><td>+${m(p.chemical.additionalBedroom)}</td></tr>`;
+  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}<div class="sx-pricetable"><div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(ui.chemVisit)}</caption><thead><tr><th scope="col">${esc(ui.bedroomsAffected)}</th><th scope="col">${esc(ui.price)}</th></tr></thead><tbody>${rows}</tbody></table></div><div class="sx-price-steamrow"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${m(p.drySteamStandalone.from)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
 }
 function faqBlock(ctx, b, id) {
   const group = (g, i) => `<div class="sx-faq-group">${g.h3 ? `<h3>${esc(g.h3)}</h3>` : ''}<div class="questions">${g.items.map((q, j) => `<details name="faq-${i}"${i === 0 && j === 0 && b.open ? ' open' : ''}><summary>${esc(q.q)}</summary><p>${q.a}</p></details>`).join('')}</div></div>`;
@@ -171,7 +218,7 @@ function toolBlock(ctx, b, id) {
   const { ui } = ctx, t = ui.tool;
   const qs = b.questions.map(q => `<fieldset data-q="${q.id}"><legend>${esc(q.text)}</legend><label><input type="radio" name="${q.id}" value="yes"> ${esc(t.yes)}</label><label><input type="radio" name="${q.id}" value="no"> ${esc(t.no)}</label><label><input type="radio" name="${q.id}" value="unsure"> ${esc(t.unsure)}</label></fieldset>`).join('');
   const outcomes = b.outcomes.map(o => `<li data-outcome="${o.id}" data-rule="${esc(JSON.stringify(o.rule))}"><strong>${esc(o.title)}</strong><p>${o.text}</p></li>`).join('');
-  return `<section class="sx-block" data-tool-root><h2 id="${id}">${esc(b.h2)}</h2><form class="sx-tool" data-tool novalidate><p class="sx-tool-note">${esc(t.disclaimer)}</p>${qs}<div class="actions"><button class="button yellow" type="submit">${esc(t.next)}</button><button class="button" type="reset">${esc(t.restart)}</button></div><div class="sx-tool-result" role="status" aria-live="polite" hidden></div><noscript><p class="sx-tool-note">${esc(t.noscript)}</p></noscript></form><h3>${esc(b.outcomesTitle)}</h3><ul class="sx-hublist" data-outcomes>${outcomes}</ul></section>`;
+  return `<section class="sx-block" data-tool-root><h2 id="${id}">${esc(b.h2)}</h2><form class="sx-tool" data-tool data-needed="${esc(t.needAnswer)}" novalidate><p class="sx-tool-note">${esc(t.disclaimer)}</p>${qs}<div class="actions"><button class="button yellow" type="submit">${esc(t.next)}</button><button class="button" type="reset">${esc(t.restart)}</button></div><div class="sx-tool-result" role="status" aria-live="polite" hidden></div><noscript><p class="sx-tool-note">${esc(t.noscript)}</p></noscript></form><h3>${esc(b.outcomesTitle)}</h3><ul class="sx-hublist" data-outcomes>${outcomes}</ul></section>`;
 }
 
 export function authorBox(ctx) {
@@ -187,7 +234,7 @@ export function sourcesBlock(ctx) {
   return `<section class="sx-block sx-sources"><h2 id="fuentes">${esc(ctx.ui.sources)}</h2>${pol}<ol>${s.map(x => `<li>${esc(x.title)}${x.publisher ? ` — ${esc(x.publisher)}` : ''}${x.year ? `, ${esc(x.year)}` : ''}. ${x.url ? `<a href="${esc(x.url)}" rel="noopener">${esc(x.url)}</a>` : ''}${x.checked ? ` <em>(${esc(x.checked)})</em>` : ''}</li>`).join('')}</ol></section>`;
 }
 export function relatedBlock(ctx) {
-  const ids = (ctx.page.related || []).filter(id => ctx.pages[id] && ctx.pages[id][ctx.lang]);
+  const ids = (ctx.page.related || []).filter(id => ctx.included.has(id) && ctx.pages[id]?.[ctx.lang]);
   if (!ids.length) return '';
   return `<section class="sx-block sx-related"><h2 id="relacionado">${esc(ctx.ui.related)}</h2><ul>${ids.map(id => `<li><a href="${pageUrl(ctx, id)}">${esc(ctx.pages[id][ctx.lang].h1)}</a></li>`).join('')}</ul></section>`;
 }

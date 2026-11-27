@@ -6,6 +6,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync, rmSync
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { renderPage } from '../templates/templates.mjs';
+import { deadLinks } from '../templates/components.mjs';
 import { ui } from '../templates/ui.mjs';
 import { infographics } from '../templates/infographics.mjs';
 import { buildManifest } from './build-image-manifest.mjs';
@@ -25,14 +26,18 @@ export function loadPages(dirs) {
   }
   return pages;
 }
-export function makeContext({ mode, pageDirs }) {
-  const site = readJson('data/site.json'), prices = readJson('data/prices.json'), whatsapp = readJson('data/whatsapp.json');
+// simulatePublished: TEST ONLY (programmatic, never exposed on the CLI) - pretend exactly these page ids are published, to prove
+// that nothing in a partially published site links to a page that is not part of the build.
+export function makeContext({ mode, pageDirs, simulatePublished }) {
+  const site = readJson('data/site.json'), prices = readJson('data/prices.json');
   const images = buildManifest(), pages = loadPages(pageDirs);
-  const included = new Set(Object.values(pages).filter(p => mode === 'preview' || site.indexableStatuses.includes(p.status)).map(p => p.id));
-  return { site, prices, whatsapp, images, pages, included, mode, infographics };
+  const included = new Set(simulatePublished ? [...simulatePublished].filter(id => pages[id]) : Object.values(pages).filter(p => mode === 'preview' || site.indexableStatuses.includes(p.status)).map(p => p.id));
+  const urlIndex = {}; // every generated URL (published or not) -> page id, so templates can recognise links to unpublished pages
+  for (const p of Object.values(pages)) for (const l of ['es', 'en']) if (p[l]) urlIndex[p[l].url] = p.id;
+  return { site, prices, images, pages, included, urlIndex, mode, infographics };
 }
-export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['data/pages'], clean = true } = {}) {
-  const base = makeContext({ mode, pageDirs });
+export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['data/pages'], clean = true, simulatePublished } = {}) {
+  const base = makeContext({ mode, pageDirs, simulatePublished });
   const outAbs = join(root, out);
   if (clean && existsSync(outAbs)) rmSync(outAbs, { recursive: true, force: true });
   const built = [];
@@ -42,6 +47,7 @@ export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['dat
     for (const lang of ['es', 'en']) {
       if (!page[lang]) continue;
       const html = renderPage({ ...base, page, lang, ui: ui[lang] });
+      if (mode === 'production') { const dead = deadLinks(base, html); if (dead.length) throw new Error(`${page[lang].url}: links to unpublished pages: ${dead.join(', ')}`); } // last-resort gate
       const file = join(outAbs, page[lang].url, 'index.html');
       mkdirSync(dirname(file), { recursive: true }); writeFileSync(file, html);
       built.push({ id, lang, url: page[lang].url, status: page.status, file: out + page[lang].url + 'index.html', template: page.template });

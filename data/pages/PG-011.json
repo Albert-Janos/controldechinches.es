@@ -52,27 +52,27 @@
     "h2": "Fases del proceso",
     "items": [
      {
-      "h3": "1. Información y valoración",
+      "h3": "Información y valoración",
       "p": "Información previa, inspección del lugar, identificación y alcance del problema."
      },
      {
-      "h3": "2. Plan de tratamiento",
+      "h3": "Plan de tratamiento",
       "p": "Plan individual según las zonas afectadas y las superficies."
      },
      {
-      "h3": "3. Tratamiento",
+      "h3": "Tratamiento",
       "p": "Métodos físicos (vapor seco) y, cuando está justificado, aplicación dirigida; también una combinación de ambos."
      },
      {
-      "h3": "4. Refugios y rutas de propagación",
+      "h3": "Refugios y rutas de propagación",
       "p": "Documentación de grietas y huecos y recomendaciones. Cerrarlos por sí solo no elimina una infestación ni garantiza que no vuelvan a entrar."
      },
      {
-      "h3": "5. Seguimiento",
+      "h3": "Seguimiento",
       "p": "Monitorización y revisión posterior al tratamiento."
      },
      {
-      "h3": "6. Asesoramiento y prevención",
+      "h3": "Asesoramiento y prevención",
       "p": "Indicaciones para el cliente y, en alojamientos, para el personal."
      }
     ]
@@ -152,27 +152,27 @@
     "h2": "Stages of the process",
     "items": [
      {
-      "h3": "1. Information and assessment",
+      "h3": "Information and assessment",
       "p": "Initial information, on-site inspection, identification and extent of the problem."
      },
      {
-      "h3": "2. Treatment plan",
+      "h3": "Treatment plan",
       "p": "An individual plan based on the affected areas and surfaces."
      },
      {
-      "h3": "3. Treatment",
+      "h3": "Treatment",
       "p": "Physical methods (dry steam) and, where justified, targeted application; or a combination of both."
      },
      {
-      "h3": "4. Hiding places and routes of spread",
+      "h3": "Hiding places and routes of spread",
       "p": "Documenting cracks and gaps, with recommendations. Sealing them alone does not eliminate an infestation or guarantee that bed bugs will not be brought in again."
      },
      {
-      "h3": "5. Follow-up",
+      "h3": "Follow-up",
       "p": "Monitoring and a check after treatment."
      },
      {
-      "h3": "6. Advice and prevention",
+      "h3": "Advice and prevention",
       "p": "Guidance for the client and, in accommodation, for staff."
      }
     ]

@@ -101,8 +101,8 @@
       "rule": {
        "default": true
       },
-      "title": "Sin indicios",
-      "text": "No has indicado ningún indicio. Si algo cambia, vuelve a revisar las costuras del colchón y escríbenos."
+      "title": "Sin indicios señalados",
+      "text": "No has señalado ningún indicio. Eso no descarta que haya chinches: si algo cambia o sigues con dudas, vuelve a revisar las costuras del colchón y escríbenos."
      }
     ]
    },
@@ -208,7 +208,7 @@
        "default": true
       },
       "title": "No signs reported",
-      "text": "You have not reported any signs. If something changes, check the mattress seams again and get in touch."
+      "text": "You have not reported any signs. That does not rule out bed bugs: if something changes or you still have doubts, check the mattress seams again and get in touch."
      }
     ]
    },

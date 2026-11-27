@@ -24,10 +24,10 @@
  "es": {
   "url": "/servicios/vapor-seco/",
   "title": "Vapor seco contra chinches de cama en Alicante",
-  "description": "Tratamiento de chinches con vapor seco a alta temperatura, sin insecticidas, en las superficies compatibles. Desde 150 €; precio final tras la valoración.",
+  "description": "Vapor seco a alta temperatura en las superficies compatibles, sin insecticida en el paso de vapor. Desde 150 €; precio final tras la valoración.",
   "h1": "Tratamiento de chinches con vapor seco",
   "eyebrow": "Servicio · Alicante y Costa Blanca",
-  "lead": "Calor a alta temperatura, sin insecticidas, aplicado de forma localizada en las superficies compatibles.",
+  "lead": "Calor a alta temperatura, aplicado de forma localizada en las superficies compatibles. En el paso de vapor no se aplica insecticida.",
   "breadcrumb": [
    [
     "Servicios",
@@ -44,8 +44,8 @@
       "value": "Calor localizado"
      },
      {
-      "label": "Insecticidas",
-      "value": "No se utilizan"
+      "label": "Insecticida",
+      "value": "Ninguno en el paso de vapor"
      },
      {
       "label": "Precio",
@@ -71,17 +71,21 @@
     "type": "proscons",
     "h2": "Ventajas y limitaciones",
     "pros": [
-     "No se utilizan productos químicos.",
-     "Se aplica de forma localizada, donde está el problema."
+     "En el paso de vapor no se aplica insecticida.",
+     "Se aplica de forma localizada, donde está el problema.",
+     "Un calor dirigido correctamente puede afectar tanto a las chinches como a sus huevos."
     ],
     "cons": [
      "No todas las superficies admiten calor: el técnico valora cada caso.",
-     "El resultado depende del alcance del problema; el precio final se confirma tras la valoración."
+     "La penetración del vapor es limitada y no deja un efecto insecticida duradero.",
+     "No se garantiza la eliminación completa con un único tratamiento.",
+     "El precio final se confirma tras la valoración."
     ]
    },
    {
     "type": "priceBox",
-    "h2": "Precio"
+    "h2": "Precio",
+    "variant": "steam"
    },
    {
     "type": "todo",
@@ -95,7 +99,7 @@
    },
    {
     "q": "¿Se utilizan insecticidas?",
-    "a": "No. El vapor seco aplica calor, sin productos químicos, en las superficies compatibles."
+    "a": "En el paso de vapor no: se aplica calor en las superficies compatibles. El calor dirigido puede afectar a las chinches y a sus huevos, pero la penetración del vapor es limitada y no deja un efecto insecticida duradero, y un único tratamiento no garantiza la eliminación completa."
    }
   ],
   "sources": []
@@ -103,10 +107,10 @@
  "en": {
   "url": "/en/services/dry-steam/",
   "title": "Dry steam bed bug treatment in Alicante | Control de Chinches",
-  "description": "Dry steam bed bug treatment: high-temperature heat, no insecticides, applied to compatible surfaces. From €150; the final price is confirmed after assessment.",
+  "description": "Dry steam heat on compatible surfaces, with no insecticide in the steam step. From €150; the final price is confirmed after assessment.",
   "h1": "Bed bug treatment with dry steam",
   "eyebrow": "Service · Alicante and the Costa Blanca",
-  "lead": "High-temperature heat, without insecticides, applied locally to compatible surfaces.",
+  "lead": "High-temperature heat applied locally to compatible surfaces. No insecticide is applied in the steam step.",
   "breadcrumb": [
    [
     "Services",
@@ -123,8 +127,8 @@
       "value": "Localised heat"
      },
      {
-      "label": "Insecticides",
-      "value": "None used"
+      "label": "Insecticide",
+      "value": "None in the steam step"
      },
      {
       "label": "Price",
@@ -150,17 +154,21 @@
     "type": "proscons",
     "h2": "Advantages and limitations",
     "pros": [
-     "No chemical products are used.",
-     "Applied locally, where the problem is."
+     "No insecticide is applied in the steam step.",
+     "Applied locally, where the problem is.",
+     "Correctly applied, targeted heat can affect both bed bugs and their eggs."
     ],
     "cons": [
      "Not every surface tolerates heat: the technician assesses each case.",
-     "Results depend on the extent of the problem; the final price is confirmed after assessment."
+     "Steam penetration is limited and leaves no lasting insecticidal effect.",
+     "Complete elimination is not guaranteed after a single treatment.",
+     "The final price is confirmed after assessment."
     ]
    },
    {
     "type": "priceBox",
-    "h2": "Price"
+    "h2": "Price",
+    "variant": "steam"
    },
    {
     "type": "todo",
@@ -174,7 +182,7 @@
    },
    {
     "q": "Are insecticides used?",
-    "a": "No. Dry steam applies heat, without chemical products, to compatible surfaces."
+    "a": "Not in the steam step: heat is applied to compatible surfaces. Targeted heat can affect bed bugs and their eggs, but steam penetration is limited, it leaves no lasting insecticidal effect, and a single treatment does not guarantee complete elimination."
    }
   ],
   "sources": []

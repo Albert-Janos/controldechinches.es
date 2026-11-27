@@ -41,10 +41,6 @@
     "html": "<p>Según la EPA, se desplazan sobre muebles, ropa de cama, equipaje, cajas y ropa; los muebles de segunda mano son un riesgo. Virginia Tech señala que una sola hembra fecundada puede iniciar una infestación.</p>"
    },
    {
-    "type": "figure",
-    "image": "IMG-PREV-01"
-   },
-   {
     "type": "text",
     "id": "edificios",
     "h2": "Entre viviendas y alojamientos",
@@ -129,10 +125,6 @@
     "id": "how-they-arrive",
     "h2": "How they arrive",
     "html": "<p>According to the EPA, they move on furniture, bedding, luggage, boxes and clothing; second-hand furniture is a risk. Virginia Tech notes that a single mated female can start an infestation.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-PREV-01"
    },
    {
     "type": "text",

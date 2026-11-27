@@ -9,7 +9,9 @@ const steps = [
   ['ads protection', 'tests/test-ads-protection.mjs'],
   ['calculator + CTAs', 'tools/test-calculator.mjs'],
   ['publishing gate (negative)', 'tests/test-gate.mjs'],
+  ['partial publication (links)', 'tests/test-partial-publish.mjs'],
   ['templates (browser)', 'tests/test-templates.mjs'],
+  ['identifier tool PG-071', 'tests/test-identifier.mjs'],
 ];
 let failed = [];
 for (const [name, file] of steps) {

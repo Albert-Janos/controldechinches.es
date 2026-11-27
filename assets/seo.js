@@ -49,7 +49,12 @@
     };
     form.addEventListener('submit', e => {
       e.preventDefault();
-      const a = answers(); const hit = outcomes.find(o => matches(o.rule, a));
+      const a = answers();
+      if (!Object.values(a).some(Boolean)) { // nothing answered: ask for input, never show an outcome (an empty form is not "no signs")
+        result.hidden = false; result.textContent = ''; const w = document.createElement('p'); w.setAttribute('data-needed-msg', ''); w.textContent = form.dataset.needed || ''; result.append(w);
+        result.tabIndex = -1; result.focus(); return;
+      }
+      const hit = outcomes.find(o => matches(o.rule, a));
       result.hidden = false; result.innerHTML = hit ? hit.el.innerHTML : '';
       result.querySelectorAll('strong').forEach(s => { const h = document.createElement('h3'); h.textContent = s.textContent; s.replaceWith(h); });
       result.tabIndex = -1; result.focus();

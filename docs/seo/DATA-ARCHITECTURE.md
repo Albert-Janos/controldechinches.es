@@ -7,7 +7,6 @@ Az üzleti adatok a HTML-ben vannak szétszórva: telefonszám ~47 előfordulás
 | Fájl | Tartalom |
 |---|---|
 | `data/site.json` | márka, domain, telefonszám, WhatsApp-szám, e-mail (ha van), nyelvek, `@id`-k, jogi státusz |
-| `data/whatsapp.json` | előtöltött üzenetek (ES/EN) kulcs szerint (általános, apartman, vapor, kémia…) — a meglévő szövegek másolata |
 | `data/prices.json` | tervek (Esencial, Completo), dormitorio-tábla, kiegészítők (vapor, kanapé, ULV), `status: pending-owner-decision`, `validFrom`, `source` |
 | `data/services.json` | szolgáltatások (slug, név ES/EN, állapot, kapcsolódó oldal) |
 | `data/areas.json` | települések: `confirmed: true/false`, kiszállási szabály, oldal-státusz |

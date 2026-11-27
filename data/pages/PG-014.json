@@ -11,7 +11,8 @@
  ],
  "related": [
   "PG-013",
-  "PG-011"
+  "PG-011",
+  "PG-052"
  ],
  "_blocked": [
   "OWNER-INPUT #10 products actually used and authorised in Spain",
@@ -23,7 +24,7 @@
  "es": {
   "url": "/servicios/tratamiento-quimico/",
   "title": "Tratamiento químico contra chinches de cama",
-  "description": "Aplicación dirigida contra chinches según el alcance del problema, con indicaciones de preparación, ventilación y reentrada. Desde 139 € por dormitorio.",
+  "description": "Aplicación dirigida contra chinches con indicaciones de preparación y reentrada. Precio por tratamiento desde 139 € (1 dormitorio), según los dormitorios afectados.",
   "h1": "Tratamiento químico contra chinches de cama",
   "eyebrow": "Servicio · Alicante y Costa Blanca",
   "lead": "Aplicación dirigida según el alcance del problema, con indicaciones claras de preparación, ventilación y plazo de reentrada.",
@@ -43,12 +44,12 @@
       "value": "Aplicación dirigida"
      },
      {
-      "label": "Opción",
+      "label": "Complemento (si procede)",
       "value": "Nebulización en frío"
      },
      {
       "label": "Precio",
-      "value": "Desde 139 €"
+      "value": "Desde 139 € por tratamiento"
      }
     ]
    },
@@ -56,7 +57,7 @@
     "type": "text",
     "id": "cuando-y-como",
     "h2": "Cuándo y cómo se aplica",
-    "html": "<p>Valoramos las zonas afectadas antes de recomendar el método. La aplicación es dirigida y, según el alcance del problema, puede completarse con nebulización en frío. Si se aplican biocidas, te indicamos cómo preparar la vivienda, cómo ventilar y cuándo puedes volver a usar la zona.</p>"
+    "html": "<p>Valoramos las zonas afectadas antes de recomendar el método. La base es la aplicación dirigida. La nebulización en frío es solo un complemento que se usa cuando está justificado y no sustituye al tratamiento dirigido; su uso concreto depende de lo que autorice el producto empleado. Si se aplican biocidas, te indicamos cómo preparar la vivienda, cómo ventilar y cuándo puedes volver a usar la zona.</p><p>La resistencia a los insecticidas y otros factores pueden influir en el resultado, y a veces es necesario un tratamiento adicional. Más en <a href=\"/guia-chinches/resistencia-insecticidas-chinches/\">resistencia a los insecticidas</a>.</p>"
    },
    {
     "type": "todo",
@@ -64,7 +65,7 @@
    },
    {
     "type": "figure",
-    "image": "IMG-CHEM-04"
+    "image": "IMG-CHEM-05"
    },
    {
     "type": "steps",
@@ -90,17 +91,22 @@
    },
    {
     "type": "priceBox",
-    "h2": "Precio"
+    "h2": "Precio",
+    "variant": "chemical"
    }
   ],
   "faq": [
    {
     "q": "¿Cuánto cuesta el tratamiento químico?",
-    "a": "Parte de 139 € para 1 dormitorio, 179 € para 2, 219 € para 3 y 259 € para 4; cada dormitorio adicional suma 40 €. Los impuestos y el desplazamiento se confirman por escrito antes de reservar."
+    "a": "El precio es por tratamiento y depende de cuántos dormitorios están afectados: 139 € (1), 179 € (2), 219 € (3) y 259 € (4); cada dormitorio adicional suma 40 €. Los impuestos y el desplazamiento se confirman por escrito antes de reservar."
    },
    {
     "q": "¿Cuándo puedo volver a la habitación?",
     "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto."
+   },
+   {
+    "q": "¿Basta con un solo tratamiento?",
+    "a": "No siempre. La resistencia a los insecticidas y otros factores pueden influir en el resultado, y a veces es necesario un tratamiento adicional."
    }
   ],
   "sources": []
@@ -108,7 +114,7 @@
  "en": {
   "url": "/en/services/chemical-treatment/",
   "title": "Chemical bed bug treatment in Alicante | Control de Chinches",
-  "description": "Targeted bed bug treatment according to the extent of the problem, with preparation, ventilation and re-entry guidance. From €139 per bedroom.",
+  "description": "Targeted bed bug treatment with preparation and re-entry guidance. Price per treatment from €139 (1 bedroom), depending on the bedrooms affected.",
   "h1": "Chemical bed bug treatment",
   "eyebrow": "Service · Alicante and the Costa Blanca",
   "lead": "Targeted application according to the extent of the problem, with clear guidance on preparation, ventilation and re-entry times.",
@@ -128,12 +134,12 @@
       "value": "Targeted application"
      },
      {
-      "label": "Option",
+      "label": "Supplement (if justified)",
       "value": "Cold fogging"
      },
      {
       "label": "Price",
-      "value": "From €139"
+      "value": "From €139 per treatment"
      }
     ]
    },
@@ -141,7 +147,7 @@
     "type": "text",
     "id": "when-and-how",
     "h2": "When and how it is applied",
-    "html": "<p>We assess the affected areas before recommending a method. Application is targeted and, depending on the extent of the problem, can be supplemented with cold fogging. If biocides are applied, we tell you how to prepare the property, how to ventilate and when you can use the area again.</p>"
+    "html": "<p>We assess the affected areas before recommending a method. The basis is targeted application. Cold fogging is only a supplement, used when justified, and it does not replace targeted treatment; whether it can be used depends on what the product in question is authorised for. If biocides are applied, we tell you how to prepare the property, how to ventilate and when you can use the area again.</p><p>Insecticide resistance and other factors can affect the result, and an additional treatment is sometimes needed. More in <a href=\"/en/bed-bug-guide/bed-bug-insecticide-resistance/\">insecticide resistance</a>.</p>"
    },
    {
     "type": "todo",
@@ -149,7 +155,7 @@
    },
    {
     "type": "figure",
-    "image": "IMG-CHEM-04"
+    "image": "IMG-CHEM-05"
    },
    {
     "type": "steps",
@@ -175,17 +181,22 @@
    },
    {
     "type": "priceBox",
-    "h2": "Price"
+    "h2": "Price",
+    "variant": "chemical"
    }
   ],
   "faq": [
    {
     "q": "How much does chemical treatment cost?",
-    "a": "It starts at €139 for one bedroom, €179 for two, €219 for three and €259 for four; each additional bedroom adds €40. Taxes and travel are confirmed in writing before you book."
+    "a": "The price is per treatment and depends on how many bedrooms are affected: €139 (1), €179 (2), €219 (3) and €259 (4); each additional bedroom adds €40. Taxes and travel are confirmed in writing before you book."
    },
    {
     "q": "When can I use the room again?",
     "a": "Follow the technician’s instructions. The time depends on the method and, where biocides are used, on the product instructions."
+   },
+   {
+    "q": "Is one treatment always enough?",
+    "a": "Not always. Insecticide resistance and other factors can affect the result, and an additional treatment is sometimes needed."
    }
   ],
   "sources": []

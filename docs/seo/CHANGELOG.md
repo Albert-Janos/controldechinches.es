@@ -23,3 +23,13 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 
 ## 2026-11-27 — munkamenet lezárása
 - A fejlesztési szakasz elfogadva; a szakmai tartalmakat a tulajdonos ChatGPT-vel nézi át (külső ellenőrnek nem küldjük). Átadási útmutató: SEO-MASTER-PLAN.md 7. fejezet. Minden piszkozat Draft/noindex; nincs merge, deploy, FTP-feltöltés.
+
+## 2026-11-27 — 1. javítási csomag (audit alapján; `develop/seo`, nincs merge, deploy, FTP)
+- **P0 részleges publikálás:** a generátor (`templates/components.mjs`, `templates/templates.mjs`, `tools/build.mjs`) élesben nem hagy linket nem publikált oldalra: kártyák link nélkül, hub-bejegyzések / „Temas relacionados” / morzsák elrejtve, törzsszöveges linkek sima szöveggé alakulnak; a production build dead-link kapuval védett. Előnézetben minden link megmarad. Teszt: `tests/test-partial-publish.mjs` (124 szimulált részleges állapot, valódi publikálás nélkül).
+- **P1 képméretezés:** kép-típus osztályok (hero / photo / macro / portrait / illustration), álló portré szöveg mellett, galéria kivágás nélkül; a hero és a törzsbeli kép nem ismétlődik (PG-012, 014, 041, 047). Lásd VISUAL-DESIGN-SYSTEM „Képméretezés”.
+- **P1 SVG:** egyedi marker-azonosítók, szélesség-alapú tördelés, a tartalomhoz igazodó kártyamagasság (nincs túlcsordulás); PG-011 dupla számozás megszűnt.
+- **P1 árak/meta:** PG-014 meta description javítva (alkalmankénti, hálószám-függő ár), PG-014 teljes kompakt árlista, PG-013 önálló gőzár az elsődleges — mind `data/prices.json`-ból.
+- **P1 WhatsApp:** a generált oldalak WhatsApp-linkjei előtöltött üzenet nélkül (`data/whatsapp.json` megszűnt); a védett oldalak érintetlenek.
+- **P1 PG-071:** üres beküldésre kitöltési figyelmeztetés, nem eredmény; a negatív eredmény nem zárja ki a fertőzöttséget. Teszt: `tests/test-identifier.mjs`.
+- **P1 szakmai pontosítás (PG-012/013/014)** kizárólag tulajdonosi adat nélkül igazolható állításokkal; a nyitott tételek (géptípus, biocidok, reentry-idők) OWNER-INPUT státuszban maradnak.
+- **Eszközök:** `tools/check-prices.mjs` már csak olvas (nem írja át `js/prices.js`-t); új `tools/audit-layout.mjs` (képméret, SVG-túlcsordulás, duplikált id); `tools/validate.mjs`: duplikált id, ismétlődő kép, előtöltött WhatsApp-szöveg, hálószobánkénti ár a meta description-ben.

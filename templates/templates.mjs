@@ -1,5 +1,5 @@
 // Page templates T-A ... T-I. A page = JSON data + template id; see docs/seo/PAGE-TEMPLATES.md
-import { esc, head, header, footer, breadcrumb, button, ctaBand, picture, figure, renderBlock, authorBox, sourcesBlock, relatedBlock, metaLine, draftBanner, symbols, pageUrl, absUrl, slug } from './components.mjs';
+import { esc, head, header, footer, breadcrumb, button, ctaBand, picture, figure, renderBlock, authorBox, sourcesBlock, relatedBlock, metaLine, draftBanner, symbols, pageUrl, absUrl, slug, unlinkDead, imgKind } from './components.mjs';
 
 // ---------- JSON-LD ----------
 export function jsonld(ctx, crumbs) {
@@ -46,11 +46,17 @@ function heroNavy(ctx, variant = '') {
   return `<section class="sx-hero ${variant}${media ? '' : ' sx-hero--text'}" aria-labelledby="hero-title"><div class="sx-wrap sx-hero-grid"><div><p class="eyebrow">${esc(L.eyebrow || '')}</p><h1 id="hero-title">${esc(L.h1)}</h1><p class="sx-lead">${esc(L.lead || '')}</p><div class="actions">${page.cta?.hero === false ? '' : button(ctx, 'wa', c.whatsapp, key, 'hero') + button(ctx, 'tel', c.call, key, 'hero')}</div></div>${media}</div></section>`;
 }
 function renderBody(ctx, blocks) {
-  const toc = [], html = blocks.map((b, i) => {
+  const toc = [], parts = [];
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i], next = blocks[i + 1];
     if (b.h2 && b.toc !== false) toc.push([b.id || slug(b.h2), b.h2]);
-    return renderBlock(ctx, b, i);
-  }).join('\n');
-  return { html, toc };
+    // a vertical portrait straight after a text block sits BESIDE that text on desktop (stacked and compact on phones)
+    if (b.type === 'text' && next?.type === 'figure' && imgKind(ctx, next.image) === 'portrait') {
+      parts.push(`<div class="sx-split">${renderBlock(ctx, b, i)}${renderBlock(ctx, next, i + 1)}</div>`); i++; continue;
+    }
+    parts.push(renderBlock(ctx, b, i));
+  }
+  return { html: parts.join('\n'), toc };
 }
 function tocHtml(ctx, toc) {
   if (toc.length < 3) return '';
@@ -64,13 +70,13 @@ function faqInline(ctx, L) {
 // ---------- templates ----------
 const templates = {
   // service-like pages: navy hero + blocks + FAQ + author + strong CTA
-  service(ctx, strongCta = true) {
+  service(ctx, strongCta = true, author = true) {
     const { page, lang } = ctx, L = page[lang], bc = breadcrumb(ctx), body = renderBody(ctx, L.blocks || []);
-    return { crumbs: bc.items, main: `${bc.html}${heroNavy(ctx)}<div class="sx-wrap sx-layout${body.toc.length >= 3 ? ' sx-layout--toc' : ''}"><div class="sx-main">${body.html}${faqInline(ctx, L)}${relatedBlock(ctx)}${sourcesBlock(ctx)}<section class="sx-block">${authorBox(ctx)}</section></div>${tocHtml(ctx, body.toc)}</div>${ctaBand(ctx, strongCta ? 'strong' : 'medium', page.cta?.message)}` };
+    return { crumbs: bc.items, main: `${bc.html}${heroNavy(ctx)}<div class="sx-wrap sx-layout${body.toc.length >= 3 ? ' sx-layout--toc' : ''}"><div class="sx-main">${body.html}${faqInline(ctx, L)}${relatedBlock(ctx)}${sourcesBlock(ctx)}${author ? `<section class="sx-block">${authorBox(ctx)}</section>` : ''}</div>${tocHtml(ctx, body.toc)}</div>${ctaBand(ctx, strongCta ? 'strong' : 'medium', page.cta?.message)}` };
   },
   article(ctx) {
     const { page, lang, ui } = ctx, L = page[lang], bc = breadcrumb(ctx), body = renderBody(ctx, L.blocks || []);
-    const media = L.heroImage ? `<div class="sx-block">${figure(ctx, L.heroImage, { eager: true })}</div>` : '';
+    const media = L.heroImage ? `<div class="sx-block">${figure(ctx, L.heroImage, { eager: true, usage: 'hero' })}</div>` : '';
     return { crumbs: bc.items, main: `${bc.html}<div class="sx-wrap"><header><p class="eyebrow">${esc(L.eyebrow || '')}</p><h1 id="hero-title" style="margin-top:.6rem;max-width:22ch">${esc(L.h1)}</h1>${L.answer ? `<div class="sx-answer"><h2>${esc(ui.shortAnswer)}</h2><p>${esc(L.answer)}</p></div>` : ''}${metaLine(ctx)}</header>${media}</div><div class="sx-wrap sx-layout${body.toc.length >= 3 ? ' sx-layout--toc' : ''}"><div class="sx-main">${body.html}${faqInline(ctx, L)}${relatedBlock(ctx)}${ctaBand(ctx, 'soft', page.cta?.message)}${sourcesBlock(ctx)}<section class="sx-block">${authorBox(ctx)}</section></div>${tocHtml(ctx, body.toc)}</div>` };
   },
   hub(ctx, cta = 'soft') {
@@ -83,7 +89,7 @@ export const render = {
   'T-B': ctx => templates.service(ctx, true),
   'T-E': ctx => templates.service(ctx, false),
   'T-C': ctx => templates.article(ctx),
-  'T-D': ctx => { const r = templates.service(ctx, false); return r; },
+  'T-D': ctx => templates.service(ctx, false, false), // the author's own page needs no author box
   'T-F': ctx => templates.article(ctx),
   'T-G': ctx => templates.hub(ctx, 'medium'),
   'T-H': ctx => templates.hub(ctx, 'soft'),
@@ -93,7 +99,7 @@ export const render = {
 export function renderPage(ctx) {
   const { page, lang, ui, site } = ctx;
   const t = render[page.template]; if (!t) throw new Error(`unknown template ${page.template} on ${page.id}`);
-  const out = t(ctx);
+  const out = t(ctx); out.main = unlinkDead(ctx, out.main); // links to unpublished pages inside prose become plain text
   const html = `<!doctype html>
 <html lang="${ui.htmlLang}">
 ${head(ctx, jsonld(ctx, out.crumbs))}

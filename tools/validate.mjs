@@ -56,6 +56,11 @@ for (const pg of pages) {
   if (/AggregateRating|"Review"/.test(JSON.stringify(ld))) E(`${tag}: AggregateRating/Review markup is forbidden`);
   // images
   for (const m of h.matchAll(/<img\b([^>]*)>/g)) { const t = m[1]; if (!/\salt="/.test(t)) E(`${tag}: <img> without alt`); if (!/\swidth="\d+"/.test(t) || !/\sheight="\d+"/.test(t)) E(`${tag}: <img> without width/height`); const s = attr(t, /\ssrc="([^"]+)"/); if (s && s.startsWith('/') && !exists(s)) E(`${tag}: image file missing ${s}`); }
+  // fix pack 1 gates: unique ids, no repeated image in a page (author portrait excepted), no pre-filled WhatsApp text, no per-bedroom price wording in meta
+  const idl = [...h.matchAll(/\sid="([^"]+)"/g)].map(m => m[1]), dupIds = [...new Set(idl.filter((x, i) => idl.indexOf(x) !== i))]; if (dupIds.length) E(`${tag}: duplicate id(s) ${dupIds.join(', ')}`);
+  const body = (h.match(/<main[\s\S]*<\/main>/) || [h])[0].replace(/<aside class="sx-author"[\s\S]*?<\/aside>/, ''), imgl = [...body.matchAll(/data-image-id="([^"]+)"|<img\b[^>]*\ssrc="([^"]+)"/g)].map(m => m[1] || m[2].replace(/-\d+\.\w+$/, '')), dupImg = [...new Set(imgl.filter((x, i) => imgl.indexOf(x) !== i))]; if (dupImg.length) E(`${tag}: same image used more than once on the page: ${dupImg.join(', ')}`);
+  if (/wa\.me\/\d+\?/.test(h)) E(`${tag}: WhatsApp link with pre-filled text (owner decision: none)`);
+  if (/(?:por|per) (?:dormitorio|bedroom)/i.test(desc || '')) E(`${tag}: meta description implies a per-bedroom price (the chemical price is per treatment, depending on the bedrooms affected)`);
   const ph = (h.match(/class="sx-ph/g) || []).length; if (ph) P(`${tag}: ${ph} image placeholder(s) left (P)`);
   const todos = (h.match(/data-owner-todo/g) || []).length; if (todos) P(`${tag}: ${todos} owner-input block(s) left (P)`);
   // links

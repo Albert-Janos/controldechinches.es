@@ -40,6 +40,11 @@ try {
       await page.click('input[name=live][value=yes]'); await page.click('input[name=spots][value=yes]'); await page.click('.sx-tool button[type=submit]');
       const t = await page.$eval('.sx-tool-result', e => e.textContent); ok(/Varios indicios/.test(t), `tool result for 2 yes: ${t}`);
       await page.click('.sx-tool button[type=reset]'); ok(await page.$eval('.sx-tool-result', e => e.hidden), 'tool reset hides result');
+      // empty submit: a prompt to answer, never an outcome (an empty form is not "no signs")
+      await page.click('.sx-tool button[type=submit]');
+      const empty = await page.$eval('.sx-tool-result', e => ({ hidden: e.hidden, msg: !!e.querySelector('[data-needed-msg]'), h3: e.querySelectorAll('h3').length, text: e.textContent }));
+      ok(!empty.hidden && empty.msg && empty.h3 === 0 && /Responde al menos/.test(empty.text), `empty tool submit must ask for an answer, not show a result (${empty.text})`);
+      await page.click('.sx-tool button[type=reset]');
     }
     if (vn !== '768') await page.screenshot({ path: join(shots, `${fx.id}-${lang}-${vn}.png`), fullPage: true });
     await page.close();
