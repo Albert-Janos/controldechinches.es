@@ -1,61 +1,103 @@
-# OWNER-INPUT-REQUIRED — tulajdonostól bekérendő információk és döntések
+# OWNER-INPUT-REQUIRED — egyetlen, prioritás szerint rendezett tulajdonosi kérdéslista
 
-Jelölés: **B** = blokkoló (nélküle a fázis nem indulhat), **F** = fontos, **O** = opcionális. A válaszokat a DECISION-LOG rögzíti.
+Frissítve: 2026-11-27 (P0.1/P1 után). **Egy helyen, témák szerint csoportosítva**; a kérdésszámok (#) más dokumentumokban hivatkozva vannak, ezért nem változnak. Válaszolhatsz egyben, a számok mellé írva (pl. „#13: …”), vagy elég a nálad meglévő dokumentumokat/fotókat átadni.
+Jelölés: **H** = magas (blokkolja a publikálást vagy egy teljes fázist) · **M** = közepes · **L** = alacsony · ✅ = megválaszolva. A blokkolt tartalom **Draft** marad, a fejlesztés közben folytatódik a többivel.
 
-## A. Döntések és üzleti igazságok (P1 előtt)
-| # | Kérdés | Miért | Típus | Fázis |
-|---|---|---|---|---|
-| 1 | ~~Mi a valós ajánlat és ár?~~ **Megválaszolva 2026-11-27** (D-017): vegyszeres 139/179/219/259 € + 40 €; önálló vapor 150 €-tól. **Nyitva:** a kiegészítők (gőz +80 €/hálószoba, kanapé +40 €/db, ULV 50 €-tól) megerősítése deploy előtt (D-018). | A-C1 | **F** | P1 |
-| 2 | Jogi azonosító adatok: titulár, NIF/CIF, cím, e-mail, működési státusz Spanyolországban (aviso legal `[PENDIENTE]`). | LGL-01/03 | **B** | P1 |
-| 3 | **Valódi szolgáltatási területek** (főoldal: 15 település; lábléc: 4; sémában: 3; térkép: Dénia is). Mely településeken dolgozol ténylegesen, mi a kiszállási szabály? | A-M7; zonák | **B** | P4 |
-| 4 | **Preview-hosting** választás és **deploy-mód** (cPanel/WebDigital hozzáférés, FTP/Git/kézi feltöltés). | A-H2 | **B** | P1 |
-| 5 | Mérési hozzáférések, **csak olvasás**: Google Ads fiók, GA4, Search Console (van-e property?), Google Cégprofil. Honnan jön most az Ads-konverzió? | A-H1 | F | P1/P8 |
-| 6 | AI-diszpécser üzleti adatainak (ár, terület, nyelv, nyitvatartás) **olvasható exportja** az összevetéshez (élő rendszert nem módosítjuk). | DATA-ARCHITECTURE | F | P1 |
+## Hol kezdd (ajánlott sorrend)
+1. **Fotók és dokumentumok** átadása a `raw-images/` mappákba (#25–#27, `PHOTO-SHOT-LIST.md` P0: 9 kép) — a leghosszabb átfutású tétel.
+2. **Jogi és vállalkozási adatok + spanyol szakértő** (#2, #16, #37) — a tranzakciós oldalak éles publikálását ezek zárják.
+3. **Gép, termékek, IPM-lépések** (#7–#12) — ezek nélkül a szolgáltatás- és IPM-oldalak szakmai része nem publikálható.
+4. **Végzettségek és tanúsítványok** (#13–#16) — a „Sobre mí” oldalhoz.
+5. **Szolgáltatási területek** (#3) — a helyi oldalakhoz.
+6. A többi (árak, mérés, döntések).
 
-## B. Szakmai módszertan (P3 előtt)
-| # | Kérdés | Fázis |
+---
+## 1. Szakmai bemutatkozás (→ `/sobre-mi/`)
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 19 | Szakmai alapelveid, céljaid és a spanyol vállalkozás célja — saját szavaiddal, 3–6 mondatban. | M | Sobre mí, módszertan-oldal hangvétele |
+| 21 | Hozzájárulsz-e a portrék és az ügyféladat nélküli munkafotók publikálásához? | H | Minden fotós oldal |
+| 23 | Megszólítás: lakossági oldalon tegező, B2B-ben „usted”? | L | Szövegek hangneme |
+| 24 | Angol nyelvű ügyfelek: tudsz angolul kommunikálni? (az AI-asszisztens spanyol; az EN oldalak telefonos CTA-ja ettől függ) | M | EN CTA-k |
+
+## 2. Végzettségek
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 13 | A pontos hivatalos magyar szakmai megnevezés, a kiállító intézmény és az év (bizonyítvány szerint). | **H** | Sobre mí, szerzői doboz |
+| 14 | Van igazolható magyar szakmai nyilvántartási szám/link? Nyilvánosságra hozható? | M | Sobre mí (hitelesség) |
+| 16 | Működési státusz Spanyolországban: ROESB-bejegyzés? Önálló vállalkozó vagy cég? Alkalmazotti vagy alvállalkozói viszony? A spanyol alkalmazói képesítés/elismerés állása? (a magyar képesítés nem állítható spanyol engedélynek) | **H** | LGL-01/07, minden tranzakciós oldal |
+| 22 | Szakmai tagságok/szervezetek (csak igazoltak). | L | Sobre mí |
+
+## 3. Tanúsítványok és dokumentumok
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 15 | Minden továbbképzés: cím, szervező, ország, év + a dokumentum szkennelve (300 dpi). | **H** | Dokumentumgaléria (IMG-CRED-*) |
+| – | Az egészségügyi kártevőirtó bizonyítvány szkennelve **(kitakarás nélkül; a kitakarást mi végezzük)** — P0 fotó `IMG-CRED-01`. | **H** | Sobre mí |
+
+## 4. Munkatapasztalat és referenciák
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 17 | Magyarországi és spanyolországi tapasztalat: évek, ügyféltípusok, mi publikálható. | M | Sobre mí; **nem találunk ki tapasztalatot** |
+| 20 | Van külső szakmai ellenőr (pl. entomológus)? Neve, és hogyan említhetjük? (Csak ekkor szerepel „Revisión profesional”.) | **H** | Cikkek publikálása, szerzői doboz |
+| 34 | Vannak valós, hozzájárulással publikálható esetek/ügyfélvélemények? A magyarországi esetek külön jelölve. | M | `/casos-reales/` (üres, amíg nincs) |
+| 35 | Valós B2B partnerek (apartmankezelő, szálloda) és hajlandóságuk hivatkozásra. | L | B2B oldalak, linképítés |
+
+## 5. Gépek és technológiák
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 8 | A szárazgőzös gép **pontos típusa** (az élő oldali fotón kis kézi gőzölő van — a Polti Cimex Eradicator is a tiéd?). | **H** | `/servicios/vapor-seco/` |
+| 9 | Gőz-beállítások: nyomás/hőmérséklet, tartózkodási idő, kezelt és **nem** kezelt felületek. | **H** | vapor seco, IPM |
+| 10 | A ténylegesen használt biocid termékek: név, hatóanyag, spanyol nyilvántartási szám, visszalépési idő a címke szerint. Használsz ULV-t (hidegköd)? | **H** | `/servicios/tratamiento-quimico/`, GYIK, LGL-05 |
+| 18 | Egyéb eszközök (monitorozó eszközök, lámpák, védőfelszerelés). | M | Sobre mí, IPM, monitorozás |
+
+## 6. IPM-munkafolyamat
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 7 | A 23 IPM-lépésből (`IPM-METHODOLOGY.md` §2) melyiket végzed ténylegesen, melyiket csak javaslod, melyikhez kell külső kivitelező? | **H** | IPM-oldal „Quién hace qué”, IG-01 |
+| 11 | Az utóellenőrzés tartalma és ideje; milyen dokumentumot adsz (parte de trabajo)? Az inspección külön szolgáltatás-e, vagy a kezelés része? | M | IPM, B2B, inspekció-oldal |
+| 12 | Rések/repedések lezárása: te végzed, javaslod, vagy külső cég? | M | IPM, „sellar grietas” cikk |
+| 31 | A gőz + vegyszer kombinációt hogyan nevezzük? (javaslat: „tratamiento combinado vapor + químico”; a főoldal „químico combinado” = vegyszer + ULV) | L | Terminológia (D-014) |
+| 36 | Értékesítesz ismétlődő megelőzési/monitorozási programot alojamientók számára? Mit tartalmaz? | M | `/servicios/planes-prevencion/` |
+
+## 7. Szolgáltatási területek
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 3 | Mely településeken dolgozol **ténylegesen**, és mi a kiszállási szabály? (A főoldal 15 települést listáz, a lábléc 4-et, a séma 3-at; a térkép Dénia-t is mutatja.) | **H** | `/zonas/*`, JSON-LD `areaServed` |
+| 33 | Van valós Google Cégprofil / jogosultság, és tényleges, publikálható vállalkozási cím? | M | Helyi SEO, GBP |
+
+## 8. Árak
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 1 | ✅ Árlogika megadva 2026-11-27 (vegyszeres 139/179/219/259 € + 40 €; vapor 150 €-tól). | – | – |
+| 39 | **Kiegészítők végleges megerősítése**: gőz +80 €/hálószoba, kanapé +40 €/db, ULV 50 €-tól — maradjanak-e? (Egyelőre csak a meglévő oldalakon/kalkulátorban vannak, az új SEO-oldalakra nem kerülnek.) | M | Deploy, új oldalak árblokkjai |
+| 40 | Az „¡Incluso hoy!” / aznapi foglalás ígérete valós kapacitás-e? | M | CTA-szövegek (LGL-02) |
+
+## 9. Képek
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 25 | **Minden meglévő képre**: saját-e, ki készítette, jogtiszta-e? Különösen: `hero-0010`, `chinche-macro`, `signo-*`, `apartamento-mediterraneo`, `costablanca`. Melyek generáltak? | **H** | Új oldalakon való újrahasználat; az Ads-képek jogi helyzete |
+| 26 | Hol készültek az `irtas-gozzel01` és a `permetezes…` képek (ország/település)? | M | Feliratozás (nem lehet helyi referencia) |
+| 27 | Van meglévő saját fotóarchívumod (makró, munka, bizonyítvány)? Másold a `raw-images/` mappákba; mindegyikhez rövid jegyzet: dátum, hely, mit látunk. | **H** | P2 és minden fotós oldal |
+
+## 10. Vállalkozási és jogi adatok (→ aviso legal, LGL-kapuk)
+A teljes, 16 pontos lista: `LEGAL-PUBLICATION-GATES.md`, utolsó szakasz.
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 2 | Titulár/cégnév, NIF/CIF, cím, e-mail, nyilvántartás (az aviso legal `[PENDIENTE]`). | **H** | LGL-03, minden éles oldal lábléca |
+| 37 | Van spanyol jogi/szabályozási szakértőd (gestor/abogado)? Javasolt a tranzakciós oldalak élesítése **előtt**. | **H** | LGL-01…10 |
+| 4 | Kell-e távoli, jelszavas preview-hosting, és hogyan érhető el a tárhely (cPanel/FTP)? Az éles feltöltés továbbra is kézi marad. | M | Távoli előnézet |
+| 38 | Ki végezze az ES/EN anyanyelvi lektorálást? | M | Szövegek publikálása |
+
+## 11. Mérési azonosítók
+| # | Kérdés | Pri. | Mit old fel |
+|---|---|---|---|
+| 5 | Olvasási hozzáférés: Google Ads, GA4, Search Console, Cégprofil. **Honnan jön most az Ads-konverzió?** (a `measurement-config.js` üres) Ha megvannak: GA4 `G-…`, Ads `AW-…` és a konverziós címkék. | M | Mérés bekapcsolása (CONVERSION-MEASUREMENT) |
+| 6 | Az AI-diszpécser üzleti adatainak (ár, terület, nyelv, nyitvatartás) olvasható exportja (nem módosítjuk). | M | Árak/terület összevetése |
+| 28 | Google Ads „search terms” export (12 hó) és a WhatsApp/telefon valós kérdései. | M | GYIK és kulcsszókutatás (volumenadat híján) |
+
+## 12. Jóváhagyandó döntések (egy-egy igen/nem)
+| # | Döntés | Pri. |
 |---|---|---|
-| 7 | Az IPM 23 lépéséből melyeket végzed **ténylegesen**, melyeket javaslod, melyek külső kivitelezőt igényelnek (IPM-METHODOLOGY §2–3)? **B** | P3 |
-| 8 | Használt szárazgőzös gép pontos típusa (a főoldali fotón kis kézi gőzölő van — a Polti Cimex Eradicator is a tiéd?). **B** | P3 |
-| 9 | Gőz-beállítások: nyomás/hőmérséklet, tartózkodási idő, felületek, amit nem kezelsz gőzzel. **B** | P3 |
-| 10 | **Ténylegesen használt biocid termékek** (név, hatóanyag, ROESB/gyártói engedély), visszalépési idő a termék szerint. **B** | P3 |
-| 11 | Utóellenőrzés tartalma és ideje; milyen dokumentumot adsz (parte, jegyzőkönyv)? | P3 |
-| 12 | Rések/repedések lezárása: te végzed, javaslod, vagy külső cég? | P3 |
-
-## C. Személyes márka és hitelesség (P2 előtt)
-| # | Kérdés | Fázis |
-|---|---|---|
-| 13 | Hivatalos magyar szakmai megnevezés, kiállító, év (bizonyítvány). **B** | P2 |
-| 14 | Magyar nyilvántartási adat — nyilvánosságra hozható? | P2 |
-| 15 | Minden továbbképzés (cím, szervező, ország, év, dokumentum). | P2 |
-| 16 | Spanyolországi működési státusz részletei (ROESB? munkaviszony/alvállalkozás?) — LGL-01/07. **B** | P2 |
-| 17 | Magyarországi és spanyolországi tapasztalat (évek, típusok; mi publikálható). | P2 |
-| 18 | Használt eszközök listája. | P2 |
-| 19 | Szakmai alapelvek (saját szavaiddal), célok, a spanyol vállalkozás céljai. | P2 |
-| 20 | Van-e külső szakmai ellenőr (entomológus)? Neve és mértéke — csak ekkor szerepel. | P2 |
-| 21 | Hozzájárulás a portrék/munkafotók publikálásához. | P2 |
-| 22 | Tagságok/szervezetek (csak igazolt). | P2 |
-| 23 | Preferált megszólítás (tegező/„usted”) lakossági és B2B oldalon. | P2 |
-| 24 | Nyelvtudás/EN kommunikáció (EN hívások kezelése: az AI-asszisztens spanyol). | P2 |
-
-## D. Képek és fotók (azonnal indítható)
-| # | Kérdés | Típus |
-|---|---|---|
-| 25 | **Minden meglévő képre**: saját-e, ki készítette, jogtiszta-e (főleg `hero-0010`, `chinche-macro`, `signo-*`, `apartamento-mediterraneo`, `costablanca`)? Mely képek generáltak? | **B** (új oldalakon való újrahasználathoz) |
-| 26 | Hol készültek az `irtas-gozzel01` és `permetezes…` képek (ország/település)? | F |
-| 27 | Van-e meglévő saját fotóarchívum (makró, munka, bizonyítvány)? Ezeket gyűjtsd össze **P0-ban** (PHOTO-SHOT-LIST). | **B** (P2) |
-
-## E. Egyéb döntések
-| # | Kérdés | Fázis |
-|---|---|---|
-| 28 | Google Ads „search terms” export (12 hó) és ténylegesen kapott kérdések (WhatsApp/telefon) a GYIK-hoz és kulcsszókutatáshoz. | P1/P5 |
-| 29 | Jóváhagyod-e a főoldali **lábléc hub-linkjeit** (D-008)? | P1 |
-| 30 | Jóváhagyod-e külön a főoldali „Sobre mí/módszertan” szekciót (CRO)? | P2+ |
-| 31 | Terminológia: a főoldal „tratamiento químico combinado” = vegyszer + ULV. Hogyan nevezzük a gőz+vegyszer kombinációt (javasolt: „tratamiento combinado vapor + químico”)? | P3 |
-| 32 | Mobil sticky-CTA az új tranzakciós oldalakon: igen/nem. | P1 |
-| 33 | Van-e valós Google Cégprofil / jogosultság hozzá, van-e tényleges vállalkozási cím (GBP-hez)? | P4 |
-| 34 | Vannak valós, hozzájárulással publikálható ügyfélvélemények/esetek? | P7 |
-| 35 | Valós B2B-partnerek (apartmankezelők, szállodák) és hajlandóság hivatkozásra. | P7 |
-| 36 | Szeretnél-e ismétlődő megelőzési/monitorozási programot értékesíteni (PG-015)? | P7 |
-| 37 | Spanyol jogi/szabályozási szakértő kapcsolat (LGL-01…10). **Javasolt P1 előtt.** | P1 |
-| 38 | Weboldal-szöveg nyelvi lektor (ES, EN anyanyelvi) — ki végezze? | P2 |
+| 29 | A főoldali (és védett oldali) lábléc kapjon hub-linkeket (Servicios, Zonas, Guía, Atlas, Sobre mí, GYIK)? | M |
+| 30 | A főoldalra kerülhet-e külön „Sobre mí / módszertan” szekció (CRO)? | L |
+| 32 | Mobil sticky-CTA az új tranzakciós oldalakon? | L |

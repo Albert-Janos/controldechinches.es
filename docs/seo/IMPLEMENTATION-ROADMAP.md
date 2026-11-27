@@ -81,3 +81,15 @@ A fotózás (PHOTO-SHOT-LIST P0) **már most** indítható — nem függ a fejle
 | P4 lokális | **nem indult** (blokkolt: #3 szolgáltatási területek, LGL-01/08) |
 | P5 GYIK | piszkozat (valós, élő oldali kérdésekből); tudásközpont-cikkek **nem indultak** (ellenőrzött források + szakmai ellenőr + fotók kellenek) |
 | P6–P8 | **nem indultak** (P6 fotók, P7 valós esetek/ajánlat, P8 GSC/GA4 hozzáférés) |
+
+### Frissítés — folytatás (2026-11-27)
+| Fázis | Állapot |
+|---|---|
+| Főoldali LCP | **kész** (külön commit; éles igazolás deploy után) |
+| P2 Sobre mí | teljes szerkezet kész (hero, bemutatkozás, életút, dokumentumgalériák, specializáció, eszközök, módszer, munkafotók) — **Draft**, tartalom: OWNER-INPUT #13–#24, fotók |
+| P3 szolgáltatások + IPM | 5 szolgáltatás- és hub-oldal kész (ES+EN), IPM-folyamatábra (IG-01) kész — **Draft** (OWNER-INPUT #7–#12) |
+| P4 lokális | Alicante, Benidorm, Torrevieja + zónahub első piszkozatok (valós helyi tények nélkül, TODO-blokkokkal) — **Draft**; 2. hullám nem indult |
+| P5 GYIK + tudásközpont | GYIK + hub + **20 forrásalapú cikk (ES+EN)** — Draft, szakmai ellenőrzésre vár |
+| P6 atlasz, azonosító, dokumentumok | atlasz-szerkezet (24 képhely), azonosító eszköz (9 kérdés, ítélet nélkül), 2 nyomtatható űrlap — Draft; fotók nélkül nem publikálható |
+| P7 B2B + esettanulmány | B2B program-oldal, 2 B2B-cikk (La Rioja-protokoll összefoglaló, korai felismerés), esettanulmány-hub **üres állapottal** (nincs valós eset) — Draft |
+| P8 | nem indult (GSC/GA4 hozzáférés) |

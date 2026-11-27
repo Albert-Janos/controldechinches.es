@@ -29,3 +29,14 @@ CONTENT-STANDARDS §2. A cikk **rövid választ** ad, az **atlasz** és az **ide
 
 ## 5. EN-lokalizáció
 EN-cikkek önálló keresésre készülnek (bed bug bites, how to tell…, bed bugs hotel travel), nem tükörfordítás; prioritás: 041, 042, 048, 049, 053 (angolul kereső turisták/expatok).
+
+## Állapot — 2026-11-27 (piszkozatok kész, **szakmai ellenőrzésre várnak**)
+**20 cikk ES+EN piszkozat** készült (`data/pages/PG-041…062`), forráskutatás alapján (3 párhuzamos kutatás: amerikai hatóságok és egyetemi extension-anyagok; spanyol/valenciai hatósági anyagok; lektorált irodalom). Státusz mindenhol **Draft / noindex**; publikálás csak szakmai ellenőrzés + forrás-újraellenőrzés + tulajdonosi jóváhagyás után (OWNER-INPUT #20).
+| Hullám | Piszkozat kész | Még nincs |
+|---|---|---|
+| 1. | 041, 042, 044, 045, 047, 049, 050, 053, 055, 056 | – |
+| 2. | 043, 048, 051, 052, 054, 058, 059, 060 | 046 (kanapé) |
+| B2B | 061, 062 | 063, 064, 065 |
+| 3. | – | 057 (gyerekek/háziállatok) |
+**Forrásszabályok a megvalósításban:** minden állítás a cikk „Fuentes/Sources” listájában szereplő forrásra vezethető vissza (cím, kiadó, év, URL, ellenőrzés dátuma); ahol a források **eltérnek**, a cikk táblázatban mutatja a forrásonkénti számot (pl. mosási/szárítási hőmérséklet), nem von össze egy kamu „egyetlen” értéket; a tudományos cikkeknél csak az absztraktból vett adat szerepel, és ezt a szöveg jelzi. Nem szerepel saját tapasztalat, esettanulmány vagy helyi referencia.
+**Ismert hiányok:** az Umivale-ficha és a madrid.es eredeti PDF nem volt elérhető (nem hivatkozott); az ECDC/WHO/UKHSA oldalak nem találhatók; spanyolországi prevalencia-adat nem volt. A EPA-oldalak dátuma a letöltő eszköz kivonata (2026) — publikálás előtt újra ellenőrizendő.

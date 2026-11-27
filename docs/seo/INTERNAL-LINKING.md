@@ -35,3 +35,8 @@
 
 ## 4. Ellenőrzés
 Build: link-gráf export (CSV): oldal, bejövő/kimenő darab, horgonyszöveg-eloszlás; hiba: 0 bejövő link, > 3 azonos horgony ugyanarra az URL-re, törött link; havi manuális átnézés (SEO-MONITORING).
+
+## Megvalósítva (P1/P2–P7 piszkozatok, 2026-11-27)
+- Linkforrások: `related` (a `data/pages/*.json`-ban), hub-blokkok (`type: hub`), kontextuális HTML-linkek a cikkszövegekben, a fejléc/lábléc (a build-ben szereplő oldalak: Servicios, Guía, Preguntas, Sobre mí), szerzői doboz (→ Sobre mí), forráslista alatti „Política editorial” link, GYIK-hub.
+- Ellenőrzés: `tools/validate.mjs` (törött link, hiányzó horgony, **≥ 2 bejövő link**), és a fejlesztői oldalindex (`/__dev/index.html`, `/__dev/links.json`: oldalanként bejövő/kimenő linkek). Jelenleg a 80 generált oldalfájlból **mindegyiknek ≥ 2 bejövő linkje van**.
+- A főoldalra és a védett oldalakra **nem** került link (D-008, jóváhagyás kell): az új rendszer a saját hubjaiból és navigációjából érhető el.

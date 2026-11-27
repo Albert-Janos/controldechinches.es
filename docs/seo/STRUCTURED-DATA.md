@@ -33,3 +33,6 @@ Hamis AggregateRating · fiktív vélemények · hamis telephely/cím · valótl
 
 ## 4. Validálás
 Build: JSON-parse + kötelező mezők + `@id`-hivatkozások feloldhatósága + a jelölt szöveg szerepel az oldalon; manuális: Google Rich Results Test / Schema Markup Validator a preview-n (P1-10).
+
+## Megvalósítva (2026-11-27)
+`templates/templates.mjs` `jsonld()`: `@graph` = Organization (`#organization`), WebSite, WebPage/ProfilePage/CollectionPage, BreadcrumbList, Service (T-A/B/E, `areaServed` = a `data/site.json` igazolt települései), Offer (csak a központi, jóváhagyott árakból: vegyszeres 139 €-tól, vapor 150 €-tól — a kiegészítők **nem**), Article (T-C/F, szerző = Organization, amíg a Sobre mí oldal nem jóváhagyott; utána Person `@id`), ImageObject (atlasz, kész képeknél). A validátor ellenőrzi a JSON-parse-t, az `@id`-hivatkozások feloldhatóságát, és tiltja az AggregateRating/Review jelölést. **FAQPage/HowTo nincs.** A meglévő oldalak JSON-LD-je az árak egységesítésekor `offers`-szel bővült (A-C1).

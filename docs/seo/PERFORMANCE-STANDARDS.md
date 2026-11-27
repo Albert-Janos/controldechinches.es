@@ -32,3 +32,22 @@ Heti: Lighthouse CI a 6 védett + új oldalakon (SEO-MONITORING); havi: CrUX/GSC
 
 ## Eszközök a helyi környezetben (telepítve: `tools/node_modules`, `npm install` a `tools/` mappában)
 `node tools/audit-lighthouse.mjs <baseUrl> <név> [útvonalak]` (Lighthouse mobil+desktop) · `node tools/audit-axe.mjs` · `node tools/check-links.mjs` · `node tools/screenshots.mjs`. Új oldalak: `npm run build` után a Lighthouse a `tools/serve.mjs` helyi szerverén futtatható (nincs tömörítés → a pontszám tájékoztató; a végső mérés a preview-hoz történjen).
+
+
+---
+## Főoldali mobil-LCP optimalizálás (2026-11-27, helyi `develop/seo` ág, külön commit)
+**Változtatás:** a főoldali (ES és EN) hero **CSS-háttérből valódi `<picture>`/`<img>`** lett (`fetchpriority="high"`, AVIF + WebP, mobil külön fájl, azonos `object-position` és azonos gradiens-fedés), a két `preload` kikerült; az AVIF-fájlok a **meglévő** képek származékai (`hero-0010.avif` 79 KB a 118 KB WebP helyett; `hero-0010-mobile.avif` 27 KB a 60 KB helyett; az eredeti képek érintetlenek); `.htaccess`: `image/avif` cache + MIME. Vizuális egyezés: **a pixelek / mobile: 0.07 % · / desktop: 0.46 % · /en/ mobile: 0.03 % · /en/ desktop: 0.46 % tér el** (nincs erősen eltérő pixel; a különbség az AVIF-tömörítésből ered). CTA-k, tracking, consent, URL-ek változatlanok (`tests/test-ads-protection.mjs` zöld az új baseline-nal).
+**Kipróbált, de visszavont:** a Google Fonts önhosztolása a védett oldalakon. Elszigetelt mérésben (5 futás/változat) az önhosztolt betűtípus **+~200 ms szimulált TBT-t** okozott (a betűcsere utáni újraszámolás miatt), ezért a védett oldalak az eredeti Google Fonts hivatkozást kapták vissza; az új SEO-oldalak önhosztolt DM Sans-t használnak (D-020). Az önhosztolás a védett oldalakon külön, tulajdonosi döntést igénylő feladat (adatvédelmi előny vs. betűcsere-költség; subsetting + `font-display` stratégia kell).
+**Mérés (helyi szerver gzip + éles cache-fejlécekkel, felváltva futtatott „előtte/utána”, Lighthouse 13.6.0, szimulált mobil/desktop; medián):**
+| Oldal + mód | Futás | Perf | LCP ms | FCP ms | TBT ms | Átvitt KB |
+|---|---|---|---|---|---|---|
+| `/ mobile` | 5 | 97 → **97** | 2493 → **2437** | 1413 → 1411 | 0 → 0 | 1022 → 991 |
+| `/ desktop` | 3 | 99 → **100** | 947 → **601** | 422 → 426 | 0 → 0 | 1079 → 1043 |
+| `/en/ mobile` | 5 | 86 → **90** | 3658 → **3543** | 1423 → 1409 | 0 → 0 | 1022 → 990 |
+| `/en/ desktop` | 3 | 99 → **100** | 939 → **717** | 413 → 414 | 0 → 0 | 1078 → 1042 |
+**Valós (nem szimulált) throttling** — Chrome CDP: CPU 4×, 150 ms RTT, 1,6 Mbit/s, hideg cache, 412×823@1,75, 9 futás/oldal, medián:
+| Oldal | Futás | LCP ms | FCP ms | TBT ms |
+|---|---|---|---|---|
+| `/` | 9 | 1348 → **1320** | 1316 → 1288 | 0 → 0 |
+| `/en/` | 9 | 1340 → **1324** | 1312 → 1272 | 0 → 0 |
+**Értelmezés (őszintén):** a szimulált mérések zajosak (az egyes futások LCP-je 2,3–5,3 s között ingadozik, ezért adtuk meg a mediánt és a futásonkénti értékeket a `reports/perf-home-lcp.json`-ban); a valós throttling szerint az LCP gyakorlatilag változatlan (~1,3–1,4 s), mert a kép már az első festéssel megjelenik. Az **egyértelmű nyereség**: kisebb hero-képek, felderíthető LCP-kép (`lcp-discovery`), egy kéréssel kevesebb. **Az éles hatás (ahol az LCP-t korábban 6,0 s-nak mértük) csak éles méréssel igazolható** — a deploy után 3 futásos Lighthouse + CrUX/GSC adat szükséges. Előtte/utána képernyőképek: `reports/perf-home-lcp/`.
