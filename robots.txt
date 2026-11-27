@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /logs/
+Disallow: /lib/
+Disallow: /regi-oldal-backup/
+Disallow: /send-form.php
+Disallow: /config.php
+
+Sitemap: https://www.controldechinches.es/sitemap.xml

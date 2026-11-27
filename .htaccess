@@ -1,0 +1,116 @@
+# ===== ControlDeChinches.es — .htaccess =====
+# Tárhely: WebDigital.hu, cPanel, LiteSpeed, PHP 8.x
+
+# ───────────────────────────────────────────────────────────────────────────
+# 1) HTTPS + www en un único 301 (sin encadenar redirecciones)
+# ───────────────────────────────────────────────────────────────────────────
+RewriteEngine On
+RewriteRule ^send-form\.php$ - [G,L]
+
+# La consulta original se conserva en ambas redirecciones.
+RewriteCond %{THE_REQUEST} "\s/+index\.html(?:[?\s])" [NC]
+RewriteRule ^index\.html$ https://www.controldechinches.es/ [R=301,L,NC]
+RewriteCond %{THE_REQUEST} "\s/+[^?\s]+/index\.html(?:[?\s])" [NC]
+RewriteRule ^(chinches-apartamentos-turisticos|en(?:/bed-bugs-holiday-rentals)?)/index\.html$ https://www.controldechinches.es/$1/ [R=301,L]
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.controldechinches\.es$ [NC]
+RewriteRule ^ https://www.controldechinches.es%{REQUEST_URI} [L,R=301]
+
+# ───────────────────────────────────────────────────────────────────────────
+# 2) Compresión Gzip/Deflate
+# ───────────────────────────────────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml text/xml application/xml
+</IfModule>
+
+# AVISO LiteSpeed: en algunas configuraciones, LiteSpeed lee el .htaccess pero
+# IGNORA el envoltorio <IfModule mod_deflate.c"> de arriba (el módulo interno
+# no se llama igual que en Apache, así que la condición nunca se cumple).
+# Prueba con:  curl -I -H "Accept-Encoding: gzip" https://www.controldechinches.es/
+# Si la respuesta NO trae "Content-Encoding: gzip", borra el envoltorio
+# <IfModule mod_deflate.c> ... </IfModule> de arriba y deja solo la línea
+# "AddOutputFilterByType DEFLATE ..." suelta (sin IfModule), o activa la
+# compresión desde cPanel → "Optimize Website".
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript application/javascript application/json image/svg+xml text/xml application/xml
+</IfModule>
+
+# ───────────────────────────────────────────────────────────────────────────
+# 3) Cache del navegador
+# ───────────────────────────────────────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp          "access plus 1 year"
+  ExpiresByType image/png           "access plus 1 year"
+  ExpiresByType image/jpeg          "access plus 1 year"
+  ExpiresByType image/x-icon        "access plus 1 year"
+  ExpiresByType image/svg+xml       "access plus 1 year"
+  ExpiresByType font/woff2          "access plus 1 year"
+  ExpiresByType font/woff           "access plus 1 year"
+  ExpiresByType text/css            "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html           "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|jpe?g|svg|ico|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ───────────────────────────────────────────────────────────────────────────
+# 4) Cabeceras de seguridad
+# ───────────────────────────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Content-Security-Policy "base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'none'"
+
+  # HSTS — actívalo SOLO cuando el SSL funcione correctamente tanto en
+  # controldechinches.es como en www.controldechinches.es y estés seguro de
+  # que no vas a necesitar volver a HTTP (es difícil de revertir para los
+  # visitantes que ya lo hayan recibido).
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ───────────────────────────────────────────────────────────────────────────
+# 5) Página de error 404 propia
+# ───────────────────────────────────────────────────────────────────────────
+ErrorDocument 404 /404.html
+
+# ───────────────────────────────────────────────────────────────────────────
+# 6) Bloqueo de listados de directorio, dotfiles y ficheros sensibles
+# ───────────────────────────────────────────────────────────────────────────
+Options -Indexes
+
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+<Files "config.php">
+  Require all denied
+</Files>
+
+<Files "config.sample.php">
+  Require all denied
+</Files>
+
+RewriteRule ^(?:logs|lib|regi-oldal-backup)(?:/|$) - [F,L,NC]
+
+<FilesMatch "\.(?:md|zip|csv|log|htmlss)$">
+  Require all denied
+</FilesMatch>
+
+# ───────────────────────────────────────────────────────────────────────────
+# 7) Charset
+# ───────────────────────────────────────────────────────────────────────────
+AddDefaultCharset UTF-8
