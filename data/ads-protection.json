@@ -1,0 +1,173 @@
+{
+  "_comment": "Baseline for tests/test-ads-protection.mjs. baselineCommit = state after the owner-approved P0.1 fixes (prices, calculator, aria-labels). Re-baseline only with explicit owner approval: node tests/test-ads-protection.mjs --update",
+  "baselineCommit": "c2c9e3d",
+  "pages": [
+    "/",
+    "/en/",
+    "/precios.html",
+    "/en/prices.html",
+    "/chinches-apartamentos-turisticos/",
+    "/en/bed-bugs-holiday-rentals/"
+  ],
+  "protectedFiles": [
+    "index.html",
+    "en/index.html",
+    "precios.html",
+    "en/prices.html",
+    "chinches-apartamentos-turisticos/index.html",
+    "en/bed-bugs-holiday-rentals/index.html",
+    "assets/site.css",
+    "assets/menu.js",
+    "js/main.js",
+    "js/landing.js",
+    "js/measurement-config.js",
+    ".htaccess",
+    "robots.txt",
+    "sitemap.xml",
+    "assets/hero-0010.webp",
+    "assets/hero-0010-mobile.webp",
+    "assets/chinche-macro.jpg",
+    "assets/apartamento-mediterraneo.jpg",
+    "assets/costablanca.webp",
+    "assets/irtas-gozzel01.webp",
+    "assets/permetezes-hidegkodkepzes.webp",
+    "assets/signo-manchas.webp",
+    "assets/signo-mudas.webp",
+    "assets/signo-picaduras.webp",
+    "assets/signo-sangre.webp",
+    "assets/control-de-chinches-logo-480.webp"
+  ],
+  "snapshot": {
+    "/": {
+      "h1": "Tratamiento de chinches de cama",
+      "dataPage": "home",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "hero|https://wa.me/34605259206",
+        "hero|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "service|https://wa.me/34605259206",
+        "service|https://wa.me/34605259206",
+        "process|https://wa.me/34605259206",
+        "content|https://wa.me/34605259206",
+        "contact|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": "Desde 139 €Tratamiento químico · 1 dormitorio"
+    },
+    "/en/": {
+      "h1": "Professional bed bug treatment",
+      "dataPage": "home",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "hero|https://wa.me/34605259206",
+        "hero|tel:+34605259206",
+        "service|https://wa.me/34605259206",
+        "service|https://wa.me/34605259206",
+        "contact|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": "From €139Chemical treatment · 1 bedroom"
+    },
+    "/precios.html": {
+      "h1": "Precios del tratamiento de chinches",
+      "dataPage": "prices",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "calculator|https://wa.me/34605259206",
+        "contact|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": "Desde 139 €Tratamiento químico · 1 dormitorio"
+    },
+    "/en/prices.html": {
+      "h1": "Bed bug treatment prices",
+      "dataPage": "prices",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "calculator|https://wa.me/34605259206",
+        "contact|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": "From €139Chemical treatment · 1 bedroom"
+    },
+    "/chinches-apartamentos-turisticos/": {
+      "h1": "Tratamiento de chinches para alojamientos",
+      "dataPage": "hospitality",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "hero|https://wa.me/34605259206",
+        "hero|tel:+34605259206",
+        "b2b_brief|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": null
+    },
+    "/en/bed-bugs-holiday-rentals/": {
+      "h1": "Bed bug treatment for holiday rentals",
+      "dataPage": "hospitality",
+      "cta": [
+        "navigation|tel:+34605259206",
+        "navigation|https://wa.me/34605259206",
+        "hero|https://wa.me/34605259206",
+        "hero|tel:+34605259206",
+        "b2b_brief|https://wa.me/34605259206",
+        "contact|tel:+34605259206",
+        "content|https://wa.me/34605259206",
+        "content|tel:+34605259206"
+      ],
+      "tel": [
+        "tel:+34605259206"
+      ],
+      "wa": [
+        "/34605259206"
+      ],
+      "heroPrice": null
+    }
+  }
+}

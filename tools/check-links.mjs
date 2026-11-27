@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const skip = new Set(['.git', 'docs', 'tools', 'data', 'raw-images', 'node_modules', 'reports', '.claude', 'tests', '_archive-private']);
 const pages = [];
-(function walk(d) { for (const n of readdirSync(d)) { if (skip.has(n)) continue; const f = join(d, n); statSync(f).isDirectory() ? walk(f) : n.endsWith('.html') && pages.push(f); } })(root);
+(function walk(d) { for (const n of readdirSync(d)) { if (skip.has(n) || n.startsWith('dist') || n.startsWith('_pending')) continue; const f = join(d, n); statSync(f).isDirectory() ? walk(f) : n.endsWith('.html') && pages.push(f); } })(root);
 
 const toFile = u => { // root-relative URL path -> file on disk or null
   let p = decodeURIComponent(u.split('#')[0].split('?')[0]);

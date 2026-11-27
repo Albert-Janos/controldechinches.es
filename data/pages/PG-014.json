@@ -1,0 +1,56 @@
+{
+  "id": "PG-014",
+  "template": "T-B",
+  "status": "Draft",
+  "dataPage": "service",
+  "cta": { "message": "chemical" },
+  "offers": ["chemical"],
+  "related": ["PG-013", "PG-011"],
+  "_blocked": ["OWNER-INPUT #10 products actually used and authorised in Spain", "LGL-05 biocide conditions", "LGL-01", "photos IMG-CHEM-*", "professional review"],
+  "es": {
+    "url": "/servicios/tratamiento-quimico/",
+    "title": "Tratamiento químico contra chinches de cama | Control de Chinches",
+    "description": "Aplicación dirigida contra chinches según el alcance del problema, con indicaciones de preparación, ventilación y reentrada. Desde 139 € por dormitorio.",
+    "h1": "Tratamiento químico contra chinches de cama",
+    "eyebrow": "Servicio · Alicante y Costa Blanca",
+    "lead": "Aplicación dirigida según el alcance del problema, con indicaciones claras de preparación, ventilación y plazo de reentrada.",
+    "breadcrumb": [["Servicios", "/servicios/"]],
+    "heroImage": "IMG-CHEM-04",
+    "blocks": [
+      { "type": "facts", "items": [{ "label": "Método", "value": "Aplicación dirigida" }, { "label": "Opción", "value": "Nebulización en frío" }, { "label": "Precio", "value": "Desde 139 €" }] },
+      { "type": "text", "id": "cuando-y-como", "h2": "Cuándo y cómo se aplica", "html": "<p>Valoramos las zonas afectadas antes de recomendar el método. La aplicación es dirigida y, según el alcance del problema, puede completarse con nebulización en frío. Si se aplican biocidas, te indicamos cómo preparar la vivienda, cómo ventilar y cuándo puedes volver a usar la zona.</p>" },
+      { "type": "todo", "text": "OWNER-INPUT #10 y LGL-05: productos realmente utilizados (autorizados en España), condiciones de uso y plazos de reentrada según la etiqueta. Hasta entonces no se publican nombres de producto ni plazos concretos." },
+      { "type": "figure", "image": "IMG-CHEM-04" },
+      { "type": "steps", "h2": "Cómo trabajamos", "items": [{ "h3": "Valoración de las zonas afectadas", "p": "Revisamos el colchón, el somier y el entorno de la cama." }, { "h3": "Preparación", "p": "Te indicamos cómo preparar la vivienda y qué precauciones tomar." }, { "h3": "Aplicación dirigida", "p": "Tratamos las zonas afectadas con el método acordado." }, { "h3": "Indicaciones posteriores", "p": "Te explicamos la ventilación y el plazo de reentrada según el producto." }] },
+      { "type": "priceBox", "h2": "Precio" }
+    ],
+    "faq": [
+      { "q": "¿Cuánto cuesta el tratamiento químico?", "a": "Parte de 139 € para 1 dormitorio, 179 € para 2, 219 € para 3 y 259 € para 4; cada dormitorio adicional suma 40 €. Los impuestos y el desplazamiento se confirman por escrito antes de reservar." },
+      { "q": "¿Cuándo puedo volver a la habitación?", "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto." }
+    ],
+    "sources": []
+  },
+  "en": {
+    "url": "/en/services/chemical-treatment/",
+    "title": "Chemical bed bug treatment in Alicante | Control de Chinches",
+    "description": "Targeted bed bug treatment according to the extent of the problem, with preparation, ventilation and re-entry guidance. From €139 per bedroom.",
+    "h1": "Chemical bed bug treatment",
+    "eyebrow": "Service · Alicante and the Costa Blanca",
+    "lead": "Targeted application according to the extent of the problem, with clear guidance on preparation, ventilation and re-entry times.",
+    "breadcrumb": [["Services", "/en/services/"]],
+    "heroImage": "IMG-CHEM-04",
+    "blocks": [
+      { "type": "facts", "items": [{ "label": "Method", "value": "Targeted application" }, { "label": "Option", "value": "Cold fogging" }, { "label": "Price", "value": "From €139" }] },
+      { "type": "text", "id": "when-and-how", "h2": "When and how it is applied", "html": "<p>We assess the affected areas before recommending a method. Application is targeted and, depending on the extent of the problem, can be supplemented with cold fogging. If biocides are applied, we tell you how to prepare the property, how to ventilate and when you can use the area again.</p>" },
+      { "type": "todo", "text": "OWNER-INPUT #10 and LGL-05: products actually used (authorised in Spain), conditions of use and re-entry times per label. No product names or specific times are published until then." },
+      { "type": "figure", "image": "IMG-CHEM-04" },
+      { "type": "steps", "h2": "How we work", "items": [{ "h3": "Assessing the affected areas", "p": "We check the mattress, bed frame and the area around the bed." }, { "h3": "Preparation", "p": "We explain how to prepare the property and which precautions to take." }, { "h3": "Targeted application", "p": "We treat the affected areas with the agreed method." }, { "h3": "Aftercare guidance", "p": "We explain ventilation and the re-entry time according to the product." }] },
+      { "type": "priceBox", "h2": "Price" }
+    ],
+    "faq": [
+      { "q": "How much does chemical treatment cost?", "a": "It starts at €139 for one bedroom, €179 for two, €219 for three and €259 for four; each additional bedroom adds €40. Taxes and travel are confirmed in writing before you book." },
+      { "q": "When can I use the room again?", "a": "Follow the technician’s instructions. The time depends on the method and, where biocides are used, on the product instructions." }
+    ],
+    "sources": []
+  }
+}

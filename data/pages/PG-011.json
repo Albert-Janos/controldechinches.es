@@ -1,0 +1,65 @@
+{
+  "id": "PG-011",
+  "template": "T-B",
+  "status": "Draft",
+  "dataPage": "service",
+  "cta": { "message": "default" },
+  "related": ["PG-013", "PG-014"],
+  "_blocked": ["OWNER-INPUT #7, #11, #12 (which of the 23 steps are really performed)", "IG-01 infographic", "photos IMG-IPM-*", "sources (EPA, Generalitat Valenciana) must be verified", "professional review", "LGL-01"],
+  "es": {
+    "url": "/servicios/control-integrado/",
+    "title": "Control integrado de chinches de cama (GIP) | Control de Chinches",
+    "description": "Cómo combinamos inspección, tratamiento físico y dirigido, seguimiento y prevención para las chinches de cama: gestión integrada de plagas (GIP).",
+    "h1": "Control integrado de chinches de cama (GIP)",
+    "eyebrow": "Método · Gestión integrada de plagas",
+    "lead": "Un tratamiento puntual no es lo mismo que un proceso: valoración, tratamiento adecuado, seguimiento y prevención.",
+    "breadcrumb": [["Servicios", "/servicios/"]],
+    "heroImage": "IMG-IPM-01",
+    "blocks": [
+      { "type": "text", "id": "que-es", "h2": "Qué es la gestión integrada de plagas", "html": "<p>La gestión integrada de plagas (GIP, en inglés IPM) combina varias medidas en lugar de depender de una sola: conocer el problema, elegir los métodos adecuados, comprobar el resultado y reducir el riesgo de que vuelva a aparecer.</p>" },
+      { "type": "todo", "text": "Revisión profesional y fuentes: contrastar la definición y los principios con documentos oficiales (EPA, autoridades sanitarias españolas, Generalitat Valenciana) antes de publicar." },
+      { "type": "infographic", "id": "IG-01" },
+      { "type": "steps", "h2": "Fases del proceso", "items": [
+        { "h3": "1. Información y valoración", "p": "Información previa, inspección del lugar, identificación y alcance del problema." },
+        { "h3": "2. Plan de tratamiento", "p": "Plan individual según las zonas afectadas y las superficies." },
+        { "h3": "3. Tratamiento", "p": "Métodos físicos (vapor seco) y, cuando está justificado, aplicación dirigida; también una combinación de ambos." },
+        { "h3": "4. Refugios y rutas de propagación", "p": "Documentación de grietas y huecos y recomendaciones. Cerrarlos por sí solo no elimina una infestación ni garantiza que no vuelvan a entrar." },
+        { "h3": "5. Seguimiento", "p": "Monitorización y revisión posterior al tratamiento." },
+        { "h3": "6. Asesoramiento y prevención", "p": "Indicaciones para el cliente y, en alojamientos, para el personal." }
+      ] },
+      { "type": "todo", "text": "OWNER-INPUT #7, #11, #12: confirma qué pasos realizas tú, cuáles recomiendas y cuáles requieren un contratista externo (tabla «Quién hace qué»). Sin esa confirmación la sección no se publica." },
+      { "type": "roles", "h2": "Quién hace qué", "columns": [{ "title": "Lo realiza el técnico", "items": ["Pendiente de confirmar"] }, { "title": "Recomendación al cliente", "items": ["Pendiente de confirmar"] }, { "title": "Contratista externo", "items": ["Pendiente de confirmar"] }] },
+      { "type": "priceBox", "h2": "Precios" }
+    ],
+    "faq": [{ "q": "¿Qué diferencia hay entre control integrado y un tratamiento puntual?", "a": "Un tratamiento puntual aplica un método una vez. El control integrado incluye valoración previa, el método más adecuado, comprobación posterior y recomendaciones de prevención." }],
+    "sources": []
+  },
+  "en": {
+    "url": "/en/services/integrated-pest-management/",
+    "title": "Integrated pest management for bed bugs (IPM) | Control de Chinches",
+    "description": "How we combine inspection, physical and targeted treatment, follow-up and prevention for bed bugs: integrated pest management (IPM).",
+    "h1": "Integrated pest management for bed bugs (IPM)",
+    "eyebrow": "Method · Integrated pest management",
+    "lead": "A one-off treatment is not the same as a process: assessment, the right treatment, follow-up and prevention.",
+    "breadcrumb": [["Services", "/en/services/"]],
+    "heroImage": "IMG-IPM-01",
+    "blocks": [
+      { "type": "text", "id": "what-is-ipm", "h2": "What integrated pest management is", "html": "<p>Integrated pest management (IPM, in Spanish GIP) combines several measures instead of relying on one: understanding the problem, choosing suitable methods, checking the result and reducing the risk of it coming back.</p>" },
+      { "type": "todo", "text": "Professional review and sources: check the definition and principles against official documents (EPA, Spanish health authorities, Generalitat Valenciana) before publishing." },
+      { "type": "infographic", "id": "IG-01" },
+      { "type": "steps", "h2": "Stages of the process", "items": [
+        { "h3": "1. Information and assessment", "p": "Initial information, on-site inspection, identification and extent of the problem." },
+        { "h3": "2. Treatment plan", "p": "An individual plan based on the affected areas and surfaces." },
+        { "h3": "3. Treatment", "p": "Physical methods (dry steam) and, where justified, targeted application; or a combination of both." },
+        { "h3": "4. Hiding places and routes of spread", "p": "Documenting cracks and gaps, with recommendations. Sealing them alone does not eliminate an infestation or guarantee that bed bugs will not be brought in again." },
+        { "h3": "5. Follow-up", "p": "Monitoring and a check after treatment." },
+        { "h3": "6. Advice and prevention", "p": "Guidance for the client and, in accommodation, for staff." }
+      ] },
+      { "type": "todo", "text": "OWNER-INPUT #7, #11, #12: confirm which steps you carry out, which you recommend and which need an external contractor (the “Who does what” table). The section stays unpublished without it." },
+      { "type": "roles", "h2": "Who does what", "columns": [{ "title": "Done by the technician", "items": ["To be confirmed"] }, { "title": "Recommended to the client", "items": ["To be confirmed"] }, { "title": "External contractor", "items": ["To be confirmed"] }] },
+      { "type": "priceBox", "h2": "Prices" }
+    ],
+    "faq": [{ "q": "What is the difference between integrated control and a one-off treatment?", "a": "A one-off treatment applies one method once. Integrated control includes an assessment first, the most suitable method, a check afterwards and prevention advice." }],
+    "sources": []
+  }
+}

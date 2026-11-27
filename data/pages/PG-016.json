@@ -1,0 +1,47 @@
+{
+  "id": "PG-016",
+  "template": "T-D",
+  "status": "Draft",
+  "dataPage": "about",
+  "cta": { "message": "default" },
+  "related": ["PG-011", "PG-013"],
+  "_blocked": ["OWNER-INPUT #13-#24 (qualifications, registry, experience, equipment)", "LGL-01/LGL-07", "photos IMG-ABOUT-*, IMG-CRED-*", "owner approval of every statement"],
+  "es": {
+    "url": "/sobre-mi/",
+    "title": "Sobre mí: Albert János | Control de Chinches",
+    "description": "Quién está detrás de Control de Chinches: especialización exclusiva en chinches de cama, formación y método de trabajo.",
+    "h1": "Albert János: especialista en chinches de cama",
+    "eyebrow": "Sobre mí",
+    "lead": "Control de Chinches se dedica exclusivamente a las chinches de cama en Alicante y la Costa Blanca.",
+    "breadcrumb": [],
+    "heroImage": "IMG-ABOUT-01",
+    "blocks": [
+      { "type": "text", "id": "presentacion", "h2": "Presentación", "html": "<p>Control de Chinches es un servicio especializado únicamente en chinches de cama, con tratamiento químico dirigido y vapor seco, para viviendas y alojamientos turísticos.</p>" },
+      { "type": "todo", "text": "OWNER-INPUT #13–#24: titulación exacta y organismo, registro profesional que se pueda publicar, formación complementaria, experiencia, equipos y principios de trabajo. Solo se publicará lo que aportes y documentes; la titulación húngara no se presenta como autorización para operar en España (LGL-07)." },
+      { "type": "timeline", "h2": "Trayectoria", "items": [{ "when": "Pendiente", "text": "Hitos aportados y documentados por el propietario." }] },
+      { "type": "docs", "h2": "Formación y documentos", "images": ["IMG-CRED-01", "IMG-CRED-03", "IMG-CRED-04"] },
+      { "type": "text", "id": "metodo", "h2": "Método de trabajo", "html": "<p>Cada caso empieza por una valoración de las zonas afectadas. Después se recomienda el método adecuado y se explica la preparación y el seguimiento.</p>" }
+    ],
+    "faq": [],
+    "sources": []
+  },
+  "en": {
+    "url": "/en/about/",
+    "title": "About Albert János | Control de Chinches",
+    "description": "Who is behind Control de Chinches: a single focus on bed bugs, training and working method.",
+    "h1": "Albert János: bed bug specialist",
+    "eyebrow": "About",
+    "lead": "Control de Chinches works only on bed bugs in Alicante and the Costa Blanca.",
+    "breadcrumb": [],
+    "heroImage": "IMG-ABOUT-01",
+    "blocks": [
+      { "type": "text", "id": "introduction", "h2": "Introduction", "html": "<p>Control de Chinches is a service specialised solely in bed bugs, with targeted chemical treatment and dry steam, for homes and holiday accommodation.</p>" },
+      { "type": "todo", "text": "OWNER-INPUT #13–#24: exact qualification and issuing body, publishable professional register entry, further training, experience, equipment and working principles. Only what you provide and document will be published; the Hungarian qualification is not presented as authorisation to operate in Spain (LGL-07)." },
+      { "type": "timeline", "h2": "Background", "items": [{ "when": "Pending", "text": "Milestones supplied and documented by the owner." }] },
+      { "type": "docs", "h2": "Training and documents", "images": ["IMG-CRED-01", "IMG-CRED-03", "IMG-CRED-04"] },
+      { "type": "text", "id": "method", "h2": "Working method", "html": "<p>Every case starts with an assessment of the affected areas. We then recommend the right method and explain preparation and follow-up.</p>" }
+    ],
+    "faq": [],
+    "sources": []
+  }
+}

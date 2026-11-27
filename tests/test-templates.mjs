@@ -7,7 +7,7 @@ import { startServer, launch, repoRoot } from '../tools/lib/browser.mjs';
 
 packageSite({ mode: 'preview', out: 'dist-preview', pageDirs: ['tests/fixtures/pages'] });
 const axeSrc = readFileSync(join(repoRoot, 'tools/node_modules/axe-core/axe.min.js'), 'utf8');
-const fixtures = readdirSync(join(repoRoot, 'tests/fixtures/pages')).map(f => JSON.parse(readFileSync(join(repoRoot, 'tests/fixtures/pages', f), 'utf8')));
+const fixtures = ['tests/fixtures/pages', 'data/pages'].flatMap(d => readdirSync(join(repoRoot, d)).filter(f => f.endsWith('.json')).map(f => JSON.parse(readFileSync(join(repoRoot, d, f), 'utf8'))));
 const shots = join(repoRoot, 'reports/raw/templates'); mkdirSync(shots, { recursive: true });
 const failures = []; const ok = (c, m) => { if (!c) { failures.push(m); console.log('  FAIL', m); } };
 const server = await startServer(4184, join(repoRoot, 'dist-preview')); const browser = await launch();

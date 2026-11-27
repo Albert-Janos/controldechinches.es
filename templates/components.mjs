@@ -107,7 +107,8 @@ export function picture(ctx, id, { sizes = '(min-width: 990px) 46rem, 100vw', ea
   const v = img.variants, src = (w, f) => `${v.dir}${v.base}-${w}.${f}`;
   const set = f => v.widths.map(w => `${src(w, f)} ${w}w`).join(', ');
   const big = v.widths[v.widths.length - 1];
-  return `<picture>${v.formats.includes('avif') ? `<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">` : ''}<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}"><img${cls ? ` class="${cls}"` : ''} src="${src(big, 'webp')}" srcset="${set('webp')}" sizes="${sizes}" width="${v.width}" height="${v.height}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}></picture>`;
+  const mob = v.mobile ? ['avif', 'webp'].filter(f => v.formats.includes(f)).map(f => `<source media="(max-width: 760px)" type="image/${f}" srcset="${v.mobile.widths.map(w => `${v.dir}${v.base}-m-${w}.${f} ${w}w`).join(', ')}" sizes="100vw">`).join('') : '';
+  return `<picture>${mob}${v.formats.includes('avif') ? `<source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">` : ''}<source type="image/webp" srcset="${set('webp')}" sizes="${sizes}"><img${cls ? ` class="${cls}"` : ''} src="${src(big, 'webp')}" srcset="${set('webp')}" sizes="${sizes}" width="${v.width}" height="${v.height}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}></picture>`;
 }
 export function figure(ctx, id, opts = {}) {
   const cap = ctx.images[id]?.caption?.[ctx.lang];

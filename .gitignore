@@ -18,3 +18,5 @@ dist-*/
 *.pages-tmp/
 reports/package-*-manifest.json
 reports/raw-lh-*.log
+_pending-images/
+tests/.tmp-gate-pages/

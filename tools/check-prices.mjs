@@ -21,7 +21,7 @@ const skip = new Set(['.git', 'docs', 'tools', 'data', 'raw-images', 'node_modul
 const pages = [];
 (function walk(d) {
   for (const n of readdirSync(d)) {
-    if (skip.has(n)) continue;
+    if (skip.has(n) || n.startsWith('dist') || n.startsWith('_pending')) continue;
     const f = join(d, n);
     statSync(f).isDirectory() ? walk(f) : n.endsWith('.html') && pages.push(f);
   }
