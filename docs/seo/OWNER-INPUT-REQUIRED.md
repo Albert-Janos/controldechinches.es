@@ -3,6 +3,36 @@
 Frissítve: 2026-11-27 (P0.1/P1 után). **Egy helyen, témák szerint csoportosítva**; a kérdésszámok (#) más dokumentumokban hivatkozva vannak, ezért nem változnak. Válaszolhatsz egyben, a számok mellé írva (pl. „#13: …”), vagy elég a nálad meglévő dokumentumokat/fotókat átadni.
 Jelölés: **H** = magas (blokkolja a publikálást vagy egy teljes fázist) · **M** = közepes · **L** = alacsony · ✅ = megválaszolva. A blokkolt tartalom **Draft** marad, a fejlesztés közben folytatódik a többivel.
 
+## Állapot a 2. munkacsomag után (2026-11-27)
+Forrás: OWNER-APPROVALS-WP2.md. **✅ lezárt · ◐ részben teljesült (pontosan jelölve, mi hiányzik) · ⛔ nyitott.**
+| # | Állapot | Mi ismert / mi hiányzik |
+|---|---|---|
+| 3 | ◐ | Ismert: 18 település, kiemelt lista. Hiányzik: kiszállás kiindulási települése, távolságfüggő díjrendszer; az élő főoldal (15) és JSON-LD (3) szinkronja |
+| 7 | ✅ | IPM-lépések, „Quién hace qué” kitöltve (PG-011) |
+| 8 | ✅ | Gép: Polti Cimex Eradicator (gyártói adatok: MANUFACTURER-DATA.md) |
+| 9 | ◐ | Ismert: kezelhető/kerülendő felületek, munkafolyamat. Hiányzik: tényleges beállítások, távolságok, kezelési idők, kazánhőmérséklet |
+| 10 | ⛔ | Biocid termékek, hatóanyagok, nyilvántartási számok, SDS, visszalépési idők hiányoznak (LGL-05). Hidegköd: használatban kiegészítésként, **a készülék típusa nincs kiválasztva** |
+| 11 | ✅ | Utókövetés, felderítés a kezelés része, szóbeli tájékoztatás lakossági ügyfélnek. (Dokumentumok adminisztratív mezői nyitottak) |
+| 12 | ✅ | Réslezárás: ügyfélnek ajánlott / külső szakember; a tulajdonos nem kínálja |
+| 13 | ◐ | Ismert: 2026-os magyar képesítés. Hiányzik: pontos hivatalos megnevezés, kiállító, igazolás |
+| 14 | ✅ | A magyar nyilvántartási számot a tulajdonos **nem** publikálja (döntés) |
+| 15 | ⛔ | Nemzetközi tanúsítványok listája és dokumentumai |
+| 16 | ⛔ | Spanyol működési státusz, ROESB, elismerés |
+| 17 | ◐ | Ismert: tevékenység kezdete 2023, magyarországi tapasztalat. Hiányzik: évek/ügyféltípusok részletei; kezelések száma nincs megadva |
+| 18 | ◐ | Ismert: felderítési eszközök. Hiányzik: további eszközök, védőfelszerelés részletei |
+| 19 | ✅ | Bemutatkozás tényei (a szöveg a publikálás előtt tulajdonosi átolvasást kér) |
+| 20 | ⛔ | Nincs külső lektor; független szakmai lektorálás nyitott |
+| 24 | ◐ | Tervezett nyelvek: ES/EN/HU. Az AI-diszpécser csak spanyol; EN/HU telefonos működés nem igazolt |
+| 31 | ◐ | „tratamiento combinado” használatban; a tulajdonos megnevezést nem erősítette meg külön |
+| 36 | ✅ | Nincs előfizetés/szerződés; eseti, egyedi egyeztetésű megelőző ellenőrzés |
+| 39 | ✅ | Kiegészítők jóváhagyva (nettó: gőz +80 egy összegben, kanapé +40, hidegköd 50-től) — élő oldal szinkron szükséges |
+| 40 | ✅ | Aznapi időpont nem garantált, kapacitásfüggő; nincs felár |
+| 21, 23 | ⛔ | Portréhasználat hozzájárulása; megszólítás — nem érintette |
+| 25–27, 34, 35 | ⛔ | Képjogok, saját fotók, esettanulmányok, B2B-hivatkozások — még nem átadottak |
+
+## 13. Új nyitott tételek (2. munkacsomag)
+IVA-kulcs és fogyasztói ármegjelenítés véglegesítése (spanyol hivatalos forrás + könyvelő) · HPMed szakmai alkalmazásának gyártói megerősítése · kazánhőmérséklet dokumentált megerősítése · felelős technikus/alkalmazó követelmények, biztosítás, adatvédelmi/AI-híváskezelési dokumentáció · diszpécser nyelvi képességei · élő weboldal + központi árforrás + diszpécser szinkronja (árak, terület, számok) · kezelési dokumentumok végleges mezői · fertőzésmentességi lezárási protokoll időtartama · e-mail, cégadatok, NIF/CIF, cím (a 2. csomag nem érintette).
+
 ## Hol kezdd (ajánlott sorrend)
 1. **Fotók és dokumentumok** átadása a `raw-images/` mappákba (#25–#27, `PHOTO-SHOT-LIST.md` P0: 9 kép) — a leghosszabb átfutású tétel.
 2. **Jogi és vállalkozási adatok + spanyol szakértő** (#2, #16, #37) — a tranzakciós oldalak éles publikálását ezek zárják.

@@ -32,13 +32,15 @@
   "blocks": [
    {
     "type": "text",
-    "id": "como-trabajamos",
-    "h2": "Cómo trabajamos en Torrevieja",
-    "html": "<p>Valoramos las zonas afectadas y te recomendamos el método adecuado: tratamiento químico dirigido o vapor seco. El precio final y el desplazamiento se confirman por escrito antes de reservar.</p>"
+    "id": "servicio-en-torrevieja",
+    "h2": "El servicio en Torrevieja",
+    "html": "<p>En Torrevieja conviven viviendas habituales, segundas residencias y alojamientos turísticos; el método y la forma de coordinar la visita se adaptan a cada uno. El trabajo lo realiza personalmente un técnico especializado solo en chinches de cama.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #3: confirma que se atiende Torrevieja y la regla de desplazamiento. Hechos locales reales (tipos de vivienda habituales, observaciones propias) y fotos locales (IMG-LOC-TOR-01). No se publican referencias locales inventadas."
+    "type": "text",
+    "id": "como-se-decide-el-metodo",
+    "h2": "Cómo se decide el método",
+    "html": "<p>Según la gravedad, los muebles y las superficies, la presencia de niños o mascotas y el uso del inmueble, se elige tratamiento químico dirigido, vapor seco o una combinación. Ver <a href=\"{{url:PG-011}}\">control integrado</a>. Si gestionas un alojamiento turístico, consulta también <a href=\"{{url:PG-015}}\">el servicio para alojamientos</a>.</p>"
    },
    {
     "type": "priceBox",
@@ -55,7 +57,7 @@
      },
      {
       "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticidas.",
+      "text": "Calor localizado, sin insecticida en el paso de vapor.",
       "href": "/servicios/vapor-seco/"
      },
      {
@@ -64,12 +66,20 @@
       "href": "/servicios/control-integrado/"
      }
     ]
+   },
+   {
+    "type": "todo",
+    "text": "Pendiente: localidad de salida y tarifa de desplazamiento (sin definir). La localidad está en el área aprobada. No se publican datos locales (tipos de vivienda, estadísticas, referencias) sin una fuente comprobable."
    }
   ],
   "faq": [
    {
-    "q": "¿En cuánto tiempo podéis venir a Torrevieja?",
-    "a": "Depende de la localidad y de la agenda. Escríbenos por WhatsApp para consultar una fecha."
+    "q": "¿Trabajáis en segundas residencias?",
+    "a": "Sí, en viviendas de cualquier tipo de uso. Si la vivienda está vacía parte del año, indícalo al pedir información."
+   },
+   {
+    "q": "¿Cuánto cuesta el desplazamiento a Torrevieja?",
+    "a": "Depende de la distancia y se confirma por escrito antes de reservar."
    }
   ],
   "sources": [],
@@ -80,24 +90,25 @@
    ]
   ],
   "url": "/zonas/torrevieja/",
-  "title": "Chinches de cama en Torrevieja: tratamiento y precios",
-  "description": "Tratamiento de chinches de cama en Torrevieja: químico desde 139 € y vapor seco desde 150 €. Confirmamos disponibilidad y precio por escrito.",
+  "title": "Chinches de cama en Torrevieja: viviendas y alojamientos",
+  "description": "Tratamiento de chinches de cama en Torrevieja para viviendas habituales, segundas residencias y alojamientos turísticos, con valoración previa por WhatsApp.",
   "h1": "Chinches de cama en Torrevieja",
   "eyebrow": "Zona de servicio · Torrevieja",
-  "lead": "Tratamiento de chinches en viviendas y alojamientos turísticos. Indícanos tu localidad y las señales que has visto.",
-  "heroImage": "IMG-LOC-TOR-01"
+  "lead": "Para viviendas habituales, segundas residencias y alojamientos turísticos de Torrevieja."
  },
  "en": {
   "blocks": [
    {
     "type": "text",
-    "id": "how-we-work",
-    "h2": "How we work in Torrevieja",
-    "html": "<p>We assess the affected areas and recommend the right method: targeted chemical treatment or dry steam. The final price and travel are confirmed in writing before you book.</p>"
+    "id": "service-in-torrevieja",
+    "h2": "The service in Torrevieja",
+    "html": "<p>Torrevieja has permanent homes, second homes and tourist accommodation side by side; the method and how the visit is coordinated are adapted to each. The work is done personally by a technician who specialises only in bed bugs.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #3: confirm Torrevieja is served and the travel rule. Real local facts (typical property types, own observations) and local photos (IMG-LOC-TOR-01). No invented local references are published."
+    "type": "text",
+    "id": "how-the-method-is-decided",
+    "h2": "How the method is decided",
+    "html": "<p>Depending on the severity, the furniture and surfaces, the presence of children or pets and the use of the property, targeted chemical treatment, dry steam or a combination is chosen. See <a href=\"{{url:PG-011}}\">integrated pest management</a>. If you manage tourist accommodation, see also <a href=\"{{url:PG-015}}\">the accommodation service</a>.</p>"
    },
    {
     "type": "priceBox",
@@ -114,7 +125,7 @@
      },
      {
       "title": "Dry steam",
-      "text": "Localised heat, without insecticides.",
+      "text": "Localised heat, no insecticide in the steam step.",
       "href": "/en/services/dry-steam/"
      },
      {
@@ -123,12 +134,20 @@
       "href": "/en/services/integrated-pest-management/"
      }
     ]
+   },
+   {
+    "type": "todo",
+    "text": "Pending: departure town and travel fee (not defined). The town is in the approved area. No local data (housing types, statistics, references) is published without a verifiable source."
    }
   ],
   "faq": [
    {
-    "q": "How soon can you come to Torrevieja?",
-    "a": "Availability depends on your location and our schedule. Message us on WhatsApp to check."
+    "q": "Do you work in second homes?",
+    "a": "Yes, in homes of any kind of use. If the home is empty for part of the year, say so when asking for information."
+   },
+   {
+    "q": "How much does travel to Torrevieja cost?",
+    "a": "It depends on the distance and is confirmed in writing before you book."
    }
   ],
   "sources": [],
@@ -139,11 +158,10 @@
    ]
   ],
   "url": "/en/areas/torrevieja/",
-  "title": "Bed bugs in Torrevieja: treatment and prices",
-  "description": "Bed bug treatment in Torrevieja: chemical from €139 and dry steam from €150. We confirm availability and price in writing.",
+  "title": "Bed bug treatment in Torrevieja: homes and accommodation | Control de Chinches",
+  "description": "Bed bug treatment in Torrevieja for permanent homes, second homes and tourist accommodation, with a first assessment by WhatsApp.",
   "h1": "Bed bugs in Torrevieja",
   "eyebrow": "Service area · Torrevieja",
-  "lead": "Bed bug treatment for homes and holiday accommodation. Tell us your town and the signs you have seen.",
-  "heroImage": "IMG-LOC-TOR-01"
+  "lead": "For permanent homes, second homes and tourist accommodation in Torrevieja."
  }
 }

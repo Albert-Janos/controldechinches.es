@@ -5,6 +5,7 @@ import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadPages } from './build.mjs';
+import { allowedNumbers } from '../templates/prices.mjs';
 
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const a = process.argv.slice(2), get = k => { const i = a.indexOf(k); return i >= 0 ? a[i + 1] : undefined; };
@@ -25,7 +26,7 @@ const exists = u => { const p = decodeURIComponent(u.split('#')[0].split('?')[0]
 const attr = (s, re) => (s.match(re) || [])[1];
 
 const titles = new Map(), descs = new Map(), inbound = new Map(), kws = new Map();
-const allowedPrices = new Set([prices.chemical.bedroomPrices, prices.chemical.additionalBedroom, prices.drySteamStandalone.from, prices.addons.steamPerBedroom.amount, prices.addons.sofaEach.amount, prices.addons.ulvFrom.amount].flat().map(String));
+const allowedPrices = allowedNumbers(prices); // net + consumer (VAT-included) amounts derived from data/prices.json by templates/prices.mjs
 
 for (const pg of pages) {
   const g = generated.get(pg.url), h = pg.html, tag = pg.url;
@@ -59,6 +60,13 @@ for (const pg of pages) {
   // fix pack 1 gates: unique ids, no repeated image in a page (author portrait excepted), no pre-filled WhatsApp text, no per-bedroom price wording in meta
   const idl = [...h.matchAll(/\sid="([^"]+)"/g)].map(m => m[1]), dupIds = [...new Set(idl.filter((x, i) => idl.indexOf(x) !== i))]; if (dupIds.length) E(`${tag}: duplicate id(s) ${dupIds.join(', ')}`);
   const body = (h.match(/<main[\s\S]*<\/main>/) || [h])[0].replace(/<aside class="sx-author"[\s\S]*?<\/aside>/, ''), imgl = [...body.matchAll(/data-image-id="([^"]+)"|<img\b[^>]*\ssrc="([^"]+)"/g)].map(m => m[1] || m[2].replace(/-\d+\.\w+$/, '')), dupImg = [...new Set(imgl.filter((x, i) => imgl.indexOf(x) !== i))]; if (dupImg.length) E(`${tag}: same image used more than once on the page: ${dupImg.join(', ')}`);
+  { const tels = [...new Set([...h.matchAll(/href="tel:([^"]+)"/g)].map(m => m[1]))], was = [...new Set([...h.matchAll(/href="(https:\/\/wa\.me\/[^"]*)"/g)].map(m => m[1]))];
+    if (tels.some(t => t !== site.dispatcher.tel)) E(`${tag}: tel: link is not the approved dispatcher number (${tels.join(', ')})`);
+    if (was.some(w => w !== site.whatsapp.url)) E(`${tag}: WhatsApp link is not the approved WhatsApp URL (${was.join(', ')})`);
+    if (h.includes(site.whatsapp.display) && h.includes(`tel:${site.whatsapp.number}`)) E(`${tag}: WhatsApp number used as a phone CTA`); }
+  if (prices.vat.status !== 'approved' && /(\d[\d.,]*\s?€|€\s?\d)/.test(h.replace(/<script[\s\S]*?<\/script>/g, ''))) P(`${tag}: shows a price while VAT/consumer price presentation is not final (P)`);
+  if (/\{\{[a-z]+:?\w*\}\}/.test(h)) E(`${tag}: unresolved {{token}}`);
+  if (/D[eé]nia/.test(h)) E(`${tag}: Dénia is not an approved service town`);
   if (/wa\.me\/\d+\?/.test(h)) E(`${tag}: WhatsApp link with pre-filled text (owner decision: none)`);
   if (/(?:por|per) (?:dormitorio|bedroom)/i.test(desc || '')) E(`${tag}: meta description implies a per-bedroom price (the chemical price is per treatment, depending on the bedrooms affected)`);
   const ph = (h.match(/class="sx-ph/g) || []).length; if (ph) P(`${tag}: ${ph} image placeholder(s) left (P)`);

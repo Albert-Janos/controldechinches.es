@@ -52,6 +52,12 @@
    },
    {
     "type": "text",
+    "id": "seguimiento-con-control-de-chinches",
+    "h2": "Seguimiento tras un tratamiento de Control de Chinches",
+    "html": "<p>Después del tratamiento puedes comunicar nuevos indicios y enviar fotos por WhatsApp. Si hace falta, se hace una revisión en el lugar y, cuando está indicado, se colocan trampas de monitorización. La revisión en el lugar se acuerda de forma individual, también en cuanto a su precio.</p><p>Para valorar el resultado se tiene en cuenta:</p><ul><li>si se ven chinches vivas o no;</li><li>si aparecen nuevas manchas de excrementos;</li><li>lo que muestran las trampas de monitorización;</li><li>lo que comunica el cliente;</li><li>el resultado de la revisión en el lugar;</li><li>cuánto tiempo lleva sin síntomas ni detecciones.</li></ul><p>Que dejen de aparecer picaduras no demuestra por sí solo que la infestación haya terminado.</p>"
+   },
+   {
+    "type": "text",
     "id": "siguiente",
     "h2": "Siguiente paso",
     "html": "<p>Para alojamientos, consulta <a href=\"/servicios/planes-prevencion/\">prevención y monitorización</a>.</p>"
@@ -135,6 +141,12 @@
    {
     "type": "infographic",
     "id": "IG-13"
+   },
+   {
+    "type": "text",
+    "id": "follow-up-after-treatment",
+    "h2": "Follow-up after a Control de Chinches treatment",
+    "html": "<p>After treatment you can report new signs and send photos by WhatsApp. If needed, an on-site check is made and, where indicated, monitoring traps are placed. The on-site check is agreed individually, including its price.</p><p>To assess the result the following are considered:</p><ul><li>whether live bed bugs are seen or not;</li><li>whether new excreta spots appear;</li><li>what the monitoring traps show;</li><li>what the client reports;</li><li>the result of the on-site check;</li><li>how long there have been no symptoms or detections.</li></ul><p>Bites stopping does not by itself prove that the infestation is over.</p>"
    },
    {
     "type": "text",

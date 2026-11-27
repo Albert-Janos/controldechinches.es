@@ -41,6 +41,12 @@
    },
    {
     "type": "text",
+    "id": "indicaciones-tras-el-tratamiento",
+    "h2": "Indicaciones tras el tratamiento",
+    "html": "<ul><li>respeta el plazo de ventilación y reentrada que se te indique;</li><li>no laves las superficies tratadas antes de tiempo si el producto aplicado lo desaconseja;</li><li>mantén separados los textiles limpios de los que no se han tratado;</li><li>avisa cuanto antes si ves nuevos indicios;</li><li>si ya se permite volver a la habitación tratada, evita mudarte a otro dormitorio;</li><li>revisa con regularidad las trampas de monitorización si se han colocado.</li></ul><p>La seguridad va primero: la habitación tratada no se usa antes de que termine el plazo indicado para el producto aplicado. Los plazos concretos forman parte de las instrucciones de cada tratamiento.</p>"
+   },
+   {
+    "type": "text",
     "id": "seguimiento",
     "h2": "Seguimiento",
     "html": "<ul><li>La EPA recomienda revisar al menos cada 7 días y seguir comprobando durante al menos un año.</li><li>Rutgers: interceptores bajo las patas de la cama, revisados cada 1–2 semanas; solo se deja de vigilar tras un mes sin chinches.</li><li>Purdue: al menos una inspección de seguimiento entre 10 y 21 días después de cada actuación.</li><li>Zaragoza: nueva inspección a los 10–15 días y, si hace falta, una tercera visita 10–15 días después.</li><li>Las fundas protectoras se mantienen puestas durante mucho tiempo (Purdue y Zaragoza indican al menos un año).</li></ul>"
@@ -124,6 +130,12 @@
     "id": "re-entry",
     "h2": "Re-entry and ventilation",
     "html": "<p>Product labels state how long to stay out of the treated area (EPA). The time depends on the method and product, so follow your technician’s instructions.</p>"
+   },
+   {
+    "type": "text",
+    "id": "after-treatment-instructions",
+    "h2": "Instructions after treatment",
+    "html": "<ul><li>respect the ventilation and re-entry time you are given;</li><li>do not wash treated surfaces early if the product applied advises against it;</li><li>keep clean textiles apart from those that have not been treated;</li><li>report any new signs as soon as possible;</li><li>if you are already allowed back into the treated room, avoid moving to another bedroom;</li><li>check monitoring traps regularly if any were placed.</li></ul><p>Safety comes first: the treated room is not used before the time stated for the product applied has passed. The specific times are part of the instructions for each treatment.</p>"
    },
    {
     "type": "text",

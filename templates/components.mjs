@@ -1,14 +1,14 @@
 // Reusable HTML components for generated pages. Pure functions: (ctx, data) -> string.
 // ctx = { lang, ui, site, prices, images, pages, included:Set<pageId>, mode:'preview'|'production', page, pageLang }
 export const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const money = (lang, n) => lang === 'en' ? '€' + n : n + ' €';
+import { consumerPrice, resolveTokens } from './prices.mjs';
 export const slug = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 export function pageUrl(ctx, id, lang = ctx.lang) { return ctx.pages[id]?.[lang]?.url ?? null; }
 export function absUrl(ctx, path) { return ctx.site.domain + path; }
 // Owner decision (audit fix pack 1): WhatsApp links on generated pages carry NO pre-filled message. The page.cta.message key is
 // kept only as an inert hook so a future decision can reintroduce per-page messages in this one place.
-export function waLink(ctx) { return `https://wa.me/${ctx.site.whatsappNumber}`; }
+export function waLink(ctx) { return `https://wa.me/${ctx.site.whatsapp.number}`; }
 
 // ---------- publication-aware linking ----------
 // A link is "dead" when it points at a generated page that is not part of the current build (e.g. still Draft in a production build).
@@ -77,7 +77,7 @@ export function header(ctx) {
   const cur = u => u === L.url ? ' aria-current="page"' : '';
   const nav = items.map(([t, u]) => `<a href="${u}"${cur(u)}>${esc(t)}</a>`).join('');
   const esHref = page.es ? page.es.url : '/', enHref = page.en ? page.en.url : '/en/';
-  return `<header class="site-header"><div class="utility"><div class="wrap utility-inner"><a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>${esc(ui.area)}</a><a href="tel:${site.phone}" data-cta="navigation"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>${esc(site.phoneDisplay)}</a></div></div>
+  return `<header class="site-header"><div class="utility"><div class="wrap utility-inner"><a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>${esc(ui.area)}</a><a href="tel:${site.dispatcher.tel}" data-cta="navigation"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>${esc(site.dispatcher.display)}</a></div></div>
 <div class="wrap nav"><a class="logo" href="${lang === 'es' ? '/' : '/en/'}" aria-label="${esc(ui.home_label)}"><img src="${site.assets.logo}" width="480" height="270" alt="${esc(site.brand)}"></a>
 <nav class="desktop-nav" aria-label="${esc(ui.nav.label)}">${nav}</nav>
 <div class="nav-actions"><div class="languages" role="group" aria-label="${esc(ui.language)}"><a lang="es" hreflang="es" href="${esHref}" aria-label="ES – Español"${lang === 'es' ? ' aria-current="page"' : ''}>ES</a><a lang="en" hreflang="en" href="${enHref}" aria-label="EN – English"${lang === 'en' ? ' aria-current="page"' : ''}>EN</a></div>
@@ -91,8 +91,8 @@ export function footer(ctx) {
   return `<footer class="footer"><div class="wrap"><div class="footer-grid">
 <div class="footer-brand"><a class="logo" href="${lang === 'es' ? '/' : '/en/'}" aria-label="${esc(ui.home_label)}"><img src="${site.assets.logo}" width="480" height="270" alt="${esc(site.brand)}"></a><p>${esc(f.tagline)}</p></div>
 <nav aria-label="${esc(f.explore)}"><h2>${esc(f.explore)}</h2>${links}</nav>
-<div><h2>${esc(f.area)}</h2>${zones}<a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}">${esc(ui.area)}</a><p>${esc(site.serviceAreas.confirmed.join(', '))}.</p></div>
-<div><h2>${esc(f.contact)}</h2><a href="${waLink(ctx)}" data-cta="content" target="_blank" rel="noopener noreferrer"><svg class="icon wa" aria-hidden="true"><use href="#icon-wa"/></svg> WhatsApp</a><a href="tel:${site.phone}" data-cta="content"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> ${esc(site.phoneDisplay)}</a></div>
+<div><h2>${esc(f.area)}</h2>${zones}<a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}">${esc(ui.area)}</a><p>${esc(site.serviceAreas.featured.join(', '))} ${esc(f.andMore)}</p></div>
+<div><h2>${esc(f.contact)}</h2><a href="${waLink(ctx)}" data-cta="content" target="_blank" rel="noopener noreferrer"><svg class="icon wa" aria-hidden="true"><use href="#icon-wa"/></svg> WhatsApp</a><a href="tel:${site.dispatcher.tel}" data-cta="content"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> ${esc(site.dispatcher.display)}</a></div>
 </div><div class="footer-bottom"><span>© 2026 ControlDeChinches.es</span><div><a href="${ui.legalPaths.legal}">${esc(f.legal)}</a><a href="${ui.legalPaths.privacy}">${esc(f.privacy)}</a><span hidden data-privacy-item><button type="button" data-cookie-settings>${esc(f.settings)}</button></span></div></div></div></footer>`;
 }
 
@@ -103,12 +103,12 @@ export function breadcrumb(ctx) {
   return { items: trail, html: `<nav class="sx-crumbs sx-wrap" aria-label="${esc(ui.breadcrumb)}"><ol>${trail.map(([t, u]) => u ? `<li><a href="${u}">${esc(t)}</a></li>` : `<li aria-current="page">${esc(t)}</li>`).join('')}</ol></nav>` };
 }
 export function button(ctx, kind, label, key = 'default', pos = 'content') {
-  if (kind === 'tel') return `<a class="button inverse" href="tel:${ctx.site.phone}" data-cta="${pos}"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>${esc(label)}</a>`;
+  if (kind === 'tel') return `<a class="button inverse" href="tel:${ctx.site.dispatcher.tel}" data-cta="${pos}"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>${esc(label)}</a>`;
   return `<a class="button yellow" href="${waLink(ctx, key)}" target="_blank" rel="noopener noreferrer" data-cta="${pos}"><svg class="icon wa" aria-hidden="true"><use href="#icon-wa"/></svg>${esc(label)}</a>`;
 }
 export function ctaBand(ctx, intensity = 'soft', key = 'default') {
   const { ui, site } = ctx, c = ui.cta;
-  if (intensity === 'strong') return `<section class="contact wrap" id="contacto"><div class="contact-inner"><div><h2>${esc(c.strongTitle)}</h2><p>${esc(c.strongText)}</p></div><div class="contact-actions">${button(ctx, 'wa', c.whatsapp, key, 'contact')}${button(ctx, 'tel', `${c.callTo} ${site.phoneDisplayShort}`, key, 'contact')}<small>${esc(site.assistantNote[ctx.lang])}</small></div></div></section>`;
+  if (intensity === 'strong') return `<section class="contact wrap" id="contacto"><div class="contact-inner"><div><h2>${esc(c.strongTitle)}</h2><p>${esc(c.strongText)}</p></div><div class="contact-actions">${button(ctx, 'wa', c.whatsapp, key, 'contact')}${button(ctx, 'tel', `${c.callTo} ${site.dispatcher.displayShort}`, key, 'contact')}<small>${esc(site.assistantNote[ctx.lang])}</small></div></div></section>`;
   if (intensity === 'medium') return `<section class="sx-wrap sx-block" id="contacto"><div class="sx-cta sx-cta--medium"><div><h2>${esc(c.mediumTitle)}</h2><p>${esc(c.mediumText)}</p></div><div class="actions">${button(ctx, 'wa', c.whatsapp, key, 'content')}</div></div></section>`;
   return `<section class="sx-block" id="contacto"><div class="sx-cta sx-cta--soft"><div><h2>${esc(c.question)}</h2><p>${esc(c.questionText)}</p></div><div class="actions"><a class="text-link" href="${waLink(ctx, key)}" target="_blank" rel="noopener noreferrer" data-cta="content">${esc(c.whatsapp)}</a></div></div></section>`;
 }
@@ -173,8 +173,13 @@ export function renderBlock(ctx, b, i) {
       const p = ctx.prices, c = p.chemical.bedroomPrices[0], s = p.drySteamStandalone.from;
       const pr = lang === 'es' ? '/precios.html' : '/en/prices.html';
       if (b.variant === 'chemical') return priceTable(ctx, b, id, pr);
-      if (b.variant === 'steam') return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox sx-pricebox--steam"><div class="sx-price-primary"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
-      return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${money(lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+      if (b.variant === 'steam') return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox sx-pricebox--steam"><div class="sx-price-primary"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+      return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+    }
+    case 'towns': { // the owner-approved service area, straight from data/site.json (links only to published city pages)
+      const cp = ctx.site.serviceAreas.cityPages || {};
+      const li = ctx.site.serviceAreas.confirmed.map(t => { const pid = cp[t], u = pid && ctx.included.has(pid) && pageUrl(ctx, pid); return `<li>${u ? `<a href="${u}">${esc(t)}</a>` : esc(t)}</li>`; }).join('');
+      return `<section class="sx-block">${heading(b, id)}${b.intro ? `<p>${b.intro}</p>` : ''}<ul class="sx-towns">${li}</ul></section>`;
     }
     case 'docform': return docForm(ctx, b, id);
     case 'print': return '<p class="sx-noprint"><button type="button" class="button yellow" data-print>' + esc(b.label) + '</button></p>';
@@ -192,10 +197,14 @@ export function renderBlock(ctx, b, i) {
   }
 }
 // Compact, complete approved price structure for the chemical treatment (+ stand-alone dry steam). Numbers come ONLY from data/prices.json.
+function extrasTable(ctx) {
+  const { ui, lang, prices: p } = ctx, m = n => consumerPrice(p, lang, n), e = p.extras;
+  return `<div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(ui.extrasCaption)}</caption><tbody><tr><th scope="row">${esc(ui.steamAddOn)}</th><td>+${m(e.steamAddOnToChemical.net)}</td></tr><tr><th scope="row">${esc(ui.sofa)}</th><td>+${m(e.sofa.net)}</td></tr><tr><th scope="row">${esc(ui.fogging)}</th><td>${esc(ui.fromPrice)} ${m(e.coldFoggingFrom.net)}</td></tr></tbody></table></div>`;
+}
 function priceTable(ctx, b, id, pr) {
-  const { ui, lang, prices: p } = ctx, c = p.chemical.bedroomPrices, m = n => money(lang, n);
+  const { ui, lang, prices: p } = ctx, c = p.chemical.bedroomPrices, m = n => consumerPrice(ctx.prices, lang, n);
   const rows = c.map((v, i) => `<tr><th scope="row">${i + 1} ${esc(i ? ui.bedrooms : ui.bedroom)}</th><td>${m(v)}</td></tr>`).join('') + `<tr><th scope="row">${esc(ui.extraBedroom)}</th><td>+${m(p.chemical.additionalBedroom)}</td></tr>`;
-  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}<div class="sx-pricetable"><div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(ui.chemVisit)}</caption><thead><tr><th scope="col">${esc(ui.bedroomsAffected)}</th><th scope="col">${esc(ui.price)}</th></tr></thead><tbody>${rows}</tbody></table></div><div class="sx-price-steamrow"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${m(p.drySteamStandalone.from)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
+  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}<div class="sx-pricetable"><div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(ui.chemVisit)}</caption><thead><tr><th scope="col">${esc(ui.bedroomsAffected)}</th><th scope="col">${esc(ui.price)}</th></tr></thead><tbody>${rows}</tbody></table></div>${extrasTable(ctx)}<div class="sx-price-steamrow"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${m(p.drySteamStandalone.from)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
 }
 function faqBlock(ctx, b, id) {
   const group = (g, i) => `<div class="sx-faq-group">${g.h3 ? `<h3>${esc(g.h3)}</h3>` : ''}<div class="questions">${g.items.map((q, j) => `<details name="faq-${i}"${i === 0 && j === 0 && b.open ? ' open' : ''}><summary>${esc(q.q)}</summary><p>${q.a}</p></details>`).join('')}</div></div>`;

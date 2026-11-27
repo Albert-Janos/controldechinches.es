@@ -2,22 +2,118 @@
   "_comment": "Single source of truth for business/site data used by the generator. Values mirror the live site; nothing here is invented. Fields marked null are unknown and must come from the owner (see docs/seo/OWNER-INPUT-REQUIRED.md).",
   "brand": "Control de Chinches",
   "domain": "https://www.controldechinches.es",
-  "phone": "+34605259206",
-  "phoneDisplay": "+34 605 259 206",
-  "phoneDisplayShort": "605 259 206",
-  "whatsappNumber": "34605259206",
-  "assistantNote": { "es": "Las llamadas las atiende un asistente virtual en español.", "en": "Calls are answered by a Spanish-speaking virtual assistant." },
-  "email": null,
-  "legal": { "ownerName": null, "taxId": null, "address": null, "registry": null, "status": "pending - see LEGAL-PUBLICATION-GATES (LGL-01, LGL-03)" },
-  "person": { "name": "Albert János", "id": "/sobre-mi/#person", "published": false },
-  "ids": { "organization": "#organization", "website": "#website" },
-  "assets": { "css": ["/assets/site.css", "/assets/seo.css"], "logo": "/assets/control-de-chinches-logo-480.webp", "ogImageDefault": "/assets/hero-0010.webp" },
-  "scripts": { "menu": "/assets/menu.js", "main": "/js/main.js?v=7", "seo": "/assets/seo.js?v=1" },
-  "serviceAreas": {
-    "_comment": "Only towns the owner has confirmed may be listed. The live home page lists 15 towns; footer lists 4; JSON-LD lists 3. Owner decision #3 pending - until then only the towns already in the live JSON-LD are used for areaServed.",
-    "confirmed": ["Alicante", "Benidorm", "Torrevieja"],
-    "unconfirmed": ["Elche", "Santa Pola", "San Juan", "Mutxamel", "Guardamar", "Orihuela Costa", "La Marina", "Rojales", "Villajoyosa", "Altea", "Calpe", "Pilar de la Horadada"]
+  "dispatcher": {
+    "tel": "+34865699969",
+    "display": "+34 865 699 969",
+    "displayShort": "865 699 969",
+    "language": "es",
+    "ai": true,
+    "status": "approved planned number (owner, work package 2); live telephony not changed here"
   },
-  "statuses": ["Draft", "Content ready", "Visual assets ready", "Technical QA passed", "Professional review passed", "Legal review required", "Owner approved", "Approved for indexing", "Published"],
-  "indexableStatuses": ["Approved for indexing", "Published"]
+  "whatsapp": {
+    "number": "34605259206",
+    "display": "+34 605 259 206",
+    "url": "https://wa.me/34605259206",
+    "prefilledMessage": false
+  },
+  "contactLanguages": {
+    "planned": [
+      "es",
+      "en",
+      "hu"
+    ],
+    "siteLanguages": [
+      "es",
+      "en"
+    ],
+    "note": "The AI dispatcher works in Spanish only. English/Hungarian phone support is NOT verified - do not claim it. English contact is offered via WhatsApp only; real language coverage is a pending owner confirmation."
+  },
+  "assistantNote": {
+    "es": "Las llamadas las atiende un asistente virtual en español. Para comunicarte en inglés, escribe por WhatsApp.",
+    "en": "Calls are answered by a Spanish-speaking virtual assistant. To communicate in English, please use WhatsApp."
+  },
+  "email": null,
+  "legal": {
+    "ownerName": null,
+    "taxId": null,
+    "address": null,
+    "registry": null,
+    "status": "pending - see LEGAL-PUBLICATION-GATES (LGL-01, LGL-03)"
+  },
+  "person": {
+    "name": "Albert János",
+    "id": "/sobre-mi/#person",
+    "published": false,
+    "startedPestControl": 2023,
+    "hungarianQualificationYear": 2026,
+    "showRegistrationNumber": false
+  },
+  "ids": {
+    "organization": "#organization",
+    "website": "#website"
+  },
+  "assets": {
+    "css": [
+      "/assets/site.css",
+      "/assets/seo.css"
+    ],
+    "logo": "/assets/control-de-chinches-logo-480.webp",
+    "ogImageDefault": "/assets/hero-0010.webp"
+  },
+  "scripts": {
+    "menu": "/assets/menu.js",
+    "main": "/js/main.js?v=7",
+    "seo": "/assets/seo.js?v=1"
+  },
+  "serviceAreas": {
+    "_comment": "Owner-approved service area (2026-11-27): 18 towns in Alicante and the Costa Blanca. Dénia is NOT approved. Departure town and distance-based travel pricing are NOT defined yet (do not invent). The featured list is a SHORT list for footers etc. and is never presented as the full area. The protected live home page (15 towns) and live JSON-LD (3 towns) still differ: sync is a pending owner task.",
+    "confirmed": [
+      "Alicante",
+      "San Vicente del Raspeig",
+      "San Juan de Alicante",
+      "El Campello",
+      "Mutxamel",
+      "Elche",
+      "Santa Pola",
+      "Guardamar del Segura",
+      "Torrevieja",
+      "Orihuela Costa",
+      "Benidorm",
+      "Villajoyosa",
+      "Finestrat",
+      "Alfaz del Pi",
+      "Altea",
+      "Calpe",
+      "La Nucía",
+      "Jávea"
+    ],
+    "featured": [
+      "Alicante",
+      "Elche",
+      "Benidorm",
+      "Torrevieja",
+      "Calpe"
+    ],
+    "departureTown": null,
+    "cityPages": {
+      "Alicante": "PG-021",
+      "Benidorm": "PG-022",
+      "Torrevieja": "PG-023"
+    }
+  },
+  "statuses": [
+    "Draft",
+    "Content ready",
+    "Visual assets ready",
+    "Technical QA passed",
+    "Professional review passed",
+    "Legal review required",
+    "Owner approved",
+    "Approved for indexing",
+    "Published"
+  ],
+  "indexableStatuses": [
+    "Approved for indexing",
+    "Published"
+  ]
 }

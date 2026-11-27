@@ -46,3 +46,16 @@ Tölts fel mappánként (`P0/`, `P1/…`); a `FOTO_JEGYZET.csv`-ben (azonosító
 
 ## G. Képhasználati pontosítás (1. javítási csomag)
 A hero- és a törzsbeli kép külön képazonosító (új azonosító nem kellett: a PAGE-IMAGE-MAP-ben már tervezett eszközöket használjuk): **PG-012** törzs: `IMG-INS-02` (somier illesztései), hero: `IMG-INS-01` · **PG-014** törzs: `IMG-CHEM-05` (somier kezelése), hero: `IMG-CHEM-04` · **PG-041** törzs: `IMG-ENT-EXC-01` (ürülék a varratban), hero: `IMG-INS-01` · **PG-047** csak hero (`IMG-PREV-01`). Az **IMG-INS-02, IMG-CHEM-05 és IMG-ENT-EXC-01 P1 fotókra** ezért ezeken az oldalakon is szükség van. A makrók kivágás nélkül jelennek meg, az álló portré (`IMG-ABOUT-02`) kompakt (kb. 300 px) méretben kerül az oldalra.
+
+## H. Véglegesített fotólista (2. munkacsomag, 2026-11-27)
+A tulajdonos ezeket **vállalta**, de még **nem adta át**; a helyőrzők fejlesztői állapotban maradnak. A meglévő azonosítókat használjuk, új azonosító nem készült.
+| Csoport | Azonosítók | Megjegyzés |
+|---|---|---|
+| Bemutatkozás | `IMG-ABOUT-02` (álló portré, munkaruha), `IMG-ABOUT-01` (fekvő portré), `IMG-ABOUT-07`/`-04` (munka közben) | portré kompakt méretben (~300 px) kerül az oldalra |
+| Okmányok | `IMG-CRED-01` (szakképesítés), `IMG-CRED-04`…`-06` (nemzetközi tanúsítványok) | személyes adatokat publikálás előtt visszafordíthatatlanul takarni; a lista még nincs meg |
+| Gép és gőzölés | `IMG-DRY-01` (Polti Cimex Eradicator teljes), `IMG-DRY-03` (kezelőfej közelről), `IMG-DRY-04` (matracvarrat), `IMG-DRY-05` (ágykeret), `IMG-DRY-08` (kárpitozott bútor), `IMG-DRY-10` (hero) | |
+| Felderítés | `IMG-INS-01` (matrac átvizsgálása lámpával), `IMG-INS-02` (ágykeret, búvóhelyek), `IMG-INS-06` (erős fertőzöttség dokumentálása) | |
+| Vegyszeres | `IMG-CHEM-04` (célzott kezelés), `IMG-CHEM-02` (permetező), `IMG-CHEM-05` (ágykeret), `IMG-CHEM-01` (hidegködképző — **a végleges kiválasztás után**) | konkrét típus/műszaki adat nem jelenhet meg jóváhagyottként |
+| Fotóatlasz | `IMG-ENT-ADU-*`, `-EGG-*`, `-NYM-*`, `-MOU-*`, `-EXC-*`, `-HID-*` (matrac, ágykeret, búvóhelyek), `-SCALE-*` | makró: méretarány (vonalzó), torzítás/kivágás nélkül; faj/stádium nem AI-meghatározás |
+| Referenciák | valós, anonimizált esettanulmány-fotók | csak hozzájárulással; PG-073 üres marad |
+**Nem vállalt (opcionális javaslat, `OPT` az inventoryban):** saját városfotók (`IMG-LOC-*`: Alicante, Benidorm, Torrevieja), külön monitorozócsapda-sorozat (`IMG-IPM-04`, `IMG-IPM-MON-*`), külön védőfelszerelés-sorozat (`IMG-CHEM-03`). A városi oldalak ezek nélkül, szöveges herón működnek. Szabályok: nincs AI-generált esettanulmány-fotó, nincs stockfotó saját munkaként, a fotók eredete és felhasználási joga dokumentálandó.

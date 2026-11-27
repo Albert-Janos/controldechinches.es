@@ -12,19 +12,20 @@
  "related": [
   "PG-013",
   "PG-011",
-  "PG-052"
+  "PG-052",
+  "PG-055",
+  "PG-056"
  ],
  "_blocked": [
-  "OWNER-INPUT #10 products actually used and authorised in Spain",
-  "LGL-05 biocide conditions",
-  "LGL-01",
+  "OWNER-INPUT #10 + LGL-05 (products, active ingredients, registration numbers, SDS, re-entry times) - OPEN",
+  "final cold fogging equipment type - OPEN",
   "photos IMG-CHEM-*",
   "professional review"
  ],
  "es": {
   "url": "/servicios/tratamiento-quimico/",
   "title": "Tratamiento químico contra chinches de cama",
-  "description": "Aplicación dirigida contra chinches con indicaciones de preparación y reentrada. Precio por tratamiento desde 139 € (1 dormitorio), según los dormitorios afectados.",
+  "description": "Tratamiento químico dirigido contra chinches, con nebulización en frío solo como complemento y combinación con vapor. Desde {{price:chem1}} por tratamiento (IVA incl.).",
   "h1": "Tratamiento químico contra chinches de cama",
   "eyebrow": "Servicio · Alicante y Costa Blanca",
   "lead": "Aplicación dirigida según el alcance del problema, con indicaciones claras de preparación, ventilación y plazo de reentrada.",
@@ -49,64 +50,126 @@
      },
      {
       "label": "Precio",
-      "value": "Desde 139 € por tratamiento"
+      "value": "Desde {{price:chem1}} por tratamiento"
      }
     ]
    },
    {
     "type": "text",
-    "id": "cuando-y-como",
-    "h2": "Cuándo y cómo se aplica",
-    "html": "<p>Valoramos las zonas afectadas antes de recomendar el método. La base es la aplicación dirigida. La nebulización en frío es solo un complemento que se usa cuando está justificado y no sustituye al tratamiento dirigido; su uso concreto depende de lo que autorice el producto empleado. Si se aplican biocidas, te indicamos cómo preparar la vivienda, cómo ventilar y cuándo puedes volver a usar la zona.</p><p>La resistencia a los insecticidas y otros factores pueden influir en el resultado, y a veces es necesario un tratamiento adicional. Más en <a href=\"/guia-chinches/resistencia-insecticidas-chinches/\">resistencia a los insecticidas</a>.</p>"
+    "id": "como-se-plantea",
+    "h2": "Cómo se plantea el tratamiento",
+    "html": "<p>Se valoran las zonas afectadas antes de recomendar el método. La base es la aplicación dirigida; según el caso se usan:</p><ul><li>pulverización dirigida sobre superficies;</li><li>tratamiento puntual de grietas y escondites;</li><li>nebulización en frío, solo como complemento;</li><li>combinación de vapor seco y tratamiento químico;</li><li>polvo, donde las condiciones del producto lo permitan.</li></ul><p>Cada forma de aplicación solo se utiliza si el producto está autorizado en España para esa plaga, ese lugar de uso y ese modo de aplicación.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #10 y LGL-05: productos realmente utilizados (autorizados en España), condiciones de uso y plazos de reentrada según la etiqueta. Hasta entonces no se publican nombres de producto ni plazos concretos."
+    "type": "text",
+    "id": "zonas-que-se-tratan",
+    "h2": "Zonas que se tratan",
+    "html": "<ul><li>estructura de la cama y sus juntas;</li><li>cabecero;</li><li>mesillas y muebles cercanos;</li><li>rodapiés;</li><li>grietas y rendijas accesibles;</li><li>partes tratables de sofás y sillones;</li><li>otras habitaciones, si la infestación lo justifica.</li></ul><p>Que una zona figure en esta lista no significa que cualquier producto pueda aplicarse en ella.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-CHEM-05"
    },
    {
+    "type": "text",
+    "id": "nebulizacion-en-frio",
+    "h2": "Nebulización en frío",
+    "html": "<p>La nebulización en frío es un complemento que el técnico se plantea en estos casos:</p><ul><li>infestación fuerte;</li><li>escondites de difícil acceso;</li><li>habitaciones complejas con muchos escondites;</li><li>un tratamiento anterior fallido.</li></ul><p>Hay que tener claro lo que no es: no sustituye a la pulverización dirigida ni al tratamiento de escondites, no garantiza que llegue una cantidad adecuada de producto a todos los escondites ocultos y solo puede usarse si el producto concreto lo permite. Es una aplicación profesional, distinta de los nebulizadores domésticos que liberan todo su contenido de una vez.</p>"
+   },
+   {
     "type": "steps",
-    "h2": "Cómo trabajamos",
+    "h2": "Cómo se trabaja con seguridad",
     "items": [
      {
-      "h3": "Valoración de las zonas afectadas",
-      "p": "Revisamos el colchón, el somier y el entorno de la cama."
+      "h3": "Información previa",
+      "p": "Se explica cómo preparar la vivienda."
      },
      {
-      "h3": "Preparación",
-      "p": "Te indicamos cómo preparar la vivienda y qué precauciones tomar."
+      "h3": "Protección de alimentos y objetos",
+      "p": "Se dan instrucciones para proteger alimentos y objetos personales."
      },
      {
-      "h3": "Aplicación dirigida",
-      "p": "Tratamos las zonas afectadas con el método acordado."
+      "h3": "Niños y mascotas",
+      "p": "Se informa sobre la seguridad de niños y animales de compañía."
      },
      {
-      "h3": "Indicaciones posteriores",
-      "p": "Te explicamos la ventilación y el plazo de reentrada según el producto."
+      "h3": "Equipo de protección",
+      "p": "El técnico usa equipo de protección individual adecuado."
+     },
+     {
+      "h3": "Ventilación y reentrada",
+      "p": "Las instrucciones dependen del producto aplicado; no existe un plazo general válido para todos."
+     },
+     {
+      "h3": "Limpieza posterior",
+      "p": "Se dan indicaciones para la limpieza después del tratamiento."
      }
     ]
    },
    {
+    "type": "proscons",
+    "h2": "Ventajas y límites",
+    "prosTitle": "Ventajas",
+    "consTitle": "Límites",
+    "pros": [
+     "La aplicación dirigida trata las zonas donde están las chinches.",
+     "Según el producto, puede dejar un efecto residual.",
+     "Permite tratar distintas superficies y escondites.",
+     "Se puede combinar con vapor seco."
+    ],
+    "cons": [
+     "La resistencia a los insecticidas puede influir en el resultado, aunque no toda falta de eficacia se debe a ella.",
+     "Puede ser necesario repetir el tratamiento.",
+     "Sin una buena preparación el resultado empeora.",
+     "Exige respetar las instrucciones de seguridad."
+    ]
+   },
+   {
+    "type": "text",
+    "id": "repeticion",
+    "h2": "Si hay que repetir",
+    "html": "<p>La repetición suele plantearse hacia los 10–14 días, pero el momento real depende de la infestación, de los resultados y de lo que permita el producto autorizado; no es una regla fija para todos. Una segunda aplicación química se cobra al mismo precio que la primera. No hay un segundo tratamiento gratuito automático ni un paquete de garantía fijo. Más sobre las causas en <a href=\"/guia-chinches/resistencia-insecticidas-chinches/\">resistencia a los insecticidas</a> y <a href=\"/guia-chinches/cuantos-tratamientos-chinches/\">cuántos tratamientos hacen falta</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "combinado",
+    "h2": "Combinado con vapor seco",
+    "html": "<p>Se puede coordinar el producto con el <a href=\"/servicios/vapor-seco/\">vapor seco</a>, por ejemplo ante infestaciones fuertes, varias habitaciones, un tratamiento previo fallido o superficies distintas. El vapor añadido cuesta {{price:steamAddOn}} más. No equivale a una eliminación garantizada en una sola visita.</p>"
+   },
+   {
     "type": "priceBox",
-    "h2": "Precio",
+    "h2": "Precios",
     "variant": "chemical"
+   },
+   {
+    "type": "todo",
+    "text": "Pendiente del propietario y LGL-05: productos realmente utilizados (autorizados en España), principios activos, números de registro, fichas de seguridad y plazos de ventilación y reentrada según la etiqueta; tipo definitivo del equipo de nebulización. Hasta entonces no se publican nombres de producto, equipos ni plazos."
    }
   ],
   "faq": [
    {
     "q": "¿Cuánto cuesta el tratamiento químico?",
-    "a": "El precio es por tratamiento y depende de cuántos dormitorios están afectados: 139 € (1), 179 € (2), 219 € (3) y 259 € (4); cada dormitorio adicional suma 40 €. Los impuestos y el desplazamiento se confirman por escrito antes de reservar."
+    "a": "El precio es por tratamiento y depende de cuántos dormitorios están afectados: {{price:chem1}} (1), {{price:chem2}} (2), {{price:chem3}} (3) y {{price:chem4}} (4), con IVA incluido; cada dormitorio adicional suma {{price:chemExtra}}. El desplazamiento depende de la distancia y se confirma por escrito antes de reservar. No hay recargo por fin de semana ni por urgencia."
    },
    {
     "q": "¿Cuándo puedo volver a la habitación?",
-    "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto."
+    "a": "Sigue las instrucciones del técnico. El plazo depende del producto aplicado; no existe un plazo general válido para todos."
    },
    {
     "q": "¿Basta con un solo tratamiento?",
-    "a": "No siempre. La resistencia a los insecticidas y otros factores pueden influir en el resultado, y a veces es necesario un tratamiento adicional."
+    "a": "No siempre. La resistencia a los insecticidas y otros factores pueden influir en el resultado, y a veces es necesario un tratamiento adicional, que se cobra al precio del primero."
+   },
+   {
+    "q": "¿Qué es la nebulización en frío?",
+    "a": "Un complemento que se usa solo cuando está justificado y el producto lo permite. No sustituye al tratamiento dirigido. Cuesta desde {{price:fogging}}."
+   },
+   {
+    "q": "¿Tengo que preparar algo antes?",
+    "a": "Sí: se te explica cómo preparar la vivienda, proteger alimentos y objetos personales y qué hacer con niños y mascotas. Consulta también cómo preparar la vivienda."
+   },
+   {
+    "q": "¿Qué pasa con los niños y las mascotas?",
+    "a": "Se te indica cómo mantenerlos fuera y cuándo pueden volver, según el producto aplicado."
    }
   ],
   "sources": []
@@ -114,7 +177,7 @@
  "en": {
   "url": "/en/services/chemical-treatment/",
   "title": "Chemical bed bug treatment in Alicante | Control de Chinches",
-  "description": "Targeted bed bug treatment with preparation and re-entry guidance. Price per treatment from €139 (1 bedroom), depending on the bedrooms affected.",
+  "description": "Targeted chemical bed bug treatment, cold fogging only as a supplement and combination with steam. From {{price:chem1}} per treatment (VAT incl.).",
   "h1": "Chemical bed bug treatment",
   "eyebrow": "Service · Alicante and the Costa Blanca",
   "lead": "Targeted application according to the extent of the problem, with clear guidance on preparation, ventilation and re-entry times.",
@@ -139,64 +202,126 @@
      },
      {
       "label": "Price",
-      "value": "From €139 per treatment"
+      "value": "From {{price:chem1}} per treatment"
      }
     ]
    },
    {
     "type": "text",
-    "id": "when-and-how",
-    "h2": "When and how it is applied",
-    "html": "<p>We assess the affected areas before recommending a method. The basis is targeted application. Cold fogging is only a supplement, used when justified, and it does not replace targeted treatment; whether it can be used depends on what the product in question is authorised for. If biocides are applied, we tell you how to prepare the property, how to ventilate and when you can use the area again.</p><p>Insecticide resistance and other factors can affect the result, and an additional treatment is sometimes needed. More in <a href=\"/en/bed-bug-guide/bed-bug-insecticide-resistance/\">insecticide resistance</a>.</p>"
+    "id": "how-it-is-planned",
+    "h2": "How the treatment is planned",
+    "html": "<p>The affected areas are assessed before recommending a method. The basis is targeted application; depending on the case, the options are:</p><ul><li>targeted spraying of surfaces;</li><li>spot treatment of cracks and hiding places;</li><li>cold fogging, only as a supplement;</li><li>a combination of dry steam and chemical treatment;</li><li>dust, where the product conditions allow it.</li></ul><p>Each method of application is used only if the product is authorised in Spain for that pest, place of use and way of applying it.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #10 and LGL-05: products actually used (authorised in Spain), conditions of use and re-entry times per label. No product names or specific times are published until then."
+    "type": "text",
+    "id": "areas-treated",
+    "h2": "Areas treated",
+    "html": "<ul><li>the bed structure and its joints;</li><li>the headboard;</li><li>bedside tables and nearby furniture;</li><li>baseboards;</li><li>accessible cracks and gaps;</li><li>treatable parts of sofas and armchairs;</li><li>other rooms, if the infestation justifies it.</li></ul><p>An area being on this list does not mean any product may be applied to it.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-CHEM-05"
    },
    {
+    "type": "text",
+    "id": "cold-fogging",
+    "h2": "Cold fogging",
+    "html": "<p>Cold fogging is a supplement the technician considers in these cases:</p><ul><li>a heavy infestation;</li><li>hiding places that are hard to reach;</li><li>complex rooms with many hiding places;</li><li>a failed earlier treatment.</li></ul><p>It is important to be clear about what it is not: it does not replace targeted spraying or the treatment of hiding places, it does not guarantee that an adequate amount of product reaches every hidden hiding place, and it can only be used if the specific product allows it. It is a professional application, different from household foggers that release their entire contents at once.</p>"
+   },
+   {
     "type": "steps",
-    "h2": "How we work",
+    "h2": "How the work is done safely",
     "items": [
      {
-      "h3": "Assessing the affected areas",
-      "p": "We check the mattress, bed frame and the area around the bed."
+      "h3": "Information beforehand",
+      "p": "How to prepare the property is explained."
      },
      {
-      "h3": "Preparation",
-      "p": "We explain how to prepare the property and which precautions to take."
+      "h3": "Protecting food and belongings",
+      "p": "Instructions are given for protecting food and personal items."
      },
      {
-      "h3": "Targeted application",
-      "p": "We treat the affected areas with the agreed method."
+      "h3": "Children and pets",
+      "p": "Information is given on the safety of children and pets."
      },
      {
-      "h3": "Aftercare guidance",
-      "p": "We explain ventilation and the re-entry time according to the product."
+      "h3": "Protective equipment",
+      "p": "The technician wears suitable personal protective equipment."
+     },
+     {
+      "h3": "Ventilation and re-entry",
+      "p": "The instructions depend on the product applied; there is no general time that is valid for all."
+     },
+     {
+      "h3": "Cleaning afterwards",
+      "p": "Guidance is given for cleaning after treatment."
      }
     ]
    },
    {
+    "type": "proscons",
+    "h2": "Advantages and limits",
+    "prosTitle": "Advantages",
+    "consTitle": "Limits",
+    "pros": [
+     "Targeted application treats the areas where the bed bugs are.",
+     "Depending on the product, it can leave a residual effect.",
+     "Allows different surfaces and hiding places to be treated.",
+     "Can be combined with dry steam."
+    ],
+    "cons": [
+     "Insecticide resistance can affect the result, although not every lack of effect is due to it.",
+     "The treatment may need repeating.",
+     "Without good preparation the result is worse.",
+     "Safety instructions must be followed."
+    ]
+   },
+   {
+    "type": "text",
+    "id": "repeating",
+    "h2": "If it has to be repeated",
+    "html": "<p>A repeat is often considered around 10–14 days, but the real timing depends on the infestation, the results and what the authorised product allows; it is not a fixed rule for all. A second chemical application costs the same as the first. There is no automatic free second treatment and no fixed guarantee package. More on the causes in <a href=\"/en/bed-bug-guide/bed-bug-insecticide-resistance/\">insecticide resistance</a> and <a href=\"/en/bed-bug-guide/how-many-treatments-bed-bugs/\">how many treatments are needed</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "combined",
+    "h2": "Combined with dry steam",
+    "html": "<p>The product can be coordinated with <a href=\"/en/services/dry-steam/\">dry steam</a>, for example for heavy infestations, several rooms, a failed earlier treatment or different surfaces. Steam added costs {{price:steamAddOn}} more. It is not guaranteed elimination in a single visit.</p>"
+   },
+   {
     "type": "priceBox",
-    "h2": "Price",
+    "h2": "Prices",
     "variant": "chemical"
+   },
+   {
+    "type": "todo",
+    "text": "Owner input and LGL-05: products actually used (authorised in Spain), active ingredients, registration numbers, safety data sheets and ventilation and re-entry times per label; final type of fogging equipment. No product names, equipment or times are published until then."
    }
   ],
   "faq": [
    {
     "q": "How much does chemical treatment cost?",
-    "a": "The price is per treatment and depends on how many bedrooms are affected: €139 (1), €179 (2), €219 (3) and €259 (4); each additional bedroom adds €40. Taxes and travel are confirmed in writing before you book."
+    "a": "The price is per treatment and depends on how many bedrooms are affected: {{price:chem1}} (1), {{price:chem2}} (2), {{price:chem3}} (3) and {{price:chem4}} (4), VAT included; each additional bedroom adds {{price:chemExtra}}. Travel depends on the distance and is confirmed in writing before you book. There is no weekend or urgency surcharge."
    },
    {
     "q": "When can I use the room again?",
-    "a": "Follow the technician’s instructions. The time depends on the method and, where biocides are used, on the product instructions."
+    "a": "Follow the technician’s instructions. The time depends on the product applied; there is no general time that is valid for all."
    },
    {
     "q": "Is one treatment always enough?",
-    "a": "Not always. Insecticide resistance and other factors can affect the result, and an additional treatment is sometimes needed."
+    "a": "Not always. Insecticide resistance and other factors can affect the result, and an additional treatment is sometimes needed, charged at the price of the first."
+   },
+   {
+    "q": "What is cold fogging?",
+    "a": "A supplement used only when justified and the product allows it. It does not replace targeted treatment. It costs from {{price:fogging}}."
+   },
+   {
+    "q": "Do I need to prepare anything?",
+    "a": "Yes: you are told how to prepare the property, protect food and personal items and what to do about children and pets. See also how to prepare the home."
+   },
+   {
+    "q": "What about children and pets?",
+    "a": "You are told how to keep them out and when they can return, depending on the product applied."
    }
   ],
   "sources": []

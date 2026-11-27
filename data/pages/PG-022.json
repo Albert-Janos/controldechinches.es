@@ -32,13 +32,15 @@
   "blocks": [
    {
     "type": "text",
-    "id": "como-trabajamos",
-    "h2": "Cómo trabajamos en Benidorm",
-    "html": "<p>Valoramos las zonas afectadas y te recomendamos el método adecuado: tratamiento químico dirigido o vapor seco. El precio final y el desplazamiento se confirman por escrito antes de reservar.</p>"
+    "id": "apartamentos-turisticos-en-benidorm",
+    "h2": "Apartamentos turísticos en Benidorm",
+    "html": "<p>En un apartamento turístico importa actuar con rapidez, con discreción y sin perder de vista las próximas llegadas. El servicio permite coordinar la fecha y el acceso, revisar las unidades contiguas cuando está justificado y documentar lo que se hizo. Detalles en <a href=\"{{url:PG-015}}\">prevención y monitorización para alojamientos</a>.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #3: confirma que se atiende Benidorm y la regla de desplazamiento. Hechos locales reales (tipos de vivienda habituales, observaciones propias) y fotos locales (IMG-LOC-BEN-01). No se publican referencias locales inventadas."
+    "type": "text",
+    "id": "detectar-a-tiempo",
+    "h2": "Detectar a tiempo",
+    "html": "<p>La detección temprana evita que el problema se extienda: consulta la guía de <a href=\"{{url:PG-062}}\">detección temprana en apartamentos turísticos</a>. Una visita urgente depende de la capacidad disponible y no está garantizada el mismo día.</p>"
    },
    {
     "type": "priceBox",
@@ -55,7 +57,7 @@
      },
      {
       "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticidas.",
+      "text": "Calor localizado, sin insecticida en el paso de vapor.",
       "href": "/servicios/vapor-seco/"
      },
      {
@@ -64,12 +66,20 @@
       "href": "/servicios/control-integrado/"
      }
     ]
+   },
+   {
+    "type": "todo",
+    "text": "Pendiente: localidad de salida y tarifa de desplazamiento (sin definir). La localidad está en el área aprobada. No se publican datos locales (tipos de vivienda, estadísticas, referencias) sin una fuente comprobable."
    }
   ],
   "faq": [
    {
-    "q": "¿En cuánto tiempo podéis venir a Benidorm?",
-    "a": "Depende de la localidad y de la agenda. Escríbenos por WhatsApp para consultar una fecha."
+    "q": "¿Atendéis apartamentos turísticos en Benidorm?",
+    "a": "Sí: apartamentos turísticos, pisos de alquiler vacacional y gestores de alojamientos. El presupuesto para varios inmuebles es individual."
+   },
+   {
+    "q": "¿Hay recargo por urgencia o fin de semana?",
+    "a": "No. La disponibilidad depende de la capacidad en ese momento."
    }
   ],
   "sources": [],
@@ -80,24 +90,25 @@
    ]
   ],
   "url": "/zonas/benidorm/",
-  "title": "Chinches de cama en Benidorm: tratamiento y precios",
-  "description": "Tratamiento de chinches de cama en Benidorm: químico desde 139 € y vapor seco desde 150 €. Confirmamos disponibilidad y precio por escrito.",
+  "title": "Chinches de cama en Benidorm: apartamentos turísticos",
+  "description": "Tratamiento de chinches en Benidorm con atención a apartamentos turísticos y gestores de alojamientos: coordinación con las llegadas, trabajo discreto y seguimiento.",
   "h1": "Chinches de cama en Benidorm",
   "eyebrow": "Zona de servicio · Benidorm",
-  "lead": "Tratamiento de chinches en viviendas y alojamientos turísticos. Gestión de alojamientos turísticos en Benidorm: consulta también el servicio para alojamientos.",
-  "heroImage": "IMG-LOC-BEN-01"
+  "lead": "Pensado para apartamentos turísticos y gestores de alojamientos de Benidorm, y también para viviendas particulares."
  },
  "en": {
   "blocks": [
    {
     "type": "text",
-    "id": "how-we-work",
-    "h2": "How we work in Benidorm",
-    "html": "<p>We assess the affected areas and recommend the right method: targeted chemical treatment or dry steam. The final price and travel are confirmed in writing before you book.</p>"
+    "id": "tourist-apartments-in-benidorm",
+    "h2": "Tourist apartments in Benidorm",
+    "html": "<p>In a tourist apartment it matters to act quickly, discreetly and with the next arrivals in mind. The service lets you coordinate the date and access, check adjacent units when justified and document what was done. Details in <a href=\"{{url:PG-015}}\">prevention and monitoring for accommodation</a>.</p>"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #3: confirm Benidorm is served and the travel rule. Real local facts (typical property types, own observations) and local photos (IMG-LOC-BEN-01). No invented local references are published."
+    "type": "text",
+    "id": "detect-early",
+    "h2": "Detect early",
+    "html": "<p>Early detection stops the problem from spreading: see the guide on <a href=\"{{url:PG-062}}\">early detection in tourist apartments</a>. An urgent visit depends on available capacity and is not guaranteed the same day.</p>"
    },
    {
     "type": "priceBox",
@@ -114,7 +125,7 @@
      },
      {
       "title": "Dry steam",
-      "text": "Localised heat, without insecticides.",
+      "text": "Localised heat, no insecticide in the steam step.",
       "href": "/en/services/dry-steam/"
      },
      {
@@ -123,12 +134,20 @@
       "href": "/en/services/integrated-pest-management/"
      }
     ]
+   },
+   {
+    "type": "todo",
+    "text": "Pending: departure town and travel fee (not defined). The town is in the approved area. No local data (housing types, statistics, references) is published without a verifiable source."
    }
   ],
   "faq": [
    {
-    "q": "How soon can you come to Benidorm?",
-    "a": "Availability depends on your location and our schedule. Message us on WhatsApp to check."
+    "q": "Do you serve tourist apartments in Benidorm?",
+    "a": "Yes: tourist apartments, holiday lets and accommodation managers. A quote for several properties is individual."
+   },
+   {
+    "q": "Is there an urgency or weekend surcharge?",
+    "a": "No. Availability depends on capacity at the time."
    }
   ],
   "sources": [],
@@ -139,11 +158,10 @@
    ]
   ],
   "url": "/en/areas/benidorm/",
-  "title": "Bed bugs in Benidorm: treatment and prices",
-  "description": "Bed bug treatment in Benidorm: chemical from €139 and dry steam from €150. We confirm availability and price in writing.",
+  "title": "Bed bug treatment in Benidorm: tourist apartments | Control de Chinches",
+  "description": "Bed bug treatment in Benidorm with a focus on tourist apartments and accommodation managers: coordination with arrivals, discreet work and follow-up.",
   "h1": "Bed bugs in Benidorm",
   "eyebrow": "Service area · Benidorm",
-  "lead": "Bed bug treatment for homes and holiday accommodation. Managing holiday accommodation in Benidorm: see also our service for accommodation providers.",
-  "heroImage": "IMG-LOC-BEN-01"
+  "lead": "Designed for tourist apartments and accommodation managers in Benidorm, and for private homes too."
  }
 }

@@ -54,6 +54,12 @@
     "id": "en-la-practica",
     "h2": "En la práctica",
     "html": "<p>El número de intervenciones depende del alcance, de las zonas afectadas y de lo que se observe después. Consulta <a href=\"/precios.html\">precios</a> y <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "en-control-de-chinches",
+    "h2": "Cómo se plantea en Control de Chinches",
+    "html": "<p>Cuando se repite un tratamiento químico, el momento suele plantearse hacia los 10–14 días, pero no es una regla fija: depende de la infestación, de los resultados y de lo que permita el producto autorizado. La repetición cuesta lo mismo que el primer tratamiento; no hay un segundo tratamiento gratuito automático ni un paquete de garantía fijo. Tampoco se establece un plazo obligatorio de 30, 60 o 90 días para dar por terminado el problema.</p>"
    }
   ],
   "faq": [],
@@ -140,6 +146,12 @@
     "id": "in-practice",
     "h2": "In practice",
     "html": "<p>The number of visits depends on the extent, the areas affected and what is observed afterwards. See <a href=\"/en/prices.html\">prices</a> and <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do afterwards</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "at-control-de-chinches",
+    "h2": "How it is approached at Control de Chinches",
+    "html": "<p>When a chemical treatment is repeated, the timing is often considered around 10–14 days, but it is not a fixed rule: it depends on the infestation, the results and what the authorised product allows. A repeat costs the same as the first treatment; there is no automatic free second treatment and no fixed guarantee package. Nor is there a mandatory 30-, 60- or 90-day period for declaring the problem over.</p>"
    }
   ],
   "faq": [],

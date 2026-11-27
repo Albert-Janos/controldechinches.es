@@ -1,10 +1,11 @@
 // Page templates T-A ... T-I. A page = JSON data + template id; see docs/seo/PAGE-TEMPLATES.md
+import { consumerNumber, resolveTokens } from './prices.mjs';
 import { esc, head, header, footer, breadcrumb, button, ctaBand, picture, figure, renderBlock, authorBox, sourcesBlock, relatedBlock, metaLine, draftBanner, symbols, pageUrl, absUrl, slug, unlinkDead, imgKind } from './components.mjs';
 
 // ---------- JSON-LD ----------
 export function jsonld(ctx, crumbs) {
   const { site, page, lang } = ctx, L = page[lang], url = absUrl(ctx, L.url);
-  const org = { '@type': 'Organization', '@id': absUrl(ctx, '/') + site.ids.organization, name: site.brand, url: absUrl(ctx, '/'), telephone: site.phone, logo: absUrl(ctx, site.assets.logo) };
+  const org = { '@type': 'Organization', '@id': absUrl(ctx, '/') + site.ids.organization, name: site.brand, url: absUrl(ctx, '/'), telephone: site.dispatcher.tel, logo: absUrl(ctx, site.assets.logo) };
   const website = { '@type': 'WebSite', '@id': absUrl(ctx, '/') + site.ids.website, url: absUrl(ctx, '/'), name: site.brand, inLanguage: lang, publisher: { '@id': org['@id'] } };
   const personOn = site.person.published && ctx.included.has('PG-016');
   const person = personOn ? { '@type': 'Person', '@id': absUrl(ctx, site.person.id), name: site.person.name, worksFor: { '@id': org['@id'] }, url: absUrl(ctx, pageUrl(ctx, 'PG-016', lang) || '/') } : null;
@@ -18,8 +19,8 @@ export function jsonld(ctx, crumbs) {
     const svc = { '@type': 'Service', '@id': url + '#service', name: L.h1, url, description: L.description, provider: { '@id': org['@id'] }, areaServed: (page.areaServed || site.serviceAreas.confirmed).map(n => ({ '@type': 'City', name: n })) };
     if (page.offers) {
       const o = [];
-      if (page.offers.includes('chemical')) o.push({ '@type': 'Offer', name: ctx.ui.chemical, priceSpecification: { '@type': 'PriceSpecification', minPrice: ctx.prices.chemical.bedroomPrices[0], priceCurrency: ctx.prices.currency } });
-      if (page.offers.includes('steam')) o.push({ '@type': 'Offer', name: ctx.ui.steam, priceSpecification: { '@type': 'PriceSpecification', minPrice: ctx.prices.drySteamStandalone.from, priceCurrency: ctx.prices.currency } });
+      if (page.offers.includes('chemical')) o.push({ '@type': 'Offer', name: ctx.ui.chemical, priceSpecification: { '@type': 'PriceSpecification', minPrice: consumerNumber(ctx.prices, ctx.prices.chemical.bedroomPrices[0]), priceCurrency: ctx.prices.currency, valueAddedTaxIncluded: ctx.prices.vat.consumerDisplay === 'gross' } });
+      if (page.offers.includes('steam')) o.push({ '@type': 'Offer', name: ctx.ui.steam, priceSpecification: { '@type': 'PriceSpecification', minPrice: consumerNumber(ctx.prices, ctx.prices.drySteamStandalone.from), priceCurrency: ctx.prices.currency, valueAddedTaxIncluded: ctx.prices.vat.consumerDisplay === 'gross' } });
       svc.offers = o;
     }
     graph.push(svc);
@@ -99,7 +100,7 @@ export const render = {
 export function renderPage(ctx) {
   const { page, lang, ui, site } = ctx;
   const t = render[page.template]; if (!t) throw new Error(`unknown template ${page.template} on ${page.id}`);
-  const out = t(ctx); out.main = unlinkDead(ctx, out.main); // links to unpublished pages inside prose become plain text
+  const out = t(ctx); out.main = unlinkDead(ctx, resolveTokens(ctx, out.main)); // links to unpublished pages inside prose become plain text
   const html = `<!doctype html>
 <html lang="${ui.htmlLang}">
 ${head(ctx, jsonld(ctx, out.crumbs))}
@@ -118,5 +119,5 @@ ${footer(ctx)}
 </body>
 </html>
 `;
-  return html;
+  return resolveTokens(ctx, html); // {{price:..}} / {{net:..}} / {{vat}} tokens in titles, descriptions, texts and JSON-LD
 }

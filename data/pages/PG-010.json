@@ -14,7 +14,7 @@
  "es": {
   "url": "/servicios/",
   "title": "Servicios contra chinches de cama en Alicante",
-  "description": "Tratamiento químico dirigido, vapor seco y método de trabajo para chinches de cama en Alicante y la Costa Blanca. Precios desde 139 € y 150 €.",
+  "description": "Tratamiento químico dirigido, vapor seco y método de trabajo para chinches de cama en Alicante y la Costa Blanca. Precios desde {{price:chem1}} y {{price:steam}}.",
   "h1": "Servicios contra las chinches de cama",
   "eyebrow": "Servicios",
   "lead": "Dos métodos de tratamiento y un mismo punto de partida: valorar primero las zonas afectadas.",
@@ -29,11 +29,11 @@
       "items": [
        {
         "pageId": "PG-014",
-        "text": "Aplicación dirigida, con opción de nebulización en frío. Desde 139 €."
+        "text": "Aplicación dirigida, con opción de nebulización en frío. Desde {{price:chem1}}."
        },
        {
         "pageId": "PG-013",
-        "text": "Calor a alta temperatura, sin insecticidas. Desde 150 €."
+        "text": "Calor a alta temperatura, sin insecticida en el paso de vapor. Desde {{price:steam}}."
        }
       ]
      },
@@ -76,7 +76,7 @@
  "en": {
   "url": "/en/services/",
   "title": "Bed bug services in Alicante and the Costa Blanca",
-  "description": "Targeted chemical treatment, dry steam and our working method for bed bugs in Alicante and the Costa Blanca. Prices from €139 and €150.",
+  "description": "Targeted chemical treatment, dry steam and our working method for bed bugs in Alicante and the Costa Blanca. Prices from {{price:chem1}} and {{price:steam}}.",
   "h1": "Bed bug services",
   "eyebrow": "Services",
   "lead": "Two treatment methods and one starting point: assess the affected areas first.",
@@ -91,11 +91,11 @@
       "items": [
        {
         "pageId": "PG-014",
-        "text": "Targeted application, with a cold fogging option. From €139."
+        "text": "Targeted application, with a cold fogging option. From {{price:chem1}}."
        },
        {
         "pageId": "PG-013",
-        "text": "High-temperature heat, without insecticides. From €150."
+        "text": "High-temperature heat, no insecticide in the steam step. From {{price:steam}}."
        }
       ]
      },

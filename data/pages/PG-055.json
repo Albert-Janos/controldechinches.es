@@ -110,7 +110,7 @@
     "type": "text",
     "id": "instrucciones-del-tecnico",
     "h2": "Lo que te indicará el técnico",
-    "html": "<p>La EPA recuerda que la preparación es la misma para un tratamiento propio o profesional, pero cada método tiene sus indicaciones específicas. En Control de Chinches te explicamos cómo preparar las zonas afectadas antes del tratamiento; consulta también <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después</a>.</p>"
+    "html": "<p>La EPA recuerda que la preparación es la misma para un tratamiento propio o profesional, pero cada método tiene sus indicaciones específicas. Las indicaciones habituales antes de un tratamiento con Control de Chinches son:</p><ul><li>retirar la ropa de cama y guardarla en una bolsa cerrada;</li><li>lavar o tratar con calor los textiles afectados (lavar, secar y otros métodos de calor no son lo mismo: mira la tabla de cifras);</li><li>dejar accesible la zona que rodea la cama;</li><li>reducir el desorden;</li><li>no llevar objetos infestados a otra habitación;</li><li>no aplicar insecticidas domésticos por tu cuenta;</li><li>proteger alimentos y objetos personales.</li></ul><p>La lista concreta se adapta al método y al producto elegidos. Para el detalle de lavado y secado, consulta <a href=\"/guia-chinches/ropa-y-textiles-chinches/\">ropa y textiles</a>; y para después del tratamiento, <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después</a>.</p>"
    }
   ],
   "faq": [],
@@ -274,7 +274,7 @@
     "type": "text",
     "id": "technician-instructions",
     "h2": "What your technician will tell you",
-    "html": "<p>The EPA notes that preparation is the same for DIY and professional treatment, but each method has its own specific instructions. At Control de Chinches we explain how to prepare the affected areas before treatment; see also <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do afterwards</a>.</p>"
+    "html": "<p>The EPA notes that preparation is the same for DIY and professional treatment, but each method has its own specific instructions. The usual instructions before a treatment with Control de Chinches are:</p><ul><li>remove the bedding and keep it in a closed bag;</li><li>wash or heat-treat the affected textiles (washing, drying and other heat methods are not the same: see the table of figures);</li><li>leave the area around the bed accessible;</li><li>reduce clutter;</li><li>do not carry infested items to another room;</li><li>do not apply household insecticides on your own;</li><li>protect food and personal belongings.</li></ul><p>The exact list is adapted to the method and product chosen. For washing and drying detail, see <a href=\"/en/bed-bug-guide/laundry-and-textiles-bed-bugs/\">laundry and textiles</a>; and for after treatment, <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do afterwards</a>.</p>"
    }
   ],
   "faq": [],

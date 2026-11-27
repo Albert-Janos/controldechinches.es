@@ -30,11 +30,15 @@
       "items": [
        {
         "q": "¿Cuánto cuesta un tratamiento de chinches?",
-        "a": "El tratamiento químico parte de 139 € para 1 dormitorio, 179 € para 2, 219 € para 3 y 259 € para 4; cada dormitorio adicional suma 40 €. El vapor seco, como tratamiento independiente, parte de 150 € y el precio final depende de la valoración in situ."
+        "a": "El tratamiento químico parte de {{price:chem1}} para 1 dormitorio, {{price:chem2}} para 2, {{price:chem3}} para 3 y {{price:chem4}} para 4; cada dormitorio adicional suma {{price:chemExtra}}. El vapor seco, como tratamiento independiente, parte de {{price:steam}} y el precio final depende de la valoración in situ."
        },
        {
         "q": "¿El precio de la calculadora es el definitivo?",
-        "a": "No. Es un precio orientativo calculado con las tarifas publicadas. El importe final, los impuestos, el desplazamiento y cualquier suplemento se confirman por escrito antes de reservar."
+        "a": "No. Es un precio orientativo. El importe final y el desplazamiento (que depende de la distancia) se confirman por escrito antes de reservar."
+       },
+       {
+        "q": "¿Cobráis aparte la inspección o enviar fotos?",
+        "a": "No hay inspección aparte: la inspección en el lugar forma parte del tratamiento contratado. Enviar fotos por WhatsApp para una primera orientación es gratis."
        }
       ]
      }
@@ -61,7 +65,7 @@
        },
        {
         "q": "¿Es necesario repetir el tratamiento?",
-        "a": "Depende del alcance. En un foco localizado puede bastar una intervención; si hay más zonas afectadas, el técnico puede recomendar una segunda. Consulta las condiciones por escrito antes de contratar."
+        "a": "Depende del caso. A veces basta una intervención y otras hace falta repetir o combinar métodos. Si se repite un tratamiento químico, cuesta lo mismo que el primero; no hay un segundo tratamiento gratuito automático."
        }
       ]
      }
@@ -76,11 +80,11 @@
       "items": [
        {
         "q": "¿En cuánto tiempo podéis venir?",
-        "a": "Depende de la localidad y de la agenda. Escríbenos por WhatsApp para consultar una fecha."
+        "a": "Depende de la localidad, de la distancia y de la capacidad en ese momento. No se garantiza una visita el mismo día. Escríbenos por WhatsApp para consultar una fecha."
        },
        {
-        "q": "¿Qué se puede hacer con muebles muy infestados?",
-        "a": "Podemos ayudarte con la retirada y eliminación de muebles infestados. Consúltanos el detalle al pedir presupuesto."
+        "q": "¿Qué se hace con los muebles muy infestados?",
+        "a": "Desechar muebles solo se recomienda cuando está justificado. El técnico valora cada caso y te indica cómo evitar mover objetos infestados sin control. No se ofrece servicio de retirada de muebles."
        }
       ]
      }
@@ -108,11 +112,15 @@
       "items": [
        {
         "q": "How much does bed bug treatment cost?",
-        "a": "Chemical treatment starts at €139 for one bedroom, €179 for two, €219 for three and €259 for four; each additional bedroom adds €40. Dry steam as a stand-alone treatment starts at €150 and the final price depends on an on-site assessment."
+        "a": "Chemical treatment starts at {{price:chem1}} for one bedroom, {{price:chem2}} for two, {{price:chem3}} for three and {{price:chem4}} for four; each additional bedroom adds {{price:chemExtra}}. Dry steam as a stand-alone treatment starts at {{price:steam}} and the final price depends on an on-site assessment."
        },
        {
         "q": "Is the calculator price final?",
-        "a": "The calculator estimates the price using our published rates. We confirm the final cost, taxes, travel and extras in writing before you book."
+        "a": "No. It is an estimate. The final price and travel (which depends on the distance) are confirmed in writing before you book."
+       },
+       {
+        "q": "Do you charge separately for the inspection or for sending photos?",
+        "a": "There is no separate inspection: the on-site inspection is part of the treatment ordered. Sending photos by WhatsApp for a first orientation is free."
        }
       ]
      }
@@ -139,7 +147,7 @@
        },
        {
         "q": "Does the treatment need repeating?",
-        "a": "It depends on the extent of the problem. A localised infestation may need only one visit; if more areas are affected, the technician may recommend a second. Ask for the terms in writing before you book."
+        "a": "It depends on the case. Sometimes one treatment is enough and sometimes it has to be repeated or methods combined. If a chemical treatment is repeated it costs the same as the first; there is no automatic free second treatment."
        }
       ]
      }
@@ -153,12 +161,12 @@
       "h3": "Appointments and service",
       "items": [
        {
-        "q": "When can you visit?",
-        "a": "Availability depends on your location and our schedule. Message us on WhatsApp to check."
+        "q": "How soon can you visit?",
+        "a": "It depends on the town, the distance and capacity at the time. A same-day visit is not guaranteed. Message us on WhatsApp to ask about a date."
        },
        {
-        "q": "Can you help with heavily infested furniture?",
-        "a": "We can help arrange removal and disposal. Ask for details when requesting your quote."
+        "q": "What is done about heavily infested furniture?",
+        "a": "Disposing of furniture is only recommended when justified. The technician assesses each case and tells you how to avoid moving infested items without control. A furniture removal service is not offered."
        }
       ]
      }

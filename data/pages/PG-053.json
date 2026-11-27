@@ -49,6 +49,12 @@
     "id": "seguimiento",
     "h2": "La importancia del seguimiento",
     "html": "<p>La EPA aconseja revisar al menos cada 7 días y seguir comprobando durante al menos un año. Purdue recomienda al menos una inspección de seguimiento entre 10 y 21 días después de cada actuación. Rutgers señala que los interceptores se revisan cada 1–2 semanas y que solo se deja de vigilar tras un mes sin chinches. Consulta <a href=\"/guia-chinches/como-eliminar-chinches-de-cama/\">cómo eliminar chinches</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "prevencion-a-largo-plazo",
+    "h2": "Prevención a largo plazo",
+    "html": "<p>Estas medidas reducen el riesgo, pero no ofrecen una protección segura:</p><ul><li>revisar los muebles usados antes de comprarlos;</li><li>comprobar el equipaje y la ropa después de un viaje;</li><li>revisar la cama y su entorno al llegar a un alojamiento;</li><li>usar una funda de colchón hecha para chinches de cama;</li><li>eliminar grietas y escondites innecesarios (<a href=\"/guia-chinches/sellar-grietas-chinches/\">sellar grietas</a>);</li><li>hacer revisiones visuales con regularidad (<a href=\"/guia-chinches/monitorizacion-chinches/\">monitorización</a>);</li><li>pedir ayuda cuanto antes si sospechas que hay chinches.</li></ul><p>Si los indicios reaparecen tras un tratamiento, avisa por WhatsApp con fotos para que se valore el caso.</p>"
    }
   ],
   "faq": [],
@@ -171,6 +177,12 @@
     "id": "follow-up",
     "h2": "Why follow-up matters",
     "html": "<p>The EPA advises checking at least every 7 days and continuing to check for at least a year. Purdue recommends at least one follow-up inspection 10–21 days after each treatment. Rutgers notes that interceptors are checked every 1–2 weeks and monitoring stops only after a month with no bed bugs. See <a href=\"/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/\">how to get rid of bed bugs</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "long-term-prevention",
+    "h2": "Long-term prevention",
+    "html": "<p>These measures reduce the risk, but they do not offer sure protection:</p><ul><li>check used furniture before buying it;</li><li>check luggage and clothing after a trip;</li><li>check the bed and its surroundings when arriving at accommodation;</li><li>use a mattress encasement made for bed bugs;</li><li>remove unnecessary cracks and hiding places (<a href=\"/en/bed-bug-guide/sealing-cracks-bed-bugs/\">sealing cracks</a>);</li><li>make regular visual checks (<a href=\"/en/bed-bug-guide/bed-bug-monitoring/\">monitoring</a>);</li><li>ask for help as soon as you suspect bed bugs.</li></ul><p>If signs reappear after a treatment, let us know by WhatsApp with photos so the case can be assessed.</p>"
    }
   ],
   "faq": [],

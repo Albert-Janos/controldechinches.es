@@ -24,9 +24,15 @@
    },
    {
     "type": "text",
+    "id": "tipos-de-informacion",
+    "h2": "Qué tipo de información encontrarás",
+    "html": "<p>En esta web se distinguen cinco tipos de información:</p><ul><li><strong>Información general de fuentes.</strong> Procede de autoridades sanitarias, universidades y estudios revisados por pares, y cada artículo cita sus fuentes.</li><li><strong>Procedimientos de trabajo.</strong> Describen lo que hace en la práctica Albert János; no proceden de las fuentes y se presentan en las páginas de servicio.</li><li><strong>Datos técnicos del fabricante.</strong> Se atribuyen al fabricante y no se presentan como resultados medidos en el trabajo.</li><li><strong>Requisitos legales.</strong> Se indican con su fuente o se señalan como pendientes de comprobar.</li><li><strong>Compromisos de servicio.</strong> Precios y condiciones se encuentran solo en las páginas de servicio y precios.</li></ul>"
+   },
+   {
+    "type": "text",
     "id": "autoria-y-revision",
     "h2": "Autoría y revisión",
-    "html": "<p>Cada contenido indica quién lo ha elaborado y quién lo ha revisado, solo cuando esa revisión se ha realizado de verdad. Los borradores no se publican hasta superar la revisión profesional.</p>"
+    "html": "<p>Cada contenido indica quién lo ha elaborado y quién lo ha revisado, solo cuando esa revisión se ha realizado de verdad. La autoría de la guía es de Albert János. Que el propietario confirme un procedimiento de trabajo no equivale a una revisión científica del texto completo, y por ahora no hay un revisor externo independiente; cuando lo haya, se indicará en cada página revisada.</p>"
    },
    {
     "type": "text",
@@ -42,7 +48,7 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #20: confirma si habrá un revisor externo y cómo se citará; aprueba el texto de esta política."
+    "text": "Pendiente: revisor externo independiente (si lo hay, cómo se citará) y aprobación del texto de esta política."
    }
   ],
   "faq": [],
@@ -65,9 +71,15 @@
    },
    {
     "type": "text",
+    "id": "types-of-information",
+    "h2": "The kinds of information you will find",
+    "html": "<p>This site distinguishes five kinds of information:</p><ul><li><strong>General information from sources.</strong> It comes from health authorities, universities and peer-reviewed studies, and each article cites its sources.</li><li><strong>Working procedures.</strong> They describe what Albert János actually does in practice; they do not come from the sources and are presented on the service pages.</li><li><strong>Manufacturer technical data.</strong> It is attributed to the manufacturer and not presented as results measured in the work.</li><li><strong>Legal requirements.</strong> They are given with their source or marked as still to be checked.</li><li><strong>Service commitments.</strong> Prices and conditions appear only on the service and price pages.</li></ul>"
+   },
+   {
+    "type": "text",
     "id": "authorship-and-review",
     "h2": "Authorship and review",
-    "html": "<p>Each piece states who prepared it and who reviewed it, only when that review has really taken place. Drafts are not published until they pass professional review.</p>"
+    "html": "<p>Each piece of content states who wrote it and who reviewed it, only when that review has really taken place. The guide is authored by Albert János. The owner confirming a working procedure is not the same as a scientific review of the whole text, and for now there is no independent external reviewer; when there is one, it will be stated on each reviewed page.</p>"
    },
    {
     "type": "text",
@@ -83,7 +95,7 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #20: confirm whether an external reviewer will be used and how they will be credited; approve this policy wording."
+    "text": "Pending: independent external reviewer (if any, how to cite them) and approval of this policy text."
    }
   ],
   "faq": [],

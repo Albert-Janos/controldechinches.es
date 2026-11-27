@@ -623,7 +623,7 @@
    3,
    2
   ],
-  "priority": "P1",
+  "priority": "OPT",
   "alt": {
    "es": "Equipo de protección individual para el tratamiento",
    "en": "Personal protective equipment for treatment"
@@ -953,7 +953,7 @@
    3,
    2
   ],
-  "priority": "P1",
+  "priority": "OPT",
   "alt": {
    "es": "Dispositivo de monitorización colocado bajo la pata de una cama",
    "en": "Monitoring device placed under a bed leg"
@@ -1129,7 +1129,7 @@
    3,
    2
   ],
-  "priority": "P2",
+  "priority": "OPT",
   "alt": {
    "es": "Interceptor de monitorización en uso",
    "en": "Monitoring interceptor in use"
@@ -1151,7 +1151,7 @@
    3,
    2
   ],
-  "priority": "P2",
+  "priority": "OPT",
   "alt": {
    "es": "Comprobación de un dispositivo de monitorización",
    "en": "Checking a monitoring device"
@@ -2097,7 +2097,7 @@
    3,
    2
   ],
-  "priority": "P1",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Alicante (foto propia)",
    "en": "View of Alicante (own photo)"
@@ -2119,7 +2119,7 @@
    3,
    2
   ],
-  "priority": "P2",
+  "priority": "OPT",
   "alt": {
    "es": "Tipo de vivienda habitual en Alicante",
    "en": "Typical dwelling type in Alicante"
@@ -2141,7 +2141,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Trabajo real en Alicante (solo si se ha realizado allí)",
    "en": "Real job in Alicante (only if actually done there)"
@@ -2163,7 +2163,7 @@
    3,
    2
   ],
-  "priority": "P1",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Benidorm (foto propia)",
    "en": "View of Benidorm (own photo)"
@@ -2185,7 +2185,7 @@
    3,
    2
   ],
-  "priority": "P2",
+  "priority": "OPT",
   "alt": {
    "es": "Apartamento turístico típico en Benidorm",
    "en": "Typical holiday apartment in Benidorm"
@@ -2207,7 +2207,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Trabajo real en Benidorm (solo si se ha realizado allí)",
    "en": "Real job in Benidorm (only if actually done there)"
@@ -2229,7 +2229,7 @@
    3,
    2
   ],
-  "priority": "P1",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Torrevieja (foto propia)",
    "en": "View of Torrevieja (own photo)"
@@ -2251,7 +2251,7 @@
    3,
    2
   ],
-  "priority": "P2",
+  "priority": "OPT",
   "alt": {
    "es": "Vivienda típica en Torrevieja",
    "en": "Typical dwelling in Torrevieja"
@@ -2273,7 +2273,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Trabajo real en Torrevieja (solo si se ha realizado allí)",
    "en": "Real job in Torrevieja (only if actually done there)"
@@ -2295,7 +2295,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Elche (foto propia)",
    "en": "View of Elche (own photo)"
@@ -2317,7 +2317,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vivienda típica en Elche",
    "en": "Typical dwelling in Elche"
@@ -2339,7 +2339,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Calpe (foto propia)",
    "en": "View of Calpe (own photo)"
@@ -2361,7 +2361,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vivienda típica en Calpe",
    "en": "Typical dwelling in Calpe"
@@ -2383,7 +2383,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Orihuela Costa (foto propia)",
    "en": "View of Orihuela Costa (own photo)"
@@ -2405,7 +2405,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vivienda típica en Orihuela Costa",
    "en": "Typical dwelling in Orihuela Costa"
@@ -2427,7 +2427,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vista de Altea (foto propia)",
    "en": "View of Altea (own photo)"
@@ -2449,7 +2449,7 @@
    3,
    2
   ],
-  "priority": "P3",
+  "priority": "OPT",
   "alt": {
    "es": "Vivienda típica en Altea",
    "en": "Typical dwelling in Altea"

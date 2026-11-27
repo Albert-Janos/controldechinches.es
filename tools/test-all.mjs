@@ -10,6 +10,7 @@ const steps = [
   ['calculator + CTAs', 'tools/test-calculator.mjs'],
   ['publishing gate (negative)', 'tests/test-gate.mjs'],
   ['partial publication (links)', 'tests/test-partial-publish.mjs'],
+  ['content consistency', 'tests/test-content-consistency.mjs'],
   ['templates (browser)', 'tests/test-templates.mjs'],
   ['identifier tool PG-071', 'tests/test-identifier.mjs'],
 ];

@@ -64,7 +64,7 @@
     "type": "text",
     "id": "nota",
     "h2": "Nota",
-    "html": "<p>Este resumen no sustituye a la guía original ni constituye asesoramiento jurídico. Para el servicio de Control de Chinches en alojamientos, consulta <a href=\"/servicios/planes-prevencion/\">prevención y monitorización</a> y el <a href=\"/chinches-apartamentos-turisticos/\">servicio para alojamientos</a>.</p>"
+    "html": "<p>Este resumen es informativo, no sustituye a la guía original ni constituye asesoramiento jurídico. El servicio de Control de Chinches está pensado para apartamentos turísticos, pisos de alquiler vacacional y gestores de alojamientos turísticos: consulta <a href=\"{{url:PG-015}}\">prevención y monitorización</a> y el <a href=\"/chinches-apartamentos-turisticos/\">servicio para alojamientos</a>.</p>"
    }
   ],
   "faq": [],
@@ -146,7 +146,7 @@
     "type": "text",
     "id": "note",
     "h2": "Note",
-    "html": "<p>This summary does not replace the original guide and is not legal advice. For Control de Chinches’ service for accommodation, see <a href=\"/en/services/prevention-programmes/\">prevention and monitoring</a> and the <a href=\"/en/bed-bugs-holiday-rentals/\">holiday rental service</a>.</p>"
+    "html": "<p>This summary is informational, does not replace the original guide and is not legal advice. The Control de Chinches service is designed for tourist apartments, holiday lets and managers of tourist accommodation: see <a href=\"{{url:PG-015}}\">prevention and monitoring</a> and the <a href=\"/en/bed-bugs-holiday-rentals/\">holiday rental service</a>.</p>"
    }
   ],
   "faq": [],

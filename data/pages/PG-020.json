@@ -15,11 +15,22 @@
  "es": {
   "blocks": [
    {
+    "type": "towns",
+    "h2": "Localidades",
+    "intro": "Alicante y la Costa Blanca: 18 localidades."
+   },
+   {
+    "type": "text",
+    "id": "desplazamiento",
+    "h2": "Disponibilidad y desplazamiento",
+    "html": "<p>El desplazamiento depende de la distancia y se confirma por escrito antes de reservar. La disponibilidad depende de la capacidad en cada momento; no se garantiza una visita el mismo día.</p>"
+   },
+   {
     "type": "hub",
     "groups": [
      {
-      "h2": "Poblaciones",
-      "intro": "Solo se listan las zonas que Control de Chinches atiende.",
+      "h2": "Páginas por localidad",
+      "intro": "De momento hay página propia para estas tres localidades.",
       "items": [
        {
         "pageId": "PG-021",
@@ -39,27 +50,38 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #3: confirma las poblaciones que se atienden realmente y la regla de desplazamiento. La web actual lista 15 poblaciones, el pie 4 y los datos estructurados 3; solo se publicará la lista confirmada."
+    "text": "Pendiente: localidad de salida y sistema de tarifa de desplazamiento por distancia (aún sin definir). La web actual (15 localidades en la portada, 3 en los datos estructurados) debe sincronizarse con las 18 aprobadas."
    }
   ],
   "faq": [],
   "sources": [],
   "breadcrumb": [],
   "url": "/zonas/",
-  "title": "Zonas de servicio: chinches en la Costa Blanca",
-  "description": "Poblaciones donde trabajamos contra las chinches de cama en Alicante y la Costa Blanca. Confirmamos disponibilidad y desplazamiento al consultar.",
+  "title": "Zonas de servicio: chinches de cama en Alicante y la Costa Blanca",
+  "description": "Las 18 localidades de Alicante y la Costa Blanca donde se atienden chinches de cama. La disponibilidad y el desplazamiento se confirman al consultar.",
   "h1": "Zonas de servicio en la Costa Blanca",
   "eyebrow": "Zonas",
-  "lead": "Indícanos tu localidad y confirmamos disponibilidad y si el presupuesto incluye el desplazamiento."
+  "lead": "Estas son las localidades de Alicante y la Costa Blanca donde se atienden chinches de cama. Indica la tuya y se confirma la disponibilidad."
  },
  "en": {
   "blocks": [
    {
+    "type": "towns",
+    "h2": "Towns",
+    "intro": "Alicante and the Costa Blanca: 18 towns."
+   },
+   {
+    "type": "text",
+    "id": "availability-and-travel",
+    "h2": "Availability and travel",
+    "html": "<p>Travel depends on the distance and is confirmed in writing before you book. Availability depends on capacity at the time; a same-day visit is not guaranteed.</p>"
+   },
+   {
     "type": "hub",
     "groups": [
      {
-      "h2": "Towns",
-      "intro": "Only the areas Control de Chinches actually serves are listed.",
+      "h2": "Pages by town",
+      "intro": "For now there is a dedicated page for these three towns.",
       "items": [
        {
         "pageId": "PG-021",
@@ -79,7 +101,7 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #3: confirm the towns actually served and the travel rule. The current site lists 15 towns, the footer 4 and the structured data 3; only the confirmed list will be published."
+    "text": "Pending: departure town and distance-based travel fee system (not defined yet). The current live site (15 towns on the home page, 3 in the structured data) must be synchronised with the 18 approved towns."
    }
   ],
   "faq": [],
@@ -87,9 +109,9 @@
   "breadcrumb": [],
   "url": "/en/areas/",
   "title": "Areas we cover: bed bugs on the Costa Blanca",
-  "description": "Towns where we treat bed bugs in Alicante and the Costa Blanca. We confirm availability and travel when you get in touch.",
+  "description": "The 18 towns in Alicante and the Costa Blanca where bed bug treatment is offered. Availability and travel are confirmed when you get in touch.",
   "h1": "Areas we cover on the Costa Blanca",
   "eyebrow": "Areas",
-  "lead": "Tell us your town and we confirm availability and whether the quote includes travel."
+  "lead": "These are the towns in Alicante and the Costa Blanca where bed bug treatment is offered. Tell us yours and availability is confirmed."
  }
 }

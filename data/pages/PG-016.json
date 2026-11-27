@@ -13,18 +13,18 @@
   "PG-073"
  ],
  "_blocked": [
-  "OWNER-INPUT #13-#24 (qualifications, registry, experience, equipment)",
-  "LGL-01/LGL-07",
+  "OWNER-INPUT #19 (closed: first-person introduction from approved facts)",
+  "#13-#16 partly: qualification year 2026 given; document, exact name/issuer, Spanish status OPEN",
   "photos IMG-ABOUT-*, IMG-CRED-*",
-  "owner approval of every statement"
+  "LGL-01/07"
  ],
  "es": {
   "url": "/sobre-mi/",
-  "title": "Sobre mí: Albert János | Control de Chinches",
+  "title": "Albert János, especialista en chinches de cama | Control de Chinches",
   "description": "Quién está detrás de Control de Chinches: especialización exclusiva en chinches de cama, formación y método de trabajo.",
   "h1": "Albert János: especialista en chinches de cama",
   "eyebrow": "Sobre mí",
-  "lead": "Control de Chinches se dedica exclusivamente a las chinches de cama en Alicante y la Costa Blanca.",
+  "lead": "Control de Chinches se dedica exclusivamente a las chinches de cama en Alicante y la Costa Blanca. El trabajo lo hago yo personalmente.",
   "breadcrumb": [],
   "heroImage": "IMG-ABOUT-01",
   "blocks": [
@@ -32,23 +32,27 @@
     "type": "text",
     "id": "presentacion",
     "h2": "Presentación",
-    "html": "<p>Control de Chinches es un servicio especializado únicamente en chinches de cama, con tratamiento químico dirigido y vapor seco, para viviendas y alojamientos turísticos.</p>"
+    "html": "<p>Soy Albert János. Trabajo solo con chinches de cama, con tratamiento químico dirigido y vapor seco, en viviendas y alojamientos turísticos. Hago personalmente cada inspección y cada tratamiento y respondo yo mismo del trabajo que realizo.</p><p>También escribo los contenidos de la guía de esta web. Se basan en fuentes publicadas y distingo siempre entre esas fuentes y mi forma de trabajar; lo explica la <a href=\"{{url:PG-017}}\">política editorial</a>.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-02"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #19: presentación personal (3–6 frases con tus palabras) y fotos IMG-ABOUT-01/02/03."
-   },
-   {
     "type": "timeline",
     "h2": "Trayectoria",
     "items": [
      {
-      "when": "Pendiente",
-      "text": "Hitos aportados y documentados por el propietario (OWNER-INPUT #17)."
+      "when": "2023",
+      "text": "Empiezo a trabajar en el control de plagas."
+     },
+     {
+      "when": "Hungría",
+      "text": "Experiencia profesional en el control de plagas en Hungría; me especializo en chinches de cama."
+     },
+     {
+      "when": "2026",
+      "text": "Obtengo en Hungría la cualificación profesional de control de plagas sanitarias. Es una cualificación húngara: no la presento como habilitación oficial para operar en España ni como equivalente a una cualificación española."
      }
     ]
    },
@@ -63,7 +67,7 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #13–#16: titulación exacta y organismo, registro publicable, estado de la actividad en España. La titulación húngara no se presenta como autorización para operar en España (LGL-07). Los documentos se publican con los datos personales ocultados de forma irreversible."
+    "text": "Pendiente: publicación autorizada del documento de la cualificación (con datos personales ocultados de forma irreversible), lista exacta de certificados internacionales y sus documentos, y estado de la actividad en España (LGL-01/07). El número de registro húngaro no se publica por decisión del propietario, ni en el texto ni en los datos estructurados."
    },
    {
     "type": "docs",
@@ -78,7 +82,7 @@
     "type": "text",
     "id": "especializacion",
     "h2": "Especialización en chinches de cama",
-    "html": "<p>El servicio se centra únicamente en las chinches de cama: la inspección, el tratamiento y el seguimiento se adaptan a esta plaga.</p>"
+    "html": "<p>Me dedico solo a las chinches de cama: la inspección, el tratamiento y el seguimiento están pensados para esta plaga. No trabajo con otras plagas.</p>"
    },
    {
     "type": "figure",
@@ -88,29 +92,27 @@
     "type": "text",
     "id": "equipos",
     "h2": "Equipos y tecnología",
-    "html": "<p>Se trabaja con tratamiento químico dirigido y con vapor seco a alta temperatura.</p>"
+    "html": "<p>Trabajo con tratamiento químico dirigido y con vapor seco: uso un Polti Cimex Eradicator (<a href=\"{{url:PG-013}}\">más sobre el equipo</a>). Elijo el método según el caso: químico, vapor o una combinación.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-05"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #8, #9, #18: modelo real de la máquina, ajustes y resto de equipos. Hasta entonces no se indica ningún modelo."
-   },
-   {
     "type": "text",
     "id": "metodo",
     "h2": "Método de trabajo (GIP)",
-    "html": "<p>Cada caso empieza por una valoración de las zonas afectadas. Después se recomienda el método adecuado y se explican la preparación y el seguimiento. Más en <a href=\"/servicios/control-integrado/\">control integrado</a>.</p>"
+    "html": "<p>Cada caso empieza con una conversación y una inspección. Después elijo el método, explico la preparación y hago el seguimiento. Todo el proceso está descrito en <a href=\"{{url:PG-011}}\">control integrado</a>.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-07"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #19: principios de trabajo, objetivos y formación continua (solo cursos reales y documentados)."
+    "type": "text",
+    "id": "formacion-continua",
+    "h2": "Formación continua",
+    "html": "<p>Sigo formándome de forma continua en el control de chinches de cama.</p>"
    },
    {
     "type": "gallery",
@@ -131,7 +133,7 @@
   "description": "Who is behind Control de Chinches: a single focus on bed bugs, training and working method.",
   "h1": "Albert János: bed bug specialist",
   "eyebrow": "About",
-  "lead": "Control de Chinches works only on bed bugs in Alicante and the Costa Blanca.",
+  "lead": "Control de Chinches deals exclusively with bed bugs in Alicante and the Costa Blanca. I carry out the work personally.",
   "breadcrumb": [],
   "heroImage": "IMG-ABOUT-01",
   "blocks": [
@@ -139,23 +141,27 @@
     "type": "text",
     "id": "introduction",
     "h2": "Introduction",
-    "html": "<p>Control de Chinches is a service specialised solely in bed bugs, with targeted chemical treatment and dry steam, for homes and holiday accommodation.</p>"
+    "html": "<p>I am Albert János. I work only with bed bugs, using targeted chemical treatment and dry steam, in homes and tourist accommodation. I carry out every inspection and every treatment personally and I take personal responsibility for the work I do.</p><p>I also write the content of this site’s guide. It is based on published sources, and I always distinguish between those sources and the way I work; the <a href=\"{{url:PG-017}}\">editorial policy</a> explains this.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-02"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #19: personal introduction (3–6 sentences in your own words) and photos IMG-ABOUT-01/02/03."
-   },
-   {
     "type": "timeline",
     "h2": "Background",
     "items": [
      {
-      "when": "Pending",
-      "text": "Milestones supplied and documented by the owner (OWNER-INPUT #17)."
+      "when": "2023",
+      "text": "I start working in pest control."
+     },
+     {
+      "when": "Hungary",
+      "text": "Professional pest control experience in Hungary; I specialise in bed bugs."
+     },
+     {
+      "when": "2026",
+      "text": "I obtain a Hungarian professional qualification in public-health pest control. It is a Hungarian qualification: I do not present it as an official authorisation to operate in Spain or as equivalent to a Spanish qualification."
      }
     ]
    },
@@ -170,7 +176,7 @@
    },
    {
     "type": "todo",
-    "text": "OWNER-INPUT #13–#16: exact qualification and issuing body, publishable register entry, status of the activity in Spain. The Hungarian qualification is not presented as authorisation to operate in Spain (LGL-07). Documents are published with personal data irreversibly redacted."
+    "text": "Pending: authorised publication of the qualification document (with personal data irreversibly hidden), the exact list of international certificates and their documents, and the status of the activity in Spain (LGL-01/07). The Hungarian registration number is not published, by owner decision, neither in the text nor in the structured data."
    },
    {
     "type": "docs",
@@ -185,7 +191,7 @@
     "type": "text",
     "id": "specialisation",
     "h2": "Specialising in bed bugs",
-    "html": "<p>The service focuses solely on bed bugs: inspection, treatment and follow-up are adapted to this pest.</p>"
+    "html": "<p>I deal only with bed bugs: the inspection, the treatment and the follow-up are designed for this pest. I do not work with other pests.</p>"
    },
    {
     "type": "figure",
@@ -195,29 +201,27 @@
     "type": "text",
     "id": "equipment",
     "h2": "Equipment and technology",
-    "html": "<p>Work uses targeted chemical treatment and high-temperature dry steam.</p>"
+    "html": "<p>I work with targeted chemical treatment and dry steam: I use a Polti Cimex Eradicator (<a href=\"{{url:PG-013}}\">more about the equipment</a>). I choose the method according to the case: chemical, steam or a combination.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-05"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #8, #9, #18: actual machine model, settings and other equipment. No model is named until then."
-   },
-   {
     "type": "text",
     "id": "method",
     "h2": "Working method (IPM)",
-    "html": "<p>Every case starts with an assessment of the affected areas. We then recommend the right method and explain preparation and follow-up. More on <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p>"
+    "html": "<p>Every case starts with a conversation and an inspection. Then I choose the method, explain the preparation and do the follow-up. The whole process is described in <a href=\"{{url:PG-011}}\">integrated pest management</a>.</p>"
    },
    {
     "type": "figure",
     "image": "IMG-ABOUT-07"
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #19: working principles, goals and continuing training (only real, documented courses)."
+    "type": "text",
+    "id": "continuing-training",
+    "h2": "Continuing training",
+    "html": "<p>I keep training continuously in bed bug control.</p>"
    },
    {
     "type": "gallery",

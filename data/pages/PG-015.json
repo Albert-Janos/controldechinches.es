@@ -12,34 +12,39 @@
   "PG-003"
  ],
  "_blocked": [
-  "OWNER-INPUT #36 does the owner sell recurring prevention/monitoring programmes",
-  "documentation format (#11)",
-  "photos IMG-B2B-*",
-  "LGL-06"
+  "OWNER-INPUT #36/#11 (closed 2026-11-27: one-off orders, no subscription)",
+  "LGL: documentation requirements",
+  "photos IMG-B2B-*"
  ],
  "es": {
   "blocks": [
    {
     "type": "text",
+    "id": "para-quien",
+    "h2": "Para quién es",
+    "html": "<p>El servicio está pensado para apartamentos turísticos, pisos de alquiler vacacional (por ejemplo, Airbnb), empresas que gestionan alojamientos turísticos y clientes con varios apartamentos o inmuebles turísticos.</p>"
+   },
+   {
+    "type": "text",
     "id": "que-necesita-el-gestor",
     "h2": "Qué necesita un gestor de alojamientos",
-    "html": "<p>Detectar pronto, acotar las unidades afectadas, coordinar el acceso y la fecha con las próximas llegadas, y poder documentar lo que se hizo. Para valorar el caso necesitamos saber qué unidades presentan indicios y cuándo llegan los próximos huéspedes.</p>"
+    "html": "<p>Detectar pronto, acotar las unidades afectadas, coordinar el acceso y la fecha con las próximas llegadas y poder documentar lo que se hizo. Para valorar el caso hace falta saber qué unidades presentan indicios y cuándo llegan los próximos huéspedes.</p>"
    },
    {
     "type": "steps",
-    "h2": "Cómo coordinamos la intervención",
+    "h2": "Cómo se coordina la intervención",
     "items": [
      {
       "h3": "Indicios y alcance",
-      "p": "Nos cuentas qué señales habéis observado, cuándo aparecieron y qué unidades están afectadas."
+      "p": "Cuéntanos qué señales habéis observado, cuándo aparecieron y qué unidades están afectadas."
      },
      {
       "h3": "Preparación y fecha",
-      "p": "Acordamos una fecha, el acceso y las indicaciones para preparar las habitaciones."
+      "p": "Se acuerdan la fecha, el acceso y las indicaciones para preparar las habitaciones."
      },
      {
       "h3": "Intervención y seguimiento",
-      "p": "Aplicamos el método acordado y explicamos cuándo volver a usar las habitaciones; el seguimiento se indica en la propuesta."
+      "p": "Se aplica el método acordado y se explica cuándo volver a usar las habitaciones; el seguimiento se concreta en cada caso."
      }
     ]
    },
@@ -48,8 +53,20 @@
     "id": "IG-10"
    },
    {
+    "type": "text",
+    "id": "que-incluye",
+    "h2": "Qué incluye",
+    "html": "<ul><li>tratamiento puntual contra chinches de cama;</li><li>visita urgente, según la capacidad disponible;</li><li>trabajo discreto;</li><li>revisión de las unidades afectadas y de las contiguas cuando está justificado;</li><li>inspección preventiva, con la frecuencia que se acuerde;</li><li>colocación de trampas de monitorización;</li><li>formación del personal para reconocer chinches;</li><li>elaboración de un protocolo de prevención;</li><li>documentación escrita del tratamiento;</li><li>recomendaciones escritas para volver a usar la unidad.</li></ul><p>Una visita urgente no significa disponibilidad garantizada el mismo día: depende de la capacidad en ese momento.</p>"
+   },
+   {
+    "type": "text",
+    "id": "como-se-colabora",
+    "h2": "Cómo se colabora",
+    "html": "<p>Se trabaja con encargos puntuales. Si gestionas varios inmuebles, el presupuesto se prepara de forma individual. No hay suscripción mensual o trimestral, contrato permanente ni visitas periódicas garantizadas; la frecuencia de las revisiones preventivas se acuerda en cada caso. No hay recargo por urgencia ni por fin de semana, y los presupuestos para empresas pueden detallar por separado el importe neto y el IVA.</p>"
+   },
+   {
     "type": "todo",
-    "text": "OWNER-INPUT #36 y #11: ¿se ofrecen programas periódicos de prevención y monitorización? Alcance, frecuencia, qué documento se entrega (parte de trabajo) y formación al personal. Solo se publica lo que se ofrezca realmente."
+    "text": "Pendiente (LGL): requisitos legales y administrativos exactos de la documentación del tratamiento, y campos administrativos definitivos de los documentos; tipo de cliente y condiciones comerciales definitivas."
    },
    {
     "type": "cards",
@@ -65,12 +82,16 @@
   ],
   "faq": [
    {
-    "q": "¿Puedo pedir un parte de trabajo?",
-    "a": "Sí, puedes solicitarlo en el primer contacto. Confirmaremos qué documentación se puede facilitar y qué datos incluiría antes de reservar."
+    "q": "¿Puedo pedir documentación del tratamiento?",
+    "a": "Sí. Para alojamientos y empresas se elabora documentación escrita del tratamiento y recomendaciones escritas para volver a usar la unidad. Los requisitos administrativos exactos se confirman antes de publicar este servicio."
    },
    {
     "q": "¿Puedo pedir presupuesto para varios apartamentos?",
-    "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una."
+    "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una; el presupuesto es individual."
+   },
+   {
+    "q": "¿Hay un contrato de mantenimiento o visitas fijas?",
+    "a": "No. Se trabaja por encargo; las revisiones preventivas se acuerdan caso por caso."
    }
   ],
   "sources": [],
@@ -82,7 +103,7 @@
   ],
   "url": "/servicios/planes-prevencion/",
   "title": "Prevención y monitorización de chinches en alojamientos",
-  "description": "Coordinación de la intervención, documentación y seguimiento para apartamentos turísticos, hostales y pequeños hoteles.",
+  "description": "Intervención coordinada, documentación y seguimiento para apartamentos turísticos, pisos de alquiler vacacional y gestores de alojamientos turísticos.",
   "h1": "Prevención y monitorización para alojamientos",
   "eyebrow": "Alojamientos · B2B",
   "lead": "Intervención coordinada con tu calendario de reservas, con indicaciones para el equipo y seguimiento.",
@@ -92,25 +113,31 @@
   "blocks": [
    {
     "type": "text",
+    "id": "who-it-is-for",
+    "h2": "Who it is for",
+    "html": "<p>The service is designed for tourist apartments, holiday lets (for example, Airbnb), companies that manage tourist accommodation and clients with several apartments or tourist properties.</p>"
+   },
+   {
+    "type": "text",
     "id": "what-a-manager-needs",
     "h2": "What an accommodation manager needs",
-    "html": "<p>Early detection, narrowing down the affected units, coordinating access and the date with upcoming arrivals, and being able to document what was done. To assess the case we need to know which units show signs and when the next guests arrive.</p>"
+    "html": "<p>To detect early, narrow down the affected units, coordinate access and the date with upcoming arrivals and be able to document what was done. To assess the case we need to know which units show signs and when the next guests arrive.</p>"
    },
    {
     "type": "steps",
-    "h2": "How we coordinate the treatment",
+    "h2": "How the treatment is coordinated",
     "items": [
      {
-      "h3": "Signs and extent",
-      "p": "You tell us what signs you have seen, when they appeared and which units are affected."
+      "h3": "Signs and scope",
+      "p": "Tell us which signs you have seen, when they appeared and which units are affected."
      },
      {
       "h3": "Preparation and date",
-      "p": "We agree a date, access and guidance for preparing the rooms."
+      "p": "The date, access and instructions for preparing the rooms are agreed."
      },
      {
       "h3": "Treatment and follow-up",
-      "p": "We apply the agreed method and explain when rooms can be used again; follow-up is stated in the proposal."
+      "p": "The agreed method is applied and you are told when the rooms can be used again; follow-up is set out case by case."
      }
     ]
    },
@@ -119,8 +146,20 @@
     "id": "IG-10"
    },
    {
+    "type": "text",
+    "id": "what-is-included",
+    "h2": "What is included",
+    "html": "<ul><li>one-off bed bug treatment;</li><li>an urgent visit, depending on available capacity;</li><li>discreet work;</li><li>checking the affected and adjacent units when justified;</li><li>preventive inspection, at an agreed frequency;</li><li>placing monitoring traps;</li><li>training staff to recognise bed bugs;</li><li>drawing up a prevention protocol;</li><li>written treatment documentation;</li><li>written recommendations for putting the unit back into use.</li></ul><p>An urgent visit does not mean guaranteed same-day availability: it depends on capacity at the time.</p>"
+   },
+   {
+    "type": "text",
+    "id": "how-we-work-together",
+    "h2": "How we work together",
+    "html": "<p>Work is by one-off order. If you manage several properties, the quote is prepared individually. There is no monthly or quarterly subscription, permanent contract or guaranteed periodic visits; the frequency of preventive checks is agreed case by case. There is no urgency or weekend surcharge, and quotes for businesses can show the net amount and VAT separately.</p>"
+   },
+   {
     "type": "todo",
-    "text": "OWNER-INPUT #36 and #11: are recurring prevention and monitoring programmes offered? Scope, frequency, which document is provided (work report) and staff training. Only what is really offered gets published."
+    "text": "Pending (LGL): exact legal and administrative requirements for treatment documentation, and the final administrative fields of the documents; final client types and commercial terms."
    },
    {
     "type": "cards",
@@ -136,12 +175,16 @@
   ],
   "faq": [
    {
-    "q": "Can I ask for a work report?",
-    "a": "Yes, you can request one at first contact. We will confirm which documentation can be provided and what data it would include before you book."
+    "q": "Can I ask for treatment documentation?",
+    "a": "Yes. For accommodation and businesses, written treatment documentation and written recommendations for reusing the unit are prepared. The exact administrative requirements are confirmed before this service is published."
    },
    {
     "q": "Can I request a quote for several apartments?",
-    "a": "Yes. Tell us how many units you manage, which show signs and how each can be accessed."
+    "a": "Yes. Tell us how many units you manage, which show signs and how each can be accessed; the quote is individual."
+   },
+   {
+    "q": "Is there a maintenance contract or fixed visits?",
+    "a": "No. Work is by order; preventive checks are agreed case by case."
    }
   ],
   "sources": [],
@@ -153,7 +196,7 @@
   ],
   "url": "/en/services/prevention-programmes/",
   "title": "Bed bug prevention and monitoring for accommodation",
-  "description": "Coordinated treatment, documentation and follow-up for holiday rentals, guesthouses and small hotels.",
+  "description": "Coordinated treatment, documentation and follow-up for tourist apartments, holiday lets and managers of tourist accommodation.",
   "h1": "Prevention and monitoring for accommodation",
   "eyebrow": "Accommodation · B2B",
   "lead": "Treatment coordinated with your booking calendar, with guidance for your team and follow-up.",

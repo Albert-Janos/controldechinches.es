@@ -27,3 +27,8 @@ A diszpécser adatai a repóban **nincsenek**; az élő rendszert nem érintjük
 
 ## 5. Adminisztrációs rendszer (későbbi)
 Az esettanulmányok és a konverziók összekötése csak *piszkozat/riport* szintű (CASE-STUDY-STANDARD, CONVERSION-MEASUREMENT §5); automatikus publikálás nincs.
+
+## Frissítés (2. munkacsomag)
+- `data/prices.json`: **nettó** árak + `vat` (arány, megjelenítési mód, státusz) + `extras` + `terms`; a régi `addons` csak a védett kalkulátort szolgáló `js/prices.js` generátorának marad.
+- `templates/prices.mjs`: fogyasztói ár (nettó × (100+IVA %) centben), formázás ES/EN, tokenek: `{{price:KEY}}`, `{{net:KEY}}`, `{{vat}}`, `{{url:PG-xxx}}`. Oldal-adatban kézzel írt ár tilos (teszt).
+- `data/site.json`: `dispatcher` (hívás) és `whatsapp` külön; `serviceAreas` (18 település, kiemelt lista, városi oldalak); `person` (kezdet 2023, képesítés 2026, nyilvántartási szám rejtve).

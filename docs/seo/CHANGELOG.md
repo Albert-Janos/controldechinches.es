@@ -33,3 +33,10 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - **P1 PG-071:** üres beküldésre kitöltési figyelmeztetés, nem eredmény; a negatív eredmény nem zárja ki a fertőzöttséget. Teszt: `tests/test-identifier.mjs`.
 - **P1 szakmai pontosítás (PG-012/013/014)** kizárólag tulajdonosi adat nélkül igazolható állításokkal; a nyitott tételek (géptípus, biocidok, reentry-idők) OWNER-INPUT státuszban maradnak.
 - **Eszközök:** `tools/check-prices.mjs` már csak olvas (nem írja át `js/prices.js`-t); új `tools/audit-layout.mjs` (képméret, SVG-túlcsordulás, duplikált id); `tools/validate.mjs`: duplikált id, ismétlődő kép, előtöltött WhatsApp-szöveg, hálószobánkénti ár a meta description-ben.
+
+## 2026-11-27 — 2. munkacsomag: szakmai tartalom és tulajdonosi adatok (`develop/seo`, nincs merge/deploy/FTP; minden oldal Draft + noindex)
+- **Központi adatok:** `data/prices.json` (nettó + `vat` + `extras` + `terms`), `data/site.json` (dispatcher/WhatsApp külön, 18 település, személy), új `templates/prices.mjs` (fogyasztói ár és tokenek), `towns` blokk, IVA-kapu a production buildben.
+- **Tartalom (ES+EN):** PG-011, 012, 013, 014 (érdemi bővítés), 015, 016, 017, 020, 021–023 (egyedi keresési szándék), 030 (GYIK ellentmondások), 049, 053–056, 060, 061, 072 célzott frissítése.
+- **Gyártói adatok:** Polti Cimex Eradicator, HPMed — MANUFACTURER-DATA.md.
+- **Dokumentáció:** OWNER-APPROVALS-WP2.md (új, verziózott), OWNER-INPUT státusz, DECISION-LOG D-029–D-038, PHOTO-SHOT-LIST „H”.
+- **Tesztek:** új `tests/test-content-consistency.mjs` (telefonszámok, terület, árak, ES/EN-szerkezet, Draft/noindex).

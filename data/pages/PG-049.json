@@ -60,6 +60,12 @@
    },
    {
     "type": "text",
+    "id": "como-lo-plantea-control-de-chinches",
+    "h2": "Cómo lo plantea Control de Chinches",
+    "html": "<p>El método se elige para cada caso: <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico dirigido</a>, <a href=\"/servicios/vapor-seco/\">vapor seco independiente</a> o una combinación de ambos y, cuando está justificado, nebulización en frío complementaria o polvo autorizado. Todo ello dentro de un <a href=\"/servicios/control-integrado/\">proceso de control integrado</a>. No hay ningún método que garantice eliminar todas las chinches en un solo tratamiento.</p>"
+   },
+   {
+    "type": "text",
     "id": "profesional",
     "h2": "Cuándo recurrir a un profesional",
     "html": "<p>Rutgers señala que las infestaciones que afectan a todo un edificio requerirán probablemente a un profesional. Tras cada actuación conviene una revisión de seguimiento (Purdue recomienda al menos una a los 10–21 días). Las fuentes consultadas no fijan un número de tratamientos: depende de cada caso.</p>"
@@ -198,6 +204,12 @@
     "id": "what-to-avoid",
     "h2": "What to avoid",
     "html": "<p>The EPA says foggers (“bug bombs”) should not be used as the sole means of control and that not all are labelled for bed bugs; an Ohio State study, cited by Rutgers, found them ineffective and hazardous. Do not use outdoor pesticides indoors, or rubbing alcohol, kerosene or gasoline.</p>"
+   },
+   {
+    "type": "text",
+    "id": "how-control-de-chinches-approaches-it",
+    "h2": "How Control de Chinches approaches it",
+    "html": "<p>The method is chosen for each case: <a href=\"/en/services/chemical-treatment/\">targeted chemical treatment</a>, <a href=\"/en/services/dry-steam/\">stand-alone dry steam</a> or a combination of both and, where justified, supplementary cold fogging or an authorised dust. All of it within an <a href=\"/en/services/integrated-pest-management/\">integrated pest management process</a>. No method guarantees eliminating every bed bug in a single treatment.</p>"
    },
    {
     "type": "text",

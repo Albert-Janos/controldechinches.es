@@ -37,11 +37,7 @@
     "type": "text",
     "id": "que-es",
     "h2": "Qué es la gestión integrada de plagas",
-    "html": "<p>La gestión integrada de plagas (GIP, en inglés IPM) combina varias medidas en lugar de depender de una sola: conocer el problema, elegir los métodos adecuados, comprobar el resultado y reducir el riesgo de que vuelva a aparecer.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Revisión profesional y fuentes: contrastar la definición y los principios con documentos oficiales (EPA, autoridades sanitarias españolas, Generalitat Valenciana) antes de publicar."
+    "html": "<p>La gestión integrada de plagas (GIP, en inglés IPM) combina varias medidas en lugar de depender de una sola: conocer el problema, elegir los métodos adecuados, comprobar el resultado y reducir el riesgo de que vuelva a aparecer.</p><p>No es un producto ni una máquina, sino una secuencia de pasos en la que el método de tratamiento es solo una parte. En Control de Chinches el trabajo lo realiza personalmente el técnico, Albert János, de principio a fin.</p>"
    },
    {
     "type": "infographic",
@@ -53,23 +49,23 @@
     "items": [
      {
       "h3": "Información y valoración",
-      "p": "Información previa, inspección del lugar, identificación y alcance del problema."
+      "p": "Entrevista previa, inspección del lugar, identificación y alcance aproximado del problema."
      },
      {
       "h3": "Plan de tratamiento",
-      "p": "Plan individual según las zonas afectadas y las superficies."
+      "p": "Elección del método según la gravedad, las zonas afectadas y las superficies."
      },
      {
       "h3": "Tratamiento",
-      "p": "Métodos físicos (vapor seco) y, cuando está justificado, aplicación dirigida; también una combinación de ambos."
+      "p": "Aplicación química dirigida, vapor seco o una combinación de ambos; en casos justificados, nebulización en frío o polvo autorizado."
      },
      {
       "h3": "Refugios y rutas de propagación",
-      "p": "Documentación de grietas y huecos y recomendaciones. Cerrarlos por sí solo no elimina una infestación ni garantiza que no vuelvan a entrar."
+      "p": "Identificación de grietas y huecos y recomendaciones. Cerrarlos por sí solo no elimina una infestación ni garantiza que no vuelvan a entrar."
      },
      {
       "h3": "Seguimiento",
-      "p": "Monitorización y revisión posterior al tratamiento."
+      "p": "Avisos y fotos por WhatsApp, revisión posterior en el lugar si hace falta y trampas de monitorización cuando están indicadas."
      },
      {
       "h3": "Asesoramiento y prevención",
@@ -78,8 +74,22 @@
     ]
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #7, #11, #12: confirma qué pasos realizas tú, cuáles recomiendas y cuáles requieren un contratista externo (tabla «Quién hace qué»). Sin esa confirmación la sección no se publica."
+    "type": "text",
+    "id": "primera-conversacion",
+    "h2": "La primera conversación",
+    "html": "<p>Antes de tratar, el técnico pregunta:</p><ul><li>cuándo se notó algo por primera vez;</li><li>si ya hubo un tratamiento o se probaron productos caseros;</li><li>en qué habitación se duerme;</li><li>dónde aparecen las picaduras y otros indicios.</li></ul><p>Las picaduras por sí solas no permiten confirmar que haya chinches: orientan la inspección, no sustituyen al diagnóstico.</p>"
+   },
+   {
+    "type": "text",
+    "id": "inspeccion-en-el-lugar",
+    "h2": "Inspección en el lugar",
+    "html": "<p>Se revisan el colchón y sus costuras, el somier, el cabecero y los muebles cercanos, además de rodapiés, juntas y grietas accesibles. Si es necesario, se desmonta parcialmente la cama y se amplía la revisión a otras habitaciones. Se buscan ejemplares vivos, huevos, manchas oscuras y mudas, y con ello se estima la gravedad y la extensión. El detalle está en <a href=\"/servicios/inspeccion-diagnostico/\">inspección y diagnóstico</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "como-se-elige-el-metodo",
+    "h2": "Cómo se elige el método",
+    "html": "<p>La decisión es individual y tiene en cuenta:</p><ul><li>la gravedad y la extensión de la infestación;</li><li>el material de los muebles y las superficies;</li><li>la accesibilidad de los escondites;</li><li>tratamientos anteriores que no funcionaron;</li><li>la presencia de niños y mascotas;</li><li>las preferencias del cliente;</li><li>el uso del inmueble.</li></ul><p>Los métodos posibles son el <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico dirigido</a>, el <a href=\"/servicios/vapor-seco/\">vapor seco independiente</a> o una combinación de ambos y, cuando está justificado, nebulización en frío complementaria o polvo autorizado. Que un método pueda usarse depende de cada caso y de las condiciones de la tecnología o del producto.</p><p>El tratamiento combinado coordina el calor y el producto: se plantea, por ejemplo, ante infestaciones fuertes, varias habitaciones afectadas, un tratamiento previo fallido o superficies que requieren enfoques distintos. No significa una eliminación completa garantizada en una sola visita.</p>"
    },
    {
     "type": "roles",
@@ -88,22 +98,50 @@
      {
       "title": "Lo realiza el técnico",
       "items": [
-       "Pendiente de confirmar"
+       "Entrevista previa e inspección",
+       "Desmontaje parcial de la cama y desplazamiento de muebles cuando hace falta",
+       "Localización de escondites accesibles y de grietas problemáticas",
+       "Tratamiento: químico dirigido, vapor seco o combinado",
+       "Trampas de monitorización cuando están indicadas",
+       "Instrucciones antes y después del tratamiento"
       ]
      },
      {
       "title": "Recomendación al cliente",
       "items": [
-       "Pendiente de confirmar"
+       "Reparar grietas y fisuras de la pared",
+       "Cerrar huecos detrás de los rodapiés",
+       "Reparar el papel pintado suelto",
+       "Arreglar juntas de muebles y huecos innecesarios",
+       "Reducir el desorden",
+       "Usar una funda de colchón específica contra chinches",
+       "Desechar muebles solo si está justificado",
+       "Evitar mover objetos infestados sin control"
       ]
      },
      {
-      "title": "Contratista externo",
+      "title": "Profesional externo",
       "items": [
-       "Pendiente de confirmar"
+       "Reparaciones importantes de pared y yeso",
+       "Instalación eléctrica",
+       "Carpintería",
+       "Sustitución o reparación de rodapiés",
+       "Otras reparaciones de obra"
       ]
      }
     ]
+   },
+   {
+    "type": "text",
+    "id": "refugios-y-reparaciones",
+    "h2": "Refugios y reparaciones",
+    "html": "<p>Sellar grietas y huecos es una medida complementaria y preventiva, no un método de eliminación por sí mismo. El técnico no ofrece obras ni reparaciones como servicio propio: identifica los puntos problemáticos y recomienda qué conviene arreglar. Más en <a href=\"/guia-chinches/sellar-grietas-chinches/\">sellar grietas</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "seguimiento-y-prevencion",
+    "h2": "Seguimiento y prevención",
+    "html": "<p>Después del tratamiento se pueden comunicar nuevos indicios y enviar fotos por WhatsApp; si hace falta, se hace una revisión en el lugar y se colocan trampas de monitorización. Cuándo repetir un tratamiento depende del caso y del producto (con frecuencia se plantea hacia los 10–14 días, sin que sea una regla fija). Para profundizar: <a href=\"/guia-chinches/despues-del-tratamiento-chinches/\">qué hacer después del tratamiento</a>, <a href=\"/guia-chinches/monitorizacion-chinches/\">monitorización</a>, <a href=\"/guia-chinches/por-que-vuelven-las-chinches/\">por qué vuelven las chinches</a> y <a href=\"/guia-chinches/cuantos-tratamientos-chinches/\">cuántos tratamientos hacen falta</a>.</p>"
    },
    {
     "type": "priceBox",
@@ -114,9 +152,39 @@
    {
     "q": "¿Qué diferencia hay entre control integrado y un tratamiento puntual?",
     "a": "Un tratamiento puntual aplica un método una vez. El control integrado incluye valoración previa, el método más adecuado, comprobación posterior y recomendaciones de prevención."
+   },
+   {
+    "q": "¿Quién hace el trabajo?",
+    "a": "El técnico, Albert János, lo realiza personalmente: entrevista, inspección, tratamiento y seguimiento."
+   },
+   {
+    "q": "¿Un tratamiento basta para eliminar las chinches?",
+    "a": "Depende del caso. A veces hace falta repetir o combinar métodos, y no hay ningún método que garantice eliminar todas las chinches en una sola vez."
    }
   ],
-  "sources": []
+  "sources": [
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación sostenible",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
  },
  "en": {
   "url": "/en/services/integrated-pest-management/",
@@ -137,11 +205,7 @@
     "type": "text",
     "id": "what-is-ipm",
     "h2": "What integrated pest management is",
-    "html": "<p>Integrated pest management (IPM, in Spanish GIP) combines several measures instead of relying on one: understanding the problem, choosing suitable methods, checking the result and reducing the risk of it coming back.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Professional review and sources: check the definition and principles against official documents (EPA, Spanish health authorities, Generalitat Valenciana) before publishing."
+    "html": "<p>Integrated pest management (IPM; GIP in Spanish) combines several measures instead of relying on a single one: understanding the problem, choosing suitable methods, checking the result and reducing the risk of a return.</p><p>It is not a product or a machine but a sequence of steps in which the treatment method is only one part. At Control de Chinches the work is carried out personally by the technician, Albert János, from start to finish.</p>"
    },
    {
     "type": "infographic",
@@ -153,57 +217,99 @@
     "items": [
      {
       "h3": "Information and assessment",
-      "p": "Initial information, on-site inspection, identification and extent of the problem."
+      "p": "Initial interview, inspection of the premises, identification and the approximate extent of the problem."
      },
      {
       "h3": "Treatment plan",
-      "p": "An individual plan based on the affected areas and surfaces."
+      "p": "Choice of method according to the severity, the affected areas and the surfaces."
      },
      {
       "h3": "Treatment",
-      "p": "Physical methods (dry steam) and, where justified, targeted application; or a combination of both."
+      "p": "Targeted chemical application, dry steam or a combination of both; where justified, cold fogging or an authorised dust."
      },
      {
       "h3": "Hiding places and routes of spread",
-      "p": "Documenting cracks and gaps, with recommendations. Sealing them alone does not eliminate an infestation or guarantee that bed bugs will not be brought in again."
+      "p": "Identification of cracks and gaps and recommendations. Sealing them alone does not eliminate an infestation or guarantee bed bugs will not return."
      },
      {
       "h3": "Follow-up",
-      "p": "Monitoring and a check after treatment."
+      "p": "Reports and photos by WhatsApp, a later on-site check if needed and monitoring traps where indicated."
      },
      {
       "h3": "Advice and prevention",
-      "p": "Guidance for the client and, in accommodation, for staff."
+      "p": "Guidance for the client and, in accommodation, for the staff."
      }
     ]
    },
    {
-    "type": "todo",
-    "text": "OWNER-INPUT #7, #11, #12: confirm which steps you carry out, which you recommend and which need an external contractor (the “Who does what” table). The section stays unpublished without it."
+    "type": "text",
+    "id": "first-conversation",
+    "h2": "The first conversation",
+    "html": "<p>Before treating, the technician asks:</p><ul><li>when something was first noticed;</li><li>whether there was a previous treatment or home remedies were tried;</li><li>which room is slept in;</li><li>where the bites and other signs appear.</li></ul><p>Bites alone cannot confirm that you have bed bugs: they guide the inspection but do not replace a diagnosis.</p>"
+   },
+   {
+    "type": "text",
+    "id": "on-site-inspection",
+    "h2": "On-site inspection",
+    "html": "<p>The mattress and its seams, the bed frame, the headboard and nearby furniture are checked, along with accessible baseboards, joints and cracks. If necessary the bed is partly dismantled and the check extends to other rooms. The technician looks for live insects, eggs, dark spots and moults, and uses them to estimate the severity and extent. The detail is in <a href=\"/en/services/inspection-diagnosis/\">inspection and diagnosis</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "how-the-method-is-chosen",
+    "h2": "How the method is chosen",
+    "html": "<p>The decision is individual and takes into account:</p><ul><li>the severity and extent of the infestation;</li><li>the material of the furniture and surfaces;</li><li>how accessible the hiding places are;</li><li>earlier treatments that did not work;</li><li>the presence of children and pets;</li><li>the client’s wishes;</li><li>the use of the property.</li></ul><p>The possible methods are <a href=\"/en/services/chemical-treatment/\">targeted chemical treatment</a>, <a href=\"/en/services/dry-steam/\">stand-alone dry steam</a> or a combination of both and, where justified, supplementary cold fogging or an authorised dust. Whether a method can be used depends on the case and on the conditions of the technology or product.</p><p>A combined treatment coordinates heat and product: it is considered, for example, for heavy infestations, several affected rooms, a failed earlier treatment or surfaces that need different approaches. It does not mean guaranteed complete elimination in a single visit.</p>"
    },
    {
     "type": "roles",
     "h2": "Who does what",
     "columns": [
      {
-      "title": "Done by the technician",
+      "title": "Carried out by the technician",
       "items": [
-       "To be confirmed"
+       "Initial interview and inspection",
+       "Partly dismantling the bed and moving furniture when needed",
+       "Locating accessible hiding places and problem cracks",
+       "Treatment: targeted chemical, dry steam or combined",
+       "Monitoring traps where indicated",
+       "Instructions before and after treatment"
       ]
      },
      {
       "title": "Recommended to the client",
       "items": [
-       "To be confirmed"
+       "Repair wall cracks and fissures",
+       "Close gaps behind baseboards",
+       "Fix loose wallpaper",
+       "Repair furniture joints and unnecessary gaps",
+       "Reduce clutter",
+       "Use a mattress encasement made for bed bugs",
+       "Dispose of furniture only when justified",
+       "Avoid moving infested items without control"
       ]
      },
      {
-      "title": "External contractor",
+      "title": "External tradesperson",
       "items": [
-       "To be confirmed"
+       "Major wall and plaster repairs",
+       "Electrical work",
+       "Carpentry",
+       "Replacing or repairing baseboards",
+       "Other building repairs"
       ]
      }
     ]
+   },
+   {
+    "type": "text",
+    "id": "hiding-places-and-repairs",
+    "h2": "Hiding places and repairs",
+    "html": "<p>Sealing cracks and gaps is a complementary and preventive measure, not an elimination method in itself. The technician does not offer building or repair work as a service: he identifies the problem points and recommends what should be fixed. More in <a href=\"/en/bed-bug-guide/sealing-cracks-bed-bugs/\">sealing cracks</a>.</p>"
+   },
+   {
+    "type": "text",
+    "id": "follow-up-and-prevention",
+    "h2": "Follow-up and prevention",
+    "html": "<p>After treatment, new signs can be reported and photos sent by WhatsApp; if needed, an on-site check is made and monitoring traps are placed. When to repeat a treatment depends on the case and the product (a repeat is often considered around 10–14 days, but this is not a fixed rule). To go deeper: <a href=\"/en/bed-bug-guide/after-bed-bug-treatment/\">what to do after treatment</a>, <a href=\"/en/bed-bug-guide/bed-bug-monitoring/\">monitoring</a>, <a href=\"/en/bed-bug-guide/why-bed-bugs-come-back/\">why bed bugs come back</a> and <a href=\"/en/bed-bug-guide/how-many-treatments-bed-bugs/\">how many treatments are needed</a>.</p>"
    },
    {
     "type": "priceBox",
@@ -214,8 +320,38 @@
    {
     "q": "What is the difference between integrated control and a one-off treatment?",
     "a": "A one-off treatment applies one method once. Integrated control includes an assessment first, the most suitable method, a check afterwards and prevention advice."
+   },
+   {
+    "q": "Who does the work?",
+    "a": "The technician, Albert János, does it personally: interview, inspection, treatment and follow-up."
+   },
+   {
+    "q": "Is one treatment enough to eliminate bed bugs?",
+    "a": "It depends on the case. Sometimes treatment has to be repeated or methods combined, and no method guarantees eliminating every bed bug in one go."
    }
   ],
-  "sources": []
+  "sources": [
+   {
+    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación sostenible",
+    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+    "year": "",
+    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ]
  }
 }

@@ -37,7 +37,7 @@
    },
    {
     "type": "todo",
-    "text": "Pendientes de las instrucciones reales del propietario: lista de preparación previa y lista posterior al tratamiento (OWNER-INPUT #10, #11)."
+    "text": "Instrucciones del propietario recibidas (preparación previa y cuidados posteriores, ver las guías PG-055 y PG-056). Pendiente: crear las listas imprimibles correspondientes (no se crean páginas nuevas en este paquete) y los campos administrativos definitivos de los documentos."
    }
   ],
   "faq": [],
@@ -72,7 +72,7 @@
    },
    {
     "type": "todo",
-    "text": "Pending the owner’s real instructions: pre-treatment preparation list and post-treatment list (OWNER-INPUT #10, #11)."
+    "text": "Owner instructions received (preparation and aftercare, see guides PG-055 and PG-056). Pending: create the matching printable checklists (no new pages are created in this package) and the final administrative fields of the documents."
    }
   ],
   "faq": [],
