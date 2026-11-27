@@ -53,3 +53,31 @@ Heti/havi ciklus (SEO-MONITORING §Ritmus), GSC + GA4 összekötés (hozzáfér�
 ## Kritikus útvonal
 OWNER-INPUT #1–#6 → P1-02/03 → P1-05…P1-13 → (P2 ∥ fotózás) → P3 → P4 → P5 → P6 → P7 → P8.
 A fotózás (PHOTO-SHOT-LIST P0) **már most** indítható — nem függ a fejlesztéstől, és ez a leghosszabb átfutású tétel.
+
+
+---
+## Állapot — 2026-11-27 (tulajdonosi jóváhagyás után)
+| Feladat | Állapot |
+|---|---|
+| P0 | kész, commitolva (`9bfc22f`) |
+| P0.1 hibajavítások (árak, kalkulátor, a11y, og:image) | **kész**, tesztelve (`5c10490`, `c2c9e3d`) |
+| P1-01 döntések | részben (árlogika jóváhagyva; jogi adatok, területek, mérési ID-k nyitva) |
+| P1-02 preview | helyi preview (`dist-preview`, noindex) kész; távoli preview-host: tulajdonosi döntés |
+| P1-03 repo-szerkezet + deploy-kizárás | **kész** (`package-site.mjs`, allowlist) |
+| P1-04 adatréteg | **kész** (`site/prices/whatsapp/images/pages`) |
+| P1-05 build + státuszkapu | **kész** |
+| P1-06 `seo.css` + komponensek | **kész** |
+| P1-07 9 sablon fixtúrával | **kész**, böngészőben validálva (360/768/1280, ES+EN, axe, lightbox, eszköz) |
+| P1-08/09 head, hreflang, sitemap | **kész** (sitemap az éles fájlra épít, jóváhagyott oldalakkal bővül) |
+| P1-10 JSON-LD | **kész** (@graph, @id-hivatkozás-ellenőrzés; FAQPage nincs) |
+| P1-11 képpipeline | **kész** (szintetikus 6000×4000 GPS-es teszttel igazolva) |
+| P1-12 validátorok / minőségkapu | **kész** (`validate.mjs`) |
+| P1-13 Ads-regressziós teszt | **kész** (`test-ads-protection.mjs`, baseline `c2c9e3d`) |
+| P1-14 Lighthouse/axe baseline | **kész** (éles baseline; új oldalak: helyi) |
+| P1-15 régi sablonok egységesítése | javaslat marad |
+| P1-16 A-C1/A-C2 javítás | **kész** |
+| P2 Sobre mí | piszkozat (blokkolt: OWNER-INPUT #13–#24, fotók, LGL-07) |
+| P3 szolgáltatások | piszkozat: hub, IPM, vapor seco, tratamiento químico (blokkolt: #7–#12, fotók, LGL-05) |
+| P4 lokális | **nem indult** (blokkolt: #3 szolgáltatási területek, LGL-01/08) |
+| P5 GYIK | piszkozat (valós, élő oldali kérdésekből); tudásközpont-cikkek **nem indultak** (ellenőrzött források + szakmai ellenőr + fotók kellenek) |
+| P6–P8 | **nem indultak** (P6 fotók, P7 valós esetek/ajánlat, P8 GSC/GA4 hozzáférés) |

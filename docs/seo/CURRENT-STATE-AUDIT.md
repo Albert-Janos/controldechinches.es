@@ -96,3 +96,27 @@ Teljes tudásközpont, szolgáltatás- és városoldalak, szerzői hitelesség (
 - ROESB / spanyolországi működési jogosultság (OWNER-INPUT, LEGAL-PUBLICATION-GATES).
 - Valós mobil-megjelenés eszközökön, billentyűzet/képernyőolvasó teszt.
 - Az üzleti adatok (ár, telefon, WhatsApp-szöveg) forrása a HTML maga: telefonszám ~46 előfordulás 7 fájlban, 8 különböző WhatsApp-üzenet, árak 5 fájlban + `landing.js` ráták → egyetlen forrás hiánya (DATA-ARCHITECTURE).
+
+
+---
+## Frissítés — P0.1 (2026-11-27): javítások és mért baseline
+
+**Javítva a helyi `develop/seo` ágon (nincs deploy):**
+| ID | Állapot |
+|---|---|
+| A-C1 ár-ellentmondás | **Javítva**: ES/EN főoldal, árak oldalak, kalkulátor, WhatsApp-szöveg, GYIK, meta, JSON-LD egységes (D-017); Esencial/Completo kivezetve. |
+| A-C2 kalkulátor JS-hiba | **Javítva** (`landing.js`: null-védelem + az árak a központi `js/prices.js`-ből); a böngészőkonzol ES/EN árak oldalon tiszta; `tools/test-calculator.mjs` zöld (1–10 hálószoba, kiegészítők, WhatsApp-üzenet, telefon-CTA, mobil+desktop). |
+| A-M4 (részben) | A jogi oldalak törött `og:image`-e javítva. |
+| *új* axe-hiba | `label-content-name-mismatch` (nyelvváltó `aria-label`) javítva a 6 oldalon. |
+| A-C3, A-H1, A-H3 | **Nyitva** (jogi adatok, mérési ID-k, képjogok) — tulajdonosi bemenet. |
+
+**Mért baseline (éles oldal, javítás előtti állapot, Lighthouse 13.6.0, egyszeri futás oldalanként/módonként, labor, Windows/Chrome — tájékoztató; részletes: `reports/live-baseline-lighthouse.json`):**
+| Oldal | Mobil Perf / LCP | Desktop Perf / LCP | A11y | BP | SEO |
+|---|---|---|---|---|---|
+| `/` | 77 / 6.0 s | 91 / 1.2 s | 100 | 100 | 100 |
+| `/en/` | 89 / 3.7 s | 80 / 0.8 s | 100 | 100 | 100 |
+| `/precios.html` | 93 / 3.1 s | 100 / 0.8 s | 100 | **96** (konzolhiba) | 100 |
+| `/en/prices.html` | 92 / 2.6 s | 100 / 0.7 s | 100 | 100 | 100 |
+| apartman ES / EN | 92–93 / 3.2 s | 100 / 0.7 s | 100 | 100 | 100 |
+Megfigyelés: a főoldal mobil LCP-je (6.0 s) a célérték (≤ 2.5 s) fölött van; a hero CSS-háttér (`lcp-discovery`), renderblokkoló betűtípus-CSS. CLS ≈ 0. **A főoldal módosítása Ads-védett → javaslatként marad** (hero `<img>`/`fetchpriority`, önhosztolt font); egyetlen futás zajos, a döntés előtt 3× medián kell.
+**axe-core 4.14.1 (WCAG 2.2 AA + best practice, lokális, desktop+mobil, 9 oldal):** 1 hibatípus (fent, javítva). **Töröttlink-ellenőrzés:** 10 oldal, 406 belső hivatkozás, 0 hiba a javítások után. **Nem végezhető/nem végzett:** CrUX/GSC valós adat (nincs hozzáférés), valós eszközös teszt.

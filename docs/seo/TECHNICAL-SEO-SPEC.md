@@ -41,3 +41,18 @@ HTTP-hibák (preview-n) · törött belső linkek/képek · hiányzó/duplikált
 
 ## 9. Meglévő technikai hibák javítása
 A-C2, A-M2…A-M12 → külön csomagok jóváhagyással (ROADMAP P1-15/16).
+
+## Megvalósítva (P1) — helyi munkafolyamat
+**Telepítés (egyszer):** `cd tools && npm install` (sharp, lighthouse, puppeteer-core, axe-core, DM Sans; csak helyi fejlesztőeszköz, **nem kerül élesre**). Chrome/Edge szükséges a tesztekhez.
+| Cél | Parancs |
+|---|---|
+| Árak újragenerálása (`data/prices.json` → `js/prices.js`) | `node tools/build-prices.mjs` |
+| Preview csomag (minden státusz, noindex, DRAFT-sáv) | `node tools/package-site.mjs --mode preview --out dist-preview` |
+| Helyi böngészős megnézés | `node tools/serve.mjs 4173 dist-preview` → http://127.0.0.1:4173/ |
+| **Éles csomag** (csak jóváhagyott oldalak + publikus fájlok) | `node tools/package-site.mjs --mode production --out dist` — **kizárólag a `dist/` mappa tölthető fel** (FTP/FTPS/SFTP, kézzel, tulajdonosi jóváhagyás után) |
+| Minőségkapu | `node tools/validate.mjs --dir dist --mode production` |
+| Teljes tesztkészlet | `node tools/test-all.mjs` (árak, linkek, Ads-védelem, kalkulátor, publikálási kapu negatív teszt, 9 sablon böngészőben) |
+| Képek | `node tools/process-images.mjs scan` → hozzárendelés `data/images-assign.csv` → `process` → `verify`; majd `node tools/build-image-manifest.mjs` |
+**Struktúra:** `templates/` (komponensek, 9 sablon, ES/EN szövegek) · `data/` (`site.json`, `prices.json`, `whatsapp.json`, `images.json`, `pages/*.json`, `ads-protection.json`) · `assets/seo.css|seo.js|fonts` · `tools/` · `tests/`.
+**Védelem:** a csomagoló allowlistes; `.git`, `.env`, `docs`, `tools`, `tests`, `data`, `templates`, `raw-images`, `_pending-images`, `*.md`, `*.csv`, `node_modules` soha nem kerülhet bele; Draft/placeholder/TODO/fixture oldal éles csomagot **megtagad** (`tests/test-gate.mjs`). A `sitemap.xml` a jelenlegi fájllal azonos, amíg nincs jóváhagyott új oldal.
+**Státusz:** az oldalak a `data/pages/*.json` `status` mezőjében élnek; csak az `Approved for indexing`/`Published` kerül az éles csomagba, és csak ezek kapnak `index` robots-t és sitemap-bejegyzést.

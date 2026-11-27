@@ -37,3 +37,6 @@ Természetes, ékezet nélküli, kisbetűs, kötőjeles, beszédes (inventory `o
 
 ## 6. Ellenőrzés (build-time)
 Hiányzó alt, hiányzó width/height, nem létező fájl, túl nagy fájl (profil szerint), nem optimalizált formátum, GPS-metaadat a kimeneten, `loading=lazy` a hero-n, 2000 px-nél kisebb eredeti hero → hibaüzenet (SEO-QUALITY-GATE).
+
+## Megvalósítás: `tools/process-images.mjs` (P1)
+Sharp-alapú; 15–30 MB-os JPG/JPEG/PNG eredetit is kezel (egy master átméretezés, abból a változatok). **Soha nem ír a `raw-images/` mappába** (a kimenet a nyers mappán belül megtagadva). Profilok: *hero* (640–2000 px, WebP q76 + AVIF q50, + 4:5 mobil-kivágás 480/800), *content* (480–1600), *macro* (800–2400, WebP q86 + AVIF q62, élesítés nélkül), *document* (800/1600, WebP q88), *thumb* (320–960). Minden metaadat (EXIF/GPS/XMP/IPTC) törlődik (`verify` ellenőrzi); forgatás a kimenetre beégetve. Jóváhagyott (`approved=yes`) kép → `assets/img/<kategória>/`, egyébként `_pending-images/` (nem csomagolt). Hozzárendelés: `data/images-assign.csv` (fájl, SHA, kép-ID, jogok, szerző, helyszín, dátum, léptek, ES/EN alt és képaláírás, megjegyzés). A kép-nyilvántartás (`IMAGE-ASSET-INVENTORY.csv`) automatikusan frissül; az oldalak képhelye azonosítóhoz kötött, a valódi kép megjelenése csak a manifest újraépítését igényli.

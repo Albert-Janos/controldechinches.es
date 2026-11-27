@@ -11,7 +11,7 @@
 | Akadálymentesség | WCAG 2.2 AA (Lighthouse a11y ≥ 95 + manuális) | ACCESSIBILITY-STANDARDS |
 
 ## 2. Baseline (P0)
-Lighthouse/CrUX **nem futott** (nincs hozzáférés/eszköz a környezetben) → *nem igazolt*. Egyetlen informatív böngészőmérés az éles ES árak oldalon (nem szabványos labor): DOMContentLoaded 568 ms, load 930 ms, 8 erőforrás. A teljes baseline a P1-14 feladat; parancsok:
+Lighthouse **lefutott** a P0.1-ben (13.6.0, mobil+desktop, éles oldal, 2026-11-27: lásd CURRENT-STATE-AUDIT „Frissítés — P0.1” táblázat és `reports/live-baseline-lighthouse.json`); CrUX/GSC valós adat **nem igazolt** (nincs hozzáférés). Egyetlen informatív böngészőmérés az éles ES árak oldalon (nem szabványos labor): DOMContentLoaded 568 ms, load 930 ms, 8 erőforrás. A teljes baseline a P1-14 feladat; parancsok:
 ```powershell
 npx lighthouse https://www.controldechinches.es/ --preset=perf --form-factor=mobile --output=json --output=html --output-path=./reports/lh-home
 npx @axe-core/cli https://www.controldechinches.es/
@@ -29,3 +29,6 @@ Az Ads-mérés, a CMP/consent és a foglalási folyamat nem optimalizálható Li
 
 ## 6. Folyamatos
 Heti: Lighthouse CI a 6 védett + új oldalakon (SEO-MONITORING); havi: CrUX/GSC 28 napos és 90 napos összehasonlítás; regresszió-küszöb: Perf −5 pont, LCP +0.3 s, CLS +0.02 → hibajegy.
+
+## Eszközök a helyi környezetben (telepítve: `tools/node_modules`, `npm install` a `tools/` mappában)
+`node tools/audit-lighthouse.mjs <baseUrl> <név> [útvonalak]` (Lighthouse mobil+desktop) · `node tools/audit-axe.mjs` · `node tools/check-links.mjs` · `node tools/screenshots.mjs`. Új oldalak: `npm run build` után a Lighthouse a `tools/serve.mjs` helyi szerverén futtatható (nincs tömörítés → a pontszám tájékoztató; a végső mérés a preview-hoz történjen).

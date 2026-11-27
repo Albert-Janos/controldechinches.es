@@ -28,3 +28,25 @@ A tudásközpont és az IPM-tartalom, a sablonok, a képanyag, az infografikák,
 
 ## 5. Teendő a tulajdonos oldalán
 OWNER-INPUT #2, #3, #10, #13–#24 (azonosító adatok, működési státusz, termékek, képesítések). Javaslat: spanyol szakértői egyeztetés **a P1 előtt**, mert a tranzakciós oldalak publikálását blokkolja.
+
+## Pontos lista a még szükséges jogi és vállalkozási adatokról (2026-11-27)
+Minden tétel **tulajdonosi adat vagy szakértői ellenőrzés**; semmit nem találunk ki. A hiány **nem akadályozza** a helyi technikai fejlesztést és az oldalak előkészítését, csak az éles indexelést/publikálást (LGL-kapuk).
+
+| # | Adat / feltétel | Hová kerül | Kapu |
+|---|---|---|---|
+| 1 | Működési forma (önálló vállalkozó / társaság) és a pontos név vagy cégnév | aviso legal, JSON-LD (`Organization`) | LGL-03 |
+| 2 | Adóazonosító (NIF/NIE/CIF) | aviso legal | LGL-03 |
+| 3 | Székhely/levelezési cím és hogy publikálható-e; e-mail-cím | aviso legal, kapcsolat | LGL-03 |
+| 4 | Adóhatósági és társadalombiztosítási nyilvántartásba vétel státusza (a tevékenység megkezdése) | belső igazolás | LGL-01 |
+| 5 | Cégnyilvántartási adat (ha társaság) | aviso legal | LGL-03 |
+| 6 | **ROESB-bejegyzés / előzetes bejelentés** (Comunitat Valenciana; hatályos szabály ellenőrzendő) és nyilvántartási szám | aviso legal, szakmai oldalak | LGL-01 |
+| 7 | A felelős alkalmazó(k) spanyolországi képesítése/elismerése (magyar bizonyítvány elismerése vagy megfelelő spanyol igazolás) — a hatóság írásos állásfoglalása | Sobre mí, szerzői doboz | LGL-07 |
+| 8 | Ténylegesen használt biocid termékek listája: név, hatóanyag, termékfajta, nyilvántartási szám, biztonsági adatlap; visszalépési idő | tratamiento químico, GYIK | LGL-05 |
+| 9 | A biocid-mozgások nyilvántartásának vezetése (előírás ellenőrzendő) | belső | LGL-01 |
+| 10 | Felelősségbiztosítás megléte (előírás ellenőrzendő) és a biztosító | belső / B2B | LGL-06 |
+| 11 | Fogyasztói tájékoztatás: ÁFA/IVA feltüntetése az árakon, számlázás, reklamációs lehetőség/panaszlap (a vonatkozó valenciai előírás ellenőrzendő), vitarendezés | árak, aviso legal | LGL-02 |
+| 12 | Adatvédelem: adatkezelő azonosítása, jogalap, megőrzési idő, címzettek (WhatsApp, telefonos/AI-asszisztens), süti-leltár | politica de privacidad | LGL-03 |
+| 13 | **AI-asszisztens hívásainak tájékoztatása**: hívásrögzítés/átirat, adatfeldolgozó szerződés a szolgáltatóval | adatvédelmi oldal, hívási üdvözlés | LGL-03 |
+| 14 | Ténylegesen kiszolgált települések és a kiszállási szabály | zónák, JSON-LD `areaServed` | LGL-08 |
+| 15 | Foglalási rendelkezésre állás igazolása („¡Incluso hoy!”) — valós kapacitás | CTA-szövegek | LGL-02 |
+| 16 | Esettanulmány-hozzájárulások (írásos) | casos reales | LGL-10 |

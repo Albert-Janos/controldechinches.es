@@ -5,7 +5,7 @@ Jelölés: **B** = blokkoló (nélküle a fázis nem indulhat), **F** = fontos, 
 ## A. Döntések és üzleti igazságok (P1 előtt)
 | # | Kérdés | Miért | Típus | Fázis |
 |---|---|---|---|---|
-| 1 | **Mi a valós ajánlat és ár?** Az ES `/precios.html` két terméket mutat („insecticida desde 139 €”, „vapor seco desde 150 €”), a főoldal/EN/kalkulátor Esencial 139 € + Completo 239 € + vapor +80 €/dormitorio. Melyik érvényes? Melyiket javítsuk? | A-C1; DATA-ARCHITECTURE | **B** | P1 |
+| 1 | ~~Mi a valós ajánlat és ár?~~ **Megválaszolva 2026-11-27** (D-017): vegyszeres 139/179/219/259 € + 40 €; önálló vapor 150 €-tól. **Nyitva:** a kiegészítők (gőz +80 €/hálószoba, kanapé +40 €/db, ULV 50 €-tól) megerősítése deploy előtt (D-018). | A-C1 | **F** | P1 |
 | 2 | Jogi azonosító adatok: titulár, NIF/CIF, cím, e-mail, működési státusz Spanyolországban (aviso legal `[PENDIENTE]`). | LGL-01/03 | **B** | P1 |
 | 3 | **Valódi szolgáltatási területek** (főoldal: 15 település; lábléc: 4; sémában: 3; térkép: Dénia is). Mely településeken dolgozol ténylegesen, mi a kiszállási szabály? | A-M7; zonák | **B** | P4 |
 | 4 | **Preview-hosting** választás és **deploy-mód** (cPanel/WebDigital hozzáférés, FTP/Git/kézi feltöltés). | A-H2 | **B** | P1 |
