@@ -430,3 +430,14 @@ summary::-webkit-details-marker { display: none; }
   .tariff-table :is(th,td) { font-size: .92rem; }
   .tariff-table [scope="col"] span { font-size: .76rem; }
 }
+
+/* Home hero as a real <picture> (LCP discoverable in HTML, AVIF/WebP, fetchpriority=high). Same crop, same overlay as the former CSS background. */
+.hero--home { position: relative; isolation: isolate; background-image: none; }
+.hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero-bg picture { display: block; width: 100%; height: 100%; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.hero-bg::after { content: ""; position: absolute; inset: 0; background-image: linear-gradient(90deg, #101c2af7 0%, #101c2ae8 25%, #101c2ab3 47%, #101c2a35 71%, #101c2a1a 100%); }
+@media (max-width: 650px) {
+  .hero-bg img { object-position: 67% center; }
+  .hero-bg::after { background-image: linear-gradient(90deg, #0e1a28f3, #0e1a28a3 65%, #0e1a285c), linear-gradient(0deg, #101b2a6b, transparent 75%); }
+}

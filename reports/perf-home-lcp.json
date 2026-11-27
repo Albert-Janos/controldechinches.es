@@ -1,0 +1,573 @@
+{
+  "date": "2026-11-27",
+  "lighthouse": "13.6.0",
+  "setup": "local server, gzip + production cache headers, alternating runs; lab data",
+  "results": {
+    "/ mobile": {
+      "runs": 5,
+      "before": {
+        "perf": 97,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 2493,
+        "fcp": 1413,
+        "tbt": 0,
+        "cls": 0,
+        "si": 1413,
+        "kb": 1022,
+        "requests": 18
+      },
+      "after": {
+        "perf": 97,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 2437,
+        "fcp": 1411,
+        "tbt": 0,
+        "cls": 0.001,
+        "si": 1411,
+        "kb": 991,
+        "requests": 18
+      },
+      "allBefore": [
+        {
+          "perf": 56,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 4694,
+          "fcp": 1516,
+          "tbt": 1608,
+          "cls": 0,
+          "si": 1939,
+          "kb": 1023,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2493,
+          "fcp": 1414,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1414,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2426,
+          "fcp": 1413,
+          "tbt": 0,
+          "cls": 0,
+          "si": 1413,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2420,
+          "fcp": 1407,
+          "tbt": 0,
+          "cls": 0,
+          "si": 1407,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 84,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 4449,
+          "fcp": 1412,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1412,
+          "kb": 1022,
+          "requests": 18
+        }
+      ],
+      "allAfter": [
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2437,
+          "fcp": 1423,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1423,
+          "kb": 991,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2496,
+          "fcp": 1407,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1407,
+          "kb": 991,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2431,
+          "fcp": 1422,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1422,
+          "kb": 991,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2499,
+          "fcp": 1411,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 1411,
+          "kb": 991,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2424,
+          "fcp": 1404,
+          "tbt": 82,
+          "cls": 0,
+          "si": 1404,
+          "kb": 991,
+          "requests": 18
+        }
+      ]
+    },
+    "/ desktop": {
+      "runs": 3,
+      "before": {
+        "perf": 99,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 947,
+        "fcp": 422,
+        "tbt": 0,
+        "cls": 0.001,
+        "si": 550,
+        "kb": 1079,
+        "requests": 18
+      },
+      "after": {
+        "perf": 100,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 601,
+        "fcp": 426,
+        "tbt": 0,
+        "cls": 0.001,
+        "si": 477,
+        "kb": 1043,
+        "requests": 18
+      },
+      "allBefore": [
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 947,
+          "fcp": 422,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 697,
+          "kb": 1067,
+          "requests": 18
+        },
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 951,
+          "fcp": 498,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 550,
+          "kb": 1079,
+          "requests": 18
+        },
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 943,
+          "fcp": 417,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 451,
+          "kb": 1079,
+          "requests": 18
+        }
+      ],
+      "allAfter": [
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 601,
+          "fcp": 426,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 477,
+          "kb": 1043,
+          "requests": 18
+        },
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 694,
+          "fcp": 425,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 445,
+          "kb": 1032,
+          "requests": 18
+        },
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 601,
+          "fcp": 437,
+          "tbt": 0,
+          "cls": 0.001,
+          "si": 613,
+          "kb": 1043,
+          "requests": 18
+        }
+      ]
+    },
+    "/en/ mobile": {
+      "runs": 5,
+      "before": {
+        "perf": 86,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 3658,
+        "fcp": 1423,
+        "tbt": 0,
+        "cls": 0.003,
+        "si": 1423,
+        "kb": 1022,
+        "requests": 18
+      },
+      "after": {
+        "perf": 90,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 3543,
+        "fcp": 1409,
+        "tbt": 0,
+        "cls": 0.003,
+        "si": 1409,
+        "kb": 990,
+        "requests": 18
+      },
+      "allBefore": [
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2479,
+          "fcp": 1403,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1403,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 96,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2504,
+          "fcp": 1423,
+          "tbt": 101,
+          "cls": 0,
+          "si": 1423,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 79,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 3658,
+          "fcp": 3658,
+          "tbt": 0,
+          "cls": 0,
+          "si": 5153,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 83,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 4595,
+          "fcp": 1464,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1464,
+          "kb": 1022,
+          "requests": 18
+        },
+        {
+          "perf": 86,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 4146,
+          "fcp": 1405,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1405,
+          "kb": 1022,
+          "requests": 18
+        }
+      ],
+      "allAfter": [
+        {
+          "perf": 80,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 5350,
+          "fcp": 1411,
+          "tbt": 37,
+          "cls": 0.003,
+          "si": 1923,
+          "kb": 990,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2558,
+          "fcp": 1408,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1408,
+          "kb": 990,
+          "requests": 18
+        },
+        {
+          "perf": 97,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 2586,
+          "fcp": 1409,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1409,
+          "kb": 990,
+          "requests": 18
+        },
+        {
+          "perf": 90,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 3543,
+          "fcp": 1403,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1403,
+          "kb": 990,
+          "requests": 18
+        },
+        {
+          "perf": 86,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 4079,
+          "fcp": 1409,
+          "tbt": 0,
+          "cls": 0.003,
+          "si": 1409,
+          "kb": 990,
+          "requests": 18
+        }
+      ]
+    },
+    "/en/ desktop": {
+      "runs": 3,
+      "before": {
+        "perf": 99,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 939,
+        "fcp": 413,
+        "tbt": 0,
+        "cls": 0,
+        "si": 429,
+        "kb": 1078,
+        "requests": 18
+      },
+      "after": {
+        "perf": 100,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 69,
+        "lcp": 717,
+        "fcp": 414,
+        "tbt": 0,
+        "cls": 0,
+        "si": 421,
+        "kb": 1042,
+        "requests": 18
+      },
+      "allBefore": [
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 938,
+          "fcp": 408,
+          "tbt": 0,
+          "cls": 0,
+          "si": 425,
+          "kb": 1078,
+          "requests": 18
+        },
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 940,
+          "fcp": 413,
+          "tbt": 0,
+          "cls": 0,
+          "si": 431,
+          "kb": 1078,
+          "requests": 18
+        },
+        {
+          "perf": 99,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 939,
+          "fcp": 413,
+          "tbt": 0,
+          "cls": 0,
+          "si": 429,
+          "kb": 1078,
+          "requests": 18
+        }
+      ],
+      "allAfter": [
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 618,
+          "fcp": 414,
+          "tbt": 0,
+          "cls": 0,
+          "si": 414,
+          "kb": 1042,
+          "requests": 18
+        },
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 717,
+          "fcp": 418,
+          "tbt": 0,
+          "cls": 0,
+          "si": 442,
+          "kb": 1042,
+          "requests": 18
+        },
+        {
+          "perf": 100,
+          "a11y": 100,
+          "bp": 100,
+          "seo": 69,
+          "lcp": 781,
+          "fcp": 414,
+          "tbt": 0,
+          "cls": 0,
+          "si": 421,
+          "kb": 1042,
+          "requests": 18
+        }
+      ]
+    }
+  },
+  "visualDiff": {
+    "/ mobile": {
+      "pixelsDifferentPct": 0.07,
+      "pixelsStronglyDifferentPct": 0
+    },
+    "/ desktop": {
+      "pixelsDifferentPct": 0.46,
+      "pixelsStronglyDifferentPct": 0
+    },
+    "/en/ mobile": {
+      "pixelsDifferentPct": 0.03,
+      "pixelsStronglyDifferentPct": 0
+    },
+    "/en/ desktop": {
+      "pixelsDifferentPct": 0.46,
+      "pixelsStronglyDifferentPct": 0
+    }
+  }
+}
