@@ -139,7 +139,7 @@ export function imgKind(ctx, id, usage = 'body') {
   const e = ctx.images[id]; if (!e) return 'photo';
   if (e.kind === 'infographic') return 'illustration';
   const [w, h] = e.aspect || [3, 2];
-  if (h > w) return /^IMG-ENT/.test(id) ? 'portrait-detail' : 'portrait'; // identification photos keep more width (detail matters)
+  if (h > w) return /^IMG-(ENT|SEV)/.test(id) ? 'portrait-detail' : 'portrait'; // identification photos keep more width (detail matters)
   if (usage === 'hero') return 'hero';
   if (/^entomology/.test(e.folder || '')) return 'macro';
   return 'photo';
@@ -227,7 +227,9 @@ function faqBlock(ctx, b, id) {
 }
 function galleryBlock(ctx, b, id) {
   const { ui, lang } = ctx;
-  const liveGroups = new Set((b.groups || []).filter(g => g.images.some(im => !skipOptional(ctx, im))).map(g => g.id));
+  // a group is shown when it has photos OR its own text (`intro`): the structure of the atlas stays complete, the missing photos are only
+  // registered (data + docs/seo/ATLAS-IMAGE-LIST.md), never rendered as empty slots.
+  const showGroup = g => g.intro || g.images.some(im => !skipOptional(ctx, im)), liveGroups = new Set((b.groups || []).filter(showGroup).map(g => g.id));
   const filters = b.filters && liveGroups.size ? `<ul class="sx-filters">${b.filters.filter(f => liveGroups.has(f.id)).map(f => `<li><a href="#${f.id}">${esc(f.label)}</a></li>`).join('')}</ul>` : '';
   const item = im => {
     const e = ctx.images[im], ready = e?.status === 'ready', v = e?.variants;
@@ -235,9 +237,9 @@ function galleryBlock(ctx, b, id) {
     const notes = JSON.stringify({ id: im, cap: e?.caption?.[lang] || '', notes: e?.notes?.[lang] || '', credit: e?.credit || '', scale: e?.scale || '' });
     return `<li id="${im}"><figure class="sx-figure"><a href="${href}" data-lightbox data-notes="${esc(notes)}">${picture(ctx, im, { sizes: '(min-width: 990px) 22rem, 50vw' })}</a><figcaption>${esc(e?.caption?.[lang] || '')}</figcaption></figure></li>`;
   };
-  const groups = (b.groups || [{ images: b.images }]).map(g => ({ ...g, images: g.images.filter(im => !skipOptional(ctx, im)) })).filter(g => g.images.length);
+  const groups = (b.groups || [{ images: b.images }]).map(g => ({ ...g, images: g.images.filter(im => !skipOptional(ctx, im)), intro: g.intro })).filter(g => g.images.length || g.intro);
   if (!groups.length) return '';
-  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${filters}${groups.map(g => `${g.id ? `<h3 id="${g.id}">${esc(g.h3)}</h3>` : ''}<ul class="sx-gallery">${g.images.map(item).join('')}</ul>`).join('')}</section>`;
+  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${filters}${groups.map(g => `${g.id ? `<h3 id="${g.id}">${esc(g.h3)}</h3>` : ''}${g.intro ? `<div class="sx-prose sx-group-intro">${g.intro}</div>` : ''}${g.images.length ? `<ul class="sx-gallery">${g.images.map(item).join('')}</ul>` : ''}`).join('')}</section>`;
 }
 function toolBlock(ctx, b, id) {
   const { ui } = ctx, t = ui.tool;

@@ -147,6 +147,8 @@ a.sx-card:hover { border-color: var(--navy); }
 .sx-gallery button { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; }
 .sx-gallery { align-items: start; }
 .sx-gallery figcaption { margin-top: .4rem; font-size: .875rem; color: var(--gray); }
+.sx-block > h3[id] { margin-top: clamp(1.6rem, 3vw, 2.4rem); }
+.sx-group-intro { margin-block: .4rem 1rem; } .sx-group-intro p { max-width: var(--sx-measure); }
 .sx-filters { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin-bottom: 1.2rem; }
 .sx-filters a { display: inline-block; padding: .35rem .8rem; border: 1px solid var(--sx-line); border-radius: 2rem; text-decoration: none; color: var(--navy); font-size: .9rem; }
 .sx-lightbox { max-width: min(62rem, 96vw); width: 100%; padding: 0; border: 0; border-radius: var(--sx-r); background: var(--white); }

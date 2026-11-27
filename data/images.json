@@ -3283,5 +3283,71 @@
   "kind": "infographic",
   "status": "placeholder",
   "variants": null
+ },
+ "IMG-ENT-EGG-03": {
+  "id": "IMG-ENT-EGG-03",
+  "folder": "entomology/eggs",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Cáscaras vacías de huevos de chinche de cama tras la eclosión",
+   "en": "Empty bed bug egg shells after hatching"
+  },
+  "caption": {
+   "es": "Cáscaras vacías de huevos de chinche tras la eclosión. [Foto con escala; fase y especie por verificar.]",
+   "en": "Empty bed bug egg shells after hatching. [Photo with scale; stage and species to be verified.]"
+  },
+  "seo": "huevos-chinche-cascaras-vacias",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-SEV-01": {
+  "id": "IMG-SEV-01",
+  "folder": "infestation",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Infestación inicial: pocas chinches y manchas aisladas en la costura de un colchón",
+   "en": "Initial infestation: a few bed bugs and isolated spots along a mattress seam"
+  },
+  "caption": {
+   "es": "Infestación inicial en la costura de un colchón. [Foto de una infestación real; lugar y fecha no indicados.]",
+   "en": "Initial infestation along a mattress seam. [Photo of a real infestation; place and date not stated.]"
+  },
+  "seo": "infestacion-inicial-chinches-costura",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
+ },
+ "IMG-SEV-02": {
+  "id": "IMG-SEV-02",
+  "folder": "infestation",
+  "role": "content",
+  "aspect": [
+   3,
+   2
+  ],
+  "priority": "P2",
+  "alt": {
+   "es": "Infestación moderada: varios focos de chinches en el colchón y el somier",
+   "en": "Moderate infestation: several bed bug foci on the mattress and bed frame"
+  },
+  "caption": {
+   "es": "Infestación moderada con varios focos. [Foto de una infestación real; lugar y fecha no indicados.]",
+   "en": "Moderate infestation with several foci. [Photo of a real infestation; place and date not stated.]"
+  },
+  "seo": "infestacion-moderada-chinches-somier",
+  "kind": "photo",
+  "status": "placeholder",
+  "variants": null
  }
 }

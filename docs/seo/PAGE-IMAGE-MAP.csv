@@ -239,3 +239,8 @@ PG-073,fotografias-de-infestaciones-reales,IMG-ENT-HID-01,content,-,yes,READY (o
 PG-073,fotografias-de-infestaciones-reales,IMG-ENT-HID-02,content,-,yes,READY (own),-,chinches-somier-listones-uniones,,,,
 PG-073,fotografias-de-infestaciones-reales,IMG-ENT-EXC-02,content,-,yes,READY (own),-,excrementos-chinches-superficie-lacada,,,,
 PG-073,fotografias-de-infestaciones-reales,IMG-ENT-MOU-01,content,-,yes,READY (own),-,mudas-chinches-tela-tapizada,,,,
+PG-070,eggs,IMG-ENT-EGG-03,content,crop 1:1,no,MISSING,P2,huevos-chinche-cascaras-vacias.webp,Cáscaras vacías de huevos de chinche de cama tras la eclosión,Empty bed bug egg shells after hatching,,
+PG-070,severity,IMG-SEV-01,content,crop 4:3,no,MISSING,P2,infestacion-inicial-chinches-costura.webp,Infestación inicial: pocas chinches y manchas aisladas en la costura de un colchón,Initial infestation: a few bed bugs and isolated spots along a mattress seam,,
+PG-070,severity,IMG-SEV-02,content,crop 4:3,no,MISSING,P2,infestacion-moderada-chinches-somier.webp,Infestación moderada: varios focos de chinches en el colchón y el somier,Moderate infestation: several bed bug foci on the mattress and bed frame,,
+PG-070,severity,IMG-IPM-02,content,crop 4:3,yes,READY (own),P1,manchas-oscuras-pared-litera-chinches,,,,
+PG-070,severity,IMG-INS-06,content,crop 4:3,yes,READY (own),P1,infestacion-chinches-suelo-junto-cama,,,,

@@ -62,3 +62,6 @@ A tulajdonos ezeket **vállalta**, de még **nem adta át**; a helyőrzők fejle
 
 ## I. Képcsomag átadása (2026-11-27) — állapot
 28 kép + 1 videó érkezett; **27 kép került feldolgozásra és beillesztésre** (30 képazonosító; 3 fájl két helyen is szerepel). Ami még hiányzik, azt a **`MISSING-IMAGES.md`** sorolja fel oldalra és szekcióra lebontva (A: üres képhelyek, B: cserélendő illusztrációk / jogtisztázandó képek, C: tervezett további fotók). Kötelező = P0/P1, opcionális = P2/P3/OPT.
+
+## J. Fotóatlasz (PG-070)
+A teljes, soronkénti atlasz-képlista (31 sor: 29 fotó + 2 infografika; 7 meglévő, **22 hiányzó fotó**) az **`ATLAS-IMAGE-LIST.md`**-ben van. Szabályok: vonalzó/érme a képen belül, semleges háttér, fókusz-egyeztetés, csak expozíció-szerkesztés; a nemet, stádiumot és fajt szakember igazolja; AI-generált rovarkép nem használható.

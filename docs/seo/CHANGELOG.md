@@ -52,3 +52,8 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - Fertőzöttségi fotók újra elosztva (PG-041, 044, 053, 059, 070, 073); PG-070 atlasz szöveges kiegészítéssel, hiányzó elemek nélkül.
 - **Videó** a szárazgőzös oldalon (ES/EN): WebM 72 KB, hang/metaadat nélkül, kattintásra indul, poster WebP/AVIF; új: `tools/process-video.mjs`, `tools/video-frames.mjs`, `tests/test-video.mjs`, `data/videos.json`; `tools/serve.mjs`: video MIME + Range.
 - `MISSING-IMAGES.md` újraírva: 3 kért új kép (mind ajánlott); OWNER-INPUT 14. szakasz lezárva.
+
+## 2026-11-27 — fotóatlasz (PG-070) teljes tervének visszaállítása (`develop/seo`, nincs merge/deploy/FTP; Draft + noindex változatlan)
+- Visszaállítva: mind a 8 kategória és szűrőgomb (huevos, ninfas is), kategória-szövegek forrásokkal, fajazonosítás + hasonló rovarok szakasz, forráslista; a lead/meta description újra a teljes atlasz tartalmát írja le.
+- Új képhelyek: `IMG-ENT-EGG-03`, `IMG-SEV-01`, `IMG-SEV-02` (inventory + page-image map); a renderer az üres, de szöveges csoportot megjeleníti, a hiányzó képet nem.
+- `docs/seo/ATLAS-IMAGE-LIST.md` (generált, soronként minden atlasz-kép), `tools/build-atlas-image-list.mjs`, atlasz-teszt a konzisztencia-tesztben.

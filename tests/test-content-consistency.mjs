@@ -73,6 +73,19 @@ for (const mode of ['preview', 'production']) {
   ok(pics > 0, `${mode}: ready pictures are rendered (${pics})`); ok(vids === 2, `${mode}: the video appears on both language versions of the dry steam page (${vids})`);
 }
 { const { statSync, existsSync } = await import('node:fs'); const v = Object.values(ctx0.videos)[0]; ok(v && existsSync(new URL(`../assets/video/${v.name}.webm`, import.meta.url)) && statSync(new URL(`../assets/video/${v.name}.webm`, import.meta.url)).size < 200 * 1024 && v.audio === false, 'web video exists, is < 200 KB and has no audio track'); }
+// ---- atlas PG-070: the COMPLETE planned structure is rendered (all categories, filter chips, expert text); missing photos are registered, never shown
+{ const at = pages['PG-070'], g = at.es.blocks.find(b => b.type === 'gallery'), planned = g.groups.flatMap(x => x.images);
+  ok(g.groups.length === 8 && g.filters.length === 8 && at.en.blocks.find(b => b.type === 'gallery').groups.length === 8, 'atlas keeps its 8 categories and 8 filter chips (ES + EN)');
+  ok(new Set(planned).size === 29 && planned.every(i => ctx0.images[i]), `atlas registers 29 planned photo slots, all known to the image manifest (${planned.length})`);
+  ok(['IMG-ENT-ADU-02', 'IMG-ENT-ADU-03', 'IMG-ENT-NYM-01', 'IMG-ENT-NYM-05', 'IMG-ENT-EGG-03', 'IMG-ENT-SCALE-02', 'IMG-SEV-01'].every(i => planned.includes(i)), 'atlas still plans males, unfed adults, nymph stages 1-5, hatched egg shells, scale and severity images');
+  ok(planned.filter(i => ctx0.images[i].status === 'ready').length === 7, 'atlas currently contains 7 ready images');
+  for (const mode of ['preview', 'production']) for (const lang of ['es', 'en']) {
+    const pc = makeContext({ mode, pageDirs: ['data/pages'], simulatePublished: mode === 'production' ? new Set(Object.keys(pages)) : undefined });
+    const html = renderPage({ ...pc, page: at, lang, ui: ui[lang] }), tag = `PG-070 ${lang} (${mode})`;
+    ok((html.match(/<h3 id="/g) || []).length === 8 && (html.match(/sx-group-intro"/g) || []).length === 8, `${tag}: all 8 category headings with their text are rendered`);
+    ok(((html.match(/class="sx-filters">([\s\S]*?)<\/ul>/) || [])[1] || '').split('<a ').length - 1 === 8, `${tag}: 8 filter chips`);
+    ok(!/sx-ph|data-image-id/.test(html), `${tag}: no empty image slot`);
+  } }
 // a hand-typed euro amount in page data would bypass the central price source
 for (const p of Object.values(pages)) { const raw = JSON.stringify([p.es, p.en]); const m = raw.match(/\d[\d.,]*\s?€|€\s?\d/g); ok(!m, `${p.id}: hand-typed price in page data (${m}) - use {{price:KEY}} tokens`); }
 console.log(failed ? `\n${failed} FAILED` : `\nCONTENT CONSISTENCY: all checks passed (${Object.keys(pages).length} pages x 2 languages)`);

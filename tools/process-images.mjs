@@ -43,7 +43,7 @@ const ASSIGN_COLS = ['file', 'sha256', 'asset_id', 'approved', 'rights', 'credit
 
 // ---- profiles (see docs/seo/IMAGE-SEO-SPEC.md) ----
 export function profileFor(id, role) {
-  if (id.startsWith('IMG-ENT') || id === 'IMG-INS-06' || id === 'IMG-IPM-02') return { name: 'macro', widths: [800, 1200, 1600], webp: 78, avif: 55, mobile: false }; // infestation / identification detail: higher quality, no sharpening
+  if (id.startsWith('IMG-ENT') || id.startsWith('IMG-SEV') || id === 'IMG-INS-06' || id === 'IMG-IPM-02') return { name: 'macro', widths: [800, 1200, 1600], webp: 78, avif: 55, mobile: false }; // infestation / identification detail: higher quality, no sharpening
   if (id.startsWith('IMG-CRED') || role === 'document') return { name: 'document', widths: [800, 1600], webp: 88, avif: 0, mobile: false };
   if (id === 'IMG-ABOUT-02') return { name: 'thumb', widths: [320, 640, 960], webp: 80, avif: 52, mobile: false };
   if (role === 'hero') return { name: 'hero', widths: [640, 960, 1280, 1600], webp: 76, avif: 50, mobile: false };

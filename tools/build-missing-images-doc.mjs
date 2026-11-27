@@ -30,7 +30,7 @@ Csak olyan kép szerepel, amely valódi szakmai vagy vizuális értéket ad, és
 | Szárazgőzös kezelés | \`/servicios/vapor-seco/\` · EN: \`/en/services/dry-steam/\` | „Hogyan működik a módszer” (Cómo funciona el método) | 1 | Matracvarrat gőzölése: a fúvóka a matrac szegélyvarrásán, a gőz látszik, a matrac szövete jól látható; háttérben nincs ügyfél-azonosító adat. A videó és a meglévő fotók ezt nem mutatják. | Fekvő, 3:2 | Saját fotó | Ajánlott (nem blokkoló) |
 | Felderítés és diagnosztika | \`/servicios/inspeccion-diagnostico/\` · EN: \`/en/services/inspection-diagnosis/\` | Oldal teteje (hero) | 1 | A matrac átvizsgálása lámpával: zseblámpa a matracvarraton, a kéz és a lámpa látszik (30–40 cm-ről). Jelenleg AI-illusztráció szerepel „Ilustración” felirattal; a saját fotó ezt váltaná ki (ugyanez a kép a „Matrac” cikk tetején is áll). | Fekvő, 3:2 | Saját fotó | Ajánlott (csere, nem blokkoló) |
 
-**Összesen: 3 új, egyedi kép.** Ha ezek nem érkeznek meg, a weboldal ugyanígy publikálható.
+**Összesen: 3 új, egyedi kép** a szolgáltatási és bemutatkozó oldalakhoz. Ha ezek nem érkeznek meg, a weboldal ugyanígy publikálható. A fotóatlasz **22 további fotója** külön listán van (\`ATLAS-IMAGE-LIST.md\`), fokozatos pótlásra.
 
 ### Miért nem kérünk többet (újraértékelt tételek)
 | Korábban tervezett | Döntés | Indok |
@@ -41,7 +41,7 @@ Csak olyan kép szerepel, amely valódi szakmai vagy vizuális értéket ad, és
 | Rejtett búvóhely / repedés | nem kérjük | A 6. valós fotó (sérült fal, ágy körüli nyomok) a „Rések és repedések” oldal fejképe |
 | Okmányok: CRED-01/02/03 (magyar képesítés, nyilvántartás) | **kihagyva** | A tulajdonos döntése: a spanyol elismeréshez szükséges dokumentáció még készül; nincs megjelenítés |
 | CRED-04 további tanúsítvány | nem szükséges | A Lantra „Bed Bug Control” tanúsítvány marad (kód elfedve) |
-| Atlasz: hím/éhes egyed, peték, nimfák, vonalzós képek, további búvóhelyek (17 kép) | egyelőre kihagyva | Az atlasz fokozatosan bővíthető; helyette szöveges útmutatás és hivatkozás az életciklus-cikkre |
+| Fotóatlasz (PG-070): hím/nőstény, éhes/táplált, 5 nimfastádium, peték és kikelt burkok, vedlés, ürülék, vonalzós makrók, búvóhelyek, súlyossági fokozatok | **VISSZAÁLLÍTVA, nem kihagyva** | A teljes atlaszterv él (8 kategória, szűrők, szakmai szöveg); a 22 hiányzó atlaszfotó külön, soronként: \`ATLAS-IMAGE-LIST.md\` (nem blokkoló, fokozatosan pótolható; a 3 kért kép mellett) |
 | 27 opcionális képhely (P2/P3) és az infografika-helyek | nem foglalkozunk velük | Nem jelennek meg, nem blokkolnak |
 
 ## 2. Beillesztett képek (${real.length} fájl, ${Object.keys(proc).length} képazonosító) és a videó

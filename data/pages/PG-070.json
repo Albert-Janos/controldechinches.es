@@ -22,7 +22,7 @@
     "type": "text",
     "id": "como-crece-el-atlas",
     "h2": "Un atlas que crece poco a poco",
-    "html": "<p>Este atlas reúne fotografías reales de infestaciones: excrementos, mudas, escondites y casos avanzados. Las fotografías de huevos, ninfas y ejemplares con escala se añadirán cuando haya material adecuado; mientras tanto, la descripción y los tamaños de cada fase están en <a href=\"{{url:PG-043}}\">el ciclo de vida de la chinche de cama</a> y los indicios más habituales, en <a href=\"{{url:PG-041}}\">cómo saber si tienes chinches</a>.</p>"
+    "html": "<p>Este atlas reúne fotografías para reconocer cada fase de la chinche de cama, sus rastros, sus escondites y los distintos grados de infestación. Se amplía poco a poco: las categorías con texto y sin fotografía todavía se completarán con imágenes verificadas.</p>"
    },
    {
     "type": "gallery",
@@ -31,6 +31,10 @@
      {
       "id": "adultos",
       "label": "Adultos"
+     },
+     {
+      "id": "escala",
+      "label": "Escala"
      },
      {
       "id": "huevos",
@@ -53,33 +57,46 @@
       "label": "Escondites"
      },
      {
-      "id": "infestaciones",
-      "label": "Infestaciones avanzadas"
+      "id": "gravedad",
+      "label": "Gravedad"
      }
     ],
     "groups": [
      {
       "id": "adultos",
-      "h3": "Adultos",
+      "h3": "Adultos: machos, hembras, en ayunas y alimentados",
+      "intro": "<p>Los adultos miden unos 5–7 mm; son de color marrón, planos y ovalados, y tras alimentarse se vuelven rojizos y alargados (EPA). Para distinguir machos y hembras hay que observar el extremo del abdomen, y el sexo, el estado de alimentación y la especie solo se indican en un pie de foto cuando un especialista los ha verificado. Los ejemplares en ayunas y los recién alimentados se comparan mejor en un mismo encuadre.</p>",
       "images": [
        "IMG-ENT-ADU-01",
        "IMG-ENT-ADU-02",
        "IMG-ENT-ADU-03",
        "IMG-ENT-ADU-04",
-       "IMG-ENT-SCALE-01"
+       "IMG-ENT-ADU-05"
+      ]
+     },
+     {
+      "id": "escala",
+      "h3": "Tamaño y escala",
+      "intro": "<p>Referencias de tamaño (EPA): huevo de ≈ 1 mm, ninfas de ≈ 1,5 a 4,5 mm y adulto de ≈ 5–7 mm. Una fotografía solo sirve para medir cuando lleva una regla milimetrada o una moneda en el encuadre.</p>",
+      "images": [
+       "IMG-ENT-SCALE-01",
+       "IMG-ENT-SCALE-02"
       ]
      },
      {
       "id": "huevos",
-      "h3": "Huevos",
+      "h3": "Huevos y cáscaras vacías",
+      "intro": "<p>Los huevos miden aproximadamente 1 mm y son de color blanco perlado; tras unos 5 días se distingue un punto ocular (EPA). Pueden aparecer sueltos o en grupos, pegados en juntas y costuras. Tras la eclosión quedan las cáscaras vacías, translúcidas.</p>",
       "images": [
        "IMG-ENT-EGG-01",
-       "IMG-ENT-EGG-02"
+       "IMG-ENT-EGG-02",
+       "IMG-ENT-EGG-03"
       ]
      },
      {
       "id": "ninfas",
-      "h3": "Ninfas",
+      "h3": "Ninfas: los cinco estadios",
+      "intro": "<p>Hay cinco estadios de ninfa, de unos 1,5 mm a 4,5 mm. Son translúcidas o amarillentas y, sin alimentarse, casi invisibles; cada estadio necesita una comida de sangre para mudar (EPA). El ciclo completo está en <a href=\"{{url:PG-043}}\">el ciclo de vida de la chinche de cama</a>.</p>",
       "images": [
        "IMG-ENT-NYM-01",
        "IMG-ENT-NYM-02",
@@ -90,7 +107,8 @@
      },
      {
       "id": "mudas",
-      "h3": "Mudas",
+      "h3": "Mudas (pieles)",
+      "intro": "<p>Las mudas son pieles de color amarillo pálido que las ninfas dejan al crecer; se acumulan en costuras y escondites (EPA, La Rioja). Su presencia indica que hubo ninfas en ese lugar.</p>",
       "images": [
        "IMG-ENT-MOU-01",
        "IMG-ENT-MOU-02"
@@ -99,6 +117,7 @@
      {
       "id": "excrementos",
       "h3": "Rastros de excrementos",
+      "intro": "<p>Son puntos oscuros que pueden correrse sobre la tela como un rotulador; se ven en costuras de colchones, en maderas y en paredes. Por sí solos no bastan para confirmar chinches: pueden tener otras causas (<a href=\"{{url:PG-041}}\">cómo saber si tienes chinches</a>).</p>",
       "images": [
        "IMG-ENT-EXC-01",
        "IMG-ENT-EXC-02"
@@ -106,7 +125,8 @@
      },
      {
       "id": "escondites",
-      "h3": "Escondites",
+      "h3": "Escondites naturales",
+      "intro": "<p>Casi siempre están cerca de donde se duerme: costuras, ribetes y etiquetas del colchón y del somier, y grietas del armazón y del cabecero; según UC IPM, alrededor del 85 % se encuentra en la cama o junto a ella. En infestaciones grandes se extienden a sofás, cortinas, uniones de cajones, enchufes y a la unión entre pared y rodapié (<a href=\"{{url:PG-044}}\">dónde se esconden las chinches</a>).</p>",
       "images": [
        "IMG-ENT-HID-01",
        "IMG-ENT-HID-02",
@@ -117,29 +137,81 @@
       ]
      },
      {
-      "id": "infestaciones",
-      "h3": "Infestaciones avanzadas",
+      "id": "gravedad",
+      "h3": "Infestaciones según su gravedad",
+      "intro": "<p>Clasificación descriptiva de este atlas, no una escala oficial: <strong>inicial</strong> (pocos ejemplares o manchas aisladas en las costuras), <strong>moderada</strong> (varios focos en el colchón y el somier), <strong>avanzada</strong> (muchos ejemplares, mudas y manchas en varias superficies) y <strong>extrema</strong> (acumulaciones visibles en superficies abiertas y en el suelo). En infestaciones intensas las chinches pueden dispersarse por la habitación y esconderse a varios metros de la cama (Virginia Tech).</p>",
       "images": [
-       "IMG-INS-06",
-       "IMG-IPM-02"
+       "IMG-SEV-01",
+       "IMG-SEV-02",
+       "IMG-IPM-02",
+       "IMG-INS-06"
       ]
      }
     ]
    },
    {
+    "type": "text",
+    "id": "identificacion-de-la-especie",
+    "h2": "Identificación de la especie",
+    "html": "<p>En Europa, y en las muestras españolas analizadas en un estudio de 2025, todas las chinches de cama eran <em>Cimex lectularius</em>; <em>Cimex hemipterus</em> es una especie de zonas tropicales. La identificación de la especie se basa en rasgos de la cabeza y del pronoto y debe confirmarla un especialista.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-04"
+   },
+   {
+    "type": "text",
+    "id": "insectos-que-se-confunden",
+    "h2": "Insectos que se confunden con la chinche",
+    "html": "<p>Algunos insectos, como los escarabajos de alfombra, se confunden fácilmente con las chinches. Si no estás seguro, haz fotos nítidas con algo que dé escala, compáralas con este atlas o prueba el <a href=\"{{url:PG-071}}\">identificador</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-06"
+   },
+   {
     "type": "todo",
-    "text": "Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces no se indican."
+    "text": "Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces no se indican. Las fotografías pendientes del atlas están registradas en docs/seo/ATLAS-IMAGE-LIST.md y se publican a medida que lleguen."
    }
   ],
   "faq": [],
-  "sources": [],
+  "sources": [
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ],
   "breadcrumb": [],
   "url": "/atlas-chinches/",
   "title": "Atlas fotográfico de chinches de cama | Control de Chinches",
-  "description": "Fotografías reales de infestaciones de chinches de cama: excrementos, mudas, escondites y casos avanzados, con notas para reconocerlos. El atlas se amplía poco a poco.",
+  "description": "Atlas fotográfico de chinches de cama: adultos (machos, hembras, en ayunas y alimentados), huevos, los cinco estadios de ninfa, mudas, excrementos, escondites y grados de infestación, con criterios de identificación.",
   "h1": "Atlas fotográfico de chinches de cama",
   "eyebrow": "Atlas",
-  "lead": "Fotos reales de infestaciones, con notas para reconocerlas. Si dudas de lo que has encontrado, envíanos una foto."
+  "lead": "Fotos y notas para identificar cada fase, sus rastros y sus escondites. Si dudas de lo que has encontrado, envíanos una foto."
  },
  "en": {
   "blocks": [
@@ -147,7 +219,7 @@
     "type": "text",
     "id": "how-the-atlas-grows",
     "h2": "An atlas that grows over time",
-    "html": "<p>This atlas gathers real photographs of infestations: excreta, moults, hiding places and advanced cases. Photographs of eggs, nymphs and specimens with a scale will be added when suitable material is available; meanwhile, the description and sizes of each stage are in <a href=\"{{url:PG-043}}\">the bed bug life cycle</a> and the most common signs in <a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a>.</p>"
+    "html": "<p>This atlas gathers photographs to recognise each stage of the bed bug, its traces, its hiding places and the different degrees of infestation. It grows over time: categories that so far have text but no photograph will be completed with verified images.</p>"
    },
    {
     "type": "gallery",
@@ -156,6 +228,10 @@
      {
       "id": "adultos",
       "label": "Adults"
+     },
+     {
+      "id": "escala",
+      "label": "Scale"
      },
      {
       "id": "huevos",
@@ -178,33 +254,46 @@
       "label": "Hiding places"
      },
      {
-      "id": "infestaciones",
-      "label": "Advanced infestations"
+      "id": "gravedad",
+      "label": "Severity"
      }
     ],
     "groups": [
      {
       "id": "adultos",
-      "h3": "Adults",
+      "h3": "Adults: males, females, unfed and fed",
+      "intro": "<p>Adults are about 5–7 mm long; they are brown, flat and oval, and after feeding they turn reddish and elongated (EPA). Telling males from females means looking at the tip of the abdomen, and sex, feeding state and species are only stated in a caption once a specialist has verified them. Unfed and freshly fed specimens are best compared in a single frame.</p>",
       "images": [
        "IMG-ENT-ADU-01",
        "IMG-ENT-ADU-02",
        "IMG-ENT-ADU-03",
        "IMG-ENT-ADU-04",
-       "IMG-ENT-SCALE-01"
+       "IMG-ENT-ADU-05"
+      ]
+     },
+     {
+      "id": "escala",
+      "h3": "Size and scale",
+      "intro": "<p>Size references (EPA): egg ≈ 1 mm, nymphs ≈ 1.5 to 4.5 mm and adult ≈ 5–7 mm. A photograph can only be used to measure when it has a millimetre ruler or a coin in the frame.</p>",
+      "images": [
+       "IMG-ENT-SCALE-01",
+       "IMG-ENT-SCALE-02"
       ]
      },
      {
       "id": "huevos",
-      "h3": "Eggs",
+      "h3": "Eggs and empty shells",
+      "intro": "<p>Eggs are about 1 mm long and pearly white; after about 5 days an eye spot can be seen (EPA). They can be found singly or in groups, stuck in joints and seams. After hatching, the empty, translucent shells remain.</p>",
       "images": [
        "IMG-ENT-EGG-01",
-       "IMG-ENT-EGG-02"
+       "IMG-ENT-EGG-02",
+       "IMG-ENT-EGG-03"
       ]
      },
      {
       "id": "ninfas",
-      "h3": "Nymphs",
+      "h3": "Nymphs: all five stages",
+      "intro": "<p>There are five nymph stages, from about 1.5 mm to 4.5 mm. They are translucent or yellowish and, unfed, almost invisible; each stage needs a blood meal to moult (EPA). The full cycle is in <a href=\"{{url:PG-043}}\">the bed bug life cycle</a>.</p>",
       "images": [
        "IMG-ENT-NYM-01",
        "IMG-ENT-NYM-02",
@@ -215,7 +304,8 @@
      },
      {
       "id": "mudas",
-      "h3": "Moults",
+      "h3": "Moults (shed skins)",
+      "intro": "<p>Moults are pale yellow skins that nymphs leave behind as they grow; they build up in seams and hiding places (EPA, La Rioja). Their presence shows that nymphs have been there.</p>",
       "images": [
        "IMG-ENT-MOU-01",
        "IMG-ENT-MOU-02"
@@ -224,6 +314,7 @@
      {
       "id": "excrementos",
       "h3": "Excreta spots",
+      "intro": "<p>These are dark spots that can smear across fabric like a marker; they show up on mattress seams, wood and walls. On their own they are not enough to confirm bed bugs: other things can cause them (<a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a>).</p>",
       "images": [
        "IMG-ENT-EXC-01",
        "IMG-ENT-EXC-02"
@@ -231,7 +322,8 @@
      },
      {
       "id": "escondites",
-      "h3": "Hiding places",
+      "h3": "Natural hiding places",
+      "intro": "<p>They are almost always close to where people sleep: seams, piping and labels of the mattress and bed base, and cracks in the bed frame and headboard; according to UC IPM, about 85% are found on or next to the bed. In large infestations they spread to sofas, curtains, drawer joints, sockets and the join between wall and baseboard (<a href=\"{{url:PG-044}}\">where bed bugs hide</a>).</p>",
       "images": [
        "IMG-ENT-HID-01",
        "IMG-ENT-HID-02",
@@ -242,28 +334,80 @@
       ]
      },
      {
-      "id": "infestaciones",
-      "h3": "Advanced infestations",
+      "id": "gravedad",
+      "h3": "Infestations by severity",
+      "intro": "<p>A descriptive classification used in this atlas, not an official scale: <strong>initial</strong> (few specimens or isolated spots along the seams), <strong>moderate</strong> (several foci on the mattress and bed base), <strong>advanced</strong> (many specimens, moults and spots on several surfaces) and <strong>extreme</strong> (accumulations visible on open surfaces and on the floor). In heavy infestations bed bugs can spread around the room and hide several metres from the bed (Virginia Tech).</p>",
       "images": [
-       "IMG-INS-06",
-       "IMG-IPM-02"
+       "IMG-SEV-01",
+       "IMG-SEV-02",
+       "IMG-IPM-02",
+       "IMG-INS-06"
       ]
      }
     ]
    },
    {
+    "type": "text",
+    "id": "species-identification",
+    "h2": "Species identification",
+    "html": "<p>In Europe, and in the Spanish samples analysed in a 2025 study, all bed bugs were <em>Cimex lectularius</em>; <em>Cimex hemipterus</em> is a tropical species. Species identification relies on features of the head and pronotum and must be confirmed by a specialist.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-04"
+   },
+   {
+    "type": "text",
+    "id": "look-alike-insects",
+    "h2": "Insects mistaken for bed bugs",
+    "html": "<p>Some insects, such as carpet beetles, are easily mistaken for bed bugs. If you are not sure, take sharp photos with something for scale, compare them with this atlas or try the <a href=\"{{url:PG-071}}\">identifier</a>.</p>"
+   },
+   {
+    "type": "infographic",
+    "id": "IG-06"
+   },
+   {
     "type": "todo",
-    "text": "Each caption will state stage, sex and species only after entomological verification; until then they are not stated."
+    "text": "Each caption will state stage, sex and species only after entomological verification; until then they are not stated. The atlas photographs still pending are registered in docs/seo/ATLAS-IMAGE-LIST.md and are published as they arrive."
    }
   ],
   "faq": [],
-  "sources": [],
+  "sources": [
+   {
+    "title": "Bed Bugs Appearance and Life Cycle",
+    "publisher": "US EPA",
+    "year": "",
+    "url": "https://www.epa.gov/bedbugs/bed-bugs-appearance-and-life-cycle",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs Biology and Behavior (ENTO-8P)",
+    "publisher": "Virginia Tech Cooperative Extension",
+    "year": "",
+    "url": "http://pubs.ext.vt.edu/ENTO/ENTO-8/ENTO-8.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Bed Bugs (Pest Notes 7454)",
+    "publisher": "UC IPM, University of California",
+    "year": "2013",
+    "url": "https://ipm.ucanr.edu/PMG/PESTNOTES/pn7454.html",
+    "checked": "2026-11-27"
+   },
+   {
+    "title": "Las chinches de la cama: prevención y control",
+    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+    "year": "",
+    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+    "checked": "2026-11-27"
+   }
+  ],
   "breadcrumb": [],
   "url": "/en/bed-bug-atlas/",
   "title": "Bed bug photo atlas | Control de Chinches",
-  "description": "Real photographs of bed bug infestations: excreta, moults, hiding places and advanced cases, with notes on how to recognise them. The atlas grows over time.",
+  "description": "Bed bug photo atlas: adults (males, females, unfed and fed), eggs, all five nymph stages, moults, excreta, hiding places and degrees of infestation, with identification criteria.",
   "h1": "Bed bug photo atlas",
   "eyebrow": "Atlas",
-  "lead": "Real photos of infestations, with notes on how to recognise them. If you are unsure about what you found, send us a photo."
+  "lead": "Photos and notes to identify each stage, its traces and its hiding places. If you are unsure about what you found, send us a photo."
  }
 }
