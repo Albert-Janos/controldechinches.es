@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-28",
+  "base": "http://127.0.0.1:4401",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/precios.html",
+      "mode": "mobile",
+      "performance": 69,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2805,
+      "cls": 0.013,
+      "tbt_ms": 1423,
+      "fcp_ms": 1497,
+      "si_ms": 2722,
+      "transfer_kb": 366,
+      "failedAudits": [
+        "max-potential-fid",
+        "mainthread-work-breakdown",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "desktop",
+      "performance": 74,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 785,
+      "cls": 0.014,
+      "tbt_ms": 671,
+      "fcp_ms": 445,
+      "si_ms": 1245,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "mobile",
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2417,
+      "cls": 0,
+      "tbt_ms": 295,
+      "fcp_ms": 1393,
+      "si_ms": 1506,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "mainthread-work-breakdown",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 466,
+      "cls": 0.014,
+      "tbt_ms": 35,
+      "fcp_ms": 466,
+      "si_ms": 633,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    }
+  ]
+}

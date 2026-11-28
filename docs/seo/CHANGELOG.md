@@ -75,3 +75,6 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - **SVG-infografikák:** IG-04, 06, 07, 08, 09, 14, 16 (7 közös ábra, 11 megjelenés), ES/EN.
 - **SEO/QA:** `tests/test-seo.mjs` (86 URL, hreflang-kölcsönösség, canonical, duplikátum-, árva-oldal-ellenőrzés), render-audit (88 oldal × 2 nézet), axe (172 futás, 0 hiba), Lighthouse.
 - **Csomag:** `C:\Users\lakas\Desktop\controldechinches-production` + ZIP (régi csomag elkülönítve).
+
+## 2026-11-28 — záró kör (`develop/seo`)
+- Egyetlen telefonszám (+34 605 259 206) mindenhol; WhatsApp-gombok üzenet nélkül a védett oldalakon is; 4 meta description rövidítve; PG-049 „profesional” ismétlés megszüntetve; Lighthouse-mérések pótolva és megismételve; mind a 11 tesztcsomag; végleges production csomag.

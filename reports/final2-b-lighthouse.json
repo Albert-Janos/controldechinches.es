@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-28",
+  "base": "http://127.0.0.1:4401",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/guia-chinches/como-saber-si-tengo-chinches/",
+      "mode": "mobile",
+      "performance": 83,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2785,
+      "cls": 0,
+      "tbt_ms": 506,
+      "fcp_ms": 910,
+      "si_ms": 2147,
+      "transfer_kb": 343,
+      "failedAudits": [
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/como-saber-si-tengo-chinches/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 620,
+      "cls": 0,
+      "tbt_ms": 5,
+      "fcp_ms": 260,
+      "si_ms": 364,
+      "transfer_kb": 349,
+      "failedAudits": [
+        "image-delivery-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "url": "/sobre-mi/",
+      "mode": "mobile",
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2654,
+      "cls": 0,
+      "tbt_ms": 149,
+      "fcp_ms": 1128,
+      "si_ms": 1128,
+      "transfer_kb": 305,
+      "failedAudits": [
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/sobre-mi/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 583,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 322,
+      "si_ms": 396,
+      "transfer_kb": 295,
+      "failedAudits": [
+        "image-delivery-insight",
+        "network-dependency-tree-insight"
+      ]
+    }
+  ]
+}

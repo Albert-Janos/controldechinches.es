@@ -1,26 +1,28 @@
 {
  "folder": "C:/Users/lakas/Desktop/controldechinches-production",
  "zip": "C:/Users/lakas/Desktop/controldechinches-production.zip",
- "zipBytes": 22265826,
+ "zipBytes": 22264166,
  "files": 430,
- "totalBytes": 23988346,
+ "totalBytes": 23984389,
  "pruned": 1,
  "new": 391,
  "changed": [
   ".htaccess",
+  "404.html",
   "assets/site.css",
   "aviso-legal.html",
   "chinches-apartamentos-turisticos/index.html",
   "en/bed-bugs-holiday-rentals/index.html",
   "en/index.html",
   "en/prices.html",
+  "gracias.html",
   "index.html",
   "js/landing.js",
   "politica-privacidad.html",
   "precios.html",
   "sitemap.xml"
  ],
- "identicalToLive": 27,
+ "identicalToLive": 25,
  "baselineFilesNotInPackage": [
   ".gitignore"
  ],

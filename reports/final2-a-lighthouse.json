@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-28",
+  "base": "http://127.0.0.1:4401",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/precios.html",
+      "mode": "mobile",
+      "performance": 61,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2723,
+      "cls": 0.013,
+      "tbt_ms": 3503,
+      "fcp_ms": 2272,
+      "si_ms": 4475,
+      "transfer_kb": 366,
+      "failedAudits": [
+        "max-potential-fid",
+        "mainthread-work-breakdown",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "url": "/precios.html",
+      "mode": "desktop",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 739,
+      "cls": 0.014,
+      "tbt_ms": 40,
+      "fcp_ms": 462,
+      "si_ms": 916,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/prices.html",
+      "mode": "mobile",
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 2429,
+      "cls": 0,
+      "tbt_ms": 182,
+      "fcp_ms": 1416,
+      "si_ms": 1469,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "mainthread-work-breakdown",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/prices.html",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 425,
+      "cls": 0.005,
+      "tbt_ms": 0,
+      "fcp_ms": 425,
+      "si_ms": 584,
+      "transfer_kb": 365,
+      "failedAudits": [
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/recursos/parte-de-deteccion/",
+      "mode": "mobile",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 1117,
+      "cls": 0,
+      "tbt_ms": 93,
+      "fcp_ms": 1117,
+      "si_ms": 1222,
+      "transfer_kb": 225,
+      "failedAudits": [
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "url": "/recursos/parte-de-deteccion/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 384,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 384,
+      "si_ms": 504,
+      "transfer_kb": 225,
+      "failedAudits": [
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/resources/bed-bug-detection-report/",
+      "mode": "mobile",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 1426,
+      "cls": 0,
+      "tbt_ms": 71,
+      "fcp_ms": 1426,
+      "si_ms": 1426,
+      "transfer_kb": 225,
+      "failedAudits": [
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/resources/bed-bug-detection-report/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 374,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 374,
+      "si_ms": 475,
+      "transfer_kb": 225,
+      "failedAudits": [
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    }
+  ]
+}
