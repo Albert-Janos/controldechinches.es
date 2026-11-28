@@ -85,9 +85,9 @@ Teljes jobb oldali hero-kép (object-fit: cover, `--hero-pos`), tartalmi képek 
 - **Nem ellenőrizhető funkciók és okuk:** a tényleges tárhely-konfiguráció, a `.htaccess` élő viselkedése, a PHP-funkciók és az SSL a környezetből nem érhető el (feltöltés utáni ellenőrzőlista az útmutatóban); a natív mobilos fájlmegosztás valós iOS/Android eszközön nem tesztelhető — a Web Share API támogatási ágát stubbal ellenőriztem; a WhatsApp tényleges megnyitása (alkalmazás) csak az URL-ig ellenőrizhető; élő Google Search Console/Ads/GA4 (nincs azonosító).
 
 ## 5. Git és production
-- **Végleges commit:** GITCOMMIT_PLACEHOLDER
-- **`develop/seo` állapota / push:** PUSH_PLACEHOLDER
-- **Main változatlansága:** MAIN_PLACEHOLDER
+- **Végleges commit:** a csomagot és a teljes kódot tartalmazó utolsó commit: `6e732c4` (a lánc: `5d34cc3` → `e18a5ce` árak → `677392e` tartalom → `757dd51` erőforrások → … → `6e732c4`); ezt egyetlen dokumentum-commit követi (a végleges HEAD = `origin/develop/seo`).
+- **`develop/seo` állapota / push:** `develop/seo` = `origin/develop/seo` fast-forward pusholva (`5d34cc3..6e732c4`); a munka egy worktree-ágon (`claude/controldechinches-finalization-47a162`) készült, mert a `develop/seo` a fő checkoutban ki van jelölve — **a fő checkout helyi `develop/seo` ága még a régi `5d34cc3`-on áll**: ott `git pull` (vagy `git merge --ff-only origin/develop/seo`) szükséges.
+- **Main változatlansága:** a `main` változatlan: `3c4f9f6` (helyi és `origin/main` is), nem merge-eltem, nem módosítottam.
 - **Production mappa:** `C:\Users\lakas\Desktop\controldechinches-production\` · **ZIP:** `C:\Users\lakas\Desktop\controldechinches-production.zip`
 - **Fájlok száma / méret:** **430 fájl**, kitömörítve 23 988 346 bájt (22,9 MB), **ZIP 22 265 826 bájt (21,23 MB)**; 391 új fájl, 12 felülírt meglévő fájl, 27 változatlan; titokkereső: 0 találat; a kibontott ZIP is átment a validátoron (0 hiba).
 - A régi csomag elkülönítve: `…\controldechinches-production-OLD-2026-11-28` (+ `.zip`).
