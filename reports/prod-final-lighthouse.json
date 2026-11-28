@@ -1,0 +1,242 @@
+{
+  "date": "2026-11-28",
+  "base": "http://127.0.0.1:4192",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/",
+      "mode": "mobile",
+      "performance": 53,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 4682,
+      "cls": 0,
+      "tbt_ms": 2978,
+      "fcp_ms": 1510,
+      "si_ms": 2967,
+      "transfer_kb": 980,
+      "failedAudits": [
+        "max-potential-fid",
+        "mainthread-work-breakdown",
+        "is-crawlable",
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/",
+      "mode": "desktop",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 1027,
+      "cls": 0.001,
+      "tbt_ms": 0,
+      "fcp_ms": 422,
+      "si_ms": 584,
+      "transfer_kb": 1043,
+      "failedAudits": [
+        "is-crawlable",
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/atlas-chinches/",
+      "mode": "mobile",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 1093,
+      "cls": 0,
+      "tbt_ms": 29,
+      "fcp_ms": 1093,
+      "si_ms": 1093,
+      "transfer_kb": 483,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/atlas-chinches/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 256,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 256,
+      "si_ms": 294,
+      "transfer_kb": 749,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/",
+      "mode": "mobile",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 913,
+      "cls": 0,
+      "tbt_ms": 33,
+      "fcp_ms": 913,
+      "si_ms": 913,
+      "transfer_kb": 217,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 254,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 254,
+      "si_ms": 260,
+      "transfer_kb": 217,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/chinches-en-el-colchon/",
+      "mode": "mobile",
+      "performance": 94,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 2936,
+      "cls": 0,
+      "tbt_ms": 112,
+      "fcp_ms": 911,
+      "si_ms": 911,
+      "transfer_kb": 359,
+      "failedAudits": [
+        "is-crawlable",
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/chinches-en-el-colchon/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 618,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 258,
+      "si_ms": 307,
+      "transfer_kb": 359,
+      "failedAudits": [
+        "is-crawlable",
+        "image-delivery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/bed-bug-atlas/",
+      "mode": "mobile",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 915,
+      "cls": 0,
+      "tbt_ms": 25,
+      "fcp_ms": 915,
+      "si_ms": 915,
+      "transfer_kb": 482,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/en/bed-bug-atlas/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 307,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 307,
+      "si_ms": 307,
+      "transfer_kb": 829,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/vapor-contra-chinches/",
+      "mode": "mobile",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 919,
+      "cls": 0,
+      "tbt_ms": 105,
+      "fcp_ms": 919,
+      "si_ms": 919,
+      "transfer_kb": 232,
+      "failedAudits": [
+        "is-crawlable",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/guia-chinches/vapor-contra-chinches/",
+      "mode": "desktop",
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "lcp_ms": 536,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 256,
+      "si_ms": 301,
+      "transfer_kb": 237,
+      "failedAudits": [
+        "is-crawlable",
+        "image-delivery-insight",
+        "network-dependency-tree-insight"
+      ]
+    }
+  ]
+}

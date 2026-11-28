@@ -10,9 +10,10 @@ rmSync(abs, { recursive: true, force: true }); mkdirSync(abs, { recursive: true 
 const fx = JSON.parse(readFileSync(join(repoRoot, 'tests/fixtures/pages/FX-B.json'), 'utf8'));
 
 // 1) Draft fixture is silently excluded from production
+const base = packageSite({ mode: 'production', out: 'dist-gate-test', pageDirs: [] }); // the released pages only
 writeFileSync(join(abs, 'a.json'), JSON.stringify(fx));
 const r = packageSite({ mode: 'production', out: 'dist-gate-test', pageDirs: [tmpDir] });
-ok(r.generated === 0, 'Draft page is excluded from a production package');
+ok(r.generated === base.generated && r.files === base.files, 'Draft page is excluded from a production package (the package equals the released-pages-only package)');
 
 // 2) A page marked "Approved for indexing" but with placeholders / owner TODOs / fixture URL is refused
 // (price blocks removed here so this case isolates the placeholder/TODO/fixture reasons; the VAT gate has its own case below)

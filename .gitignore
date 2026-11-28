@@ -24,3 +24,4 @@ tests/.tmp-gate-pages/
 # owner image drop folders (raw sources, never versioned or packaged)
 uj-kepek/
 reports/render/
+controldechinches-production/

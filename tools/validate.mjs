@@ -2,14 +2,14 @@
 //   node tools/validate.mjs --dir dist-preview [--mode preview|production] [--pages tests/fixtures/pages]
 // production mode: every finding marked (P) is an ERROR; in preview they are warnings.  Exit code 1 on any error.
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
-import { join, relative, sep } from 'node:path';
+import { join, relative, sep, isAbsolute } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadPages } from './build.mjs';
 import { allowedNumbers } from '../templates/prices.mjs';
 
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const a = process.argv.slice(2), get = k => { const i = a.indexOf(k); return i >= 0 ? a[i + 1] : undefined; };
-const dir = join(root, get('--dir') || 'dist'), mode = get('--mode') || 'production';
+const dir = isAbsolute(get('--dir') || '') ? get('--dir') : join(root, get('--dir') || 'dist'), mode = get('--mode') || 'production';
 const extra = a.flatMap((x, i) => x === '--pages' ? [a[i + 1]] : []);
 const site = JSON.parse(readFileSync(join(root, 'data/site.json'), 'utf8')), prices = JSON.parse(readFileSync(join(root, 'data/prices.json'), 'utf8'));
 const pagesData = loadPages(['data/pages', ...extra]);

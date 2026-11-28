@@ -19,7 +19,7 @@ const gz = new Map();
 async function send(res, code, file, req) {
   let body = await readFile(file);
   const type = mime[extname(file)] || 'application/octet-stream';
-  const headers = { 'Content-Type': type, 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' };
+  const headers = { 'Content-Type': type, 'Cache-Control': 'no-store', ...(process.env.NOINDEX_HEADER === '0' ? {} : { 'X-Robots-Tag': 'noindex' }) };
   // mimic production: gzip for text, long cache for static assets (set COMPRESS=0 / PRODLIKE=0 to disable)
   if (process.env.PRODLIKE !== '0') {
     if (/\.(webp|avif|png|jpe?g|svg|ico|woff2?)$/.test(file)) headers['Cache-Control'] = 'public, max-age=31536000, immutable';

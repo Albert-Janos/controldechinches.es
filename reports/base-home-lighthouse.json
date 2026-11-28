@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-28",
+  "base": "http://127.0.0.1:4194",
+  "lighthouse": "13.6.0",
+  "note": "single run per page/mode; lab data only",
+  "rows": [
+    {
+      "url": "/",
+      "mode": "mobile",
+      "performance": 81,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 4913,
+      "cls": 0,
+      "tbt_ms": 74,
+      "fcp_ms": 1502,
+      "si_ms": 2220,
+      "transfer_kb": 1022,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "image-delivery-insight",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    },
+    {
+      "url": "/",
+      "mode": "desktop",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp_ms": 890,
+      "cls": 0,
+      "tbt_ms": 0,
+      "fcp_ms": 422,
+      "si_ms": 705,
+      "transfer_kb": 1078,
+      "failedAudits": [
+        "label-content-name-mismatch",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ]
+    }
+  ]
+}
