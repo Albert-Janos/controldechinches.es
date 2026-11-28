@@ -2,7 +2,6 @@
 // - builds a readable WhatsApp text from EVERY filled field and EVERY ticked sign (the visitor sends it himself/herself in WhatsApp),
 // - creates the filled PDF on the device (js/pdf-docs.js) for download or, where the browser supports it, the native share sheet (Web Share API with files),
 // - prints the form (one A4 page, see @media print in assets/seo.css).
-import { buildDocument } from './pdf-docs.js';
 import { track, bindDeclarativeTracking } from './track.js?v=1';
 import { prices } from './prices.js?v=2';
 
@@ -44,7 +43,7 @@ function init(root) {
   }
   let logoPromise = null;
   const logo = () => (logoPromise ||= fetch('/assets/pdf-logo.jpg').then(r => (r.ok ? r.arrayBuffer() : null)).then(b => (b ? new Uint8Array(b) : null)).catch(() => null));
-  async function pdfBytes(d) { return buildDocument('detection', lang, { logo: await logo(), data: printable(d) }); }
+  async function pdfBytes(d) { const { buildDocument } = await import('./pdf-docs.js'); return buildDocument('detection', lang, { logo: await logo(), data: printable(d) }); } // loaded only when a PDF is requested
   const pdfFile = bytes => new File([bytes], S.filename, { type: 'application/pdf' });
 
   // Web Share API with files: shown only where the browser reports that it can share a PDF
