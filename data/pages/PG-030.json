@@ -1,179 +1,177 @@
 {
- "id": "PG-030",
- "template": "T-H",
- "status": "Draft",
- "dataPage": "faq",
- "cta": {
-  "message": "default"
- },
- "_blocked": [
-  "questions should be validated against real Ads search terms / WhatsApp questions (OWNER-INPUT #28)",
-  "answers on areas/availability depend on OWNER-INPUT #3",
-  "LGL-01",
-  "professional review"
- ],
- "es": {
-  "url": "/preguntas-frecuentes/",
-  "title": "Preguntas frecuentes sobre chinches de cama",
-  "description": "Respuestas sobre precios, preparación, plazos, tratamiento químico y vapor seco. Las respuestas parten de las condiciones publicadas en esta web.",
-  "h1": "Preguntas frecuentes sobre chinches de cama",
-  "eyebrow": "Preguntas frecuentes",
-  "lead": "Respuestas breves a las dudas más habituales. Si tu caso es distinto, escríbenos por WhatsApp.",
-  "breadcrumb": [],
-  "blocks": [
-   {
-    "type": "faq",
-    "h2": "Precios",
-    "groups": [
-     {
-      "h3": "Precios",
-      "items": [
-       {
-        "q": "¿Cuánto cuesta un tratamiento de chinches?",
-        "a": "El tratamiento químico parte de {{price:chem1}} para 1 dormitorio, {{price:chem2}} para 2, {{price:chem3}} para 3 y {{price:chem4}} para 4; cada dormitorio adicional suma {{price:chemExtra}}. El vapor seco, como tratamiento independiente, parte de {{price:steam}} y el precio final depende de la valoración in situ."
-       },
-       {
-        "q": "¿El precio de la calculadora es el definitivo?",
-        "a": "No. Es un precio orientativo. El importe final y el desplazamiento (que depende de la distancia) se confirman por escrito antes de reservar."
-       },
-       {
-        "q": "¿Cobráis aparte la inspección o enviar fotos?",
-        "a": "No hay inspección aparte: la inspección en el lugar forma parte del tratamiento contratado. Enviar fotos por WhatsApp para una primera orientación es gratis."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "faq",
-    "h2": "Antes y después del tratamiento",
-    "groups": [
-     {
-      "h3": "Preparación y reentrada",
-      "items": [
-       {
-        "q": "¿Qué tengo que hacer antes del tratamiento?",
-        "a": "Te indicaremos cómo preparar las zonas afectadas y qué precauciones tomar según el tratamiento previsto."
-       },
-       {
-        "q": "¿Cuándo puedo volver a la habitación?",
-        "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto."
-       },
-       {
-        "q": "¿Qué precauciones debo tomar después?",
-        "a": "El técnico indicará los plazos de reentrada y las precauciones específicas, incluida la ventilación cuando corresponda."
-       },
-       {
-        "q": "¿Es necesario repetir el tratamiento?",
-        "a": "Depende del caso. A veces basta una intervención y otras hace falta repetir o combinar métodos. Si se repite un tratamiento químico, cuesta lo mismo que el primero; no hay un segundo tratamiento gratuito automático."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "faq",
-    "h2": "Disponibilidad y muebles",
-    "groups": [
-     {
-      "h3": "Cita y servicio",
-      "items": [
-       {
-        "q": "¿En cuánto tiempo podéis venir?",
-        "a": "Depende de la localidad, de la distancia y de la capacidad en ese momento. No se garantiza una visita el mismo día. Escríbenos por WhatsApp para consultar una fecha."
-       },
-       {
-        "q": "¿Qué se hace con los muebles muy infestados?",
-        "a": "Desechar muebles solo se recomienda cuando está justificado. El técnico valora cada caso y te indica cómo evitar mover objetos infestados sin control. No se ofrece servicio de retirada de muebles."
-       }
-      ]
-     }
-    ]
-   }
-  ],
-  "faq": [],
-  "sources": []
- },
- "en": {
-  "url": "/en/faq/",
-  "title": "Bed bug FAQ: prices, preparation and aftercare",
-  "description": "Answers about prices, preparation, timing, chemical treatment and dry steam. Answers follow the conditions published on this website.",
-  "h1": "Bed bug FAQ",
-  "eyebrow": "Frequently asked questions",
-  "lead": "Short answers to the most common questions. If your case is different, message us on WhatsApp.",
-  "breadcrumb": [],
-  "blocks": [
-   {
-    "type": "faq",
-    "h2": "Prices",
-    "groups": [
-     {
-      "h3": "Prices",
-      "items": [
-       {
-        "q": "How much does bed bug treatment cost?",
-        "a": "Chemical treatment starts at {{price:chem1}} for one bedroom, {{price:chem2}} for two, {{price:chem3}} for three and {{price:chem4}} for four; each additional bedroom adds {{price:chemExtra}}. Dry steam as a stand-alone treatment starts at {{price:steam}} and the final price depends on an on-site assessment."
-       },
-       {
-        "q": "Is the calculator price final?",
-        "a": "No. It is an estimate. The final price and travel (which depends on the distance) are confirmed in writing before you book."
-       },
-       {
-        "q": "Do you charge separately for the inspection or for sending photos?",
-        "a": "There is no separate inspection: the on-site inspection is part of the treatment ordered. Sending photos by WhatsApp for a first orientation is free."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "faq",
-    "h2": "Before and after treatment",
-    "groups": [
-     {
-      "h3": "Preparation and re-entry",
-      "items": [
-       {
-        "q": "How should I prepare?",
-        "a": "We’ll tell you how to prepare the affected areas and what precautions to take for your treatment."
-       },
-       {
-        "q": "When can I use the room again?",
-        "a": "Follow the technician’s instructions. Re-entry times depend on the method and, where used, the biocide product instructions."
-       },
-       {
-        "q": "What precautions should I take afterwards?",
-        "a": "The technician will tell you the re-entry times and any specific precautions, including ventilation where needed."
-       },
-       {
-        "q": "Does the treatment need repeating?",
-        "a": "It depends on the case. Sometimes one treatment is enough and sometimes it has to be repeated or methods combined. If a chemical treatment is repeated it costs the same as the first; there is no automatic free second treatment."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "faq",
-    "h2": "Availability and furniture",
-    "groups": [
-     {
-      "h3": "Appointments and service",
-      "items": [
-       {
-        "q": "How soon can you visit?",
-        "a": "It depends on the town, the distance and capacity at the time. A same-day visit is not guaranteed. Message us on WhatsApp to ask about a date."
-       },
-       {
-        "q": "What is done about heavily infested furniture?",
-        "a": "Disposing of furniture is only recommended when justified. The technician assesses each case and tells you how to avoid moving infested items without control. A furniture removal service is not offered."
-       }
-      ]
-     }
-    ]
-   }
-  ],
-  "faq": [],
-  "sources": []
- }
+  "id": "PG-030",
+  "template": "T-H",
+  "status": "Approved for indexing",
+  "dataPage": "faq",
+  "cta": {
+    "message": "default"
+  },
+  "es": {
+    "url": "/preguntas-frecuentes/",
+    "title": "Preguntas frecuentes sobre chinches de cama",
+    "description": "Respuestas sobre precios, preparación, plazos, tratamiento químico y vapor seco. Las respuestas parten de las condiciones publicadas en esta web.",
+    "h1": "Preguntas frecuentes sobre chinches de cama",
+    "eyebrow": "Preguntas frecuentes",
+    "lead": "Respuestas breves a las dudas más habituales. Si tu caso es distinto, escríbenos por WhatsApp.",
+    "breadcrumb": [],
+    "blocks": [
+      {
+        "type": "faq",
+        "h2": "Precios",
+        "groups": [
+          {
+            "h3": "Precios",
+            "items": [
+              {
+                "q": "¿Cuánto cuesta un tratamiento de chinches?",
+                "a": "El tratamiento químico parte de {{price:chem1}} para 1 dormitorio, {{price:chem2}} para 2, {{price:chem3}} para 3 y {{price:chem4}} para 4; cada dormitorio adicional suma {{price:chemExtra}}. El vapor seco, como tratamiento independiente, parte de {{price:steam}} y el precio final depende de la valoración in situ."
+              },
+              {
+                "q": "¿El precio de la calculadora es el definitivo?",
+                "a": "No. Es un precio orientativo. El importe final y el desplazamiento (que depende de la distancia) se confirman por escrito antes de reservar."
+              },
+              {
+                "q": "¿Cobráis aparte la inspección o enviar fotos?",
+                "a": "No hay inspección aparte: la inspección en el lugar forma parte del tratamiento contratado. Enviar fotos por WhatsApp para una primera orientación es gratis."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Antes y después del tratamiento",
+        "groups": [
+          {
+            "h3": "Preparación y reentrada",
+            "items": [
+              {
+                "q": "¿Qué tengo que hacer antes del tratamiento?",
+                "a": "Te indicaremos cómo preparar las zonas afectadas y qué precauciones tomar según el tratamiento previsto."
+              },
+              {
+                "q": "¿Cuándo puedo volver a la habitación?",
+                "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto."
+              },
+              {
+                "q": "¿Qué precauciones debo tomar después?",
+                "a": "El técnico indicará los plazos de reentrada y las precauciones específicas, incluida la ventilación cuando corresponda."
+              },
+              {
+                "q": "¿Es necesario repetir el tratamiento?",
+                "a": "Depende del caso. A veces basta una intervención y otras hace falta repetir o combinar métodos. Si se repite un tratamiento químico, cuesta lo mismo que el primero; no hay un segundo tratamiento gratuito automático."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Disponibilidad y muebles",
+        "groups": [
+          {
+            "h3": "Cita y servicio",
+            "items": [
+              {
+                "q": "¿En cuánto tiempo podéis venir?",
+                "a": "Depende de la localidad, de la distancia y de la capacidad en ese momento. No se garantiza una visita el mismo día. Escríbenos por WhatsApp para consultar una fecha."
+              },
+              {
+                "q": "¿Qué se hace con los muebles muy infestados?",
+                "a": "Desechar muebles solo se recomienda cuando está justificado. El técnico valora cada caso y te indica cómo evitar mover objetos infestados sin control. No se ofrece servicio de retirada de muebles."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "faq": [],
+    "sources": []
+  },
+  "en": {
+    "url": "/en/faq/",
+    "title": "Bed bug FAQ: prices, preparation and aftercare",
+    "description": "Answers about prices, preparation, timing, chemical treatment and dry steam. Answers follow the conditions published on this website.",
+    "h1": "Bed bug FAQ",
+    "eyebrow": "Frequently asked questions",
+    "lead": "Short answers to the most common questions. If your case is different, message us on WhatsApp.",
+    "breadcrumb": [],
+    "blocks": [
+      {
+        "type": "faq",
+        "h2": "Prices",
+        "groups": [
+          {
+            "h3": "Prices",
+            "items": [
+              {
+                "q": "How much does bed bug treatment cost?",
+                "a": "Chemical treatment starts at {{price:chem1}} for one bedroom, {{price:chem2}} for two, {{price:chem3}} for three and {{price:chem4}} for four; each additional bedroom adds {{price:chemExtra}}. Dry steam as a stand-alone treatment starts at {{price:steam}} and the final price depends on an on-site assessment."
+              },
+              {
+                "q": "Is the calculator price final?",
+                "a": "No. It is an estimate. The final price and travel (which depends on the distance) are confirmed in writing before you book."
+              },
+              {
+                "q": "Do you charge separately for the inspection or for sending photos?",
+                "a": "There is no separate inspection: the on-site inspection is part of the treatment ordered. Sending photos by WhatsApp for a first orientation is free."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Before and after treatment",
+        "groups": [
+          {
+            "h3": "Preparation and re-entry",
+            "items": [
+              {
+                "q": "How should I prepare?",
+                "a": "We’ll tell you how to prepare the affected areas and what precautions to take for your treatment."
+              },
+              {
+                "q": "When can I use the room again?",
+                "a": "Follow the technician’s instructions. Re-entry times depend on the method and, where used, the biocide product instructions."
+              },
+              {
+                "q": "What precautions should I take afterwards?",
+                "a": "The technician will tell you the re-entry times and any specific precautions, including ventilation where needed."
+              },
+              {
+                "q": "Does the treatment need repeating?",
+                "a": "It depends on the case. Sometimes one treatment is enough and sometimes it has to be repeated or methods combined. If a chemical treatment is repeated it costs the same as the first; there is no automatic free second treatment."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Availability and furniture",
+        "groups": [
+          {
+            "h3": "Appointments and service",
+            "items": [
+              {
+                "q": "How soon can you visit?",
+                "a": "It depends on the town, the distance and capacity at the time. A same-day visit is not guaranteed. Message us on WhatsApp to ask about a date."
+              },
+              {
+                "q": "What is done about heavily infested furniture?",
+                "a": "Disposing of furniture is only recommended when justified. The technician assesses each case and tells you how to avoid moving infested items without control. A furniture removal service is not offered."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "faq": [],
+    "sources": []
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

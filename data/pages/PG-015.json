@@ -1,205 +1,283 @@
 {
- "id": "PG-015",
- "template": "T-E",
- "status": "Draft",
- "dataPage": "b2b",
- "cta": {
-  "message": "b2b"
- },
- "related": [
-  "PG-011",
-  "PG-012",
-  "PG-003"
- ],
- "_blocked": [
-  "OWNER-INPUT #36/#11 (closed 2026-11-27: one-off orders, no subscription)",
-  "LGL: documentation requirements",
-  "photos IMG-B2B-*"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "para-quien",
-    "h2": "Para quién es",
-    "html": "<p>El servicio está pensado para apartamentos turísticos, pisos de alquiler vacacional (por ejemplo, Airbnb), empresas que gestionan alojamientos turísticos y clientes con varios apartamentos o inmuebles turísticos.</p>"
-   },
-   {
-    "type": "text",
-    "id": "que-necesita-el-gestor",
-    "h2": "Qué necesita un gestor de alojamientos",
-    "html": "<p>Detectar pronto, acotar las unidades afectadas, coordinar el acceso y la fecha con las próximas llegadas y poder documentar lo que se hizo. Para valorar el caso hace falta saber qué unidades presentan indicios y cuándo llegan los próximos huéspedes.</p>"
-   },
-   {
-    "type": "steps",
-    "h2": "Cómo se coordina la intervención",
-    "items": [
-     {
-      "h3": "Indicios y alcance",
-      "p": "Cuéntanos qué señales habéis observado, cuándo aparecieron y qué unidades están afectadas."
-     },
-     {
-      "h3": "Preparación y fecha",
-      "p": "Se acuerdan la fecha, el acceso y las indicaciones para preparar las habitaciones."
-     },
-     {
-      "h3": "Intervención y seguimiento",
-      "p": "Se aplica el método acordado y se explica cuándo volver a usar las habitaciones; el seguimiento se concreta en cada caso."
-     }
-    ]
-   },
-   {
-    "type": "infographic",
-    "id": "IG-10"
-   },
-   {
-    "type": "text",
-    "id": "que-incluye",
-    "h2": "Qué incluye",
-    "html": "<ul><li>tratamiento puntual contra chinches de cama;</li><li>visita urgente, según la capacidad disponible;</li><li>trabajo discreto;</li><li>revisión de las unidades afectadas y de las contiguas cuando está justificado;</li><li>inspección preventiva, con la frecuencia que se acuerde;</li><li>colocación de trampas de monitorización;</li><li>formación del personal para reconocer chinches;</li><li>elaboración de un protocolo de prevención;</li><li>documentación escrita del tratamiento;</li><li>recomendaciones escritas para volver a usar la unidad.</li></ul><p>Una visita urgente no significa disponibilidad garantizada el mismo día: depende de la capacidad en ese momento.</p>"
-   },
-   {
-    "type": "text",
-    "id": "como-se-colabora",
-    "h2": "Cómo se colabora",
-    "html": "<p>Se trabaja con encargos puntuales. Si gestionas varios inmuebles, el presupuesto se prepara de forma individual. No hay suscripción mensual o trimestral, contrato permanente ni visitas periódicas garantizadas; la frecuencia de las revisiones preventivas se acuerda en cada caso. No hay recargo por urgencia ni por fin de semana, y los presupuestos para empresas pueden detallar por separado el importe neto y el IVA.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente (LGL): requisitos legales y administrativos exactos de la documentación del tratamiento, y campos administrativos definitivos de los documentos; tipo de cliente y condiciones comerciales definitivas."
-   },
-   {
-    "type": "cards",
-    "h2": "Más información",
-    "items": [
-     {
-      "title": "Servicio para alojamientos",
-      "text": "Cuéntanos qué unidades están afectadas y prepara el mensaje.",
-      "href": "/chinches-apartamentos-turisticos/"
-     }
-    ]
-   }
+  "id": "PG-015",
+  "template": "T-E",
+  "status": "Approved for indexing",
+  "dataPage": "b2b",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-011",
+    "PG-012",
+    "PG-014",
+    "PG-013",
+    "PG-061",
+    "PG-062",
+    "PG-022",
+    "PG-072B"
   ],
-  "faq": [
-   {
-    "q": "¿Puedo pedir documentación del tratamiento?",
-    "a": "Sí. Para alojamientos y empresas se elabora documentación escrita del tratamiento y recomendaciones escritas para volver a usar la unidad. Los requisitos administrativos exactos se confirman antes de publicar este servicio."
-   },
-   {
-    "q": "¿Puedo pedir presupuesto para varios apartamentos?",
-    "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una; el presupuesto es individual."
-   },
-   {
-    "q": "¿Hay un contrato de mantenimiento o visitas fijas?",
-    "a": "No. Se trabaja por encargo; las revisiones preventivas se acuerdan caso por caso."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Servicios",
-    "/servicios/"
-   ]
-  ],
-  "url": "/servicios/planes-prevencion/",
-  "title": "Prevención y monitorización de chinches en alojamientos",
-  "description": "Intervención coordinada, documentación y seguimiento para apartamentos turísticos, pisos de alquiler vacacional y gestores de alojamientos turísticos.",
-  "h1": "Prevención y monitorización para alojamientos",
-  "eyebrow": "Alojamientos · B2B",
-  "lead": "Intervención coordinada con tu calendario de reservas, con indicaciones para el equipo y seguimiento.",
-  "heroImage": "IMG-B2B-01"
- },
- "en": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "who-it-is-for",
-    "h2": "Who it is for",
-    "html": "<p>The service is designed for tourist apartments, holiday lets (for example, Airbnb), companies that manage tourist accommodation and clients with several apartments or tourist properties.</p>"
-   },
-   {
-    "type": "text",
-    "id": "what-a-manager-needs",
-    "h2": "What an accommodation manager needs",
-    "html": "<p>To detect early, narrow down the affected units, coordinate access and the date with upcoming arrivals and be able to document what was done. To assess the case we need to know which units show signs and when the next guests arrive.</p>"
-   },
-   {
-    "type": "steps",
-    "h2": "How the treatment is coordinated",
-    "items": [
-     {
-      "h3": "Signs and scope",
-      "p": "Tell us which signs you have seen, when they appeared and which units are affected."
-     },
-     {
-      "h3": "Preparation and date",
-      "p": "The date, access and instructions for preparing the rooms are agreed."
-     },
-     {
-      "h3": "Treatment and follow-up",
-      "p": "The agreed method is applied and you are told when the rooms can be used again; follow-up is set out case by case."
-     }
-    ]
-   },
-   {
-    "type": "infographic",
-    "id": "IG-10"
-   },
-   {
-    "type": "text",
-    "id": "what-is-included",
-    "h2": "What is included",
-    "html": "<ul><li>one-off bed bug treatment;</li><li>an urgent visit, depending on available capacity;</li><li>discreet work;</li><li>checking the affected and adjacent units when justified;</li><li>preventive inspection, at an agreed frequency;</li><li>placing monitoring traps;</li><li>training staff to recognise bed bugs;</li><li>drawing up a prevention protocol;</li><li>written treatment documentation;</li><li>written recommendations for putting the unit back into use.</li></ul><p>An urgent visit does not mean guaranteed same-day availability: it depends on capacity at the time.</p>"
-   },
-   {
-    "type": "text",
-    "id": "how-we-work-together",
-    "h2": "How we work together",
-    "html": "<p>Work is by one-off order. If you manage several properties, the quote is prepared individually. There is no monthly or quarterly subscription, permanent contract or guaranteed periodic visits; the frequency of preventive checks is agreed case by case. There is no urgency or weekend surcharge, and quotes for businesses can show the net amount and VAT separately.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Pending (LGL): exact legal and administrative requirements for treatment documentation, and the final administrative fields of the documents; final client types and commercial terms."
-   },
-   {
-    "type": "cards",
-    "h2": "More information",
-    "items": [
-     {
-      "title": "Holiday rental service",
-      "text": "Tell us which units are affected and prepare your message.",
-      "href": "/en/bed-bugs-holiday-rentals/"
-     }
-    ]
-   }
-  ],
-  "faq": [
-   {
-    "q": "Can I ask for treatment documentation?",
-    "a": "Yes. For accommodation and businesses, written treatment documentation and written recommendations for reusing the unit are prepared. The exact administrative requirements are confirmed before this service is published."
-   },
-   {
-    "q": "Can I request a quote for several apartments?",
-    "a": "Yes. Tell us how many units you manage, which show signs and how each can be accessed; the quote is individual."
-   },
-   {
-    "q": "Is there a maintenance contract or fixed visits?",
-    "a": "No. Work is by order; preventive checks are agreed case by case."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Services",
-    "/en/services/"
-   ]
-  ],
-  "url": "/en/services/prevention-programmes/",
-  "title": "Bed bug prevention and monitoring for accommodation",
-  "description": "Coordinated treatment, documentation and follow-up for tourist apartments, holiday lets and managers of tourist accommodation.",
-  "h1": "Prevention and monitoring for accommodation",
-  "eyebrow": "Accommodation · B2B",
-  "lead": "Treatment coordinated with your booking calendar, with guidance for your team and follow-up.",
-  "heroImage": "IMG-B2B-01"
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "para-quien",
+        "h2": "Para quién es",
+        "html": "<p>Trabajo con <strong>apartamentos turísticos</strong>, <strong>hoteles</strong>, <strong>hostales</strong>, <strong>pensiones</strong> y otros alojamientos de Alicante y la Costa Blanca, tanto si gestionas una sola unidad como varios inmuebles. Esta página explica cómo organizo un tratamiento de chinches en un alojamiento. Si gestionas un apartamento y prefieres preparar el mensaje con los datos de tu caso, usa el <a href=\"/chinches-apartamentos-turisticos/\">formulario para apartamentos turísticos</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "que-incluye",
+        "h2": "Qué incluye el servicio",
+        "html": "<ul><li>Tratamiento puntual contra chinches de cama: químico dirigido, vapor seco o una combinación, según el caso.</li><li>Tratamiento urgente, según la capacidad que tenga en ese momento (no se garantiza el mismo día).</li><li>Trabajo discreto, adaptado a la presencia de huéspedes y de personal.</li><li>Revisión de la unidad afectada y, cuando está justificado, de las unidades contiguas.</li><li>Coordinación del acceso y de la fecha con las llegadas y salidas.</li><li>Presupuesto individual si tienes varios inmuebles.</li><li>Asesoramiento de prevención después del tratamiento.</li><li>Dispositivos de monitorización solo cuando están justificados desde el punto de vista técnico, como parte del tratamiento.</li><li>La documentación obligatoria del tratamiento.</li></ul>"
+      },
+      {
+        "type": "steps",
+        "h2": "Cómo coordino la intervención",
+        "items": [
+          {
+            "h3": "Indicios y alcance",
+            "p": "Cuéntame qué señales habéis observado, cuándo aparecieron y qué unidades están afectadas. Puedes enviarme fotos por WhatsApp para una primera orientación sin coste."
+          },
+          {
+            "h3": "Fecha y acceso",
+            "p": "Acordamos la fecha según tus llegadas y salidas, el acceso a las unidades y cómo preparar las habitaciones."
+          },
+          {
+            "h3": "Intervención",
+            "p": "Hago la inspección en el lugar y aplico el método acordado. La inspección forma parte del tratamiento contratado."
+          },
+          {
+            "h3": "Después del tratamiento",
+            "p": "Te explico cuándo se puede volver a usar la unidad, qué conviene vigilar y cómo reducir el riesgo de que vuelva a ocurrir."
+          }
+        ]
+      },
+      {
+        "type": "infographic",
+        "id": "IG-10"
+      },
+      {
+        "type": "text",
+        "id": "que-no-ofrezco",
+        "h2": "Qué no ofrezco",
+        "html": "<p>Para que sepas exactamente qué contratas: no ofrezco suscripciones ni paquetes de mantenimiento, inspecciones preventivas periódicas como servicio independiente, instalación de monitorización como servicio aparte, formación del personal de limpieza ni redacción de protocolos de prevención por separado. Trabajo por encargo, ante un problema concreto. Si quieres organizar tus propias revisiones, tienes la guía de <a href=\"{{url:PG-062}}\">detección temprana en apartamentos turísticos</a> y el <a href=\"{{url:PG-072B}}\">registro de monitorización</a> descargable.</p>"
+      },
+      {
+        "type": "text",
+        "id": "documentacion",
+        "h2": "Documentación del tratamiento",
+        "html": "<p>La documentación del tratamiento es obligatoria y forma parte del servicio. Su contenido exacto depende de la normativa aplicable y de los productos utilizados. En el caso de un cliente particular, el resultado también puede explicarse de forma verbal, pero eso no sustituye a la documentación que exija la normativa.</p>"
+      },
+      {
+        "type": "text",
+        "id": "presupuesto",
+        "h2": "Presupuesto y precios",
+        "html": "<p>Para una unidad puedes calcular el importe en la <a href=\"/precios.html#calculadora\">calculadora de precios</a>: el tratamiento químico parte de {{price:chem1}} (1 dormitorio) y el vapor seco independiente de {{price:steam}}, con IVA incluido y el desplazamiento de tu localidad como línea aparte. Si gestionas varios inmuebles, preparo un presupuesto individual. Los presupuestos para empresas pueden detallar el importe neto y el IVA por separado. No hay recargo por urgencia ni por fin de semana.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios"
+      },
+      {
+        "type": "cards",
+        "h2": "Más información",
+        "items": [
+          {
+            "title": "Chinches en Benidorm",
+            "text": "Apartamentos, hoteles, hostales y pensiones en Benidorm.",
+            "href": "{{url:PG-022}}"
+          },
+          {
+            "title": "Detección temprana",
+            "text": "Cómo revisar un apartamento turístico entre huéspedes.",
+            "href": "{{url:PG-062}}"
+          },
+          {
+            "title": "Protocolo en hoteles",
+            "text": "Guía sobre qué hacer ante una sospecha en un hotel.",
+            "href": "{{url:PG-061}}"
+          },
+          {
+            "title": "Parte de detección",
+            "text": "Rellena y envíame los indicios que has visto.",
+            "href": "{{url:PG-072A}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Tratáis hoteles, hostales y pensiones además de apartamentos?",
+        "a": "Sí. Trabajo con apartamentos turísticos, hoteles, hostales, pensiones y otros alojamientos. El presupuesto depende de las unidades afectadas y del método."
+      },
+      {
+        "q": "¿Puedo pedir presupuesto para varios apartamentos?",
+        "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una; el presupuesto es individual."
+      },
+      {
+        "q": "¿Hay contrato de mantenimiento, suscripción o visitas periódicas?",
+        "a": "No. Trabajo por encargo ante un problema concreto. No ofrezco suscripciones, paquetes de mantenimiento ni inspecciones preventivas periódicas como servicio independiente."
+      },
+      {
+        "q": "¿Revisáis también las unidades de al lado?",
+        "a": "Cuando está justificado, sí: reviso la unidad afectada y las contiguas como parte del tratamiento, porque las chinches pueden pasar de una unidad a otra."
+      },
+      {
+        "q": "¿Puede venir con urgencia?",
+        "a": "El tratamiento urgente depende de la capacidad que tenga en ese momento; no se garantiza una visita el mismo día. No hay recargo por urgencia ni por fin de semana."
+      },
+      {
+        "q": "¿Recibiré documentación del tratamiento?",
+        "a": "Sí, la documentación obligatoria del tratamiento forma parte del servicio. Su contenido exacto depende de la normativa aplicable y de los productos utilizados."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Servicios",
+        "/servicios/"
+      ]
+    ],
+    "url": "/servicios/planes-prevencion/",
+    "title": "Tratamiento de chinches en hoteles, hostales y alojamientos turísticos",
+    "description": "Tratamiento de chinches de cama para apartamentos turísticos, hoteles, hostales y pensiones de Alicante y la Costa Blanca: coordinación con las reservas, trabajo discreto y documentación.",
+    "h1": "Tratamiento de chinches para alojamientos turísticos",
+    "eyebrow": "Alojamientos turísticos · Tratamiento",
+    "lead": "Tratamiento de chinches de cama para apartamentos turísticos, hoteles, hostales y pensiones: intervención coordinada con tus reservas, trabajo discreto y documentación del tratamiento.",
+    "heroImage": "IMG-B2B-01"
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "who-it-is-for",
+        "h2": "Who it is for",
+        "html": "<p>I work with <strong>holiday apartments</strong>, <strong>hotels</strong>, <strong>hostels</strong>, <strong>guesthouses</strong> and other accommodation in Alicante and the Costa Blanca, whether you manage a single unit or several properties. This page explains how I organise a bed bug treatment in accommodation. If you manage an apartment and prefer to prepare the message with the details of your case, use the <a href=\"/en/bed-bugs-holiday-rentals/\">holiday rental form</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "what-is-included",
+        "h2": "What the service includes",
+        "html": "<ul><li>One-off bed bug treatment: targeted chemical, dry steam or a combination, depending on the case.</li><li>Urgent treatment, depending on the capacity I have at that moment (same-day service is not guaranteed).</li><li>Discreet work, adapted to the presence of guests and staff.</li><li>Inspection of the affected unit and, when justified, of the adjacent units.</li><li>Coordination of access and the date with arrivals and departures.</li><li>An individual quote if you have several properties.</li><li>Prevention advice after the treatment.</li><li>Monitoring devices only when technically justified, as part of the treatment.</li><li>The mandatory treatment documentation.</li></ul>"
+      },
+      {
+        "type": "steps",
+        "h2": "How I coordinate the intervention",
+        "items": [
+          {
+            "h3": "Signs and extent",
+            "p": "Tell me which signs you have seen, when they appeared and which units are affected. You can send me photos on WhatsApp for a first orientation at no cost."
+          },
+          {
+            "h3": "Date and access",
+            "p": "We agree the date around your arrivals and departures, access to the units and how to prepare the rooms."
+          },
+          {
+            "h3": "Intervention",
+            "p": "I carry out the on-site inspection and apply the agreed method. The inspection is part of the treatment that is ordered."
+          },
+          {
+            "h3": "After the treatment",
+            "p": "I explain when the unit can be used again, what to watch for and how to lower the risk of it happening again."
+          }
+        ]
+      },
+      {
+        "type": "infographic",
+        "id": "IG-10"
+      },
+      {
+        "type": "text",
+        "id": "what-i-do-not-offer",
+        "h2": "What I do not offer",
+        "html": "<p>So that you know exactly what you are hiring: I do not offer subscriptions or maintenance packages, regular preventive inspections as a stand-alone service, installation of monitoring as a separate service, training for cleaning staff or the drafting of prevention protocols separately. I work on request, for a specific problem. If you want to organise your own checks, there is the guide to <a href=\"{{url:PG-062}}\">early detection in holiday apartments</a> and the downloadable <a href=\"{{url:PG-072B}}\">monitoring log</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "documentation",
+        "h2": "Treatment documentation",
+        "html": "<p>The treatment documentation is mandatory and part of the service. Its exact content depends on the applicable regulations and the products used. With a private client the result can also be explained verbally, but that does not replace the documentation the regulations require.</p>"
+      },
+      {
+        "type": "text",
+        "id": "quote",
+        "h2": "Quote and prices",
+        "html": "<p>For one unit you can work out the amount in the <a href=\"/en/prices.html#calculadora\">price calculator</a>: chemical treatment starts at {{price:chem1}} (1 bedroom) and stand-alone dry steam at {{price:steam}}, VAT included, with the travel fee for your town as a separate line. If you manage several properties, I prepare an individual quote. Quotes for businesses can show the net amount and VAT separately. There is no urgency or weekend surcharge.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices"
+      },
+      {
+        "type": "cards",
+        "h2": "More information",
+        "items": [
+          {
+            "title": "Bed bugs in Benidorm",
+            "text": "Apartments, hotels, hostels and guesthouses in Benidorm.",
+            "href": "{{url:PG-022}}"
+          },
+          {
+            "title": "Early detection",
+            "text": "How to check a holiday apartment between guests.",
+            "href": "{{url:PG-062}}"
+          },
+          {
+            "title": "Hotel protocol",
+            "text": "Guide on what to do when bed bugs are suspected in a hotel.",
+            "href": "{{url:PG-061}}"
+          },
+          {
+            "title": "Detection report",
+            "text": "Fill it in and send me the signs you have seen.",
+            "href": "{{url:PG-072A}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do you treat hotels, hostels and guesthouses as well as apartments?",
+        "a": "Yes. I work with holiday apartments, hotels, hostels, guesthouses and other accommodation. The quote depends on the affected units and the method."
+      },
+      {
+        "q": "Can I ask for a quote for several apartments?",
+        "a": "Yes. Tell me how many units you manage, which ones show signs and how each can be accessed; the quote is individual."
+      },
+      {
+        "q": "Is there a maintenance contract, subscription or regular visits?",
+        "a": "No. I work on request for a specific problem. I do not offer subscriptions, maintenance packages or regular preventive inspections as a stand-alone service."
+      },
+      {
+        "q": "Do you also check the neighbouring units?",
+        "a": "When justified, yes: I inspect the affected unit and the adjacent ones as part of the treatment, because bed bugs can move from one unit to another."
+      },
+      {
+        "q": "Can you come urgently?",
+        "a": "Urgent treatment depends on the capacity I have at that moment; a same-day visit is not guaranteed. There is no urgency or weekend surcharge."
+      },
+      {
+        "q": "Will I receive documentation of the treatment?",
+        "a": "Yes, the mandatory treatment documentation is part of the service. Its exact content depends on the applicable regulations and the products used."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Services",
+        "/en/services/"
+      ]
+    ],
+    "url": "/en/services/prevention-programmes/",
+    "title": "Bed bug treatment for hotels, hostels and holiday accommodation | Control de Chinches",
+    "description": "Bed bug treatment for holiday apartments, hotels, hostels and guesthouses in Alicante and the Costa Blanca: coordinated with your bookings, discreet work and treatment documentation.",
+    "h1": "Bed bug treatment for holiday accommodation",
+    "eyebrow": "Holiday accommodation · Treatment",
+    "lead": "Bed bug treatment for holiday apartments, hotels, hostels and guesthouses: an intervention coordinated with your bookings, discreet work and treatment documentation.",
+    "heroImage": "IMG-B2B-01"
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

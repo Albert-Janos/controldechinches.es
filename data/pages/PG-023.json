@@ -1,169 +1,204 @@
 {
- "id": "PG-023",
- "template": "T-A",
- "status": "Draft",
- "dataPage": "local",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-020",
-  "PG-011",
-  "PG-013",
-  "PG-014",
-  "PG-003",
-  "PG-021",
-  "PG-022"
- ],
- "_blocked": [
-  "OWNER-INPUT #3 confirm Torrevieja is served; local facts (property types, travel rule)",
-  "photos IMG-LOC-TOR-01",
-  "LGL-01, LGL-08",
-  "no local case study exists (none is invented)"
- ],
- "offers": [
-  "chemical",
-  "steam"
- ],
- "areaServed": [
-  "Torrevieja"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "servicio-en-torrevieja",
-    "h2": "El servicio en Torrevieja",
-    "html": "<p>En Torrevieja conviven viviendas habituales, segundas residencias y alojamientos turísticos; el método y la forma de coordinar la visita se adaptan a cada uno. El trabajo lo realiza personalmente un técnico especializado solo en chinches de cama.</p>"
-   },
-   {
-    "type": "text",
-    "id": "como-se-decide-el-metodo",
-    "h2": "Cómo se decide el método",
-    "html": "<p>Según la gravedad, los muebles y las superficies, la presencia de niños o mascotas y el uso del inmueble, se elige tratamiento químico dirigido, vapor seco o una combinación. Ver <a href=\"{{url:PG-011}}\">control integrado</a>. Si gestionas un alojamiento turístico, consulta también <a href=\"{{url:PG-015}}\">el servicio para alojamientos</a>.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Precios"
-   },
-   {
-    "type": "cards",
-    "h2": "Servicios",
-    "items": [
-     {
-      "title": "Tratamiento químico",
-      "text": "Aplicación dirigida.",
-      "href": "/servicios/tratamiento-quimico/"
-     },
-     {
-      "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticida en el paso de vapor.",
-      "href": "/servicios/vapor-seco/"
-     },
-     {
-      "title": "Método (GIP)",
-      "text": "Valoración, tratamiento y seguimiento.",
-      "href": "/servicios/control-integrado/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente: localidad de salida y tarifa de desplazamiento (sin definir). La localidad está en el área aprobada. No se publican datos locales (tipos de vivienda, estadísticas, referencias) sin una fuente comprobable."
-   }
+  "id": "PG-023",
+  "template": "T-A",
+  "status": "Approved for indexing",
+  "dataPage": "local",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-020",
+    "PG-011",
+    "PG-013",
+    "PG-014",
+    "PG-015",
+    "PG-021",
+    "PG-022",
+    "PG-053"
   ],
-  "faq": [
-   {
-    "q": "¿Trabajáis en segundas residencias?",
-    "a": "Sí, en viviendas de cualquier tipo de uso. Si la vivienda está vacía parte del año, indícalo al pedir información."
-   },
-   {
-    "q": "¿Cuánto cuesta el desplazamiento a Torrevieja?",
-    "a": "Depende de la distancia y se confirma por escrito antes de reservar."
-   }
+  "offers": [
+    "chemical",
+    "steam"
   ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Zonas",
-    "/zonas/"
-   ]
+  "areaServed": [
+    "Torrevieja"
   ],
-  "url": "/zonas/torrevieja/",
-  "title": "Chinches de cama en Torrevieja: viviendas y alojamientos",
-  "description": "Tratamiento de chinches de cama en Torrevieja para viviendas habituales, segundas residencias y alojamientos turísticos, con valoración previa por WhatsApp.",
-  "h1": "Chinches de cama en Torrevieja",
-  "eyebrow": "Zona de servicio · Torrevieja",
-  "lead": "Para viviendas habituales, segundas residencias y alojamientos turísticos de Torrevieja.",
-  "heroImage": "IMG-LOC-TOR-01"
- },
- "en": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "service-in-torrevieja",
-    "h2": "The service in Torrevieja",
-    "html": "<p>Torrevieja has permanent homes, second homes and tourist accommodation side by side; the method and how the visit is coordinated are adapted to each. The work is done personally by a technician who specialises only in bed bugs.</p>"
-   },
-   {
-    "type": "text",
-    "id": "how-the-method-is-decided",
-    "h2": "How the method is decided",
-    "html": "<p>Depending on the severity, the furniture and surfaces, the presence of children or pets and the use of the property, targeted chemical treatment, dry steam or a combination is chosen. See <a href=\"{{url:PG-011}}\">integrated pest management</a>. If you manage tourist accommodation, see also <a href=\"{{url:PG-015}}\">the accommodation service</a>.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Prices"
-   },
-   {
-    "type": "cards",
-    "h2": "Services",
-    "items": [
-     {
-      "title": "Chemical treatment",
-      "text": "Targeted application.",
-      "href": "/en/services/chemical-treatment/"
-     },
-     {
-      "title": "Dry steam",
-      "text": "Localised heat, no insecticide in the steam step.",
-      "href": "/en/services/dry-steam/"
-     },
-     {
-      "title": "Method (IPM)",
-      "text": "Assessment, treatment and follow-up.",
-      "href": "/en/services/integrated-pest-management/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pending: departure town and travel fee (not defined). The town is in the approved area. No local data (housing types, statistics, references) is published without a verifiable source."
-   }
-  ],
-  "faq": [
-   {
-    "q": "Do you work in second homes?",
-    "a": "Yes, in homes of any kind of use. If the home is empty for part of the year, say so when asking for information."
-   },
-   {
-    "q": "How much does travel to Torrevieja cost?",
-    "a": "It depends on the distance and is confirmed in writing before you book."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Areas",
-    "/en/areas/"
-   ]
-  ],
-  "url": "/en/areas/torrevieja/",
-  "title": "Bed bug treatment in Torrevieja: homes and accommodation | Control de Chinches",
-  "description": "Bed bug treatment in Torrevieja for permanent homes, second homes and tourist accommodation, with a first assessment by WhatsApp.",
-  "h1": "Bed bugs in Torrevieja",
-  "eyebrow": "Service area · Torrevieja",
-  "lead": "For permanent homes, second homes and tourist accommodation in Torrevieja.",
-  "heroImage": "IMG-LOC-TOR-01"
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "chinches-en-torrevieja",
+        "h2": "Chinches de cama en Torrevieja",
+        "html": "<p>En Torrevieja hay muchas viviendas que se usan por temporadas: segundas residencias, casas de vacaciones y apartamentos que pasan meses cerrados y luego se ocupan de golpe. Atiendo ese tipo de inmuebles y también viviendas habituales, con tratamiento químico dirigido, vapor seco o una combinación de ambos, y el <strong>desplazamiento a Torrevieja no tiene coste</strong>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "despues-de-una-ausencia",
+        "h2": "Cuando notas chinches tras una ausencia larga",
+        "html": "<p>Es frecuente descubrir el problema al volver a una vivienda que ha estado vacía: las picaduras aparecen en las primeras noches y no está claro de dónde vienen. Una vivienda vacía no siempre significa que las chinches hayan desaparecido, y hay que revisar el colchón, el somier y los muebles cercanos antes de decidir. Si acabas de llegar, evita mover la ropa de cama y las maletas de una habitación a otra, y envíame fotos por WhatsApp. Más sobre esto en <a href=\"{{url:PG-053}}\">por qué vuelven las chinches</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "propietarios-y-gestores",
+        "h2": "Si no vives allí o la alquilas",
+        "html": "<p>Si eres propietario y no estás en la vivienda, puedo coordinar el acceso y la fecha contigo o con la persona que gestione las llaves, y explicarte por escrito qué convendría hacer antes de la siguiente ocupación. Si la alquilas a turistas, mira el <a href=\"{{url:PG-015}}\">servicio para alojamientos turísticos</a>. Indícame al escribirme cuánto tiempo ha estado vacía la vivienda y quién ha estado en ella.</p>"
+      },
+      {
+        "type": "text",
+        "id": "metodo",
+        "h2": "Cómo decido el método",
+        "html": "<p>Según la gravedad, los muebles y superficies, la presencia de niños o mascotas y el uso del inmueble, planteo <a href=\"{{url:PG-014}}\">tratamiento químico dirigido</a>, <a href=\"{{url:PG-013}}\">vapor seco</a> o una combinación. Ver también el <a href=\"{{url:PG-011}}\">control integrado</a>.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios en Torrevieja",
+        "variant": "city",
+        "town": "Torrevieja"
+      },
+      {
+        "type": "cards",
+        "h2": "Servicios",
+        "items": [
+          {
+            "title": "Tratamiento químico",
+            "text": "Aplicación dirigida de productos autorizados.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Vapor seco",
+            "text": "Calor localizado, sin insecticida en el paso de vapor.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Método (GIP)",
+            "text": "Valoración, tratamiento, seguimiento y prevención.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Trabajas en segundas residencias y casas de vacaciones?",
+        "a": "Sí, en viviendas de cualquier tipo de uso. Si la vivienda está vacía parte del año, indícalo al escribirme para valorar mejor el caso."
+      },
+      {
+        "q": "¿Cuánto cuesta el desplazamiento a Torrevieja?",
+        "a": "0 €: el desplazamiento a Torrevieja es gratuito. Aun así aparece como una línea aparte en el presupuesto."
+      },
+      {
+        "q": "¿Puedes coordinarte con el propietario si yo no estoy?",
+        "a": "Sí: puedo acordar el acceso y la fecha con el propietario o con quien gestione las llaves, siempre con su consentimiento."
+      },
+      {
+        "q": "Acabo de llegar y me han picado: ¿qué hago?",
+        "a": "No muevas la ropa ni las maletas de una habitación a otra y envíame fotos por WhatsApp. Las picaduras por sí solas no confirman que haya chinches; hay que revisar el colchón y los muebles."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Zonas",
+        "/zonas/"
+      ]
+    ],
+    "url": "/zonas/torrevieja/",
+    "title": "Tratamiento de chinches de cama en Torrevieja: segundas residencias y viviendas",
+    "description": "Tratamiento de chinches de cama en Torrevieja para segundas residencias, casas de vacaciones y viviendas usadas por temporadas. Desplazamiento gratuito; desde {{total:chem1+Torrevieja}} (IVA incl.).",
+    "h1": "Tratamiento de chinches de cama en Torrevieja",
+    "eyebrow": "Zona de servicio · Torrevieja",
+    "lead": "Para segundas residencias, casas de vacaciones y viviendas de uso por temporadas de Torrevieja, sin coste de desplazamiento.",
+    "heroImage": "IMG-LOC-TOR-01"
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "bed-bugs-in-torrevieja",
+        "h2": "Bed bugs in Torrevieja",
+        "html": "<p>In Torrevieja many properties are used seasonally: second homes, holiday houses and apartments that stay closed for months and are then occupied all at once. I treat that kind of property and also permanent homes, with targeted chemical treatment, dry steam or a combination of both, and <strong>travel to Torrevieja is free</strong>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "after-a-long-absence",
+        "h2": "When you notice bed bugs after a long absence",
+        "html": "<p>It is common to discover the problem when returning to a property that has been empty: bites appear in the first nights and it is unclear where they come from. An empty property does not always mean the bed bugs have gone, and the mattress, the box spring and the nearby furniture need checking before deciding. If you have just arrived, avoid moving bedding and suitcases from one room to another, and send me photos on WhatsApp. More on this in <a href=\"{{url:PG-053}}\">why bed bugs come back</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "owners-and-managers",
+        "h2": "If you do not live there or you let it",
+        "html": "<p>If you are an owner and not at the property, I can coordinate access and the date with you or with whoever manages the keys, and explain in writing what would be worth doing before the next occupancy. If you let it to tourists, see the <a href=\"{{url:PG-015}}\">service for holiday accommodation</a>. When you message me, tell me how long the property has been empty and who has been in it.</p>"
+      },
+      {
+        "type": "text",
+        "id": "method",
+        "h2": "How I decide the method",
+        "html": "<p>According to severity, furniture and surfaces, the presence of children or pets and the use of the property, I consider <a href=\"{{url:PG-014}}\">targeted chemical treatment</a>, <a href=\"{{url:PG-013}}\">dry steam</a> or a combination. See also <a href=\"{{url:PG-011}}\">integrated pest management</a>.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices in Torrevieja",
+        "variant": "city",
+        "town": "Torrevieja"
+      },
+      {
+        "type": "cards",
+        "h2": "Services",
+        "items": [
+          {
+            "title": "Chemical treatment",
+            "text": "Targeted application of authorised products.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Dry steam",
+            "text": "Localised heat, no insecticide in the steam step.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Method (IPM)",
+            "text": "Assessment, treatment, follow-up and prevention.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do you work in second homes and holiday houses?",
+        "a": "Yes, in properties of any type of use. If the property is empty for part of the year, tell me when you message me so I can assess the case better."
+      },
+      {
+        "q": "How much is travel to Torrevieja?",
+        "a": "€0: travel to Torrevieja is free. It still appears as a separate line in the quote."
+      },
+      {
+        "q": "Can you coordinate with the owner if I am not there?",
+        "a": "Yes: I can agree access and the date with the owner or whoever manages the keys, always with their consent."
+      },
+      {
+        "q": "I have just arrived and been bitten: what should I do?",
+        "a": "Do not move clothes or suitcases from one room to another and send me photos on WhatsApp. Bites alone do not confirm bed bugs; the mattress and furniture need checking."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Areas",
+        "/en/areas/"
+      ]
+    ],
+    "url": "/en/areas/torrevieja/",
+    "title": "Bed bug treatment in Torrevieja: second homes and holiday houses | Control de Chinches",
+    "description": "Bed bug treatment in Torrevieja for second homes, holiday houses and seasonally used properties. Free travel; from {{total:chem1+Torrevieja}} (VAT incl.).",
+    "h1": "Bed bug treatment in Torrevieja",
+    "eyebrow": "Service area · Torrevieja",
+    "lead": "For second homes, holiday houses and seasonally used properties in Torrevieja, with no travel charge.",
+    "heroImage": "IMG-LOC-TOR-01"
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

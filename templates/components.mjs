@@ -91,7 +91,7 @@ export function footer(ctx) {
   return `<footer class="footer"><div class="wrap"><div class="footer-grid">
 <div class="footer-brand"><a class="logo" href="${lang === 'es' ? '/' : '/en/'}" aria-label="${esc(ui.home_label)}"><img src="${site.assets.logo}" width="480" height="270" alt="${esc(site.brand)}"></a><p>${esc(f.tagline)}</p></div>
 <nav aria-label="${esc(f.explore)}"><h2>${esc(f.explore)}</h2>${links}</nav>
-<div><h2>${esc(f.area)}</h2>${zones}<a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}">${esc(ui.area)}</a><p>${esc(site.serviceAreas.featured.join(', '))} ${esc(f.andMore)}</p></div>
+<div><h2>${esc(f.area)}</h2>${zones}<a href="${lang === 'es' ? '/#zona-servicio' : '/en/#zona-servicio'}">${esc(ui.area)}</a><p>${esc(site.serviceAreas.confirmed.join(', '))}.</p></div>
 <div><h2>${esc(f.contact)}</h2><a href="${waLink(ctx)}" data-cta="content" target="_blank" rel="noopener noreferrer"><svg class="icon wa" aria-hidden="true"><use href="#icon-wa"/></svg> WhatsApp</a><a href="tel:${site.dispatcher.tel}" data-cta="content"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg> ${esc(site.dispatcher.display)}</a></div>
 </div><div class="footer-bottom"><span>© 2026 ControlDeChinches.es</span><div><a href="${ui.legalPaths.legal}">${esc(f.legal)}</a><a href="${ui.legalPaths.privacy}">${esc(f.privacy)}</a><span hidden data-privacy-item><button type="button" data-cookie-settings>${esc(f.settings)}</button></span></div></div></div></footer>`;
 }
@@ -144,7 +144,7 @@ export function imgKind(ctx, id, usage = 'body') {
   if (/^entomology/.test(e.folder || '')) return 'macro';
   return 'photo';
 }
-const SIZES = { hero: '(min-width: 990px) 54rem, 100vw', photo: '(min-width: 990px) 46rem, 100vw', macro: '(min-width: 990px) 40rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', 'portrait-detail': '(max-width: 760px) 18rem, 24rem', illustration: '(min-width: 990px) 46rem, 100vw' };
+const SIZES = { hero: '(min-width: 990px) 40rem, 100vw', photo: '(min-width: 990px) 36rem, 100vw', macro: '(min-width: 990px) 36rem, 100vw', portrait: '(max-width: 760px) 15rem, 19rem', 'portrait-detail': '(max-width: 760px) 18rem, 24rem', illustration: '(min-width: 990px) 46rem, 100vw' };
 // Owner decision (image package 2): a missing photo is NEVER a publication blocker and NEVER shows as an empty placeholder (preview or
 // production). A slot whose image is not ready is simply left out and the section is laid out without it. The list of wanted photos
 // lives in docs/seo/MISSING-IMAGES.md. (Ids that are not in the manifest at all are still flagged, so typos are caught.)
@@ -170,20 +170,27 @@ export function renderBlock(ctx, b, i) {
     case 'proscons': return `<section class="sx-block">${heading(b, id)}<div class="sx-proscons"><div class="sx-pros"><h3>${esc(b.prosTitle || ui.prosTitle)}</h3><ul>${b.pros.map(x => `<li>${x}</li>`).join('')}</ul></div><div class="sx-cons"><h3>${esc(b.consTitle || ui.consTitle)}</h3><ul>${b.cons.map(x => `<li>${x}</li>`).join('')}</ul></div></div></section>`;
     case 'roles': return `<section class="sx-block">${heading(b, id)}<div class="sx-roles">${b.columns.map(c => `<div><h3>${esc(c.title)}</h3><ul>${c.items.map(x => `<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
     case 'table': return `<section class="sx-block">${heading(b, id)}<div class="sx-tablewrap" tabindex="0" role="region" aria-label="${esc(b.caption || b.h2 || '')}"><table class="sx-table">${b.caption ? `<caption>${esc(b.caption)}</caption>` : ''}<thead><tr>${b.head.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${b.rows.map(r => `<tr>${r.map((c, j) => j === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
-    case 'figure': if (skipOptional(ctx, b.image)) return ''; return `<section class="sx-block">${figure(ctx, b.image, { sizes: b.sizes, kind: b.kind })}</section>`;
+    case 'figure': if (skipOptional(ctx, b.image)) return ''; return `<section class="sx-block${b.compact ? ' sx-compact' : ''}">${figure(ctx, b.image, { sizes: b.sizes, kind: b.kind })}</section>`;
     case 'infographic': if (!ctx.infographics?.[b.id] && skipOptional(ctx, b.id)) return ''; return `<section class="sx-block"><figure class="sx-figure sx-figure--illustration">${ctx.infographics?.[b.id] ? ctx.infographics[b.id](ctx) : picture(ctx, b.id)}<figcaption>${esc(ctx.images[b.id]?.caption?.[lang] || ui.infographic)}</figcaption></figure></section>`;
     case 'cards': return `<section class="sx-block">${heading(b, id)}<div class="sx-cards">${b.items.map(c => { const link = c.href && isLive(ctx, c.href); return (link ? `<a class="sx-card" href="${c.href}">` : '<div class="sx-card">') + `<h3>${esc(c.title)}</h3><p>${esc(c.text)}</p>${link ? `<span class="sx-more">${esc(ui.readMore)} →</span>` : ''}` + (link ? '</a>' : '</div>'); }).join('')}</div></section>`;
     case 'timeline': return `<section class="sx-block">${heading(b, id)}<ol class="sx-timeline">${b.items.map(t => `<li><strong>${esc(t.when)}</strong>${t.text}</li>`).join('')}</ol></section>`;
     case 'priceBox': {
       const p = ctx.prices, c = p.chemical.bedroomPrices[0], s = p.drySteamStandalone.from;
       const pr = lang === 'es' ? '/precios.html' : '/en/prices.html';
+      if (b.variant === 'city') { // town page: the town's fixed travel fee as its own line + the complete gross starting price (1 bedroom)
+        const town = b.town, tn = ctx.prices.travel.towns.find(t => t.town === town); if (!tn) throw new Error('unknown town in priceBox: ' + town);
+        const m = n => consumerPrice(ctx.prices, lang, n), fee = tn.net === 0 ? ui.freeTravel : m(tn.net), c1 = p.chemical.bedroomPrices[0];
+        const row = (label, val, strong) => `<tr><th scope="row">${esc(label)}</th><td>${strong ? '<strong>' + val + '</strong>' : val}</td></tr>`;
+        const tbl = (cap, rows) => `<div class="sx-tablewrap"><table class="sx-table sx-table--compact"><caption>${esc(cap)}</caption><tbody>${rows}</tbody></table></div>`;
+        return `<section class="sx-block">${heading(b, id)}<div class="sx-pricetable">${tbl(ui.cityChem.replace('{town}', town), row(ui.chemFrom, m(c1)) + row(ui.travelTown.replace('{town}', town), fee) + row(ui.totalFrom, m(c1 + tn.net), true))}${tbl(ui.citySteam.replace('{town}', town), row(ui.steamFrom, m(s)) + row(ui.travelTown.replace('{town}', town), fee) + row(ui.totalFrom, m(s + tn.net), true))}</div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}#calculadora">${esc(ui.seePrices)}</a></p></section>`;
+      }
       if (b.variant === 'chemical') return priceTable(ctx, b, id, pr);
       if (b.variant === 'steam') return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox sx-pricebox--steam"><div class="sx-price-primary"><h3>${esc(ui.steamStandalone)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
       return `<section class="sx-block">${heading(b, id)}<div class="sx-pricebox"><div><h3>${esc(ui.chemical)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, c)}</strong></p><small>${esc(ui.perVisit)}</small></div><div><h3>${esc(ui.steam)}</h3><p>${esc(ui.fromPrice)} <strong>${consumerPrice(ctx.prices, lang, s)}</strong></p><small>${esc(ui.steamNote)}</small></div></div><p class="sx-tool-note">${esc(ui.priceNote)} <a class="text-link" href="${pr}">${esc(ui.seePrices)}</a></p></section>`;
     }
     case 'towns': { // the owner-approved service area, straight from data/site.json (links only to published city pages)
       const cp = ctx.site.serviceAreas.cityPages || {};
-      const li = ctx.site.serviceAreas.confirmed.map(t => { const pid = cp[t], u = pid && ctx.included.has(pid) && pageUrl(ctx, pid); return `<li>${u ? `<a href="${u}">${esc(t)}</a>` : esc(t)}</li>`; }).join('');
+      const li = ctx.site.serviceAreas.confirmed.map(t => { const pid = cp[t], u = pid && ctx.included.has(pid) && pageUrl(ctx, pid); const tn = ctx.prices.travel.towns.find(x => x.town === t), fee = b.fees && tn ? ` <span class="sx-townfee">${esc(ui.travelShort)}: ${tn.net === 0 ? esc(ui.freeTravel) : consumerPrice(ctx.prices, lang, tn.net)}</span>` : ''; return `<li>${u ? `<a href="${u}">${esc(t)}</a>` : esc(t)}${fee}</li>`; }).join('');
       return `<section class="sx-block">${heading(b, id)}${b.intro ? `<p>${b.intro}</p>` : ''}<ul class="sx-towns">${li}</ul></section>`;
     }
     case 'video': return videoBlock(ctx, b);
@@ -239,7 +246,7 @@ function galleryBlock(ctx, b, id) {
   };
   const groups = (b.groups || [{ images: b.images }]).map(g => ({ ...g, images: g.images.filter(im => !skipOptional(ctx, im)), intro: g.intro })).filter(g => g.images.length || g.intro);
   if (!groups.length) return '';
-  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${filters}${groups.map(g => `${g.id ? `<h3 id="${g.id}">${esc(g.h3)}</h3>` : ''}${g.intro ? `<div class="sx-prose sx-group-intro">${g.intro}</div>` : ''}${g.images.length ? `<ul class="sx-gallery">${g.images.map(item).join('')}</ul>` : ''}`).join('')}</section>`;
+  return `<section class="sx-block">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : ''}${filters}${groups.map(g => `${g.id ? `<h3 id="${g.id}">${esc(g.h3)}</h3>` : ''}${g.intro ? `<div class="sx-prose sx-group-intro">${g.intro}</div>` : ''}${g.images.length ? `<ul class="sx-gallery${b.uniform ? ' sx-gallery--uniform' : ''}">${g.images.map(item).join('')}</ul>` : ''}`).join('')}</section>`;
 }
 function toolBlock(ctx, b, id) {
   const { ui } = ctx, t = ui.tool;

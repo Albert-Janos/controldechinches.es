@@ -9,12 +9,12 @@
   ],
   "priority": "P0",
   "alt": {
-   "es": "Albert János con un mono de protección blanco, retrato",
-   "en": "Albert János in a white protective suit, portrait"
+   "es": "Retrato de Albert János con un mono de protección blanco (imagen editada digitalmente)",
+   "en": "Portrait of Albert János in a white protective suit (digitally edited image)"
   },
   "caption": {
-   "es": "Albert János con ropa de trabajo. Foto propia.",
-   "en": "Albert János in work clothes. Own photo."
+   "es": "Retrato de Albert János con ropa de protección. Imagen editada digitalmente: no documenta un trabajo real.",
+   "en": "Portrait of Albert János in protective clothing. Digitally edited image: it does not document real work."
   },
   "seo": "albert-janos-mono-trabajo-retrato-{640,960,1280,1536}.avif|webp",
   "kind": "photo",
@@ -3888,6 +3888,43 @@
    ],
    "width": 686,
    "height": 915
+  },
+  "provenance": "own",
+  "credit": "Albert János / Control de Chinches"
+ },
+ "IMG-DRY-11": {
+  "id": "IMG-DRY-11",
+  "folder": "540}.avif|webp",
+  "role": "none",
+  "aspect": [
+   540,
+   960
+  ],
+  "priority": "content",
+  "alt": {
+   "es": "Cabezal de vapor Polti aplicando vapor sobre un sofá tapizado con chinches visibles",
+   "en": "Polti steam head applying steam to an upholstered sofa with visible bed bugs"
+  },
+  "caption": {
+   "es": "Vapor seco sobre un sofá infestado. Fotograma de un vídeo propio.",
+   "en": "Dry steam on an infested sofa. Still frame from an own video."
+  },
+  "seo": "vapor-seco-cabezal-polti-sofa-infestado-poster-{360",
+  "kind": "photo",
+  "status": "ready",
+  "variants": {
+   "dir": "/assets/video/",
+   "base": "vapor-seco-cabezal-polti-sofa-infestado-poster",
+   "widths": [
+    360,
+    540
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 540,
+   "height": 960
   },
   "provenance": "own",
   "credit": "Albert János / Control de Chinches"

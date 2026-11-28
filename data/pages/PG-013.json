@@ -1,433 +1,406 @@
 {
- "id": "PG-013",
- "template": "T-B",
- "status": "Draft",
- "dataPage": "service",
- "cta": {
-  "message": "steam"
- },
- "offers": [
-  "steam"
- ],
- "related": [
-  "PG-014",
-  "PG-011"
- ],
- "_blocked": [
-  "OWNER-INPUT #8 (machine type closed 2026-11-27: Polti Cimex Eradicator); #9 settings/times/boiler temperature open",
-  "HPMed intended professional use to verify",
-  "photos IMG-DRY-*",
-  "LGL-01",
-  "professional review"
- ],
- "es": {
-  "url": "/servicios/vapor-seco/",
-  "title": "Vapor seco contra chinches de cama en Alicante",
-  "description": "Vapor seco con Polti Cimex Eradicator en superficies compatibles, sin insecticida en el paso de vapor. Desde {{price:steam}} (IVA incl.); precio final tras valorar el caso.",
-  "h1": "Tratamiento de chinches con vapor seco",
-  "eyebrow": "Servicio · Alicante y Costa Blanca",
-  "lead": "Calor a alta temperatura, aplicado de forma localizada en las superficies compatibles. En el paso de vapor no se aplica insecticida.",
-  "breadcrumb": [
-   [
-    "Servicios",
-    "/servicios/"
-   ]
+  "id": "PG-013",
+  "template": "T-B",
+  "status": "Approved for indexing",
+  "dataPage": "service",
+  "cta": {
+    "message": "steam"
+  },
+  "offers": [
+    "steam"
   ],
-  "heroImage": "IMG-DRY-10",
-  "blocks": [
-   {
-    "type": "facts",
-    "items": [
-     {
-      "label": "Método",
-      "value": "Calor localizado"
-     },
-     {
-      "label": "Insecticida",
-      "value": "Ninguno en el paso de vapor"
-     },
-     {
-      "label": "Precio",
-      "value": "Desde {{price:steam}}"
-     }
-    ]
-   },
-   {
-    "type": "text",
-    "id": "como-funciona",
-    "h2": "Cómo funciona el método",
-    "html": "<p>El vapor seco actúa por calor: el vapor sobrecalentado se dirige a las costuras del colchón, el somier, el cabecero, las juntas de los muebles y otros puntos accesibles. Las chinches y sus huevos son sensibles a las temperaturas altas, pero el efecto depende de que el calor llegue realmente al lugar donde están. El vapor tiene una penetración limitada y no deja un efecto insecticida duradero.</p><p>Fuentes independientes sobre temperaturas, tiempos y estudios están en la <a href=\"/guia-chinches/vapor-contra-chinches/\">guía sobre vapor contra chinches</a>; aquí se describe el servicio.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-04"
-   },
-   {
-    "type": "text",
-    "id": "que-equipo",
-    "h2": "Qué equipo se utiliza",
-    "html": "<p>El equipo es un <strong>Polti Cimex Eradicator</strong>. Según el fabricante:</p><ul><li>presión de vapor de hasta 4 bar;</li><li>vapor seco sobrecalentado hasta 180 °C a la salida de la boquilla, en una cámara de expansión patentada;</li><li>depósito de 2 litros y 2250 W de potencia;</li><li>caudal de vapor regulable de 0 a 110 g/min.</li></ul><p>Son datos del fabricante, no temperaturas medidas en la superficie tratada: la presión de la caldera, la temperatura a la salida del vapor y la temperatura que alcanza la superficie son magnitudes distintas. Esta última depende de la distancia, del tiempo de aplicación, del material y del caudal de vapor, y no se da una cifra general. El ajuste y los tiempos concretos de aplicación del técnico no se publican.</p><p>A veces el vapor se aplica junto con <strong>HPMed</strong>, un detergente de Polti para este equipo, a base de agua y alcohol. Según el fabricante elimina olores; no se le atribuye un efecto insecticida, desinfectante ni protector duradero. Por eso la fórmula exacta es «sin insecticida en el paso de vapor», no «solo agua» ni «sin productos químicos».</p>"
-   },
-   {
-    "type": "video",
-    "video": "vapor-seco-cabezal-polti-sofa-infestado",
-    "alt": {
-     "es": "Cabezal de vapor Polti sobre el suelo junto a la base de un sofá, con numerosas chinches y excrementos en el suelo",
-     "en": "Polti steam head on the floor next to the base of a sofa, with many bed bugs and droppings on the floor"
-    },
-    "caption": {
-     "es": "Vídeo corto, sin audio: el cabezal de vapor Polti junto a un sofá con una infestación real. Foto propia.",
-     "en": "Short video, no sound: the Polti steam head next to a sofa with a real infestation. Own footage."
-    }
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-01"
-   },
-   {
-    "type": "proscons",
-    "h2": "Superficies",
-    "prosTitle": "Se tratan, tras comprobar que lo admiten",
-    "consTitle": "Se evitan",
-    "pros": [
-     "Colchones y costuras de colchón.",
-     "Somieres y bases de cama.",
-     "Cabeceros tapizados.",
-     "Sofás y sillones.",
-     "Juntas de muebles.",
-     "Rodapiés resistentes al calor.",
-     "Grietas y rendijas accesibles y resistentes al calor."
+  "related": [
+    "PG-014",
+    "PG-011"
+  ],
+  "es": {
+    "url": "/servicios/vapor-seco/",
+    "title": "Vapor seco contra chinches de cama en Alicante",
+    "description": "Vapor seco con Polti Cimex Eradicator en superficies compatibles, sin insecticida en el paso de vapor. Desde {{price:steam}} (IVA incl.); precio final tras valorar el caso.",
+    "h1": "Tratamiento de chinches con vapor seco",
+    "eyebrow": "Servicio · Alicante y Costa Blanca",
+    "lead": "Calor a alta temperatura, aplicado de forma localizada en las superficies compatibles. En el paso de vapor no se aplica insecticida.",
+    "breadcrumb": [
+      [
+        "Servicios",
+        "/servicios/"
+      ]
     ],
-    "cons": [
-     "Aparatos eléctricos y enchufes.",
-     "Plásticos sensibles al calor.",
-     "Superficies barnizadas o pegadas delicadas.",
-     "Textiles sensibles al calor.",
-     "Cualquier superficie que, según el fabricante o la comprobación en el lugar, no sea adecuada."
-    ]
-   },
-   {
-    "type": "steps",
-    "h2": "Cómo se hace el tratamiento",
-    "items": [
-     {
-      "h3": "Comprobar la resistencia al calor",
-      "p": "Se valora si la superficie admite el vapor."
-     },
-     {
-      "h3": "Prueba de vapor",
-      "p": "Si hace falta, se prueba en una zona poco visible."
-     },
-     {
-      "h3": "Acceso a los escondites",
-      "p": "Se hacen accesibles las zonas donde pueden estar las chinches."
-     },
-     {
-      "h3": "Aplicación sistemática y dirigida",
-      "p": "Se trata de forma ordenada y localizada la zona afectada."
-     },
-     {
-      "h3": "Información final",
-      "p": "Se explica qué se ha hecho y qué conviene vigilar."
-     }
-    ]
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-05"
-   },
-   {
-    "type": "text",
-    "id": "cuando-solo-vapor",
-    "h2": "¿Cuándo se recomienda el vapor seco independiente?",
-    "html": "<ul><li>cuando los escondites son fáciles de alcanzar;</li><li>si el cliente prefiere un tratamiento sin insecticida;</li><li>si, por algún motivo, el tratamiento químico no es adecuado.</li></ul><p>Se valora caso por caso según la infestación y las superficies.</p>"
-   },
-   {
-    "type": "proscons",
-    "h2": "Ventajas y límites",
-    "prosTitle": "Ventajas",
-    "consTitle": "Límites",
-    "pros": [
-     "Calor localizado y dirigido.",
-     "Si el calor llega a la zona tratada, puede actuar también sobre las chinches y sus huevos.",
-     "En el paso de vapor no se aplica insecticida.",
-     "Se puede usar en distintas superficies compatibles.",
-     "Se puede combinar con un tratamiento químico."
+    "heroImage": "IMG-DRY-10",
+    "blocks": [
+      {
+        "type": "facts",
+        "items": [
+          {
+            "label": "Método",
+            "value": "Calor localizado"
+          },
+          {
+            "label": "Insecticida",
+            "value": "Ninguno en el paso de vapor"
+          },
+          {
+            "label": "Precio",
+            "value": "Desde {{price:steam}}"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "como-funciona",
+        "h2": "Cómo funciona el método",
+        "html": "<p>El vapor seco actúa por calor: el vapor sobrecalentado se dirige a las costuras del colchón, el somier, el cabecero, las juntas de los muebles y otros puntos accesibles. Las chinches y sus huevos son sensibles a las temperaturas altas, pero el efecto depende de que el calor llegue realmente al lugar donde están. El vapor tiene una penetración limitada y no deja un efecto insecticida duradero.</p><p>Fuentes independientes sobre temperaturas, tiempos y estudios están en la <a href=\"/guia-chinches/vapor-contra-chinches/\">guía sobre vapor contra chinches</a>; aquí se describe el servicio.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-04"
+      },
+      {
+        "type": "text",
+        "id": "que-equipo",
+        "h2": "Qué equipo se utiliza",
+        "html": "<p>Trabajo con un <strong>Polti Cimex Eradicator</strong>. Según el fabricante, el equipo genera vapor seco sobrecalentado con una temperatura de salida de hasta 180 °C en la boquilla. Es un dato del fabricante: no significa que la superficie tratada alcance esa temperatura, que depende de la distancia, del tiempo de aplicación, del material y del caudal de vapor, por lo que no doy una cifra general.</p><p>A veces aplico el vapor junto con <strong>HPMed</strong>, un detergente de Polti para este equipo, a base de agua y alcohol, que según el fabricante elimina olores. No tiene efecto insecticida. Por eso la fórmula exacta es «sin insecticida en el paso de vapor», no «solo agua» ni «sin productos».</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-11"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-01"
+      },
+      {
+        "type": "proscons",
+        "h2": "Superficies",
+        "prosTitle": "Se tratan, tras comprobar que lo admiten",
+        "consTitle": "Se evitan",
+        "pros": [
+          "Colchones y costuras de colchón.",
+          "Somieres y bases de cama.",
+          "Cabeceros tapizados.",
+          "Sofás y sillones.",
+          "Juntas de muebles.",
+          "Rodapiés resistentes al calor.",
+          "Grietas y rendijas accesibles y resistentes al calor."
+        ],
+        "cons": [
+          "Aparatos eléctricos y enchufes.",
+          "Plásticos sensibles al calor.",
+          "Superficies barnizadas o pegadas delicadas.",
+          "Textiles sensibles al calor.",
+          "Cualquier superficie que, según el fabricante o la comprobación en el lugar, no sea adecuada."
+        ]
+      },
+      {
+        "type": "steps",
+        "h2": "Cómo se hace el tratamiento",
+        "items": [
+          {
+            "h3": "Comprobar la resistencia al calor",
+            "p": "Se valora si la superficie admite el vapor."
+          },
+          {
+            "h3": "Prueba de vapor",
+            "p": "Si hace falta, se prueba en una zona poco visible."
+          },
+          {
+            "h3": "Acceso a los escondites",
+            "p": "Se hacen accesibles las zonas donde pueden estar las chinches."
+          },
+          {
+            "h3": "Aplicación sistemática y dirigida",
+            "p": "Se trata de forma ordenada y localizada la zona afectada."
+          },
+          {
+            "h3": "Información final",
+            "p": "Se explica qué se ha hecho y qué conviene vigilar."
+          }
+        ]
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-05"
+      },
+      {
+        "type": "text",
+        "id": "cuando-solo-vapor",
+        "h2": "¿Cuándo se recomienda el vapor seco independiente?",
+        "html": "<ul><li>cuando los escondites son fáciles de alcanzar;</li><li>si el cliente prefiere un tratamiento sin insecticida;</li><li>si, por algún motivo, el tratamiento químico no es adecuado.</li></ul><p>Se valora caso por caso según la infestación y las superficies.</p>"
+      },
+      {
+        "type": "proscons",
+        "h2": "Ventajas y límites",
+        "prosTitle": "Ventajas",
+        "consTitle": "Límites",
+        "pros": [
+          "Calor localizado y dirigido.",
+          "Si el calor llega a la zona tratada, puede actuar también sobre las chinches y sus huevos.",
+          "En el paso de vapor no se aplica insecticida.",
+          "Se puede usar en distintas superficies compatibles.",
+          "Se puede combinar con un tratamiento químico."
+        ],
+        "cons": [
+          "La penetración del calor es limitada.",
+          "No todos los escondites son accesibles.",
+          "No todas las superficies admiten vapor.",
+          "No deja un efecto insecticida duradero.",
+          "Puede hacer falta un tratamiento adicional.",
+          "Un único tratamiento no garantiza eliminar todas las chinches."
+        ]
+      },
+      {
+        "type": "text",
+        "id": "tratamiento-combinado",
+        "h2": "¿Cuándo conviene combinarlo con tratamiento químico?",
+        "html": "<p>El tratamiento combinado coordina el calor dirigido con el <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico</a>. Se plantea ante infestaciones fuertes, varias habitaciones afectadas, un tratamiento previo fallido o superficies con necesidades distintas, y cuando conviene un producto con efecto residual según su autorización. No significa una eliminación garantizada en una sola visita. El vapor añadido a un tratamiento químico suma {{price:steamAddOn}} por tratamiento (importe fijo, no por dormitorio).</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precio",
+        "variant": "steam"
+      }
     ],
-    "cons": [
-     "La penetración del calor es limitada.",
-     "No todos los escondites son accesibles.",
-     "No todas las superficies admiten vapor.",
-     "No deja un efecto insecticida duradero.",
-     "Puede hacer falta un tratamiento adicional.",
-     "Un único tratamiento no garantiza eliminar todas las chinches."
-    ]
-   },
-   {
-    "type": "text",
-    "id": "tratamiento-combinado",
-    "h2": "¿Cuándo conviene combinarlo con tratamiento químico?",
-    "html": "<p>El tratamiento combinado coordina el calor dirigido con el <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico</a>. Se plantea ante infestaciones fuertes, varias habitaciones afectadas, un tratamiento previo fallido o superficies con necesidades distintas, y cuando conviene un producto con efecto residual según su autorización. No significa una eliminación garantizada en una sola visita. El vapor añadido a un tratamiento químico cuesta {{price:steamAddOn}} más.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Precio",
-    "variant": "steam"
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente del propietario: ajustes reales de uso del equipo (presión, distancia, tiempos de aplicación); comprobar el uso previsto de HPMed en aplicación profesional (la ficha de seguridad lo describe como detergente para aparatos domésticos Polti); confirmar de forma documentada la temperatura de la caldera."
-   }
-  ],
-  "faq": [
-   {
-    "q": "¿Cuánto cuesta el tratamiento con vapor seco?",
-    "a": "Como tratamiento independiente parte de {{price:steam}} (IVA incluido). El precio final depende de las condiciones del lugar, de las superficies afectadas y de la extensión de la infestación, y se confirma por escrito antes de reservar."
-   },
-   {
-    "q": "¿Se utilizan insecticidas?",
-    "a": "En el paso de vapor no: se aplica calor en las superficies compatibles. En un tratamiento combinado, el paso químico sí usa productos autorizados."
-   },
-   {
-    "q": "¿Qué es HPMed?",
-    "a": "Un detergente de Polti para este equipo, a base de agua y alcohol, que según el fabricante elimina olores. No se le atribuye efecto insecticida."
-   },
-   {
-    "q": "¿El vapor sirve en cualquier superficie?",
-    "a": "No. Se comprueba la resistencia al calor de cada superficie y se evitan, por ejemplo, aparatos eléctricos, plásticos sensibles y barnices delicados."
-   },
-   {
-    "q": "¿Basta con un tratamiento de vapor?",
-    "a": "No siempre. La penetración del calor es limitada y no hay efecto residual, así que puede hacer falta un seguimiento o un tratamiento adicional."
-   }
-  ],
-  "sources": [
-   {
-    "title": "Polti Cimex Eradicator (leaflet, manufacturer technical data)",
-    "publisher": "Polti (copy distributed by Pestfix)",
-    "year": "",
-    "url": "https://www.pestfix.co.uk/images/product-images/Polti%20Cimex%20Eradicator%20Leaflet.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Polti HPMED (product sheet, 2024)",
-    "publisher": "Polti",
-    "year": "2024",
-    "url": "https://www.polti.fr/media/wysiwyg/schede/fr/Scheda_prodotto_HPMED_FR_2024.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "HPMED safety data sheet (rev. 2, 23/03/2017)",
-    "publisher": "Polti S.p.A. (copy distributed by Do My Own)",
-    "year": "2017",
-    "url": "https://www.domyown.com/msds/Safety_Data_Sheet_20170323_Polti_HPMED_EN1.pdf",
-    "checked": "2026-11-27"
-   }
-  ]
- },
- "en": {
-  "url": "/en/services/dry-steam/",
-  "title": "Dry steam bed bug treatment in Alicante | Control de Chinches",
-  "description": "Dry steam with the Polti Cimex Eradicator on compatible surfaces, with no insecticide in the steam step. From {{price:steam}} (VAT incl.); final price after assessment.",
-  "h1": "Bed bug treatment with dry steam",
-  "eyebrow": "Service · Alicante and the Costa Blanca",
-  "lead": "High-temperature heat applied locally to compatible surfaces. No insecticide is applied in the steam step.",
-  "breadcrumb": [
-   [
-    "Services",
-    "/en/services/"
-   ]
-  ],
-  "heroImage": "IMG-DRY-10",
-  "blocks": [
-   {
-    "type": "facts",
-    "items": [
-     {
-      "label": "Method",
-      "value": "Localised heat"
-     },
-     {
-      "label": "Insecticide",
-      "value": "None in the steam step"
-     },
-     {
-      "label": "Price",
-      "value": "From {{price:steam}}"
-     }
-    ]
-   },
-   {
-    "type": "text",
-    "id": "how-it-works",
-    "h2": "How the method works",
-    "html": "<p>Dry steam works by heat: superheated steam is directed at mattress seams, the bed frame, the headboard, furniture joints and other accessible points. Bed bugs and their eggs are sensitive to high temperatures, but the effect depends on the heat actually reaching where they are. Steam penetration is limited and it leaves no lasting insecticidal effect.</p><p>Independent sources on temperatures, times and studies are in the <a href=\"/en/bed-bug-guide/does-steam-kill-bed-bugs/\">guide on steam against bed bugs</a>; this page describes the service.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-04"
-   },
-   {
-    "type": "text",
-    "id": "equipment",
-    "h2": "The equipment used",
-    "html": "<p>The equipment is a <strong>Polti Cimex Eradicator</strong>. According to the manufacturer:</p><ul><li>steam pressure of up to 4 bar;</li><li>dry superheated steam of up to 180 °C at the nozzle outlet, in a patented expansion chamber;</li><li>a 2-litre tank and 2250 W of power;</li><li>steam flow adjustable from 0 to 110 g/min.</li></ul><p>These are manufacturer figures, not temperatures measured on the treated surface: boiler pressure, steam temperature at the outlet and the temperature reached by the surface are different quantities. The last depends on the distance, the application time, the material and the steam flow, and no general figure is given. The technician’s actual settings and application times are not published.</p><p>Sometimes the steam is applied together with <strong>HPMed</strong>, a Polti detergent for this equipment, based on water and alcohol. According to the manufacturer it removes odours; no insecticidal, disinfectant or lasting protective effect is claimed for it. That is why the exact wording is “no insecticide in the steam step”, not “water only” or “chemical-free”.</p>"
-   },
-   {
-    "type": "video",
-    "video": "vapor-seco-cabezal-polti-sofa-infestado",
-    "alt": {
-     "es": "Cabezal de vapor Polti sobre el suelo junto a la base de un sofá, con numerosas chinches y excrementos en el suelo",
-     "en": "Polti steam head on the floor next to the base of a sofa, with many bed bugs and droppings on the floor"
-    },
-    "caption": {
-     "es": "Vídeo corto, sin audio: el cabezal de vapor Polti junto a un sofá con una infestación real. Foto propia.",
-     "en": "Short video, no sound: the Polti steam head next to a sofa with a real infestation. Own footage."
-    }
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-01"
-   },
-   {
-    "type": "proscons",
-    "h2": "Surfaces",
-    "prosTitle": "Treated once confirmed suitable",
-    "consTitle": "Avoided",
-    "pros": [
-     "Mattresses and mattress seams.",
-     "Bed frames and bases.",
-     "Upholstered headboards.",
-     "Sofas and armchairs.",
-     "Furniture joints.",
-     "Heat-resistant baseboards.",
-     "Accessible, heat-resistant cracks and gaps."
+    "faq": [
+      {
+        "q": "¿Cuánto cuesta el tratamiento con vapor seco?",
+        "a": "Como tratamiento independiente parte de {{price:steam}} (IVA incluido). El precio final depende de las condiciones del lugar, de las superficies afectadas y de la extensión de la infestación, y se confirma por escrito antes de reservar."
+      },
+      {
+        "q": "¿Se utilizan insecticidas?",
+        "a": "En el paso de vapor no: se aplica calor en las superficies compatibles. En un tratamiento combinado, el paso químico sí usa productos autorizados."
+      },
+      {
+        "q": "¿Qué es HPMed?",
+        "a": "Un detergente de Polti para este equipo, a base de agua y alcohol, que según el fabricante elimina olores. No se le atribuye efecto insecticida."
+      },
+      {
+        "q": "¿El vapor sirve en cualquier superficie?",
+        "a": "No. Se comprueba la resistencia al calor de cada superficie y se evitan, por ejemplo, aparatos eléctricos, plásticos sensibles y barnices delicados."
+      },
+      {
+        "q": "¿Basta con un tratamiento de vapor?",
+        "a": "No siempre. La penetración del calor es limitada y no hay efecto residual, así que puede hacer falta un seguimiento o un tratamiento adicional."
+      }
     ],
-    "cons": [
-     "Electrical appliances and sockets.",
-     "Heat-sensitive plastics.",
-     "Delicate varnished or glued surfaces.",
-     "Heat-sensitive fabrics.",
-     "Any surface that, per the manufacturer or an on-site check, is not suitable."
+    "sources": [
+      {
+        "title": "Polti Cimex Eradicator (leaflet, manufacturer technical data)",
+        "publisher": "Polti (copy distributed by Pestfix)",
+        "year": "",
+        "url": "https://www.pestfix.co.uk/images/product-images/Polti%20Cimex%20Eradicator%20Leaflet.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Polti HPMED (product sheet, 2024)",
+        "publisher": "Polti",
+        "year": "2024",
+        "url": "https://www.polti.fr/media/wysiwyg/schede/fr/Scheda_prodotto_HPMED_FR_2024.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "HPMED safety data sheet (rev. 2, 23/03/2017)",
+        "publisher": "Polti S.p.A. (copy distributed by Do My Own)",
+        "year": "2017",
+        "url": "https://www.domyown.com/msds/Safety_Data_Sheet_20170323_Polti_HPMED_EN1.pdf",
+        "checked": "2026-11-27"
+      }
     ]
-   },
-   {
-    "type": "steps",
-    "h2": "How the treatment is carried out",
-    "items": [
-     {
-      "h3": "Checking heat resistance",
-      "p": "The technician assesses whether the surface tolerates steam."
-     },
-     {
-      "h3": "Test steaming",
-      "p": "If needed, a test on a discreet area."
-     },
-     {
-      "h3": "Access to hiding places",
-      "p": "The places where bed bugs may be are made accessible."
-     },
-     {
-      "h3": "Systematic, targeted application",
-      "p": "The affected area is treated in an orderly, localised way."
-     },
-     {
-      "h3": "Final information",
-      "p": "What was done and what to watch for are explained."
-     }
-    ]
-   },
-   {
-    "type": "figure",
-    "image": "IMG-DRY-05"
-   },
-   {
-    "type": "text",
-    "id": "when-steam-alone",
-    "h2": "When is stand-alone dry steam recommended?",
-    "html": "<ul><li>when the hiding places are easy to reach;</li><li>if the client prefers a treatment without insecticide;</li><li>if, for some reason, chemical treatment is not suitable.</li></ul><p>It is assessed case by case according to the infestation and the surfaces.</p>"
-   },
-   {
-    "type": "proscons",
-    "h2": "Advantages and limits",
-    "prosTitle": "Advantages",
-    "consTitle": "Limits",
-    "pros": [
-     "Localised, targeted heat.",
-     "If the heat reaches the treated area, it can act on bed bugs and their eggs too.",
-     "No insecticide is applied in the steam step.",
-     "Can be used on various compatible surfaces.",
-     "Can be combined with a chemical treatment."
+  },
+  "en": {
+    "url": "/en/services/dry-steam/",
+    "title": "Dry steam bed bug treatment in Alicante | Control de Chinches",
+    "description": "Dry steam with the Polti Cimex Eradicator on compatible surfaces, with no insecticide in the steam step. From {{price:steam}} (VAT incl.); final price after assessment.",
+    "h1": "Bed bug treatment with dry steam",
+    "eyebrow": "Service · Alicante and the Costa Blanca",
+    "lead": "High-temperature heat applied locally to compatible surfaces. No insecticide is applied in the steam step.",
+    "breadcrumb": [
+      [
+        "Services",
+        "/en/services/"
+      ]
     ],
-    "cons": [
-     "Heat penetration is limited.",
-     "Not every hiding place is accessible.",
-     "Not every surface tolerates steam.",
-     "It leaves no lasting insecticidal effect.",
-     "An additional treatment may be needed.",
-     "A single treatment does not guarantee eliminating all bed bugs."
+    "heroImage": "IMG-DRY-10",
+    "blocks": [
+      {
+        "type": "facts",
+        "items": [
+          {
+            "label": "Method",
+            "value": "Localised heat"
+          },
+          {
+            "label": "Insecticide",
+            "value": "None in the steam step"
+          },
+          {
+            "label": "Price",
+            "value": "From {{price:steam}}"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "how-it-works",
+        "h2": "How the method works",
+        "html": "<p>Dry steam works by heat: superheated steam is directed at mattress seams, the bed frame, the headboard, furniture joints and other accessible points. Bed bugs and their eggs are sensitive to high temperatures, but the effect depends on the heat actually reaching where they are. Steam penetration is limited and it leaves no lasting insecticidal effect.</p><p>Independent sources on temperatures, times and studies are in the <a href=\"/en/bed-bug-guide/does-steam-kill-bed-bugs/\">guide on steam against bed bugs</a>; this page describes the service.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-04"
+      },
+      {
+        "type": "text",
+        "id": "equipment",
+        "h2": "The equipment used",
+        "html": "<p>I work with a <strong>Polti Cimex Eradicator</strong>. According to the manufacturer, the machine produces superheated dry steam with an outlet temperature of up to 180 °C at the nozzle. That is a manufacturer figure: it does not mean the treated surface reaches that temperature, which depends on the distance, the application time, the material and the steam flow, so I do not give a general figure.</p><p>Sometimes I apply the steam together with <strong>HPMed</strong>, a Polti detergent for this machine, water- and alcohol-based, which according to the manufacturer removes odours. It has no insecticidal effect. That is why the exact wording is “no insecticide in the steam step”, not “just water” or “no products”.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-11"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-01"
+      },
+      {
+        "type": "proscons",
+        "h2": "Surfaces",
+        "prosTitle": "Treated once confirmed suitable",
+        "consTitle": "Avoided",
+        "pros": [
+          "Mattresses and mattress seams.",
+          "Bed frames and bases.",
+          "Upholstered headboards.",
+          "Sofas and armchairs.",
+          "Furniture joints.",
+          "Heat-resistant baseboards.",
+          "Accessible, heat-resistant cracks and gaps."
+        ],
+        "cons": [
+          "Electrical appliances and sockets.",
+          "Heat-sensitive plastics.",
+          "Delicate varnished or glued surfaces.",
+          "Heat-sensitive fabrics.",
+          "Any surface that, per the manufacturer or an on-site check, is not suitable."
+        ]
+      },
+      {
+        "type": "steps",
+        "h2": "How the treatment is carried out",
+        "items": [
+          {
+            "h3": "Checking heat resistance",
+            "p": "The technician assesses whether the surface tolerates steam."
+          },
+          {
+            "h3": "Test steaming",
+            "p": "If needed, a test on a discreet area."
+          },
+          {
+            "h3": "Access to hiding places",
+            "p": "The places where bed bugs may be are made accessible."
+          },
+          {
+            "h3": "Systematic, targeted application",
+            "p": "The affected area is treated in an orderly, localised way."
+          },
+          {
+            "h3": "Final information",
+            "p": "What was done and what to watch for are explained."
+          }
+        ]
+      },
+      {
+        "type": "figure",
+        "image": "IMG-DRY-05"
+      },
+      {
+        "type": "text",
+        "id": "when-steam-alone",
+        "h2": "When is stand-alone dry steam recommended?",
+        "html": "<ul><li>when the hiding places are easy to reach;</li><li>if the client prefers a treatment without insecticide;</li><li>if, for some reason, chemical treatment is not suitable.</li></ul><p>It is assessed case by case according to the infestation and the surfaces.</p>"
+      },
+      {
+        "type": "proscons",
+        "h2": "Advantages and limits",
+        "prosTitle": "Advantages",
+        "consTitle": "Limits",
+        "pros": [
+          "Localised, targeted heat.",
+          "If the heat reaches the treated area, it can act on bed bugs and their eggs too.",
+          "No insecticide is applied in the steam step.",
+          "Can be used on various compatible surfaces.",
+          "Can be combined with a chemical treatment."
+        ],
+        "cons": [
+          "Heat penetration is limited.",
+          "Not every hiding place is accessible.",
+          "Not every surface tolerates steam.",
+          "It leaves no lasting insecticidal effect.",
+          "An additional treatment may be needed.",
+          "A single treatment does not guarantee eliminating all bed bugs."
+        ]
+      },
+      {
+        "type": "text",
+        "id": "combined-treatment",
+        "h2": "When is it worth combining with chemical treatment?",
+        "html": "<p>A combined treatment coordinates targeted heat with <a href=\"/en/services/chemical-treatment/\">chemical treatment</a>. It is considered for heavy infestations, several affected rooms, a failed earlier treatment or surfaces with different needs, and when a product with residual effect is advisable according to its authorisation. It does not mean guaranteed elimination in a single visit. Steam added to a chemical treatment adds {{price:steamAddOn}} per treatment (a flat fee, not per bedroom).</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Price",
+        "variant": "steam"
+      }
+    ],
+    "faq": [
+      {
+        "q": "How much does dry steam treatment cost?",
+        "a": "As a stand-alone treatment it starts at {{price:steam}} (VAT included). The final price depends on the conditions on site, the surfaces involved and the extent of the infestation, and is confirmed in writing before you book."
+      },
+      {
+        "q": "Are insecticides used?",
+        "a": "Not in the steam step: heat is applied to compatible surfaces. In a combined treatment, the chemical step does use authorised products."
+      },
+      {
+        "q": "What is HPMed?",
+        "a": "A Polti detergent for this equipment, based on water and alcohol, which according to the manufacturer removes odours. No insecticidal effect is claimed for it."
+      },
+      {
+        "q": "Does steam work on any surface?",
+        "a": "No. Each surface is checked for heat resistance, and electrical appliances, heat-sensitive plastics and delicate varnishes, for example, are avoided."
+      },
+      {
+        "q": "Is one steam treatment enough?",
+        "a": "Not always. Heat penetration is limited and there is no residual effect, so follow-up or an additional treatment may be needed."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Polti Cimex Eradicator (leaflet, manufacturer technical data)",
+        "publisher": "Polti (copy distributed by Pestfix)",
+        "year": "",
+        "url": "https://www.pestfix.co.uk/images/product-images/Polti%20Cimex%20Eradicator%20Leaflet.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Polti HPMED (product sheet, 2024)",
+        "publisher": "Polti",
+        "year": "2024",
+        "url": "https://www.polti.fr/media/wysiwyg/schede/fr/Scheda_prodotto_HPMED_FR_2024.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "HPMED safety data sheet (rev. 2, 23/03/2017)",
+        "publisher": "Polti S.p.A. (copy distributed by Do My Own)",
+        "year": "2017",
+        "url": "https://www.domyown.com/msds/Safety_Data_Sheet_20170323_Polti_HPMED_EN1.pdf",
+        "checked": "2026-11-27"
+      }
     ]
-   },
-   {
-    "type": "text",
-    "id": "combined-treatment",
-    "h2": "When is it worth combining with chemical treatment?",
-    "html": "<p>A combined treatment coordinates targeted heat with <a href=\"/en/services/chemical-treatment/\">chemical treatment</a>. It is considered for heavy infestations, several affected rooms, a failed earlier treatment or surfaces with different needs, and when a product with residual effect is advisable according to its authorisation. It does not mean guaranteed elimination in a single visit. Steam added to a chemical treatment costs {{price:steamAddOn}} more.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Price",
-    "variant": "steam"
-   },
-   {
-    "type": "todo",
-    "text": "Owner input needed: actual equipment settings (pressure, distance, application times); check the intended professional use of HPMed (the safety data sheet describes it as a detergent for Polti household appliances); documented confirmation of the boiler temperature."
-   }
-  ],
-  "faq": [
-   {
-    "q": "How much does dry steam treatment cost?",
-    "a": "As a stand-alone treatment it starts at {{price:steam}} (VAT included). The final price depends on the conditions on site, the surfaces involved and the extent of the infestation, and is confirmed in writing before you book."
-   },
-   {
-    "q": "Are insecticides used?",
-    "a": "Not in the steam step: heat is applied to compatible surfaces. In a combined treatment, the chemical step does use authorised products."
-   },
-   {
-    "q": "What is HPMed?",
-    "a": "A Polti detergent for this equipment, based on water and alcohol, which according to the manufacturer removes odours. No insecticidal effect is claimed for it."
-   },
-   {
-    "q": "Does steam work on any surface?",
-    "a": "No. Each surface is checked for heat resistance, and electrical appliances, heat-sensitive plastics and delicate varnishes, for example, are avoided."
-   },
-   {
-    "q": "Is one steam treatment enough?",
-    "a": "Not always. Heat penetration is limited and there is no residual effect, so follow-up or an additional treatment may be needed."
-   }
-  ],
-  "sources": [
-   {
-    "title": "Polti Cimex Eradicator (leaflet, manufacturer technical data)",
-    "publisher": "Polti (copy distributed by Pestfix)",
-    "year": "",
-    "url": "https://www.pestfix.co.uk/images/product-images/Polti%20Cimex%20Eradicator%20Leaflet.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Polti HPMED (product sheet, 2024)",
-    "publisher": "Polti",
-    "year": "2024",
-    "url": "https://www.polti.fr/media/wysiwyg/schede/fr/Scheda_prodotto_HPMED_FR_2024.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "HPMED safety data sheet (rev. 2, 23/03/2017)",
-    "publisher": "Polti S.p.A. (copy distributed by Do My Own)",
-    "year": "2017",
-    "url": "https://www.domyown.com/msds/Safety_Data_Sheet_20170323_Polti_HPMED_EN1.pdf",
-    "checked": "2026-11-27"
-   }
-  ]
- }
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

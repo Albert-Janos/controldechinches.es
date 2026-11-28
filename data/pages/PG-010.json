@@ -1,138 +1,218 @@
 {
- "id": "PG-010",
- "template": "T-H",
- "status": "Draft",
- "dataPage": "hub",
- "cta": {
-  "message": "default"
- },
- "_blocked": [
-  "services actually offered (OWNER-INPUT #7, #31)",
-  "PG-011/012 not drafted yet",
-  "LGL-01"
- ],
- "es": {
-  "url": "/servicios/",
-  "title": "Servicios contra chinches de cama en Alicante",
-  "description": "Tratamiento químico dirigido, vapor seco y método de trabajo para chinches de cama en Alicante y la Costa Blanca. Precios desde {{price:chem1}} y {{price:steam}}.",
-  "h1": "Servicios contra las chinches de cama",
-  "eyebrow": "Servicios",
-  "lead": "Dos métodos de tratamiento y un mismo punto de partida: valorar primero las zonas afectadas.",
-  "breadcrumb": [],
-  "blocks": [
-   {
-    "type": "hub",
-    "groups": [
-     {
-      "h2": "Tratamientos",
-      "intro": "Elegimos el método según el alcance del problema y las superficies afectadas.",
-      "items": [
-       {
-        "pageId": "PG-014",
-        "text": "Aplicación dirigida, con opción de nebulización en frío. Desde {{price:chem1}}."
-       },
-       {
-        "pageId": "PG-013",
-        "text": "Calor a alta temperatura, sin insecticida en el paso de vapor. Desde {{price:steam}}."
-       }
-      ]
-     },
-     {
-      "h2": "Método",
-      "items": [
-       {
-        "pageId": "PG-011",
-        "text": "Cómo combinamos inspección, tratamiento, seguimiento y prevención."
-       }
-      ]
-     },
-     {
-      "h2": "Más información",
-      "items": [
-       {
-        "pageId": "PG-030",
-        "text": "Respuestas breves a las dudas habituales."
-       },
-       {
-        "pageId": "PG-073",
-        "text": "Casos documentados, cuando existan."
-       },
-       {
-        "pageId": "PG-012",
-        "text": "Qué se revisa antes de recomendar un método."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "priceBox",
-    "h2": "Precios"
-   }
-  ],
-  "faq": [],
-  "sources": []
- },
- "en": {
-  "url": "/en/services/",
-  "title": "Bed bug services in Alicante and the Costa Blanca",
-  "description": "Targeted chemical treatment, dry steam and our working method for bed bugs in Alicante and the Costa Blanca. Prices from {{price:chem1}} and {{price:steam}}.",
-  "h1": "Bed bug services",
-  "eyebrow": "Services",
-  "lead": "Two treatment methods and one starting point: assess the affected areas first.",
-  "breadcrumb": [],
-  "blocks": [
-   {
-    "type": "hub",
-    "groups": [
-     {
-      "h2": "Treatments",
-      "intro": "We choose the method according to the extent of the problem and the affected surfaces.",
-      "items": [
-       {
-        "pageId": "PG-014",
-        "text": "Targeted application, with a cold fogging option. From {{price:chem1}}."
-       },
-       {
-        "pageId": "PG-013",
-        "text": "High-temperature heat, no insecticide in the steam step. From {{price:steam}}."
-       }
-      ]
-     },
-     {
-      "h2": "Method",
-      "items": [
-       {
-        "pageId": "PG-011",
-        "text": "How we combine inspection, treatment, follow-up and prevention."
-       }
-      ]
-     },
-     {
-      "h2": "More information",
-      "items": [
-       {
-        "pageId": "PG-030",
-        "text": "Short answers to common questions."
-       },
-       {
-        "pageId": "PG-073",
-        "text": "Documented cases, once they exist."
-       },
-       {
-        "pageId": "PG-012",
-        "text": "What is checked before recommending a method."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "priceBox",
-    "h2": "Prices"
-   }
-  ],
-  "faq": [],
-  "sources": []
- }
+  "id": "PG-010",
+  "template": "T-H",
+  "status": "Approved for indexing",
+  "dataPage": "hub",
+  "cta": {
+    "message": "default"
+  },
+  "es": {
+    "url": "/servicios/",
+    "title": "Servicios contra chinches de cama en Alicante y Costa Blanca",
+    "description": "Tratamiento químico dirigido, vapor seco o combinación, para viviendas y alojamientos turísticos de Alicante y la Costa Blanca. Desde {{price:chem1}} y {{price:steam}} (IVA incl.).",
+    "h1": "Servicios contra las chinches de cama",
+    "eyebrow": "Servicios",
+    "lead": "Dos métodos de tratamiento, solos o combinados, y un mismo punto de partida: valoro primero las zonas afectadas.",
+    "breadcrumb": [],
+    "blocks": [
+      {
+        "type": "text",
+        "id": "que-ofrezco",
+        "h2": "Qué servicios ofrezco",
+        "html": "<p>Me dedico solo a las chinches de cama. Hago personalmente la inspección, el tratamiento y el seguimiento, tanto en viviendas particulares como en alojamientos turísticos de Alicante y la Costa Blanca. Los tratamientos disponibles son el <strong>tratamiento químico dirigido</strong>, el <strong>vapor seco</strong>, la <strong>combinación de ambos</strong> y, solo cuando está justificado y el producto lo permite, la <strong>nebulización en frío (ULV)</strong> como complemento.</p><p>La inspección en el lugar forma parte del tratamiento contratado: no se ofrece como servicio independiente. Antes de reservar puedes enviarme fotos por WhatsApp para una primera orientación sin coste; una foto orienta, pero no sustituye a la inspección.</p>"
+      },
+      {
+        "type": "hub",
+        "groups": [
+          {
+            "h2": "Tratamientos",
+            "intro": "Elijo el método según el alcance del problema y las superficies afectadas.",
+            "items": [
+              {
+                "pageId": "PG-014",
+                "text": "Aplicación dirigida de productos autorizados, con nebulización en frío solo como complemento justificado. Desde {{price:chem1}}."
+              },
+              {
+                "pageId": "PG-013",
+                "text": "Calor localizado, sin insecticida en el paso de vapor. Desde {{price:steam}}."
+              }
+            ]
+          },
+          {
+            "h2": "Método y valoración",
+            "items": [
+              {
+                "pageId": "PG-011",
+                "text": "Cómo combino inspección, tratamiento, seguimiento y prevención."
+              },
+              {
+                "pageId": "PG-012",
+                "text": "Qué reviso antes de recomendar un método."
+              }
+            ]
+          },
+          {
+            "h2": "Alojamientos y zonas",
+            "items": [
+              {
+                "pageId": "PG-015",
+                "text": "Tratamiento coordinado con tus reservas para apartamentos, hoteles, hostales y pensiones."
+              },
+              {
+                "pageId": "PG-020",
+                "text": "Las 18 localidades donde trabajo y su desplazamiento."
+              }
+            ]
+          },
+          {
+            "h2": "Más información",
+            "items": [
+              {
+                "pageId": "PG-030",
+                "text": "Respuestas breves a las dudas habituales."
+              },
+              {
+                "pageId": "PG-073",
+                "text": "Fotografías reales de infestaciones, con explicación."
+              },
+              {
+                "pageId": "PG-072",
+                "text": "Listas de comprobación y formularios descargables."
+              },
+              {
+                "pageId": "PG-016",
+                "text": "Quién hace el trabajo y cómo me he formado."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "infographic",
+        "id": "IG-14"
+      },
+      {
+        "type": "text",
+        "id": "como-se-calcula",
+        "h2": "Cómo se calcula el precio",
+        "html": "<p>Cada tratamiento tiene un precio por intervención, con IVA incluido. El tratamiento químico depende del número de dormitorios; el vapor seco independiente parte de un importe mínimo; el vapor añadido a un tratamiento químico, los sofás y la nebulización en frío se suman como complementos. El desplazamiento es una tarifa fija por localidad y siempre aparece como línea aparte. Puedes calcularlo todo, con tu localidad, en la <a href=\"/precios.html#calculadora\">calculadora de precios</a>.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios"
+      }
+    ],
+    "faq": [],
+    "sources": []
+  },
+  "en": {
+    "url": "/en/services/",
+    "title": "Bed bug services in Alicante and the Costa Blanca | Control de Chinches",
+    "description": "Targeted chemical treatment, dry steam or a combination, for homes and holiday accommodation in Alicante and the Costa Blanca. From {{price:chem1}} and {{price:steam}} (VAT incl.).",
+    "h1": "Bed bug services",
+    "eyebrow": "Services",
+    "lead": "Two treatment methods, alone or combined, and one starting point: I assess the affected areas first.",
+    "breadcrumb": [],
+    "blocks": [
+      {
+        "type": "text",
+        "id": "what-i-offer",
+        "h2": "The services I offer",
+        "html": "<p>I only deal with bed bugs. I personally carry out the inspection, the treatment and the follow-up, both in private homes and in holiday accommodation in Alicante and the Costa Blanca. The treatments available are <strong>targeted chemical treatment</strong>, <strong>dry steam</strong>, <strong>a combination of both</strong> and, only when justified and permitted by the product, <strong>cold fogging (ULV)</strong> as a supplement.</p><p>The on-site inspection is part of the treatment that is ordered: it is not offered as a stand-alone service. Before booking you can send me photos by WhatsApp for a first orientation at no cost; a photo guides but does not replace the inspection.</p>"
+      },
+      {
+        "type": "hub",
+        "groups": [
+          {
+            "h2": "Treatments",
+            "intro": "I choose the method according to the extent of the problem and the affected surfaces.",
+            "items": [
+              {
+                "pageId": "PG-014",
+                "text": "Targeted application of authorised products, with cold fogging only as a justified supplement. From {{price:chem1}}."
+              },
+              {
+                "pageId": "PG-013",
+                "text": "Localised heat, no insecticide in the steam step. From {{price:steam}}."
+              }
+            ]
+          },
+          {
+            "h2": "Method and assessment",
+            "items": [
+              {
+                "pageId": "PG-011",
+                "text": "How I combine inspection, treatment, follow-up and prevention."
+              },
+              {
+                "pageId": "PG-012",
+                "text": "What I check before recommending a method."
+              }
+            ]
+          },
+          {
+            "h2": "Accommodation and areas",
+            "items": [
+              {
+                "pageId": "PG-015",
+                "text": "Treatment coordinated with your bookings for apartments, hotels, hostels and guesthouses."
+              },
+              {
+                "pageId": "PG-020",
+                "text": "The 18 towns where I work and their travel fee."
+              }
+            ]
+          },
+          {
+            "h2": "More information",
+            "items": [
+              {
+                "pageId": "PG-030",
+                "text": "Short answers to common questions."
+              },
+              {
+                "pageId": "PG-073",
+                "text": "Real photographs of infestations, with explanations."
+              },
+              {
+                "pageId": "PG-072",
+                "text": "Downloadable checklists and forms."
+              },
+              {
+                "pageId": "PG-016",
+                "text": "Who does the work and how I trained."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "infographic",
+        "id": "IG-14"
+      },
+      {
+        "type": "text",
+        "id": "how-the-price-is-calculated",
+        "h2": "How the price is calculated",
+        "html": "<p>Each treatment has a per-treatment price, VAT included. Chemical treatment depends on the number of bedrooms; stand-alone dry steam starts at a minimum amount; dry steam added to a chemical treatment, sofas and cold fogging are added as extras. Travel is a fixed fee per town and always appears as a separate line. You can work out everything, with your town, in the <a href=\"/en/prices.html#calculadora\">price calculator</a>.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices"
+      }
+    ],
+    "faq": [],
+    "sources": []
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  },
+  "related": [
+    "PG-011",
+    "PG-012",
+    "PG-013",
+    "PG-014",
+    "PG-015"
+  ]
 }

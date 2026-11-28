@@ -1,177 +1,203 @@
 {
- "id": "PG-022",
- "template": "T-A",
- "status": "Draft",
- "dataPage": "local",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-020",
-  "PG-011",
-  "PG-013",
-  "PG-014",
-  "PG-003",
-  "PG-021",
-  "PG-023"
- ],
- "_blocked": [
-  "OWNER-INPUT #3 confirm Benidorm is served; local facts (property types, travel rule)",
-  "photos IMG-LOC-BEN-01",
-  "LGL-01, LGL-08",
-  "no local case study exists (none is invented)"
- ],
- "offers": [
-  "chemical",
-  "steam"
- ],
- "areaServed": [
-  "Benidorm"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "apartamentos-turisticos-en-benidorm",
-    "h2": "Apartamentos turísticos en Benidorm",
-    "html": "<p>En un apartamento turístico importa actuar con rapidez, con discreción y sin perder de vista las próximas llegadas. El servicio permite coordinar la fecha y el acceso, revisar las unidades contiguas cuando está justificado y documentar lo que se hizo. Detalles en <a href=\"{{url:PG-015}}\">prevención y monitorización para alojamientos</a>.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-B2B-01"
-   },
-   {
-    "type": "text",
-    "id": "detectar-a-tiempo",
-    "h2": "Detectar a tiempo",
-    "html": "<p>La detección temprana evita que el problema se extienda: consulta la guía de <a href=\"{{url:PG-062}}\">detección temprana en apartamentos turísticos</a>. Una visita urgente depende de la capacidad disponible y no está garantizada el mismo día.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Precios"
-   },
-   {
-    "type": "cards",
-    "h2": "Servicios",
-    "items": [
-     {
-      "title": "Tratamiento químico",
-      "text": "Aplicación dirigida.",
-      "href": "/servicios/tratamiento-quimico/"
-     },
-     {
-      "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticida en el paso de vapor.",
-      "href": "/servicios/vapor-seco/"
-     },
-     {
-      "title": "Método (GIP)",
-      "text": "Valoración, tratamiento y seguimiento.",
-      "href": "/servicios/control-integrado/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente: localidad de salida y tarifa de desplazamiento (sin definir). La localidad está en el área aprobada. No se publican datos locales (tipos de vivienda, estadísticas, referencias) sin una fuente comprobable."
-   }
+  "id": "PG-022",
+  "template": "T-A",
+  "status": "Approved for indexing",
+  "dataPage": "local",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-020",
+    "PG-015",
+    "PG-011",
+    "PG-013",
+    "PG-014",
+    "PG-021",
+    "PG-023",
+    "PG-062",
+    "PG-061"
   ],
-  "faq": [
-   {
-    "q": "¿Atendéis apartamentos turísticos en Benidorm?",
-    "a": "Sí: apartamentos turísticos, pisos de alquiler vacacional y gestores de alojamientos. El presupuesto para varios inmuebles es individual."
-   },
-   {
-    "q": "¿Hay recargo por urgencia o fin de semana?",
-    "a": "No. La disponibilidad depende de la capacidad en ese momento."
-   }
+  "offers": [
+    "chemical",
+    "steam"
   ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Zonas",
-    "/zonas/"
-   ]
+  "areaServed": [
+    "Benidorm"
   ],
-  "url": "/zonas/benidorm/",
-  "title": "Chinches de cama en Benidorm: apartamentos turísticos",
-  "description": "Tratamiento de chinches en Benidorm con atención a apartamentos turísticos y gestores de alojamientos: coordinación con las llegadas, trabajo discreto y seguimiento.",
-  "h1": "Chinches de cama en Benidorm",
-  "eyebrow": "Zona de servicio · Benidorm",
-  "lead": "Pensado para apartamentos turísticos y gestores de alojamientos de Benidorm, y también para viviendas particulares.",
-  "heroImage": "IMG-LOC-BEN-01"
- },
- "en": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "tourist-apartments-in-benidorm",
-    "h2": "Tourist apartments in Benidorm",
-    "html": "<p>In a tourist apartment it matters to act quickly, discreetly and with the next arrivals in mind. The service lets you coordinate the date and access, check adjacent units when justified and document what was done. Details in <a href=\"{{url:PG-015}}\">prevention and monitoring for accommodation</a>.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-B2B-01"
-   },
-   {
-    "type": "text",
-    "id": "detect-early",
-    "h2": "Detect early",
-    "html": "<p>Early detection stops the problem from spreading: see the guide on <a href=\"{{url:PG-062}}\">early detection in tourist apartments</a>. An urgent visit depends on available capacity and is not guaranteed the same day.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Prices"
-   },
-   {
-    "type": "cards",
-    "h2": "Services",
-    "items": [
-     {
-      "title": "Chemical treatment",
-      "text": "Targeted application.",
-      "href": "/en/services/chemical-treatment/"
-     },
-     {
-      "title": "Dry steam",
-      "text": "Localised heat, no insecticide in the steam step.",
-      "href": "/en/services/dry-steam/"
-     },
-     {
-      "title": "Method (IPM)",
-      "text": "Assessment, treatment and follow-up.",
-      "href": "/en/services/integrated-pest-management/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pending: departure town and travel fee (not defined). The town is in the approved area. No local data (housing types, statistics, references) is published without a verifiable source."
-   }
-  ],
-  "faq": [
-   {
-    "q": "Do you serve tourist apartments in Benidorm?",
-    "a": "Yes: tourist apartments, holiday lets and accommodation managers. A quote for several properties is individual."
-   },
-   {
-    "q": "Is there an urgency or weekend surcharge?",
-    "a": "No. Availability depends on capacity at the time."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Areas",
-    "/en/areas/"
-   ]
-  ],
-  "url": "/en/areas/benidorm/",
-  "title": "Bed bug treatment in Benidorm: tourist apartments | Control de Chinches",
-  "description": "Bed bug treatment in Benidorm with a focus on tourist apartments and accommodation managers: coordination with arrivals, discreet work and follow-up.",
-  "h1": "Bed bugs in Benidorm",
-  "eyebrow": "Service area · Benidorm",
-  "lead": "Designed for tourist apartments and accommodation managers in Benidorm, and for private homes too.",
-  "heroImage": "IMG-LOC-BEN-01"
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "chinches-en-benidorm",
+        "h2": "Chinches de cama en Benidorm",
+        "html": "<p>Benidorm es uno de mis principales destinos de trabajo: un destino turístico con muchos apartamentos en edificios de varias plantas, hoteles, hostales y pensiones, además de viviendas de residentes. Si necesitas <strong>eliminar chinches en Benidorm</strong>, hago personalmente la inspección, el tratamiento y el seguimiento, con tratamiento químico dirigido, vapor seco o una combinación de ambos.</p><p>En un alojamiento turístico importan la rapidez, la discreción y no perder de vista las próximas llegadas. En una vivienda de residente, lo que más pesa suele ser la preparación de las habitaciones y la convivencia con niños o mascotas.</p>"
+      },
+      {
+        "type": "text",
+        "id": "apartamentos-hoteles-hostales",
+        "h2": "Apartamentos, hoteles, hostales y pensiones",
+        "html": "<p>Coordino la fecha y el acceso con tus reservas, reviso la unidad afectada y, cuando está justificado, las contiguas, y te explico cuándo puede volver a usarse la unidad. Trabajo por encargo: no ofrezco suscripciones ni inspecciones periódicas. Todos los detalles están en <a href=\"{{url:PG-015}}\">tratamiento de chinches para alojamientos turísticos</a>. Para varios inmuebles, el presupuesto es individual.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-B2B-01",
+        "compact": true
+      },
+      {
+        "type": "text",
+        "id": "detectar-a-tiempo",
+        "h2": "Detectar a tiempo",
+        "html": "<p>Revisar con regularidad entre huéspedes ayuda a acotar un problema antes de que afecte a más unidades, pero no evita por sí solo una infestación ni garantiza que no aparezca: las chinches llegan en el equipaje y en la ropa de personas de cualquier procedencia. La guía de <a href=\"{{url:PG-062}}\">detección temprana en apartamentos turísticos</a> explica cómo revisar, y el <a href=\"{{url:PG-072B}}\">registro de monitorización</a> sirve para anotar tus revisiones.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios en Benidorm",
+        "variant": "city",
+        "town": "Benidorm"
+      },
+      {
+        "type": "cards",
+        "h2": "Servicios",
+        "items": [
+          {
+            "title": "Tratamiento químico",
+            "text": "Aplicación dirigida de productos autorizados.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Vapor seco",
+            "text": "Calor localizado, sin insecticida en el paso de vapor.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Método (GIP)",
+            "text": "Valoración, tratamiento, seguimiento y prevención.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Atendéis apartamentos turísticos, hoteles y hostales en Benidorm?",
+        "a": "Sí: apartamentos turísticos, pisos de alquiler vacacional, hoteles, hostales, pensiones y gestores de alojamientos, además de viviendas y casas. El presupuesto para varios inmuebles es individual."
+      },
+      {
+        "q": "¿Cuánto cuesta el desplazamiento a Benidorm?",
+        "a": "{{travel:Benidorm}} por tratamiento (IVA incluido): es una tarifa fija y aparece como línea aparte. Por ejemplo, 3 dormitorios con vapor seco adicional son {{total:chem3+steamAddOn+Benidorm}} en total."
+      },
+      {
+        "q": "¿Hay recargo por urgencia o fin de semana?",
+        "a": "No. Un tratamiento urgente depende de la capacidad que tenga en ese momento y no está garantizado el mismo día."
+      },
+      {
+        "q": "¿Cómo puedo enviar los datos de mi apartamento?",
+        "a": "Con el formulario para apartamentos turísticos preparas el mensaje de WhatsApp, o puedes escribirme directamente con tu localidad y las unidades afectadas."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Zonas",
+        "/zonas/"
+      ]
+    ],
+    "url": "/zonas/benidorm/",
+    "title": "Tratamiento de chinches de cama en Benidorm: apartamentos, hoteles y viviendas",
+    "description": "Eliminar chinches en Benidorm: tratamiento de chinches de cama en apartamentos turísticos, hoteles, hostales, pensiones y viviendas. Desplazamiento {{travel:Benidorm}}; desde {{total:chem1+Benidorm}} (IVA incl.).",
+    "h1": "Tratamiento de chinches de cama en Benidorm",
+    "eyebrow": "Zona de servicio · Benidorm",
+    "lead": "Para apartamentos turísticos, hoteles, hostales y pensiones de Benidorm, y también para viviendas particulares y casas.",
+    "heroImage": "IMG-LOC-BEN-01"
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "bed-bugs-in-benidorm",
+        "h2": "Bed bugs in Benidorm",
+        "html": "<p>Benidorm is one of my main places of work: a tourist destination with many apartments in multi-storey buildings, hotels, hostels and guesthouses, as well as residents’ homes. If you need to <strong>get rid of bed bugs in Benidorm</strong>, I personally carry out the inspection, the treatment and the follow-up, with targeted chemical treatment, dry steam or a combination of both.</p><p>In holiday accommodation speed, discretion and keeping the next arrivals in mind matter. In a resident’s home, what weighs most is usually preparing the rooms and living with children or pets.</p>"
+      },
+      {
+        "type": "text",
+        "id": "apartments-hotels-hostels",
+        "h2": "Apartments, hotels, hostels and guesthouses",
+        "html": "<p>I coordinate the date and access with your bookings, inspect the affected unit and, when justified, the adjacent ones, and explain when the unit can be used again. I work on request: I do not offer subscriptions or regular inspections. All the details are in <a href=\"{{url:PG-015}}\">bed bug treatment for holiday accommodation</a>. For several properties the quote is individual.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-B2B-01",
+        "compact": true
+      },
+      {
+        "type": "text",
+        "id": "detect-early",
+        "h2": "Detecting early",
+        "html": "<p>Checking regularly between guests helps contain a problem before it affects more units, but it does not by itself prevent an infestation or guarantee that one will not appear: bed bugs arrive in the luggage and clothing of people from anywhere. The guide to <a href=\"{{url:PG-062}}\">early detection in holiday apartments</a> explains how to check, and the <a href=\"{{url:PG-072B}}\">monitoring log</a> is for noting your checks.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices in Benidorm",
+        "variant": "city",
+        "town": "Benidorm"
+      },
+      {
+        "type": "cards",
+        "h2": "Services",
+        "items": [
+          {
+            "title": "Chemical treatment",
+            "text": "Targeted application of authorised products.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Dry steam",
+            "text": "Localised heat, no insecticide in the steam step.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Method (IPM)",
+            "text": "Assessment, treatment, follow-up and prevention.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do you treat holiday apartments, hotels and hostels in Benidorm?",
+        "a": "Yes: holiday apartments, holiday lets, hotels, hostels, guesthouses and accommodation managers, as well as homes and houses. The quote for several properties is individual."
+      },
+      {
+        "q": "How much is travel to Benidorm?",
+        "a": "{{travel:Benidorm}} per treatment (VAT included): a fixed fee that appears as a separate line. For example, 3 bedrooms with additional dry steam come to {{total:chem3+steamAddOn+Benidorm}} in total."
+      },
+      {
+        "q": "Is there an urgency or weekend surcharge?",
+        "a": "No. An urgent treatment depends on the capacity I have at that moment and is not guaranteed for the same day."
+      },
+      {
+        "q": "How can I send the details of my apartment?",
+        "a": "With the holiday rental form you prepare the WhatsApp message, or you can message me directly with your town and the affected units."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Areas",
+        "/en/areas/"
+      ]
+    ],
+    "url": "/en/areas/benidorm/",
+    "title": "Bed bug treatment in Benidorm: apartments, hotels and homes | Control de Chinches",
+    "description": "Get rid of bed bugs in Benidorm: bed bug treatment in holiday apartments, hotels, hostels, guesthouses and homes. Travel {{travel:Benidorm}}; from {{total:chem1+Benidorm}} (VAT incl.).",
+    "h1": "Bed bug treatment in Benidorm",
+    "eyebrow": "Service area · Benidorm",
+    "lead": "For holiday apartments, hotels, hostels and guesthouses in Benidorm, and also for private homes and houses.",
+    "heroImage": "IMG-LOC-BEN-01"
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

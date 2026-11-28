@@ -48,7 +48,7 @@ export function build({ mode = 'preview', out = 'dist-preview', pageDirs = ['dat
     for (const lang of ['es', 'en']) {
       if (!page[lang]) continue;
       const html = renderPage({ ...base, page, lang, ui: ui[lang] });
-      if (mode === 'production' && base.prices.vat.status !== 'approved' && /(\d[\d.,]*\s?€|€\s?\d)/.test(html.replace(/<script[\s\S]*?<\/script>/g, ''))) throw new Error(`${page[lang].url}: shows a price while prices.json vat.status is "${base.prices.vat.status}" (LGL gate: VAT / consumer price presentation not final)`);
+      if (mode === 'production' && !(base.prices.vat.status === 'approved' || base.prices.vat.displayApprovedByOwner === true) && /(\d[\d.,]*\s?€|€\s?\d)/.test(html.replace(/<script[\s\S]*?<\/script>/g, ''))) throw new Error(`${page[lang].url}: shows a price while prices.json vat.status is "${base.prices.vat.status}" (LGL gate: VAT / consumer price presentation not approved by the owner)`);
       if (mode === 'production') { const dead = deadLinks(base, html); if (dead.length) throw new Error(`${page[lang].url}: links to unpublished pages: ${dead.join(', ')}`); } // last-resort gate
       const file = join(outAbs, page[lang].url, 'index.html');
       mkdirSync(dirname(file), { recursive: true }); writeFileSync(file, html);

@@ -41,7 +41,7 @@ export function jsonld(ctx, crumbs) {
 }
 
 // ---------- shared pieces ----------
-function heroImage(ctx, L, eager = true) { return L.heroImage && !skipOptional(ctx, L.heroImage) ? `<figure class="sx-hero-media">${picture(ctx, L.heroImage, { eager, sizes: '(min-width: 990px) 34rem, 100vw' })}</figure>` : ''; }
+function heroImage(ctx, L, eager = true) { return L.heroImage && !skipOptional(ctx, L.heroImage) ? `<figure class="sx-hero-media"${L.heroPosition ? ` style="--hero-pos:${esc(L.heroPosition)}"` : ''}>${picture(ctx, L.heroImage, { eager, sizes: '(min-width: 990px) 50vw, 100vw' })}${ctx.images[L.heroImage]?.provenance === 'ai' && ctx.images[L.heroImage]?.caption?.[ctx.lang] ? `<figcaption class="sx-hero-credit">${esc(ctx.images[L.heroImage].caption[ctx.lang])}</figcaption>` : ''}</figure>` : ''; }
 function heroNavy(ctx, variant = '') {
   const { page, lang, ui } = ctx, L = page[lang], c = ui.cta, key = page.cta?.message || 'default';
   const media = heroImage(ctx, L);

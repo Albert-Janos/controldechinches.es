@@ -23,7 +23,13 @@ export const vatLabel = (p, lang) => (lang === 'en' ? `${p.vat.ratePercent}%` : 
 // every number a generated page may legitimately show (net, consumer, both decimal styles) - used by the validator
 export function allowedNumbers(p) {
   const out = new Set();
-  for (const net of [...Object.values(netPrices(p)), ...p.travel.towns.map(t => t.net)]) { out.add(String(net)); const g = grossCents(p, net); out.add(`${Math.floor(g / 100)},${String(g % 100).padStart(2, '0')}`); out.add(`${Math.floor(g / 100)}.${String(g % 100).padStart(2, '0')}`); out.add(String(g / 100)); }
+  const add = net => { const g = grossCents(p, net); out.add(String(net)); out.add(`${Math.floor(g / 100)},${String(g % 100).padStart(2, '0')}`); out.add(`${Math.floor(g / 100)}.${String(g % 100).padStart(2, '0')}`); out.add(String(g / 100)); };
+  const nets = netPrices(p), travel = [0, ...p.travel.towns.map(t => t.net)];
+  for (const net of [...Object.values(nets), ...travel]) add(net);
+  // every complete total the pages / calculator may show: chemical (1..max bedrooms) or stand-alone steam, + steam add-on, sofas, ULV, + a town's travel fee
+  const c = p.chemical.bedroomPrices, base = n => (n <= c.length ? c[n - 1] : c[c.length - 1] + (n - c.length) * p.chemical.additionalBedroom);
+  const mains = [...Array.from({ length: p.chemical.maxBedroomsInCalculator }, (_, i) => base(i + 1)), nets.steam];
+  for (const m of mains) for (const sa of [0, nets.steamAddOn]) for (let s = 0; s <= p.extras.sofa.max; s++) for (const u of [0, nets.ulv]) for (const t of travel) add(m + sa + s * nets.sofa + u + t);
   return out;
 }
 export function resolveTokens(ctx, html) {

@@ -1,216 +1,214 @@
 {
- "id": "PG-012",
- "template": "T-B",
- "status": "Draft",
- "dataPage": "service",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-011",
-  "PG-013",
-  "PG-014"
- ],
- "_blocked": [
-  "OWNER-INPUT #7 (partly closed: inspection workflow and tools given 2026-11-27; documentation practice not systematic)",
-  "photos IMG-INS-*",
-  "LGL-01",
-  "professional review"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "para-que-sirve",
-    "h2": "Para qué sirve la inspección",
-    "html": "<p>La inspección busca confirmar si hay chinches, dónde están y qué extensión tiene el problema. Con eso se elige el método y se decide el alcance del tratamiento. Forma parte del <a href=\"/servicios/control-integrado/\">proceso de control integrado</a>.</p>"
-   },
-   {
-    "type": "text",
-    "id": "antes-de-ir",
-    "h2": "Antes de ir: conversación y fotos por WhatsApp",
-    "html": "<p>El técnico pregunta cuándo se notó algo por primera vez, si hubo un tratamiento o productos caseros, en qué habitación se duerme y dónde aparecen las picaduras y otros indicios.</p><p>Puedes enviar fotos por WhatsApp sin coste para una primera orientación. Una foto permite orientar, pero no sustituye a la inspección: que no se vea nada en una foto no descarta una infestación, y que sí se vea algo no equivale a un diagnóstico.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-INS-05"
-   },
-   {
-    "type": "text",
-    "id": "en-el-lugar",
-    "h2": "Cómo es la inspección en el lugar",
-    "html": "<p>El técnico recorre estos puntos:</p><ul><li>colchón y costuras;</li><li>somier, base de cama y cabecero, desmontando parcialmente la cama si hace falta;</li><li>muebles cercanos;</li><li>rodapiés, grietas accesibles y juntas;</li><li>otras habitaciones cuando el caso lo justifica.</li></ul><p>Busca ejemplares vivos, huevos, manchas oscuras de excrementos y mudas, y con ello estima la gravedad y la extensión. No siempre se documenta con fotos de forma sistemática.</p>"
-   },
-   {
-    "type": "text",
-    "id": "herramientas",
-    "h2": "Herramientas",
-    "html": "<ul><li>linterna de mano potente y linterna frontal;</li><li>lupa;</li><li>espejo de inspección;</li><li>herramientas manuales para desmontar parcialmente la cama;</li><li>trampas de monitorización.</li></ul>"
-   },
-   {
-    "type": "text",
-    "id": "que-indicios",
-    "h2": "Qué indicios se buscan",
-    "html": "<p>Cada recurso de la web cumple una función distinta: la <a href=\"/guia-chinches/como-saber-si-tengo-chinches/\">guía para saber si tienes chinches</a> explica los indicios con detalle, el <a href=\"/atlas-chinches/\">atlas fotográfico</a> permite compararlos y el <a href=\"/identificador-chinches/\">identificador</a> orienta sobre el siguiente paso. Esta página describe el servicio, no repite esas guías.</p>"
-   },
-   {
-    "type": "text",
-    "id": "que-se-decide",
-    "h2": "Después de la inspección",
-    "html": "<p>Con lo que se encuentra se define la estrategia: tratamiento químico dirigido, vapor seco o una combinación, según el caso. Una inspección sin hallazgos tampoco descarta por completo una infestación.</p>"
-   },
-   {
-    "type": "cards",
-    "h2": "Después de la inspección",
-    "items": [
-     {
-      "title": "Tratamiento químico",
-      "text": "Aplicación dirigida según el alcance.",
-      "href": "/servicios/tratamiento-quimico/"
-     },
-     {
-      "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticida en el paso de vapor.",
-      "href": "/servicios/vapor-seco/"
-     }
-    ]
-   },
-   {
-    "type": "text",
-    "id": "condiciones",
-    "h2": "Condiciones",
-    "html": "<p>La inspección en el lugar forma parte del tratamiento contratado; no se ofrece como servicio independiente ni como visita aparte. Los clientes particulares reciben el resultado de forma verbal. Esa información verbal no sustituye la documentación del tratamiento que pueda exigir la normativa.</p>"
-   }
+  "id": "PG-012",
+  "template": "T-B",
+  "status": "Approved for indexing",
+  "dataPage": "service",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-011",
+    "PG-013",
+    "PG-014"
   ],
-  "faq": [
-   {
-    "q": "¿Puedo saber si tengo chinches solo por las picaduras?",
-    "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches, y una revisión sin hallazgos tampoco descarta por completo una infestación. La guía de identificación explica qué indicios buscar."
-   },
-   {
-    "q": "¿Puedo reservar solo la inspección?",
-    "a": "No. La inspección en el lugar forma parte del tratamiento contratado; no se ofrece como servicio independiente."
-   },
-   {
-    "q": "¿Puedo enviar fotos antes de decidir?",
-    "a": "Sí, por WhatsApp y sin coste. Sirven como orientación inicial, pero no sustituyen a la inspección."
-   },
-   {
-    "q": "¿Recibiré un informe escrito?",
-    "a": "Los clientes particulares reciben el resultado de forma verbal. Para alojamientos y empresas consulta prevención y monitorización."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Servicios",
-    "/servicios/"
-   ]
-  ],
-  "url": "/servicios/inspeccion-diagnostico/",
-  "title": "Inspección y diagnóstico de chinches de cama",
-  "description": "Cómo es la inspección de chinches en el lugar: entrevista previa, revisión de colchón, somier y escondites, herramientas y qué ocurre después.",
-  "h1": "Inspección y diagnóstico de chinches",
-  "eyebrow": "Servicio · Alicante y Costa Blanca",
-  "lead": "Antes de tratar, valoramos los indicios y el alcance del problema.",
-  "heroImage": "IMG-INS-01"
- },
- "en": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "what-it-is-for",
-    "h2": "What the inspection is for",
-    "html": "<p>The inspection aims to confirm whether there are bed bugs, where they are and how far the problem extends. That decides the method and the scope of treatment. It is part of the <a href=\"/en/services/integrated-pest-management/\">integrated pest management process</a>.</p>"
-   },
-   {
-    "type": "text",
-    "id": "before-the-visit",
-    "h2": "Before the visit: conversation and photos by WhatsApp",
-    "html": "<p>The technician asks when something was first noticed, whether there was a treatment or home remedies, which room is slept in and where the bites and other signs appear.</p><p>You can send photos by WhatsApp at no cost for a first orientation. A photo can guide, but it does not replace the inspection: seeing nothing in a photo does not rule out an infestation, and seeing something is not a diagnosis.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-INS-05"
-   },
-   {
-    "type": "text",
-    "id": "on-site",
-    "h2": "What the on-site inspection involves",
-    "html": "<p>The technician goes through:</p><ul><li>the mattress and its seams;</li><li>the bed frame, base and headboard, partly dismantling the bed if needed;</li><li>nearby furniture;</li><li>baseboards, accessible cracks and joints;</li><li>other rooms when the case justifies it.</li></ul><p>He looks for live insects, eggs, dark spots (excreta) and moults, and uses them to estimate severity and extent. It is not always documented systematically with photos.</p>"
-   },
-   {
-    "type": "text",
-    "id": "tools",
-    "h2": "Tools",
-    "html": "<ul><li>a strong hand torch and a head torch;</li><li>a magnifying glass;</li><li>an inspection mirror;</li><li>hand tools to partly dismantle the bed;</li><li>monitoring traps.</li></ul>"
-   },
-   {
-    "type": "text",
-    "id": "which-signs",
-    "h2": "Which signs are looked for",
-    "html": "<p>Each resource on this site has a different role: the <a href=\"/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/\">guide to telling if you have bed bugs</a> explains the signs in detail, the <a href=\"/en/bed-bug-atlas/\">photo atlas</a> lets you compare them and the <a href=\"/en/bed-bug-identifier/\">identifier</a> suggests the next step. This page describes the service and does not repeat those guides.</p>"
-   },
-   {
-    "type": "text",
-    "id": "what-is-decided",
-    "h2": "After the inspection",
-    "html": "<p>What is found defines the strategy: targeted chemical treatment, dry steam or a combination, depending on the case. An inspection that finds nothing does not completely rule out an infestation either.</p>"
-   },
-   {
-    "type": "cards",
-    "h2": "After the inspection",
-    "items": [
-     {
-      "title": "Chemical treatment",
-      "text": "Targeted application according to the extent.",
-      "href": "/en/services/chemical-treatment/"
-     },
-     {
-      "title": "Dry steam",
-      "text": "Localised heat, no insecticide in the steam step.",
-      "href": "/en/services/dry-steam/"
-     }
-    ]
-   },
-   {
-    "type": "text",
-    "id": "conditions",
-    "h2": "Conditions",
-    "html": "<p>The on-site inspection is part of the treatment that is ordered; it is not offered as a stand-alone service or a separate visit. Private clients receive the result verbally. That verbal information does not replace any treatment documentation the regulations may require.</p>"
-   }
-  ],
-  "faq": [
-   {
-    "q": "Can I tell if I have bed bugs from bites alone?",
-    "a": "No. Bites alone cannot confirm that you have bed bugs, and an inspection that finds nothing does not completely rule out an infestation either. The identification guide explains which signs to look for."
-   },
-   {
-    "q": "Can I book just the inspection?",
-    "a": "No. The on-site inspection is part of the treatment that is ordered; it is not offered as a stand-alone service."
-   },
-   {
-    "q": "Can I send photos before deciding?",
-    "a": "Yes, by WhatsApp and at no cost. They give a first orientation but do not replace the inspection."
-   },
-   {
-    "q": "Will I get a written report?",
-    "a": "Private clients receive the result verbally. For accommodation and businesses see prevention and monitoring."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Services",
-    "/en/services/"
-   ]
-  ],
-  "url": "/en/services/inspection-diagnosis/",
-  "title": "Bed bug inspection and diagnosis | Control de Chinches",
-  "description": "How the on-site bed bug inspection works: the initial interview, checking the mattress, bed frame and hiding places, the tools used and what happens next.",
-  "h1": "Bed bug inspection and diagnosis",
-  "eyebrow": "Service · Alicante and the Costa Blanca",
-  "lead": "Before treating, we assess the signs and the extent of the problem.",
-  "heroImage": "IMG-INS-01"
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "para-que-sirve",
+        "h2": "Para qué sirve la inspección",
+        "html": "<p>La inspección busca confirmar si hay chinches, dónde están y qué extensión tiene el problema. Con eso se elige el método y se decide el alcance del tratamiento. Forma parte del <a href=\"/servicios/control-integrado/\">proceso de control integrado</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "antes-de-ir",
+        "h2": "Antes de ir: conversación y fotos por WhatsApp",
+        "html": "<p>Te pregunto cuándo notaste algo por primera vez, si hubo un tratamiento o productos caseros, en qué habitación se duerme y dónde aparecen las picaduras y otros indicios.</p><p>Puedes enviar fotos por WhatsApp sin coste para una primera orientación. Una foto permite orientar, pero no sustituye a la inspección y no garantiza un diagnóstico seguro: que no se vea nada en una foto no descarta una infestación, y que sí se vea algo no equivale a un diagnóstico.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-INS-05"
+      },
+      {
+        "type": "text",
+        "id": "en-el-lugar",
+        "h2": "Cómo es la inspección en el lugar",
+        "html": "<p>Reviso estos puntos:</p><ul><li>colchón y costuras;</li><li>somier, base de cama y cabecero, desmontando parcialmente la cama si hace falta;</li><li>muebles cercanos;</li><li>rodapiés, grietas accesibles y juntas;</li><li>otras habitaciones cuando el caso lo justifica.</li></ul><p>Busco ejemplares vivos, huevos, manchas oscuras de excrementos y mudas, y con ello estimo la gravedad y la extensión. No siempre se documenta con fotos de forma sistemática.</p>"
+      },
+      {
+        "type": "text",
+        "id": "herramientas",
+        "h2": "Herramientas",
+        "html": "<ul><li>linterna de mano potente y linterna frontal;</li><li>lupa;</li><li>espejo de inspección;</li><li>herramientas manuales para desmontar parcialmente la cama;</li><li>trampas de monitorización.</li></ul>"
+      },
+      {
+        "type": "text",
+        "id": "que-indicios",
+        "h2": "Qué indicios se buscan",
+        "html": "<p>Cada recurso de la web cumple una función distinta: la <a href=\"/guia-chinches/como-saber-si-tengo-chinches/\">guía para saber si tienes chinches</a> explica los indicios con detalle, el <a href=\"/atlas-chinches/\">atlas fotográfico</a> permite compararlos y el <a href=\"/identificador-chinches/\">identificador</a> orienta sobre el siguiente paso. Esta página describe el servicio, no repite esas guías.</p>"
+      },
+      {
+        "type": "text",
+        "id": "que-se-decide",
+        "h2": "Después de la inspección",
+        "html": "<p>Con lo que se encuentra se define la estrategia: tratamiento químico dirigido, vapor seco o una combinación, según el caso. Una inspección sin hallazgos tampoco descarta por completo una infestación.</p>"
+      },
+      {
+        "type": "cards",
+        "h2": "Opciones de tratamiento",
+        "items": [
+          {
+            "title": "Tratamiento químico",
+            "text": "Aplicación dirigida según el alcance.",
+            "href": "/servicios/tratamiento-quimico/"
+          },
+          {
+            "title": "Vapor seco",
+            "text": "Calor localizado, sin insecticida en el paso de vapor.",
+            "href": "/servicios/vapor-seco/"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "condiciones",
+        "h2": "Condiciones",
+        "html": "<p>La inspección en el lugar forma parte del tratamiento contratado; no se ofrece como servicio independiente ni como visita aparte. A los clientes particulares les explico el resultado de forma verbal. Esa información verbal no sustituye la documentación del tratamiento que pueda exigir la normativa.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo saber si tengo chinches solo por las picaduras?",
+        "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches, y una revisión sin hallazgos tampoco descarta por completo una infestación. La guía de identificación explica qué indicios buscar."
+      },
+      {
+        "q": "¿Puedo reservar solo la inspección?",
+        "a": "No. La inspección en el lugar forma parte del tratamiento contratado; no se ofrece como servicio independiente."
+      },
+      {
+        "q": "¿Puedo enviar fotos antes de decidir?",
+        "a": "Sí, por WhatsApp y sin coste. Sirven como orientación inicial, pero no sustituyen a la inspección."
+      },
+      {
+        "q": "¿Recibiré un informe escrito?",
+        "a": "A los clientes particulares les explico el resultado de forma verbal. Para alojamientos y empresas consulta el tratamiento en alojamientos turísticos."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Servicios",
+        "/servicios/"
+      ]
+    ],
+    "url": "/servicios/inspeccion-diagnostico/",
+    "title": "Inspección y diagnóstico de chinches de cama",
+    "description": "Cómo es la inspección de chinches en el lugar: entrevista previa, revisión de colchón, somier y escondites, herramientas y qué ocurre después.",
+    "h1": "Inspección y diagnóstico de chinches",
+    "eyebrow": "Servicio · Alicante y Costa Blanca",
+    "lead": "Antes de tratar, valoro los indicios y el alcance del problema.",
+    "heroImage": "IMG-INS-01"
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "what-it-is-for",
+        "h2": "What the inspection is for",
+        "html": "<p>The inspection aims to confirm whether there are bed bugs, where they are and how far the problem extends. That decides the method and the scope of treatment. It is part of the <a href=\"/en/services/integrated-pest-management/\">integrated pest management process</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "before-the-visit",
+        "h2": "Before the visit: conversation and photos by WhatsApp",
+        "html": "<p>I ask when you first noticed something, whether there was a treatment or home remedies, which room is slept in and where the bites and other signs appear.</p><p>You can send photos by WhatsApp at no cost for a first orientation. A photo can guide, but it does not replace the inspection and cannot guarantee a certain diagnosis: seeing nothing in a photo does not rule out an infestation, and seeing something is not a diagnosis.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-INS-05"
+      },
+      {
+        "type": "text",
+        "id": "on-site",
+        "h2": "What the on-site inspection involves",
+        "html": "<p>I go through:</p><ul><li>the mattress and its seams;</li><li>the bed frame, base and headboard, partly dismantling the bed if needed;</li><li>nearby furniture;</li><li>baseboards, accessible cracks and joints;</li><li>other rooms when the case justifies it.</li></ul><p>I look for live insects, eggs, dark spots (excreta) and moults, and use them to estimate severity and extent. It is not always documented systematically with photos.</p>"
+      },
+      {
+        "type": "text",
+        "id": "tools",
+        "h2": "Tools",
+        "html": "<ul><li>a strong hand torch and a head torch;</li><li>a magnifying glass;</li><li>an inspection mirror;</li><li>hand tools to partly dismantle the bed;</li><li>monitoring traps.</li></ul>"
+      },
+      {
+        "type": "text",
+        "id": "which-signs",
+        "h2": "Which signs are looked for",
+        "html": "<p>Each resource on this site has a different role: the <a href=\"/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/\">guide to telling if you have bed bugs</a> explains the signs in detail, the <a href=\"/en/bed-bug-atlas/\">photo atlas</a> lets you compare them and the <a href=\"/en/bed-bug-identifier/\">identifier</a> suggests the next step. This page describes the service and does not repeat those guides.</p>"
+      },
+      {
+        "type": "text",
+        "id": "what-is-decided",
+        "h2": "After the inspection",
+        "html": "<p>What is found defines the strategy: targeted chemical treatment, dry steam or a combination, depending on the case. An inspection that finds nothing does not completely rule out an infestation either.</p>"
+      },
+      {
+        "type": "cards",
+        "h2": "Treatment options",
+        "items": [
+          {
+            "title": "Chemical treatment",
+            "text": "Targeted application according to the extent.",
+            "href": "/en/services/chemical-treatment/"
+          },
+          {
+            "title": "Dry steam",
+            "text": "Localised heat, no insecticide in the steam step.",
+            "href": "/en/services/dry-steam/"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "conditions",
+        "h2": "Conditions",
+        "html": "<p>The on-site inspection is part of the treatment that is ordered; it is not offered as a stand-alone service or a separate visit. With private clients I explain the result verbally. That verbal information does not replace any treatment documentation the regulations may require.</p>"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I tell if I have bed bugs from bites alone?",
+        "a": "No. Bites alone cannot confirm that you have bed bugs, and an inspection that finds nothing does not completely rule out an infestation either. The identification guide explains which signs to look for."
+      },
+      {
+        "q": "Can I book just the inspection?",
+        "a": "No. The on-site inspection is part of the treatment that is ordered; it is not offered as a stand-alone service."
+      },
+      {
+        "q": "Can I send photos before deciding?",
+        "a": "Yes, by WhatsApp and at no cost. They give a first orientation but do not replace the inspection."
+      },
+      {
+        "q": "Will I get a written report?",
+        "a": "With private clients I explain the result verbally. For accommodation and businesses see treatment in holiday accommodation."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Services",
+        "/en/services/"
+      ]
+    ],
+    "url": "/en/services/inspection-diagnosis/",
+    "title": "Bed bug inspection and diagnosis | Control de Chinches",
+    "description": "How the on-site bed bug inspection works: the initial interview, checking the mattress, bed frame and hiding places, the tools used and what happens next.",
+    "h1": "Bed bug inspection and diagnosis",
+    "eyebrow": "Service · Alicante and the Costa Blanca",
+    "lead": "Before treating, I assess the signs and the extent of the problem.",
+    "heroImage": "IMG-INS-01"
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

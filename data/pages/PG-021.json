@@ -1,177 +1,237 @@
 {
- "id": "PG-021",
- "template": "T-A",
- "status": "Draft",
- "dataPage": "local",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-020",
-  "PG-011",
-  "PG-013",
-  "PG-014",
-  "PG-003",
-  "PG-022",
-  "PG-023"
- ],
- "_blocked": [
-  "OWNER-INPUT #3 confirm Alicante is served; local facts (property types, travel rule)",
-  "photos IMG-LOC-ALC-01",
-  "LGL-01, LGL-08",
-  "no local case study exists (none is invented)"
- ],
- "offers": [
-  "chemical",
-  "steam"
- ],
- "areaServed": [
-  "Alicante"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "servicio-en-alicante",
-    "h2": "El servicio en Alicante",
-    "html": "<p>El trabajo lo hace personalmente un técnico especializado solo en chinches de cama: entrevista, inspección, tratamiento y seguimiento. Este servicio se dirige sobre todo a viviendas de particulares.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-LOC-ALC-02"
-   },
-   {
-    "type": "text",
-    "id": "antes-de-pedir",
-    "h2": "Antes de pedir presupuesto",
-    "html": "<p>Puedes enviar fotos por WhatsApp sin coste para una primera orientación. Indica la dirección aproximada, cuántos dormitorios están afectados y desde cuándo notas algo. Con eso se orienta el método, aunque la inspección en el lugar forma parte del tratamiento contratado. Ver <a href=\"{{url:PG-011}}\">cómo se trabaja</a>.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Precios"
-   },
-   {
-    "type": "cards",
-    "h2": "Servicios",
-    "items": [
-     {
-      "title": "Tratamiento químico",
-      "text": "Aplicación dirigida.",
-      "href": "/servicios/tratamiento-quimico/"
-     },
-     {
-      "title": "Vapor seco",
-      "text": "Calor localizado, sin insecticida en el paso de vapor.",
-      "href": "/servicios/vapor-seco/"
-     },
-     {
-      "title": "Método (GIP)",
-      "text": "Valoración, tratamiento y seguimiento.",
-      "href": "/servicios/control-integrado/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente: localidad de salida y tarifa de desplazamiento (sin definir). La localidad está en el área aprobada. No se publican datos locales (tipos de vivienda, estadísticas, referencias) sin una fuente comprobable."
-   }
+  "id": "PG-021",
+  "template": "T-A",
+  "status": "Approved for indexing",
+  "dataPage": "local",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-020",
+    "PG-011",
+    "PG-013",
+    "PG-014",
+    "PG-015",
+    "PG-022",
+    "PG-023",
+    "PG-030",
+    "PG-044"
   ],
-  "faq": [
-   {
-    "q": "¿Cuánto tarda en venir a Alicante?",
-    "a": "Depende de la capacidad en cada momento. No se garantiza una visita el mismo día."
-   },
-   {
-    "q": "¿Puedo enviar fotos antes de reservar?",
-    "a": "Sí, por WhatsApp y sin coste, como orientación inicial."
-   }
+  "offers": [
+    "chemical",
+    "steam"
   ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Zonas",
-    "/zonas/"
-   ]
+  "areaServed": [
+    "Alicante"
   ],
-  "url": "/zonas/alicante/",
-  "title": "Chinches de cama en Alicante: tratamiento para viviendas",
-  "description": "Tratamiento de chinches de cama en Alicante para viviendas: valoración por WhatsApp, tratamiento químico dirigido, vapor seco o combinación.",
-  "h1": "Chinches de cama en Alicante",
-  "eyebrow": "Zona de servicio · Alicante",
-  "lead": "Servicio para particulares en Alicante: cuéntanos qué has visto y recibirás orientación por WhatsApp.",
-  "heroImage": "IMG-LOC-ALC-01"
- },
- "en": {
-  "blocks": [
-   {
-    "type": "text",
-    "id": "service-in-alicante",
-    "h2": "The service in Alicante",
-    "html": "<p>The work is done personally by a technician who specialises only in bed bugs: interview, inspection, treatment and follow-up. This service is aimed mainly at private homes.</p>"
-   },
-   {
-    "type": "figure",
-    "image": "IMG-LOC-ALC-02"
-   },
-   {
-    "type": "text",
-    "id": "before-you-ask-for-a-quote",
-    "h2": "Before asking for a quote",
-    "html": "<p>You can send photos by WhatsApp at no cost for a first orientation. Give the approximate address, how many bedrooms are affected and since when you have noticed something. That guides the method, although the on-site inspection is part of the treatment ordered. See <a href=\"{{url:PG-011}}\">how the work is done</a>.</p>"
-   },
-   {
-    "type": "priceBox",
-    "h2": "Prices"
-   },
-   {
-    "type": "cards",
-    "h2": "Services",
-    "items": [
-     {
-      "title": "Chemical treatment",
-      "text": "Targeted application.",
-      "href": "/en/services/chemical-treatment/"
-     },
-     {
-      "title": "Dry steam",
-      "text": "Localised heat, no insecticide in the steam step.",
-      "href": "/en/services/dry-steam/"
-     },
-     {
-      "title": "Method (IPM)",
-      "text": "Assessment, treatment and follow-up.",
-      "href": "/en/services/integrated-pest-management/"
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pending: departure town and travel fee (not defined). The town is in the approved area. No local data (housing types, statistics, references) is published without a verifiable source."
-   }
-  ],
-  "faq": [
-   {
-    "q": "How long does it take to get to Alicante?",
-    "a": "It depends on capacity at the time. A same-day visit is not guaranteed."
-   },
-   {
-    "q": "Can I send photos before booking?",
-    "a": "Yes, by WhatsApp and at no cost, as an initial orientation."
-   }
-  ],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Areas",
-    "/en/areas/"
-   ]
-  ],
-  "url": "/en/areas/alicante/",
-  "title": "Bed bug treatment in Alicante for homes | Control de Chinches",
-  "description": "Bed bug treatment in Alicante for homes: assessment by WhatsApp, targeted chemical treatment, dry steam or a combination.",
-  "h1": "Bed bugs in Alicante",
-  "eyebrow": "Service area · Alicante",
-  "lead": "A service for private clients in Alicante: tell us what you have seen and you will get guidance by WhatsApp.",
-  "heroImage": "IMG-LOC-ALC-01"
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "servicio-en-alicante",
+        "h2": "Chinches de cama en Alicante",
+        "html": "<p>En Alicante el desplazamiento <strong>no tiene coste</strong>. Atiendo pisos, casas, apartamentos de alquiler y pequeños alojamientos de la ciudad, con tratamiento químico dirigido, vapor seco o una combinación de ambos. Hago personalmente la inspección, el tratamiento y el seguimiento.</p><p>Si buscas cómo <strong>eliminar chinches en Alicante</strong>, lo primero es confirmar que son chinches y dónde están: las picaduras por sí solas no bastan. Puedes enviarme fotos por WhatsApp sin coste y te digo qué veo, aunque una foto no sustituye a la inspección en el lugar.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-LOC-ALC-02"
+      },
+      {
+        "type": "text",
+        "id": "pisos-y-casas",
+        "h2": "En un piso o en una casa",
+        "html": "<p>En un <strong>piso de un edificio con varias viviendas</strong> las chinches pueden pasar de una vivienda a otra por huecos de paredes y conducciones, así que aviso de la conveniencia de revisar las viviendas contiguas y de coordinarte con tus vecinos. En una <strong>casa unifamiliar</strong> hay más estancias, muebles y zonas que revisar y, a veces, más de un dormitorio afectado, algo que se refleja en el precio por dormitorios.</p><p>Si tu vivienda es un apartamento que alquilas a turistas, mira el <a href=\"{{url:PG-015}}\">servicio para alojamientos</a> y la guía de <a href=\"{{url:PG-062}}\">detección temprana</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "metodo",
+        "h2": "Tratamiento químico, vapor seco o ambos",
+        "html": "<p>Elijo el método según la gravedad, las superficies, los niños o mascotas y lo que permita cada producto: el <a href=\"{{url:PG-014}}\">tratamiento químico</a> aplica productos autorizados en las zonas afectadas; el <a href=\"{{url:PG-013}}\">vapor seco</a> usa calor localizado, sin insecticida en el paso de vapor; y puedo combinarlos cuando el caso lo justifica. Ningún método garantiza eliminar todas las chinches en una sola visita.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios en Alicante",
+        "variant": "city",
+        "town": "Alicante"
+      },
+      {
+        "type": "steps",
+        "h2": "Cómo reservar en Alicante",
+        "items": [
+          {
+            "h3": "Cuéntame tu caso",
+            "p": "Escríbeme por WhatsApp con fotos y cuántos dormitorios están afectados."
+          },
+          {
+            "h3": "Calcula el presupuesto",
+            "p": "Con la calculadora ves el total con IVA, sin desplazamiento, y lo puedes enviar por WhatsApp."
+          },
+          {
+            "h3": "Fecha",
+            "p": "Acordamos la fecha según mi capacidad; un tratamiento urgente no se garantiza para el mismo día."
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "h2": "Servicios",
+        "items": [
+          {
+            "title": "Tratamiento químico",
+            "text": "Aplicación dirigida de productos autorizados.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Vapor seco",
+            "text": "Calor localizado, sin insecticida en el paso de vapor.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Método (GIP)",
+            "text": "Valoración, tratamiento, seguimiento y prevención.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cobras desplazamiento en Alicante?",
+        "a": "No: el desplazamiento a Alicante cuesta 0 €. Aun así aparece como una línea aparte en el presupuesto, con su importe, para que veas exactamente de qué se compone el precio."
+      },
+      {
+        "q": "¿Cuánto cuesta un tratamiento en un piso de un dormitorio en Alicante?",
+        "a": "El tratamiento químico para 1 dormitorio es {{price:chem1}} (IVA incluido) y el desplazamiento es gratuito: {{total:chem1+Alicante}} en total. El vapor seco independiente parte de {{price:steam}}."
+      },
+      {
+        "q": "¿Puedo enviar fotos antes de reservar?",
+        "a": "Sí, por WhatsApp y sin coste, como orientación inicial. La inspección en el lugar forma parte del tratamiento contratado."
+      },
+      {
+        "q": "¿Cuánto tardas en venir?",
+        "a": "Depende de la capacidad que tenga en ese momento. No se garantiza una visita el mismo día; escríbeme para consultar una fecha."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Zonas",
+        "/zonas/"
+      ]
+    ],
+    "url": "/zonas/alicante/",
+    "title": "Tratamiento de chinches de cama en Alicante: viviendas y alojamientos",
+    "description": "Eliminar chinches de cama en Alicante: tratamiento químico dirigido, vapor seco o combinación en pisos, casas y alojamientos. Desplazamiento gratuito; desde {{total:chem1+Alicante}} (IVA incl.).",
+    "h1": "Tratamiento de chinches de cama en Alicante",
+    "eyebrow": "Zona de servicio · Alicante",
+    "lead": "Trabajo en pisos, casas y alojamientos de Alicante, sin coste de desplazamiento. Cuéntame qué has visto y te oriento por WhatsApp.",
+    "heroImage": "IMG-LOC-ALC-01"
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "service-in-alicante",
+        "h2": "Bed bugs in Alicante",
+        "html": "<p>In Alicante, travel is <strong>free</strong>. I treat flats, houses, rental apartments and small accommodation in the city with targeted chemical treatment, dry steam or a combination of both. I personally carry out the inspection, the treatment and the follow-up.</p><p>If you are looking for how to <strong>get rid of bed bugs in Alicante</strong>, the first step is to confirm they are bed bugs and where they are: bites alone are not enough. You can send me photos on WhatsApp at no cost and I will tell you what I see, although a photo does not replace the on-site inspection.</p>"
+      },
+      {
+        "type": "figure",
+        "image": "IMG-LOC-ALC-02"
+      },
+      {
+        "type": "text",
+        "id": "flats-and-houses",
+        "h2": "In a flat or in a house",
+        "html": "<p>In a <strong>flat in a multi-unit building</strong> bed bugs can move from one home to another through wall voids and pipework, so I point out that it is worth checking the neighbouring homes and coordinating with your neighbours. In a <strong>detached house</strong> there are more rooms, furniture and areas to check and sometimes more than one bedroom is affected, which is reflected in the price by bedrooms.</p><p>If your home is an apartment that you let to tourists, see the <a href=\"{{url:PG-015}}\">service for holiday accommodation</a> and the guide to <a href=\"{{url:PG-062}}\">early detection</a>.</p>"
+      },
+      {
+        "type": "text",
+        "id": "method",
+        "h2": "Chemical treatment, dry steam or both",
+        "html": "<p>I choose the method according to severity, surfaces, children or pets and what each product allows: <a href=\"{{url:PG-014}}\">chemical treatment</a> applies authorised products to the affected areas; <a href=\"{{url:PG-013}}\">dry steam</a> uses localised heat, with no insecticide in the steam step; and I can combine them when the case justifies it. No method guarantees eliminating every bed bug in a single visit.</p>"
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices in Alicante",
+        "variant": "city",
+        "town": "Alicante"
+      },
+      {
+        "type": "steps",
+        "h2": "How to book in Alicante",
+        "items": [
+          {
+            "h3": "Tell me your case",
+            "p": "Message me on WhatsApp with photos and how many bedrooms are affected."
+          },
+          {
+            "h3": "Work out the quote",
+            "p": "The calculator shows the total with VAT and travel, and you can send it on WhatsApp."
+          },
+          {
+            "h3": "Date",
+            "p": "We agree a date according to my capacity; an urgent treatment is not guaranteed for the same day."
+          }
+        ]
+      },
+      {
+        "type": "cards",
+        "h2": "Services",
+        "items": [
+          {
+            "title": "Chemical treatment",
+            "text": "Targeted application of authorised products.",
+            "href": "{{url:PG-014}}"
+          },
+          {
+            "title": "Dry steam",
+            "text": "Localised heat, no insecticide in the steam step.",
+            "href": "{{url:PG-013}}"
+          },
+          {
+            "title": "Method (IPM)",
+            "text": "Assessment, treatment, follow-up and prevention.",
+            "href": "{{url:PG-011}}"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Do you charge travel in Alicante?",
+        "a": "No: travel to Alicante costs €0. It still appears as a separate line in the quote, with its amount, so you can see exactly what the price is made of."
+      },
+      {
+        "q": "How much does a treatment cost for a one-bedroom flat in Alicante?",
+        "a": "Chemical treatment for 1 bedroom is {{price:chem1}} (VAT included) and travel is free: {{total:chem1+Alicante}} in total. Stand-alone dry steam starts at {{price:steam}}."
+      },
+      {
+        "q": "Can I send photos before booking?",
+        "a": "Yes, by WhatsApp and at no cost, as a first orientation. The on-site inspection is part of the treatment that is ordered."
+      },
+      {
+        "q": "How soon can you come?",
+        "a": "It depends on the capacity I have at that moment. A same-day visit is not guaranteed; message me to ask about a date."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Areas",
+        "/en/areas/"
+      ]
+    ],
+    "url": "/en/areas/alicante/",
+    "title": "Bed bug treatment in Alicante: homes and holiday accommodation | Control de Chinches",
+    "description": "Get rid of bed bugs in Alicante: targeted chemical treatment, dry steam or a combination in flats, houses and accommodation. Free travel; from {{total:chem1+Alicante}} (VAT incl.).",
+    "h1": "Bed bug treatment in Alicante",
+    "eyebrow": "Service area · Alicante",
+    "lead": "I work in flats, houses and accommodation in Alicante, with no travel charge. Tell me what you have seen and I will guide you on WhatsApp.",
+    "heroImage": "IMG-LOC-ALC-01"
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

@@ -64,7 +64,7 @@ for (const pg of pages) {
     if (tels.some(t => t !== site.dispatcher.tel)) E(`${tag}: tel: link is not the approved dispatcher number (${tels.join(', ')})`);
     if (was.some(w => w !== site.whatsapp.url)) E(`${tag}: WhatsApp link is not the approved WhatsApp URL (${was.join(', ')})`);
     if (h.includes(site.whatsapp.display) && h.includes(`tel:${site.whatsapp.number}`)) E(`${tag}: WhatsApp number used as a phone CTA`); }
-  if (prices.vat.status !== 'approved' && /(\d[\d.,]*\s?€|€\s?\d)/.test(h.replace(/<script[\s\S]*?<\/script>/g, ''))) P(`${tag}: shows a price while VAT/consumer price presentation is not final (P)`);
+  if (!(prices.vat.status === 'approved' || prices.vat.displayApprovedByOwner === true) && /(\d[\d.,]*\s?€|€\s?\d)/.test(h.replace(/<script[\s\S]*?<\/script>/g, ''))) P(`${tag}: shows a price while VAT/consumer price presentation is not final (P)`);
   if (/\{\{[a-z]+:?\w*\}\}/.test(h)) E(`${tag}: unresolved {{token}}`);
   if (/D[eé]nia/.test(h)) E(`${tag}: Dénia is not an approved service town`);
   if (/wa\.me\/\d+\?/.test(h)) E(`${tag}: WhatsApp link with pre-filled text (owner decision: none)`);
@@ -87,7 +87,7 @@ for (const pg of pages) {
   // "100 %" is only a promise when attached to an outcome word; reported study results ("100 % mortality") are fine
   for (const m of text.matchAll(/garantiz|garantía de|100 ?% (?:efic|garant|segur|éxito|effective|success|safe)|sin riesgo|guarantee[sd]?\b|risk-free/gi)) {
     const before = text.slice(Math.max(0, m.index - 90), m.index); // a negated mention ("does not guarantee") is allowed
-    if (!/\b(no|ni|not|nor|never|nunca|without|cannot|none|ninguna|ninguno)\b[^.]*$/i.test(before)) E(`${tag}: forbidden claim wording "${m[0]}" (guarantee/100%/risk-free) unless negated`);
+    if (!/\b(no|ni|not|nor|never|nunca|without|cannot|none|ninguna|ninguno|ning[uú]n|nada|neither)\b[^.]*$/i.test(before)) E(`${tag}: forbidden claim wording "${m[0]}" (guarantee/100%/risk-free) unless negated`);
   }
   if ((text.match(/profesional|professional/gi) || []).length > 2) W(`${tag}: "profesional/professional" used more than twice - prefer concrete facts`);
   if (L.primaryKeyword) (kws.get(L.primaryKeyword.toLowerCase() + '|' + lang) || kws.set(L.primaryKeyword.toLowerCase() + '|' + lang, []).get(L.primaryKeyword.toLowerCase() + '|' + lang)).push(tag);

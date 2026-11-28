@@ -1,137 +1,200 @@
 {
- "id": "PG-020",
- "template": "T-H",
- "status": "Draft",
- "dataPage": "hub",
- "cta": {
-  "message": "default"
- },
- "related": [],
- "_blocked": [
-  "OWNER-INPUT #3 confirmed service area and travel rule",
-  "IMG-LOC-00 own map",
-  "LGL-01, LGL-08"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "towns",
-    "h2": "Localidades",
-    "intro": "Alicante y la Costa Blanca: 18 localidades."
-   },
-   {
-    "type": "gallery",
-    "h2": "Algunas localidades",
-    "images": [
-     "IMG-LOC-ALC-01",
-     "IMG-LOC-BEN-01",
-     "IMG-LOC-TOR-01",
-     "IMG-LOC-CAL-01"
-    ]
-   },
-   {
-    "type": "text",
-    "id": "desplazamiento",
-    "h2": "Disponibilidad y desplazamiento",
-    "html": "<p>El desplazamiento depende de la distancia y se confirma por escrito antes de reservar. La disponibilidad depende de la capacidad en cada momento; no se garantiza una visita el mismo día.</p>"
-   },
-   {
-    "type": "hub",
-    "groups": [
-     {
-      "h2": "Páginas por localidad",
-      "intro": "De momento hay página propia para estas tres localidades.",
-      "items": [
-       {
-        "pageId": "PG-021",
-        "text": "Tratamiento de chinches de cama en Alicante."
-       },
-       {
-        "pageId": "PG-022",
-        "text": "Tratamiento de chinches de cama en Benidorm."
-       },
-       {
-        "pageId": "PG-023",
-        "text": "Tratamiento de chinches de cama en Torrevieja."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente: localidad de salida y sistema de tarifa de desplazamiento por distancia (aún sin definir). La web actual (15 localidades en la portada, 3 en los datos estructurados) debe sincronizarse con las 18 aprobadas."
-   }
+  "id": "PG-020",
+  "template": "T-H",
+  "status": "Approved for indexing",
+  "dataPage": "hub",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-010",
+    "PG-021",
+    "PG-022",
+    "PG-023",
+    "PG-030"
   ],
-  "faq": [],
-  "sources": [],
-  "breadcrumb": [],
-  "url": "/zonas/",
-  "title": "Zonas de servicio: chinches de cama en Alicante y la Costa Blanca",
-  "description": "Las 18 localidades de Alicante y la Costa Blanca donde se atienden chinches de cama. La disponibilidad y el desplazamiento se confirman al consultar.",
-  "h1": "Zonas de servicio en la Costa Blanca",
-  "eyebrow": "Zonas",
-  "lead": "Estas son las localidades de Alicante y la Costa Blanca donde se atienden chinches de cama. Indica la tuya y se confirma la disponibilidad."
- },
- "en": {
-  "blocks": [
-   {
-    "type": "towns",
-    "h2": "Towns",
-    "intro": "Alicante and the Costa Blanca: 18 towns."
-   },
-   {
-    "type": "gallery",
-    "h2": "Some of the towns",
-    "images": [
-     "IMG-LOC-ALC-01",
-     "IMG-LOC-BEN-01",
-     "IMG-LOC-TOR-01",
-     "IMG-LOC-CAL-01"
-    ]
-   },
-   {
-    "type": "text",
-    "id": "availability-and-travel",
-    "h2": "Availability and travel",
-    "html": "<p>Travel depends on the distance and is confirmed in writing before you book. Availability depends on capacity at the time; a same-day visit is not guaranteed.</p>"
-   },
-   {
-    "type": "hub",
-    "groups": [
-     {
-      "h2": "Pages by town",
-      "intro": "For now there is a dedicated page for these three towns.",
-      "items": [
-       {
-        "pageId": "PG-021",
-        "text": "Bed bug treatment in Alicante."
-       },
-       {
-        "pageId": "PG-022",
-        "text": "Bed bug treatment in Benidorm."
-       },
-       {
-        "pageId": "PG-023",
-        "text": "Bed bug treatment in Torrevieja."
-       }
-      ]
-     }
-    ]
-   },
-   {
-    "type": "todo",
-    "text": "Pending: departure town and distance-based travel fee system (not defined yet). The current live site (15 towns on the home page, 3 in the structured data) must be synchronised with the 18 approved towns."
-   }
-  ],
-  "faq": [],
-  "sources": [],
-  "breadcrumb": [],
-  "url": "/en/areas/",
-  "title": "Areas we cover: bed bugs on the Costa Blanca",
-  "description": "The 18 towns in Alicante and the Costa Blanca where bed bug treatment is offered. Availability and travel are confirmed when you get in touch.",
-  "h1": "Areas we cover on the Costa Blanca",
-  "eyebrow": "Areas",
-  "lead": "These are the towns in Alicante and the Costa Blanca where bed bug treatment is offered. Tell us yours and availability is confirmed."
- }
+  "es": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "donde-trabajo",
+        "h2": "Dónde trabajo",
+        "html": "<p>Hago tratamientos contra chinches de cama en 18 localidades de la provincia de Alicante y la Costa Blanca, desde Alicante y Torrevieja hasta Jávea. Atiendo <strong>pisos, casas unifamiliares, apartamentos y alojamientos turísticos</strong> con tratamiento químico dirigido, vapor seco o una combinación de ambos.</p><p>El contacto es por WhatsApp: envíame tu localidad y fotos de lo que has visto y te oriento sin coste. La inspección en el lugar forma parte del tratamiento contratado. Un tratamiento urgente solo es posible según la capacidad que tenga en ese momento; no se garantiza una visita el mismo día.</p>"
+      },
+      {
+        "type": "towns",
+        "h2": "Localidades y gastos de desplazamiento",
+        "intro": "El importe es con IVA incluido y es una tarifa fija por tratamiento. Las localidades con página propia tienen enlace.",
+        "fees": true
+      },
+      {
+        "type": "gallery",
+        "h2": "Algunas localidades",
+        "images": [
+          "IMG-LOC-ALC-01",
+          "IMG-LOC-BEN-01",
+          "IMG-LOC-TOR-01",
+          "IMG-LOC-CAL-01"
+        ]
+      },
+      {
+        "type": "text",
+        "id": "desplazamiento",
+        "h2": "Cómo se calcula el desplazamiento",
+        "html": "<p>El desplazamiento es una <strong>tarifa fija por localidad</strong> y por tratamiento: no depende de los dormitorios ni de los kilómetros. En Alicante, Torrevieja, Orihuela Costa y Guardamar del Segura no tiene coste; en el resto va de {{travel:Santa Pola}} a {{travel:Jávea}} (IVA incluido). Aparece siempre como una línea aparte en el presupuesto, nunca como un coste añadido después.</p><p>Si tu localidad no figura en la lista, no doy por hecho que el desplazamiento sea gratuito: te preparo un presupuesto individual. Puedes ver el total de tu caso en la <a href=\"/precios.html#calculadora\">calculadora de precios</a> y enviármelo por WhatsApp.</p>"
+      },
+      {
+        "type": "text",
+        "id": "tipos-de-inmueble",
+        "h2": "Viviendas, casas, apartamentos y alojamientos",
+        "html": "<p>El método se adapta al inmueble. En un piso de un edificio con varias viviendas conviene tener en cuenta las unidades vecinas; en una casa unifamiliar suele haber más estancias, muebles y exteriores que revisar; en un apartamento turístico importan la fecha de las próximas llegadas y la discreción. Para hoteles, hostales y pensiones consulta el <a href=\"{{url:PG-015}}\">tratamiento en alojamientos turísticos</a>.</p>"
+      },
+      {
+        "type": "hub",
+        "groups": [
+          {
+            "h2": "Páginas por localidad",
+            "items": [
+              {
+                "pageId": "PG-021",
+                "text": "Tratamiento de chinches de cama en Alicante: desplazamiento gratuito."
+              },
+              {
+                "pageId": "PG-022",
+                "text": "Tratamiento de chinches de cama en Benidorm: apartamentos, hoteles y viviendas."
+              },
+              {
+                "pageId": "PG-023",
+                "text": "Tratamiento de chinches de cama en Torrevieja: segundas residencias y viviendas."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "priceBox",
+        "h2": "Precios"
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿En qué localidades trabajáis?",
+        "a": "En 18: Alicante, Torrevieja, Orihuela Costa, Guardamar del Segura, Santa Pola, Elche, San Vicente del Raspeig, Villajoyosa, Finestrat, Benidorm, San Juan de Alicante, Mutxamel, El Campello, Alfaz del Pi, La Nucía, Altea, Calpe y Jávea."
+      },
+      {
+        "q": "¿Cuánto cuesta el desplazamiento?",
+        "a": "Depende de la localidad: 0 € en Alicante, Torrevieja, Orihuela Costa y Guardamar del Segura, y de {{travel:Santa Pola}} a {{travel:Jávea}} (IVA incluido) en el resto. Es una tarifa fija por tratamiento."
+      },
+      {
+        "q": "¿Qué pasa si mi localidad no está en la lista?",
+        "a": "Escríbeme por WhatsApp con tu localidad: te preparo un presupuesto individual. No se asume un desplazamiento gratuito."
+      },
+      {
+        "q": "¿Puedes venir hoy mismo?",
+        "a": "Depende de la capacidad que tenga en ese momento y de la localidad. No se garantiza una visita el mismo día; escríbeme por WhatsApp para consultar una fecha."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [],
+    "url": "/zonas/",
+    "title": "Zonas de servicio: tratamiento de chinches en 18 localidades de Alicante y la Costa Blanca",
+    "description": "Tratamiento de chinches de cama en 18 localidades de Alicante y la Costa Blanca, de Alicante a Jávea: viviendas, casas, apartamentos y alojamientos. Desplazamiento fijo por localidad, desde 0 €.",
+    "h1": "Zonas de servicio en Alicante y la Costa Blanca",
+    "eyebrow": "Zonas",
+    "lead": "Trabajo en 18 localidades, con un desplazamiento fijo y conocido de antemano para cada una. Consulta la tuya."
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "text",
+        "id": "where-i-work",
+        "h2": "Where I work",
+        "html": "<p>I treat bed bugs in 18 towns of the province of Alicante and the Costa Blanca, from Alicante and Torrevieja to Jávea. I work in <strong>flats, houses, apartments and holiday accommodation</strong> with targeted chemical treatment, dry steam or a combination of both.</p><p>Contact is by WhatsApp: send me your town and photos of what you have seen and I will guide you at no cost. The on-site inspection is part of the treatment that is ordered. An urgent treatment is only possible depending on the capacity I have at that moment; a same-day visit is not guaranteed.</p>"
+      },
+      {
+        "type": "towns",
+        "h2": "Towns and travel costs",
+        "intro": "Amounts include VAT and are a fixed fee per treatment. Towns with their own page are linked.",
+        "fees": true
+      },
+      {
+        "type": "gallery",
+        "h2": "Some of the towns",
+        "images": [
+          "IMG-LOC-ALC-01",
+          "IMG-LOC-BEN-01",
+          "IMG-LOC-TOR-01",
+          "IMG-LOC-CAL-01"
+        ]
+      },
+      {
+        "type": "text",
+        "id": "travel",
+        "h2": "How travel is calculated",
+        "html": "<p>Travel is a <strong>fixed fee per town</strong> and per treatment: it does not depend on bedrooms or kilometres. It is free in Alicante, Torrevieja, Orihuela Costa and Guardamar del Segura; elsewhere it ranges from {{travel:Santa Pola}} to {{travel:Jávea}} (VAT included). It always appears as a separate line in the quote, never as a cost added afterwards.</p><p>If your town is not on the list, I do not assume travel is free: I prepare an individual quote. You can see the total for your case in the <a href=\"/en/prices.html#calculadora\">price calculator</a> and send it to me on WhatsApp.</p>"
+      },
+      {
+        "type": "text",
+        "id": "property-types",
+        "h2": "Flats, houses, apartments and accommodation",
+        "html": "<p>The method is adapted to the property. In a flat in a multi-unit building the neighbouring units matter; a detached house usually has more rooms, furniture and outdoor areas to check; in a holiday apartment the date of the next arrivals and discretion matter. For hotels, hostels and guesthouses see <a href=\"{{url:PG-015}}\">treatment for holiday accommodation</a>.</p>"
+      },
+      {
+        "type": "hub",
+        "groups": [
+          {
+            "h2": "Town pages",
+            "items": [
+              {
+                "pageId": "PG-021",
+                "text": "Bed bug treatment in Alicante: free travel."
+              },
+              {
+                "pageId": "PG-022",
+                "text": "Bed bug treatment in Benidorm: apartments, hotels and homes."
+              },
+              {
+                "pageId": "PG-023",
+                "text": "Bed bug treatment in Torrevieja: second homes and homes."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "priceBox",
+        "h2": "Prices"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Which towns do you work in?",
+        "a": "18: Alicante, Torrevieja, Orihuela Costa, Guardamar del Segura, Santa Pola, Elche, San Vicente del Raspeig, Villajoyosa, Finestrat, Benidorm, San Juan de Alicante, Mutxamel, El Campello, Alfaz del Pi, La Nucía, Altea, Calpe and Jávea."
+      },
+      {
+        "q": "How much is the travel fee?",
+        "a": "It depends on the town: €0 in Alicante, Torrevieja, Orihuela Costa and Guardamar del Segura, and from {{travel:Santa Pola}} to {{travel:Jávea}} (VAT included) elsewhere. It is a fixed fee per treatment."
+      },
+      {
+        "q": "What if my town is not on the list?",
+        "a": "Message me on WhatsApp with your town: I will prepare an individual quote. Free travel is not assumed."
+      },
+      {
+        "q": "Can you come today?",
+        "a": "It depends on the capacity I have at that moment and on the town. A same-day visit is not guaranteed; message me on WhatsApp to ask about a date."
+      }
+    ],
+    "sources": [],
+    "breadcrumb": [],
+    "url": "/en/areas/",
+    "title": "Service areas: bed bug treatment in 18 towns of Alicante and the Costa Blanca | Control de Chinches",
+    "description": "Bed bug treatment in 18 towns of Alicante and the Costa Blanca, from Alicante to Jávea: homes, houses, apartments and holiday accommodation. Fixed travel fee per town, from €0.",
+    "h1": "Service areas in Alicante and the Costa Blanca",
+    "eyebrow": "Areas",
+    "lead": "I work in 18 towns, with a fixed travel fee that is known in advance for each one. Look up yours."
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

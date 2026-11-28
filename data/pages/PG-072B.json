@@ -1,107 +1,107 @@
 {
- "id": "PG-072B",
- "template": "T-H",
- "status": "Draft",
- "dataPage": "resources",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-072",
-  "PG-015"
- ],
- "_blocked": [
-  "owner approval of the log columns",
-  "PDF generation after approval"
- ],
- "es": {
-  "blocks": [
-   {
-    "type": "print",
-    "label": "Imprimir o guardar como PDF"
-   },
-   {
-    "type": "docform",
-    "h2": "Registro de revisiones",
-    "meta": {
-     "version": "0.1 (borrador)",
-     "date": "2026-11-27"
-    },
-    "fields": [
-     "Alojamiento",
-     "Responsable de la revisión"
+  "id": "PG-072B",
+  "template": "T-H",
+  "status": "Approved for indexing",
+  "dataPage": "resources",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-072",
+    "PG-015"
+  ],
+  "es": {
+    "blocks": [
+      {
+        "type": "print",
+        "label": "Imprimir o guardar como PDF"
+      },
+      {
+        "type": "docform",
+        "h2": "Registro de revisiones",
+        "meta": {
+          "version": "0.1 (borrador)",
+          "date": "2026-11-27"
+        },
+        "fields": [
+          "Alojamiento",
+          "Responsable de la revisión"
+        ],
+        "table": {
+          "head": [
+            "Fecha",
+            "Unidad",
+            "Zona revisada",
+            "Resultado",
+            "Observaciones / fotos"
+          ],
+          "rows": 12
+        },
+        "note": "Anota el resultado tal como lo observas. Si hay dudas, haz fotos y consúltanos."
+      }
     ],
-    "table": {
-     "head": [
-      "Fecha",
-      "Unidad",
-      "Zona revisada",
-      "Resultado",
-      "Observaciones / fotos"
-     ],
-     "rows": 12
-    },
-    "note": "Anota el resultado tal como lo observas. Si hay dudas, haz fotos y consúltanos."
-   }
-  ],
-  "faq": [],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Recursos",
-    "/recursos/"
-   ]
-  ],
-  "url": "/recursos/registro-de-monitorizacion/",
-  "title": "Registro de monitorización de chinches: hoja imprimible",
-  "description": "Hoja imprimible para anotar las revisiones periódicas de chinches en un alojamiento: fecha, unidad, resultado y observaciones.",
-  "h1": "Registro de monitorización de chinches",
-  "eyebrow": "Recurso imprimible",
-  "lead": "Una hoja para anotar cada revisión y mantener un historial por unidad."
- },
- "en": {
-  "blocks": [
-   {
-    "type": "print",
-    "label": "Print or save as PDF"
-   },
-   {
-    "type": "docform",
-    "h2": "Check log",
-    "meta": {
-     "version": "0.1 (draft)",
-     "date": "2026-11-27"
-    },
-    "fields": [
-     "Accommodation",
-     "Person responsible for the check"
+    "faq": [],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Recursos",
+        "/recursos/"
+      ]
     ],
-    "table": {
-     "head": [
-      "Date",
-      "Unit",
-      "Area checked",
-      "Result",
-      "Notes / photos"
-     ],
-     "rows": 12
-    },
-    "note": "Note the result as you observe it. If in doubt, take photos and get in touch."
-   }
-  ],
-  "faq": [],
-  "sources": [],
-  "breadcrumb": [
-   [
-    "Resources",
-    "/en/resources/"
-   ]
-  ],
-  "url": "/en/resources/bed-bug-monitoring-log/",
-  "title": "Bed bug monitoring log: printable sheet | Control de Chinches",
-  "description": "Printable sheet to note regular bed bug checks in an accommodation: date, unit, result and observations.",
-  "h1": "Bed bug monitoring log",
-  "eyebrow": "Printable resource",
-  "lead": "A sheet to note each check and keep a history per unit."
- }
+    "url": "/recursos/registro-de-monitorizacion/",
+    "title": "Registro de monitorización de chinches: hoja imprimible",
+    "description": "Hoja imprimible para anotar las revisiones periódicas de chinches en un alojamiento: fecha, unidad, resultado y observaciones.",
+    "h1": "Registro de monitorización de chinches",
+    "eyebrow": "Recurso imprimible",
+    "lead": "Una hoja para anotar cada revisión y mantener un historial por unidad."
+  },
+  "en": {
+    "blocks": [
+      {
+        "type": "print",
+        "label": "Print or save as PDF"
+      },
+      {
+        "type": "docform",
+        "h2": "Check log",
+        "meta": {
+          "version": "0.1 (draft)",
+          "date": "2026-11-27"
+        },
+        "fields": [
+          "Accommodation",
+          "Person responsible for the check"
+        ],
+        "table": {
+          "head": [
+            "Date",
+            "Unit",
+            "Area checked",
+            "Result",
+            "Notes / photos"
+          ],
+          "rows": 12
+        },
+        "note": "Note the result as you observe it. If in doubt, take photos and get in touch."
+      }
+    ],
+    "faq": [],
+    "sources": [],
+    "breadcrumb": [
+      [
+        "Resources",
+        "/en/resources/"
+      ]
+    ],
+    "url": "/en/resources/bed-bug-monitoring-log/",
+    "title": "Bed bug monitoring log: printable sheet | Control de Chinches",
+    "description": "Printable sheet to note regular bed bug checks in an accommodation: date, unit, result and observations.",
+    "h1": "Bed bug monitoring log",
+    "eyebrow": "Printable resource",
+    "lead": "A sheet to note each check and keep a history per unit."
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }

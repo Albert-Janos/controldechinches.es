@@ -70,9 +70,10 @@
 .sx-figure img, .sx-ph { width: 100%; height: auto; border-radius: var(--sx-r); background: var(--surface); }
 .sx-figure figcaption { margin-top: .5rem; font-size: .875rem; color: var(--gray); max-width: var(--sx-measure); }
 /* image sizing by kind (natural aspect ratio is always kept; no cropping) */
-.sx-figure--hero { max-width: 54rem; }
-.sx-figure--photo, .sx-figure--illustration { max-width: 46rem; }
-.sx-figure--macro { max-width: 40rem; }
+.sx-figure--hero { max-width: 40rem; }
+.sx-figure--photo { max-width: 36rem; }
+.sx-figure--illustration { max-width: 46rem; }
+.sx-figure--macro { max-width: 36rem; }
 .sx-figure--portrait { max-width: 19rem; }
 .sx-figure--portrait-detail { max-width: 24rem; }
 .sx-split { margin-top: clamp(2rem, 4vw, 3rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 19rem); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
@@ -253,3 +254,30 @@ a.sx-card:hover { border-color: var(--navy); }
 @media (max-width: 760px) { .sx-ig-h { display: none !important; } .sx-ig-v { display: block !important; max-width: 26rem; margin-inline: auto; } }
 .sx-formtable { min-width: 28rem; }
 @media print { .sx-tablewrap { overflow: visible; border: 0; } .sx-formtable { min-width: 0; } }
+
+/* Hero media fills the whole right half of the hero on desktop (owner decision 2026-11-28); stacked, full-width on phones. The image is never stretched: object-fit: cover + per-page --hero-pos. */
+.sx-hero:not(.sx-hero--text) { position: relative; overflow: hidden; }
+.sx-hero-media picture { display: block; }
+.sx-hero-media img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: var(--hero-pos, 50% 40%); border-radius: 0; }
+@media (min-width: 990px) {
+  .sx-hero:not(.sx-hero--text) .sx-hero-grid { grid-template-columns: minmax(0, 1fr); min-height: clamp(23rem, 34vw, 32rem); padding-block: clamp(2.4rem, 5vw, 4rem); align-items: center; }
+  .sx-hero:not(.sx-hero--text) .sx-hero-grid > div { max-width: calc(50% - 2.5rem); }
+  .sx-hero-media { position: absolute; inset: 0 0 0 50%; max-width: none; margin: 0; }
+  .sx-hero-media picture, .sx-hero-media img { width: 100%; height: 100%; }
+  .sx-hero-media img { aspect-ratio: auto; }
+}
+@media (max-width: 989px) { .sx-hero:not(.sx-hero--text) { overflow: visible; } .sx-hero-media { margin-inline: calc(var(--gutter) * -1); } .sx-hero-media img { max-height: 22rem; } }
+/* uniform gallery cards (PG-073): fixed card ratio for the thumbnails, the lightbox always shows the complete original image */
+.sx-gallery--uniform { align-items: stretch; }
+.sx-gallery--uniform li { display: flex; }
+.sx-gallery--uniform .sx-figure { display: flex; flex-direction: column; width: 100%; margin: 0; border: 1px solid var(--border); border-radius: var(--sx-r); background: white; overflow: hidden; }
+.sx-gallery--uniform .sx-figure a { display: block; }
+.sx-gallery--uniform .sx-figure img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 0; }
+.sx-gallery--uniform .sx-figure figcaption { padding: .7rem .85rem .9rem; margin: 0; flex: 1; }
+.sx-gallery a[data-lightbox] { cursor: zoom-in; }
+.sx-towns li .sx-townfee { display: block; font-size: .85rem; color: var(--gray); }
+.sx-lightbox img { object-fit: contain; }
+.sx-hero-media { position: relative; }
+@media (min-width: 990px) { .sx-hero-media { position: absolute; } }
+.sx-hero-credit { position: absolute; right: .6rem; bottom: .6rem; max-width: calc(100% - 1.2rem); padding: .25rem .6rem; border-radius: .4rem; background: rgb(10 16 24 / .72); color: #fff; font-size: .78rem; line-height: 1.35; }
+.sx-compact .sx-figure { max-width: 26rem; }
