@@ -69,7 +69,7 @@ for (const u of locs) { const h = pages[u] || '', isEn = u.startsWith('/en/') ||
 { const all = []; (function w(d) { for (const n of readdirSync(d)) { const f = join(d, n); statSync(f).isDirectory() ? w(f) : all.push(f); } })(dist);
   let oldHits = 0, textFiles = 0, telLinks = new Set();
   for (const f of all) { if (/\.(webp|avif|jpe?g|png|woff2?|webm|ico)$/i.test(f)) continue; const s = readFileSync(f).toString('latin1'); textFiles++;
-    if (/865[s .-]?699[s .-]?969|34865699969/.test(s)) { oldHits++; ok(false, 'former phone number +34 865 699 969 found in ' + relative(dist, f)); }
+    if (/865[\s\u00a0.-]?699[\s\u00a0.-]?969|34865699969/.test(s)) { oldHits++; ok(false, 'former phone number +34 865 699 969 found in ' + relative(dist, f)); }
     for (const m of s.matchAll(/href="(tel:[^"]+)"/g)) telLinks.add(m[1]); }
   ok(oldHits === 0, 'the former number appears nowhere in the package (' + textFiles + ' text/PDF files scanned)');
   ok([...telLinks].join() === 'tel:+34605259206', 'every tel: link in the package is tel:+34605259206 (' + [...telLinks] + ')');
