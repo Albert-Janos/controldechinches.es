@@ -7,79 +7,292 @@
     "message": "default"
   },
   "related": [
+    "PG-070",
+    "PG-041",
+    "PG-044",
+    "PG-045",
+    "PG-071",
     "PG-011"
   ],
   "es": {
     "blocks": [
       {
         "type": "text",
-        "id": "criterios",
-        "h2": "Cómo documentamos un caso",
-        "html": "<p>Cada caso recoge la población, el tipo de inmueble, los indicios, el método aplicado, las fotos propias, el seguimiento y un resultado comprobable. Los casos de Hungría se indican como tales.</p>"
-      },
-      {
-        "type": "text",
-        "id": "fotografias-de-infestaciones-reales",
-        "h2": "Fotografías de infestaciones reales",
-        "html": "<p>Estas fotografías documentan infestaciones reales de chinches de cama. No forman un caso: se muestran por separado y no se indican lugar, fecha, método ni resultado del tratamiento. Los casos completos se publicarán solo cuando estén documentados y autorizados por escrito.</p>"
+        "id": "que-es-esta-galeria",
+        "h2": "Qué muestra esta galería",
+        "html": "<p>Si buscas <strong>fotos reales de chinches de cama</strong> o quieres saber <strong>cómo es una infestación de chinches</strong>, aquí tienes fotografías propias de infestaciones reales, ordenadas por lo que enseñan: infestaciones graves, colchones y somieres infestados, excrementos en la pared, mudas y chinches en muebles tapizados y de madera. Cada foto lleva una explicación; pulsa en ella para verla ampliada y completa.</p><p>Son fotografías de trabajos documentados en Hungría: se muestran como documentación profesional de infestaciones reales, no como referencias de trabajos realizados en España. No se indican datos de clientes ni lugares identificables. Para comparar ejemplares, huevos y estadios hay un <a href=\"{{url:PG-070}}\">atlas de chinches</a>, cuyas ilustraciones generadas con IA están marcadas como tales.</p>"
       },
       {
         "type": "gallery",
-        "images": [
-          "IMG-INS-06",
-          "IMG-IPM-02",
-          "IMG-ENT-HID-01",
-          "IMG-ENT-HID-02",
-          "IMG-ENT-EXC-02",
-          "IMG-ENT-MOU-01"
+        "uniform": true,
+        "notes": {
+          "IMG-INS-06": {
+            "es": "Infestación grave documentada: la cantidad de ejemplares y manchas visibles indica que el problema lleva tiempo y que hay que revisar más allá de la cama.",
+            "en": "Documented heavy infestation: the number of insects and stains visible suggests the problem has been there for some time and that the inspection must go beyond the bed."
+          },
+          "IMG-SEV-02": {
+            "es": "Infestación moderada con varios focos en un mueble tapizado: las chinches se agrupan en costuras y pliegues, no solo en el colchón.",
+            "en": "Moderate infestation with several foci in an upholstered piece of furniture: bed bugs gather in seams and folds, not only in the mattress."
+          },
+          "IMG-ENT-HID-03": {
+            "es": "Chinches y manchas en la estructura de un mueble tapizado: un indicio de que la infestación se ha extendido a muebles de descanso.",
+            "en": "Bed bugs and stains on the frame of an upholstered piece of furniture: a sign that the infestation has spread to resting furniture."
+          },
+          "IMG-ENT-HID-01": {
+            "es": "Ejemplares agrupados en la costura de un colchón: el ribete y las costuras son el primer lugar que se revisa.",
+            "en": "Insects clustered in the seam of a mattress: the piping and seams are the first place to check."
+          },
+          "IMG-INS-07": {
+            "es": "Chinches y huevos en una costura de colchón; los huevos son diminutos y blanquecinos, y a menudo se ven mejor con linterna y lupa.",
+            "en": "Bed bugs and eggs in a mattress seam; eggs are tiny and whitish, and are often easier to see with a torch and a magnifier."
+          },
+          "IMG-SEV-01": {
+            "es": "Infestación incipiente: un posible ejemplar en la costura de un colchón. Con pocos ejemplares es fácil pasarlo por alto.",
+            "en": "Early infestation: a possible insect in a mattress seam. With few insects it is easy to miss."
+          },
+          "IMG-ENT-HID-02": {
+            "es": "Chinches en las uniones de un somier: las juntas del armazón ofrecen grietas donde esconderse cerca de quien duerme.",
+            "en": "Bed bugs in the joints of a box spring: the joints of the frame offer cracks to hide in, close to the sleeper."
+          },
+          "IMG-ENT-HID-04": {
+            "es": "Excrementos en un cabecero: las manchas oscuras son excrementos de sangre digerida y suelen verse cerca de los escondites.",
+            "en": "Droppings on a headboard: the dark spots are droppings of digested blood and are usually seen near the hiding places."
+          },
+          "IMG-IPM-02": {
+            "es": "Marcas oscuras en la pared de un dormitorio con infestación real: no deben confundirse con suciedad común; conviene revisar rodapiés y grietas.",
+            "en": "Dark marks on the wall of a bedroom with a real infestation: they should not be mistaken for ordinary dirt; skirting boards and cracks should be checked."
+          },
+          "IMG-ENT-HID-05": {
+            "es": "Rastros de chinches en la esquina de una pared: aparecen cuando la infestación es grande y los ejemplares se alejan de la cama.",
+            "en": "Traces of bed bugs in a wall corner: they appear when the infestation is large and the insects move away from the bed."
+          },
+          "IMG-ENT-EXC-02": {
+            "es": "Excrementos y mudas en una infestación real: son indicios que sirven aunque no se vea ningún ejemplar vivo.",
+            "en": "Droppings and shed skins in a real infestation: these are signs that are useful even when no live insect is seen."
+          },
+          "IMG-ENT-MOU-01": {
+            "es": "Mudas de chinches sobre una tela: las ninfas dejan cáscaras vacías cada vez que crecen; indican que hay una población que se está desarrollando.",
+            "en": "Bed bug shed skins on a cloth: nymphs leave empty shells each time they grow; they show a developing population."
+          },
+          "IMG-ENT-HID-06": {
+            "es": "Chinches en la costura de un tapizado: las costuras y los dobladillos de sofás y sillones son escondites habituales.",
+            "en": "Bed bugs in an upholstery seam: the seams and hems of sofas and armchairs are common hiding places."
+          }
+        },
+        "groups": [
+          {
+            "id": "infestaciones-graves",
+            "h3": "Infestaciones graves y moderadas",
+            "intro": "<p>Una <strong>infestación grave de chinches</strong> se reconoce por los muchos ejemplares agrupados, las manchas oscuras y la presencia en más de un mueble. Estas fotos muestran cómo puede ser desde un foco moderado hasta un caso avanzado.</p>",
+            "images": [
+              "IMG-INS-06",
+              "IMG-SEV-02",
+              "IMG-ENT-HID-03"
+            ]
+          },
+          {
+            "id": "costuras-de-colchon",
+            "h3": "Chinches en el colchón: costuras y ribete",
+            "intro": "<p>Las <strong>fotos de colchones infestados de chinches</strong> suelen mostrar ejemplares, huevos y manchas en las costuras, el ribete y las etiquetas. Es el primer lugar donde se mira.</p>",
+            "images": [
+              "IMG-ENT-HID-01",
+              "IMG-INS-07",
+              "IMG-SEV-01"
+            ]
+          },
+          {
+            "id": "somier-y-cabecero",
+            "h3": "Somieres, armazones y cabeceros",
+            "intro": "<p>Las juntas del somier, del armazón y del cabecero ofrecen grietas donde las chinches se esconden cerca de la persona que duerme. También ocurre en <strong>chinches en muebles de madera</strong>, donde las uniones y rendijas son escondites habituales.</p>",
+            "images": [
+              "IMG-ENT-HID-02",
+              "IMG-ENT-HID-04"
+            ]
+          },
+          {
+            "id": "excrementos-y-manchas",
+            "h3": "Excrementos y marcas en la pared",
+            "intro": "<p>Los <strong>excrementos de chinches en la pared</strong> son puntos o manchas oscuras que aparecen cuando la infestación es grande o antigua. Ayudan a localizar los escondites aunque no se vea ningún ejemplar.</p>",
+            "images": [
+              "IMG-IPM-02",
+              "IMG-ENT-HID-05",
+              "IMG-ENT-EXC-02"
+            ]
+          },
+          {
+            "id": "mudas",
+            "h3": "Mudas de las ninfas",
+            "intro": "<p>Cada ninfa muda varias veces antes de ser adulta y deja una cáscara vacía. Las <strong>mudas de chinches</strong> son un indicio claro de que hay una población en desarrollo.</p>",
+            "images": [
+              "IMG-ENT-MOU-01"
+            ]
+          },
+          {
+            "id": "tapizados",
+            "h3": "Sofás y muebles tapizados",
+            "intro": "<p>Cuando la infestación crece, las chinches pasan a sofás, sillones y otros muebles tapizados, donde se esconden en costuras y pliegues.</p>",
+            "images": [
+              "IMG-ENT-HID-06"
+            ]
+          }
         ]
+      },
+      {
+        "type": "text",
+        "id": "como-reconocer-una-infestacion",
+        "h2": "Cómo reconocer una infestación",
+        "html": "<p>Los indicios principales son ejemplares vivos, manchas oscuras, huevos y mudas, sobre todo cerca de la cama. Las picaduras por sí solas no permiten confirmar que haya chinches. Si dudas, la guía <a href=\"{{url:PG-041}}\">cómo saber si tengo chinches</a>, el <a href=\"{{url:PG-071}}\">identificador</a> y la guía de <a href=\"{{url:PG-044}}\">dónde se esconden</a> te ayudan, y puedes enviarme fotos por WhatsApp para una primera orientación sin coste.</p>"
       }
     ],
     "faq": [],
     "sources": [],
     "breadcrumb": [],
     "url": "/casos-reales/",
-    "title": "Casos reales de tratamiento de chinches | Control de Chinches",
-    "description": "Casos reales documentados, con fotos propias y autorización del cliente. Por ahora no hay casos publicados.",
-    "h1": "Casos reales",
-    "eyebrow": "Casos",
-    "lead": "Aquí se publicarán casos reales documentados, con la autorización del cliente y sin datos identificables."
+    "title": "Casos reales de infestaciones de chinches de cama: fotos reales",
+    "description": "Fotos reales de chinches de cama: infestaciones graves, colchones infestados, excrementos en la pared, chinches en muebles de madera y tapizados, con explicación de cada indicio.",
+    "h1": "Casos reales de infestaciones de chinches de cama",
+    "eyebrow": "Fotos reales",
+    "lead": "Fotografías propias de infestaciones reales, con una explicación profesional de lo que muestra cada una."
   },
   "en": {
     "blocks": [
       {
         "type": "text",
-        "id": "criteria",
-        "h2": "How we document a case",
-        "html": "<p>Each case records the town, property type, signs, method applied, our own photos, follow-up and a verifiable outcome. Cases from Hungary are labelled as such.</p>"
-      },
-      {
-        "type": "text",
-        "id": "photographs-of-real-infestations",
-        "h2": "Photographs of real infestations",
-        "html": "<p>These photographs document real bed bug infestations. They do not form a case: they are shown separately and no place, date, method or treatment result is stated. Full cases will be published only when documented and authorised in writing.</p>"
+        "id": "what-this-gallery-shows",
+        "h2": "What this gallery shows",
+        "html": "<p>If you are looking for <strong>real photos of bed bugs</strong> or want to know <strong>what a bed bug infestation looks like</strong>, here are own photographs of real infestations, grouped by what they show: heavy infestations, infested mattresses and box springs, droppings on walls, shed skins and bed bugs in upholstered and wooden furniture. Each photo has an explanation; click it to see it enlarged and complete.</p><p>These are photographs of jobs documented in Hungary: they are shown as professional documentation of real infestations, not as references of work carried out in Spain. No client data or identifiable places are shown. To compare adults, eggs and stages there is a <a href=\"{{url:PG-070}}\">bed bug atlas</a>, whose AI-generated illustrations are labelled as such.</p>"
       },
       {
         "type": "gallery",
-        "images": [
-          "IMG-INS-06",
-          "IMG-IPM-02",
-          "IMG-ENT-HID-01",
-          "IMG-ENT-HID-02",
-          "IMG-ENT-EXC-02",
-          "IMG-ENT-MOU-01"
+        "uniform": true,
+        "notes": {
+          "IMG-INS-06": {
+            "es": "Infestación grave documentada: la cantidad de ejemplares y manchas visibles indica que el problema lleva tiempo y que hay que revisar más allá de la cama.",
+            "en": "Documented heavy infestation: the number of insects and stains visible suggests the problem has been there for some time and that the inspection must go beyond the bed."
+          },
+          "IMG-SEV-02": {
+            "es": "Infestación moderada con varios focos en un mueble tapizado: las chinches se agrupan en costuras y pliegues, no solo en el colchón.",
+            "en": "Moderate infestation with several foci in an upholstered piece of furniture: bed bugs gather in seams and folds, not only in the mattress."
+          },
+          "IMG-ENT-HID-03": {
+            "es": "Chinches y manchas en la estructura de un mueble tapizado: un indicio de que la infestación se ha extendido a muebles de descanso.",
+            "en": "Bed bugs and stains on the frame of an upholstered piece of furniture: a sign that the infestation has spread to resting furniture."
+          },
+          "IMG-ENT-HID-01": {
+            "es": "Ejemplares agrupados en la costura de un colchón: el ribete y las costuras son el primer lugar que se revisa.",
+            "en": "Insects clustered in the seam of a mattress: the piping and seams are the first place to check."
+          },
+          "IMG-INS-07": {
+            "es": "Chinches y huevos en una costura de colchón; los huevos son diminutos y blanquecinos, y a menudo se ven mejor con linterna y lupa.",
+            "en": "Bed bugs and eggs in a mattress seam; eggs are tiny and whitish, and are often easier to see with a torch and a magnifier."
+          },
+          "IMG-SEV-01": {
+            "es": "Infestación incipiente: un posible ejemplar en la costura de un colchón. Con pocos ejemplares es fácil pasarlo por alto.",
+            "en": "Early infestation: a possible insect in a mattress seam. With few insects it is easy to miss."
+          },
+          "IMG-ENT-HID-02": {
+            "es": "Chinches en las uniones de un somier: las juntas del armazón ofrecen grietas donde esconderse cerca de quien duerme.",
+            "en": "Bed bugs in the joints of a box spring: the joints of the frame offer cracks to hide in, close to the sleeper."
+          },
+          "IMG-ENT-HID-04": {
+            "es": "Excrementos en un cabecero: las manchas oscuras son excrementos de sangre digerida y suelen verse cerca de los escondites.",
+            "en": "Droppings on a headboard: the dark spots are droppings of digested blood and are usually seen near the hiding places."
+          },
+          "IMG-IPM-02": {
+            "es": "Marcas oscuras en la pared de un dormitorio con infestación real: no deben confundirse con suciedad común; conviene revisar rodapiés y grietas.",
+            "en": "Dark marks on the wall of a bedroom with a real infestation: they should not be mistaken for ordinary dirt; skirting boards and cracks should be checked."
+          },
+          "IMG-ENT-HID-05": {
+            "es": "Rastros de chinches en la esquina de una pared: aparecen cuando la infestación es grande y los ejemplares se alejan de la cama.",
+            "en": "Traces of bed bugs in a wall corner: they appear when the infestation is large and the insects move away from the bed."
+          },
+          "IMG-ENT-EXC-02": {
+            "es": "Excrementos y mudas en una infestación real: son indicios que sirven aunque no se vea ningún ejemplar vivo.",
+            "en": "Droppings and shed skins in a real infestation: these are signs that are useful even when no live insect is seen."
+          },
+          "IMG-ENT-MOU-01": {
+            "es": "Mudas de chinches sobre una tela: las ninfas dejan cáscaras vacías cada vez que crecen; indican que hay una población que se está desarrollando.",
+            "en": "Bed bug shed skins on a cloth: nymphs leave empty shells each time they grow; they show a developing population."
+          },
+          "IMG-ENT-HID-06": {
+            "es": "Chinches en la costura de un tapizado: las costuras y los dobladillos de sofás y sillones son escondites habituales.",
+            "en": "Bed bugs in an upholstery seam: the seams and hems of sofas and armchairs are common hiding places."
+          }
+        },
+        "groups": [
+          {
+            "id": "heavy-infestations",
+            "h3": "Heavy and moderate infestations",
+            "intro": "<p>A <strong>heavy bed bug infestation</strong> is recognised by many clustered insects, dark stains and presence in more than one piece of furniture. These photos show what it can look like from a moderate focus to an advanced case.</p>",
+            "images": [
+              "IMG-INS-06",
+              "IMG-SEV-02",
+              "IMG-ENT-HID-03"
+            ]
+          },
+          {
+            "id": "mattress-seams",
+            "h3": "Bed bugs in the mattress: seams and piping",
+            "intro": "<p><strong>Photos of mattresses infested with bed bugs</strong> usually show insects, eggs and stains in the seams, piping and tags. It is the first place to look.</p>",
+            "images": [
+              "IMG-ENT-HID-01",
+              "IMG-INS-07",
+              "IMG-SEV-01"
+            ]
+          },
+          {
+            "id": "box-spring-and-headboard",
+            "h3": "Box springs, frames and headboards",
+            "intro": "<p>The joints of the box spring, frame and headboard offer cracks where bed bugs hide close to the sleeper. The same happens with <strong>bed bugs in wooden furniture</strong>, where joints and crevices are common hiding places.</p>",
+            "images": [
+              "IMG-ENT-HID-02",
+              "IMG-ENT-HID-04"
+            ]
+          },
+          {
+            "id": "droppings-and-stains",
+            "h3": "Droppings and marks on the wall",
+            "intro": "<p><strong>Bed bug droppings on the wall</strong> are dark dots or stains that appear when the infestation is large or old. They help locate hiding places even when no insect is seen.</p>",
+            "images": [
+              "IMG-IPM-02",
+              "IMG-ENT-HID-05",
+              "IMG-ENT-EXC-02"
+            ]
+          },
+          {
+            "id": "shed-skins",
+            "h3": "Shed skins of the nymphs",
+            "intro": "<p>Each nymph moults several times before becoming an adult and leaves an empty shell. <strong>Bed bug shed skins</strong> are a clear sign of a developing population.</p>",
+            "images": [
+              "IMG-ENT-MOU-01"
+            ]
+          },
+          {
+            "id": "upholstery",
+            "h3": "Sofas and upholstered furniture",
+            "intro": "<p>As the infestation grows, bed bugs move to sofas, armchairs and other upholstered furniture, where they hide in seams and folds.</p>",
+            "images": [
+              "IMG-ENT-HID-06"
+            ]
+          }
         ]
+      },
+      {
+        "type": "text",
+        "id": "how-to-recognise-an-infestation",
+        "h2": "How to recognise an infestation",
+        "html": "<p>The main signs are live insects, dark stains, eggs and shed skins, above all near the bed. Bites alone cannot confirm that you have bed bugs. If in doubt, the guide <a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a>, the <a href=\"{{url:PG-071}}\">identifier</a> and the guide to <a href=\"{{url:PG-044}}\">where bed bugs hide</a> help, and you can send me photos on WhatsApp for a first orientation at no cost.</p>"
       }
     ],
     "faq": [],
     "sources": [],
     "breadcrumb": [],
     "url": "/en/case-studies/",
-    "title": "Real bed bug treatment case studies | Control de Chinches",
-    "description": "Documented real cases with our own photos and client consent. There are no published cases yet.",
-    "h1": "Case studies",
-    "eyebrow": "Cases",
-    "lead": "Documented real cases will be published here, with client consent and without identifiable data."
+    "title": "Real bed bug infestations: real photos | Control de Chinches",
+    "description": "Real photos of bed bugs: heavy infestations, infested mattresses, droppings on walls, bed bugs in wooden and upholstered furniture, with an explanation of each sign.",
+    "h1": "Real bed bug infestations",
+    "eyebrow": "Real photos",
+    "lead": "Own photographs of real infestations, with a professional explanation of what each one shows."
   },
   "dates": {
     "published": "2026-11-28",

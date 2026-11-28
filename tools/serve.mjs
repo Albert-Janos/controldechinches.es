@@ -12,7 +12,7 @@ const here = fileURLToPath(new URL('.', import.meta.url));
 const root = normalize(process.argv[3] || join(here, '..'));
 const port = Number(process.argv[2] || 4173);
 const blocked = ['.git', 'docs', 'tools', 'tests', 'data', 'content', 'templates', 'raw-images', '_archive-private', 'reports', 'node_modules', '.claude'];
-const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.ico': 'image/x-icon', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2', '.mp4': 'video/mp4', '.webm': 'video/webm' };
+const mime = { '.pdf': 'application/pdf', '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.avif': 'image/avif', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.ico': 'image/x-icon', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.woff2': 'font/woff2', '.mp4': 'video/mp4', '.webm': 'video/webm' };
 
 const compressible = /^(text\/|application\/(json|xml|javascript)|image\/svg)/;
 const gz = new Map();

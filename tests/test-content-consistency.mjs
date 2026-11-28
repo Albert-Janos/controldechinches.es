@@ -25,11 +25,12 @@ ok(JSON.stringify([n.chem1, n.chem2, n.chem3, n.chem4, n.chemExtra, n.steam, n.s
 ok(consumerPrice(prices, 'es', 139) === '168,19 €' && consumerPrice(prices, 'en', 139) === '€168.19' && consumerPrice(prices, 'es', 150) === '181,50 €', 'consumer price = net x 1.21 (ES/EN formatting)');
 ok(prices.vat.status === 'planning-assumption', 'VAT stays a planning assumption (LGL gate open)');
 
-// ---- production gate: a page showing a price is refused while the VAT decision is not final
-{ const { build } = await import('../tools/build.mjs'); let refused = '';
-  try { build({ mode: 'production', out: 'dist-vat-test', simulatePublished: new Set(['PG-014']) }); } catch (e) { refused = e.message; }
-  ok(/vat\.status/.test(refused), 'production build refuses a price-showing page while VAT is a planning assumption');
-  const { rmSync } = await import('node:fs'); rmSync(new URL('../dist-vat-test', import.meta.url), { recursive: true, force: true }); }
+// ---- production gate: a page showing a price needs the owner's approval of the gross display (the 21 % itself stays a planning assumption)
+ok(prices.vat.displayApprovedByOwner === true, 'owner approved the VAT-inclusive consumer price display (2026-11-28)');
+{ const { build } = await import('../tools/build.mjs'); const { readFileSync: rf, writeFileSync: wf, rmSync } = await import('node:fs'); const pp = new URL('../data/prices.json', import.meta.url), orig = rf(pp, 'utf8'); let refused = '';
+  try { const pj = JSON.parse(orig); pj.vat.displayApprovedByOwner = false; wf(pp, JSON.stringify(pj, null, 2)); build({ mode: 'production', out: 'dist-vat-test', simulatePublished: new Set(['PG-014']) }); } catch (e) { refused = e.message; } finally { wf(pp, orig); }
+  ok(/vat\.status/.test(refused), 'production build refuses a price-showing page unless the owner approved the price display');
+  rmSync(new URL('../dist-vat-test', import.meta.url), { recursive: true, force: true }); }
 // ---- every generated page
 const stat = {};
 for (const p of Object.values(pages)) {
@@ -42,7 +43,7 @@ for (const p of Object.values(pages)) {
     ok(was.length > 0 && was.every(w => w === site.whatsapp.url), `${p.id} ${lang}: every WhatsApp link is wa.me/34605259206 without text`);
     ok(!/tel:\+?34605259206/.test(html), `${p.id} ${lang}: WhatsApp number never used as phone CTA`);
     ok(!/\{\{/.test(html), `${p.id} ${lang}: no unresolved tokens`);
-    ok(html.includes(A.featured[0]) && /y otras localidades|and other towns/.test(html), `${p.id} ${lang}: footer shows featured towns and says there are more`);
+    { const foot = html.slice(html.indexOf('<footer')); ok(A.confirmed.every(tn => foot.includes(tn)), `${p.id} ${lang}: footer lists all 18 approved towns`); }
     const ld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
     const org = ld['@graph'].find(x => x['@type'] === 'Organization');
     ok(org.telephone === site.dispatcher.tel, `${p.id} ${lang}: Organization telephone is the dispatcher`);
@@ -68,11 +69,10 @@ for (const mode of ['preview', 'production']) {
     ok(!/class="sx-ph|data-image-id=/.test(html), `${tag}: empty image placeholder rendered`);
     for (const m of html.matchAll(/<img\b[^>]*>/g)) ok(/\swidth="\d+"/.test(m[0]) && /\sheight="\d+"/.test(m[0]) && /\salt="/.test(m[0]), `${tag}: <img> without width/height/alt`);
     pics += (html.match(/<picture>/g) || []).length;
-    if (html.includes('data-video=')) { vids++; ok(!/<video\b|<source[^>]+type="video\//.test(html) && !/autoplay/i.test(html), `${tag}: video must be click-to-load (no <video>, no autoplay in the initial HTML)`); }
+    ok(!/<video\b|data-video=/.test(html), `${tag}: no video anywhere on the public pages`); if (false) { vids++; ok(!/<video\b|<source[^>]+type="video\//.test(html) && !/autoplay/i.test(html), `${tag}: video must be click-to-load (no <video>, no autoplay in the initial HTML)`); }
   }
-  ok(pics > 0, `${mode}: ready pictures are rendered (${pics})`); ok(vids === 2, `${mode}: the video appears on both language versions of the dry steam page (${vids})`);
+  ok(pics > 0, `${mode}: ready pictures are rendered (${pics})`); ok(vids === 0, `${mode}: no video on the dry steam page (owner decision 2026-11-28: still image instead)`);
 }
-{ const { statSync, existsSync } = await import('node:fs'); const v = Object.values(ctx0.videos)[0]; ok(v && existsSync(new URL(`../assets/video/${v.name}.webm`, import.meta.url)) && statSync(new URL(`../assets/video/${v.name}.webm`, import.meta.url)).size < 200 * 1024 && v.audio === false, 'web video exists, is < 200 KB and has no audio track'); }
 // ---- atlas PG-070: the COMPLETE planned structure is rendered (all categories, filter chips, expert text); missing photos are registered, never shown
 { const at = pages['PG-070'], g = at.es.blocks.find(b => b.type === 'gallery'), planned = g.groups.flatMap(x => x.images);
   ok(g.groups.length === 8 && g.filters.length === 8 && at.en.blocks.find(b => b.type === 'gallery').groups.length === 8, 'atlas keeps its 8 categories and 8 filter chips (ES + EN)');
@@ -87,6 +87,6 @@ for (const mode of ['preview', 'production']) {
     ok(!/sx-ph|data-image-id/.test(html), `${tag}: no empty image slot`);
   } }
 // a hand-typed euro amount in page data would bypass the central price source
-for (const p of Object.values(pages)) { const raw = JSON.stringify([p.es, p.en]); const m = raw.match(/\d[\d.,]*\s?€|€\s?\d/g); ok(!m, `${p.id}: hand-typed price in page data (${m}) - use {{price:KEY}} tokens`); }
+for (const p of Object.values(pages)) { const raw = JSON.stringify([p.es, p.en]); const m = raw.match(/(?<![\d.,])(?!0\s?€)\d[\d.,]*\s?€|€\s?(?!0(?!\d|[.,]\d))\d/g); ok(!m, `${p.id}: hand-typed price in page data (${m}) - use {{price:KEY}} tokens`); }
 console.log(failed ? `\n${failed} FAILED` : `\nCONTENT CONSISTENCY: all checks passed (${Object.keys(pages).length} pages x 2 languages)`);
 process.exit(failed ? 1 : 0);

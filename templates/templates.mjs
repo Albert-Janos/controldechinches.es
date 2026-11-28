@@ -33,6 +33,10 @@ export function jsonld(ctx, crumbs) {
     if (L.heroImage && ctx.images[L.heroImage]?.status === 'ready') art.image = absUrl(ctx, `${ctx.images[L.heroImage].variants.dir}${ctx.images[L.heroImage].variants.base}-${ctx.images[L.heroImage].variants.widths.at(-1)}.webp`);
     graph.push(art);
   }
+  { // FAQPage: only when the questions and answers are visible on the page (no guaranteed rich result)
+    const items = [...(L.faq || []), ...(L.blocks || []).filter(b => b.type === 'faq').flatMap(b => (b.groups || [{ items: b.items }]).flatMap(g => g.items))];
+    if (items.length && ['T-H'].includes(page.template)) graph.push({ '@type': 'FAQPage', '@id': url + '#faq', mainEntity: items.map(q => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: String(q.a).replace(/<[^>]+>/g, '') } })) });
+  }
   if (page.template === 'T-G') {
     const imgs = (L.blocks || []).filter(b => b.type === 'gallery').flatMap(b => (b.groups || [{ images: b.images }]).flatMap(g => g.images));
     imgs.filter(id => ctx.images[id]?.status === 'ready').forEach(id => { const v = ctx.images[id].variants; graph.push({ '@type': 'ImageObject', '@id': url + '#image-' + id, contentUrl: absUrl(ctx, `${v.dir}${v.base}-${v.widths.at(-1)}.webp`), caption: ctx.images[id].caption?.[lang], ...(ctx.images[id].provenance === 'own' ? { creator: person ? { '@id': person['@id'] } : { '@id': org['@id'] } } : {}) }); });
@@ -118,6 +122,7 @@ ${footer(ctx)}
 <script src="${site.scripts.menu}" defer></script>
 <script src="${site.scripts.main}" type="module"></script>
 <script src="${site.scripts.seo}" defer></script>
+${(page.scripts || []).map(s => `<script src="${s}" type="module"></script>`).join("\n")}
 </body>
 </html>
 `;

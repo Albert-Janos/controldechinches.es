@@ -8,31 +8,270 @@
   },
   "es": {
     "url": "/preguntas-frecuentes/",
-    "title": "Preguntas frecuentes sobre chinches de cama",
-    "description": "Respuestas sobre precios, preparación, plazos, tratamiento químico y vapor seco. Las respuestas parten de las condiciones publicadas en esta web.",
+    "title": "Preguntas frecuentes sobre chinches de cama: síntomas, tratamiento y precios",
+    "description": "Más de 60 respuestas breves sobre chinches de cama: cómo reconocerlas, picaduras, tratamiento químico y vapor seco, precios, preparación y zonas de servicio en Alicante.",
     "h1": "Preguntas frecuentes sobre chinches de cama",
     "eyebrow": "Preguntas frecuentes",
-    "lead": "Respuestas breves a las dudas más habituales. Si tu caso es distinto, escríbenos por WhatsApp.",
+    "lead": "Respuestas breves a las dudas más habituales, ordenadas por temas. Si tu caso es distinto, escríbeme por WhatsApp.",
     "breadcrumb": [],
     "blocks": [
       {
         "type": "faq",
-        "h2": "Precios",
+        "h2": "Reconocer chinches de cama",
         "groups": [
           {
-            "h3": "Precios",
+            "items": [
+              {
+                "q": "¿Cómo sé si tengo chinches de cama?",
+                "a": "Busca ejemplares vivos, manchas oscuras (excrementos), huevos pequeños y mudas en las costuras del colchón, el somier, el cabecero y los muebles cercanos. Las picaduras por sí solas no bastan para confirmarlo. La guía <a href=\"{{url:PG-041}}\">cómo saber si tengo chinches</a> explica el paso a paso y el <a href=\"{{url:PG-071}}\">identificador</a> orienta sobre el siguiente paso."
+              },
+              {
+                "q": "¿Qué aspecto tiene una chinche de cama?",
+                "a": "Los adultos son planos, ovalados y de color marrón, y se vuelven rojizos y más hinchados tras alimentarse. Puedes comparar con las fotografías del <a href=\"{{url:PG-070}}\">atlas de chinches</a>, donde las imágenes generadas con IA están marcadas como ilustraciones."
+              },
+              {
+                "q": "¿Qué tamaño tienen las chinches de cama?",
+                "a": "Los adultos miden unos 5–7 mm, parecidos a una semilla de manzana; las ninfas son más pequeñas (desde unos 1,5 mm) y los huevos miden aproximadamente 1 mm."
+              },
+              {
+                "q": "¿Cómo son los excrementos de las chinches?",
+                "a": "Son puntitos o manchas oscuras, casi negras, que se ven sobre todo en las costuras del colchón, el somier y el cabecero y, en infestaciones grandes, en paredes y muebles. Hay fotos reales en <a href=\"{{url:PG-073}}\">casos reales de infestaciones</a>."
+              },
+              {
+                "q": "¿Cómo son los huevos y las mudas de las chinches?",
+                "a": "Los huevos son diminutos, alargados y blanquecinos, y suelen estar pegados en grietas y costuras. Las mudas son cáscaras vacías, de color pajizo, que dejan las ninfas al crecer. Ambos son indicios importantes, aunque pequeños y fáciles de pasar por alto."
+              },
+              {
+                "q": "¿Se pueden ver chinches durante el día?",
+                "a": "Son sobre todo nocturnas y se esconden de día en grietas y costuras. En infestaciones fuertes pueden verse a cualquier hora, pero no verlas de día no descarta que haya chinches."
+              },
+              {
+                "q": "¿Con qué se pueden confundir las chinches?",
+                "a": "Con escarabajos de alfombra, garrapatas, pulgas u otros insectos pequeños. Una foto nítida con algo que dé escala ayuda a diferenciarlos; compárala con el atlas o envíamela por WhatsApp."
+              },
+              {
+                "q": "¿Puedo saber si tengo chinches solo con una foto?",
+                "a": "Una foto sirve para orientar, pero no garantiza un diagnóstico seguro. Que no se vea nada en la foto no descarta una infestación, y que se vea algo no equivale a un diagnóstico. Por eso la inspección en el lugar es parte del tratamiento."
+              },
+              {
+                "q": "¿Dónde puedo ver fotos reales de chinches?",
+                "a": "En <a href=\"{{url:PG-073}}\">casos reales de infestaciones de chinches</a> hay fotografías de infestaciones reales con una explicación de cada una, y en el <a href=\"{{url:PG-070}}\">atlas</a> puedes comparar ejemplares, huevos, mudas y excrementos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Picaduras",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "¿Cómo son las picaduras de chinches?",
+                "a": "Suelen ser ronchas rojas y con picor, a veces en línea o en grupo, en zonas que quedan al descubierto al dormir. Pero varían mucho de una persona a otra y se parecen a las de otros insectos. Más detalle en <a href=\"{{url:PG-042}}\">picaduras de chinches</a>."
+              },
+              {
+                "q": "¿Bastan las picaduras para confirmar que hay chinches?",
+                "a": "No. Las picaduras por sí solas no permiten confirmar que haya chinches: orientan la inspección, no sustituyen al diagnóstico. Hay que encontrar indicios en la vivienda."
+              },
+              {
+                "q": "¿Las chinches transmiten enfermedades?",
+                "a": "Según las autoridades sanitarias consultadas (como los CDC y la EPA), no se ha demostrado que transmitan enfermedades, pero las picaduras pueden causar picor, irritación o reacciones alérgicas, y el rascado puede infectar la piel."
+              },
+              {
+                "q": "¿Qué hago si me han picado?",
+                "a": "Evita rascarte y lava la zona con agua y jabón. Si tienes molestias intensas, signos de infección o una reacción alérgica, consulta con un médico o con tu farmacia. Después, revisa la cama y los muebles cercanos."
+              },
+              {
+                "q": "¿Por qué me pican a mí y a mi pareja no?",
+                "a": "Cada persona reacciona de forma distinta a la picadura: algunas apenas notan nada y otras tienen ronchas fuertes. Que solo una persona tenga marcas no descarta que haya chinches."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Escondites y colchones",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "¿Dónde se esconden las chinches en una habitación?",
+                "a": "Sobre todo cerca de donde se duerme: costuras, ribete y etiquetas del colchón y del somier, armazón y cabecero. En infestaciones grandes también en sofás, cortinas, enchufes, rodapiés y papel pintado. Mira <a href=\"{{url:PG-044}}\">dónde se esconden las chinches</a>."
+              },
+              {
+                "q": "¿Las chinches solo están en la cama?",
+                "a": "No. Suelen empezar en la cama o junto a ella, pero pueden extenderse a mesillas, sillas, sofás y otras habitaciones, sobre todo si la infestación es grande."
+              },
+              {
+                "q": "¿Cómo reviso el colchón y el somier?",
+                "a": "Con una linterna, revisa las costuras, el ribete y las etiquetas por los dos lados, y el borde y la parte inferior del somier, el armazón y el cabecero. Hay una guía paso a paso en <a href=\"{{url:PG-045}}\">chinches en el colchón</a>."
+              },
+              {
+                "q": "¿Pueden vivir las chinches en el sofá?",
+                "a": "Sí. Pueden esconderse en las costuras y los pliegues de sofás y sillones, sobre todo si se duerme o se descansa en ellos. El vapor seco puede ser útil en superficies tapizadas compatibles."
+              },
+              {
+                "q": "¿Se esconden en los enchufes o en las paredes?",
+                "a": "En infestaciones grandes pueden aparecer detrás de rodapiés, cuadros y papel pintado despegado, y en enchufes o huecos de pared. Si una grieta admite una tarjeta de crédito, puede esconder una chinche."
+              },
+              {
+                "q": "¿Cuánto tiempo pueden estar las chinches sin comer?",
+                "a": "Pueden pasar largos periodos sin alimentarse, que según las condiciones pueden llegar a meses. Por eso una vivienda que lleva tiempo vacía no significa que las chinches hayan desaparecido."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Cómo se propagan",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "¿Cómo llegan las chinches a una casa?",
+                "a": "Viajan en el equipaje, la ropa, las cajas y los muebles, y entre viviendas de un mismo edificio. Una sola hembra fecundada puede iniciar una infestación. Más en <a href=\"{{url:PG-047}}\">cómo se contagian las chinches</a>."
+              },
+              {
+                "q": "¿Tener chinches significa que la casa está sucia?",
+                "a": "No. Las chinches se alimentan de sangre y llegan a viviendas limpias y desordenadas por igual, tanto en casas como en hoteles. Reducir el desorden ayuda a revisar mejor, pero no evita que lleguen."
+              },
+              {
+                "q": "¿Pueden pasar de un vecino a otro?",
+                "a": "Sí, en edificios con varias viviendas pueden pasar de una a otra por huecos de paredes y conducciones. Por eso conviene avisar a los vecinos cercanos y revisar las viviendas contiguas."
+              },
+              {
+                "q": "¿Cómo evito llevarme chinches de un hotel o de un viaje?",
+                "a": "Revisa el colchón y el cabecero al llegar, usa el soporte para maletas en vez de la cama o el suelo y, al volver, lava la ropa a alta temperatura. Consulta <a href=\"{{url:PG-048}}\">chinches en viajes y hoteles</a>."
+              },
+              {
+                "q": "¿Son un riesgo los muebles de segunda mano?",
+                "a": "Sí: los muebles y colchones usados pueden traer chinches. Revísalos con cuidado, en especial las costuras y las juntas, antes de llevarlos a casa."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Viviendas, segundas residencias y alojamientos",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "¿Tratáis segundas residencias y casas de vacaciones?",
+                "a": "Sí, en viviendas de cualquier tipo de uso. Si la vivienda está vacía parte del año, indícalo al escribirme. Mira el caso de <a href=\"{{url:PG-023}}\">Torrevieja</a>."
+              },
+              {
+                "q": "¿Tratáis apartamentos turísticos, hoteles, hostales y pensiones?",
+                "a": "Sí: apartamentos turísticos, hoteles, hostales, pensiones y otros alojamientos. Todo está explicado en <a href=\"{{url:PG-015}}\">tratamiento de chinches para alojamientos turísticos</a>."
+              },
+              {
+                "q": "¿Puedo pedir presupuesto para varios apartamentos?",
+                "a": "Sí. Indica cuántas unidades gestionas, cuáles presentan indicios y cómo se puede acceder a cada una; el presupuesto es individual."
+              },
+              {
+                "q": "¿Ofrecéis suscripciones o revisiones periódicas?",
+                "a": "No. Trabajo por encargo, ante un problema concreto: no ofrezco suscripciones, paquetes de mantenimiento ni inspecciones preventivas periódicas como servicio independiente."
+              },
+              {
+                "q": "¿Qué hago si un huésped se queja de chinches?",
+                "a": "Aísla la unidad, no muevas ropa de cama ni objetos de una habitación a otra y escríbeme con fotos. La guía del <a href=\"{{url:PG-061}}\">protocolo en hoteles</a> y la de <a href=\"{{url:PG-062}}\">detección temprana</a> explican los primeros pasos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Tratamientos",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "¿Qué tratamientos ofrecéis contra las chinches?",
+                "a": "Tratamiento químico dirigido, vapor seco y la combinación de ambos y, solo si está justificado y el producto lo permite, nebulización en frío (ULV) como complemento. Mira los <a href=\"{{url:PG-010}}\">servicios</a>."
+              },
+              {
+                "q": "¿Cómo funciona el tratamiento químico?",
+                "a": "Aplico productos autorizados de forma dirigida en las zonas afectadas: costuras, estructura de la cama, grietas y escondites. Según el producto, puede dejar un efecto residual. Más en <a href=\"{{url:PG-014}}\">tratamiento químico contra chinches</a>."
+              },
+              {
+                "q": "¿Cómo funciona el vapor seco?",
+                "a": "Dirijo vapor sobrecalentado a costuras, juntas y otros puntos accesibles de superficies compatibles. Actúa por calor, sin insecticida en el paso de vapor, y no deja efecto residual. Más en <a href=\"{{url:PG-013}}\">vapor seco contra chinches</a>."
+              },
+              {
+                "q": "¿Se pueden combinar el vapor seco y el tratamiento químico?",
+                "a": "Sí. Se plantea ante infestaciones fuertes, varias habitaciones, un tratamiento previo fallido o superficies con necesidades distintas. No significa una eliminación garantizada en una sola visita."
+              },
+              {
+                "q": "¿Qué es la nebulización en frío (ULV) y se aplica siempre?",
+                "a": "Es un complemento que solo uso cuando está justificado tras valorar el caso y el producto lo permite; no sustituye al tratamiento dirigido y nunca la añado de forma automática. Su precio es un mínimo."
+              },
+              {
+                "q": "¿El vapor seco sirve para cualquier superficie?",
+                "a": "No. Hay que comprobar la resistencia al calor de cada superficie y evitar, por ejemplo, aparatos eléctricos, plásticos sensibles y barnices delicados."
+              },
+              {
+                "q": "¿Se pueden eliminar las chinches con remedios caseros?",
+                "a": "No son una solución fiable y a veces empeoran el problema. Mira <a href=\"{{url:PG-051}}\">remedios caseros contra las chinches y mitos</a>."
+              },
+              {
+                "q": "¿Funcionan los insecticidas y las bombas de humo de supermercado?",
+                "a": "No son una solución fiable: las chinches se esconden en grietas donde el producto no llega, y mal usados pueden dispersarlas. Además, las instrucciones de cada producto deben respetarse."
+              },
+              {
+                "q": "¿Cuántos tratamientos hacen falta?",
+                "a": "Depende del caso: a veces basta uno y otras hay que repetir o combinar métodos. Detalles en <a href=\"{{url:PG-054}}\">cuántos tratamientos hacen falta</a>."
+              },
+              {
+                "q": "¿Un tratamiento garantiza eliminar las chinches?",
+                "a": "Ningún método garantiza eliminar todas las chinches en una sola visita. Por eso explico qué hacer después y qué vigilar, y si hace falta repetir lo valoramos con fotos y una revisión."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Precios y desplazamiento",
+        "groups": [
+          {
             "items": [
               {
                 "q": "¿Cuánto cuesta un tratamiento de chinches?",
-                "a": "El tratamiento químico parte de {{price:chem1}} para 1 dormitorio, {{price:chem2}} para 2, {{price:chem3}} para 3 y {{price:chem4}} para 4; cada dormitorio adicional suma {{price:chemExtra}}. El vapor seco, como tratamiento independiente, parte de {{price:steam}} y el precio final depende de la valoración in situ."
+                "a": "El tratamiento químico cuesta {{price:chem1}} para 1 dormitorio, {{price:chem2}} para 2, {{price:chem3}} para 3 y {{price:chem4}} para 4; cada dormitorio adicional suma {{price:chemExtra}}. Son importes por tratamiento, con IVA incluido, a los que se suma el desplazamiento. El vapor seco independiente parte de {{price:steam}}. Puedes calcularlo en la <a href=\"/precios.html#calculadora\">calculadora</a>."
+              },
+              {
+                "q": "¿Cuánto cuesta el vapor seco?",
+                "a": "Como tratamiento independiente, desde {{price:steam}} (precio mínimo; el importe final depende de la extensión de la infestación, las superficies y las condiciones del lugar). Añadido a un tratamiento químico, suma {{price:steamAddOn}} por tratamiento, un importe fijo y no por dormitorio."
+              },
+              {
+                "q": "¿Cuánto cuesta el desplazamiento?",
+                "a": "Es una tarifa fija por localidad y tratamiento: 0 € en Alicante, Torrevieja, Orihuela Costa y Guardamar del Segura, y de {{travel:Santa Pola}} a {{travel:Jávea}} en el resto, con IVA incluido. Aparece siempre como línea aparte. Mira las <a href=\"{{url:PG-020}}\">zonas de servicio</a>."
+              },
+              {
+                "q": "¿Los precios incluyen IVA?",
+                "a": "Sí, los precios para particulares se muestran con IVA incluido (se calculan con el 21 %). Para empresas se puede detallar el importe neto y el IVA por separado."
+              },
+              {
+                "q": "¿Cuánto cuestan un sofá y la nebulización en frío?",
+                "a": "Cada sofá o sillón adicional suma {{price:sofa}}. La nebulización en frío (ULV) parte de {{price:ulv}} y solo se aplica si está justificada tras la valoración."
               },
               {
                 "q": "¿El precio de la calculadora es el definitivo?",
-                "a": "No. Es un precio orientativo. El importe final y el desplazamiento (que depende de la distancia) se confirman por escrito antes de reservar."
+                "a": "Es un presupuesto estimado con las tarifas publicadas. Los importes marcados como «desde» son mínimos y se confirman tras la valoración en el lugar; el importe final se acuerda por escrito antes de reservar."
               },
               {
                 "q": "¿Cobráis aparte la inspección o enviar fotos?",
                 "a": "No hay inspección aparte: la inspección en el lugar forma parte del tratamiento contratado. Enviar fotos por WhatsApp para una primera orientación es gratis."
+              },
+              {
+                "q": "¿Hay recargo por urgencia o por fin de semana?",
+                "a": "No hay recargos por urgencia ni por fin de semana. Un tratamiento urgente solo es posible según la capacidad que tenga en ese momento."
               }
             ]
           }
@@ -40,26 +279,59 @@
       },
       {
         "type": "faq",
-        "h2": "Antes y después del tratamiento",
+        "h2": "Preparación antes del tratamiento",
         "groups": [
           {
-            "h3": "Preparación y reentrada",
             "items": [
               {
                 "q": "¿Qué tengo que hacer antes del tratamiento?",
-                "a": "Te indicaremos cómo preparar las zonas afectadas y qué precauciones tomar según el tratamiento previsto."
+                "a": "Te indico cómo preparar las zonas afectadas según el tratamiento previsto. En general, conviene facilitar el acceso a la cama y los muebles y evitar mover objetos de una habitación a otra. La guía <a href=\"{{url:PG-055}}\">cómo preparar la vivienda</a> y la <a href=\"{{url:PG-072}}\">lista de preparación descargable</a> te ayudan."
               },
               {
+                "q": "¿Tengo que lavar la ropa y la ropa de cama?",
+                "a": "Normalmente se recomienda lavarlas y secarlas a alta temperatura, y transportarlas en bolsas cerradas. Los detalles están en <a href=\"{{url:PG-058}}\">ropa y textiles</a>."
+              },
+              {
+                "q": "¿Tengo que vaciar la habitación o tirar los muebles?",
+                "a": "No hace falta vaciar toda la vivienda. Desechar muebles solo se recomienda cuando está justificado; valoro cada caso y te indico cómo evitar mover objetos infestados sin control. No ofrezco servicio de retirada de muebles."
+              },
+              {
+                "q": "¿Qué hago con los niños y las mascotas?",
+                "a": "Te explico cuándo deben mantenerse fuera de la vivienda y cuándo pueden volver; depende del producto aplicado y de sus instrucciones, no hay un plazo general válido para todos."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Después del tratamiento",
+        "groups": [
+          {
+            "items": [
+              {
                 "q": "¿Cuándo puedo volver a la habitación?",
-                "a": "Sigue las instrucciones del técnico. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto."
+                "a": "Sigue las instrucciones que te doy. El plazo depende del método y, si se usan biocidas, de las instrucciones del producto aplicado."
               },
               {
                 "q": "¿Qué precauciones debo tomar después?",
-                "a": "El técnico indicará los plazos de reentrada y las precauciones específicas, incluida la ventilación cuando corresponda."
+                "a": "Te indico los plazos de reentrada y las precauciones específicas, incluida la ventilación cuando corresponda. Hay una <a href=\"{{url:PG-072}}\">lista de tareas después del tratamiento</a> y la guía <a href=\"{{url:PG-056}}\">qué hacer después del tratamiento</a>."
+              },
+              {
+                "q": "¿Es normal ver chinches después del tratamiento?",
+                "a": "Puede ocurrir en los días siguientes: no siempre significa que el tratamiento haya fallado. Envíame fotos por WhatsApp para valorarlo y no muevas objetos de una habitación a otra."
               },
               {
                 "q": "¿Es necesario repetir el tratamiento?",
                 "a": "Depende del caso. A veces basta una intervención y otras hace falta repetir o combinar métodos. Si se repite un tratamiento químico, cuesta lo mismo que el primero; no hay un segundo tratamiento gratuito automático."
+              },
+              {
+                "q": "¿Por qué vuelven las chinches?",
+                "a": "Porque no se eliminaron todos los focos, por una nueva entrada (viajes, visitas, muebles) o por la propagación desde viviendas vecinas. Mira <a href=\"{{url:PG-053}}\">por qué vuelven las chinches</a>."
+              },
+              {
+                "q": "¿Cómo evito que vuelvan las chinches?",
+                "a": "Usa fundas de colchón y somier específicas, revisa los muebles de segunda mano, cuida el equipaje al viajar y avisa pronto ante un indicio. Sellar grietas ayuda, pero no elimina una infestación (<a href=\"{{url:PG-059}}\">sellar grietas</a>)."
               }
             ]
           }
@@ -67,18 +339,33 @@
       },
       {
         "type": "faq",
-        "h2": "Disponibilidad y muebles",
+        "h2": "Reservas y zonas de servicio",
         "groups": [
           {
-            "h3": "Cita y servicio",
             "items": [
               {
                 "q": "¿En cuánto tiempo podéis venir?",
-                "a": "Depende de la localidad, de la distancia y de la capacidad en ese momento. No se garantiza una visita el mismo día. Escríbenos por WhatsApp para consultar una fecha."
+                "a": "Depende de la localidad y de la capacidad que tenga en ese momento. No se garantiza una visita el mismo día. Escríbeme por WhatsApp para consultar una fecha."
               },
               {
-                "q": "¿Qué se hace con los muebles muy infestados?",
-                "a": "Desechar muebles solo se recomienda cuando está justificado. El técnico valora cada caso y te indica cómo evitar mover objetos infestados sin control. No se ofrece servicio de retirada de muebles."
+                "q": "¿Cómo reservo un tratamiento?",
+                "a": "Escríbeme por WhatsApp con tu localidad, los dormitorios afectados y fotos, o calcula el presupuesto en la <a href=\"/precios.html#calculadora\">calculadora</a> y envíamelo con un solo botón. Abrir WhatsApp no es una reserva: acordamos la fecha por mensaje."
+              },
+              {
+                "q": "¿En qué localidades trabajáis?",
+                "a": "En 18 localidades de Alicante y la Costa Blanca, de Alicante a Jávea. Consulta la lista y el desplazamiento de cada una en <a href=\"{{url:PG-020}}\">zonas de servicio</a>."
+              },
+              {
+                "q": "¿Y si mi localidad no figura en la lista?",
+                "a": "Escríbeme con tu localidad: te preparo un presupuesto individual. No se asume un desplazamiento gratuito."
+              },
+              {
+                "q": "¿Cómo envío fotos y lo que he visto?",
+                "a": "Por WhatsApp. También puedes rellenar el <a href=\"{{url:PG-072A}}\">parte de detección online</a> y enviarlo con un botón; no se envía nada hasta que tú lo decidas."
+              },
+              {
+                "q": "¿Dónde puedo descargar listas de comprobación?",
+                "a": "En <a href=\"{{url:PG-072}}\">recursos descargables</a>: preparación, después del tratamiento, reconocimiento de chinches y una guía para apartamentos turísticos, todo en PDF."
               }
             ]
           }
@@ -90,31 +377,270 @@
   },
   "en": {
     "url": "/en/faq/",
-    "title": "Bed bug FAQ: prices, preparation and aftercare",
-    "description": "Answers about prices, preparation, timing, chemical treatment and dry steam. Answers follow the conditions published on this website.",
-    "h1": "Bed bug FAQ",
+    "title": "Bed bug FAQs: signs, treatment and prices | Control de Chinches",
+    "description": "More than 60 short answers about bed bugs: how to recognise them, bites, chemical treatment and dry steam, prices, preparation and service areas in Alicante.",
+    "h1": "Frequently asked questions about bed bugs",
     "eyebrow": "Frequently asked questions",
-    "lead": "Short answers to the most common questions. If your case is different, message us on WhatsApp.",
+    "lead": "Short answers to the most common questions, grouped by topic. If your case is different, message me on WhatsApp.",
     "breadcrumb": [],
     "blocks": [
       {
         "type": "faq",
-        "h2": "Prices",
+        "h2": "Recognising bed bugs",
         "groups": [
           {
-            "h3": "Prices",
+            "items": [
+              {
+                "q": "How do I know if I have bed bugs?",
+                "a": "Look for live insects, dark spots (droppings), tiny eggs and shed skins in the seams of the mattress, the box spring, the headboard and nearby furniture. Bites alone are not enough to confirm it. The guide <a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a> walks you through it and the <a href=\"{{url:PG-071}}\">identifier</a> suggests the next step."
+              },
+              {
+                "q": "What does a bed bug look like?",
+                "a": "Adults are flat, oval and brown, and become reddish and swollen after feeding. You can compare with the photographs in the <a href=\"{{url:PG-070}}\">bed bug atlas</a>, where AI-generated images are labelled as illustrations."
+              },
+              {
+                "q": "How big are bed bugs?",
+                "a": "Adults are about 5–7 mm, similar to an apple seed; nymphs are smaller (from about 1.5 mm) and eggs are about 1 mm."
+              },
+              {
+                "q": "What do bed bug droppings look like?",
+                "a": "They are tiny dark, almost black dots or stains, seen above all in the seams of the mattress, box spring and headboard and, in large infestations, on walls and furniture. There are real photos in <a href=\"{{url:PG-073}}\">real bed bug infestations</a>."
+              },
+              {
+                "q": "What do bed bug eggs and shed skins look like?",
+                "a": "Eggs are tiny, elongated and whitish, and are usually stuck in cracks and seams. Shed skins are empty, straw-coloured shells left by nymphs as they grow. Both are important signs, although small and easy to miss."
+              },
+              {
+                "q": "Can you see bed bugs during the day?",
+                "a": "They are mainly nocturnal and hide in cracks and seams by day. In heavy infestations they can be seen at any time, but not seeing them by day does not rule out bed bugs."
+              },
+              {
+                "q": "What can be mistaken for bed bugs?",
+                "a": "Carpet beetles, ticks, fleas and other small insects. A sharp photo with something for scale helps to tell them apart; compare it with the atlas or send it to me on WhatsApp."
+              },
+              {
+                "q": "Can I tell if I have bed bugs from a photo alone?",
+                "a": "A photo can guide, but it cannot guarantee a certain diagnosis. Seeing nothing in the photo does not rule out an infestation, and seeing something is not a diagnosis. That is why the on-site inspection is part of the treatment."
+              },
+              {
+                "q": "Where can I see real photos of bed bugs?",
+                "a": "In <a href=\"{{url:PG-073}}\">real bed bug infestations</a> there are photographs of real infestations with an explanation of each, and in the <a href=\"{{url:PG-070}}\">atlas</a> you can compare adults, eggs, shed skins and droppings."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Bites",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "What do bed bug bites look like?",
+                "a": "They are usually red, itchy welts, sometimes in a line or cluster, on skin left uncovered while sleeping. But they vary a lot from person to person and look like other insect bites. More in <a href=\"{{url:PG-042}}\">bed bug bites</a>."
+              },
+              {
+                "q": "Are bites enough to confirm bed bugs?",
+                "a": "No. Bites alone cannot confirm that you have bed bugs: they guide the inspection, they do not replace a diagnosis. Signs must be found in the home."
+              },
+              {
+                "q": "Do bed bugs transmit diseases?",
+                "a": "According to the health authorities consulted (such as the CDC and the EPA), bed bugs have not been shown to transmit diseases, but the bites can cause itching, irritation or allergic reactions, and scratching can infect the skin."
+              },
+              {
+                "q": "What should I do if I have been bitten?",
+                "a": "Avoid scratching and wash the area with soap and water. If you have intense discomfort, signs of infection or an allergic reaction, see a doctor or your pharmacy. Then check the bed and nearby furniture."
+              },
+              {
+                "q": "Why do I get bitten and my partner does not?",
+                "a": "Everyone reacts differently to a bite: some people barely notice anything and others get strong welts. Only one person having marks does not rule out bed bugs."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Hiding places and mattresses",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "Where do bed bugs hide in a room?",
+                "a": "Mostly near where people sleep: seams, piping and tags of the mattress and box spring, the frame and the headboard. In large infestations also in sofas, curtains, sockets, skirting boards and wallpaper. See <a href=\"{{url:PG-044}}\">where bed bugs hide</a>."
+              },
+              {
+                "q": "Are bed bugs only in the bed?",
+                "a": "No. They usually start in or next to the bed, but can spread to bedside tables, chairs, sofas and other rooms, especially if the infestation is large."
+              },
+              {
+                "q": "How do I check the mattress and box spring?",
+                "a": "With a torch, check the seams, piping and tags on both sides, and the edge and underside of the box spring, the frame and the headboard. There is a step-by-step guide in <a href=\"{{url:PG-045}}\">bed bugs in a mattress</a>."
+              },
+              {
+                "q": "Can bed bugs live in a sofa?",
+                "a": "Yes. They can hide in the seams and folds of sofas and armchairs, especially if people sleep or rest on them. Dry steam can be useful on compatible upholstered surfaces."
+              },
+              {
+                "q": "Do they hide in sockets or walls?",
+                "a": "In large infestations they can appear behind skirting boards, pictures and loose wallpaper, and in sockets or wall voids. If a crack takes a credit card, it can hide a bed bug."
+              },
+              {
+                "q": "How long can bed bugs go without feeding?",
+                "a": "They can go long periods without feeding, which depending on conditions can reach months. That is why a property that has been empty for a while does not mean the bed bugs have gone."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "How they spread",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "How do bed bugs get into a home?",
+                "a": "They travel in luggage, clothing, boxes and furniture, and between homes in the same building. A single fertilised female can start an infestation. More in <a href=\"{{url:PG-047}}\">how bed bugs spread</a>."
+              },
+              {
+                "q": "Does having bed bugs mean my home is dirty?",
+                "a": "No. Bed bugs feed on blood and reach clean and cluttered homes alike, in houses as well as hotels. Reducing clutter makes checking easier but does not prevent them arriving."
+              },
+              {
+                "q": "Can they pass from one neighbour to another?",
+                "a": "Yes, in multi-unit buildings they can move from one home to another through wall voids and pipework. That is why it is worth telling nearby neighbours and checking the adjacent homes."
+              },
+              {
+                "q": "How do I avoid bringing bed bugs home from a hotel or trip?",
+                "a": "Check the mattress and headboard on arrival, use the luggage rack instead of the bed or floor and, when you return, wash clothes at a high temperature. See <a href=\"{{url:PG-048}}\">bed bugs when travelling and in hotels</a>."
+              },
+              {
+                "q": "Is second-hand furniture a risk?",
+                "a": "Yes: used furniture and mattresses can carry bed bugs. Inspect them carefully, especially seams and joints, before bringing them home."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Homes, second homes and accommodation",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "Do you treat second homes and holiday houses?",
+                "a": "Yes, properties of any type of use. If the property is empty for part of the year, tell me when you message me. See the case of <a href=\"{{url:PG-023}}\">Torrevieja</a>."
+              },
+              {
+                "q": "Do you treat holiday apartments, hotels, hostels and guesthouses?",
+                "a": "Yes: holiday apartments, hotels, hostels, guesthouses and other accommodation. It is all explained in <a href=\"{{url:PG-015}}\">bed bug treatment for holiday accommodation</a>."
+              },
+              {
+                "q": "Can I ask for a quote for several apartments?",
+                "a": "Yes. Tell me how many units you manage, which ones show signs and how each can be accessed; the quote is individual."
+              },
+              {
+                "q": "Do you offer subscriptions or regular inspections?",
+                "a": "No. I work on request for a specific problem: I do not offer subscriptions, maintenance packages or regular preventive inspections as a stand-alone service."
+              },
+              {
+                "q": "What do I do if a guest complains about bed bugs?",
+                "a": "Isolate the unit, do not move bedding or items from one room to another and message me with photos. The <a href=\"{{url:PG-061}}\">hotel protocol</a> guide and the one on <a href=\"{{url:PG-062}}\">early detection</a> explain the first steps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Treatments",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "Which treatments do you offer against bed bugs?",
+                "a": "Targeted chemical treatment, dry steam and the combination of both and, only if justified and the product allows it, cold fogging (ULV) as a supplement. See the <a href=\"{{url:PG-010}}\">services</a>."
+              },
+              {
+                "q": "How does chemical treatment work?",
+                "a": "I apply authorised products in a targeted way to the affected areas: seams, bed structure, cracks and hiding places. Depending on the product, it can leave a residual effect. More in <a href=\"{{url:PG-014}}\">chemical treatment for bed bugs</a>."
+              },
+              {
+                "q": "How does dry steam work?",
+                "a": "I direct superheated steam at seams, joints and other accessible points on compatible surfaces. It works by heat, with no insecticide in the steam step, and leaves no residual effect. More in <a href=\"{{url:PG-013}}\">dry steam for bed bugs</a>."
+              },
+              {
+                "q": "Can dry steam and chemical treatment be combined?",
+                "a": "Yes. It is considered for heavy infestations, several rooms, a failed earlier treatment or surfaces with different needs. It does not mean guaranteed elimination in a single visit."
+              },
+              {
+                "q": "What is cold fogging (ULV) and is it always applied?",
+                "a": "It is a supplement I only use when justified after assessing the case and the product allows it; it does not replace targeted treatment and I never add it automatically. Its price is a minimum."
+              },
+              {
+                "q": "Is dry steam suitable for every surface?",
+                "a": "No. Each surface’s heat resistance has to be checked and, for example, electrical appliances, heat-sensitive plastics and delicate varnishes avoided."
+              },
+              {
+                "q": "Can bed bugs be eliminated with home remedies?",
+                "a": "They are not a reliable solution and sometimes make the problem worse. See <a href=\"{{url:PG-051}}\">home remedies for bed bugs and myths</a>."
+              },
+              {
+                "q": "Do supermarket insecticides and smoke bombs work?",
+                "a": "They are not a reliable solution: bed bugs hide in cracks the product does not reach, and misused products can scatter them. The instructions of each product must also be followed."
+              },
+              {
+                "q": "How many treatments are needed?",
+                "a": "It depends on the case: sometimes one is enough and other times it has to be repeated or methods combined. Details in <a href=\"{{url:PG-054}}\">how many treatments are needed</a>."
+              },
+              {
+                "q": "Does one treatment guarantee the bed bugs are gone?",
+                "a": "No method guarantees eliminating every bed bug in a single visit. That is why I explain what to do afterwards and what to watch for, and if a repeat is needed we assess it with photos and a check."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "Prices and travel",
+        "groups": [
+          {
             "items": [
               {
                 "q": "How much does bed bug treatment cost?",
-                "a": "Chemical treatment starts at {{price:chem1}} for one bedroom, {{price:chem2}} for two, {{price:chem3}} for three and {{price:chem4}} for four; each additional bedroom adds {{price:chemExtra}}. Dry steam as a stand-alone treatment starts at {{price:steam}} and the final price depends on an on-site assessment."
+                "a": "Chemical treatment costs {{price:chem1}} for 1 bedroom, {{price:chem2}} for 2, {{price:chem3}} for 3 and {{price:chem4}} for 4; each additional bedroom adds {{price:chemExtra}}. These are per-treatment amounts, VAT included, plus travel. Stand-alone dry steam starts at {{price:steam}}. You can work it out in the <a href=\"/en/prices.html#calculadora\">calculator</a>."
+              },
+              {
+                "q": "How much does dry steam cost?",
+                "a": "As a stand-alone treatment, from {{price:steam}} (a minimum price; the final amount depends on the extent of the infestation, the surfaces and the conditions on site). Added to a chemical treatment it adds {{price:steamAddOn}} per treatment, a flat fee and not per bedroom."
+              },
+              {
+                "q": "How much is the travel fee?",
+                "a": "It is a fixed fee per town and treatment: €0 in Alicante, Torrevieja, Orihuela Costa and Guardamar del Segura, and from {{travel:Santa Pola}} to {{travel:Jávea}} elsewhere, VAT included. It always appears as a separate line. See the <a href=\"{{url:PG-020}}\">service areas</a>."
+              },
+              {
+                "q": "Do the prices include VAT?",
+                "a": "Yes, prices for private customers are shown with VAT included (calculated at 21%). For businesses the net amount and VAT can be shown separately."
+              },
+              {
+                "q": "How much do a sofa and cold fogging cost?",
+                "a": "Each additional sofa or armchair adds {{price:sofa}}. Cold fogging (ULV) starts at {{price:ulv}} and is only applied if justified after the assessment."
               },
               {
                 "q": "Is the calculator price final?",
-                "a": "No. It is an estimate. The final price and travel (which depends on the distance) are confirmed in writing before you book."
+                "a": "It is an estimated quote based on the published rates. Amounts marked “from” are minimums and are confirmed after the on-site assessment; the final amount is agreed in writing before you book."
               },
               {
                 "q": "Do you charge separately for the inspection or for sending photos?",
-                "a": "There is no separate inspection: the on-site inspection is part of the treatment ordered. Sending photos by WhatsApp for a first orientation is free."
+                "a": "There is no separate inspection: the on-site inspection is part of the treatment that is ordered. Sending photos on WhatsApp for a first orientation is free."
+              },
+              {
+                "q": "Is there an urgency or weekend surcharge?",
+                "a": "There are no urgency or weekend surcharges. An urgent treatment is only possible depending on the capacity I have at that moment."
               }
             ]
           }
@@ -122,26 +648,59 @@
       },
       {
         "type": "faq",
-        "h2": "Before and after treatment",
+        "h2": "Preparing for the treatment",
         "groups": [
           {
-            "h3": "Preparation and re-entry",
             "items": [
               {
-                "q": "How should I prepare?",
-                "a": "We’ll tell you how to prepare the affected areas and what precautions to take for your treatment."
+                "q": "What do I need to do before the treatment?",
+                "a": "I tell you how to prepare the affected areas for the planned treatment. In general, it helps to give access to the bed and furniture and avoid moving items from one room to another. The guide <a href=\"{{url:PG-055}}\">preparing your home</a> and the <a href=\"{{url:PG-072}}\">downloadable preparation checklist</a> help."
               },
               {
-                "q": "When can I use the room again?",
-                "a": "Follow the technician’s instructions. Re-entry times depend on the method and, where used, the biocide product instructions."
+                "q": "Do I have to wash clothes and bedding?",
+                "a": "Washing and drying at a high temperature is normally recommended, carrying items in closed bags. The details are in <a href=\"{{url:PG-058}}\">laundry and textiles</a>."
+              },
+              {
+                "q": "Do I have to empty the room or throw out furniture?",
+                "a": "There is no need to empty the whole home. Discarding furniture is only recommended when justified; I assess each case and tell you how to avoid moving infested items without control. I do not offer a furniture removal service."
+              },
+              {
+                "q": "What about children and pets?",
+                "a": "I explain when they should stay out of the home and when they can return; it depends on the product applied and its instructions, and there is no general time that fits every product."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "h2": "After the treatment",
+        "groups": [
+          {
+            "items": [
+              {
+                "q": "When can I go back into the room?",
+                "a": "Follow the instructions I give you. The time depends on the method and, if biocides are used, on the instructions of the product applied."
               },
               {
                 "q": "What precautions should I take afterwards?",
-                "a": "The technician will tell you the re-entry times and any specific precautions, including ventilation where needed."
+                "a": "I give you the re-entry times and specific precautions, including ventilation where relevant. There is a <a href=\"{{url:PG-072}}\">downloadable after-treatment checklist</a> and the guide <a href=\"{{url:PG-056}}\">what to do after treatment</a>."
               },
               {
-                "q": "Does the treatment need repeating?",
-                "a": "It depends on the case. Sometimes one treatment is enough and sometimes it has to be repeated or methods combined. If a chemical treatment is repeated it costs the same as the first; there is no automatic free second treatment."
+                "q": "Is it normal to see bed bugs after the treatment?",
+                "a": "It can happen in the following days: it does not always mean the treatment failed. Send me photos on WhatsApp so I can assess it, and do not move items from one room to another."
+              },
+              {
+                "q": "Is it necessary to repeat the treatment?",
+                "a": "It depends on the case. Sometimes one intervention is enough and other times it has to be repeated or methods combined. If a chemical treatment is repeated, it costs the same as the first; there is no automatic free second treatment."
+              },
+              {
+                "q": "Why do bed bugs come back?",
+                "a": "Because not all the foci were eliminated, because of a new entry (trips, visitors, furniture) or because of spread from neighbouring homes. See <a href=\"{{url:PG-053}}\">why bed bugs come back</a>."
+              },
+              {
+                "q": "How do I stop bed bugs coming back?",
+                "a": "Use bed-bug-proof mattress and box spring encasements, inspect second-hand furniture, take care with luggage when travelling and report any sign early. Sealing cracks helps but does not remove an infestation (<a href=\"{{url:PG-059}}\">sealing cracks</a>)."
               }
             ]
           }
@@ -149,18 +708,33 @@
       },
       {
         "type": "faq",
-        "h2": "Availability and furniture",
+        "h2": "Booking and service areas",
         "groups": [
           {
-            "h3": "Appointments and service",
             "items": [
               {
-                "q": "How soon can you visit?",
-                "a": "It depends on the town, the distance and capacity at the time. A same-day visit is not guaranteed. Message us on WhatsApp to ask about a date."
+                "q": "How soon can you come?",
+                "a": "It depends on the town and the capacity I have at that moment. A same-day visit is not guaranteed. Message me on WhatsApp to ask about a date."
               },
               {
-                "q": "What is done about heavily infested furniture?",
-                "a": "Disposing of furniture is only recommended when justified. The technician assesses each case and tells you how to avoid moving infested items without control. A furniture removal service is not offered."
+                "q": "How do I book a treatment?",
+                "a": "Message me on WhatsApp with your town, the affected bedrooms and photos, or work out the quote in the <a href=\"/en/prices.html#calculadora\">calculator</a> and send it to me with one button. Opening WhatsApp is not a booking: we agree the date by message."
+              },
+              {
+                "q": "Which towns do you work in?",
+                "a": "In 18 towns of Alicante and the Costa Blanca, from Alicante to Jávea. See the list and the travel fee for each in <a href=\"{{url:PG-020}}\">service areas</a>."
+              },
+              {
+                "q": "What if my town is not on the list?",
+                "a": "Message me with your town: I will prepare an individual quote. Free travel is not assumed."
+              },
+              {
+                "q": "How do I send photos and what I have seen?",
+                "a": "On WhatsApp. You can also fill in the <a href=\"{{url:PG-072A}}\">online detection report</a> and send it with a button; nothing is sent until you decide."
+              },
+              {
+                "q": "Where can I download checklists?",
+                "a": "In <a href=\"{{url:PG-072}}\">downloadable resources</a>: preparation, after the treatment, recognising bed bugs and a guide for holiday apartments, all as PDF."
               }
             ]
           }
@@ -173,5 +747,13 @@
   "dates": {
     "published": "2026-11-28",
     "modified": "2026-11-28"
-  }
+  },
+  "related": [
+    "PG-010",
+    "PG-014",
+    "PG-013",
+    "PG-020",
+    "PG-041",
+    "PG-070"
+  ]
 }

@@ -9,40 +9,29 @@
   "related": [
     "PG-072",
     "PG-041",
-    "PG-061"
+    "PG-070",
+    "PG-071",
+    "PG-062"
   ],
   "es": {
     "blocks": [
       {
-        "type": "print",
-        "label": "Imprimir o guardar como PDF"
+        "type": "text",
+        "id": "como-usarlo",
+        "h2": "Cómo usar el parte",
+        "noprint": true,
+        "html": "<ol><li>Rellena los campos que quieras: ninguno es obligatorio, pero conviene indicar la localidad y los indicios.</li><li>Marca los indicios que has observado y revisa el texto.</li><li>Pulsa <strong>Enviar por WhatsApp</strong> (se abre el mensaje ya escrito y lo envías tú), <strong>Guardar PDF rellenado</strong> o <strong>Imprimir</strong>. Si tu móvil lo permite, también puedes <strong>compartir el PDF</strong> directamente.</li><li>Adjunta en WhatsApp las fotos de los indicios, con algo que dé escala.</li></ol>"
       },
       {
-        "type": "docform",
-        "h2": "Datos de la detección",
-        "meta": {
-          "version": "0.1 (borrador)",
-          "date": "2026-11-27"
-        },
-        "fields": [
-          "Fecha y hora",
-          "Alojamiento / vivienda",
-          "Habitación o unidad",
-          "Persona que informa",
-          "Localidad",
-          "Teléfono de contacto"
-        ],
-        "checks": [
-          "Insecto vivo",
-          "Manchas oscuras (posibles excrementos)",
-          "Huevos",
-          "Mudas",
-          "Marcas en las costuras del colchón",
-          "Marcas en el somier o el cabecero",
-          "Marcas en muebles tapizados",
-          "Fotos adjuntas (con algo que dé escala)"
-        ],
-        "note": "Las picaduras por sí solas no permiten confirmar que haya chinches. Este formulario registra observaciones; no es un diagnóstico."
+        "type": "detectform",
+        "h2": "Datos de la detección"
+      },
+      {
+        "type": "text",
+        "id": "para-que-sirve",
+        "h2": "Para qué sirve un parte de detección",
+        "noprint": true,
+        "html": "<p>Un parte de detección ordena la información que necesito para orientarte: cuándo y dónde has visto algo, en qué habitación y qué tipo de indicios hay. Las picaduras por sí solas no permiten confirmar que haya chinches, por eso el parte recoge indicios en la cama y los muebles. Es un registro de observaciones, no un diagnóstico.</p><p>Si no sabes qué buscar, consulta la guía <a href=\"{{url:PG-041}}\">cómo saber si tengo chinches</a>, compara con el <a href=\"{{url:PG-070}}\">atlas fotográfico</a> o prueba el <a href=\"{{url:PG-071}}\">identificador</a>. Si gestionas un apartamento turístico, mira la guía de <a href=\"{{url:PG-062}}\">detección temprana</a> y el <a href=\"{{url:PG-072B}}\">registro de monitorización</a>.</p>"
       }
     ],
     "faq": [],
@@ -54,44 +43,31 @@
       ]
     ],
     "url": "/recursos/parte-de-deteccion/",
-    "title": "Parte de detección de chinches: formulario imprimible",
-    "description": "Formulario imprimible para registrar una posible detección de chinches: fecha, ubicación, indicios observados y fotos.",
+    "title": "Parte de detección de chinches online: rellena y envía por WhatsApp o PDF",
+    "description": "Formulario online de detección de chinches: anota fecha, lugar e indicios, envíalo por WhatsApp, guárdalo como PDF o imprímelo. Tus datos se quedan en tu dispositivo.",
     "h1": "Parte de detección de chinches",
-    "eyebrow": "Recurso imprimible",
-    "lead": "Rellénalo en cuanto detectes algo y envíanoslo con las fotos."
+    "eyebrow": "Recurso online e imprimible",
+    "lead": "Anota lo que has encontrado y envíamelo con las fotos: por WhatsApp, como PDF o impreso. Es gratis y no necesitas registrarte."
   },
   "en": {
     "blocks": [
       {
-        "type": "print",
-        "label": "Print or save as PDF"
+        "type": "text",
+        "id": "how-to-use-it",
+        "h2": "How to use the report",
+        "noprint": true,
+        "html": "<ol><li>Fill in the fields you want: none is mandatory, but the town and the signs are useful.</li><li>Tick the signs you have observed and check the text.</li><li>Press <strong>Send on WhatsApp</strong> (the message opens already written and you send it), <strong>Save filled-in PDF</strong> or <strong>Print</strong>. If your phone allows it, you can also <strong>share the PDF</strong> directly.</li><li>Attach the photos of the signs in WhatsApp, with something for scale.</li></ol>"
       },
       {
-        "type": "docform",
-        "h2": "Detection details",
-        "meta": {
-          "version": "0.1 (draft)",
-          "date": "2026-11-27"
-        },
-        "fields": [
-          "Date and time",
-          "Property / accommodation",
-          "Room or unit",
-          "Reported by",
-          "Town",
-          "Contact phone"
-        ],
-        "checks": [
-          "Live insect",
-          "Dark spots (possible excreta)",
-          "Eggs",
-          "Moults",
-          "Marks along mattress seams",
-          "Marks on the bed frame or headboard",
-          "Marks on upholstered furniture",
-          "Photos attached (with something for scale)"
-        ],
-        "note": "Bites alone cannot confirm bed bugs. This form records observations; it is not a diagnosis."
+        "type": "detectform",
+        "h2": "Detection details"
+      },
+      {
+        "type": "text",
+        "id": "what-it-is-for",
+        "h2": "What a detection report is for",
+        "noprint": true,
+        "html": "<p>A detection report organises the information I need to guide you: when and where you saw something, in which room and what kind of signs there are. Bites alone cannot confirm bed bugs, so the report records signs on the bed and furniture. It is a record of observations, not a diagnosis.</p><p>If you do not know what to look for, see the guide <a href=\"{{url:PG-041}}\">how to tell if you have bed bugs</a>, compare with the <a href=\"{{url:PG-070}}\">photo atlas</a> or try the <a href=\"{{url:PG-071}}\">identifier</a>. If you manage a holiday apartment, see the guide to <a href=\"{{url:PG-062}}\">early detection</a> and the <a href=\"{{url:PG-072B}}\">monitoring log</a>.</p>"
       }
     ],
     "faq": [],
@@ -103,14 +79,17 @@
       ]
     ],
     "url": "/en/resources/bed-bug-detection-report/",
-    "title": "Bed bug detection report: printable form | Control de Chinches",
-    "description": "Printable form to record a possible bed bug detection: date, location, signs observed and photos.",
+    "title": "Online bed bug detection report: fill in and send by WhatsApp or PDF | Control de Chinches",
+    "description": "Online bed bug detection form: note the date, place and signs, send it on WhatsApp, save it as a PDF or print it. Your data stays on your device.",
     "h1": "Bed bug detection report",
-    "eyebrow": "Printable resource",
-    "lead": "Fill it in as soon as you notice something and send it to us with photos."
+    "eyebrow": "Online and printable resource",
+    "lead": "Note what you have found and send it to me with the photos: on WhatsApp, as a PDF or printed. It is free and needs no registration."
   },
   "dates": {
     "published": "2026-11-28",
     "modified": "2026-11-28"
-  }
+  },
+  "scripts": [
+    "/js/detect.js?v=1"
+  ]
 }

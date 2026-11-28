@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const steps = [
   ['prices consistency', 'tools/check-prices.mjs'],
+  ['sitemap, canonical, hreflang, noindex', 'tests/test-seo.mjs'],
   ['internal links', 'tools/check-links.mjs'],
   ['ads protection', 'tests/test-ads-protection.mjs'],
   ['calculator + CTAs', 'tools/test-calculator.mjs'],

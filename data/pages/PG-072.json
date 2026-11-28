@@ -8,23 +8,56 @@
   },
   "related": [
     "PG-040",
-    "PG-015"
+    "PG-055",
+    "PG-056",
+    "PG-041",
+    "PG-062"
   ],
   "es": {
     "blocks": [
       {
+        "type": "text",
+        "id": "para-que-sirven",
+        "h2": "Para qué sirven estos documentos",
+        "html": "<p>Son documentos prácticos basados en los artículos de la <a href=\"{{url:PG-040}}\">guía sobre chinches de cama</a>: te ayudan a preparar la vivienda, a saber qué hacer después de un tratamiento y a reconocer y registrar indicios. Se ven bien en el móvil, se pueden imprimir y llevan la versión y la fecha de actualización.</p><p>Son informativos: no sustituyen la documentación oficial u obligatoria de un tratamiento, y en cuestiones de seguridad prevalecen siempre la etiqueta del producto aplicado y las instrucciones del técnico.</p>"
+      },
+      {
+        "type": "downloads",
+        "h2": "Listas de comprobación",
+        "ids": [
+          "prep",
+          "after",
+          "recognise"
+        ]
+      },
+      {
+        "type": "downloads",
+        "h2": "Para apartamentos y alojamientos turísticos",
+        "ids": [
+          "apartments",
+          "log"
+        ]
+      },
+      {
+        "type": "downloads",
+        "h2": "Parte de detección",
+        "ids": [
+          "detection"
+        ]
+      },
+      {
         "type": "hub",
         "groups": [
           {
-            "h2": "Formularios",
+            "h2": "Versiones online e imprimibles",
             "items": [
               {
                 "pageId": "PG-072A",
-                "text": "Para registrar una detección con fecha, lugar y fotos."
+                "text": "Rellénalo en el móvil o el ordenador y envíalo por WhatsApp, guárdalo como PDF o imprímelo."
               },
               {
                 "pageId": "PG-072B",
-                "text": "Para anotar revisiones periódicas en un alojamiento."
+                "text": "Hoja de 12 filas para anotar tus propias revisiones, con descarga en PDF e impresión."
               }
             ]
           }
@@ -35,27 +68,57 @@
     "sources": [],
     "breadcrumb": [],
     "url": "/recursos/",
-    "title": "Recursos descargables sobre chinches de cama",
-    "description": "Formularios e informes imprimibles para detectar, registrar y monitorizar chinches de cama. Disponibles en HTML e imprimibles.",
-    "h1": "Recursos descargables",
+    "title": "Recursos y guías descargables sobre chinches de cama (PDF gratis)",
+    "description": "Listas de comprobación en PDF sobre chinches de cama: preparación antes del tratamiento, qué hacer después, cómo reconocerlas, guía para apartamentos turísticos, parte de detección y registro. Sin registro.",
+    "h1": "Recursos y guías descargables sobre chinches de cama",
     "eyebrow": "Recursos",
-    "lead": "Documentos imprimibles, disponibles como página web y en PDF."
+    "lead": "Listas de comprobación y formularios en PDF, listos para imprimir en A4. Se descargan directamente, sin registro."
   },
   "en": {
     "blocks": [
       {
+        "type": "text",
+        "id": "what-they-are-for",
+        "h2": "What these documents are for",
+        "html": "<p>These are practical documents based on the articles in the <a href=\"{{url:PG-040}}\">bed bug guide</a>: they help you prepare your home, know what to do after a treatment and recognise and record signs. They read well on a phone, can be printed and carry the version and update date.</p><p>They are informational: they do not replace the official or mandatory documentation of a treatment, and for safety matters the label of the product applied and the technician’s instructions always prevail.</p>"
+      },
+      {
+        "type": "downloads",
+        "h2": "Checklists",
+        "ids": [
+          "prep",
+          "after",
+          "recognise"
+        ]
+      },
+      {
+        "type": "downloads",
+        "h2": "For holiday apartments and accommodation",
+        "ids": [
+          "apartments",
+          "log"
+        ]
+      },
+      {
+        "type": "downloads",
+        "h2": "Detection report",
+        "ids": [
+          "detection"
+        ]
+      },
+      {
         "type": "hub",
         "groups": [
           {
-            "h2": "Forms",
+            "h2": "Online and printable versions",
             "items": [
               {
                 "pageId": "PG-072A",
-                "text": "To record a detection with date, place and photos."
+                "text": "Fill it in on your phone or computer and send it on WhatsApp, save it as a PDF or print it."
               },
               {
                 "pageId": "PG-072B",
-                "text": "To note regular checks in an accommodation."
+                "text": "A 12-row sheet to note your own checks, with PDF download and printing."
               }
             ]
           }
@@ -66,14 +129,17 @@
     "sources": [],
     "breadcrumb": [],
     "url": "/en/resources/",
-    "title": "Downloadable bed bug resources | Control de Chinches",
-    "description": "Printable forms and reports to detect, record and monitor bed bugs. Available as web pages and printable.",
-    "h1": "Downloadable resources",
+    "title": "Downloadable bed bug guides and resources (free PDFs) | Control de Chinches",
+    "description": "Free bed bug checklists as PDF: preparing for treatment, what to do afterwards, how to recognise bed bugs, a guide for holiday apartments, a detection report and a monitoring log. No registration.",
+    "h1": "Downloadable bed bug guides and resources",
     "eyebrow": "Resources",
-    "lead": "Printable documents, available as web pages and as PDF."
+    "lead": "Checklists and forms as PDF, ready to print on A4. They download directly, without registration."
   },
   "dates": {
     "published": "2026-11-28",
     "modified": "2026-11-28"
-  }
+  },
+  "scripts": [
+    "/js/resources.js?v=1"
+  ]
 }

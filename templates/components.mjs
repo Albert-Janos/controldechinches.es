@@ -2,6 +2,7 @@
 // ctx = { lang, ui, site, prices, images, pages, included:Set<pageId>, mode:'preview'|'production', page, pageLang }
 export const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 import { consumerPrice, resolveTokens } from './prices.mjs';
+import { downloadsBlock, detectForm } from './resources.mjs';
 export const slug = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 export function pageUrl(ctx, id, lang = ctx.lang) { return ctx.pages[id]?.[lang]?.url ?? null; }
@@ -163,7 +164,7 @@ const heading = (b, id) => b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : '';
 export function renderBlock(ctx, b, i) {
   const { ui, lang } = ctx, id = sectionId(b, i);
   switch (b.type) {
-    case 'text': return `<section class="sx-block sx-prose">${heading(b, id)}${b.html}</section>`;
+    case 'text': return `<section class="sx-block sx-prose${b.noprint ? ' sx-noprint' : ''}">${heading(b, id)}${b.html}</section>`;
     case 'todo': return todo(ctx, b.text);
     case 'facts': return `<section class="sx-block" aria-label="${esc(ui.keyFacts)}"><dl class="sx-facts">${b.items.map(f => `<div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>`).join('')}</dl></section>`;
     case 'steps': return `<section class="sx-block">${heading(b, id)}<ol class="steps">${b.items.map(s => `<li><div><h3>${esc(s.h3)}</h3><p>${s.p}</p></div></li>`).join('')}</ol></section>`;
@@ -195,6 +196,8 @@ export function renderBlock(ctx, b, i) {
     }
     case 'video': return videoBlock(ctx, b);
     case 'docform': return docForm(ctx, b, id);
+    case 'downloads': return downloadsBlock(ctx, b, id);
+    case 'detectform': return detectForm(ctx, b, id);
     case 'print': return '<p class="sx-noprint"><button type="button" class="button yellow" data-print>' + esc(b.label) + '</button></p>';
     case 'faq': return faqBlock(ctx, b, id);
     case 'cta': return ctaBand(ctx, b.intensity, b.message);
@@ -228,7 +231,7 @@ function videoBlock(ctx, b) {
   return `<section class="sx-block"><figure class="sx-figure sx-video" data-video="${base}.webm" data-width="${v.width}" data-height="${v.height}" data-poster="${base}-poster-${big}.webp"><button type="button" class="sx-video-btn" aria-label="${esc(ui.video.play)}: ${esc(cap)}" style="aspect-ratio:${v.width}/${v.height}"><picture><source type="image/avif" srcset="${set('avif')}" sizes="${sizes}"><source type="image/webp" srcset="${set('webp')}" sizes="${sizes}"><img src="${base}-poster-${big}.webp" srcset="${set('webp')}" sizes="${sizes}" width="${v.width}" height="${v.height}" alt="${esc(alt)}" loading="lazy" decoding="async"></picture><span class="sx-video-icon" aria-hidden="true"></span></button><noscript><p class="sx-tool-note"><a class="text-link" href="${base}.webm">${esc(ui.video.play)}</a></p></noscript><figcaption>${esc(cap)}</figcaption></figure></section>`;
 }
 function faqBlock(ctx, b, id) {
-  const group = (g, i) => `<div class="sx-faq-group">${g.h3 ? `<h3>${esc(g.h3)}</h3>` : ''}<div class="questions">${g.items.map((q, j) => `<details name="faq-${i}"${i === 0 && j === 0 && b.open ? ' open' : ''}><summary>${esc(q.q)}</summary><p>${q.a}</p></details>`).join('')}</div></div>`;
+  const group = (g, i) => `<div class="sx-faq-group">${g.h3 ? `<h3>${esc(g.h3)}</h3>` : ''}<div class="questions">${g.items.map((q, j) => `<details name="faq-${id}-${i}"${i === 0 && j === 0 && b.open ? ' open' : ''}><summary>${esc(q.q)}</summary><p>${q.a}</p></details>`).join('')}</div></div>`;
   const groups = b.groups || [{ items: b.items }];
   return `<section class="sx-block sx-faq">${b.h2 ? `<h2 id="${id}">${esc(b.h2)}</h2>` : `<h2 id="${id}">${esc(ctx.ui.faq)}</h2>`}${groups.map(group).join('')}</section>`;
 }
@@ -241,8 +244,8 @@ function galleryBlock(ctx, b, id) {
   const item = im => {
     const e = ctx.images[im], ready = e?.status === 'ready', v = e?.variants;
     const href = ready ? `${v.dir}${v.base}-${v.widths.at(-1)}.webp` : `#${im}`;
-    const notes = JSON.stringify({ id: im, cap: e?.caption?.[lang] || '', notes: e?.notes?.[lang] || '', credit: e?.credit || '', scale: e?.scale || '' });
-    return `<li id="${im}"><figure class="sx-figure"><a href="${href}" data-lightbox data-notes="${esc(notes)}">${picture(ctx, im, { sizes: '(min-width: 990px) 22rem, 50vw' })}</a><figcaption>${esc(e?.caption?.[lang] || '')}</figcaption></figure></li>`;
+    const notes = JSON.stringify({ id: im, cap: e?.caption?.[lang] || '', notes: b.notes?.[im]?.[lang] || e?.notes?.[lang] || '', credit: e?.credit || '', scale: e?.scale || '' });
+    return `<li id="${im}"><figure class="sx-figure"><a href="${href}" data-lightbox data-notes="${esc(notes)}">${picture(ctx, im, { sizes: '(min-width: 990px) 22rem, 50vw' })}</a><figcaption>${esc(e?.caption?.[lang] || '')}${b.notes?.[im]?.[lang] ? `<span class="sx-img-note">${esc(b.notes[im][lang])}</span>` : ''}</figcaption></figure></li>`;
   };
   const groups = (b.groups || [{ images: b.images }]).map(g => ({ ...g, images: g.images.filter(im => !skipOptional(ctx, im)), intro: g.intro })).filter(g => g.images.length || g.intro);
   if (!groups.length) return '';

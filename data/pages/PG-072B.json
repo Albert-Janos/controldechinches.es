@@ -8,20 +8,37 @@
   },
   "related": [
     "PG-072",
+    "PG-072A",
+    "PG-060",
+    "PG-062",
     "PG-015"
   ],
   "es": {
     "blocks": [
       {
+        "type": "text",
+        "id": "como-usarlo",
+        "h2": "Cómo usar el registro",
+        "noprint": true,
+        "html": "<p>Anota en cada revisión la fecha, la unidad, la zona que has comprobado (colchón, somier, cabecero, muebles tapizados, rodapiés…), el resultado tal como lo observas y cualquier comentario o referencia a una foto. Es un registro interno de tus propias comprobaciones: <strong>no es un servicio de monitorización</strong> que yo ofrezca, y no hace falta enviármelo.</p><p>Si ves un indicio sospechoso, rellena el <a href=\"{{url:PG-072A}}\">parte de detección online</a> y envíamelo por WhatsApp con fotos.</p>"
+      },
+      {
+        "type": "downloads",
+        "h2": "Descargar el registro",
+        "ids": [
+          "log"
+        ]
+      },
+      {
         "type": "print",
-        "label": "Imprimir o guardar como PDF"
+        "label": "Imprimir el registro"
       },
       {
         "type": "docform",
         "h2": "Registro de revisiones",
         "meta": {
-          "version": "0.1 (borrador)",
-          "date": "2026-11-27"
+          "version": "1.0",
+          "date": "28/11/2026"
         },
         "fields": [
           "Alojamiento",
@@ -37,7 +54,14 @@
           ],
           "rows": 12
         },
-        "note": "Anota el resultado tal como lo observas. Si hay dudas, haz fotos y consúltanos."
+        "note": "Anota el resultado tal como lo observas. Si hay dudas, haz fotos y consúltame."
+      },
+      {
+        "type": "text",
+        "id": "revisar-con-criterio",
+        "h2": "Qué revisar y con qué frecuencia",
+        "noprint": true,
+        "html": "<p>Las guías sanitarias que resume la web recomiendan revisar con regularidad colchones, ropa de cama y somieres, y usar interceptores bajo las patas de la cama cuando se hace seguimiento. Tienes los detalles en la guía de <a href=\"{{url:PG-060}}\">monitorización de chinches</a> y en la de <a href=\"{{url:PG-062}}\">detección temprana en apartamentos turísticos</a>. Si necesitas un tratamiento, consulta el <a href=\"{{url:PG-015}}\">servicio para alojamientos turísticos</a>.</p>"
       }
     ],
     "faq": [],
@@ -49,24 +73,38 @@
       ]
     ],
     "url": "/recursos/registro-de-monitorizacion/",
-    "title": "Registro de monitorización de chinches: hoja imprimible",
-    "description": "Hoja imprimible para anotar las revisiones periódicas de chinches en un alojamiento: fecha, unidad, resultado y observaciones.",
+    "title": "Registro de monitorización de chinches: hoja imprimible y PDF",
+    "description": "Hoja imprimible y PDF gratuito para anotar tus propias revisiones de chinches en un alojamiento: fecha, unidad, zona revisada, resultado y observaciones.",
     "h1": "Registro de monitorización de chinches",
     "eyebrow": "Recurso imprimible",
-    "lead": "Una hoja para anotar cada revisión y mantener un historial por unidad."
+    "lead": "Una hoja para anotar cada revisión que hagas en tu alojamiento y mantener un historial por unidad. Es tu registro interno."
   },
   "en": {
     "blocks": [
       {
+        "type": "text",
+        "id": "how-to-use-it",
+        "h2": "How to use the log",
+        "noprint": true,
+        "html": "<p>At each check note the date, the unit, the area you checked (mattress, box spring, headboard, upholstered furniture, skirting boards…), the result as you observe it and any comment or reference to a photo. It is an internal record of your own checks: <strong>it is not a monitoring service that I offer</strong>, and you do not need to send it to me.</p><p>If you see a suspicious sign, fill in the <a href=\"{{url:PG-072A}}\">online detection report</a> and send it to me on WhatsApp with photos.</p>"
+      },
+      {
+        "type": "downloads",
+        "h2": "Download the log",
+        "ids": [
+          "log"
+        ]
+      },
+      {
         "type": "print",
-        "label": "Print or save as PDF"
+        "label": "Print the log"
       },
       {
         "type": "docform",
         "h2": "Check log",
         "meta": {
-          "version": "0.1 (draft)",
-          "date": "2026-11-27"
+          "version": "1.0",
+          "date": "28/11/2026"
         },
         "fields": [
           "Accommodation",
@@ -83,6 +121,13 @@
           "rows": 12
         },
         "note": "Note the result as you observe it. If in doubt, take photos and get in touch."
+      },
+      {
+        "type": "text",
+        "id": "what-to-check",
+        "h2": "What to check and how often",
+        "noprint": true,
+        "html": "<p>The health guides summarised on the website recommend checking mattresses, bedding and box springs regularly, and using interceptors under the bed legs when following up. You will find the details in the guide to <a href=\"{{url:PG-060}}\">bed bug monitoring</a> and the one on <a href=\"{{url:PG-062}}\">early detection in holiday apartments</a>. If you need a treatment, see the <a href=\"{{url:PG-015}}\">service for holiday accommodation</a>.</p>"
       }
     ],
     "faq": [],
@@ -94,14 +139,17 @@
       ]
     ],
     "url": "/en/resources/bed-bug-monitoring-log/",
-    "title": "Bed bug monitoring log: printable sheet | Control de Chinches",
-    "description": "Printable sheet to note regular bed bug checks in an accommodation: date, unit, result and observations.",
+    "title": "Bed bug monitoring log: printable sheet and PDF | Control de Chinches",
+    "description": "Free printable sheet and PDF to note your own bed bug checks in accommodation: date, unit, area checked, result and notes.",
     "h1": "Bed bug monitoring log",
     "eyebrow": "Printable resource",
-    "lead": "A sheet to note each check and keep a history per unit."
+    "lead": "A sheet to note each check you make in your accommodation and keep a history per unit. It is your own internal log."
   },
   "dates": {
     "published": "2026-11-28",
     "modified": "2026-11-28"
-  }
+  },
+  "scripts": [
+    "/js/resources.js?v=1"
+  ]
 }

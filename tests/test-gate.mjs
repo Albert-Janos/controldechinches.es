@@ -26,8 +26,14 @@ ok(/fixture in production/.test(msg) && /placeholder\/TODO/.test(msg), 'refusal 
 
 // 2b) an approved page that shows a price is refused while the VAT / consumer-price decision is not final (LGL gate)
 writeFileSync(join(abs, 'a.json'), JSON.stringify({ ...fx, status: 'Approved for indexing' }));
-let vatMsg = ''; try { packageSite({ mode: 'production', out: 'dist-gate-test', pageDirs: [tmpDir] }); } catch (e) { vatMsg = e.message; }
-ok(/vat.status/.test(vatMsg), 'approved page with a price is refused while VAT is a planning assumption');
+// the production price gate passes only when the owner approved the gross display (vat.displayApprovedByOwner) or vat.status is "approved"
+const pricesPath = join(repoRoot, 'data/prices.json'), pricesOrig = readFileSync(pricesPath, 'utf8');
+let vatMsg = '';
+try {
+  const pj = JSON.parse(pricesOrig); pj.vat.displayApprovedByOwner = false; writeFileSync(pricesPath, JSON.stringify(pj, null, 2));
+  try { packageSite({ mode: 'production', out: 'dist-gate-test', pageDirs: [tmpDir] }); } catch (e) { vatMsg = e.message; }
+} finally { writeFileSync(pricesPath, pricesOrig); }
+ok(/vat.status/.test(vatMsg), 'approved page with a price is refused while VAT is neither approved nor approved for display by the owner');
 
 // 3) forbidden file types cannot be packaged: the allowlist never copies docs/tools/data/raw-images
 const r2 = packageSite({ mode: 'production', out: 'dist-gate-test', pageDirs: [] });
