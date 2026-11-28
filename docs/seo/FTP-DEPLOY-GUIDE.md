@@ -1,59 +1,55 @@
 # FTP-DEPLOY-GUIDE — kézi élesítési útmutató (controldechinches.es)
 
-Készült: 2026-11-28 · Csomag: `controldechinches-production/` + `controldechinches-production.zip` (a `tools/make-ftp-package.mjs` állítja elő).
-**Ezt a dokumentumot a fejlesztő csinálta; semmit nem töltöttünk fel és nem deployoltunk.** Az élesítést te végzed kézzel, a jelenlegi oldal biztonsági mentése után.
+Készült: 2026-11-28 · Csomag: `C:\Users\lakas\Desktop\controldechinches-production\` + `C:\Users\lakas\Desktop\controldechinches-production.zip` (a `tools/make-ftp-package.mjs` állítja elő a `develop/seo` legfrissebb forrásából).
+**Semmit nem töltöttem fel és nem deployoltam; a feltöltést te végzed kézzel, a jelenlegi oldal biztonsági mentése után.** A régi csomag biztonságosan elkülönítve: `…\controldechinches-production-OLD-2026-11-28` (mappa és ZIP) — nem aktuális, ne töltsd fel.
+
+> ⚠ **A csomag technikailag kész, de a nyilvános élesítése jogi/működési feltételekhez kötött** (8. pont). A csomag a 80 új oldalt (40 oldalpár) is tartalmazza; a döntés, hogy mikor kerüljenek ki, a tiéd.
 
 ## 1. Mi van a csomagban
-- **283 fájl, 18,2 MB kitömörítve, ZIP: 16,5 MB.** A ZIP gyökere = a domain dokumentumgyökere (`public_html/`): a `.htaccess`, `index.html`, `robots.txt`, `sitemap.xml` közvetlenül a ZIP gyökerében van, **nincs benne felső „controldechinches-production/” mappa**. A bejegyzések `/` elválasztójúak.
-- **Kanonikus host: `https://www.controldechinches.es`** (az élő oldal minden non-www/HTTP kérést 301-gyel erre irányít, a canonical/hreflang/sitemap is www).
-- **Nincs benne:** `.git`, `.env`/titkos kulcs, `node_modules`, dokumentáció (`docs/`), eszközök (`tools/`), tesztek, adatfájlok (`data/`), sablonok, belső SEO-nyilvántartás, nyers képek (`raw-images/`, `uj-kepek/`), Draft/preview oldalak, `*.md/*.csv/*.log/*.zip`, ideiglenes fájlok. A csomagoló allowlist alapú és automatikusan megtagadja a tiltott fájlokat; a ZIP kibontva is átment a production validátoron.
-- **Új tartalom (54 indexelhető URL a sitemapban):** `/guia-chinches/` (hub + 20 cikk), `/atlas-chinches/`, `/identificador-chinches/`, `/politica-editorial/` és az angol párok (`/en/bed-bug-guide/…`, `/en/bed-bug-atlas/`, `/en/bed-bug-identifier/`, `/en/editorial-policy/`), valamint a hozzájuk tartozó `assets/` (képek, `seo.css`, `seo.js`, betűtípusok) és `js/prices.js`.
+- **430 fájl, 22,9 MB kitömörítve, ZIP: 21,2 MB.** A ZIP gyökere = a domain dokumentumgyökere (`public_html/`): `.htaccess`, `index.html`, `robots.txt`, `sitemap.xml` közvetlenül a gyökérben; nincs felső „controldechinches-production/” mappa; az útvonalak `/` elválasztójúak.
+- **Kanonikus host: `https://www.controldechinches.es`** (www) — a canonical/hreflang/sitemap is ezt használja.
+- **86 indexelhető URL** a sitemapban (43 ES + 43 EN). Noindex marad: `404.html`, `gracias.html`, `aviso-legal.html`, `politica-privacidad.html` (a két jogi oldal a `[PENDIENTE]` mezők miatt, lásd 8. pont).
+- **Új tartalom:** 40 oldalpár (szolgáltatások, városok, GYIK, bemutatkozás, zónák, erőforrások, kalkulátor-/árak, esettanulmány-galéria, tudásközpont, atlasz…), **12 PDF** (`assets/pdf/`), a PDF-motor és az online észlelési adatlap JS-e (`js/pdf.js`, `js/pdf-docs.js`, `js/detect.js`, `js/quote.js`, `js/track.js`, `js/resources.js`, `js/prices.js`), `assets/pdf-logo.jpg`.
+- **Nincs benne:** `.git`, titkok/`.env`, `node_modules`, `docs/`, `tools/`, `tests/`, `data/`, `templates/`, belső SEO-dokumentáció, nyers képek, Draft/preview/`__dev` oldalak, tesztfájl, nem hivatkozott média (az eredeti videó- és képforrások a forrásmappában megmaradnak; a videó már nincs a publikus oldalon). Allowlist-alapú csomagoló; a ZIP kibontva is átment a validátoron (0 hiba). Titokkereső: 0 találat.
 
-## 2. Mely meglévő fájlokat kell felülírni (12 db) — és melyek maradnak
-A jelenlegi éles állapot = a `3c4f9f6` commit (a hash-ek ellenőrizve 2026-11-28-án). A csomagban **12 meglévő fájl tér el** az élőtől; ezeket kell felülírni:
+## 2. Mely meglévő fájlokat írja felül a csomag (12 db)
+`.htaccess`, `index.html`, `en/index.html`, `precios.html`, `en/prices.html`, `chinches-apartamentos-turisticos/index.html`, `en/bed-bugs-holiday-rentals/index.html`, `js/landing.js`, `assets/site.css`, `aviso-legal.html`, `politica-privacidad.html`, `sitemap.xml`.
+- **Árak, kalkulátor, kiszállás:** a 6 védett oldal mostantól a központi konfigból generált bruttó árakat, az új kalkulátort, a 18 települést és a kiszállási díjtáblázatot tartalmazza (tulajdonosi jóváhagyott kivételek). A hero-blokkok, CTA-k és a konverziós szerkezet nem változtak.
+- **`.htaccess`**: **előbb töltsd le az élő `.htaccess`-t, és hasonlítsd össze**; a szervervezérelt sorokat (PHP-kezelő, cPanel-blokk) őrizd meg.
+- A **27 változatlan** meglévő fájl (pl. `js/main.js`, `js/measurement-config.js`, `404.html`, `gracias.html`, `robots.txt`, `favicon/*`, régi `assets/*`) azonos az éles állapottal.
+- **Törölni semmit nem kell.** Ne használj „szinkronizálás törléssel” módot.
 
-| Fájl | Mi változik | Megjegyzés |
-|---|---|---|
-| `.htaccess` | az `index.html` → `/` 301-szabály minden mappára érvényes (új oldalak is), korábban jóváhagyott kisebb módosítások | **Előbb töltsd le az élő `.htaccess`-t és hasonlítsd össze** (lehet, hogy a tárhelyen szerkesztették). A szervervezérelt sorokat (pl. PHP-kezelő, cPanel blokk) őrizd meg. |
-| `index.html`, `en/index.html` | lábléc: „Guía”/„Guide” link; korábban jóváhagyott hero-optimalizálás (AVIF/WebP), aria-címkék, JSON-LD-ajánlat | Ads-védett oldal: CTA, ár, telefon, WhatsApp, H1 **változatlan** (teszt zöld) |
-| `precios.html`, `en/prices.html` | lábléc-link; árszámítás-egységesítés | A kalkulátor működését a teszt ellenőrizte |
-| `chinches-apartamentos-turisticos/index.html`, `en/bed-bugs-holiday-rentals/index.html` | lábléc-link | Ads-landing |
-| `js/landing.js`, `assets/site.css` | korábban jóváhagyott kalkulátor-/ár-javítás (landing.js importálja az új `js/prices.js`-t), kis CSS | **Együtt töltsd fel a `js/prices.js`-szel** |
-| `aviso-legal.html`, `politica-privacidad.html` | az adatvédelmi oldalon egy hibás WhatsApp-ikon SVG-útvonal javítva (konzolhiba); a jogi `[PENDIENTE]` mezők **változatlanul** ott vannak | lásd 6. pont |
-| `sitemap.xml` | 6 → 54 URL (hreflang + lastmod) | |
-
-- **Változatlan (27 fájl):** `js/main.js`, `js/measurement-config.js` (analitika/konverziómérés), `404.html`, `gracias.html`, `robots.txt`, `favicon/*`, a régi `assets/*` képek stb. Feltöltheted őket újra, de nem kötelező.
-- **Új fájlok (244):** minden más; nem ütköznek meglévőkkel.
-- **Törölni semmit nem kell.** Ne feltételezd, hogy a tárhely tartalma törölhető.
-
-## 3. Megőrzendő szerveroldali fájlok és beállítások (NEM része a csomagnak)
-A repó és a `.htaccess`/`robots.txt` alapján ezek léteznek vagy létezhetnek a tárhelyen — **ne töröld, ne írd felül**:
-`send-form.php`, `config.php` / `config.sample.php` (titkos adatok!), `lib/`, `logs/`, `regi-oldal-backup/`, `cgi-bin/`, `.well-known/` (SSL-ellenőrzés), `error_log`, a tárhely-specifikus `.htaccess`-sorok, e-mail/cron beállítások, az SSL-tanúsítvány. A foglalási rendszer, az árkalkulátor API-hívásai és az AI-diszpécser (Retell) **nem érintettek**: ezekhez nem nyúl a csomag.
-Az FTP-kliensben **ne** a „szinkronizálás törléssel” (mirror/delete) módot használd.
+## 3. Megőrzendő szerveroldali fájlok (NEM része a csomagnak)
+`send-form.php`, `config.php`/`config.sample.php` (titkos adatok!), `lib/`, `logs/`, `regi-oldal-backup/`, `cgi-bin/`, `.well-known/` (SSL), `error_log`, a tárhely-specifikus `.htaccess` sorok, e-mail/cron beállítások, SSL-tanúsítvány. A foglalási rendszer, az AI-diszpécser (Retell) és a szerveroldali űrlapok nem érintettek. **A szerver tényleges konfigurációja ebből a környezetből nem érhető el** — ezért az ellenőrzés a feltöltés utáni lépésekben (5. pont) történik.
 
 ## 4. Lépések
-1. **Teljes biztonsági mentés** a jelenlegi tárhelyről (cPanel → Backup, vagy FTP-ről a teljes `public_html` letöltése). Külön mentsd az élő `.htaccess`-t.
-2. Töltsd le a `controldechinches-production.zip`-et, bontsd ki egy ideiglenes mappába (a gyökérben legyen `index.html` és `.htaccess`).
-3. **Először az új fájlokat/mappákat** töltsd fel (`assets/`, `guia-chinches/`, `atlas-chinches/`, `identificador-chinches/`, `politica-editorial/`, `en/…`, `js/prices.js`).
-4. Utána a módosuló fájlokat: `js/landing.js` + `assets/site.css` → `*.html` oldalak → `sitemap.xml` → **utolsóként a `.htaccess`** (előtte diff az éles verzióval).
-5. Rejtett fájlok (`.htaccess`) láthatósága: kapcsold be az FTP-kliensben a „rejtett fájlok megjelenítése” opciót.
-6. LiteSpeed/cache: ürítsd a tárhely gyorsítótárát, ha van.
+1. **Teljes biztonsági mentés** (cPanel → Backup vagy a teljes `public_html` letöltése); külön mentsd az élő `.htaccess`-t.
+2. Bontsd ki a ZIP-et ideiglenes mappába (a gyökérben legyen `index.html` és `.htaccess`).
+3. Először az **új** fájlokat/mappákat töltsd fel (`assets/`, `js/` új fájljai, `servicios/`, `zonas/`, `preguntas-frecuentes/`, `recursos/`, `casos-reales/`, `sobre-mi/`, `guia-chinches/`, `atlas-chinches/`, `identificador-chinches/`, `politica-editorial/`, `en/…`).
+4. Utána a módosuló fájlokat: `js/landing.js` + `assets/site.css` → `*.html` → `sitemap.xml` → **utolsóként a `.htaccess`** (előtte diff az éles verzióval).
+5. Kapcsold be a rejtett fájlok megjelenítését. Üríts cache-t (LiteSpeed), ha van.
 
-## 5. Ellenőrzés feltöltés után (5 perc)
+## 5. Ellenőrzés feltöltés után
 ```powershell
-curl.exe -I https://controldechinches.es/                       # 301 -> https://www.controldechinches.es/
-curl.exe -I https://www.controldechinches.es/guia-chinches/     # 200
-curl.exe -I https://www.controldechinches.es/guia-chinches/index.html   # 301 -> /guia-chinches/
-curl.exe -s https://www.controldechinches.es/sitemap.xml | findstr /c:"<loc>" | measure   # 54
+curl.exe -I https://controldechinches.es/                                   # 301 -> https://www.controldechinches.es/
+curl.exe -I https://www.controldechinches.es/zonas/benidorm/                # 200
+curl.exe -I https://www.controldechinches.es/zonas/benidorm/index.html      # 301 -> /zonas/benidorm/
+curl.exe -I https://www.controldechinches.es/assets/pdf/parte-de-deteccion-chinches.pdf   # 200, application/pdf
+curl.exe -s https://www.controldechinches.es/sitemap.xml | findstr /c:"<loc>"  # 86 sor
 ```
-Kézzel: főoldal (mobilon és asztalin) — WhatsApp és telefon gomb, árkalkulátor, foglalás/űrlap; `/precios.html`; a lábléc „Guía” link; egy cikk, az atlasz és az azonosító; a nyelvváltó (ES↔EN) 2–3 oldalon; sütibeállítás-gomb. Google Search Console: sitemap újraküldése, a `/guia-chinches/` és az atlasz „indexelés kérése”.
+Kézzel (mobil és asztali): főoldal; `/precios.html` kalkulátor (válassz Benidormot, 3 hálószoba + szárazgőz → **373,89 €**), WhatsApp-gomb megnyitja az előre kitöltött üzenetet; `/recursos/` PDF-ek letöltése; `/recursos/parte-de-deteccion/` kitöltés, PDF, nyomtatás; `/casos-reales/` nagyítás; nyelvváltó ES↔EN; telefon- és WhatsApp-gombok.
 
-## 6. Ismert figyelmeztetések (a döntés a tiéd)
-- Az **élő** `aviso-legal.html` és `politica-privacidad.html` `[PENDIENTE]` mezőket mutat (név, NIF, cím, e-mail, nyilvántartás): ez már most is így van az éles oldalon, a csomag nem rontja, de a jogi kapu (LGL-03) lezárása sürgős.
-- A cikkeken **nincs független szakmai lektor** (és nem is szerepel); az atlasz 14 makrója **jelölt AI-illusztráció**.
-- 16 oldal (szolgáltatások, zónák, GYIK, Sobre mí, B2B-erőforrások, esettanulmányok) **szándékosan nincs** a csomagban: lásd `PUBLICATION-MISSING-DATA.md`, B rész.
+## 6. Indexelhetőség ellenőrzése
+- A 86 URL `index, follow`; nézd meg a forrást egy oldalon (`<meta name="robots">`, `<link rel="canonical">`, `hreflang`). A fejlesztői/staging környezet továbbra is noindex.
+- Search Console (a meglévő property): **URL-vizsgálat** a főoldalra, `/precios.html`-re, egy városi és egy szolgáltatási oldalra; a **„Lefedettség/Oldalak”** jelentésben nézd, hogy nincs „Kizárva noindex miatt” a 86 URL között.
 
-## 7. Visszaállítás (rollback)
-- **Gyors:** a mentésből töltsd vissza a 12 felülírt fájlt (`.htaccess`, `index.html`, `en/index.html`, `precios.html`, `en/prices.html`, `chinches-apartamentos-turisticos/index.html`, `en/bed-bugs-holiday-rentals/index.html`, `js/landing.js`, `assets/site.css`, `aviso-legal.html`, `politica-privacidad.html`, `sitemap.xml`). Ezzel az oldal pontosan a régi állapotba kerül; az új mappák ettől függetlenül elérhetők maradnak.
-- **Teljes:** töröld az új mappákat (`guia-chinches/`, `atlas-chinches/`, `identificador-chinches/`, `politica-editorial/`, `en/bed-bug-guide/`, `en/bed-bug-atlas/`, `en/bed-bug-identifier/`, `en/editorial-policy/`, `assets/img/`, `assets/fonts/`, `assets/seo.*`, `js/prices.js`), majd a Search Console-ban kérd az eltávolítást, ha már be lettek indexelve.
-- Ha csak a `.htaccess` okoz hibát (500-as hiba): töltsd vissza az eredetit — az oldal azonnal működik.
+## 7. Mikor küldhető be a sitemap?
+A feltöltés és az 5. pont ellenőrzése után, **és csak ha a nyilvános élesítés jogi feltételei teljesültek (8. pont)**. Search Console → Sitemapek → `https://www.controldechinches.es/sitemap.xml` (86 URL). Ha a szolgáltatásoldalak kikerülnek, de a jogi adatok még nincsenek meg, vedd fontolóra a jogi oldalak és a szolgáltatás-leírások kiegészítését az indexelés előtt.
+
+## 8. Milyen valódi jogi/működési feltételek hiányoznak még
+Részletesen: `FINAL-OWNER-INPUT-REQUIRED.md` 1. csoport, és `LEGAL-RESEARCH-2026-11-28.md`. Röviden: spanyol vállalkozási forma, NIF/cím/e-mail a jogi oldalakra (jelenleg `[PENDIENTE]`); a 21 % IVA ellenőrzése; a magyar szakképesítés spanyolországi elismerése és a ROESB/autonóm közösségi feltételek; a használt készítmények jegyzéke; adatvédelmi tájékoztató kiegészítése. **Amíg ezek nincsenek meg, a technikailag elkészült csomag élesítése jogilag nem teljes.** Az oldalak nem sugallnak spanyol működési jogosultságot.
+
+## 9. Visszaállítás (rollback)
+- **Gyors:** a mentésből töltsd vissza a 12 felülírt fájlt (2. pont); az új mappák ettől függetlenül elérhetők maradnak.
+- **Teljes:** töröld az új mappákat és `assets/img`, `assets/pdf`, `assets/fonts`, `assets/seo.*`, `assets/pdf-logo.jpg`, `js/{prices,quote,track,pdf,pdf-docs,detect,resources}.js` fájlokat, majd Search Console-ban kérd az eltávolítást, ha már indexelődtek.
+- Ha csak a `.htaccess` okoz 500-as hibát: töltsd vissza az eredetit.

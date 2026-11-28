@@ -1,228 +1,1210 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "axe": "4.14.1",
   "results": [
     {
       "path": "/",
       "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
+      "violations": [],
       "incomplete": 1,
       "passes": 43
     },
     {
       "path": "/",
       "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
+      "violations": [],
       "incomplete": 1,
-      "passes": 42
+      "passes": 43
     },
     {
       "path": "/en/",
       "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
+      "violations": [],
       "incomplete": 1,
       "passes": 43
     },
     {
       "path": "/en/",
       "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
+      "violations": [],
       "incomplete": 1,
+      "passes": 43
+    },
+    {
+      "path": "/precios.html",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 53
+    },
+    {
+      "path": "/precios.html",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 53
+    },
+    {
+      "path": "/en/prices.html",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 53
+    },
+    {
+      "path": "/en/prices.html",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 53
+    },
+    {
+      "path": "/chinches-apartamentos-turisticos/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/chinches-apartamentos-turisticos/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/en/bed-bugs-holiday-rentals/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/en/bed-bugs-holiday-rentals/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 2,
+      "passes": 48
+    },
+    {
+      "path": "/servicios/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/servicios/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/services/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/control-integrado/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/control-integrado/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/integrated-pest-management/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/integrated-pest-management/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/inspeccion-diagnostico/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/servicios/inspeccion-diagnostico/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/en/services/inspection-diagnosis/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/en/services/inspection-diagnosis/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/servicios/vapor-seco/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/vapor-seco/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/dry-steam/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/dry-steam/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/tratamiento-quimico/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/servicios/tratamiento-quimico/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/en/services/chemical-treatment/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/en/services/chemical-treatment/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/servicios/planes-prevencion/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/servicios/planes-prevencion/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/prevention-programmes/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/services/prevention-programmes/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/sobre-mi/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/sobre-mi/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/about/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/about/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/politica-editorial/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
       "passes": 42
     },
     {
-      "path": "/precios.html",
+      "path": "/politica-editorial/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/en/editorial-policy/",
       "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
-      "incomplete": 2,
+      "violations": [],
+      "incomplete": 0,
+      "passes": 42
+    },
+    {
+      "path": "/en/editorial-policy/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/zonas/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/zonas/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/areas/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/areas/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/zonas/alicante/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
       "passes": 49
     },
     {
-      "path": "/precios.html",
+      "path": "/zonas/alicante/",
       "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
-      "incomplete": 2,
-      "passes": 48
-    },
-    {
-      "path": "/en/prices.html",
-      "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
-      "incomplete": 2,
+      "violations": [],
+      "incomplete": 0,
       "passes": 49
     },
     {
-      "path": "/en/prices.html",
-      "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
-      "incomplete": 2,
-      "passes": 48
-    },
-    {
-      "path": "/chinches-apartamentos-turisticos/",
+      "path": "/en/areas/alicante/",
       "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
-      "incomplete": 2,
-      "passes": 48
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
     },
     {
-      "path": "/chinches-apartamentos-turisticos/",
+      "path": "/en/areas/alicante/",
       "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[aria-label=\"Español\"]"
-        }
-      ],
-      "incomplete": 2,
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/zonas/benidorm/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/zonas/benidorm/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/en/areas/benidorm/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/en/areas/benidorm/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/zonas/torrevieja/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/zonas/torrevieja/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/en/areas/torrevieja/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/en/areas/torrevieja/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 49
+    },
+    {
+      "path": "/preguntas-frecuentes/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/preguntas-frecuentes/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/en/faq/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/en/faq/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/guia-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 42
+    },
+    {
+      "path": "/guia-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/en/bed-bug-guide/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 42
+    },
+    {
+      "path": "/en/bed-bug-guide/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/guia-chinches/como-saber-si-tengo-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/como-saber-si-tengo-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-to-tell-if-you-have-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/picaduras-de-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/guia-chinches/picaduras-de-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-bites/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-bites/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/guia-chinches/ciclo-de-vida-chinche-de-cama/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/guia-chinches/ciclo-de-vida-chinche-de-cama/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-life-cycle/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-life-cycle/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/guia-chinches/donde-se-esconden-las-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/donde-se-esconden-las-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/where-bed-bugs-hide/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/where-bed-bugs-hide/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/chinches-en-el-colchon/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/guia-chinches/chinches-en-el-colchon/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bugs-in-a-mattress/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bugs-in-a-mattress/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/como-se-contagian-las-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/como-se-contagian-las-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-bed-bugs-spread/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-bed-bugs-spread/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/chinches-viajes-y-hoteles/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/chinches-viajes-y-hoteles/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bugs-travel-and-hotels/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bugs-travel-and-hotels/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/como-eliminar-chinches-de-cama/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/como-eliminar-chinches-de-cama/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/vapor-contra-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/vapor-contra-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/does-steam-kill-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/does-steam-kill-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/remedios-caseros-chinches-mitos/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/remedios-caseros-chinches-mitos/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-home-remedies-myths/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-home-remedies-myths/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/resistencia-insecticidas-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/resistencia-insecticidas-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-insecticide-resistance/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-insecticide-resistance/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/por-que-vuelven-las-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/por-que-vuelven-las-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/why-bed-bugs-come-back/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/why-bed-bugs-come-back/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/cuantos-tratamientos-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/cuantos-tratamientos-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-many-treatments-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/how-many-treatments-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/preparar-vivienda-tratamiento-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/guia-chinches/preparar-vivienda-tratamiento-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/en/bed-bug-guide/preparing-for-bed-bug-treatment/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/en/bed-bug-guide/preparing-for-bed-bug-treatment/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/guia-chinches/despues-del-tratamiento-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/despues-del-tratamiento-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/after-bed-bug-treatment/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/after-bed-bug-treatment/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/ropa-y-textiles-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/guia-chinches/ropa-y-textiles-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/en/bed-bug-guide/laundry-and-textiles-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 50
+    },
+    {
+      "path": "/en/bed-bug-guide/laundry-and-textiles-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 51
+    },
+    {
+      "path": "/guia-chinches/sellar-grietas-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/guia-chinches/sellar-grietas-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/sealing-cracks-bed-bugs/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/en/bed-bug-guide/sealing-cracks-bed-bugs/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/monitorizacion-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/monitorizacion-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-monitoring/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/bed-bug-monitoring/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/protocolo-hotel-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/guia-chinches/protocolo-hotel-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/hotel-bed-bug-protocol/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 44
+    },
+    {
+      "path": "/en/bed-bug-guide/hotel-bed-bug-protocol/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/deteccion-temprana-apartamentos/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/guia-chinches/deteccion-temprana-apartamentos/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/early-detection-holiday-rentals/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-guide/early-detection-holiday-rentals/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/atlas-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/atlas-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/en/bed-bug-atlas/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 45
+    },
+    {
+      "path": "/en/bed-bug-atlas/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 1,
+      "passes": 46
+    },
+    {
+      "path": "/identificador-chinches/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
+    },
+    {
+      "path": "/identificador-chinches/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
       "passes": 47
     },
     {
-      "path": "/en/bed-bugs-holiday-rentals/",
+      "path": "/en/bed-bug-identifier/",
       "mode": "desktop",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
-      "incomplete": 2,
-      "passes": 48
+      "violations": [],
+      "incomplete": 0,
+      "passes": 46
     },
     {
-      "path": "/en/bed-bugs-holiday-rentals/",
+      "path": "/en/bed-bug-identifier/",
       "mode": "mobile",
-      "violations": [
-        {
-          "id": "label-content-name-mismatch",
-          "impact": "serious",
-          "nodes": 2,
-          "help": "Elements must have their visible text as part of their accessible name",
-          "sample": "a[lang=\"es\"]"
-        }
-      ],
-      "incomplete": 2,
+      "violations": [],
+      "incomplete": 0,
       "passes": 47
     },
     {
-      "path": "/aviso-legal.html",
+      "path": "/recursos/",
       "mode": "desktop",
       "violations": [],
       "incomplete": 0,
-      "passes": 34
+      "passes": 43
     },
     {
-      "path": "/aviso-legal.html",
+      "path": "/recursos/",
       "mode": "mobile",
       "violations": [],
       "incomplete": 0,
-      "passes": 35
+      "passes": 44
     },
     {
-      "path": "/politica-privacidad.html",
+      "path": "/en/resources/",
       "mode": "desktop",
       "violations": [],
       "incomplete": 0,
-      "passes": 35
+      "passes": 43
     },
     {
-      "path": "/politica-privacidad.html",
+      "path": "/en/resources/",
       "mode": "mobile",
       "violations": [],
       "incomplete": 0,
-      "passes": 36
+      "passes": 44
     },
     {
-      "path": "/404.html",
+      "path": "/recursos/parte-de-deteccion/",
       "mode": "desktop",
       "violations": [],
       "incomplete": 0,
-      "passes": 33
+      "passes": 51
     },
     {
-      "path": "/404.html",
+      "path": "/recursos/parte-de-deteccion/",
       "mode": "mobile",
       "violations": [],
       "incomplete": 0,
-      "passes": 32
+      "passes": 51
+    },
+    {
+      "path": "/en/resources/bed-bug-detection-report/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/en/resources/bed-bug-detection-report/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/recursos/registro-de-monitorizacion/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/recursos/registro-de-monitorizacion/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 53
+    },
+    {
+      "path": "/en/resources/bed-bug-monitoring-log/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 51
+    },
+    {
+      "path": "/en/resources/bed-bug-monitoring-log/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 53
+    },
+    {
+      "path": "/casos-reales/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/casos-reales/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
+    },
+    {
+      "path": "/en/case-studies/",
+      "mode": "desktop",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 43
+    },
+    {
+      "path": "/en/case-studies/",
+      "mode": "mobile",
+      "violations": [],
+      "incomplete": 0,
+      "passes": 44
     }
   ]
 }

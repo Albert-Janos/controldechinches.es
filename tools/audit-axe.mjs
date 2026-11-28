@@ -5,8 +5,10 @@ import { join } from 'node:path';
 import { startServer, launch, repoRoot } from './lib/browser.mjs';
 
 const axeSrc = readFileSync(join(repoRoot, 'tools/node_modules/axe-core/axe.min.js'), 'utf8');
-const list = process.argv.slice(2).length ? process.argv.slice(2) : ['/', '/en/', '/precios.html', '/en/prices.html', '/chinches-apartamentos-turisticos/', '/en/bed-bugs-holiday-rentals/', '/aviso-legal.html', '/politica-privacidad.html', '/404.html'];
-const server = await startServer(4183); const browser = await launch(); const results = [];
+const dirEnv = process.env.AXE_DIR ? join(repoRoot, process.env.AXE_DIR) : undefined;
+const fromSitemap = dirEnv ? [...readFileSync(join(dirEnv, 'sitemap.xml'), 'utf8').matchAll(/<loc>https:\/\/www\.controldechinches\.es([^<]*)<\/loc>/g)].map(m => m[1]) : null;
+const list = process.argv.slice(2).length ? process.argv.slice(2) : fromSitemap ? fromSitemap : ['/', '/en/', '/precios.html', '/en/prices.html', '/chinches-apartamentos-turisticos/', '/en/bed-bugs-holiday-rentals/', '/aviso-legal.html', '/politica-privacidad.html', '/404.html'];
+const server = await startServer(4183, dirEnv); const browser = await launch(); const results = [];
 try {
   for (const p of list) for (const [mode, vp] of [['desktop', { width: 1280, height: 900 }], ['mobile', { width: 375, height: 812, isMobile: true, hasTouch: true }]]) {
     const page = await browser.newPage(); await page.setViewport(vp);

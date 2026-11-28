@@ -65,3 +65,13 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - **Képek:** 17 új saját fotó + 14 makró + munkaruhás önarckép feldolgozva (`tools/fill-image-assignments.mjs`, `process-images.mjs`); atlasz 27/29 kitöltve; új: IMG-INS-07, IMG-CHEM-09, IMG-CHEM-10; PG-045 és PG-049 fejképe saját fotóra cserélve; IMG-DRY-04 (P0) és IMG-PREP-01 kitöltve; PG-070 szövegei az illusztrációkról (D-054).
 - **Eszközök:** `tools/audit-dist-render.mjs` (minden oldal mobil+asztali renderelés, törött kép, srcset/sizes, CLS, konzol), `tools/build-publication-missing-data.mjs` → `PUBLICATION-MISSING-DATA.md`.
 - **Csomagolás:** `tools/make-ftp-package.mjs` (production build → nem hivatkozott média kiszűrése → mappa → ZIP → a kibontott ZIP újravalidálása → összevetés az éles baseline-nal), `docs/seo/FTP-DEPLOY-GUIDE.md`; `tools/check-links.mjs` ismeri a kiadott generált oldalakat, `tests/test-gate.mjs` a kiadott oldalakkal számol; `tools/serve.mjs`: `NOINDEX_HEADER=0` (a fejlesztői szerver alapból noindex fejlécet küld; Lighthouse-hoz kikapcsolható); a validátor abszolút mappát is elfogad.
+
+## 2026-11-28 — végleges véglegesítési csomag (`develop/seo`; nincs merge, deploy, FTP)
+- **Árak/kiszállás/kalkulátor:** központi `data/prices.json` (bruttó megjelenítés, 18 települési kiszállási díj, fix +80 szárazgőz-kiegészítés), `js/quote.js` egyetlen árszámító, új kalkulátor + WhatsApp-ajánlat ES/EN, kiszállási díjtáblázat az Árak oldalon, 6 védett oldal tokenes sablonból (`templates/static`). Teszt: `tools/test-calculator.mjs` (motor + UI, 18 település, referenciaértékek, ES/EN paritás).
+- **Tartalom (16 oldalpár):** PG-010…016, 020…023, 030 (64 GYIK-kérdés ES+EN, FAQPage JSON-LD), 072/072A/072B, 073 véglegesítve; irtópor eltávolítva; PG-015 új koncepció; egyedi városi oldalak ár/kiszállás-dobozzal; PG-016 negatív mondat cseréje.
+- **Erőforrások:** 12 PDF (`assets/pdf/`), kliensoldali PDF-író, online észlelési adatlap (WhatsApp-szöveg, kitöltött PDF, nyomtatás, Web Share), monitorozási napló 1.0.
+- **Galéria (PG-073):** 13 saját fotó, egységes kártyák, magyarázatok, hozzáférhető lightbox.
+- **Dizájn:** teljes jobb oldali hero-kép (object-fit cover), tartalmi képek ~576 px-re méretezve, AI-hero felirat.
+- **SVG-infografikák:** IG-04, 06, 07, 08, 09, 14, 16 (7 közös ábra, 11 megjelenés), ES/EN.
+- **SEO/QA:** `tests/test-seo.mjs` (86 URL, hreflang-kölcsönösség, canonical, duplikátum-, árva-oldal-ellenőrzés), render-audit (88 oldal × 2 nézet), axe (172 futás, 0 hiba), Lighthouse.
+- **Csomag:** `C:\Users\lakas\Desktop\controldechinches-production` + ZIP (régi csomag elkülönítve).

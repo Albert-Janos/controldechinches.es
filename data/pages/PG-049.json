@@ -1,317 +1,317 @@
 {
- "id": "PG-049",
- "template": "T-C",
- "status": "Approved for indexing",
- "dataPage": "article",
- "cta": {
-  "message": "default"
- },
- "related": [
-  "PG-050",
-  "PG-053",
-  "PG-011",
-  "PG-013",
-  "PG-014"
- ],
- "_blocked": [
-  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
- ],
- "es": {
-  "url": "/guia-chinches/como-eliminar-chinches-de-cama/",
-  "title": "Cómo eliminar chinches de cama: guía de métodos",
-  "description": "Visión general de las opciones para eliminar chinches: control integrado, calor y vapor, insecticidas, cuándo recurrir a un profesional y qué no hacer.",
-  "h1": "Cómo eliminar las chinches de cama",
-  "eyebrow": "Guía · Chinches de cama",
-  "answer": "No hay una solución rápida: las fuentes oficiales recomiendan un control integrado que combine métodos no químicos (calor, frío, fundas, monitores) con insecticidas solo cuando proceda, y recurrir a un profesional cuando el caso lo requiera.",
-  "breadcrumb": [
-   [
-    "Guía",
-    "/guia-chinches/"
-   ]
+  "id": "PG-049",
+  "template": "T-C",
+  "status": "Approved for indexing",
+  "dataPage": "article",
+  "cta": {
+    "message": "default"
+  },
+  "related": [
+    "PG-050",
+    "PG-053",
+    "PG-011",
+    "PG-013",
+    "PG-014"
   ],
-  "heroImage": "IMG-CHEM-09",
-  "reviewer": null,
-  "primaryKeyword": "como eliminar chinches de cama",
-  "blocks": [
-   {
-    "type": "text",
-    "id": "control-integrado",
-    "h2": "Un enfoque integrado",
-    "html": "<p>La EPA describe el control integrado de plagas (GIP, en inglés IPM) como un enfoque eficaz y respetuoso con el medio ambiente: los plaguicidas son solo una parte de un plan de varias partes. Penn State lo define como una combinación de métodos culturales, mecánicos, biológicos y químicos. Los pasos habituales son inspeccionar, identificar correctamente, llevar registros, reducir el desorden, retirar físicamente, usar insecticidas solo según la etiqueta y hacer seguimiento (Purdue). Más sobre nuestro método en <a href=\"/servicios/control-integrado/\">control integrado</a>.</p><p>Las guías de salud pública de La Rioja indican que el umbral de tolerancia es cero, que el control debe basarse en el control integrado de plagas (primero medidas preventivas y métodos físicos, mecánicos y biológicos; el control químico solo si es necesario) y que los tratamientos se combinan y repiten por la larga duración del ciclo biológico. Recomiendan acudir a empresas inscritas en el registro oficial de establecimientos y servicios biocidas (ROESB).</p>"
-   },
-   {
-    "type": "infographic",
-    "id": "IG-14"
-   },
-   {
-    "type": "text",
-    "id": "metodos",
-    "h2": "Métodos habituales",
-    "html": "<ul><li><strong>Calor y vapor:</strong> el vapor actúa por contacto y tiene penetración limitada; consulta <a href=\"/guia-chinches/vapor-contra-chinches/\">¿el vapor mata las chinches?</a></li><li><strong>Fundas protectoras</strong> para colchón y somier, lavado y secado a alta temperatura de la ropa.</li><li><strong>Monitores</strong> (interceptores) para comprobar la evolución.</li><li><strong>Insecticidas:</strong> solo productos autorizados para chinches y siguiendo la etiqueta. Algunas poblaciones son resistentes a los piretroides (EPA).</li></ul>"
-   },
-   {
-    "type": "text",
-    "id": "que-no-hacer",
-    "h2": "Qué evitar",
-    "html": "<p>La EPA indica que los nebulizadores («bombas de humo») no deben usarse como único medio de control y que no todos están autorizados contra chinches; un estudio de la Universidad Estatal de Ohio, recogido por Rutgers, los considera ineficaces y peligrosos. No hay que usar insecticidas de exterior en el interior, ni alcohol, queroseno o gasolina.</p>"
-   },
-   {
-    "type": "text",
-    "id": "como-lo-plantea-control-de-chinches",
-    "h2": "Cómo lo plantea Control de Chinches",
-    "html": "<p>El método se elige para cada caso: <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico dirigido</a>, <a href=\"/servicios/vapor-seco/\">vapor seco independiente</a> o una combinación de ambos y, cuando está justificado, nebulización en frío complementaria o polvo autorizado. Todo ello dentro de un <a href=\"/servicios/control-integrado/\">proceso de control integrado</a>. No hay ningún método que garantice eliminar todas las chinches en un solo tratamiento.</p>"
-   },
-   {
-    "type": "text",
-    "id": "profesional",
-    "h2": "Cuándo recurrir a un profesional",
-    "html": "<p>Rutgers señala que las infestaciones que afectan a todo un edificio requerirán probablemente a un profesional. Tras cada actuación conviene una revisión de seguimiento (Purdue recomienda al menos una a los 10–21 días). Las fuentes consultadas no fijan un número de tratamientos: depende de cada caso.</p>"
-   }
+  "_blocked": [
+    "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
   ],
-  "faq": [],
-  "sources": [
-   {
-    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Getting Rid of Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Do-it-yourself Bed Bug Control",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Pesticides to Control Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Should I Use a Fogger?",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Safety Issues in Controlling Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Biology, Habitat, and Management of Bed Bugs",
-    "publisher": "Penn State Extension",
-    "year": "2025",
-    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
-    "publisher": "Purdue Extension",
-    "year": "2017",
-    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Bed Bugs: Informational Guide to Bed Bugs",
-    "publisher": "Purdue Entomology",
-    "year": "",
-    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
-    "publisher": "Rutgers Cooperative Extension",
-    "year": "2019",
-    "url": "https://extension.rutgers.edu/fs1251/",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Las chinches de la cama: prevención y control",
-    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
-    "year": "",
-    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Prevención de chinches en establecimientos con pernoctación",
-    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
-    "year": "2023",
-    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
-    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
-    "year": "",
-    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
-    "checked": "2026-11-27"
-   }
-  ]
- },
- "en": {
-  "url": "/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/",
-  "title": "How to get rid of bed bugs: a guide to methods",
-  "description": "An overview of the options for getting rid of bed bugs: integrated control, heat and steam, insecticides, when to call a professional and what to avoid.",
-  "h1": "How to get rid of bed bugs",
-  "eyebrow": "Guide · Bed bugs",
-  "answer": "There is no quick fix: official sources recommend integrated control that combines non-chemical methods (heat, cold, encasements, monitors) with insecticides only where appropriate, and calling a professional when the case requires it.",
-  "breadcrumb": [
-   [
-    "Guide",
-    "/en/bed-bug-guide/"
-   ]
-  ],
-  "heroImage": "IMG-CHEM-09",
-  "reviewer": null,
-  "primaryKeyword": "how to get rid of bed bugs",
-  "blocks": [
-   {
-    "type": "text",
-    "id": "integrated-approach",
-    "h2": "An integrated approach",
-    "html": "<p>The EPA describes integrated pest management (IPM) as an effective and environmentally sensitive approach: pesticides are only one part of a multi-part plan. Penn State defines it as a combination of cultural, mechanical, biological and chemical approaches. Typical steps are inspection, correct identification, record-keeping, clutter reduction, physical removal, label-directed insecticide use and follow-up (Purdue). More about our method on <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p><p>The La Rioja public-health guides state that the tolerance threshold is zero, that control should be based on integrated pest management (preventive measures and physical, mechanical and biological methods first; chemical control only if necessary) and that treatments are combined and repeated because of the long life cycle. They recommend companies listed in the official register of biocide establishments and services (ROESB).</p>"
-   },
-   {
-    "type": "infographic",
-    "id": "IG-14"
-   },
-   {
-    "type": "text",
-    "id": "methods",
-    "h2": "Common methods",
-    "html": "<ul><li><strong>Heat and steam:</strong> steam works on contact and has limited penetration; see <a href=\"/en/bed-bug-guide/does-steam-kill-bed-bugs/\">does steam kill bed bugs?</a></li><li><strong>Protective encasements</strong> for mattress and box spring, and hot washing and drying of clothing and bedding.</li><li><strong>Monitors</strong> (interceptors) to check progress.</li><li><strong>Insecticides:</strong> only products registered for bed bugs, following the label. Some populations are resistant to pyrethroids (EPA).</li></ul>"
-   },
-   {
-    "type": "text",
-    "id": "what-to-avoid",
-    "h2": "What to avoid",
-    "html": "<p>The EPA says foggers (“bug bombs”) should not be used as the sole means of control and that not all are labelled for bed bugs; an Ohio State study, cited by Rutgers, found them ineffective and hazardous. Do not use outdoor pesticides indoors, or rubbing alcohol, kerosene or gasoline.</p>"
-   },
-   {
-    "type": "text",
-    "id": "how-control-de-chinches-approaches-it",
-    "h2": "How Control de Chinches approaches it",
-    "html": "<p>The method is chosen for each case: <a href=\"/en/services/chemical-treatment/\">targeted chemical treatment</a>, <a href=\"/en/services/dry-steam/\">stand-alone dry steam</a> or a combination of both and, where justified, supplementary cold fogging or an authorised dust. All of it within an <a href=\"/en/services/integrated-pest-management/\">integrated pest management process</a>. No method guarantees eliminating every bed bug in a single treatment.</p>"
-   },
-   {
-    "type": "text",
-    "id": "professional",
-    "h2": "When to call a professional",
-    "html": "<p>Rutgers notes that building-wide infestations will most likely need a professional. A follow-up check after each treatment is advisable (Purdue recommends at least one at 10–21 days). The sources consulted give no set number of treatments: it depends on the case.</p>"
-   }
-  ],
-  "faq": [],
-  "sources": [
-   {
-    "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Getting Rid of Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Do-it-yourself Bed Bug Control",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Pesticides to Control Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Should I Use a Fogger?",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Safety Issues in Controlling Bed Bugs",
-    "publisher": "US EPA",
-    "year": "",
-    "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Biology, Habitat, and Management of Bed Bugs",
-    "publisher": "Penn State Extension",
-    "year": "2025",
-    "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
-    "publisher": "Purdue Extension",
-    "year": "2017",
-    "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Bed Bugs: Informational Guide to Bed Bugs",
-    "publisher": "Purdue Entomology",
-    "year": "",
-    "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
-    "publisher": "Rutgers Cooperative Extension",
-    "year": "2019",
-    "url": "https://extension.rutgers.edu/fs1251/",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Las chinches de la cama: prevención y control",
-    "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
-    "year": "",
-    "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Prevención de chinches en establecimientos con pernoctación",
-    "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
-    "year": "2023",
-    "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
-    "checked": "2026-11-27"
-   },
-   {
-    "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
-    "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
-    "year": "",
-    "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
-    "checked": "2026-11-27"
-   }
-  ]
- },
- "dates": {
-  "published": "2026-11-28",
-  "modified": "2026-11-28"
- }
+  "es": {
+    "url": "/guia-chinches/como-eliminar-chinches-de-cama/",
+    "title": "Cómo eliminar chinches de cama: guía de métodos",
+    "description": "Visión general de las opciones para eliminar chinches: control integrado, calor y vapor, insecticidas, cuándo recurrir a un profesional y qué no hacer.",
+    "h1": "Cómo eliminar las chinches de cama",
+    "eyebrow": "Guía · Chinches de cama",
+    "answer": "No hay una solución rápida: las fuentes oficiales recomiendan un control integrado que combine métodos no químicos (calor, frío, fundas, monitores) con insecticidas solo cuando proceda, y recurrir a un profesional cuando el caso lo requiera.",
+    "breadcrumb": [
+      [
+        "Guía",
+        "/guia-chinches/"
+      ]
+    ],
+    "heroImage": "IMG-CHEM-09",
+    "reviewer": null,
+    "primaryKeyword": "como eliminar chinches de cama",
+    "blocks": [
+      {
+        "type": "text",
+        "id": "control-integrado",
+        "h2": "Un enfoque integrado",
+        "html": "<p>La EPA describe el control integrado de plagas (GIP, en inglés IPM) como un enfoque eficaz y respetuoso con el medio ambiente: los plaguicidas son solo una parte de un plan de varias partes. Penn State lo define como una combinación de métodos culturales, mecánicos, biológicos y químicos. Los pasos habituales son inspeccionar, identificar correctamente, llevar registros, reducir el desorden, retirar físicamente, usar insecticidas solo según la etiqueta y hacer seguimiento (Purdue). Más sobre nuestro método en <a href=\"/servicios/control-integrado/\">control integrado</a>.</p><p>Las guías de salud pública de La Rioja indican que el umbral de tolerancia es cero, que el control debe basarse en el control integrado de plagas (primero medidas preventivas y métodos físicos, mecánicos y biológicos; el control químico solo si es necesario) y que los tratamientos se combinan y repiten por la larga duración del ciclo biológico. Recomiendan acudir a empresas inscritas en el registro oficial de establecimientos y servicios biocidas (ROESB).</p>"
+      },
+      {
+        "type": "infographic",
+        "id": "IG-14"
+      },
+      {
+        "type": "text",
+        "id": "metodos",
+        "h2": "Métodos habituales",
+        "html": "<ul><li><strong>Calor y vapor:</strong> el vapor actúa por contacto y tiene penetración limitada; consulta <a href=\"/guia-chinches/vapor-contra-chinches/\">¿el vapor mata las chinches?</a></li><li><strong>Fundas protectoras</strong> para colchón y somier, lavado y secado a alta temperatura de la ropa.</li><li><strong>Monitores</strong> (interceptores) para comprobar la evolución.</li><li><strong>Insecticidas:</strong> solo productos autorizados para chinches y siguiendo la etiqueta. Algunas poblaciones son resistentes a los piretroides (EPA).</li></ul>"
+      },
+      {
+        "type": "text",
+        "id": "que-no-hacer",
+        "h2": "Qué evitar",
+        "html": "<p>La EPA indica que los nebulizadores («bombas de humo») no deben usarse como único medio de control y que no todos están autorizados contra chinches; un estudio de la Universidad Estatal de Ohio, recogido por Rutgers, los considera ineficaces y peligrosos. No hay que usar insecticidas de exterior en el interior, ni alcohol, queroseno o gasolina.</p>"
+      },
+      {
+        "type": "text",
+        "id": "como-lo-plantea-control-de-chinches",
+        "h2": "Cómo lo plantea Control de Chinches",
+        "html": "<p>El método se elige para cada caso: <a href=\"/servicios/tratamiento-quimico/\">tratamiento químico dirigido</a>, <a href=\"/servicios/vapor-seco/\">vapor seco independiente</a> o una combinación de ambos y, cuando está justificado, nebulización en frío (ULV) complementaria. Todo ello dentro de un <a href=\"/servicios/control-integrado/\">proceso de control integrado</a>. No hay ningún método que garantice eliminar todas las chinches en un solo tratamiento.</p>"
+      },
+      {
+        "type": "text",
+        "id": "profesional",
+        "h2": "Cuándo recurrir a un profesional",
+        "html": "<p>Rutgers señala que las infestaciones que afectan a todo un edificio requerirán probablemente a un profesional. Tras cada actuación conviene una revisión de seguimiento (Purdue recomienda al menos una a los 10–21 días). Las fuentes consultadas no fijan un número de tratamientos: depende de cada caso.</p>"
+      }
+    ],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Getting Rid of Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Do-it-yourself Bed Bug Control",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Pesticides to Control Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Should I Use a Fogger?",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Safety Issues in Controlling Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Biology, Habitat, and Management of Bed Bugs",
+        "publisher": "Penn State Extension",
+        "year": "2025",
+        "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+        "publisher": "Purdue Extension",
+        "year": "2017",
+        "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Bed Bugs: Informational Guide to Bed Bugs",
+        "publisher": "Purdue Entomology",
+        "year": "",
+        "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+        "publisher": "Rutgers Cooperative Extension",
+        "year": "2019",
+        "url": "https://extension.rutgers.edu/fs1251/",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Las chinches de la cama: prevención y control",
+        "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+        "year": "",
+        "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Prevención de chinches en establecimientos con pernoctación",
+        "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+        "year": "2023",
+        "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+        "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+        "year": "",
+        "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+        "checked": "2026-11-27"
+      }
+    ]
+  },
+  "en": {
+    "url": "/en/bed-bug-guide/how-to-get-rid-of-bed-bugs/",
+    "title": "How to get rid of bed bugs: a guide to methods",
+    "description": "An overview of the options for getting rid of bed bugs: integrated control, heat and steam, insecticides, when to call a professional and what to avoid.",
+    "h1": "How to get rid of bed bugs",
+    "eyebrow": "Guide · Bed bugs",
+    "answer": "There is no quick fix: official sources recommend integrated control that combines non-chemical methods (heat, cold, encasements, monitors) with insecticides only where appropriate, and calling a professional when the case requires it.",
+    "breadcrumb": [
+      [
+        "Guide",
+        "/en/bed-bug-guide/"
+      ]
+    ],
+    "heroImage": "IMG-CHEM-09",
+    "reviewer": null,
+    "primaryKeyword": "how to get rid of bed bugs",
+    "blocks": [
+      {
+        "type": "text",
+        "id": "integrated-approach",
+        "h2": "An integrated approach",
+        "html": "<p>The EPA describes integrated pest management (IPM) as an effective and environmentally sensitive approach: pesticides are only one part of a multi-part plan. Penn State defines it as a combination of cultural, mechanical, biological and chemical approaches. Typical steps are inspection, correct identification, record-keeping, clutter reduction, physical removal, label-directed insecticide use and follow-up (Purdue). More about our method on <a href=\"/en/services/integrated-pest-management/\">integrated pest management</a>.</p><p>The La Rioja public-health guides state that the tolerance threshold is zero, that control should be based on integrated pest management (preventive measures and physical, mechanical and biological methods first; chemical control only if necessary) and that treatments are combined and repeated because of the long life cycle. They recommend companies listed in the official register of biocide establishments and services (ROESB).</p>"
+      },
+      {
+        "type": "infographic",
+        "id": "IG-14"
+      },
+      {
+        "type": "text",
+        "id": "methods",
+        "h2": "Common methods",
+        "html": "<ul><li><strong>Heat and steam:</strong> steam works on contact and has limited penetration; see <a href=\"/en/bed-bug-guide/does-steam-kill-bed-bugs/\">does steam kill bed bugs?</a></li><li><strong>Protective encasements</strong> for mattress and box spring, and hot washing and drying of clothing and bedding.</li><li><strong>Monitors</strong> (interceptors) to check progress.</li><li><strong>Insecticides:</strong> only products registered for bed bugs, following the label. Some populations are resistant to pyrethroids (EPA).</li></ul>"
+      },
+      {
+        "type": "text",
+        "id": "what-to-avoid",
+        "h2": "What to avoid",
+        "html": "<p>The EPA says foggers (“bug bombs”) should not be used as the sole means of control and that not all are labelled for bed bugs; an Ohio State study, cited by Rutgers, found them ineffective and hazardous. Do not use outdoor pesticides indoors, or rubbing alcohol, kerosene or gasoline.</p>"
+      },
+      {
+        "type": "text",
+        "id": "how-control-de-chinches-approaches-it",
+        "h2": "How Control de Chinches approaches it",
+        "html": "<p>The method is chosen for each case: <a href=\"/en/services/chemical-treatment/\">targeted chemical treatment</a>, <a href=\"/en/services/dry-steam/\">stand-alone dry steam</a> or a combination of both and, where justified, supplementary cold fogging (ULV). All of it within an <a href=\"/en/services/integrated-pest-management/\">integrated pest management process</a>. No method guarantees eliminating every bed bug in a single treatment.</p>"
+      },
+      {
+        "type": "text",
+        "id": "professional",
+        "h2": "When to call a professional",
+        "html": "<p>Rutgers notes that building-wide infestations will most likely need a professional. A follow-up check after each treatment is advisable (Purdue recommends at least one at 10–21 days). The sources consulted give no set number of treatments: it depends on the case.</p>"
+      }
+    ],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Controlling Bed Bugs Using Integrated Pest Management (IPM)",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/controlling-bed-bugs-using-integrated-pest-management-ipm",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Getting Rid of Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/getting-rid-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Do-it-yourself Bed Bug Control",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/do-it-yourself-bed-bug-control",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Pesticides to Control Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/pesticides-control-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Should I Use a Fogger?",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/should-i-use-fogger",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Safety Issues in Controlling Bed Bugs",
+        "publisher": "US EPA",
+        "year": "",
+        "url": "https://www.epa.gov/bedbugs/safety-issues-controlling-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Biology, Habitat, and Management of Bed Bugs",
+        "publisher": "Penn State Extension",
+        "year": "2025",
+        "url": "https://extension.psu.edu/biology-habitat-and-management-of-bed-bugs",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "A Practical Guide to Bed Bug Prevention and Control for Property Managers and Tenants in Multi-Family Housing Units (E-261)",
+        "publisher": "Purdue Extension",
+        "year": "2017",
+        "url": "https://extension.entm.purdue.edu/publications/E-261/E-261.html",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Bed Bugs: Informational Guide to Bed Bugs",
+        "publisher": "Purdue Entomology",
+        "year": "",
+        "url": "https://extension.entm.purdue.edu/bedbugs/control.php",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Cost-Effective and Money-Wasting Bed Bug Control Methods (FS1251)",
+        "publisher": "Rutgers Cooperative Extension",
+        "year": "2019",
+        "url": "https://extension.rutgers.edu/fs1251/",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Las chinches de la cama: prevención y control",
+        "publisher": "Gobierno de La Rioja, Dirección General de Salud Pública, Consumo y Cuidados",
+        "year": "",
+        "url": "https://riojasalud.es/files/content/salud-publica-consumo/chinches%20de%20la%20cama.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Prevención de chinches en establecimientos con pernoctación",
+        "publisher": "Gobierno de La Rioja, Salud Pública (D.L. LR 1503-2023)",
+        "year": "2023",
+        "url": "https://www.riojasalud.es/files/content/salud-publica-consumo/medidas%20preventivas%20chinches%20alojamientos.pdf",
+        "checked": "2026-11-27"
+      },
+      {
+        "title": "Las Chinches de Cama. Guía informativa para el control y eliminación segura",
+        "publisher": "Ayuntamiento de Zaragoza, Instituto Municipal de Salud Pública",
+        "year": "",
+        "url": "https://zaragoza.es/contenidos/sanidad/chinches-cama.pdf",
+        "checked": "2026-11-27"
+      }
+    ]
+  },
+  "dates": {
+    "published": "2026-11-28",
+    "modified": "2026-11-28"
+  }
 }
