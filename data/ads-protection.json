@@ -1,6 +1,6 @@
 {
-  "_comment": "Baseline for tests/test-ads-protection.mjs. baselineCommit = state after the owner-approved P0.1 fixes (prices, calculator, aria-labels). Re-baseline only with explicit owner approval: node tests/test-ads-protection.mjs --update",
-  "baselineCommit": "3ed15c3",
+  "_comment": "Baseline for tests/test-ads-protection.mjs. baselineCommit = state after the OWNER-APPROVED final package of 2026-11-28 (gross prices, new calculator, 18 towns, travel fees, footer links; D-058). Conversion structure (H1, data-cta, phone, WhatsApp number, tracking) is unchanged. Re-baseline only with explicit owner approval: node tests/test-ads-protection.mjs --update",
+  "baselineCommit": "608a57b",
   "pages": [
     "/",
     "/en/",
@@ -64,7 +64,7 @@
       "wa": [
         "/34605259206"
       ],
-      "heroPrice": "Desde 139 €Tratamiento químico · 1 dormitorio"
+      "heroPrice": "Desde 168,19 €Tratamiento químico · 1 dormitorio"
     },
     "/en/": {
       "h1": "Professional bed bug treatment",
@@ -87,7 +87,7 @@
       "wa": [
         "/34605259206"
       ],
-      "heroPrice": "From €139Chemical treatment · 1 bedroom"
+      "heroPrice": "From €168.19Chemical treatment · 1 bedroom"
     },
     "/precios.html": {
       "h1": "Precios del tratamiento de chinches",
@@ -95,7 +95,7 @@
       "cta": [
         "navigation|tel:+34605259206",
         "navigation|https://wa.me/34605259206",
-        "calculator|https://wa.me/34605259206",
+        "calculator|http://127.0.0.1:4185/precios.html",
         "contact|https://wa.me/34605259206",
         "contact|tel:+34605259206",
         "content|https://wa.me/34605259206",
@@ -107,7 +107,7 @@
       "wa": [
         "/34605259206"
       ],
-      "heroPrice": "Desde 139 €Tratamiento químico · 1 dormitorio"
+      "heroPrice": "Desde 168,19 €Tratamiento químico · 1 dormitorio"
     },
     "/en/prices.html": {
       "h1": "Bed bug treatment prices",
@@ -115,7 +115,7 @@
       "cta": [
         "navigation|tel:+34605259206",
         "navigation|https://wa.me/34605259206",
-        "calculator|https://wa.me/34605259206",
+        "calculator|http://127.0.0.1:4185/en/prices.html",
         "contact|https://wa.me/34605259206",
         "contact|tel:+34605259206",
         "content|https://wa.me/34605259206",
@@ -127,7 +127,7 @@
       "wa": [
         "/34605259206"
       ],
-      "heroPrice": "From €139Chemical treatment · 1 bedroom"
+      "heroPrice": "From €168.19Chemical treatment · 1 bedroom"
     },
     "/chinches-apartamentos-turisticos/": {
       "h1": "Tratamiento de chinches para alojamientos",
