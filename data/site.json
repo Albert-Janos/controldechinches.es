@@ -3,12 +3,12 @@
   "brand": "Control de Chinches",
   "domain": "https://www.controldechinches.es",
   "dispatcher": {
-    "tel": "+34865699969",
-    "display": "+34 865 699 969",
-    "displayShort": "865 699 969",
+    "tel": "+34605259206",
+    "display": "+34 605 259 206",
+    "displayShort": "605 259 206",
     "language": "es",
     "ai": true,
-    "status": "approved planned number (owner, work package 2); live telephony not changed here"
+    "status": "owner decision 2026-11-28: ONE public number for calls and WhatsApp (+34 605 259 206); call forwarding to the AI dispatcher is already configured by the owner. The former number +34 865 699 969 must not appear anywhere public."
   },
   "whatsapp": {
     "number": "34605259206",

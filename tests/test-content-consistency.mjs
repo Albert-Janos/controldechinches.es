@@ -10,8 +10,8 @@ let failed = 0; const ok = (c, m) => { if (!c) { failed++; console.log('  FAIL',
 const ctx0 = makeContext({ mode: 'preview', pageDirs: ['data/pages'] }), { site, prices, pages } = ctx0;
 
 // ---- contact data: two different numbers with two different roles
-ok(site.dispatcher.tel === '+34865699969' && site.whatsapp.number === '34605259206' && site.whatsapp.url === 'https://wa.me/34605259206', 'approved dispatcher / WhatsApp numbers in data/site.json');
-ok(site.dispatcher.tel !== '+' + site.whatsapp.number, 'dispatcher and WhatsApp numbers are different fields');
+ok(site.dispatcher.tel === '+34605259206' && site.whatsapp.number === '34605259206' && site.whatsapp.url === 'https://wa.me/34605259206', 'ONE public number +34 605 259 206 for calls and WhatsApp (owner decision 2026-11-28)');
+ok(site.dispatcher.tel === '+' + site.whatsapp.number, 'call and WhatsApp number are the same single number');
 // ---- service area: 18 approved towns, no Dénia, featured list is a subset
 const A = site.serviceAreas;
 ok(A.confirmed.length === 18 && new Set(A.confirmed).size === 18, '18 distinct approved towns');
@@ -41,7 +41,7 @@ for (const p of Object.values(pages)) {
     const tels = [...html.matchAll(/href="tel:([^"]+)"/g)].map(m => m[1]), was = [...html.matchAll(/href="(https:\/\/wa\.me\/[^"]*)"/g)].map(m => m[1]);
     ok(tels.length > 0 && tels.every(t => t === site.dispatcher.tel), `${p.id} ${lang}: every tel: link is the dispatcher number`);
     ok(was.length > 0 && was.every(w => w === site.whatsapp.url), `${p.id} ${lang}: every WhatsApp link is wa.me/34605259206 without text`);
-    ok(!/tel:\+?34605259206/.test(html), `${p.id} ${lang}: WhatsApp number never used as phone CTA`);
+    ok(!/865 ?699 ?969|34865699969/.test(html), `${p.id} ${lang}: the former number +34 865 699 969 does not appear`);
     ok(!/\{\{/.test(html), `${p.id} ${lang}: no unresolved tokens`);
     { const foot = html.slice(html.indexOf('<footer')); ok(A.confirmed.every(tn => foot.includes(tn)), `${p.id} ${lang}: footer lists all 18 approved towns`); }
     const ld = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);

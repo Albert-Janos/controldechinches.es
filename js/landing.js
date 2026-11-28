@@ -136,7 +136,9 @@ function setupBrief(panel) {
     const values = [city.value.trim(), state.tipos, state.units, state.cuandos, checkedDate, state.contactos];
     const message = [heading, '', ...values.flatMap((value, i) => value ? [fields[i] + ': ' + value] : [])].join('\n');
     setValues(panel, { unidades: state.units, msg: message });
-    for (const link of links) link.href = wa(message);
+    // the plain WhatsApp button stays message-free until the visitor actually fills in the brief form
+    const touched = Boolean(city.value.trim() || checkIn.value || state.tipos || state.cuandos || state.contactos || state.units !== 1);
+    for (const link of links) link.href = touched ? wa(message) : 'https://wa.me/' + prices.whatsapp;
     for (const option of options) {
       const key = option.dataset.action.split('-')[0];
       const selected = option.textContent.trim() === state[key];

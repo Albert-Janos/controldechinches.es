@@ -65,6 +65,17 @@ ok(!/noindex|__dev|dist-|preview/.test(sitemap), 'sitemap has no noindex/preview
 ok(!existsSync(join(dist, '__dev')), 'no __dev folder in production');
 // language purity: Spanish pages carry no English page chrome and vice-versa (spot check on UI strings)
 for (const u of locs) { const h = pages[u] || '', isEn = u.startsWith('/en/') || u === '/en/'; const body = h.slice(h.indexOf('<main')); ok(isEn ? !/Saltar al contenido|Preguntas frecuentes<\/h2>|Aviso legal<\/a>/.test(h.slice(0, h.indexOf('<main'))) : !/Skip to content/.test(h), `${u}: no mixed-language page chrome`); void body; }
+// single public phone number: no trace of the former number anywhere in the package (HTML, structured data, JS config, PDFs, XML, JSON)
+{ const all = []; (function w(d) { for (const n of readdirSync(d)) { const f = join(d, n); statSync(f).isDirectory() ? w(f) : all.push(f); } })(dist);
+  let oldHits = 0, textFiles = 0, telLinks = new Set();
+  for (const f of all) { if (/\.(webp|avif|jpe?g|png|woff2?|webm|ico)$/i.test(f)) continue; const s = readFileSync(f).toString('latin1'); textFiles++;
+    if (/865[s .-]?699[s .-]?969|34865699969/.test(s)) { oldHits++; ok(false, 'former phone number +34 865 699 969 found in ' + relative(dist, f)); }
+    for (const m of s.matchAll(/href="(tel:[^"]+)"/g)) telLinks.add(m[1]); }
+  ok(oldHits === 0, 'the former number appears nowhere in the package (' + textFiles + ' text/PDF files scanned)');
+  ok([...telLinks].join() === 'tel:+34605259206', 'every tel: link in the package is tel:+34605259206 (' + [...telLinks] + ')');
+  // normal WhatsApp buttons carry no pre-filled text (only the calculator and the online detection report build a message, in JS)
+  let pre = 0; for (const u of Object.keys(pages)) for (const m of pages[u].matchAll(/href="(https:\/\/wa\.me\/[^"]*)"/g)) if (m[1] !== 'https://wa.me/34605259206') { pre++; ok(false, u + ': WhatsApp link not plain: ' + m[1]); }
+  ok(pre === 0, 'every static WhatsApp link is exactly https://wa.me/34605259206'); }
 console.log(`checked ${locs.length} sitemap URLs; ${warns.length} warning(s)`); if (warns.length) console.log(warns.slice(0, 40).map(w => '  warn  ' + w).join('\n'));
 console.log(failures.length ? `\n${failures.length} FAILED` : '\nSEO AUDIT: ALL PASSED');
 process.exit(failures.length ? 1 : 0);

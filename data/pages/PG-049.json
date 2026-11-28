@@ -64,7 +64,7 @@
       {
         "type": "text",
         "id": "profesional",
-        "h2": "Cuándo recurrir a un profesional",
+        "h2": "Cuándo pedir ayuda especializada",
         "html": "<p>Rutgers señala que las infestaciones que afectan a todo un edificio requerirán probablemente a un profesional. Tras cada actuación conviene una revisión de seguimiento (Purdue recomienda al menos una a los 10–21 días). Las fuentes consultadas no fijan un número de tratamientos: depende de cada caso.</p>"
       }
     ],
@@ -211,7 +211,7 @@
       {
         "type": "text",
         "id": "professional",
-        "h2": "When to call a professional",
+        "h2": "When to get specialist help",
         "html": "<p>Rutgers notes that building-wide infestations will most likely need a professional. A follow-up check after each treatment is advisable (Purdue recommends at least one at 10–21 days). The sources consulted give no set number of treatments: it depends on the case.</p>"
       }
     ],
