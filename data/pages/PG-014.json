@@ -67,6 +67,10 @@
     "html": "<ul><li>estructura de la cama y sus juntas;</li><li>cabecero;</li><li>mesillas y muebles cercanos;</li><li>rodapiés;</li><li>grietas y rendijas accesibles;</li><li>partes tratables de sofás y sillones;</li><li>otras habitaciones, si la infestación lo justifica.</li></ul><p>Que una zona figure en esta lista no significa que cualquier producto pueda aplicarse en ella.</p>"
    },
    {
+    "type": "figure",
+    "image": "IMG-CHEM-10"
+   },
+   {
     "type": "text",
     "id": "nebulizacion-en-frio",
     "h2": "Nebulización en frío",
@@ -217,6 +221,10 @@
     "id": "areas-treated",
     "h2": "Areas treated",
     "html": "<ul><li>the bed structure and its joints;</li><li>the headboard;</li><li>bedside tables and nearby furniture;</li><li>baseboards;</li><li>accessible cracks and gaps;</li><li>treatable parts of sofas and armchairs;</li><li>other rooms, if the infestation justifies it.</li></ul><p>An area being on this list does not mean any product may be applied to it.</p>"
+   },
+   {
+    "type": "figure",
+    "image": "IMG-CHEM-10"
    },
    {
     "type": "text",

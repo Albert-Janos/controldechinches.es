@@ -1,7 +1,7 @@
 {
  "id": "PG-017",
  "template": "T-H",
- "status": "Draft",
+ "status": "Approved for indexing",
  "dataPage": "about",
  "cta": {
   "message": "default"
@@ -11,8 +11,7 @@
   "PG-040"
  ],
  "_blocked": [
-  "reviewer arrangement (OWNER-INPUT #20)",
-  "owner approval of policy wording"
+  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
  ],
  "es": {
   "blocks": [
@@ -44,11 +43,7 @@
     "type": "text",
     "id": "imagenes",
     "h2": "Imágenes",
-    "html": "<p>Usamos fotografías propias. Cuando una imagen es una ilustración o una demostración, se indica. No presentamos imágenes generadas como trabajos reales.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Pendiente: revisor externo independiente (si lo hay, cómo se citará) y aprobación del texto de esta política."
+    "html": "<p>Usamos fotografías propias siempre que las tenemos. Las ilustraciones y las imágenes de apoyo se presentan como ilustrativas, con su pie de foto, y no presentamos imágenes generadas como trabajos reales.</p>"
    }
   ],
   "faq": [],
@@ -91,11 +86,7 @@
     "type": "text",
     "id": "images",
     "h2": "Images",
-    "html": "<p>We use our own photographs. When an image is an illustration or a demonstration, it is labelled. We do not present generated images as real jobs.</p>"
-   },
-   {
-    "type": "todo",
-    "text": "Pending: independent external reviewer (if any, how to cite them) and approval of this policy text."
+    "html": "<p>We use our own photographs whenever we have them. Illustrations and supporting images are presented as illustrative, with a caption, and we never present generated images as real work.</p>"
    }
   ],
   "faq": [],
@@ -107,5 +98,9 @@
   "h1": "Editorial policy",
   "eyebrow": "Transparency",
   "lead": "How the content on this website is produced, reviewed and updated."
+ },
+ "dates": {
+  "published": "2026-11-28",
+  "modified": "2026-11-28"
  }
 }

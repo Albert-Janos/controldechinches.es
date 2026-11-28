@@ -20,3 +20,7 @@ reports/package-*-manifest.json
 reports/raw-lh-*.log
 _pending-images/
 tests/.tmp-gate-pages/
+
+# owner image drop folders (raw sources, never versioned or packaged)
+uj-kepek/
+reports/render/

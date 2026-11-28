@@ -33,7 +33,7 @@ ok(prices.vat.status === 'planning-assumption', 'VAT stays a planning assumption
 // ---- every generated page
 const stat = {};
 for (const p of Object.values(pages)) {
-  ok(p.status === 'Draft', `${p.id} must stay Draft (is ${p.status})`);
+  ok(p.status === 'Draft' || site.indexableStatuses.includes(p.status), `${p.id}: unexpected status ${p.status}`);
   for (const lang of ['es', 'en']) {
     const html = renderPage({ ...ctx0, page: p, lang, ui: ui[lang] });
     ok(/<meta name="robots" content="noindex, nofollow">/.test(html), `${p.id} ${lang}: noindex`);
@@ -78,7 +78,7 @@ for (const mode of ['preview', 'production']) {
   ok(g.groups.length === 8 && g.filters.length === 8 && at.en.blocks.find(b => b.type === 'gallery').groups.length === 8, 'atlas keeps its 8 categories and 8 filter chips (ES + EN)');
   ok(new Set(planned).size === 29 && planned.every(i => ctx0.images[i]), `atlas registers 29 planned photo slots, all known to the image manifest (${planned.length})`);
   ok(['IMG-ENT-ADU-02', 'IMG-ENT-ADU-03', 'IMG-ENT-NYM-01', 'IMG-ENT-NYM-05', 'IMG-ENT-EGG-03', 'IMG-ENT-SCALE-02', 'IMG-SEV-01'].every(i => planned.includes(i)), 'atlas still plans males, unfed adults, nymph stages 1-5, hatched egg shells, scale and severity images');
-  ok(planned.filter(i => ctx0.images[i].status === 'ready').length === 7, 'atlas currently contains 7 ready images');
+  ok(planned.filter(i => ctx0.images[i].status === 'ready').length === 27, 'atlas currently contains 27 ready images (14 labelled illustrations, 12 own photographs, 1 stock photo); only MOU-02 and EXC-01 are still missing');
   for (const mode of ['preview', 'production']) for (const lang of ['es', 'en']) {
     const pc = makeContext({ mode, pageDirs: ['data/pages'], simulatePublished: mode === 'production' ? new Set(Object.keys(pages)) : undefined });
     const html = renderPage({ ...pc, page: at, lang, ui: ui[lang] }), tag = `PG-070 ${lang} (${mode})`;

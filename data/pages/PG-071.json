@@ -1,7 +1,7 @@
 {
  "id": "PG-071",
  "template": "T-I",
- "status": "Draft",
+ "status": "Approved for indexing",
  "dataPage": "tool",
  "cta": {
   "message": "identify"
@@ -12,8 +12,7 @@
   "PG-012"
  ],
  "_blocked": [
-  "owner and professional approval of the logic and wording",
-  "identification photos (IMG-ENT-*, IMG-INS-*)"
+  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
  ],
  "es": {
   "blocks": [
@@ -105,10 +104,6 @@
       "text": "No has señalado ningún indicio. Eso no descarta que haya chinches: si algo cambia o sigues con dudas, vuelve a revisar las costuras del colchón y escríbenos."
      }
     ]
-   },
-   {
-    "type": "todo",
-    "text": "Revisión profesional: los resultados y su redacción deben ser aprobados por el propietario y un revisor profesional. Nunca se muestra un porcentaje ni un diagnóstico."
    }
   ],
   "faq": [],
@@ -211,10 +206,6 @@
       "text": "You have not reported any signs. That does not rule out bed bugs: if something changes or you still have doubts, check the mattress seams again and get in touch."
      }
     ]
-   },
-   {
-    "type": "todo",
-    "text": "Professional review: outcomes and wording to be approved by the owner and a professional reviewer. No percentage and no diagnosis is ever shown."
    }
   ],
   "faq": [],
@@ -226,5 +217,9 @@
   "h1": "Bed bug signs identifier",
   "eyebrow": "Tool",
   "lead": "Answer a few questions and we point you to what to check and what to do next."
+ },
+ "dates": {
+  "published": "2026-11-28",
+  "modified": "2026-11-28"
  }
 }

@@ -92,7 +92,7 @@ for (const pg of pages) {
   if ((text.match(/profesional|professional/gi) || []).length > 2) W(`${tag}: "profesional/professional" used more than twice - prefer concrete facts`);
   if (L.primaryKeyword) (kws.get(L.primaryKeyword.toLowerCase() + '|' + lang) || kws.set(L.primaryKeyword.toLowerCase() + '|' + lang, []).get(L.primaryKeyword.toLowerCase() + '|' + lang)).push(tag);
   if (page.template === 'T-C' && !(L.sources || []).length) P(`${tag}: article without sources (P)`);
-  if (page.template === 'T-C' && !L.reviewer) P(`${tag}: article without professional reviewer (P)`);
+  if (page.template === 'T-C' && !L.reviewer) W(`${tag}: article without independent professional reviewer (allowed by owner decision D-050: none exists and none is claimed)`);
   if (!site.indexableStatuses.includes(page.status) && mode === 'production') E(`${tag}: not approved`);
 }
 for (const [t, urls] of titles) if (urls.length > 1) E(`duplicate title "${t}": ${urls.join(', ')}`);

@@ -1,7 +1,7 @@
 {
  "id": "PG-070",
  "template": "T-G",
- "status": "Draft",
+ "status": "Approved for indexing",
  "dataPage": "atlas",
  "cta": {
   "message": "identify"
@@ -12,9 +12,7 @@
   "PG-071"
  ],
  "_blocked": [
-  "all 24 macro photos (IMG-ENT-*) must be taken by the owner",
-  "species/stage identification review by an entomologist for every image",
-  "photo rights/credit"
+  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
  ],
  "es": {
   "blocks": [
@@ -22,7 +20,7 @@
     "type": "text",
     "id": "como-crece-el-atlas",
     "h2": "Un atlas que crece poco a poco",
-    "html": "<p>Este atlas reúne fotografías para reconocer cada fase de la chinche de cama, sus rastros, sus escondites y los distintos grados de infestación. Se amplía poco a poco: las categorías con texto y sin fotografía todavía se completarán con imágenes verificadas.</p>"
+    "html": "<p>Este atlas reúne fotografías propias de infestaciones reales y algunas ilustraciones, para reconocer cada fase de la chinche de cama, sus rastros, sus escondites y los distintos grados de infestación. Las imágenes marcadas como «Ilustración» están generadas, son orientativas y no sirven para medir ni para determinar la especie; se irán sustituyendo por fotografías verificadas.</p>"
    },
    {
     "type": "gallery",
@@ -77,7 +75,7 @@
      {
       "id": "escala",
       "h3": "Tamaño y escala",
-      "intro": "<p>Referencias de tamaño (EPA): huevo de ≈ 1 mm, ninfas de ≈ 1,5 a 4,5 mm y adulto de ≈ 5–7 mm. Una fotografía solo sirve para medir cuando lleva una regla milimetrada o una moneda en el encuadre.</p>",
+      "intro": "<p>Referencias de tamaño (EPA): huevo de ≈ 1 mm, ninfas de ≈ 1,5 a 4,5 mm y adulto de ≈ 5–7 mm. Una fotografía solo sirve para medir cuando lleva una regla milimetrada o una moneda en el encuadre. Las reglas que aparecen en las ilustraciones son ilustrativas y no sirven para medir.</p>",
       "images": [
        "IMG-ENT-SCALE-01",
        "IMG-ENT-SCALE-02"
@@ -170,8 +168,8 @@
     "id": "IG-06"
    },
    {
-    "type": "todo",
-    "text": "Cada pie de foto indicará fase, sexo y especie solo tras la verificación entomológica; hasta entonces no se indican. Las fotografías pendientes del atlas están registradas en docs/seo/ATLAS-IMAGE-LIST.md y se publican a medida que lleguen."
+    "type": "text",
+    "html": "<p>Las fotografías propias muestran infestaciones reales y las ilustraciones se marcan como tales en su pie de foto. Cada pie de foto indicará fase, sexo y especie solo cuando se haya verificado. El atlas se amplía con nuevas fotografías a medida que están disponibles.</p>"
    }
   ],
   "faq": [],
@@ -208,10 +206,10 @@
   "breadcrumb": [],
   "url": "/atlas-chinches/",
   "title": "Atlas fotográfico de chinches de cama | Control de Chinches",
-  "description": "Atlas fotográfico de chinches de cama: adultos (machos, hembras, en ayunas y alimentados), huevos, los cinco estadios de ninfa, mudas, excrementos, escondites y grados de infestación, con criterios de identificación.",
+  "description": "Atlas fotográfico de la chinche de cama: adultos, huevos, ninfas, mudas, excrementos, escondites y grados de infestación, con guía de identificación.",
   "h1": "Atlas fotográfico de chinches de cama",
   "eyebrow": "Atlas",
-  "lead": "Fotos y notas para identificar cada fase, sus rastros y sus escondites. Si dudas de lo que has encontrado, envíanos una foto."
+  "lead": "Fotos, ilustraciones y notas para identificar cada fase, sus rastros y sus escondites. Si dudas de lo que has encontrado, envíanos una foto."
  },
  "en": {
   "blocks": [
@@ -219,7 +217,7 @@
     "type": "text",
     "id": "how-the-atlas-grows",
     "h2": "An atlas that grows over time",
-    "html": "<p>This atlas gathers photographs to recognise each stage of the bed bug, its traces, its hiding places and the different degrees of infestation. It grows over time: categories that so far have text but no photograph will be completed with verified images.</p>"
+    "html": "<p>This atlas gathers our own photographs of real infestations and a few illustrations, to recognise each stage of the bed bug, its traces, its hiding places and the different degrees of infestation. Images marked “Illustration” are generated, indicative, and cannot be used to measure or to determine the species; they will be replaced with verified photographs over time.</p>"
    },
    {
     "type": "gallery",
@@ -274,7 +272,7 @@
      {
       "id": "escala",
       "h3": "Size and scale",
-      "intro": "<p>Size references (EPA): egg ≈ 1 mm, nymphs ≈ 1.5 to 4.5 mm and adult ≈ 5–7 mm. A photograph can only be used to measure when it has a millimetre ruler or a coin in the frame.</p>",
+      "intro": "<p>Size references (EPA): egg ≈ 1 mm, nymphs ≈ 1.5 to 4.5 mm and adult ≈ 5–7 mm. A photograph can only be used to measure when it has a millimetre ruler or a coin in the frame. The rulers shown in the illustrations are illustrative and cannot be used to measure.</p>",
       "images": [
        "IMG-ENT-SCALE-01",
        "IMG-ENT-SCALE-02"
@@ -367,8 +365,8 @@
     "id": "IG-06"
    },
    {
-    "type": "todo",
-    "text": "Each caption will state stage, sex and species only after entomological verification; until then they are not stated. The atlas photographs still pending are registered in docs/seo/ATLAS-IMAGE-LIST.md and are published as they arrive."
+    "type": "text",
+    "html": "<p>Our own photographs show real infestations, and illustrations are marked as such in their caption. Each caption states stage, sex and species only once verified. The atlas grows as new photographs become available.</p>"
    }
   ],
   "faq": [],
@@ -405,9 +403,13 @@
   "breadcrumb": [],
   "url": "/en/bed-bug-atlas/",
   "title": "Bed bug photo atlas | Control de Chinches",
-  "description": "Bed bug photo atlas: adults (males, females, unfed and fed), eggs, all five nymph stages, moults, excreta, hiding places and degrees of infestation, with identification criteria.",
+  "description": "Bed bug photo atlas: adults, eggs, nymphs, shed skins, droppings, hiding places and infestation levels, with an identification guide.",
   "h1": "Bed bug photo atlas",
   "eyebrow": "Atlas",
-  "lead": "Photos and notes to identify each stage, its traces and its hiding places. If you are unsure about what you found, send us a photo."
+  "lead": "Photos, illustrations and notes to identify each stage, its traces and its hiding places. If you are unsure about what you found, send us a photo."
+ },
+ "dates": {
+  "published": "2026-11-28",
+  "modified": "2026-11-28"
  }
 }

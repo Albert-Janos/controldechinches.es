@@ -57,3 +57,10 @@ Formátum (minden érdemi változásnál): **dátum · változás · ok · kiind
 - Visszaállítva: mind a 8 kategória és szűrőgomb (huevos, ninfas is), kategória-szövegek forrásokkal, fajazonosítás + hasonló rovarok szakasz, forráslista; a lead/meta description újra a teljes atlasz tartalmát írja le.
 - Új képhelyek: `IMG-ENT-EGG-03`, `IMG-SEV-01`, `IMG-SEV-02` (inventory + page-image map); a renderer az üres, de szöveges csoportot megjeleníti, a hiányzó képet nem.
 - `docs/seo/ATLAS-IMAGE-LIST.md` (generált, soronként minden atlasz-kép), `tools/build-atlas-image-list.mjs`, atlasz-teszt a konzisztencia-tesztben.
+
+## 2026-11-28 — élesítés-előkészítés és 4. munkacsomag (képek) (`develop/seo`; nincs merge, deploy, FTP)
+- **Publikálás:** 24 oldalpár (PG-017, 040, 041–062 cikkek, 070, 071) `Approved for indexing`, `dates` kitöltve, belső „Pendiente del propietario” blokkok eltávolítva (a PG-070 jegyzete publikus szöveggé írva). 16 oldal marad Draft/noindex (D-051). Production build: 48 generált + 6 meglévő = 54 indexelhető URL, sitemap 54.
+- **Validátor:** szakmai lektor nélküli cikk = figyelmeztetés (D-050). `tests/test-content-consistency.mjs`: production-indexelési ellenőrzés (index,follow; nincs noindex/draft/owner-jegyzet; canonical; nincs localhost).
+- **Védett oldalak:** lábléc „Guía/Guide” link (D-053), `politica-privacidad.html` WhatsApp-ikon SVG-hiba javítva (konzolhiba). Ads-védelmi baseline újrarögzítve.
+- **Képek:** 17 új saját fotó + 14 makró + munkaruhás önarckép feldolgozva (`tools/fill-image-assignments.mjs`, `process-images.mjs`); atlasz 27/29 kitöltve; új: IMG-INS-07, IMG-CHEM-09, IMG-CHEM-10; PG-045 és PG-049 fejképe saját fotóra cserélve; IMG-DRY-04 (P0) és IMG-PREP-01 kitöltve; PG-070 szövegei az illusztrációkról (D-054).
+- **Eszközök:** `tools/audit-dist-render.mjs` (minden oldal mobil+asztali renderelés, törött kép, srcset/sizes, CLS, konzol), `tools/build-publication-missing-data.mjs` → `PUBLICATION-MISSING-DATA.md`.

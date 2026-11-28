@@ -1,7 +1,7 @@
 {
  "id": "PG-040",
  "template": "T-H",
- "status": "Draft",
+ "status": "Approved for indexing",
  "dataPage": "hub",
  "cta": {
   "message": "default"
@@ -12,8 +12,7 @@
   "PG-030"
  ],
  "_blocked": [
-  "articles are drafts awaiting professional review (EDITORIAL-POLICY)",
-  "IMG-GUIDE-01"
+  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
  ],
  "es": {
   "blocks": [
@@ -246,5 +245,9 @@
   "h1": "Bed bug guide",
   "eyebrow": "Guide",
   "lead": "Articles with official and scientific sources, grouped by topic."
+ },
+ "dates": {
+  "published": "2026-11-28",
+  "modified": "2026-11-28"
  }
 }

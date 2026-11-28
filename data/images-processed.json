@@ -789,5 +789,767 @@
    "en": "Illustration: inspecting a sofa bed. Not an own photograph."
   },
   "aliasOf": "IMG-IPM-01"
+ },
+ "IMG-ABOUT-01": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/about/",
+   "base": "albert-janos-mono-trabajo-retrato",
+   "widths": [
+    640,
+    960,
+    1280,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1024
+  },
+  "credit": "Albert János / Control de Chinches",
+  "alt": {
+   "es": "Albert János con un mono de protección blanco, retrato",
+   "en": "Albert János in a white protective suit, portrait"
+  },
+  "caption": {
+   "es": "Albert János con ropa de trabajo. Foto propia.",
+   "en": "Albert János in work clothes. Own photo."
+  }
+ },
+ "IMG-ENT-ADU-02": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-de-cama-adulta-vista-dorsal-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una chinche de cama adulta en vista dorsal junto a una regla milimetrada",
+   "en": "Illustration of an adult bed bug in dorsal view next to a millimetre ruler"
+  },
+  "caption": {
+   "es": "Ilustración: chinche de cama adulta en vista dorsal. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: adult bed bug in dorsal view. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-ADU-03": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-de-cama-adulta-aplanada-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una chinche de cama adulta de cuerpo aplanado y color pardo claro junto a una regla milimetrada",
+   "en": "Illustration of an adult bed bug with a flat, light brown body next to a millimetre ruler"
+  },
+  "caption": {
+   "es": "Ilustración: chinche de cama adulta de cuerpo aplanado y color pardo (aspecto de un ejemplar sin alimentar). La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: adult bed bug with a flat, brown body (the look of an unfed specimen). The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-ADU-04": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-adulta-aplanada-y-alimentada-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de dos chinches de cama adultas: una aplanada y parda y otra de abdomen redondeado y rojo, junto a una regla",
+   "en": "Illustration of two adult bed bugs: one flat and brown and one with a rounded red abdomen, next to a ruler"
+  },
+  "caption": {
+   "es": "Ilustración: dos adultos: uno aplanado y pardo y otro de abdomen redondeado y rojizo, como tras alimentarse. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: two adults: one flat and brown and one with a rounded, reddish abdomen, as after feeding. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-ADU-05": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-cabeza-pronoto-detalle-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración en primer plano de la cabeza y el pronoto de una chinche de cama, con los ojos y las antenas",
+   "en": "Close-up illustration of the head and pronotum of a bed bug, with the eyes and antennae"
+  },
+  "caption": {
+   "es": "Ilustración: detalle de la cabeza y el pronoto de una chinche de cama; no sirve para determinar la especie. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: detail of the head and pronotum of a bed bug; not usable to determine the species. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-EGG-01": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "huevos-chinche-aislados-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de cinco huevos de chinche de cama, blancos y alargados, sobre un tejido claro",
+   "en": "Illustration of five bed bug eggs, white and elongated, on a light fabric"
+  },
+  "caption": {
+   "es": "Ilustración: huevos de chinche de cama aislados. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: isolated bed bug eggs. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-EGG-02": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "huevos-chinche-agrupados-costura-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1024
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de un grupo de huevos de chinche de cama en el pliegue de un tejido",
+   "en": "Illustration of a cluster of bed bug eggs in a fold of fabric"
+  },
+  "caption": {
+   "es": "Ilustración: grupo de huevos de chinche de cama en el pliegue de un tejido. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: a cluster of bed bug eggs in a fold of fabric. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-EGG-03": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "huevos-chinche-eclosionados-cascaras-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de cáscaras vacías y abiertas de huevos de chinche de cama eclosionados junto a huevos enteros",
+   "en": "Illustration of empty, opened shells of hatched bed bug eggs beside whole eggs"
+  },
+  "caption": {
+   "es": "Ilustración: cáscaras vacías de huevos eclosionados, con la abertura de salida. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: empty shells of hatched eggs, with the hatching opening. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-NYM-01": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "ninfa-chinche-estadio-1-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una ninfa de chinche de cama, translúcida y amarillenta, junto a una regla (estadio 1 de 5, orientativo)",
+   "en": "Illustration of a bed bug nymph, translucent and yellowish, next to a ruler (stage 1 of 5, indicative)"
+  },
+  "caption": {
+   "es": "Ilustración: ninfa de chinche de cama; ilustración orientativa del estadio 1 de 5, no verificada por un especialista. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: bed bug nymph; indicative illustration of stage 1 of 5, not verified by a specialist. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-NYM-02": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "ninfa-chinche-estadio-2-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una ninfa de chinche de cama, translúcida y amarillenta, junto a una regla (estadio 2 de 5, orientativo)",
+   "en": "Illustration of a bed bug nymph, translucent and yellowish, next to a ruler (stage 2 of 5, indicative)"
+  },
+  "caption": {
+   "es": "Ilustración: ninfa de chinche de cama; ilustración orientativa del estadio 2 de 5, no verificada por un especialista. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: bed bug nymph; indicative illustration of stage 2 of 5, not verified by a specialist. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-NYM-03": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "ninfa-chinche-estadio-3-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una ninfa de chinche de cama, translúcida y amarillenta, junto a una regla (estadio 3 de 5, orientativo)",
+   "en": "Illustration of a bed bug nymph, translucent and yellowish, next to a ruler (stage 3 of 5, indicative)"
+  },
+  "caption": {
+   "es": "Ilustración: ninfa de chinche de cama; ilustración orientativa del estadio 3 de 5, no verificada por un especialista. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: bed bug nymph; indicative illustration of stage 3 of 5, not verified by a specialist. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-NYM-04": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "ninfa-chinche-estadio-4-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una ninfa de chinche de cama, translúcida y amarillenta, junto a una regla (estadio 4 de 5, orientativo)",
+   "en": "Illustration of a bed bug nymph, translucent and yellowish, next to a ruler (stage 4 of 5, indicative)"
+  },
+  "caption": {
+   "es": "Ilustración: ninfa de chinche de cama; ilustración orientativa del estadio 4 de 5, no verificada por un especialista. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: bed bug nymph; indicative illustration of stage 4 of 5, not verified by a specialist. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-NYM-05": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "ninfa-chinche-estadio-5-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una ninfa de chinche de cama, translúcida y amarillenta, junto a una regla (estadio 5 de 5, orientativo)",
+   "en": "Illustration of a bed bug nymph, translucent and yellowish, next to a ruler (stage 5 of 5, indicative)"
+  },
+  "caption": {
+   "es": "Ilustración: ninfa de chinche de cama; ilustración orientativa del estadio 5 de 5, no verificada por un especialista. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: bed bug nymph; indicative illustration of stage 5 of 5, not verified by a specialist. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-SCALE-01": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-adulta-con-regla-milimetrada-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1448
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1448,
+   "height": 1086
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de una chinche de cama adulta junto a una regla milimetrada",
+   "en": "Illustration of an adult bed bug next to a millimetre ruler"
+  },
+  "caption": {
+   "es": "Ilustración: chinche de cama adulta junto a una regla. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: an adult bed bug next to a ruler. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-SCALE-02": {
+  "provenance": "ai",
+  "variants": {
+   "dir": "/assets/img/entomology/",
+   "base": "chinche-huevo-ninfas-adulto-escala-ilustracion",
+   "widths": [
+    800,
+    1200,
+    1536
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1536,
+   "height": 1024
+  },
+  "notes": {
+   "es": "Ilustración generada: no tiene valor de referencia para identificar el estadio, el sexo ni la especie, ni para medir tamaños. Se sustituirá por fotografías verificadas.",
+   "en": "Generated illustration: it has no reference value for identifying the stage, sex or species, or for measuring sizes. It will be replaced with verified photographs."
+  },
+  "alt": {
+   "es": "Ilustración de un huevo, cinco ninfas y un adulto de chinche de cama ordenados por tamaño sobre una regla",
+   "en": "Illustration of an egg, five nymphs and an adult bed bug arranged by size on a ruler"
+  },
+  "caption": {
+   "es": "Ilustración: huevo, cinco ninfas y un adulto ordenados por tamaño. La regla es ilustrativa y no sirve para medir. No es una fotografía propia.",
+   "en": "Illustration: an egg, five nymphs and an adult arranged by size. The ruler is illustrative and cannot be used to measure. Not an own photograph."
+  }
+ },
+ "IMG-ENT-HID-03": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-estructura-mueble-tapizado-herraje",
+   "widths": [
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Base de un mueble tapizado con un herraje metálico y numerosas manchas oscuras y chinches junto al borde, sobre un suelo de parqué",
+   "en": "Base of an upholstered piece of furniture with a metal fitting and many dark spots and bed bugs along the edge, on a parquet floor"
+  },
+  "caption": {
+   "es": "Chinches y manchas en la estructura de un mueble tapizado. Foto propia.",
+   "en": "Bed bugs and spots on the frame of an upholstered piece of furniture. Own photo."
+  }
+ },
+ "IMG-ENT-HID-04": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-cabecero-costras-excrementos",
+   "widths": [
+    800,
+    1200,
+    1220
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1220,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Cabecero con costras de manchas oscuras de excrementos de chinches a lo largo de los bordes y del relleno",
+   "en": "Headboard with crusts of dark bed bug excreta along the edges and the padding"
+  },
+  "caption": {
+   "es": "Excrementos de chinches en un cabecero. Foto propia.",
+   "en": "Bed bug excreta on a headboard. Own photo."
+  }
+ },
+ "IMG-ENT-HID-05": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-esquina-pared-techo-manchas",
+   "widths": [
+    800,
+    1200,
+    1220
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1220,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Esquina entre la pared y el techo de un dormitorio con numerosas manchas oscuras y restos de chinches, y una cinta de malla",
+   "en": "Corner between a wall and the ceiling of a bedroom with many dark spots and bed bug remains, and a mesh tape"
+  },
+  "caption": {
+   "es": "Rastros de chinches en la esquina de una pared. Foto propia.",
+   "en": "Bed bug traces in a wall corner. Own photo."
+  }
+ },
+ "IMG-ENT-HID-06": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-costura-tapizado-oscuro-grapa",
+   "widths": [
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Costura de un tapizado oscuro con manchas rojizas, chinches y una grapa",
+   "en": "Seam of a dark upholstery with reddish spots, bed bugs and a staple"
+  },
+  "caption": {
+   "es": "Chinches en la costura de un tapizado. Foto propia.",
+   "en": "Bed bugs in the seam of an upholstery. Own photo."
+  }
+ },
+ "IMG-SEV-01": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinche-costura-colchon-azul-infestacion-incipiente",
+   "widths": [
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Costura de un colchón de tela azul con un posible ejemplar de chinche junto al ribete",
+   "en": "Seam of a blue fabric mattress with a possible bed bug next to the piping"
+  },
+  "caption": {
+   "es": "Infestación incipiente: un posible ejemplar en la costura de un colchón. Foto propia.",
+   "en": "Early infestation: a possible bed bug in the seam of a mattress. Own photo."
+  }
+ },
+ "IMG-SEV-02": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/infestation/",
+   "base": "chinches-rincon-mueble-tapizado-varios-focos",
+   "widths": [
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Rincón interior de un mueble tapizado con manchas oscuras y restos de chinches en varias zonas",
+   "en": "Inside corner of an upholstered piece of furniture with dark spots and bed bug remains in several areas"
+  },
+  "caption": {
+   "es": "Infestación moderada: varios focos en un mueble tapizado. Foto propia.",
+   "en": "Moderate infestation: several foci in an upholstered piece of furniture. Own photo."
+  }
+ },
+ "IMG-INS-07": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/ipm/inspection/",
+   "base": "chinches-costura-colchon-revision",
+   "widths": [
+    640,
+    960,
+    1220
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1220,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "notes": {
+   "es": "Infestación real; no se indican lugar, fecha ni resultado del tratamiento.",
+   "en": "Real infestation; place, date and treatment result are not stated."
+  },
+  "alt": {
+   "es": "Borde de un colchón por la parte inferior, con unas pocas chinches y huevos en la costura",
+   "en": "Underside edge of a mattress with a few bed bugs and eggs in the seam"
+  },
+  "caption": {
+   "es": "Chinches y huevos en la costura de un colchón. Foto propia.",
+   "en": "Bed bugs and eggs in the seam of a mattress. Own photo."
+  }
+ },
+ "IMG-DRY-04": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/treatments/steam/",
+   "base": "vapor-seco-cabezal-estructura-cama-guante",
+   "widths": [
+    640,
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "alt": {
+   "es": "Cabezal de vapor aplicando vapor con una mano enguantada sobre la estructura de una cama, con una nube de vapor",
+   "en": "Steam head applying steam with a gloved hand to the frame of a bed, with a cloud of steam"
+  },
+  "caption": {
+   "es": "Aplicación de vapor seco en la estructura de una cama. Foto propia.",
+   "en": "Dry steam applied to the frame of a bed. Own photo."
+  }
+ },
+ "IMG-PREP-01": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/ipm/prevention/",
+   "base": "cama-desmontada-colchon-apartado-vapor",
+   "widths": [
+    640,
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "alt": {
+   "es": "Cama desmontada con los listones apoyados en la pared, el colchón enrollado en el suelo y una máquina de vapor delante",
+   "en": "Dismantled bed with the slats leaning on the wall, the mattress rolled on the floor and a steam machine in front"
+  },
+  "caption": {
+   "es": "Cama desmontada y colchón apartado para poder tratar cada pieza. Foto propia.",
+   "en": "Bed dismantled and mattress set aside so each part can be treated. Own photo."
+  }
+ },
+ "IMG-CHEM-09": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/treatments/chemical/",
+   "base": "nebulizador-frio-pulverizador-presion-suelo",
+   "widths": [
+    640,
+    960,
+    1006
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 1006,
+   "height": 755
+  },
+  "credit": "Albert János / Control de Chinches",
+  "alt": {
+   "es": "Nebulizador en frío y pulverizador a presión sobre el suelo de una vivienda, con la niebla saliendo de la boquilla",
+   "en": "Cold fogger and pressure sprayer on the floor of a home, with the mist coming out of the nozzle"
+  },
+  "caption": {
+   "es": "Nebulizador en frío y pulverizador a presión preparados para el tratamiento. Foto propia.",
+   "en": "Cold fogger and pressure sprayer ready for the treatment. Own photo."
+  }
+ },
+ "IMG-CHEM-10": {
+  "provenance": "own",
+  "variants": {
+   "dir": "/assets/img/treatments/chemical/",
+   "base": "pulverizador-acero-caja-sofa-cama",
+   "widths": [
+    480,
+    686
+   ],
+   "formats": [
+    "avif",
+    "webp"
+   ],
+   "width": 686,
+   "height": 915
+  },
+  "credit": "Albert János / Control de Chinches",
+  "alt": {
+   "es": "Pulverizador de acero inoxidable con manguera junto a la caja abierta de un sofá cama",
+   "en": "Stainless steel sprayer with a hose next to the open storage box of a sofa bed"
+  },
+  "caption": {
+   "es": "Aplicación dirigida en la caja de un sofá cama. Foto propia.",
+   "en": "Targeted application in the storage box of a sofa bed. Own photo."
+  }
  }
 }

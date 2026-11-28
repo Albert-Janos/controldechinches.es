@@ -1,7 +1,7 @@
 {
  "id": "PG-055",
  "template": "T-C",
- "status": "Draft",
+ "status": "Approved for indexing",
  "dataPage": "article",
  "cta": {
   "message": "default"
@@ -11,10 +11,7 @@
   "PG-049"
  ],
  "_blocked": [
-  "professional review (OWNER-INPUT #20) - the draft is source-based but unreviewed",
-  "sources to be re-checked before publishing (EPA page dates; Spanish official sources still to be added/verified)",
-  "photos/infographics listed in PAGE-IMAGE-MAP",
-  "LGL-01 not required for informational articles; owner approval required"
+  "Released for indexing on the owner instruction of 2026-11-28 (informational page; LGL-01 not required). Residual: no independent external professional review exists (OWNER-INPUT #20, D-036) and none is claimed on the page."
  ],
  "es": {
   "url": "/guia-chinches/preparar-vivienda-tratamiento-chinches/",
@@ -343,5 +340,9 @@
     "checked": "2026-11-27"
    }
   ]
+ },
+ "dates": {
+  "published": "2026-11-28",
+  "modified": "2026-11-28"
  }
 }
