@@ -1,18 +1,24 @@
 {
-  "_comment": "Single source of truth for published prices (NET amounts, as approved by the owner). Generated pages show consumer prices derived from these by templates/prices.mjs (see vat). Edit here, then run: node tools/build-prices.mjs (regenerates js/prices.js for the protected live calculator). Static HTML prices of the PROTECTED live pages are verified with: node tools/check-prices.mjs",
+  "_comment": "SINGLE SOURCE OF TRUTH for every published price (NET amounts as decided by the owner). Gross consumer prices, travel fees and calculator values are derived from this file at build time: node tools/build-prices.mjs (js/prices.js + static price markers on the hand-written pages), node tools/build.mjs (generated pages). Do not type prices anywhere else.",
   "currency": "EUR",
-  "updated": "2026-11-27",
-  "approvedBy": "owner instruction 2026-11-27 (chat; work package 2)",
+  "updated": "2026-11-28",
+  "approvedBy": "owner instruction 2026-11-28 (final production work package)",
   "basis": "net",
   "vat": {
     "ratePercent": 21,
     "consumerDisplay": "gross",
     "status": "planning-assumption",
-    "note": "21 % is a PLANNING ASSUMPTION only, not a final tax decision. The applicable rate and the final consumer price presentation (Spanish consumer-law compliant, tax-inclusive) must be closed from an official Spanish source and an accountant's approval (LGL gate stays open). While status != 'approved' the production gate refuses any page that shows a price. Company (B2B) quotes may show net price and IVA separately where lawful."
+    "note": "21 % is the owner's PLANNING value for consumer (gross) price display. It is NOT a verified tax status: the real rate and invoicing situation must be checked when the Spanish business is finalised (docs/seo/FINAL-OWNER-INPUT-REQUIRED.md, group 1). The owner explicitly instructed (2026-11-28) that consumer prices are shown gross with this rate, therefore the production price gate passes on displayApprovedByOwner. Change ratePercent here and rebuild: every page and the calculator update.",
+    "displayApprovedByOwner": true
   },
   "chemical": {
     "status": "approved",
-    "bedroomPrices": [139, 179, 219, 259],
+    "bedroomPrices": [
+      139,
+      179,
+      219,
+      259
+    ],
     "additionalBedroom": 40,
     "maxBedroomsInCalculator": 10,
     "note": "Net price per treatment occasion. A repeat chemical treatment costs the same as the matching first treatment."
@@ -23,27 +29,116 @@
     "note": "Net base price from. The final price depends on the on-site conditions, the surfaces involved and the extent of the infestation."
   },
   "extras": {
-    "_status": "approved by the owner on 2026-11-27 (work package 2), net prices. NOTE: the protected live calculator still uses the legacy 'addons' values below (steam +80 PER BEDROOM); the approved rule is a flat +80 per chemical treatment. Sync of live site / central price source / dispatcher is a pending owner task (docs/seo/OWNER-INPUT-REQUIRED.md).",
-    "steamAddOnToChemical": { "net": 80, "unit": "flat, added to a chemical treatment", "status": "approved" },
-    "sofa": { "net": 40, "unit": "per sofa", "status": "approved" },
-    "coldFoggingFrom": { "net": 50, "unit": "from, supplementary cold fogging", "status": "approved" }
+    "_status": "approved by the owner (net prices). Dry steam add-on is a FLAT fee per chemical treatment, NOT per bedroom.",
+    "steamAddOnToChemical": {
+      "net": 80,
+      "unit": "flat fee per chemical treatment (not per bedroom)",
+      "status": "approved"
+    },
+    "sofa": {
+      "net": 40,
+      "unit": "per sofa or armchair",
+      "status": "approved",
+      "max": 6
+    },
+    "coldFoggingFrom": {
+      "net": 50,
+      "unit": "minimum price (from) - only when technically justified and assessed on site",
+      "status": "approved"
+    }
   },
   "terms": {
     "repeatChemicalTreatment": "same price as the matching first treatment; no automatic free second treatment; no approved fixed guarantee package",
-    "travel": "distance dependent - NO approved per-km fee, starting town or zone system yet (do not invent)",
     "weekendTreatment": "normal price",
     "urgentTreatment": "normal price; availability depends on capacity (never a guaranteed same-day slot)",
     "surcharges": "none for weekends or urgency",
     "followUpVisit": "separate on-site follow-up check: individual agreement",
     "whatsappPhotoIdentification": "free",
     "onSiteInspection": "part of the ordered treatment (not sold as a stand-alone service)",
-    "multiPropertyBusinessClients": "individual quote"
+    "multiPropertyBusinessClients": "individual quote",
+    "travel": "fixed fee per town and treatment (see travel.towns); town not listed = individual quote"
   },
-  "addons": {
-    "_status": "LEGACY values used only by the protected live calculator (js/prices.js): steam is +80 PER BEDROOM there. Do not use these for generated pages - use 'extras'.",
-    "steamPerBedroom": { "amount": 80, "status": "legacy-unconfirmed", "enabled": true },
-    "sofaEach": { "amount": 40, "status": "legacy-unconfirmed", "enabled": true, "max": 6 },
-    "ulvFrom": { "amount": 50, "status": "legacy-unconfirmed", "enabled": true }
+  "retired": [
+    "Esencial plan (139 EUR, one visit)",
+    "Completo plan (239/289/339/399 EUR, two visits, +50 per extra bedroom)"
+  ],
+  "travel": {
+    "_comment": "Fixed travel fee per TOWN and per treatment (not per bedroom). No km pricing, no Maps API, departure town deliberately not stated. Town not listed here = individual quote (never assume free travel).",
+    "unit": "per treatment",
+    "towns": [
+      {
+        "town": "Alicante",
+        "net": 0
+      },
+      {
+        "town": "Torrevieja",
+        "net": 0
+      },
+      {
+        "town": "Orihuela Costa",
+        "net": 0
+      },
+      {
+        "town": "Guardamar del Segura",
+        "net": 0
+      },
+      {
+        "town": "Santa Pola",
+        "net": 5
+      },
+      {
+        "town": "Elche",
+        "net": 5
+      },
+      {
+        "town": "San Vicente del Raspeig",
+        "net": 10
+      },
+      {
+        "town": "Villajoyosa",
+        "net": 10
+      },
+      {
+        "town": "Finestrat",
+        "net": 10
+      },
+      {
+        "town": "Benidorm",
+        "net": 10
+      },
+      {
+        "town": "San Juan de Alicante",
+        "net": 15
+      },
+      {
+        "town": "Mutxamel",
+        "net": 15
+      },
+      {
+        "town": "El Campello",
+        "net": 15
+      },
+      {
+        "town": "Alfaz del Pi",
+        "net": 15
+      },
+      {
+        "town": "La Nucía",
+        "net": 15
+      },
+      {
+        "town": "Altea",
+        "net": 20
+      },
+      {
+        "town": "Calpe",
+        "net": 30
+      },
+      {
+        "town": "Jávea",
+        "net": 40
+      }
+    ]
   },
-  "retired": ["Esencial plan (139 EUR, one visit)", "Completo plan (239/289/339/399 EUR, two visits, +50 per extra bedroom)"]
+  "whatsappQuoteNote": "Calculator sends exactly the amounts it shows (js/quote.js is the only price engine)."
 }

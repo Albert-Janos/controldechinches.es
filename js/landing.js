@@ -1,8 +1,9 @@
-import { prices } from './prices.js?v=1';
+import { prices } from './prices.js?v=2';
+import { quote, quoteStrings, lineAmount, totalText, fmt } from './quote.js?v=1';
+import { track, bindDeclarativeTracking } from './track.js?v=1';
 
 const english = document.documentElement.lang === 'en';
-const wa = message => 'https://wa.me/34605259206?text=' + encodeURIComponent(message);
-const money = amount => english ? '€' + amount : amount + ' €';
+const wa = message => 'https://wa.me/' + prices.whatsapp + '?text=' + encodeURIComponent(message);
 const bedroom = n => english ? (n === 1 ? 'bedroom' : 'bedrooms') : (n === 1 ? 'dormitorio' : 'dormitorios');
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
@@ -35,109 +36,82 @@ function setupRadioKeys(group) {
 }
 
 function setupCalculator(panel) {
-  const chemical = prices.chemical;
-  const treatmentName = english ? 'Chemical treatment' : 'Tratamiento químico';
-  const state = { rooms: 1, steam: false, steamRooms: 1, sofas: 0, ulv: false };
-  const table = document.querySelector('.tariff-table');
-  const summary = panel.querySelector('[data-breakdown]');
-  const lineTemplate = summary.firstElementChild.cloneNode(true);
-  const quoteLinks = [...document.querySelectorAll('a[data-dynamic-wa]')];
-  const price = () => chemical.base[Math.min(state.rooms, chemical.base.length) - 1] + Math.max(state.rooms - chemical.base.length, 0) * chemical.extra;
-  const setRooms = n => {
-    state.rooms = clamp(n, 1, chemical.maxBedrooms);
-    state.steamRooms = Math.min(state.rooms, state.steamRooms);
-  };
+  const lang = english ? 'en' : 'es';
+  const state = { town: '', bedrooms: 1, treatment: 'chemical', steamAddOn: false, sofas: 0, ulv: false };
+  const table = document.querySelector('.tariff-table[data-rows], .tariff-table:not(.qc-travel-table)');
+  const qs = k => panel.querySelector('[data-qc="' + k + '"]');
+  const wa = qs('wa'), linesBox = qs('lines'), townSel = qs('town'), extras = qs('extras');
+  const status = panel.querySelector('[data-qc="status"]'), tr = quoteStrings[lang];
+  let used = false, completed = false;
 
   function update() {
-    const { rooms, steam, steamRooms, sofas, ulv } = state;
-    const base = price();
-    const steamCost = steam ? prices.addons.steamPerBedroom * steamRooms : 0;
-    const sofaCost = prices.addons.sofaEach * sofas;
-    const total = base + steamCost + sofaCost + (ulv ? prices.addons.ulvFrom : 0);
-    const from = english ? 'from ' : 'desde ';
-    const summaryLabel = ulv ? (english ? 'Total from' : 'Total desde') : (english ? 'Estimated total' : 'Total orientativo');
-    const rows = [[treatmentName + ' · ' + rooms + ' ' + bedroom(rooms), money(base)]];
-    const sofaLabel = english
-      ? (sofas === 1 ? 'additional sofa or armchair' : 'additional sofas or armchairs')
-      : (sofas === 1 ? 'sofá o sillón adicional' : 'sofás o sillones adicionales');
-    if (steam) rows.push([(english ? 'Dry steam' : 'Vapor seco') + ' · ' + steamRooms + ' ' + bedroom(steamRooms), '+' + money(steamCost)]);
-    if (sofas) rows.push([sofas + ' ' + sofaLabel, '+' + money(sofaCost)]);
-    if (ulv) rows.push([english ? 'Cold fogging (ULV)' : 'Nebulización en frío (ULV)', from + '+' + money(prices.addons.ulvFrom)]);
-    summary.replaceChildren(...rows.map(([label, amount]) => {
-      const entry = lineTemplate.cloneNode(true);
-      entry.children[0].textContent = label;
-      entry.children[1].textContent = amount;
-      return entry;
+    const steamOnly = state.treatment === 'steam';
+    if (steamOnly) { state.steamAddOn = false; state.sofas = 0; state.ulv = false; }
+    const q = quote(prices, state, lang);
+    const rows = q.lines.map(l => [l.label + (l.detail ? ' (' + l.detail + ')' : ''), lineAmount(lang, l)]);
+    linesBox.replaceChildren(...rows.map(([label, amount]) => {
+      const row = document.createElement('div');
+      const a = document.createElement('span'), b = document.createElement('span');
+      a.textContent = label; b.textContent = amount; row.append(a, b); return row;
     }));
-
-    const message = [
-      english ? 'Hello, I put together this bed bug treatment estimate on your website:' : 'Hola, he calculado este precio orientativo para un tratamiento de chinches en vuestra web:',
-      ...rows.filter((_, i) => !ulv || i < rows.length - 1).map(([label, amount]) => '• ' + label + ' (' + amount + ')'),
-      ulv && (english ? '• I’d like to ask about adding cold fogging (ULV), from ' + money(prices.addons.ulvFrom) + '.' : '• Me interesa valorar la nebulización en frío (ULV), desde ' + money(prices.addons.ulvFrom) + '.'),
-      (english ? 'Estimated amount: ' : 'Importe orientativo: ') + (ulv ? from : '') + money(total),
-      '\n' + (english ? 'My town is: ' : 'Mi localidad es: '),
-    ].filter(Boolean).join('\n');
-
+    const needTown = q.status === 'needTown', custom = q.status === 'customTown';
+    const totalLabel = q.status === 'ok' ? (q.minimum ? (english ? 'Total (VAT included), minimum amount' : 'Total (IVA incluido), importe mínimo') : tr.total) : tr.subtotal;
     setValues(panel, {
-      n: rooms, nLabel: bedroom(rooms), vN: steamRooms, vLabel: bedroom(steamRooms),
-      sofas, sLabel: english ? (sofas === 1 ? 'item' : 'items') : (sofas === 1 ? 'unidad' : 'unidades'),
-      vaporTick: steam ? '✓' : '', ulvTick: ulv ? '✓' : '',
-      total: money(total), totalPrefix: summaryLabel, waText: message,
+      n: state.bedrooms, nLabel: bedroom(state.bedrooms), sofas: state.sofas,
+      totalPrefix: totalLabel,
+      total: q.status === 'ok' ? totalText(lang, q) : (q.minimum ? tr.from + ' ' : '') + fmt(lang, q.subtotalCents),
+      waText: q.message,
     });
-    for (const link of quoteLinks) {
-      link.href = wa(message);
-      const badge = link.querySelector('[data-value="total"]');
-      if (badge) badge.textContent = 'WhatsApp · ' + (ulv ? from : '') + money(total);
-    }
-
-    for (const [action, active] of [['toggleVapor', steam], ['toggleUlv', ulv]]) {
-      panel.querySelector('[data-action="' + action + '"]').setAttribute('aria-checked', active);
-    }
-    panel.querySelector('.cdc-vapor').hidden = !steam;
-    for (const row of table.querySelectorAll('[data-row]')) {
-      row.classList.toggle('is-selected', Number(row.dataset.row) === Math.min(rooms, 5));
-    }
-    for (const [action, atLimit] of Object.entries({
-      decN: rooms === 1, incN: rooms === chemical.maxBedrooms,
-      decV: steamRooms === 1, incV: steamRooms === rooms,
-      decS: sofas === 0, incS: sofas === prices.addons.sofaMax,
-    })) {
-      panel.querySelector('[data-action="' + action + '"]').setAttribute('aria-disabled', atLimit);
-    }
+    status.textContent = needTown ? tr.needTown : custom ? (english ? 'Individual quote: travel is not assumed to be included for towns outside the list.' : 'Presupuesto individual: para localidades fuera de la lista no se da por incluido el desplazamiento.') : '';
+    const free = q.lines.find(l => l.key === 'travel')?.free;
+    qs('hint').textContent = free ? (english ? 'Travel to this town is free (€0).' : 'El desplazamiento a esta localidad no tiene coste (0 €).') : townSel.dataset.hint || qs('hint').textContent;
+    wa.href = q.url;
+    wa.setAttribute('aria-disabled', String(q.status !== 'ok' && q.status !== 'customTown'));
+    wa.querySelector('span').textContent = q.status === 'ok' || custom ? wa.dataset.ready : wa.dataset.need;
+    if (needTown) wa.removeAttribute('href');
+    extras.querySelectorAll('input').forEach(i => { i.disabled = steamOnly; if (steamOnly) i.checked = false; });
+    extras.querySelectorAll('[data-action]').forEach(btn => btn.setAttribute('aria-disabled', String(steamOnly || (btn.dataset.action === 'decS' ? state.sofas === 0 : state.sofas === prices.sofaMax))));
+    extras.hidden = false; extras.classList.toggle('is-off', steamOnly);
+    for (const [action, atLimit] of Object.entries({ decN: state.bedrooms === 1, incN: state.bedrooms === prices.chemical.maxBedrooms })) panel.querySelector('[data-action="' + action + '"]').setAttribute('aria-disabled', String(atLimit));
+    if (table) for (const row of table.querySelectorAll('[data-row]')) row.classList.toggle('is-selected', !steamOnly && Number(row.dataset.row) === Math.min(state.bedrooms, 5));
+    if (q.status === 'ok' && !completed && used) { completed = true; track('calculator_complete'); }
   }
-
+  const touch = () => { if (!used) { used = true; track('calculator_use'); } };
+  const clamp2 = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
   const actions = {
-    incN: () => setRooms(state.rooms + 1),
-    decN: () => setRooms(state.rooms - 1),
-    toggleVapor: () => {
-      state.steam = !state.steam;
-      if (state.steam) state.steamRooms = state.rooms;
-    },
-    incV: () => { state.steamRooms = clamp(state.steamRooms + 1, 1, state.rooms); },
-    decV: () => { state.steamRooms = clamp(state.steamRooms - 1, 1, state.rooms); },
-    incS: () => { state.sofas = clamp(state.sofas + 1, 0, prices.addons.sofaMax); },
-    decS: () => { state.sofas = clamp(state.sofas - 1, 0, 6); },
-    toggleUlv: () => { state.ulv = !state.ulv; },
+    incN: () => { state.bedrooms = clamp2(state.bedrooms + 1, 1, prices.chemical.maxBedrooms); },
+    decN: () => { state.bedrooms = clamp2(state.bedrooms - 1, 1, prices.chemical.maxBedrooms); },
+    incS: () => { state.sofas = clamp2(state.sofas + 1, 0, prices.sofaMax); },
+    decS: () => { state.sofas = clamp2(state.sofas - 1, 0, prices.sofaMax); },
   };
-
   panel.addEventListener('click', event => {
-    const control = event.target.closest('[data-action]');
-    const action = actions[control?.dataset.action];
-    if (!action || control.getAttribute('aria-disabled') === 'true') return;
-    action();
+    const control = event.target.closest('button[data-action]');
+    if (control && actions[control.dataset.action]) {
+      if (control.getAttribute('aria-disabled') === 'true') return;
+      touch(); actions[control.dataset.action](); update();
+    }
+  });
+  panel.addEventListener('change', event => {
+    const el = event.target, k = el.dataset.qc; if (!k) return;
+    touch();
+    if (k === 'town') state.town = el.value;
+    if (k === 'type') state.treatment = el.value;
+    if (k === 'steamAddOn') state.steamAddOn = el.checked;
+    if (k === 'ulv') state.ulv = el.checked;
     update();
   });
-
-  table.addEventListener('click', event => {
+  wa.addEventListener('click', event => {
+    if (wa.getAttribute('aria-disabled') === 'true') { event.preventDefault(); townSel.focus(); return; }
+    track('quote_whatsapp_start');
+  });
+  if (table) table.addEventListener('click', event => {
     const row = event.target.closest('[data-row]');
     if (!row) return;
-    setRooms(Number(row.dataset.row));
-    update();
-    panel.querySelector('h2').focus({ preventScroll: true });
-    panel.scrollIntoView();
+    touch(); state.treatment = 'chemical'; panel.querySelector('input[name="qc-type"][value="chemical"]').checked = true;
+    state.bedrooms = clamp2(Number(row.dataset.row), 1, prices.chemical.maxBedrooms);
+    update(); panel.scrollIntoView();
   });
-
-  panel.querySelector('h2').tabIndex = -1;
+  townSel.dataset.hint = qs('hint').textContent;
   update();
 }
 
@@ -193,6 +167,7 @@ function setupBrief(panel) {
   update();
 }
 
+bindDeclarativeTracking();
 const calculator = document.querySelector('[data-calculator]');
 if (calculator) setupCalculator(calculator);
 const brief = document.querySelector('[data-brief]');

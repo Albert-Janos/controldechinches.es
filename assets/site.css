@@ -441,3 +441,33 @@ summary::-webkit-details-marker { display: none; }
   .hero-bg img { object-position: 67% center; }
   .hero-bg::after { background-image: linear-gradient(90deg, #0e1a28f3, #0e1a28a3 65%, #0e1a285c), linear-gradient(0deg, #101b2a6b, transparent 75%); }
 }
+
+/* price calculator v2 (owner-approved calculator upgrade, 2026-11-28): native select/radio/checkbox, single price engine js/quote.js */
+.qc-group { min-width: 0; margin: 0; padding: 0; border: 0; }
+.qc-group + .qc-group { border-top: 1px solid var(--border); padding-top: 1.05rem; }
+.qc-group legend { padding: 0; margin-bottom: .55rem; font-weight: 750; font-size: 1.1rem; }
+.qc-group legend span { font-size: 1rem; font-weight: 400; }
+.qc-fields select { width: 100%; min-height: 2.9rem; padding: .5rem .7rem; border: 1px solid #c5ced1; border-radius: .7rem; background: white; color: var(--ink); font: inherit; }
+.qc-hint { margin: .45rem 0 0; color: var(--gray); font-size: .9rem; }
+.qc-stepper { display: inline-flex; align-items: center; gap: .6rem; }
+.qc-stepper output { min-width: 7.5rem; text-align: center; font-weight: 750; }
+.qc-radios { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
+.qc-radio, .qc-check { position: relative; display: flex; gap: .65rem; align-items: flex-start; padding: .7rem; border: 1px solid #c5ced1; border-radius: .7rem; background: white; cursor: pointer; }
+.qc-check { margin-top: .55rem; }
+.qc-check.qc-sofa { justify-content: space-between; align-items: center; flex-wrap: wrap; cursor: default; }
+.qc-radio:has(input:checked), .qc-check:has(input:checked) { border-color: #9d7f21; background: #fff4c9; }
+.qc-radio:has(input:focus-visible), .qc-check:has(input:focus-visible) { outline: 3px solid #1b5fa8; outline-offset: 2px; }
+.qc-radio input, .qc-check input { width: 1.2rem; height: 1.2rem; margin-top: .15rem; flex: none; accent-color: #1d3b4a; }
+.qc-radio span, .qc-check > span { display: grid; gap: .2rem; }
+.qc-radio small, .qc-check small { color: var(--gray); font-size: .86rem; }
+.qc-radio em { font-style: normal; font-weight: 750; font-size: 1.05rem; }
+.qc-fields .is-off { opacity: .55; }
+.qc-total { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; padding: .6rem 0; font-weight: 750; font-size: 1.15rem; }
+.qc-legal { color: var(--gray); font-size: .84rem; }
+.tool-grid aside .button[aria-disabled="true"] { opacity: .6; cursor: not-allowed; }
+.qc-example { margin-top: 1rem; padding: .8rem 1rem; border-left: 4px solid #e6b81c; background: var(--surface); }
+.qc-travel { margin-top: 1.4rem; border: 1px solid var(--border); border-radius: var(--radius); background: white; padding: .3rem 1rem 1rem; }
+.qc-travel > summary { cursor: pointer; padding: .8rem 0; font-weight: 750; font-size: 1.1rem; }
+.qc-travel-table { width: 100%; }
+.qc-travel-table th, .qc-travel-table td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--border); }
+@media (max-width: 640px) { .qc-radios { grid-template-columns: minmax(0, 1fr); } }
