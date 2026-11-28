@@ -460,7 +460,7 @@ summary::-webkit-details-marker { display: none; }
 .qc-radio input, .qc-check input { width: 1.2rem; height: 1.2rem; margin-top: .15rem; flex: none; accent-color: #1d3b4a; }
 .qc-radio span, .qc-check > span { display: grid; gap: .2rem; }
 .qc-radio small, .qc-check small { color: var(--gray); font-size: .86rem; }
-.qc-radio em { font-style: normal; font-weight: 750; font-size: 1.05rem; }
+.qc-radio em { font-family: inherit; font-style: normal; font-weight: 750; font-size: 1.05rem; }
 .qc-fields .is-off { opacity: .55; }
 .qc-total { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; padding: .6rem 0; font-weight: 750; font-size: 1.15rem; }
 .qc-legal { color: var(--gray); font-size: .84rem; }
