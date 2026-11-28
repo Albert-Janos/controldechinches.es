@@ -68,7 +68,7 @@ function setupCalculator(panel) {
     wa.href = q.url;
     wa.setAttribute('aria-disabled', String(q.status !== 'ok' && q.status !== 'customTown'));
     wa.querySelector('span').textContent = q.status === 'ok' || custom ? wa.dataset.ready : wa.dataset.need;
-    if (needTown) wa.removeAttribute('href');
+    if (needTown) wa.setAttribute('href', '#calculadora');
     extras.querySelectorAll('input').forEach(i => { i.disabled = steamOnly; if (steamOnly) i.checked = false; });
     extras.querySelectorAll('[data-action]').forEach(btn => btn.setAttribute('aria-disabled', String(steamOnly || (btn.dataset.action === 'decS' ? state.sofas === 0 : state.sofas === prices.sofaMax))));
     extras.hidden = false; extras.classList.toggle('is-off', steamOnly);

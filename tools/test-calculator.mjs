@@ -76,7 +76,7 @@ try {
       const total = () => txt('[data-value="total"]'), waHref = () => page.$eval('[data-qc="wa"]', a => a.getAttribute('href'));
       // initial: no town -> no complete total, WhatsApp disabled
       ok(!(await page.$eval('[data-calculator]', e => e.innerText)).includes(lang === 'en' ? 'Total (VAT included)\n' : 'Total (IVA incluido)\n') || true, 'noop');
-      ok(await page.$eval('[data-qc="wa"]', a => a.getAttribute('aria-disabled') === 'true' && !a.getAttribute('href')), `${lang} WhatsApp quote disabled until a town is chosen`);
+      ok(await page.$eval('[data-qc="wa"]', a => a.getAttribute('aria-disabled') === 'true' && a.getAttribute('href') === '#calculadora'), `${lang} WhatsApp quote disabled until a town is chosen`);
       ok((await txt('[data-qc="status"]')).length > 5, `${lang} asks for a town`);
       // reference scenario: Benidorm, 3 bedrooms, chemical + steam add-on
       await page.select('#qc-town', 'Benidorm');
