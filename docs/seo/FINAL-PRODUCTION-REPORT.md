@@ -84,9 +84,9 @@ Teljes jobb oldali hero-kép (object-fit: cover, `--hero-pos`), tartalmi képek 
 - Opcionális fotók/bizonyítványok **nem** akadályozzák a publikálást.
 
 ## 6. Git és production
-- **Végleges commit:** GITCOMMIT_PLACEHOLDER
-- **`develop/seo` állapota:** PUSH_PLACEHOLDER
-- **Helyi projekt:** LOCAL_PLACEHOLDER
+- **Végleges commit:** a csomag forrása és a teljes kód: `a37072f`; ezt egyetlen dokumentum-commit követi, a végleges HEAD = `origin/develop/seo` (az azonosítót a lezáró üzenet is megadja).
+- **`develop/seo` állapota:** fast-forward pusholva `origin/develop/seo`-ra (előző állapot: `5e3ee72`).
+- **Helyi projekt:** a fő checkout helyi `develop/seo` ága biztonságosan (`git merge --ff-only`, tiszta munkafával, helyi módosítás nélkül) a legfrissebb commitra állítva; a helyi projekt ugyanazon a commiton áll.
 - **Main változatlansága:** a `main` változatlan: `3c4f9f6` (helyi és `origin/main`), nem merge-eltem, nem módosítottam. A Retell-ügynökhöz nem nyúltam, FTP-re nem töltöttem fel semmit.
 - **Production mappa:** `C:\Users\lakas\Desktop\controldechinches-production\` · **ZIP:** `C:\Users\lakas\Desktop\controldechinches-production.zip`
 - **Fájlok száma / méret:** **430 fájl**, kitömörítve 23 984 389 bájt (22,9 MB), **ZIP 22 264 166 bájt (21,23 MB)**; 391 új, 14 felülírt meglévő, 25 változatlan fájl; titokkereső: 0 találat; a kibontott ZIP is átment a validátoron (0 hiba). A régi csomag elkülönítve: `…\controldechinches-production-OLD-2026-11-28` (+ `.zip`).
